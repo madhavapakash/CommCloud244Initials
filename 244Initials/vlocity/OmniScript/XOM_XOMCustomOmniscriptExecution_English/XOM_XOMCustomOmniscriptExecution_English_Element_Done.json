@@ -1,0 +1,33 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Done",
+    "OmniProcessId": {
+        "Name": "XOMWorkItemExecutionOmni",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/XOMCustomOmniscriptExecution/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "Done",
+        "message": {
+        },
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": null,
+        "source": "https://vins4-dev-ed.lightning.force.com/lightning/r/%vlocity_namespace%__OrchestrationItem__c/%ContextId%/view",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/XOMCustomOmniscriptExecution/English/Done"
+}

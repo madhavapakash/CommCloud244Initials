@@ -1,0 +1,40 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction",
+    "OmniProcessId": {
+        "Name": "Update Frame Agreement",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/UpdateFrameAgreement/Quote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "ContractId": "%Contract_1|1:Id%",
+            "FrameContractCount": "=%Quote:FrameContractCount%",
+            "errorDetails": "%result:errors%",
+            "errorInfo": "%result:errorsAsJson%",
+            "errorOK": "%result%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/UpdateFrameAgreement/Quote/Procedure/ResponseAction"
+}

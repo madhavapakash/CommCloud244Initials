@@ -1,0 +1,56 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Create Order",
+    "OmniProcessId": {
+        "Name": "CPQ Create Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "extraPayload": {
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": "Create Order",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "%vlocity_namespace%.CPQAppHandler",
+        "remoteMethod": "checkout",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateOrder/English/Create Order"
+}

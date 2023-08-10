@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "DocumentServiceGateway_DocGenerationPDF_SampleInput.json",
+    "Description": "Server-side document generation for PDF.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "generateDocumentPDF",
+    "OmniProcessElement": [
+        "DocumentServiceGateway_DocGenerationPDF_Element_setupServiceCallInputParams.json",
+        "DocumentServiceGateway_DocGenerationPDF_Element_generateDocumentServicePDF.json",
+        "DocumentServiceGateway_DocGenerationPDF_Element_ipResponse.json"
+    ],
+    "OmniProcessKey": "DocumentServiceGateway_DocGenerationPDF",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "DocumentServiceGateway_DocGenerationPDF_PropertySetConfig.json",
+    "SubType": "DocGenerationPDF",
+    "Type": "DocumentServiceGateway",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/DocumentServiceGateway/DocGenerationPDF/Procedure",
+    "WebComponentKey": "9d79e17b-3941-5b7b-90ad-96d2f3e8fdae"
+}

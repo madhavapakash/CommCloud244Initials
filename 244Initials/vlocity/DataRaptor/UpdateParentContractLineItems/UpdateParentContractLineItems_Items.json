@@ -1,0 +1,98 @@
+[
+    {
+        "GlobalKey": "UpdateParentContractLineItemsCustom9707",
+        "InputFieldName": "ParentContractLineEndDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateParentContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "UpdateParentContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateParentContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveEndDate__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateParentContractLineItemsCustom1655",
+        "InputFieldName": "ParentContractLineStartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateParentContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "UpdateParentContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateParentContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveStartDate__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateParentContractLineItemsCustom7810",
+        "InputFieldName": "ParentContractLineStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateParentContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "UpdateParentContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateParentContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__LineStatus__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateParentContractLineItemsCustom5580",
+        "InputFieldName": "Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateParentContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "UpdateParentContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateParentContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateParentContractLineItemsCustom3913",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateParentContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "UpdateParentContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateParentContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,35 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ReviewHeader",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Review",
+        "OmniProcessId": {
+            "Name": "MACD Move",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/Review",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Review",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "controlWidth": 12,
+        "label": "<p>Please review the Move Order.</p>",
+        "labelKey": "%vlocity_namespace%__MACDReviewHeader",
+        "show": null
+    },
+    "Type": "Headline",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/ReviewHeader"
+}

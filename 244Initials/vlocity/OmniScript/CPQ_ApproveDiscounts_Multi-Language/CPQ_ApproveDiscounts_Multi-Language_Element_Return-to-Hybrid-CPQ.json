@@ -1,0 +1,113 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Return to Hybrid CPQ",
+    "OmniProcessId": {
+        "Name": "ApproveDiscounts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ApproveDiscounts/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "Type__c": {
+            "label": "Done Action",
+            "type": "action"
+        },
+        "allowSaveForLater": true,
+        "autoFocus": false,
+        "autoSaveOnStepNext": false,
+        "bLK": false,
+        "cancelRedirectPageName": "OmniScriptCancelled",
+        "cancelRedirectTemplateUrl": "vlcCancelled.html",
+        "cancelSource": "%ContextId%",
+        "cancelType": "SObject",
+        "consoleTabIcon": "custom:custom18",
+        "consoleTabLabel": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementTypeToHTMLTemplateMapping": {
+        },
+        "enableKnowledge": false,
+        "hideStepChart": false,
+        "knowledgeArticleTypeQueryFieldsMap": {
+        },
+        "label": null,
+        "message": {
+        },
+        "persistentComponent": [
+            {
+                "id": "vlcCart",
+                "itemsKey": "cartItems",
+                "label": "",
+                "modalConfigurationSetting": {
+                    "modalController": "ModalProductCtrl",
+                    "modalHTMLTemplateId": "vlcProductConfig.html",
+                    "modalSize": "lg"
+                },
+                "postTransformBundle": "",
+                "preTransformBundle": "",
+                "remoteClass": "",
+                "remoteMethod": "",
+                "remoteOptions": {
+                    "postTransformBundle": "",
+                    "preTransformBundle": ""
+                },
+                "remoteTimeout": 30000,
+                "render": false,
+                "responseJSONNode": "",
+                "responseJSONPath": "",
+                "sendJSONNode": "",
+                "sendJSONPath": ""
+            },
+            {
+                "id": "vlcKnowledge",
+                "itemsKey": "knowledgeItems",
+                "label": "",
+                "modalConfigurationSetting": {
+                    "modalController": "",
+                    "modalHTMLTemplateId": "",
+                    "modalSize": "lg"
+                },
+                "postTransformBundle": "",
+                "preTransformBundle": "",
+                "remoteClass": "",
+                "remoteMethod": "",
+                "remoteOptions": {
+                    "postTransformBundle": "",
+                    "preTransformBundle": ""
+                },
+                "remoteTimeout": 30000,
+                "render": false
+            }
+        ],
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "rtpSeed": false,
+        "saveContentEncoded": false,
+        "saveForLaterRedirectPageName": "sflRedirect",
+        "saveForLaterRedirectTemplateUrl": "vlcSaveForLaterAcknowledge.html",
+        "saveObjectId": "%ContextId%",
+        "saveURLPatterns": {
+        },
+        "seedDataJSON": {
+        },
+        "show": null,
+        "showInputWidth": false,
+        "source": "/apex/%vlocity_namespace%__HybridCPQ?id=%ContextId%",
+        "ssm": false,
+        "timeTracking": false,
+        "trackingCustomData": {
+        },
+        "type": "URL",
+        "validationRequired": null,
+        "visualforcePagesAvailableInPreview": {
+        },
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ApproveDiscounts/Multi-Language/Return to Hybrid CPQ"
+}

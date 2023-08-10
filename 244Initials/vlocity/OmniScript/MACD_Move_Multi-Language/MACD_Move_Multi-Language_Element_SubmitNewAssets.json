@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SubmitNewAssets",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "extraPayload": {
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureNextLabel": null,
+        "inProgressMessage": null,
+        "label": null,
+        "message": {
+        },
+        "postMessage": null,
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "OmniMoveAssetWrapper",
+        "remoteMethod": "moveNewAssets",
+        "remoteOptions": {
+            "JSON Node": "FilteredAsset",
+            "jsonPath": "SelectAssets:SelectAsset",
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/SubmitNewAssets"
+}

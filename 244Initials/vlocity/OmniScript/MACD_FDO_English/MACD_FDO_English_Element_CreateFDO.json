@@ -1,0 +1,72 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateFDO",
+    "OmniProcessId": {
+        "Name": "FDO",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "extraPayload": {
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": "CreateFDO",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "OmniFDOWrapper",
+        "remoteMethod": "createFDO",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canCreateFDO"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "Formula 1"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/CreateFDO"
+}

@@ -1,0 +1,92 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "State",
+    "OmniProcessId": {
+        "Name": "XOMWorkItemExecutionOmni",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/XOMCustomOmniscriptExecution/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Enter details",
+        "OmniProcessId": {
+            "Name": "XOMWorkItemExecutionOmni",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/XOMCustomOmniscriptExecution/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/XOMCustomOmniscriptExecution/English/Enter details",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Enter details",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "State",
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "name": "Pending",
+                "value": "Pending"
+            },
+            {
+                "name": "Ready",
+                "value": "Ready"
+            },
+            {
+                "name": "In Progress",
+                "value": "In Progress"
+            },
+            {
+                "name": "Completed",
+                "value": "Completed"
+            },
+            {
+                "name": "Failed",
+                "value": "Failed"
+            },
+            {
+                "name": "Fatally Failed",
+                "value": "Fatally Failed"
+            },
+            {
+                "name": "Frozen",
+                "value": "Frozen"
+            },
+            {
+                "name": "Freezing",
+                "value": "Freezing"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/XOMCustomOmniscriptExecution/English/State"
+}

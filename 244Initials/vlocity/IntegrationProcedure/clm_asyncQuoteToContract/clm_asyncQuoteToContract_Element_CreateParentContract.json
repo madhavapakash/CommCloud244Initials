@@ -1,0 +1,40 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateParentContract",
+    "OmniProcessId": {
+        "Name": "CLM - Async Quote to Contract",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateParentContract",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/Procedure/CreateParentContract"
+}

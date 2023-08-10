@@ -1,0 +1,75 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PreValidateFailure",
+    "OmniProcessId": {
+        "Name": "CPQ Amend Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AmendOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": true,
+        "cancelLabel": null,
+        "cancelMessage": null,
+        "chartLabel": null,
+        "completeLabel": null,
+        "completeMessage": null,
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "",
+        "instructionKey": null,
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "UnableToPauseOrderFulfilment",
+        "nextLabel": null,
+        "nextWidth": 3,
+        "previousLabel": null,
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": null,
+        "saveMessage": null,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "PreValidate:records|1:isPONR"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AmendOrder/Multi-Language/PreValidateFailure"
+}

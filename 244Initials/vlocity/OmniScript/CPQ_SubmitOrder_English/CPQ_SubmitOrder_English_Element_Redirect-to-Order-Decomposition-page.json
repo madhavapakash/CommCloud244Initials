@@ -1,0 +1,60 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Redirect to Order Decomposition page",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "redirectToOrderDecomposition",
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:hasError"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "createAccountDiscounts:messages|1:severity"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "checkout:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "source": "/apex/%vlocity_namespace%__XOMViewOrderDecomposition?id=%ContextId%",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/Redirect to Order Decomposition page"
+}

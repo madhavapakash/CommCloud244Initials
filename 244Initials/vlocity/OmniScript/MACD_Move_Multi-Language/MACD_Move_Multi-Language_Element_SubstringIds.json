@@ -1,0 +1,48 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SubstringIds",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "controlWidth": 12,
+        "extraPayload": {
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureNextLabel": null,
+        "inProgressMessage": null,
+        "label": null,
+        "message": {
+        },
+        "postMessage": null,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "OmniMoveAssetWrapper",
+        "remoteMethod": "getAccountIds",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/SubstringIds"
+}

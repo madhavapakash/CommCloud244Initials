@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderSubmissionResults",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ResultsGroup",
+        "OmniProcessId": {
+            "Name": "Submit Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/ResultsGroup",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ResultsGroup",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "<p>%checkout:messages|1:message%</p>\n<p>%checkout:messages|2:message%</p>\n<p>%checkout:messages|3:message%</p>\n<p>%checkout:messages|4:message%</p>\n<p>%checkout:messages|5:message%</p>\n<p>%checkout:messages|6:message%</p>\n<p>%checkout:messages|7:message%</p>\n<p>%checkout:messages|8:message%</p>\n<p>%checkout:messages|9:message%</p>\n<p>%checkout:messages|10:message%</p>\n<div id=\"gtx-trans\" style=\"position: absolute; left: -179px; top: -20px;\">&nbsp;</div>",
+        "labelKey": "",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:isOrderProductPresent"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Headline",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/OrderSubmissionResults"
+}

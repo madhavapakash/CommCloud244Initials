@@ -1,0 +1,40 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateDiscounts",
+    "OmniProcessId": {
+        "Name": "Create Contract Discounts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/CreateContractDiscounts/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateDiscounts",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/CreateContractDiscounts/Procedure/CreateDiscounts"
+}

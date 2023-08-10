@@ -1,0 +1,45 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "MoveToOriginalOrder",
+    "OmniProcessId": {
+        "Name": "DiscardOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/DiscardOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "errorMessage:default": "",
+        "label": null,
+        "message": {
+        },
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "DiscardOrder:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "source": "/apex/%vlocity_namespace%__HybridCPQ?id=%DiscardOrder:records|1:SupersededOrderId%",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/DiscardOrder/English/MoveToOriginalOrder"
+}

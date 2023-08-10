@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "canSubmitOrderFailure",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": "Validation of order failed, Error occurred when attempting to check if the order can be submitted.",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:hasError"
+                    }
+                ]
+            }
+        },
+        "text": "<p><span style=\"color: #ff0000;\">ERROR Message</span>:</p>\n<p>%canSubmitOrder:messages|0:message%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/canSubmitOrderFailure"
+}

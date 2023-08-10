@@ -1,0 +1,61 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "ESM_SelfServiceAddMembersToGroups",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/SelfServiceAddMembersToGroups/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "ESM_SelfServiceAddMembersToGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/SelfServiceAddMembersToGroups/Procedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "ForEachProductBundle",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/SelfServiceAddMembersToGroups/Procedure/ForEachProductBundle",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "ForEachProductBundle",
+    "%vlocity_namespace%__ParentElementType__c": "Loop Block",
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "assetIds": "%productBundles:assetIds%",
+            "memberType": "%memberType%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "productBundles:groupId != $Vlocity.NULL",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "getMemberIdsForAssets",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Remote Action",
+    "Name": "GetMemberIdsFromAssetIds",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/SelfServiceAddMembersToGroups/Procedure/GetMemberIdsFromAssetIds"
+}

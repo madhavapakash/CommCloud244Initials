@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GenerateDocumentWebTemplate",
+    "OmniProcessId": {
+        "Name": "Single Doc - Web (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Generate Document",
+        "OmniProcessId": {
+            "Name": "Single Doc - Web (VF)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebVF/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebVF/English/Generate Document",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Generate Document",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "docgensample-object-document-creation-default",
+        "accessibleInFutureSteps": false,
+        "disOnTplt": false,
+        "documentType": "pdf,word",
+        "label": "Proposal",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null
+    },
+    "Type": "Input Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebVF/English/GenerateDocumentWebTemplate"
+}

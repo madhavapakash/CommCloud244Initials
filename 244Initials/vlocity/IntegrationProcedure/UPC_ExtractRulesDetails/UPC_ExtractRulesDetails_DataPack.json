@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "UPC_ExtractRulesDetails_SampleInput.json",
+    "Description": "This IP extracts rule assignments based on the product Id passed",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Extract Rule Assignments",
+    "OmniProcessElement": [
+        "UPC_ExtractRulesDetails_Element_RuleDetailsExtractor.json",
+        "UPC_ExtractRulesDetails_Element_RuleDetails.json"
+    ],
+    "OmniProcessKey": "UPC_ExtractRulesDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "UPC_ExtractRulesDetails_PropertySetConfig.json",
+    "SubType": "ExtractRulesDetails",
+    "Type": "UPC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/UPC/ExtractRulesDetails/Procedure",
+    "WebComponentKey": "3ce5d5e0-b671-d858-6095-9e2ab420bd87"
+}

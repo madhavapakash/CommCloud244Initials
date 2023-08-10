@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DiscountSuccessfullyCheckedout",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ResultsGroup",
+        "OmniProcessId": {
+            "Name": "Submit Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/ResultsGroup",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ResultsGroup",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "<p>Discount(s) successfully Activated</p>",
+        "labelKey": "",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:isOrderProductPresent"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:hasError"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "createAccountDiscounts:messages|1:severity"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Headline",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/DiscountSuccessfullyCheckedout"
+}

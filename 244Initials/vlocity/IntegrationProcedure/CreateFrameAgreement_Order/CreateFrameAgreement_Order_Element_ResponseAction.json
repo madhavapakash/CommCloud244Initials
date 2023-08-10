@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction",
+    "OmniProcessId": {
+        "Name": "Create Frame Agreement",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CreateFrameAgreement/Order/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Type__c": {
+            "label": "Response Action",
+            "type": "action"
+        },
+        "additionalOutput": {
+            "ContractId": "%Contract_1:Id%",
+            "errorDetails": "%result:errors%",
+            "errorInfo": "%result:errorsAsJson%",
+            "errorOK": "%result%"
+        },
+        "chainableCpuLimit": 2000,
+        "chainableQueriesLimit": 50,
+        "columnsPropertyMap": [
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "includeAllActionsInResponse": false,
+        "label": "ResponseAction1",
+        "relationshipFieldsMap": [
+        ],
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "rollbackOnError": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "trackingCustomData": {
+        },
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CreateFrameAgreement/Order/Procedure/ResponseAction"
+}

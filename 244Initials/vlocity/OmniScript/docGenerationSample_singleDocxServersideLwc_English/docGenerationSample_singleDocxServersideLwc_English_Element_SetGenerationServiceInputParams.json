@@ -1,0 +1,43 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetGenerationServiceInputParams",
+    "OmniProcessId": {
+        "Name": "Single Doc - DOCX Serverside(LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxServersideLwc/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "attachFileFormat": "=%GenerationOptions:OutputFileFormat%",
+            "contextId": "=%EnterObject:ObjectId%",
+            "documentTitle": "=%GenerationOptions:DocumentTitle%",
+            "docxContentVersionId": "=%GenerationOptions:DocumentContentVersionId%",
+            "downloadFileFormat": "=%GenerationOptions:OutputFileFormat%",
+            "objectId": "%EnterObject:ObjectId%",
+            "outputFileFormat": "%GenerationOptions:OutputFileFormat%",
+            "selectedTemplate": "=IF(%templateId% == null, %PickTemplate|1:SelectTemplate|1%, %selectedTemplate%)",
+            "templateType": "=%EnterObject:TemplateType%",
+            "tokenDataMap": "{\"Name\": \"Sales Strategy Manager\"}"
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxServersideLwc/English/SetGenerationServiceInputParams"
+}

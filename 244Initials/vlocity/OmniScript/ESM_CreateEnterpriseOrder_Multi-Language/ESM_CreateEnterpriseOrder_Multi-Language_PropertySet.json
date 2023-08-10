@@ -1,0 +1,111 @@
+{
+    "allowCancel": true,
+    "allowSaveForLater": true,
+    "autoFocus": false,
+    "autoSaveOnStepNext": false,
+    "bLK": false,
+    "cancelRedirectPageName": "OmniScriptCancelled",
+    "cancelRedirectTemplateUrl": "vlcCancelled.html",
+    "cancelSource": "%ContextId%",
+    "cancelType": "SObject",
+    "consoleTabIcon": "standard:webcart",
+    "consoleTabLabel": null,
+    "consoleTabTitle": "Manager Enterprise Order",
+    "currencyCode": "",
+    "currentLanguage": "en_US",
+    "disableUnloadWarn": true,
+    "elementTypeToHTMLTemplateMapping": {
+    },
+    "enableKnowledge": false,
+    "errorMessage": {
+        "custom": [
+        ]
+    },
+    "hideStepChart": true,
+    "knowledgeArticleTypeQueryFieldsMap": {
+    },
+    "lkObjName": null,
+    "mergeSavedData": false,
+    "message": {
+    },
+    "persistentComponent": [
+        {
+            "id": "vlcCart",
+            "itemsKey": "cartItems",
+            "label": null,
+            "modalConfigurationSetting": {
+                "modalController": "ModalProductCtrl",
+                "modalHTMLTemplateId": "vlcProductConfig.html",
+                "modalSize": "lg"
+            },
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "remoteClass": "",
+            "remoteMethod": "",
+            "remoteOptions": {
+                "postTransformBundle": "",
+                "preTransformBundle": ""
+            },
+            "remoteTimeout": 30000,
+            "render": false,
+            "responseJSONNode": "",
+            "responseJSONPath": "",
+            "sendJSONNode": "",
+            "sendJSONPath": ""
+        },
+        {
+            "dispOutsideOmni": false,
+            "id": "vlcKnowledge",
+            "itemsKey": "knowledgeItems",
+            "label": null,
+            "modalConfigurationSetting": {
+                "modalController": "",
+                "modalHTMLTemplateId": "",
+                "modalSize": "lg"
+            },
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "remoteClass": "",
+            "remoteMethod": "",
+            "remoteOptions": {
+                "postTransformBundle": "",
+                "preTransformBundle": ""
+            },
+            "remoteTimeout": 30000,
+            "render": false
+        }
+    ],
+    "pubsub": true,
+    "rtpSeed": false,
+    "saveContentEncoded": false,
+    "saveExpireInDays": null,
+    "saveForLaterRedirectPageName": "sflRedirect",
+    "saveForLaterRedirectTemplateUrl": "vlcSaveForLaterAcknowledge.html",
+    "saveNameTemplate": null,
+    "saveObjectId": "%ContextId%",
+    "saveURLPatterns": {
+    },
+    "scrollBehavior": "smooth",
+    "seedDataJSON": {
+        "EnterpriseOrderRecordType": "EnterpriseOrder",
+        "SObjectType": "Order",
+        "asyncCallMemberThreshold": 5,
+        "chunkingGSTV": 3,
+        "chunkingMSTV": 20
+    },
+    "showInputWidth": false,
+    "ssm": true,
+    "stepChartPlacement": "top",
+    "stylesheet": {
+        "lightning": "%vlocity_namespace%__ESMGuidedJourney",
+        "lightningRtl": "",
+        "newport": "",
+        "newportRtl": ""
+    },
+    "timeTracking": false,
+    "trackingCustomData": {
+    },
+    "visualforcePagesAvailableInPreview": {
+    },
+    "wpm": true
+}

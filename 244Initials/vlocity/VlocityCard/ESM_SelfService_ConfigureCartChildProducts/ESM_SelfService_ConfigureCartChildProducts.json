@@ -1,0 +1,866 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[{\"name\":\"Test Add On\", \"Name\": {\"value\": \"Test Add On\"}}]",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "globalCSS": false,
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfESM_SelfService_ConfigureCartChildProducts_4_salesforce",
+        "Id": "0RbRN0000003LEj0AM",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfESM_SelfService_ConfigureCartChildProducts_4_salesforce",
+        "NamespacePrefix": "%vlocity_namespace%"
+    },
+    "multilanguageSupport": true,
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "class": "slds-col ",
+                                    "element": "outputField",
+                                    "elementLabel": "Block-0-Field-0",
+                                    "key": "element_element_block_0_0_outputField_0_0",
+                                    "name": "Field",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "fieldName": "Name.value",
+                                        "placeholder": "",
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": "10",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "slds-text-heading_small b2b-selfservice-child-product-title slds-m-bottom_small ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "slds-text-heading_small b2b-selfservice-child-product-title slds-m-bottom_small ",
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "10",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_10-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    },
+                                    "styleObjects": [
+                                        {
+                                            "conditionString": "",
+                                            "conditions": "default",
+                                            "draggable": false,
+                                            "key": 0,
+                                            "label": "Default",
+                                            "name": "Default",
+                                            "styleObject": {
+                                                "background": {
+                                                    "color": "",
+                                                    "image": "",
+                                                    "position": "",
+                                                    "repeat": "",
+                                                    "size": ""
+                                                },
+                                                "border": {
+                                                    "color": "",
+                                                    "radius": "",
+                                                    "style": "",
+                                                    "type": "",
+                                                    "width": ""
+                                                },
+                                                "class": "slds-text-heading_small b2b-selfservice-child-product-title slds-m-bottom_small ",
+                                                "container": {
+                                                    "class": ""
+                                                },
+                                                "customClass": "slds-text-heading_small b2b-selfservice-child-product-title slds-m-bottom_small ",
+                                                "elementStyleProperties": {
+                                                },
+                                                "inlineStyle": "",
+                                                "margin": [
+                                                ],
+                                                "padding": [
+                                                ],
+                                                "size": {
+                                                    "default": "10",
+                                                    "isResponsive": false
+                                                },
+                                                "sizeClass": "slds-size_10-of-12 ",
+                                                "style": "      \n         ",
+                                                "text": {
+                                                    "align": "",
+                                                    "color": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "outputField",
+                                    "elementLabel": "Block-0-Field-1",
+                                    "key": "element_element_block_0_0_outputField_1_0",
+                                    "name": "Field",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "fieldName": "Product2.%vlocity_namespace%__VersionLabel__c",
+                                        "placeholder": "",
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": 2,
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "b2b-selfservice-child-product-version slds-text-body_small slds-text-align_left ",
+                                        "container": {
+                                            "class": "b2b-selfservice-child-product-version slds-text-body_small slds-text-align_left"
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": 2,
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    },
+                                    "styleObjects": [
+                                        {
+                                            "conditionString": "",
+                                            "conditions": "default",
+                                            "draggable": false,
+                                            "key": 0,
+                                            "label": "Default",
+                                            "name": "Default",
+                                            "styleObject": {
+                                                "background": {
+                                                    "color": "",
+                                                    "image": "",
+                                                    "position": "",
+                                                    "repeat": "",
+                                                    "size": ""
+                                                },
+                                                "border": {
+                                                    "color": "",
+                                                    "radius": "",
+                                                    "style": "",
+                                                    "type": "",
+                                                    "width": ""
+                                                },
+                                                "class": "b2b-selfservice-child-product-version slds-text-body_small slds-text-align_left ",
+                                                "container": {
+                                                    "class": "b2b-selfservice-child-product-version slds-text-body_small slds-text-align_left"
+                                                },
+                                                "elementStyleProperties": {
+                                                },
+                                                "inlineStyle": "",
+                                                "margin": [
+                                                ],
+                                                "padding": [
+                                                ],
+                                                "size": {
+                                                    "default": 2,
+                                                    "isResponsive": false
+                                                },
+                                                "sizeClass": "slds-size_2-of-12 ",
+                                                "style": "      \n         ",
+                                                "text": {
+                                                    "align": "",
+                                                    "color": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "outputField",
+                                    "elementLabel": "Block-0-Field-2",
+                                    "key": "element_element_block_0_0_outputField_2_0",
+                                    "name": "Field",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "fieldName": "{Product2.Description}",
+                                        "placeholder": "",
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": "12",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "b2b-selfservice-child-product-description slds-m-bottom_small",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "b2b-selfservice-child-product-description slds-m-bottom_small",
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    },
+                                    "styleObjects": [
+                                        {
+                                            "conditionString": "",
+                                            "conditions": "default",
+                                            "draggable": false,
+                                            "key": 0,
+                                            "label": "Default",
+                                            "name": "Default",
+                                            "styleObject": {
+                                                "background": {
+                                                    "color": "",
+                                                    "image": "",
+                                                    "position": "",
+                                                    "repeat": "",
+                                                    "size": ""
+                                                },
+                                                "border": {
+                                                    "color": "",
+                                                    "radius": "",
+                                                    "style": "",
+                                                    "type": "",
+                                                    "width": ""
+                                                },
+                                                "class": "b2b-selfservice-child-product-description slds-m-bottom_small",
+                                                "container": {
+                                                    "class": ""
+                                                },
+                                                "customClass": "b2b-selfservice-child-product-description slds-m-bottom_small",
+                                                "elementStyleProperties": {
+                                                },
+                                                "inlineStyle": "",
+                                                "margin": [
+                                                ],
+                                                "padding": [
+                                                ],
+                                                "size": {
+                                                    "default": "12",
+                                                    "isResponsive": false
+                                                },
+                                                "sizeClass": "slds-size_12-of-12 ",
+                                                "style": "      \n         ",
+                                                "text": {
+                                                    "align": "",
+                                                    "color": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "outputField",
+                                    "elementLabel": "Block-0-Field-3",
+                                    "key": "element_element_block_0_0_outputField_3_0",
+                                    "name": "Field",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "placeholder": "",
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": "5",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "size": {
+                                            "default": "5",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_5-of-12 "
+                                    },
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "action",
+                                    "elementLabel": "Block-0-Action-4",
+                                    "key": "element_element_block_0_0_action_4_0",
+                                    "name": "Action",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "actionList": [
+                                            {
+                                                "actionIndex": 0,
+                                                "buttonVariant": "neutral",
+                                                "card": "{card}",
+                                                "displayAsButton": true,
+                                                "draggable": true,
+                                                "iconColor": "#000000",
+                                                "isOpen": true,
+                                                "key": "1658096575337-t60l59n22",
+                                                "label": "Action",
+                                                "record": "{record}",
+                                                "stateAction": {
+                                                    "displayName": "{Label.Add}",
+                                                    "eventName": "esm_selfservice_addchildproduct",
+                                                    "extraParams": {
+                                                        "actionObjName": "addtocart",
+                                                        "cartType": "{Parent.cartType}",
+                                                        "getInputMethod": "prepareAddProductToCartInput",
+                                                        "handleResponseMethod": "addProductToCartResponseHandler",
+                                                        "hierarchyPath": "{Parent.parentPath}>{Parent.type}>{Id.value}",
+                                                        "input": "{}",
+                                                        "methodName": "addProductToCart",
+                                                        "parentObject": "{Parent.parentObj}",
+                                                        "record": "{record}"
+                                                    },
+                                                    "hasExtraParams": true,
+                                                    "id": "flex-action-1658096665805",
+                                                    "message": "onAddProduct",
+                                                    "openUrlIn": "Current Window",
+                                                    "subType": "PubSub",
+                                                    "type": "Event",
+                                                    "vlocityIcon": ""
+                                                },
+                                                "stateObj": "{record}"
+                                            }
+                                        ],
+                                        "buttonVariant": "neutral",
+                                        "card": "{card}",
+                                        "displayAsButton": true,
+                                        "flyoutDetails": {
+                                        },
+                                        "hideActionIcon": true,
+                                        "iconColor": "#000000",
+                                        "iconName": " ",
+                                        "label": "{Label.Add}",
+                                        "record": "{record}",
+                                        "showSpinner": "false",
+                                        "stateObj": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "slds-align_absolute-center b2b-selfservice-child-products-add__button b2b-selfservice-child-products-add__button_disabled",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "slds-align_absolute-center b2b-selfservice-child-products-add__button b2b-selfservice-child-products-add__button_disabled",
+                                        "elementStyleProperties": {
+                                            "iconColor": "#000000"
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    },
+                                    "styleObjects": [
+                                        {
+                                            "conditionString": "",
+                                            "conditions": "default",
+                                            "draggable": false,
+                                            "isSetForDesignTime": false,
+                                            "isopen": true,
+                                            "key": 0,
+                                            "label": "Default",
+                                            "name": "Default",
+                                            "styleObject": {
+                                                "background": {
+                                                    "color": "",
+                                                    "image": "",
+                                                    "position": "",
+                                                    "repeat": "",
+                                                    "size": ""
+                                                },
+                                                "border": {
+                                                    "color": "",
+                                                    "radius": "",
+                                                    "style": "",
+                                                    "type": "",
+                                                    "width": ""
+                                                },
+                                                "class": "slds-align_absolute-center b2b-selfservice-child-products-add__button",
+                                                "container": {
+                                                    "class": ""
+                                                },
+                                                "customClass": "slds-align_absolute-center b2b-selfservice-child-products-add__button",
+                                                "elementStyleProperties": {
+                                                    "iconColor": "#000000"
+                                                },
+                                                "inlineStyle": "",
+                                                "margin": [
+                                                ],
+                                                "padding": [
+                                                ],
+                                                "size": {
+                                                    "default": "2",
+                                                    "isResponsive": false
+                                                },
+                                                "sizeClass": "slds-size_2-of-12 ",
+                                                "style": "      \n         ",
+                                                "text": {
+                                                    "align": "",
+                                                    "color": ""
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "conditionString": "actions == undefined",
+                                            "conditions": {
+                                                "group": [
+                                                    {
+                                                        "field": "actions",
+                                                        "hasMergeField": false,
+                                                        "id": "state-new-condition-0",
+                                                        "operator": "==",
+                                                        "type": "custom",
+                                                        "value": "undefined"
+                                                    }
+                                                ],
+                                                "id": "state-condition-object",
+                                                "isParent": true
+                                            },
+                                            "draggable": true,
+                                            "isSetForDesignTime": true,
+                                            "isopen": true,
+                                            "key": 1,
+                                            "label": "Disabled",
+                                            "name": "Disabled",
+                                            "styleObject": {
+                                                "background": {
+                                                    "color": "",
+                                                    "image": "",
+                                                    "position": "",
+                                                    "repeat": "",
+                                                    "size": ""
+                                                },
+                                                "border": {
+                                                    "color": "",
+                                                    "radius": "",
+                                                    "style": "",
+                                                    "type": "",
+                                                    "width": ""
+                                                },
+                                                "class": "slds-align_absolute-center b2b-selfservice-child-products-add__button b2b-selfservice-child-products-add__button_disabled",
+                                                "container": {
+                                                    "class": ""
+                                                },
+                                                "customClass": "slds-align_absolute-center b2b-selfservice-child-products-add__button b2b-selfservice-child-products-add__button_disabled",
+                                                "elementStyleProperties": {
+                                                    "iconColor": "#000000"
+                                                },
+                                                "inlineStyle": "",
+                                                "margin": [
+                                                ],
+                                                "padding": [
+                                                ],
+                                                "size": {
+                                                    "default": "2",
+                                                    "isResponsive": false
+                                                },
+                                                "sizeClass": "slds-size_2-of-12 ",
+                                                "style": "      \n         ",
+                                                "text": {
+                                                    "align": "",
+                                                    "color": ""
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "outputField",
+                                    "elementLabel": "Block-0-Field-5",
+                                    "key": "element_element_block_0_0_outputField_5_0",
+                                    "name": "Field",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "placeholder": "",
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": "5",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "size": {
+                                            "default": "5",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_5-of-12 "
+                                    },
+                                    "type": "element"
+                                }
+                            ],
+                            "class": "slds-col ",
+                            "element": "block",
+                            "elementLabel": "Block-0",
+                            "name": "Block",
+                            "property": {
+                                "card": "{card}",
+                                "collapsedByDefault": false,
+                                "collapsible": false,
+                                "data-conditions": {
+                                    "group": [
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "label": "Block",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#cccccc",
+                                    "radius": "",
+                                    "style": "solid",
+                                    "type": "",
+                                    "width": "1"
+                                },
+                                "class": "slds-p-around_x-small b2b-selfservice-child-product-card ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "customClass": "slds-p-around_x-small b2b-selfservice-child-product-card ",
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "      \n         ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#cccccc",
+                                            "radius": "",
+                                            "style": "solid",
+                                            "type": "",
+                                            "width": "1"
+                                        },
+                                        "class": "slds-p-around_x-small b2b-selfservice-child-product-card ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "customClass": "slds-p-around_x-small b2b-selfservice-child-product-card ",
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "      \n         ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "block"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                    {
+                        "field": "isAlreadyExist",
+                        "id": "state-new-condition-0",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "true"
+                    }
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-p-around_xx-small slds-m-right_small",
+                "container": {
+                    "class": ""
+                },
+                "customClass": "slds-m-right_small",
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                ],
+                "padding": [
+                    {
+                        "label": "around:xx-small",
+                        "size": "xx-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": true,
+                    "large": "4",
+                    "medium": "6",
+                    "small": "12"
+                },
+                "sizeClass": "slds-large-size_4-of-12 slds-medium-size_6-of-12 slds-small-size_12-of-12 slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "ESM_SelfService_ConfigureCartChildProducts",
+    "uniqueKey": "Id.value",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                }
+            ]
+        }
+    ],
+    "xmlObject": {
+        "masterLabel": "ESM_SelfService_ConfigureCartChildProducts",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIi8+CiAgICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0icmVjb3JkSWQiIHR5cGU9IlN0cmluZyIvPgogICAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgICAgPHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX1JlY29yZFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIi8+CiAgICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==",
+        "targets": {
+            "target": [
+                "lightning__RecordPage",
+                "lightning__AppPage",
+                "lightning__HomePage"
+            ]
+        }
+    }
+}

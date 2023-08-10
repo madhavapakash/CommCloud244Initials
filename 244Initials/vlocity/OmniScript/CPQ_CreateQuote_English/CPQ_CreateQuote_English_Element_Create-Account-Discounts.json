@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Create Account Discounts",
+    "OmniProcessId": {
+        "Name": "CPQ Create Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateQuote/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "extraPayload": {
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": "Create Account Discounts",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "%vlocity_namespace%.CPQAppHandler",
+        "remoteMethod": "createAccountDiscounts",
+        "remoteOptions": {
+            "cartId": "%cartId%",
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateQuote/English/Create Account Discounts"
+}

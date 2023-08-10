@@ -1,0 +1,45 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Navigate to Account",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "Navigate to Account",
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "PreValidate:records|1:isPONR"
+                    }
+                ]
+            }
+        },
+        "source": "%CreateSupplementalOrder:records|1:accountId%",
+        "ssm": false,
+        "type": "SObject",
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/Navigate to Account"
+}

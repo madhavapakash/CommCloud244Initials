@@ -1,0 +1,60 @@
+[
+    {
+        "GlobalKey": "UpdateQuoteDiscountDateCustom718",
+        "InputFieldName": "EffectiveEndDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateQuoteDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateQuoteDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateQuoteDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveEndDate__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateQuoteDiscountDateCustom2448",
+        "InputFieldName": "Quote:DeactivatedDiscounts:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "UpdateQuoteDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateQuoteDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateQuoteDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateQuoteDiscountDateCustom5491",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateQuoteDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateQuoteDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateQuoteDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

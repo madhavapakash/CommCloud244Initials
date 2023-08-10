@@ -1,0 +1,34 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RedirectToCurrentOrder",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": null,
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": null,
+        "source": "/apex/%vlocity_namespace%__HybridCPQ?id=%ContextId%",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/RedirectToCurrentOrder"
+}

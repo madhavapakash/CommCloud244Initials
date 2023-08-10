@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderQueuingResult",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ResultsGroup",
+        "OmniProcessId": {
+            "Name": "Submit Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/ResultsGroup",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ResultsGroup",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "<p>%canSubmitOrder:message%</p>",
+        "labelKey": "",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Headline",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/OrderQueuingResult"
+}

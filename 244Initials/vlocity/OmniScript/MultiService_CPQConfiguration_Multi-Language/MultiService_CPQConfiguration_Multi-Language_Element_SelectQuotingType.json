@@ -1,0 +1,75 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SelectQuotingType",
+    "OmniProcessId": {
+        "Name": "MultiServiceCPQConfiguration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "cancelLabel": null,
+        "cancelMessage": "MSCancelMsg",
+        "chartLabel": "MSChooseFlow",
+        "completeLabel": null,
+        "completeMessage": null,
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "",
+        "instructionKey": null,
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "MSChooseFlow",
+        "message": {
+        },
+        "nextLabel": null,
+        "nextWidth": 3,
+        "previousLabel": null,
+        "previousWidth": 3,
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": null,
+        "saveMessage": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "select",
+                        "field": "cartStrategy"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/SelectQuotingType"
+}

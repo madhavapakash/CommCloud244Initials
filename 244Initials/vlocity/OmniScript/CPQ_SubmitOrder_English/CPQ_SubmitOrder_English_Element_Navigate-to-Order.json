@@ -1,0 +1,58 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Navigate to Order",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "Navigate to Order",
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:hasError"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "INFO",
+                        "field": "createAccountDiscounts:messages|1:severity"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "INFO",
+                        "field": "checkout"
+                    }
+                ]
+            }
+        },
+        "source": "/apex/%vlocity_namespace%__HybridCPQ?id=%ContextId%",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/Navigate to Order"
+}

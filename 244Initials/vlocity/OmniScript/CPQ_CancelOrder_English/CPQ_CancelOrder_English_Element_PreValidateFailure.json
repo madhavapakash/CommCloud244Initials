@@ -1,0 +1,75 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PreValidateFailure",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": true,
+        "cancelLabel": null,
+        "cancelMessage": null,
+        "chartLabel": null,
+        "completeLabel": null,
+        "completeMessage": null,
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "",
+        "instructionKey": null,
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Unable To Pause Order Fulfilment",
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": null,
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": null,
+        "saveMessage": null,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "PreValidate:records|1:isPONR"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/PreValidateFailure"
+}

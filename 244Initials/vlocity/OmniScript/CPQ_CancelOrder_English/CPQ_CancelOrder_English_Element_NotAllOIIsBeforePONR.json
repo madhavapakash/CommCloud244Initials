@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NotAllOIIsBeforePONR",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PrevalidateMessage",
+        "OmniProcessId": {
+            "Name": "CPQ Cancel Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/PrevalidateMessage",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PrevalidateMessage",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": true,
+        "disOnTplt": false,
+        "label": "Unable to cancel the order",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "PreValidate:records|1:isPONR"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "PreValidate:records|1:didAnyOrderItemReachPONR"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "text": "<p>There are some products that have reached Point of No Return.&nbsp;We will create a cancel order that has other items cancelled.</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/NotAllOIIsBeforePONR"
+}

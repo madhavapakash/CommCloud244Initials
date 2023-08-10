@@ -1,0 +1,87 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "QuoteEnrichForInstallation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/QuoteEnrichForInstallation/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "cartItemIds": "%CartItemIds%",
+            "fieldValues": {
+                "%vlocity_namespace%__ConnectDate__c": "%UserInput:ConnectDate%"
+            },
+            "objectType": "%objectToQuery%"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": null,
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "updateCartItemsByFieldInBatch",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": ">",
+                        "data": "10",
+                        "field": "RecordCount"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": true,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Remote Action",
+    "Name": "UpdateCartItemsBatch",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/QuoteEnrichForInstallation/English/UpdateCartItemsBatch"
+}

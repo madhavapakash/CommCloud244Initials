@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "HandleErrors",
+    "OmniProcessId": {
+        "Name": "Activate Frame Agreement - Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ActivateFrameAgreement/Quote/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "cancelLabel": "Cancel",
+        "cancelMessage": "Are you sure?",
+        "chartLabel": null,
+        "completeLabel": "Complete",
+        "completeMessage": "Are you sure you want to complete the script?",
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "instruction": "",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Step2",
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": "Previous",
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "Save for later",
+        "saveMessage": "Are you sure you want to save it for later?",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "result:error"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ActivateFrameAgreement/Quote/English/HandleErrors"
+}

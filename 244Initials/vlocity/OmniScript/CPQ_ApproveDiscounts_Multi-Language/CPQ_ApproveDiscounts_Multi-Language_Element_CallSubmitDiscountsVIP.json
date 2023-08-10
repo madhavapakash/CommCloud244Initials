@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CallSubmitDiscountsVIP",
+    "OmniProcessId": {
+        "Name": "ApproveDiscounts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ApproveDiscounts/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "extraPayload": {
+        },
+        "failureAbortLabel": "",
+        "failureAbortMessage": "",
+        "failureNextLabel": "",
+        "inProgressMessage": "",
+        "integrationProcedureKey": "CPQ_SubmitDiscountsForApproval",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": "",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ApproveDiscounts/Multi-Language/CallSubmitDiscountsVIP"
+}

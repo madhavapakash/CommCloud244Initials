@@ -1,0 +1,48 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Review",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "cancelLabel": null,
+        "cancelMessage": null,
+        "completeLabel": null,
+        "completeMessage": null,
+        "conditionType": "Hide if False",
+        "instructionKey": null,
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000
+        },
+        "label": "%vlocity_namespace%__MACDReview",
+        "nextLabel": null,
+        "nextWidth": 3,
+        "previousLabel": null,
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": null,
+        "saveMessage": null,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/Review"
+}

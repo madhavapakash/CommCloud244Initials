@@ -1,0 +1,57 @@
+{
+    "Cards": [
+        "Interaction Campaign Story",
+        "Interaction Case Story",
+        "Interaction Claim Story",
+        "Interaction Event Story",
+        "Interaction Non Held Policy Story",
+        "Interaction Note Story",
+        "Interaction Opportunity Story",
+        "Interaction Policy Story",
+        "Interaction Task Story",
+        "Interaction Saved OmniScript Story",
+        "Interaction Customer Interaction Story"
+    ],
+    "bypassSave": true,
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "attrs.contextId",
+                "val": "0031N00001M40J5QAJ"
+            }
+        ],
+        "type": "Dual",
+        "value": {
+            "apexRemoteResultVar": "Stories",
+            "apexRestResultVar": "Stories",
+            "endpoint": "/%vlocity_namespace%/v1/story/{{attrs.contextId}}?pageSize=10",
+            "inputMap": {
+                "pageSize": "10",
+                "storyId": "{{attrs.contextId}}"
+            },
+            "methodType": "GET",
+            "remoteClass": "StoryListHandler",
+            "remoteMethod": "getStories",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "Stories"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "story-card-canvas"
+        }
+    },
+    "workspace": [
+        "Interaction Campaign Story/Vlocity/1506985291519",
+        "Interaction Case Story/Vlocity/1506985291519",
+        "Interaction Claim Story/Vlocity/1506985291520",
+        "Interaction Event Story/Vlocity/1506985291520",
+        "Interaction Non Held Policy Story/Vlocity/1506985291521",
+        "Interaction Note Story/Vlocity/1506985291521",
+        "Interaction Opportunity Story/Vlocity/1506985291521",
+        "Interaction Policy Story/Vlocity/1506985291521",
+        "Interaction Task Story/Vlocity/1506985291522",
+        "Interaction Saved OmniScript Story/Vlocity/1506985291522",
+        "Interaction Customer Interaction Story/Vlocity/1506985291520"
+    ]
+}

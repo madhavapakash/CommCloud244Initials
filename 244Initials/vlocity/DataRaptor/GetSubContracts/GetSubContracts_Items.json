@@ -1,0 +1,47 @@
+[
+    {
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "vlcInputMap:parentContractId",
+        "GlobalKey": "GetSubContracts45413321317467714",
+        "InputFieldName": "%vlocity_namespace%__ParentContractId__c",
+        "InputObjectName": "Contract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetSubContracts",
+        "OmniDataTransformationId": {
+            "Name": "GetSubContracts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetSubContracts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "SubContract",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetSubContractsCustom7934",
+        "InputFieldName": "%vlocity_namespace%__ParentContractId__c",
+        "InputObjectName": "Contract",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetSubContracts",
+        "OmniDataTransformationId": {
+            "Name": "GetSubContracts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetSubContracts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SubContract",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

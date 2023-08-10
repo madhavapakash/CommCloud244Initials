@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Done Action 2",
+    "OmniProcessId": {
+        "Name": "FDO",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "label": "Done",
+        "message": {
+        },
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canCreateFDO"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "Formula 1"
+                    }
+                ]
+            }
+        },
+        "source": "%accountId%",
+        "ssm": false,
+        "type": "SObject",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/Done Action 2"
+}

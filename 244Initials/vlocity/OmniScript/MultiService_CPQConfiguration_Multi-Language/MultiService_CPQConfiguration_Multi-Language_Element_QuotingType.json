@@ -1,0 +1,43 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "QuotingType",
+    "OmniProcessId": {
+        "Name": "MultiServiceCPQConfiguration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectQuotingType",
+        "OmniProcessId": {
+            "Name": "MultiServiceCPQConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/SelectQuotingType",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectQuotingType",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "multiservice-select-cart-strategy",
+        "accessibleInFutureSteps": false,
+        "collapse": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hide": false,
+        "label": "MSQuotingType",
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": null
+    },
+    "Type": "Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/QuotingType"
+}

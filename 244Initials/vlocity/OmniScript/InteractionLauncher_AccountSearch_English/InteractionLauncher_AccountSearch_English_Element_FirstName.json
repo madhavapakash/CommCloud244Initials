@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FirstName",
+    "OmniProcessId": {
+        "Name": "Account Search",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/InteractionLauncher/AccountSearch/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AccountSearch",
+        "OmniProcessId": {
+            "Name": "Account Search",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/InteractionLauncher/AccountSearch/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/InteractionLauncher/AccountSearch/English/AccountSearch",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AccountSearch",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "debounceValue": 0,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "First Name",
+        "mask": "",
+        "maxLength": 255,
+        "minLength": 0,
+        "pattern": "",
+        "ptrnErrText": "",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Text",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/InteractionLauncher/AccountSearch/English/FirstName"
+}

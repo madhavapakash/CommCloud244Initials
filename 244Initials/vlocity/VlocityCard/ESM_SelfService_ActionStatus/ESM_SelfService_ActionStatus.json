@@ -1,0 +1,845 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+        },
+        "type": null,
+        "value": {
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfESM_SelfService_ActionStatus_2_Salesforce",
+        "Id": "0RbRN0000003LHx0AM",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfESM_SelfService_ActionStatus_2_Salesforce",
+        "NamespacePrefix": "%vlocity_namespace%"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-0",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                        {
+                                            "field": "Parent.status",
+                                            "hasMergeField": false,
+                                            "id": "state-new-condition-0",
+                                            "operator": "==",
+                                            "type": "custom",
+                                            "value": "Add"
+                                        }
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "mergeField": "%3Cdiv%3E%3Cspan%20style=%22font-size:%208pt;%22%3EADDED%3C/span%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#C5C5C5",
+                                    "radius": "20px",
+                                    "style": "solid",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "background: rgba(221, 219, 218, 0.12);",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#04844B; background: rgba(221, 219, 218, 0.12);",
+                                "text": {
+                                    "align": "center",
+                                    "color": "#04844B"
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#C5C5C5",
+                                            "radius": "20px",
+                                            "style": "solid",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "background: rgba(221, 219, 218, 0.12);",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#04844B; background: rgba(221, 219, 218, 0.12);",
+                                        "text": {
+                                            "align": "center",
+                                            "color": "#04844B"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "text"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-1",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                        {
+                                            "field": "Parent.status",
+                                            "hasMergeField": false,
+                                            "id": "state-new-condition-7",
+                                            "operator": "==",
+                                            "type": "custom",
+                                            "value": "Disconnect"
+                                        }
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "mergeField": "%3Cdiv%3E%3Cspan%20style=%22font-size:%208pt;%22%3EDELETED%3C/span%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#C5C5C5",
+                                    "radius": "20px",
+                                    "style": "solid",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "background: rgba(221, 219, 218, 0.12);",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#BA0517; background: rgba(221, 219, 218, 0.12);",
+                                "text": {
+                                    "align": "center",
+                                    "color": "#BA0517"
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#C5C5C5",
+                                            "radius": "20px",
+                                            "style": "solid",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "background: rgba(221, 219, 218, 0.12);",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#BA0517; background: rgba(221, 219, 218, 0.12);",
+                                        "text": {
+                                            "align": "center",
+                                            "color": "#BA0517"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "text"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-2",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                        {
+                                            "field": "Parent.status",
+                                            "hasMergeField": false,
+                                            "id": "state-new-condition-14",
+                                            "operator": "==",
+                                            "type": "custom",
+                                            "value": "Change"
+                                        }
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "mergeField": "%3Cdiv%3E%3Cspan%20style=%22font-size:%208pt;%22%3EUPDATED%3C/span%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#C5C5C5",
+                                    "radius": "20px",
+                                    "style": "solid",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "background: rgba(221, 219, 218, 0.12);",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FF8A00; background: rgba(221, 219, 218, 0.12);",
+                                "text": {
+                                    "align": "center",
+                                    "color": "#FF8A00"
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#C5C5C5",
+                                            "radius": "20px",
+                                            "style": "solid",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "background: rgba(221, 219, 218, 0.12);",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FF8A00; background: rgba(221, 219, 218, 0.12);",
+                                        "text": {
+                                            "align": "center",
+                                            "color": "#FF8A00"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "text"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-3",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                        {
+                                            "field": "Parent.status",
+                                            "hasMergeField": false,
+                                            "id": "state-new-condition-23",
+                                            "operator": "==",
+                                            "type": "custom",
+                                            "value": "Suspend"
+                                        }
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "mergeField": "%3Cdiv%3E%3Cspan%20style=%22font-size:%208pt;%22%3ESUSPEND%3C/span%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "#C5C5C5",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#C5C5C5",
+                                    "radius": "20px",
+                                    "style": "solid",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "background-color:#C5C5C5;     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FFFFFF; ",
+                                "text": {
+                                    "align": "center",
+                                    "color": "#FFFFFF"
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "#C5C5C5",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#C5C5C5",
+                                            "radius": "20px",
+                                            "style": "solid",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "background-color:#C5C5C5;     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FFFFFF; ",
+                                        "text": {
+                                            "align": "center",
+                                            "color": "#FFFFFF"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "text"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-4",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                        {
+                                            "field": "Parent.status",
+                                            "hasMergeField": false,
+                                            "id": "state-new-condition-30",
+                                            "operator": "==",
+                                            "type": "custom",
+                                            "value": "Resume"
+                                        }
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "mergeField": "%3Cdiv%3E%3Cspan%20style=%22font-size:%208pt;%22%3ERESUME%3C/span%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "#C5C5C5",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#C5C5C5",
+                                    "radius": "20px",
+                                    "style": "solid",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "background-color:#C5C5C5;     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FFFFFF; ",
+                                "text": {
+                                    "align": "center",
+                                    "color": "#FFFFFF"
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "#C5C5C5",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#C5C5C5",
+                                            "radius": "20px",
+                                            "style": "solid",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "background-color:#C5C5C5;     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FFFFFF; ",
+                                        "text": {
+                                            "align": "center",
+                                            "color": "#FFFFFF"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "text"
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "outputField",
+                            "elementLabel": "Text-5",
+                            "name": "Text",
+                            "property": {
+                                "card": "{card}",
+                                "data-conditions": {
+                                    "group": [
+                                        {
+                                            "field": "Parent.status",
+                                            "hasMergeField": false,
+                                            "id": "state-new-condition-37",
+                                            "operator": "==",
+                                            "type": "custom",
+                                            "value": "Existing"
+                                        }
+                                    ],
+                                    "id": "state-condition-object",
+                                    "isParent": true
+                                },
+                                "mergeField": "%3Cdiv%3E%3Cspan%20style=%22font-size:%208pt;%22%3ENO%20CHANGE%3C/span%3E%3C/div%3E",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "#C5C5C5",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#C5C5C5",
+                                    "radius": "20px",
+                                    "style": "solid",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "1"
+                                },
+                                "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "12",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12 ",
+                                "style": "background-color:#C5C5C5;     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FFFFFF; ",
+                                "text": {
+                                    "align": "center",
+                                    "color": "#FFFFFF"
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "#C5C5C5",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#C5C5C5",
+                                            "radius": "20px",
+                                            "style": "solid",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "1"
+                                        },
+                                        "class": "slds-text-align_center slds-border_top slds-border_right slds-border_bottom slds-border_left ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "12",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_12-of-12 ",
+                                        "style": "background-color:#C5C5C5;     border-top: #C5C5C5 1px solid;border-right: #C5C5C5 1px solid;border-bottom: #C5C5C5 1px solid;border-left: #C5C5C5 1px solid; \n    border-radius:20px;    color:#FFFFFF; ",
+                                        "text": {
+                                            "align": "center",
+                                            "color": "#FFFFFF"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "text"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-card ",
+                "container": {
+                    "class": "slds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                ],
+                "padding": [
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "ESM_SelfService_ActionStatus"
+}

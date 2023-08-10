@@ -1,0 +1,60 @@
+[
+    {
+        "GlobalKey": "UpdateOrderDiscountDateCustom5232",
+        "InputFieldName": "EffectiveEndDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateOrderDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveEndDate__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOrderDiscountDateCustom5569",
+        "InputFieldName": "Order:DeactivatedDiscounts:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "UpdateOrderDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateOrderDiscountDateCustom7177",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateOrderDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

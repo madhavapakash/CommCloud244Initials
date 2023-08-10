@@ -1,0 +1,40 @@
+{
+    "Description": "Optional settings that can be changed to customize document generation",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Set Generation Options",
+    "OmniProcessId": {
+        "Name": "Multiple Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/multiDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "attachFileFormat": "=%GenerationOptions:AttachFileFormat%",
+            "docGenerationMechanism": "=%GenerationOptions:DocGenerationMechanism%",
+            "documentType": "=%GenerationOptions:DownloadFileFormat%",
+            "pdfGenerationSource": "=%GenerationOptions:PdfGenerationSource%",
+            "pdfViewer": "=%GenerationOptions:DocumentViewer%"
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/multiDocxVF/English/Set Generation Options"
+}

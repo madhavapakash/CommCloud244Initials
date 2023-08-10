@@ -1,0 +1,488 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'Deactivate'",
+        "GlobalKey": "GetDiscountsCustom1644",
+        "InputFieldName": "%vlocity_namespace%__Action__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Discount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Approved'",
+        "GlobalKey": "GetDiscountsCustom7820",
+        "InputFieldName": "%vlocity_namespace%__ApprovalStatus__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Discount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Contract'",
+        "GlobalKey": "GetDiscountsCustom922",
+        "InputFieldName": "%vlocity_namespace%__DiscountType__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Discount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteIds:Id",
+        "GlobalKey": "GetDiscountsCustom44",
+        "InputFieldName": "%vlocity_namespace%__QuoteId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteDiscount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Discount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Discount:Id",
+        "GlobalKey": "GetDiscountsCustom3956",
+        "InputFieldName": "%vlocity_namespace%__QuoteDiscountId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteDiscountItem__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Discount:DiscountItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Discount:Id",
+        "GlobalKey": "GetDiscountsCustom499",
+        "InputFieldName": "%vlocity_namespace%__QuoteDiscountId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteDiscountPricing__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Discount:DiscountPricing",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom2716",
+        "InputFieldName": "Discount:%vlocity_namespace%__AppliesToAllItems__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:AppliesToAllItems",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom819",
+        "InputFieldName": "Discount:%vlocity_namespace%__Description__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom2843",
+        "InputFieldName": "Discount:DiscountItem:%vlocity_namespace%__CatalogCategoryId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountItem:CatalogCategoryId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom8105",
+        "InputFieldName": "Discount:DiscountItem:%vlocity_namespace%__Description__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountItem:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom9543",
+        "InputFieldName": "Discount:DiscountItem:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountItem:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom5833",
+        "InputFieldName": "Discount:DiscountItem:%vlocity_namespace%__ProductId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountItem:ProductId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom8855",
+        "InputFieldName": "Discount:DiscountPricing:%vlocity_namespace%__AdjustmentValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountPricing:AdjustmentValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom7063",
+        "InputFieldName": "Discount:DiscountPricing:%vlocity_namespace%__Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountPricing:Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom4366",
+        "InputFieldName": "Discount:DiscountPricing:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountPricing:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom6231",
+        "InputFieldName": "Discount:DiscountPricing:%vlocity_namespace%__PricingVariableId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountPricing:PricingVariableId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom6474",
+        "InputFieldName": "Discount:DiscountPricing:%vlocity_namespace%__TimePlanId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountPricing:TimePlanId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom8919",
+        "InputFieldName": "Discount:DiscountPricing:%vlocity_namespace%__TimePolicyId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:DiscountPricing:TimePolicyId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom5870",
+        "InputFieldName": "Discount:%vlocity_namespace%__EffectiveEndDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:EffectiveEndDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom1593",
+        "InputFieldName": "Discount:%vlocity_namespace%__EffectiveStartDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:EffectiveStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom7543",
+        "InputFieldName": "Discount:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom857",
+        "InputFieldName": "Discount:%vlocity_namespace%__QuoteId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:QuoteId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom9360",
+        "InputFieldName": "Discount:%vlocity_namespace%__ReferenceNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:ReferenceNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetDiscountsCustom7108",
+        "InputFieldName": "Discount:%vlocity_namespace%__DiscountTemplateId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "GetDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Discount:TemplateId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

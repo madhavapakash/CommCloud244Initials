@@ -1,0 +1,61 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CloneSalesQToWCWDiscount",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/CloneSalesQToWC/Discounts/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "CloneSalesQToWCWDiscount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/CloneSalesQToWC/Discounts/Procedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "IFGroupExist",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/CloneSalesQToWC/Discounts/Procedure/IFGroupExist",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "IFGroupExist",
+    "%vlocity_namespace%__ParentElementType__c": "Conditional Block",
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "GetAllRootLineItemsByQuote",
+        "chainOnStep": false,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "CloneSalesQToWC:GroupCartId",
+                "inputParam": "QuoteId"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataRaptorExtractAction4",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "DataRaptor Extract Action",
+    "Name": "GetRootItemIdFromWC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/CloneSalesQToWC/Discounts/Procedure/GetRootItemIdFromWC"
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "locationCount",
+        "%vlocity_namespace%__Formula__c": "COUNTQUERY ( \"SELECT COUNT() FROM \t%vlocity_namespace%__QuoteMember__c WHERE \t%vlocity_namespace%__QuoteId__c = '{0}' and %vlocity_namespace%__MemberType__c ='Location'\", quoteId )",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "ESMExtractQuoteMemberCountCustom7861",
+        "%vlocity_namespace%__OMplusSyncEnabled__c": true,
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 2,
+        "%vlocity_namespace%__FormulaResultPath__c": "subscriberCount",
+        "%vlocity_namespace%__Formula__c": "COUNTQUERY ( \"SELECT COUNT() FROM \t%vlocity_namespace%__QuoteMember__c WHERE \t%vlocity_namespace%__QuoteId__c = '{0}' and %vlocity_namespace%__MemberType__c ='Subscriber'\", quoteId )",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "ESMExtractQuoteMemberCountCustom4824",
+        "%vlocity_namespace%__OMplusSyncEnabled__c": true,
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "locationCount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "locationCount",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "ESMExtractQuoteMemberCountCustom5055",
+        "%vlocity_namespace%__OMplusSyncEnabled__c": true,
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "subscriberCount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "subscriberCount",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "ESMExtractQuoteMemberCountCustom8854",
+        "%vlocity_namespace%__OMplusSyncEnabled__c": true,
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

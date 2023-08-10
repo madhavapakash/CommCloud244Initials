@@ -1,0 +1,107 @@
+{
+    "%vlocity_namespace%__Author__c": "Salesforce",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{\"SiteName\":\"{Session.SiteName}\"}",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        },
+        "state0element0block_element1block_element2block_element6block_element0block_element1_0": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "email",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "ApexRemote",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "email": "{email}"
+                },
+                "remoteClass": "B2BCmexSiteLoginController",
+                "remoteMethod": "forgotPassword",
+                "vlocityAsync": false
+            }
+        },
+        "state0element0block_element1block_element2block_element6block_element0block_element1_1": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{\"emailSent\":true}",
+                "dsDelay": ""
+            }
+        },
+        "state1element0block_element1block_element2block_element5block_element0block_element1_0": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "email",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "ApexRemote",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "username": "{email}"
+                },
+                "jsonMap": "{\"email\":\"{email}\"}",
+                "remoteClass": "B2BCmexSiteAuthenticationController",
+                "remoteMethod": "forgotPassword",
+                "resultVar": "",
+                "vlocityAsync": false
+            }
+        },
+        "state1element0block_element1block_element2block_element5block_element0block_element1_1": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{\"emailSent\":true}",
+                "dsDelay": ""
+            }
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "ESM_SelfService_Authentication.json",
+    "%vlocity_namespace%__Description__c": "This is container flex card for ESM Self Service Authentication",
+    "%vlocity_namespace%__GlobalKey__c": "ESM_SelfService_Authentication/Salesforce/2/1655878869206",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "ESM_SelfService_Authentication_2/Salesforce/1/1655707507149",
+    "%vlocity_namespace%__SampleData__c": "{\"SiteName\":\"{Session.SiteName}\"}",
+    "%vlocity_namespace%__Styles__c": "{\"customStyles\":\"\"}",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 2,
+    "Name": "ESM_SelfService_Authentication",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/ESM_SelfService_Authentication"
+}

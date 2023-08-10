@@ -1,0 +1,40 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateSubContractLineItems",
+    "OmniProcessId": {
+        "Name": "CreateSubContractChildObjects",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/CreateSubContractChildObjects/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateSubContractLineItems",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/CreateSubContractChildObjects/Procedure/CreateSubContractLineItems"
+}

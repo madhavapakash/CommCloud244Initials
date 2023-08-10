@@ -1,0 +1,48 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DataRaptorExtractAction1",
+    "OmniProcessId": {
+        "Name": "Account Search",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/InteractionLauncher/AccountSearch/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "bundle": "AccountSearch",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "AccountSearch:FirstName",
+                "inputParam": "Name"
+            }
+        ],
+        "disOnTplt": false,
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": "DataRaptorExtractAction1",
+        "message": {
+        },
+        "postMessage": "Done",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/InteractionLauncher/AccountSearch/English/DataRaptorExtractAction1"
+}

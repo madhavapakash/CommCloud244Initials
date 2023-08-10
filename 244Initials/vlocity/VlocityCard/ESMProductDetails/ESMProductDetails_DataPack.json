@@ -1,0 +1,35 @@
+{
+    "%vlocity_namespace%__Author__c": "VlocityExpress",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "product": "[{\"id\": \"01t4x000001jEVcAAM\"}]"
+            },
+            "ipMethod": "b2bExpress_tempESMGetProductRelationshipRules",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "ESMProductDetails.json",
+    "%vlocity_namespace%__Description__c": "This flex card displays the Product details for a given product Id",
+    "%vlocity_namespace%__GlobalKey__c": "ESMProductDetails/VlocityExpress/2/1681133735569",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "b2b_ProductDetailsCard/VlocityExpress/1/1644231613582",
+    "%vlocity_namespace%__SampleData__c": "{\"Rules\":[{\"%vlocity_namespace%__Product2Id__r\":{\"attributes\":{\"type\":\"Product2\",\"url\":\"/services/data/v54.0/sobjects/Product2/01t4x000001jEVcAAM\"},\"Name\":\"500 Minutes & 500 Texts 30 Days\",\"Id\":\"01t4x000001jEVcAAM\"},\"%vlocity_namespace%__RelatedProductId__r\":{\"attributes\":{\"type\":\"Product2\",\"url\":\"/services/data/v54.0/sobjects/Product2/01t4x000001jEVfAAM\"},\"%vlocity_namespace%__ObjectTypeId__c\":\"a2k4x000000t0I1AAI\",\"%vlocity_namespace%__ObjectTypeName__c\":\"Postpaid Plan Product Spec\",\"Name\":\"Business Postpaid Essential Plan\",\"ProductCode\":\"VPL_OFFERING_POSTPAID_PLAN_S\",\"Id\":\"01t4x000001jEVfAAM\"},\"%vlocity_namespace%__RelatedProductId__c\":\"01t4x000001jEVfAAM\",\"Name\":\"Test\",\"%vlocity_namespace%__RelationshipType__c\":\"Requires\",\"%vlocity_namespace%__Product2Id__c\":\"01t4x000001jEVcAAM\",\"%vlocity_namespace%__MinQuantity__c\":1,\"%vlocity_namespace%__MaxQuantity__c\":1,\"%vlocity_namespace%__DefaultQuantity__c\":1,\"%vlocity_namespace%__AddMode__c\":\"asSibling\",\"Id\":\"a3O4x000000szUqEAI\"}]}",
+    "%vlocity_namespace%__Styles__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 2,
+    "Name": "ESMProductDetails",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/ESMProductDetails"
+}

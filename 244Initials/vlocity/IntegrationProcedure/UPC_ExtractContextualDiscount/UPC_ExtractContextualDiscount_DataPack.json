@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "UPC_ExtractContextualDiscount_SampleInput.json",
+    "Description": "Extracts Contextual discount of a given product by Id and by catalog category",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": true,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Extract Contextual Discounts",
+    "OmniProcessElement": [
+        "UPC_ExtractContextualDiscount_Element_ContextualDiscountExtractor.json",
+        "UPC_ExtractContextualDiscount_Element_ContextualDiscounts.json"
+    ],
+    "OmniProcessKey": "UPC_ExtractContextualDiscount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "UPC_ExtractContextualDiscount_PropertySetConfig.json",
+    "SubType": "ExtractContextualDiscount",
+    "Type": "UPC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/UPC/ExtractContextualDiscount/Procedure",
+    "WebComponentKey": "a61d3310-85af-75ca-175b-fb3fa5feb067"
+}

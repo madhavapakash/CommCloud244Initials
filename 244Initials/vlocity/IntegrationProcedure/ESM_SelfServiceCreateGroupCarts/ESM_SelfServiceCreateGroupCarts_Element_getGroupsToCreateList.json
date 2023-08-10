@@ -1,0 +1,44 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "ESM_SelfServiceCreateGroupCarts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/SelfServiceCreateGroupCarts/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalInput": {
+            "bulkRequestType": "bulkChange",
+            "memberType": "ServicePoint",
+            "products": "%GetProductsFromAssetIds:response:products%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ESMSelfServiceGetGroupsToCreateList",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataRaptorTransformAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "DataRaptor Transform Action",
+    "Name": "getGroupsToCreateList",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/SelfServiceCreateGroupCarts/Procedure/getGroupsToCreateList"
+}

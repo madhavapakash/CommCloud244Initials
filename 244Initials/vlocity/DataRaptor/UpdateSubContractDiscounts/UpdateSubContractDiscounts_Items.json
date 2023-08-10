@@ -1,0 +1,79 @@
+[
+    {
+        "GlobalKey": "UpdateSubContractDiscounts5852552689285229",
+        "InputFieldName": "SubContractDiscountEndDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateSubContractDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "UpdateSubContractDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateSubContractDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveEndDate__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateSubContractDiscounts5515967355514722",
+        "InputFieldName": "SubContractDiscountStartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateSubContractDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "UpdateSubContractDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateSubContractDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveStartDate__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateSubContractDiscounts8164831154340859",
+        "InputFieldName": "Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateSubContractDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "UpdateSubContractDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateSubContractDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateSubContractDiscounts26257329637832605",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateSubContractDiscounts",
+        "OmniDataTransformationId": {
+            "Name": "UpdateSubContractDiscounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateSubContractDiscounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

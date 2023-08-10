@@ -1,0 +1,33 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{ \n\"ipConfig\": {\n    \"cancelIP\": \"b2bExpress_CancelSubOrder\",\n    \"submitIP\": \"b2bExpress_SubmitSubOrder\",\n    \"deleteIP\": \"b2bExpress_DeleteSubOrder\",\n    \"bulkCancelIP\": \"b2bExpress_BulkCancelSubOrders\",\n    \"bulkSubmitIP\": \"b2bExpress_BulkSubmitSubOrders\",\n    \"bulkDeleteIP\": \"b2bExpress_deleteSubOrders\"\n}\n}",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "ESM_SubOrder_Wrapper.json",
+    "%vlocity_namespace%__Description__c": "Container card for Suborder tab in Default Order record page",
+    "%vlocity_namespace%__GlobalKey__c": "ESM_SubOrder_Wrapper/Vlocity/1/1672812013526",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "{\"ipConfig\":{\"cancelIP\":\"b2bExpress_CancelSubOrder\",\"submitIP\":\"b2bExpress_SubmitSubOrder\",\"deleteIP\":\"b2bExpress_DeleteSubOrder\",\"bulkCancelIP\":\"b2bExpress_BulkCancelSubOrders\",\"bulkSubmitIP\":\"b2bExpress_BulkSubmitSubOrders\",\"bulkDeleteIP\":\"b2bExpress_deleteSubOrders\"}}",
+    "%vlocity_namespace%__Styles__c": "{\"customStyles\":\".custom-disable button.vlocity-btn.slds-button.slds-button_neutral{\\n    background-color: var(--slds-g-color-neutral-base-100,#fff) !important;\\n    border-color: var(--slds-g-color-border-base-4,#c9c9c9) !important;\\n    color: var(--slds-g-color-border-base-4,#c9c9c9) !important;\\n}\\n.custom-disable button.vlocity-btn.slds-button.slds-button_neutral:active, .custom-disable button.vlocity-btn.slds-button.slds-button_neutral:focus{\\n    box-shadow: none !important;\\n}\\n.esm-tooltip-custom-position .bottom-left{\\n    left: -16rem !important;\\n}\\n.esm-tooltip-custom-position .slds-nubbin_bottom-left:after{\\n    left: 16.5rem !important;\\n}\\n.esm-tooltip-custom-position .slds-nubbin_bottom-left:before{\\n    left: 16.5rem !important;\\n}\\n.esm-tooltip-custom-position .tooltipSection{\\n    max-width: 18.5rem !important;\\n}\\n.slds-col .slds-p-around_x-small .esm-header-buttons-block-alignment .slds-size_3-of-12{\\n    padding-left: 115px !important;\\n}\\n.slds-col .slds-p-around_x-small .esm-header-label-alignment .slds-size_9-of-12{\\n    padding-right: 800px !important;\\n}\\n.slds-table tbody tr.slds-is-selected .slds-dropdown a[aria-disabled=true], .slds-table tr.slds-is-selected:hover .slds-dropdown a[aria-disabled=true] {\\n    color: var(--slds-g-color-neutral-base-80, var(--lwc-colorTextButtonDefaultDisabled,rgb(201, 201, 201)));\\n}\\n\"}",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ESM_SubOrder_Wrapper",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/ESM_SubOrder_Wrapper"
+}

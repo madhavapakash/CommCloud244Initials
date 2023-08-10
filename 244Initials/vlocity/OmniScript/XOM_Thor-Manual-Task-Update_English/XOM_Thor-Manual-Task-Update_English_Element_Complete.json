@@ -1,0 +1,108 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Complete",
+    "OmniProcessId": {
+        "Name": "XOM Thor Manual Task",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/Thor Manual Task Update/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Manual Queue Task",
+        "OmniProcessId": {
+            "Name": "XOM Thor Manual Task",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/Thor Manual Task Update/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/Thor Manual Task Update/English/Manual Queue Task",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Manual Queue Task",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "controlWidth": 2,
+        "dataJSON": false,
+        "extraPayload": {
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "itemsKey": "recSet",
+        "label": "Complete",
+        "maxCompareSize": 4,
+        "message": {
+        },
+        "modalConfigurationSetting": {
+            "modalController": "ModalProductCtrl",
+            "modalHTMLTemplateId": "vlcProductConfig.html",
+            "modalSize": "lg"
+        },
+        "modalController": "ModalInstanceCtrl",
+        "modalHTMLTemplateId": "vlcModalContent.html",
+        "namedCredential": "",
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "",
+        "redirectPreviousWidth": 0,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "completeTaskDetails",
+        "responseJSONPath": "",
+        "restMethod": "GET",
+        "restOptions": {
+            "URIEncode": false,
+            "cache": false,
+            "headers": {
+            },
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": null,
+            "withCredentials": true
+        },
+        "restPath": "%uiServicesUrl%/ordermanagement/v1/tasks/%taskId%/complete",
+        "selectMode": "Single",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "DoComplete",
+                        "field": "CompleteFormula"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            true
+        ],
+        "ssm": false,
+        "type": "Web",
+        "validationRequired": null,
+        "wpm": true,
+        "xmlPostTransformBundle": "",
+        "xmlPreTransformBundle": ""
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/Thor Manual Task Update/English/Complete"
+}

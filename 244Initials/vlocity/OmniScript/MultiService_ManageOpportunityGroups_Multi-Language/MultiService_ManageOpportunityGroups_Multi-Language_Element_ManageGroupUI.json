@@ -1,0 +1,43 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ManageGroupUI",
+    "OmniProcessId": {
+        "Name": "ManageOpportunityGroups",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/ManageOpportunityGroups/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ManageGroup",
+        "OmniProcessId": {
+            "Name": "ManageOpportunityGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/ManageOpportunityGroups/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/ManageOpportunityGroups/Multi-Language/ManageGroup",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ManageGroup",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "multiservice-manage-opportunity-groups",
+        "accessibleInFutureSteps": false,
+        "collapse": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hide": false,
+        "label": "MSManageGroup",
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": null
+    },
+    "Type": "Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/ManageOpportunityGroups/Multi-Language/ManageGroupUI"
+}

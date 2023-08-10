@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DateTest",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectInOutDate",
+        "OmniProcessId": {
+            "Name": "MACD Move",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/SelectInOutDate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectInOutDate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataType": "Boolean",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "%MoveOutDate% <= %MoveInDate%",
+        "hide": true,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": null,
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/DateTest"
+}

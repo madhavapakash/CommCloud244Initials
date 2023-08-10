@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GenerateDocumentWordPPT",
+    "OmniProcessId": {
+        "Name": "Single Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Generate Document",
+        "OmniProcessId": {
+            "Name": "Single Doc - DOCX (VF)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxVF/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxVF/English/Generate Document",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Generate Document",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "docgensample-object-document-creation-docx-template",
+        "accessibleInFutureSteps": false,
+        "disOnTplt": false,
+        "documentType": "word",
+        "label": "Proposal",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "ValidateMessage"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Input Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxVF/English/GenerateDocumentWordPPT"
+}

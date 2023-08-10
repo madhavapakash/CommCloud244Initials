@@ -1,0 +1,62 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetDocuments",
+    "OmniProcessId": {
+        "Name": "Generic DocuSign Send E-Signature (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/genericDocuSign/sendEsignature/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "bundle": "GenericDocuSignGetDocuments",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "ObjectId",
+                "inputParam": "objectId"
+            }
+        ],
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "ignoreCache": false,
+        "inProgressMessage": "In Progress",
+        "label": "GetDocumentsToSend",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/genericDocuSign/sendEsignature/English/GetDocuments"
+}

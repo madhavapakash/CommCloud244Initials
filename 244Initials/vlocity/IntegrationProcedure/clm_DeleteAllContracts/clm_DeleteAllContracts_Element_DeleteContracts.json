@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DeleteContracts",
+    "OmniProcessId": {
+        "Name": "CLM - Delete All Contracts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/DeleteAllContracts/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalOutput": {
+        },
+        "allOrNone": false,
+        "chainOnStep": false,
+        "deleteSObject": [
+            {
+                "AllOrNone": false,
+                "Id": "%vlcInputMap:parentContractId%",
+                "Type": "Contract"
+            },
+            {
+                "AllOrNone": false,
+                "Id": "%SubContractsToDelete:SubContract:Id%",
+                "Type": "Contract"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DeleteAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Delete Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/DeleteAllContracts/Procedure/DeleteContracts"
+}

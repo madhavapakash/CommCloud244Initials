@@ -1,0 +1,37 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues",
+    "OmniProcessId": {
+        "Name": "ManageOpportunityGroups",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/ManageOpportunityGroups/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "cartType": "%cartType%",
+            "groupPageSize": 20,
+            "memberPageSize": 20,
+            "ungroupedMemberPageSize": 20
+        },
+        "label": "MSSetValues",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/ManageOpportunityGroups/Multi-Language/SetValues"
+}

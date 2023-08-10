@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ParentIsFrameAgreement",
+    "OmniProcessId": {
+        "Name": "CLM - Async Quote to Contract",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ParentContractDetails",
+        "OmniProcessId": {
+            "Name": "CLM - Async Quote to Contract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/English/ParentContractDetails",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ParentContractDetails",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "checkLabel": "Frame Agreement",
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "defaultValue": false,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "label": "Frame Agreement",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": null
+    },
+    "Type": "Checkbox",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/English/ParentIsFrameAgreement"
+}

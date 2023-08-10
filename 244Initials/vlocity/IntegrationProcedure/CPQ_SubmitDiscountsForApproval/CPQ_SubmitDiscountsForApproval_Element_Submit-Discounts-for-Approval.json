@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Submit Discounts for Approval",
+    "OmniProcessId": {
+        "Name": "SubmitDiscountsForApproval",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitDiscountsForApproval/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "cartId": "%ContextId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.CPQAppHandler",
+        "remoteMethod": "submitDiscountsForApproval",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "messages|1",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitDiscountsForApproval/Procedure/Submit Discounts for Approval"
+}

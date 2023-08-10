@@ -1,0 +1,33 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues",
+    "OmniProcessId": {
+        "Name": "StartValidateAndPriceJob",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/StartValidatePrice/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BatchSize": 1,
+            "GroupRollupIPName": "MultiService_GroupRollups",
+            "ValidateAndPriceIPName": "MultiService_ValidateAndPrice",
+            "ValidateAndUpdateExternalPricingStatusIPName": "MultiService_ValidateAndUpdateExternalPricingStatus"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/StartValidatePrice/Procedure/SetValues"
+}

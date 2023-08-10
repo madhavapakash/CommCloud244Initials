@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DisplayErrors",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PrevalidateMessage",
+        "OmniProcessId": {
+            "Name": "CPQ Cancel Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/PrevalidateMessage",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PrevalidateMessage",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": true,
+        "disOnTplt": false,
+        "label": "Unable to cancel the order",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "PreValidate:records|1:isPONR"
+                    }
+                ]
+            }
+        },
+        "text": "<p>The order has reached Point of No Return. A&nbsp;Follow On order can be created by clicking on Amend button.</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/DisplayErrors"
+}

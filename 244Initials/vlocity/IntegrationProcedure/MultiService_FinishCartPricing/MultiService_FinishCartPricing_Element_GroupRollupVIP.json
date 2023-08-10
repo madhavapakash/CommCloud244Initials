@@ -1,0 +1,43 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GroupRollupVIP",
+    "OmniProcessId": {
+        "Name": "Finish Cart Pricing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/FinishCartPricing/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "MultiService_GroupRollups",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/FinishCartPricing/Procedure/GroupRollupVIP"
+}

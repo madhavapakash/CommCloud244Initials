@@ -1,0 +1,37 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetResponse",
+    "OmniProcessId": {
+        "Name": "CheckoutQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CheckoutQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "createOrderMessage": "%CreateOrder:messages|1:message%",
+            "member": "%CreateOrUpdateOrderMember:%vlocity_namespace%__OrderMember__c_1|1%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "order",
+        "sendJSONPath": "CreateOrder:records|1",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CheckoutQuote/Procedure/SetResponse"
+}

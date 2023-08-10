@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DecomposeAndSubmit",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "orderId": "%ContextId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%canSubmitOrder:canSubmitOrder%=true AND %SetCreateAssetsValue:createAssetsFlow%='OM'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction3",
+        "remoteClass": "XOMDecompositionController",
+        "remoteMethod": "decompose",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/Procedure/DecomposeAndSubmit"
+}

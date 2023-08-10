@@ -1,0 +1,71 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FDO Failed Disconnected Assets",
+    "OmniProcessId": {
+        "Name": "FDO",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "cancelLabel": "Cancel",
+        "cancelMessage": "Are you sure?",
+        "completeLabel": "Complete",
+        "completeMessage": "Are you sure you want to complete the script?",
+        "conditionType": "Hide if False",
+        "instruction": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Cannot Create Order",
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": "Previous",
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "Save for later",
+        "saveMessage": "Are you sure you want to save it for later?",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canCreateFDO"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "Formula 1"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "disconnectedAssets"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/FDO Failed Disconnected Assets"
+}

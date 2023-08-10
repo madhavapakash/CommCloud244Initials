@@ -1,0 +1,45 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateSubContractTerms",
+    "OmniProcessId": {
+        "Name": "CreateSubContractChildObjects",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/CreateSubContractChildObjects/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "isFrameAgreementSub == 'true'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "AddContractTermsForMultipleContracts",
+        "remoteMethod": "addContractTerms",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/CreateSubContractChildObjects/Procedure/CreateSubContractTerms"
+}

@@ -1,0 +1,72 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "BulkDeleteMembers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/BulkDeleteMembers/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "MemberIdsToDeleteInFinish": "%PrepareInputforDeletingMembers:MemberIdsToDeleteInFinish%",
+                "SalesQuoteId": "%SalesQuoteId%",
+                "SalesQuoteName": "%SalesQuoteName%",
+                "UserId": "%SetUserId:UserId%"
+            },
+            "asyncProcessName": "=CONCAT(\"Bulk Delete Members Async Process for \", %SalesQuoteId%)",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 1,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_BulkDeleteAsyncJobExecute",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_BulkDeleteAsyncJobFinish",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Delete for %SalesQuoteId%"
+                }
+            ],
+            "itemsToProcessList": "%PrepareInputforDeletingMembers:inputForAsync%",
+            "referenceId": "%SalesQuoteId%_bulk_delete_members"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(PrepareInputforDeletingMembers:inputForAsync)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Remote Action",
+    "Name": "AsyncJob",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/BulkDeleteMembers/Procedure/AsyncJob"
+}

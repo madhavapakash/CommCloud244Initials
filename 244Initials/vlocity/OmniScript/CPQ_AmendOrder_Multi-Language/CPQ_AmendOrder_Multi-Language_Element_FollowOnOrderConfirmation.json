@@ -1,0 +1,84 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FollowOnOrderConfirmation",
+    "OmniProcessId": {
+        "Name": "CPQ Amend Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AmendOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PreValidateFailure",
+        "OmniProcessId": {
+            "Name": "CPQ Amend Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AmendOrder/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AmendOrder/Multi-Language/PreValidateFailure",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PreValidateFailure",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "horizontalMode": false,
+        "imageCountInRow": 3,
+        "label": "UserPromptCreateFollowOnOrder",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "FollowOnYes",
+                "value": "FollowOnYes"
+            },
+            {
+                "autoAdv": null,
+                "name": "FollowOnNo",
+                "value": "FollowOnNo"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "PreValidate:records|1:isPONR"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AmendOrder/Multi-Language/FollowOnOrderConfirmation"
+}

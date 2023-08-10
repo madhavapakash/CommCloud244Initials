@@ -1,0 +1,74 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "ESMGuidedJourney",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/GuidedConfigureQuote/Multi-Language",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "cancelLabel": null,
+        "cancelMessage": "%vlocity_namespace%__CMEXAreYouSure",
+        "chartLabel": "%vlocity_namespace%__CMEXAddLocations",
+        "completeLabel": null,
+        "completeMessage": null,
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ]
+        },
+        "instruction": "",
+        "instructionKey": null,
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "%vlocity_namespace%__CMEXAddLocations",
+        "message": {
+        },
+        "nextLabel": null,
+        "nextWidth": 1,
+        "previousLabel": null,
+        "previousWidth": 1,
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": null,
+        "saveMessage": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Location",
+                        "field": "CreateQuoteStep:Block2:Block1:quoteJourneyType"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Step",
+    "Name": "LocationStep",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/GuidedConfigureQuote/Multi-Language/LocationStep"
+}

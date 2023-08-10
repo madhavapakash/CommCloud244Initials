@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "CustomerInteractionContact_Creation_SampleInput.json",
+    "Description": "Create Customer Interaction",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateCustomerInteractionContact",
+    "OmniProcessElement": [
+        "CustomerInteractionContact_Creation_Element_CreateInteraction.json",
+        "CustomerInteractionContact_Creation_Element_TransformNewInteraction.json",
+        "CustomerInteractionContact_Creation_Element_Response-Action.json"
+    ],
+    "OmniProcessKey": "CustomerInteractionContact_Creation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CustomerInteractionContact_Creation_PropertySetConfig.json",
+    "SubType": "Creation",
+    "Type": "CustomerInteractionContact",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CustomerInteractionContact/Creation/Procedure",
+    "WebComponentKey": "c0b2365d-bf20-ab79-65f2-205069f371c5"
+}

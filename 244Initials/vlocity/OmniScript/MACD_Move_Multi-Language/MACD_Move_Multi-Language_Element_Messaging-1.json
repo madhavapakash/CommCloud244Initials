@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Messaging 1",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectAssets",
+        "OmniProcessId": {
+            "Name": "MACD Move",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/SelectAssets",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectAssets",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "controlWidth": 12,
+        "hideLabel": true,
+        "label": null,
+        "messages": [
+            {
+                "active": false,
+                "text": "%vlocity_namespace%__ASSETAssetSelected",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "%vlocity_namespace%__ASSETNoAssetSelected",
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "show": null,
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "Formula 2"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/Messaging 1"
+}

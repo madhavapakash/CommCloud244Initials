@@ -1,0 +1,103 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "QuoteEnrichForAll",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/QuoteEnrichForAll/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "QuoteEnrichForAll",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/QuoteEnrichForAll/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "Payment",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/QuoteEnrichForAll/English/Payment",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "Payment",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "clearValue": true,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "dataSource": {
+            "mapItems": {
+                "inputParameters": [
+                    {
+                        "element": "AccountId",
+                        "inputParam": "accId"
+                    },
+                    {
+                        "element": "RecordTypeId",
+                        "inputParam": "recId"
+                    }
+                ],
+                "phase1MapItems": [
+                    {
+                        "DomainObjectFieldAPIName__c": "BillingAccount",
+                        "FilterOperator__c": "=",
+                        "FilterValue__c": "recId",
+                        "InterfaceFieldAPIName__c": "RecordTypeId",
+                        "InterfaceObjectLookupOrder__c": 1,
+                        "InterfaceObjectName__c": "Account"
+                    },
+                    {
+                        "DomainObjectFieldAPIName__c": "BillingAccount",
+                        "FilterOperator__c": "=",
+                        "FilterValue__c": "accId",
+                        "InterfaceFieldAPIName__c": "ParentId",
+                        "InterfaceObjectLookupOrder__c": 1,
+                        "InterfaceObjectName__c": "Account"
+                    }
+                ],
+                "phase2MapItems": [
+                    {
+                        "DomainObjectAPIName__c": "JSON",
+                        "DomainObjectCreationOrder__c": 1,
+                        "DomainObjectFieldAPIName__c": "name",
+                        "InterfaceFieldAPIName__c": "BillingAccount:Id"
+                    },
+                    {
+                        "DomainObjectAPIName__c": "JSON",
+                        "DomainObjectCreationOrder__c": 1,
+                        "DomainObjectFieldAPIName__c": "value",
+                        "InterfaceFieldAPIName__c": "BillingAccount:Name"
+                    }
+                ]
+            },
+            "type": "SObject"
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Search Billing Account",
+        "placeholder": "",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": null,
+        "showInputWidth": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Lookup",
+    "Name": "BillingAccount",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/QuoteEnrichForAll/English/BillingAccount"
+}

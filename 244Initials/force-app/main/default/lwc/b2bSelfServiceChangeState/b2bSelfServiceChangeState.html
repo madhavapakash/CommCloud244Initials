@@ -1,0 +1,20 @@
+<template>
+	<div class="main-container">
+        <div class="heading-info">
+            <p>{label.CMEXSelfServiceStepComponentInfo}</p>
+        </div>
+		<div class="step-container">
+			<template for:each={stepList} for:item="step">
+                <div class="single-step-set" key={step.sequence}>
+                    <div class={step.className}>
+                        <lightning-icon if:true={step.done} class="step completed-step" icon-name="utility:check"
+						title="default style" size="small"></lightning-icon>
+                    </div>
+                    <div if:false={step.isLast} class="step-transition"></div>
+                    <div if:true={step.isCurrentStep} class="step-name current-step">{step.sequence}. {step.name}</div>
+                    <div if:false={step.isCurrentStep} class="step-name">{step.sequence}. {step.name}</div>
+                </div>
+			</template>
+		</div>
+	</div>
+</template>

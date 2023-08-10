@@ -1,0 +1,75 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GenerateMergeDocument",
+    "OmniProcessId": {
+        "Name": "Multiple Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/multiDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": true,
+        "cancelLabel": "Cancel",
+        "cancelMessage": "Are you sure?",
+        "chartLabel": null,
+        "completeLabel": "Complete",
+        "completeMessage": "Are you sure you want to complete the script?",
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Generate Merge Document",
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": "Previous",
+        "previousWidth": 0,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "Save for later",
+        "saveMessage": "Are you sure you want to save it for later?",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": ">=",
+                        "data": "2",
+                        "field": "CountTemplateSelected"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "generatePdfDocument"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/multiDocxVF/English/GenerateMergeDocument"
+}

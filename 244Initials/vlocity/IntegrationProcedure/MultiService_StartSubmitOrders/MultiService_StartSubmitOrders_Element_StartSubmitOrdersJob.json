@@ -1,0 +1,84 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartSubmitOrdersJob",
+    "OmniProcessId": {
+        "Name": "StartSubmitOrders",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/StartSubmitOrders/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "HasFailedGroupMembers": "%HasFailedGroupMembers%",
+            "batchInput": [
+                {
+                    "batchOperationType": "SubmitOrder",
+                    "batchSize": 1,
+                    "className": "%vlocity_namespace%.MSInvokeSubmitOrderBatch",
+                    "classParams": {
+                        "executeVIP": {
+                            "vipName": "MultiService_CheckoutOrder",
+                            "vipParams": {
+                            }
+                        },
+                        "finishVIP": {
+                            "vipName": "",
+                            "vipParams": {
+                            }
+                        },
+                        "startVIP": {
+                            "vipName": "",
+                            "vipParams": {
+                            }
+                        },
+                        "unlockAfterFinish": false
+                    }
+                }
+            ],
+            "cartType": "%cartType%",
+            "contextId": "%contextId%",
+            "groupCartId": "%groupCartId%",
+            "groupId": "%groupId%",
+            "groupIds": "%groupIds%",
+            "notifications": {
+                "appNotification": {
+                    "StartSubmitOrdersNotificationEnabled": true,
+                    "customNotificationTypeName": "CMEbatchJob"
+                }
+            },
+            "parentId": "%OpportunityId%",
+            "startJobVIPName": "%startJobVIPName%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.MultiServiceAppHandler",
+        "remoteMethod": "invokeBatchSerially",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/StartSubmitOrders/Procedure/StartSubmitOrdersJob"
+}

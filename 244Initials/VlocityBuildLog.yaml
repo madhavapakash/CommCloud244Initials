@@ -1,0 +1,38 @@
+Org: AIRTELDEV
+Version: 1.17.3
+Node: v16.16.0
+PackageVersion: '900.505'
+Namespace: vlocity_cmt
+Job: VDX
+Action: Deploy
+ProjectPath: ./vlocity
+TotalTime: 8m 23s
+Count:
+  Success: {}
+  Error: {}
+  Remaining: {}
+Errors:
+  - DocumentTemplate/B2BExpressProposalGroupDetailed -- DataPack >> B2BExpressProposalGroupDetailed -- Error Message -- No match found for field %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c using matching criteria %vlocity_namespace%__GlobalKey__c=e0b83430-ad9c-6063-f1a9-991b0321c3c3.
+  - DocumentTemplate/B2BExpressProposalGroupSummary -- DataPack >> B2BExpressProposalGroupSummary -- Error Message -- No match found for field %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c using matching criteria %vlocity_namespace%__GlobalKey__c=36f77e34-e604-a423-b7f1-db03d31439fb.
+  - DocumentTemplate/B2BExpressProposalMemberDetailed -- DataPack >> B2BExpressProposalMemberDetailed -- Error Message -- No match found for field %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c using matching criteria %vlocity_namespace%__GlobalKey__c=88d79d09-36f5-bb39-f943-480fcc701fbb.
+  - DocumentTemplate/B2BExpressProposalMemberSummary -- DataPack >> B2BExpressProposalMemberSummary -- Error Message -- No match found for field %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c using matching criteria %vlocity_namespace%__GlobalKey__c=9515f020-5832-f941-286a-16b24a71c436.
+  - 'InterfaceImplementation/RuleSetCombinationBatchJobRecord -- DataPack >> RuleSetCombinationBatchJobRecord -- Error Message -- Duplicated results found for %vlocity_namespace%__InterfaceImplementation__c Name=RuleSetCombinationBatchJobRecord - Related Ids: a2f0T0000001ZbQQAU,a2f0T0000001Za5QAE. Delete or fix duplicate records before importing.'
+  - 'LWC Activation Error >> OmniScript/ESM_CreateEnterpriseOrder_Multi-Language -  Missing Custom LWC - No MODULE named markup://c:cfESMEnterpriseOrderStep'
+  - VlocityCard/b2b-express-quote-actions-clm-card -- DataPack >> b2b-express-quote-actions-clm-card -- Error Message -- DataPack contains data that was not deployed due to setting mismatch between source and target orgs. Please run packUpdateSettings in both orgs to ensure the settings are the same.
+  - 'LWC Activation Error >> OmniScript/ESM_GuidedConfigureQuote_Multi-Language -  Missing Custom LWC - No MODULE named markup://c:cfESMGuidedStepDecription'
+  - |
+    SASS Compilation Error VlocityUITemplate/cpq-product-cart-item-child Failed to compile SCSS: vlocity/VlocityUITemplate/cpq-product-cart-item-child/cpq-product-cart-item-child.scss SASS compilation failed, see error message for details: Error: no mixin named productChildLevelLoadMoreStyling
+            on line 58:18 of /stdin
+    >>         @include productChildLevelLoadMoreStyling(); 
+
+       -----------------^
+  - 'LWC Activation Error >> OmniScript/b2bExpress_CreateQuote_Multi-Language -  Missing Custom LWC - No MODULE named markup://c:cfESMGuidedStepDecription'
+Status:
+  Success: {}
+  Error: {}
+  Remaining: {}
+StatusCount:
+  Remaining: 127
+  Success: 2977
+  Error: 10
+id: !<tag:yaml.org,2002:js/undefined> ''

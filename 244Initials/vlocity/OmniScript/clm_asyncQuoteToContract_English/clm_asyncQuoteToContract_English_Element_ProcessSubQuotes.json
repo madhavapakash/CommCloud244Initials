@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProcessSubQuotes",
+    "OmniProcessId": {
+        "Name": "CLM - Async Quote to Contract",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EnterDetails",
+        "OmniProcessId": {
+            "Name": "CLM - Async Quote to Contract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/English/EnterDetails",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EnterDetails",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "checkLabel": "Process Sub Quotes",
+        "conditionType": "Hide if False",
+        "controlWidth": 3,
+        "defaultValue": true,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "label": "Process Sub Quotes",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": null
+    },
+    "Type": "Checkbox",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/English/ProcessSubQuotes"
+}

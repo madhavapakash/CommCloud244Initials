@@ -1,0 +1,31 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "ESMCreateTempGroupCartForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/ESM/CreateTempGroupCartForOrder/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "cacheBlockOutput": {
+            "RecordTypeId": "%GetRecordTypeId:RecordTypeId%"
+        },
+        "cacheKeys": {
+            "RecordType": "%SVRecordType:CartRecordType%"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "ignoreCacheConditionalFormula": "",
+        "label": "CacheBlock1",
+        "refreshCacheConditionalFormula": "",
+        "show": null,
+        "ttlMinutes": 15
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Cache Block",
+    "Name": "RecordTypeCB",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/ESM/CreateTempGroupCartForOrder/Procedure/RecordTypeCB"
+}

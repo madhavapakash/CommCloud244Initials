@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "ActivateFrameAgreementIP",
+    "OmniProcessId": {
+        "Name": "Activate Frame Agreement - Oppty",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ActivateFrameAgreement/Oppty/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "extraPayload": {
+            "Id": "%ContextId%",
+            "activationStatus": "%activationStatus%",
+            "originalContractId": "%originalContractId%",
+            "parentObjectName": "Opportunity"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "integrationProcedureKey": "ActivateFrameAgreement_Oppty",
+        "label": "ActivateFrameAgreementIP",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ActivateFrameAgreement/Oppty/English/ActivateFrameAgreementIP"
+}

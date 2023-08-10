@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GenerateWebTemplate",
+    "OmniProcessId": {
+        "Name": "Single Doc - Web (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebLwc/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Generate Document",
+        "OmniProcessId": {
+            "Name": "Single Doc - Web (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebLwc/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebLwc/English/Generate Document",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Generate Document",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "context-id",
+                "source": "%contextId%"
+            },
+            {
+                "name": "template-id",
+                "source": "%templateId%"
+            },
+            {
+                "name": "document-title",
+                "source": "%documentTitle%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": "Generate Web Template",
+        "lwcName": "%vlocity_namespace%__clmOsWebGenerateDocument",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebLwc/English/GenerateWebTemplate"
+}

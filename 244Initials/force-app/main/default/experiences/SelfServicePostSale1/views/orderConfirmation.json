@@ -1,0 +1,66 @@
+{
+  "appPageId" : "a710f782-1eb9-444e-a03d-554431782dcd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "5fc67552-883f-4135-a6a9-13fc9348cd44",
+  "label" : "Order Confirmation",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "focusedTab" : "Assets"
+      },
+      "componentName" : "c:B2BCmexSelfServiceNavigationBar",
+      "id" : "cb4f363d-fd4b-4db7-b642-b7bad8079ee3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8ebc8221-6f5f-4d45-9a07-2cb2e60ab53b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "currentStep" : 3
+      },
+      "componentName" : "c:b2bSelfServiceChangeState",
+      "id" : "8edc3cc2-836c-4f89-9351-94241c1d2c8d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cfSiteName" : "postsale"
+      },
+      "componentName" : "c:cfESM_SelfService_OrderConfirm_Temp",
+      "id" : "027dfbd4-9fe7-4e49-b04f-d064c7b7de57",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ad59c48c-3274-44bb-885b-9a9f5858892d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e864dd24-54d6-4c67-b5eb-cb16f76edb6b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Order Confirmation"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a9925419-3059-40d0-af49-978f3b3a2278",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6fc3b844-ea0d-4762-ae39-99dc884a8582",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-order-confirmation"
+}

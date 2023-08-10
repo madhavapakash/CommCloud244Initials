@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DeleteContractLineItem",
+    "OmniProcessId": {
+        "Name": "CLM - Delete All Contract Line Items",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/DeleteAllContractLineItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalOutput": {
+        },
+        "allOrNone": false,
+        "chainOnStep": false,
+        "deleteSObject": [
+            {
+                "AllOrNone": false,
+                "Id": "%Id%",
+                "Type": "%vlocity_namespace%__ContractLineItem__c"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DeleteAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Delete Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/DeleteAllContractLineItems/Procedure/DeleteContractLineItem"
+}

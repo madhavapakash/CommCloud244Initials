@@ -1,0 +1,31 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Navigate to Account",
+    "OmniProcessId": {
+        "Name": "CPQ Submit",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/Submit/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "label": "Navigate to Account",
+        "message": {
+        },
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": null,
+        "source": "%AccountId%",
+        "ssm": false,
+        "type": "SObject",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/Submit/English/Navigate to Account"
+}

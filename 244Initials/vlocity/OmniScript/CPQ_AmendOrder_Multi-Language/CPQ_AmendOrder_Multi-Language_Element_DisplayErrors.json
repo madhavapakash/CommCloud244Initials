@@ -1,0 +1,55 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DisplayErrors",
+    "OmniProcessId": {
+        "Name": "CPQ Amend Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AmendOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PreValidateFailure",
+        "OmniProcessId": {
+            "Name": "CPQ Amend Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AmendOrder/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AmendOrder/Multi-Language/PreValidateFailure",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PreValidateFailure",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "label": "OrderFreezeErrorOccurred",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "PreValidate:records|1:isPONR"
+                    }
+                ]
+            }
+        },
+        "text": "<p>%OrderFreezeErrorOccurred%</p>\n<p>%PreValidate:messages|1:message%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AmendOrder/Multi-Language/DisplayErrors"
+}

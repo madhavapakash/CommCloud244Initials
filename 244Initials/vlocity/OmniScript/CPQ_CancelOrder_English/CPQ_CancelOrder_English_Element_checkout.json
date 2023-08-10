@@ -1,0 +1,94 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "checkout",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "ContextId": "%CreateSupplementalOrder:records|1:supplementalOrderId%",
+            "cartId": "%CreateSupplementalOrder:records|1:supplementalOrderId%",
+            "orderId": "%CreateSupplementalOrder:records|1:supplementalOrderId%",
+            "skipCheckoutValidation": true
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": "checkout",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "%vlocity_namespace%.CPQAppHandler",
+        "remoteMethod": "checkout",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "checkout",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "PreValidate:records|1:isPONR"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "FollowOnNo",
+                        "field": "PreValidateFailure:FollowOnOrderConfirmation"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "toastComplete": true,
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/checkout"
+}

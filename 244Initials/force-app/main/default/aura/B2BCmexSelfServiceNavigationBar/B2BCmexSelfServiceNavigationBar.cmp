@@ -1,0 +1,32 @@
+<aura:component extends="forceCommunity:navigationMenuBase" implements="forceCommunity:availableForAllPageTypes" >
+    <aura:attribute name="focusedTab" type="String" default="Home"/>
+    <div style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); display:flex; align-items:center">
+        <div style="display:flex; justify-content: space-between;align-items:center;width: 98%;">
+            <div>
+                <ul class="slds-list_horizontal slds-has-block-links_space header-unorder-list-tag">
+                    <li>
+                        <div class="logoContainer">
+                            <img src="{!$Resource.SelfService_CompanyLogo}"/>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="companyName slds-p-left_small slds-p-right_xx-large slds-p-vertical_x-small">{!$Label.c.CMEXSelfServiceCompanyName}</div>
+                    </li>
+                    <aura:iteration items="{!v.menuItems}" var="item" >
+                        <li>
+                            <div class="{!v.focusedTab == item.label  ? 'tabFocus slds-p-horizontal_xx-large slds-p-vertical_medium clickable-menu' : 'slds-p-horizontal_xx-large slds-p-vertical_medium clickable-menu'}" data-menu-item-id="{!item.id}" onclick="{!c.onClick}">
+                                {!item.label}
+                            </div>
+                        </li>
+                    </aura:iteration>       
+            	</ul>
+            </div>
+            <div class="logOutContainer" onclick="{!c.logOut}">
+                <img src="{!$Resource.SelfService_LogOut_Button}"/>
+                <span style="padding-left:4px">Log Out</span>
+            </div>
+        
+        </div>
+        
+    </div>
+</aura:component>

@@ -1,0 +1,40 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues",
+    "OmniProcessId": {
+        "Name": "MultiServiceCPQConfiguration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "cartStrategy": "multiple",
+            "cartType": "%cartType%",
+            "copyOpportunityGroups": false,
+            "groupPageSize": 20,
+            "memberPageSize": 20,
+            "ungroupedMemberPageSize": 30
+        },
+        "label": "MSSetValues",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/SetValues"
+}

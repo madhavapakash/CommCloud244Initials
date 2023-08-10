@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderSubmissionCodeFormula",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ResultsGroup",
+        "OmniProcessId": {
+            "Name": "CPQ Cancel Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/ResultsGroup",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ResultsGroup",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataType": "Text",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "IF(\nEQUALS(%checkout:messages|1:code%,'SUBMIT-1001'),\n\"Order cancellation request was submitted.\",\nIF(\nEQUALS(%checkout:messages|1:code%,'SUBMIT-1002'),\n\"Cancellation request was submitted. Please check the notifications page for future notifications and actions to take.\",\n\"%checkout:messages|1:message%\"\n)\n)",
+        "hide": true,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": null,
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/OrderSubmissionCodeFormula"
+}

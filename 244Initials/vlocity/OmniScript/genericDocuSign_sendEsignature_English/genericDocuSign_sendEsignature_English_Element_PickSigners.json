@@ -1,0 +1,45 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PickSigners",
+    "OmniProcessId": {
+        "Name": "Generic DocuSign Send E-Signature (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/genericDocuSign/sendEsignature/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectSigners",
+        "OmniProcessId": {
+            "Name": "Generic DocuSign Send E-Signature (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/genericDocuSign/sendEsignature/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/genericDocuSign/sendEsignature/English/SelectSigners",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectSigners",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "generic-data",
+                "source": "%contacts%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": "Pick Signers",
+        "lwcName": "%vlocity_namespace%__clmOsSelectRecipients",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/genericDocuSign/sendEsignature/English/PickSigners"
+}

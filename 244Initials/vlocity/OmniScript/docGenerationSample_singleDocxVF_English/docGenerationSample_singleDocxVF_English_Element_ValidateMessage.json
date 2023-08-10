@@ -1,0 +1,64 @@
+{
+    "Description": "For validation purposes",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ValidateMessage",
+    "OmniProcessId": {
+        "Name": "Single Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Generate Document",
+        "OmniProcessId": {
+            "Name": "Single Doc - DOCX (VF)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxVF/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxVF/English/Generate Document",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Generate Document",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hideLabel": true,
+        "label": null,
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "Required variables not set",
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "show": null,
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "ValidateVariables"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxVF/English/ValidateMessage"
+}

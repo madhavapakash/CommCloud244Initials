@@ -1,0 +1,55 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DisplayAPIError",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PrevalidateMessage",
+        "OmniProcessId": {
+            "Name": "CPQ Cancel Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/PrevalidateMessage",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PrevalidateMessage",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": true,
+        "disOnTplt": false,
+        "label": "Unable to cancel the order",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "PreValidate:records|1:isPONR"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "text": "<p>%PreValidate:messages|1:message%</p>\n<p>%PreValidate:messages|2:message%</p>\n<p>%PreValidate:messages|3:message%</p>\n<p>%PreValidate:messages|4:message%</p>\n<p>%PreValidate:messages|5:message%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/DisplayAPIError"
+}

@@ -1,0 +1,69 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PreValidate",
+    "OmniProcessId": {
+        "Name": "CPQ Amend Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AmendOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "cartId": "%ContextId%"
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "inProgressMessage": null,
+        "label": "OSPrevalidateStepLabel",
+        "message": {
+        },
+        "postMessage": null,
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "%vlocity_namespace%.CPQAppHandler",
+        "remoteMethod": "preValidate",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "PreValidate",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AmendOrder/Multi-Language/PreValidate"
+}

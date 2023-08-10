@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DocumentTemplate",
+    "OmniProcessId": {
+        "Name": "Single Doc - Web (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PickTemplate",
+        "OmniProcessId": {
+            "Name": "Single Doc - Web (VF)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebVF/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebVF/English/PickTemplate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PickTemplate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "docgensample-object-document-template-list",
+        "accessibleInFutureSteps": true,
+        "dataJSON": true,
+        "disOnTplt": false,
+        "itemsKey": "recSet",
+        "label": "Templates",
+        "maxCompareSize": 4,
+        "modalConfigurationSetting": {
+            "modalController": "ModalProductCtrl",
+            "modalHTMLTemplateId": "vlcProductConfig.html",
+            "modalSize": "lg"
+        },
+        "modalController": "ModalInstanceCtrl",
+        "modalHTMLTemplateId": "vlcModalContent.html",
+        "modalSize": "",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "selectMode": "Single",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null
+    },
+    "Type": "Selectable Items",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebVF/English/DocumentTemplate"
+}

@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "UPC_ExtractProductAttributes_SampleInput.json",
+    "Description": "This IP extracts attribute data for a specific product Id",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Product Attribute Extractor",
+    "OmniProcessElement": [
+        "UPC_ExtractProductAttributes_Element_ProductAttributeExtractor.json",
+        "UPC_ExtractProductAttributes_Element_ProductAttributes.json"
+    ],
+    "OmniProcessKey": "UPC_ExtractProductAttributes",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "UPC_ExtractProductAttributes_PropertySetConfig.json",
+    "SubType": "ExtractProductAttributes",
+    "Type": "UPC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/UPC/ExtractProductAttributes/Procedure",
+    "WebComponentKey": "08edc240-e913-2f91-79a1-89f1fa21e6a4"
+}

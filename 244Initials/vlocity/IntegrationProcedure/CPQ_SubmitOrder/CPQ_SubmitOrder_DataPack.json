@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "CPQ_SubmitOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Submit Order",
+    "OmniProcessElement": [
+        "CPQ_SubmitOrder_Element_CreateAssetsFlow-CPQ.json",
+        "CPQ_SubmitOrder_Element_CreateAssetsFlow-OM.json",
+        "CPQ_SubmitOrder_Element_SetCreateAssetsValue.json",
+        "CPQ_SubmitOrder_Element_canSubmitOrder.json",
+        "CPQ_SubmitOrder_Element_CheckoutWithCPQ.json",
+        "CPQ_SubmitOrder_Element_DecomposeAndSubmit.json",
+        "CPQ_SubmitOrder_Element_Set-Response.json"
+    ],
+    "OmniProcessKey": "CPQ_SubmitOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_SubmitOrder_PropertySetConfig.json",
+    "SubType": "SubmitOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/Procedure",
+    "WebComponentKey": "99a5b6fd-07a2-483b-a6f3-832afd96e38f"
+}

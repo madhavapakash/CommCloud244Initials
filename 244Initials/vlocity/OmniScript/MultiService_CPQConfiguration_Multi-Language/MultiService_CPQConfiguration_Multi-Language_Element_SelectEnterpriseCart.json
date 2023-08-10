@@ -1,0 +1,81 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SelectEnterpriseCart",
+    "OmniProcessId": {
+        "Name": "MultiServiceCPQConfiguration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "cancelLabel": "",
+        "cancelMessage": "MSCancelMsg",
+        "chartLabel": "MSEnterpriseCart",
+        "completeLabel": "",
+        "completeMessage": "",
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "errorMessage:default": "",
+        "instruction": "",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "MSEnterpriseCart",
+        "message": {
+        },
+        "nextLabel": "",
+        "nextWidth": 3,
+        "previousLabel": "",
+        "previousWidth": 3,
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "",
+        "saveMessage": "",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "single",
+                        "field": "cartStrategy"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "single",
+                        "field": "selectedCartStrategy"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/SelectEnterpriseCart"
+}

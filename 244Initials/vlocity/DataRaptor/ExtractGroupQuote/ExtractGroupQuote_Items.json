@@ -1,0 +1,160 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Group Cart'",
+        "GlobalKey": "ExtractGroupQuoteCustom4475",
+        "InputFieldName": "Name",
+        "InputObjectName": "RecordType",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteRecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Quote'",
+        "GlobalKey": "ExtractGroupQuoteCustom4306",
+        "InputFieldName": "SobjectType",
+        "InputObjectName": "RecordType",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteRecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "contextId",
+        "GlobalKey": "ExtractGroupQuoteCustom8105",
+        "InputFieldName": "%vlocity_namespace%__ParentQuoteId__c",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteRecordType:Id",
+        "GlobalKey": "ExtractGroupQuoteCustom889",
+        "InputFieldName": "RecordTypeId",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Quote:Id",
+        "GlobalKey": "ExtractGroupQuoteCustom8757",
+        "InputFieldName": "%vlocity_namespace%__QuoteId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteGroup__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteGroup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "ExtractGroupQuoteCustom1996",
+        "InputFieldName": "QuoteGroup:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ExcludeQuoteGroupList:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "ExtractGroupQuoteCustom3214",
+        "InputFieldName": "Quote:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractGroupQuote",
+        "OmniDataTransformationId": {
+            "Name": "ExtractGroupQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractGroupQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

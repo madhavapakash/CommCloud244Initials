@@ -1,0 +1,78 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CompleteFormula",
+    "OmniProcessId": {
+        "Name": "XOM Thor Manual Task",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/Thor Manual Task Update/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Manual Queue Task",
+        "OmniProcessId": {
+            "Name": "XOM Thor Manual Task",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/XOM/Thor Manual Task Update/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/Thor Manual Task Update/English/Manual Queue Task",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Manual Queue Task",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "currencySymbol": "$",
+        "dataType": "Text",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "IF((%showtaskdetails:data:state%=='Pending'||%showtaskdetails:data:state%=='Failed'||%showtaskdetails:data:state%=='Ready'||%showtaskdetails:data:state%=='Fatally Failed'||%showtaskdetails:data:state%=='In Progress'||%showtaskdetails:data:state%=='Draft'||%showtaskdetails:data:state%=='Running')&&((%showtaskdetails:data:parameters:Assigned To Manual Queue Global Key%!=NULL)||(%showtaskdetails:data:parameters:Manual Queue Global Key%!=NULL)), 'DoComplete','DonotComplete')",
+        "extraPayload": {
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureNextLabel": "Continue",
+        "hide": true,
+        "hideGroupSep": false,
+        "inProgressMessage": "In Progress",
+        "inputWidth": 12,
+        "label": "Formula 1",
+        "mask": null,
+        "message": {
+        },
+        "postMessage": "Done",
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "restOptions": {
+            "URIEncode": false,
+            "cache": false,
+            "headers": {
+            },
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": null,
+            "withCredentials": false
+        },
+        "show": null,
+        "showInputWidth": false,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "type": "Apex",
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/XOM/Thor Manual Task Update/English/CompleteFormula"
+}

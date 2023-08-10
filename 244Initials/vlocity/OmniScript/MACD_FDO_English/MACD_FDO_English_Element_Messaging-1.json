@@ -1,0 +1,62 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Messaging 1",
+    "OmniProcessId": {
+        "Name": "FDO",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Request DateTime",
+        "OmniProcessId": {
+            "Name": "FDO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/Request DateTime",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Request DateTime",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "hideLabel": true,
+        "label": "Messaging 1",
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "Can not create the Future Dated Order as Request DateTime is less than now.",
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "show": null,
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "Formula 1"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/Messaging 1"
+}

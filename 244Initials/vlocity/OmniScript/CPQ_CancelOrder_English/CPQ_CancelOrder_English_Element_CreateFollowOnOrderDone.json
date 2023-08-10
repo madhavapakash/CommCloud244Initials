@@ -1,0 +1,56 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateFollowOnOrderDone",
+    "OmniProcessId": {
+        "Name": "CPQ Cancel Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CancelOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": null,
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": null,
+        "message": {
+            "": ""
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "FollowOnYes",
+                        "field": "PreValidateFailure:FollowOnOrderConfirmation"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "ERROR",
+                        "field": "PreValidate:messages|1:severity"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "PreValidate:records|1:isPONR"
+                    }
+                ]
+            }
+        },
+        "source": "/apex/%vlocity_namespace%__HybridCPQ?id=%CreateFollowOnOrder:records|1:followOnOrderId%",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CancelOrder/English/CreateFollowOnOrderDone"
+}

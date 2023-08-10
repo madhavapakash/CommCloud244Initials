@@ -1,0 +1,35 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateFDOFailed",
+    "OmniProcessId": {
+        "Name": "FDO",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "FDO Failed",
+        "OmniProcessId": {
+            "Name": "FDO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/FDO/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/FDO Failed",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "FDO Failed",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "label": "<p>Can not create the Order as there is already an Order with Request Date greater than %RequestDateTime%.</p>",
+        "show": null
+    },
+    "Type": "Headline",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/FDO/English/CreateFDOFailed"
+}

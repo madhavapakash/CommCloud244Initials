@@ -1,0 +1,36 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "CreateSubOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/b2bExpress/CreateSubOrder/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "additionalOutput": {
+            "SubOrderId": "%CreateSubOrder:records|1:id%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction4",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Response Action",
+    "Name": "SubOrderDetails",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/b2bExpress/CreateSubOrder/Procedure/SubOrderDetails"
+}

@@ -1,0 +1,671 @@
+[
+    {
+        "FormulaExpression": "Contract:id",
+        "FormulaResultPath": "Contract:Id",
+        "FormulaSequence": 1,
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem2",
+        "InputFieldName": "isFrameContract",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__IsFrameContract__c",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem7",
+        "InputFieldName": "OrderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__OrderId__c",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem6",
+        "InputFieldName": "Order:originalFrameContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__OriginalContractId__c",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem3",
+        "InputFieldName": "Order:AccountId",
+        "InputObjectName": "json",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem4",
+        "InputFieldName": "Order:FrameContract:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem5",
+        "InputFieldName": "Order:Name",
+        "InputObjectName": "json",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem1",
+        "InputFieldName": "ContractStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem10",
+        "InputFieldName": "Order:FrameContract:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__ContractId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersion__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__ContractId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersion__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustom5874",
+        "InputFieldName": "Order:FrameContract:Version:DocumentTemplateId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__DocumentTemplateId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersion__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem11",
+        "InputFieldName": "VersionStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__Status__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersion__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem8",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersion__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustom6410",
+        "InputFieldName": "Order:FrameContract:Version:Discount:AppliesToAllItems",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "%vlocity_namespace%__AppliesToAllItems__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 2,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "%vlocity_namespace%__ContractVersionId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem14",
+        "InputFieldName": "Order:FrameContract:Version:Discount:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "%vlocity_namespace%__Description__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem17",
+        "InputFieldName": "Order:FrameContract:Version:Discount:TemplateId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "%vlocity_namespace%__DiscountTemplateId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem16",
+        "InputFieldName": "Order:FrameContract:Version:Discount:ReferenceNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "%vlocity_namespace%__ReferenceNumber__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem15",
+        "InputFieldName": "Order:FrameContract:Version:Discount:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem20",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountItem:CatalogCategoryId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "%vlocity_namespace%__CatalogCategoryId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 3,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "%vlocity_namespace%__ContractVersionDiscountId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountItem__c",
+        "TransformValueMappings": "{\"\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem21",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountItem:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "%vlocity_namespace%__Description__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem23",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountItem:ProductId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "%vlocity_namespace%__ProductId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem18",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem22",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountItem:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem26",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountPricing:AdjustmentValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "%vlocity_namespace%__AdjustmentValue__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem27",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountPricing:Amount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "%vlocity_namespace%__Amount__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 3,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "%vlocity_namespace%__ContractVersionDiscountId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem29",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountPricing:PricingVariableId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "%vlocity_namespace%__PricingVariableId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem30",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountPricing:TimePlanId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "%vlocity_namespace%__TimePlanId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem31",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountPricing:TimePolicyId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "%vlocity_namespace%__TimePolicyId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem24",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateContractDiscountsOrderCustoma0Nf4000004AIk9EAGItem28",
+        "InputFieldName": "Order:FrameContract:Version:Discount:DiscountPricing:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "UpdateContractDiscountsOrder",
+        "OmniDataTransformationId": {
+            "Name": "UpdateContractDiscountsOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateContractDiscountsOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "%vlocity_namespace%__ContractVersionDiscountPricing__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

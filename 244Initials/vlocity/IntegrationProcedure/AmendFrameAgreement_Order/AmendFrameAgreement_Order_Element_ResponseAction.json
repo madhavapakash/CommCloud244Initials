@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction",
+    "OmniProcessId": {
+        "Name": "Amend Frame Agreement",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/AmendFrameAgreement/Order/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "OrderId": "%Order_1:Id%",
+            "errorDetails": "%result:errors%",
+            "errorInfo": "%result:errorsAsJson%",
+            "errorOK": "%result%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/AmendFrameAgreement/Order/Procedure/ResponseAction"
+}

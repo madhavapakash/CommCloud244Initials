@@ -1,0 +1,75 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PickTemplate",
+    "OmniProcessId": {
+        "Name": "Single Doc - DOCX (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxLwc/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": true,
+        "cancelLabel": "Cancel",
+        "cancelMessage": "Are you sure?",
+        "chartLabel": null,
+        "completeLabel": "Complete",
+        "completeMessage": "Are you sure you want to complete the script?",
+        "conditionType": "Hide if False",
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "<p>(Allow only one template to be selected)</p>",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Pick a template",
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": "Previous",
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "Save for later",
+        "saveMessage": "Are you sure you want to save it for later?",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "inTest"
+                    },
+                    {
+                        "condition": "=",
+                        "data": null,
+                        "field": "inTest"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxLwc/English/PickTemplate"
+}

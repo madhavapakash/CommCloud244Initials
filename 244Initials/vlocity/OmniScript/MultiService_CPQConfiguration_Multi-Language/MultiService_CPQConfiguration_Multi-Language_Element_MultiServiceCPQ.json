@@ -1,0 +1,43 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "MultiServiceCPQ",
+    "OmniProcessId": {
+        "Name": "MultiServiceCPQConfiguration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CPQ",
+        "OmniProcessId": {
+            "Name": "MultiServiceCPQConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CPQConfiguration/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/CPQ",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CPQ",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "multiservice-display-cart",
+        "accessibleInFutureSteps": false,
+        "collapse": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hide": false,
+        "label": "MSCPQ",
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": null
+    },
+    "Type": "Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CPQConfiguration/Multi-Language/MultiServiceCPQ"
+}

@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SelectedTemplateList",
+    "OmniProcessId": {
+        "Name": "Multiple Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/multiDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "RearrangeSelectedTemplateList",
+        "OmniProcessId": {
+            "Name": "Multiple Doc - DOCX (VF)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/multiDocxVF/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/multiDocxVF/English/RearrangeSelectedTemplateList",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "RearrangeSelectedTemplateList",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "docgensample-object-document-selected-template-list",
+        "accessibleInFutureSteps": false,
+        "disOnTplt": false,
+        "label": "Rearrange Selected Template List",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Microsoft Word .DOCX Template",
+                        "field": "TemplateType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Microsoft Powerpoint .PPTX Template",
+                        "field": "TemplateType"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Input Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/multiDocxVF/English/SelectedTemplateList"
+}

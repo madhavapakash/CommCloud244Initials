@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Formula",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Formula",
+        "%vlocity_namespace%__FormulaOrder__c": 1,
+        "%vlocity_namespace%__FormulaResultPath__c": "count",
+        "%vlocity_namespace%__Formula__c": "COUNTQUERY ( \"SELECT COUNT() FROM QuoteLineItem WHERE QuoteId = '{0}' and %vlocity_namespace%__ParentItemId__c = NULL\" , quoteId )",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "ESMExtractSummaryRootItemsCount8078097132774467",
+        "%vlocity_namespace%__OMplusSyncEnabled__c": true,
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ESMExtractSummaryRootItemsCount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "count",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "count",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "ESMExtractSummaryRootItemsCount7102399317085522",
+        "%vlocity_namespace%__OMplusSyncEnabled__c": true,
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ESMExtractSummaryRootItemsCount",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

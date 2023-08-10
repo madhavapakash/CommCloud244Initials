@@ -1,0 +1,37 @@
+{
+    "Description": "Required variables before proceeding with GenerateDocument",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Set Values",
+    "OmniProcessId": {
+        "Name": "Multiple Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/multiDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "contextId": "=%EnterDetails:ObjectId%",
+            "templateType": "=%TemplateType%",
+            "templates": "=%PickTemplate:DocumentTemplate%"
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/multiDocxVF/English/Set Values"
+}

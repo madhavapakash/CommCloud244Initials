@@ -1,0 +1,92 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LockGroupsAndMembers",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "cartId": "%ContextId%"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "integrationProcedureKey": "CPQ_LockGroupsAndMembers",
+        "label": "Lock Groups and Members",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:hasError"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "checkout:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            null,
+            null
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/LockGroupsAndMembers"
+}

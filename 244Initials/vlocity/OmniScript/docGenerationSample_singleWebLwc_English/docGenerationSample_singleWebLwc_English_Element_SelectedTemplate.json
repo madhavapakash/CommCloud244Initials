@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SelectedTemplate",
+    "OmniProcessId": {
+        "Name": "Single Doc - Web (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebLwc/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PickTemplate",
+        "OmniProcessId": {
+            "Name": "Single Doc - Web (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebLwc/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebLwc/English/PickTemplate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PickTemplate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "template-list",
+                "source": "%DocumentTemplate%"
+            },
+            {
+                "name": "clear-state-on-change",
+                "source": "[\"DocumentGenerationWordLWC\"]"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": "Selected Template",
+        "lwcName": "%vlocity_namespace%__clmSelectableItems",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebLwc/English/SelectedTemplate"
+}

@@ -1,0 +1,45 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RedirectToMultiServiceCPQ",
+    "OmniProcessId": {
+        "Name": "PriceAndValidate",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/PriceAndValidate/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isJobStarted"
+                    }
+                ]
+            }
+        },
+        "source": "apex/MultiServiceCPQRedirect?id=%ContextId%&groupCartId=%groupCartId%&groupId=%groupId%&contextId=%contextId%&parentId=%parentId%&groupCart=true&priceValidate=true&groupPageSize=%groupPageSize%&memberPageSize=%memberPageSize%",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/PriceAndValidate/English/RedirectToMultiServiceCPQ"
+}

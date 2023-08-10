@@ -1,0 +1,64 @@
+{
+    "Description": "For Validation purposes only",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CountTemplateSelectedMsg",
+    "OmniProcessId": {
+        "Name": "Single Doc - Web (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PickTemplate",
+        "OmniProcessId": {
+            "Name": "Single Doc - Web (VF)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleWebVF/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebVF/English/PickTemplate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PickTemplate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hideLabel": true,
+        "label": "Error Message",
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "Please select a document template",
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "show": null,
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": ">",
+                        "data": "0",
+                        "field": "CountTemplateSelected"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleWebVF/English/CountTemplateSelectedMsg"
+}

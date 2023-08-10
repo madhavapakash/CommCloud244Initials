@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PickTemplate",
+    "OmniProcessId": {
+        "Name": "Multiple Doc - DOCX (VF)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/multiDocxVF/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "allowSaveForLater": true,
+        "cancelLabel": "Cancel",
+        "cancelMessage": "Are you sure?",
+        "completeLabel": "Complete",
+        "completeMessage": "Are you sure you want to complete the script?",
+        "conditionType": "Hide if False",
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "<p>Select one or more document templates</p>",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000
+        },
+        "label": "Pick a template",
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": "Previous",
+        "previousWidth": 3,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "Save for later",
+        "saveMessage": "Are you sure you want to save it for later?",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "validationRequired": true
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/multiDocxVF/English/PickTemplate"
+}

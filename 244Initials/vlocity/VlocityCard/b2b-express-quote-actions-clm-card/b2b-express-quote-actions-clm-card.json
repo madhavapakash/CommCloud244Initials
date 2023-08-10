@@ -1,0 +1,65 @@
+{
+    "dataSource": {
+        "type": null
+    },
+    "enableLwc": false,
+    "filter": {
+    },
+    "states": [
+        {
+            "actionCtxId": "['Id']",
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": false,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Generate Proposal Document",
+                        "extraParams": {
+                            "c__ContextId": "['Id']"
+                        },
+                        "hasExtraParams": true,
+                        "id": "generateProposalDocument",
+                        "isCustomAction": true,
+                        "isLwcOS": true,
+                        "layoutType": "lightning",
+                        "omniLang": "",
+                        "omniSubType": "",
+                        "omniType": {
+                            "Id": "a2j3h000000D5XNAA0",
+                            "Language": "English",
+                            "Name": "b2bExpressCLM/generateProposalDocument/English",
+                            "SubType": "generateProposalDocument",
+                            "Type": "b2bExpressCLM",
+                            "isLwc": true
+                        },
+                        "openUrlIn": "New Tab / Window",
+                        "type": "OmniScript",
+                        "vlocityIcon": "icon-v-renew-contract"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "sObjectType": "Quote",
+            "smartAction": {
+            },
+            "templateUrl": "b2b-express-quote-actions-card-template"
+        }
+    ],
+    "title": "Quote CLM Actions"
+}

@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ParentRecordType",
+    "OmniProcessId": {
+        "Name": "CLM - Async Quote to Contract",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ParentContractDetails",
+        "OmniProcessId": {
+            "Name": "CLM - Async Quote to Contract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/clm/asyncQuoteToContract/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/English/ParentContractDetails",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ParentContractDetails",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Parent Contract Record Type",
+        "lwcComponentOverride": "%vlocity_namespace%__clmOsCustomSelect",
+        "optionSource": {
+            "element": "ContractRecordType",
+            "source": "dataSourceDR",
+            "type": "Custom"
+        },
+        "options": [
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/clm/asyncQuoteToContract/English/ParentRecordType"
+}

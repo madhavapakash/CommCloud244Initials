@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Move Date Error",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectInOutDate",
+        "OmniProcessId": {
+            "Name": "MACD Move",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/SelectInOutDate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectInOutDate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hideLabel": true,
+        "label": null,
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "%vlocity_namespace%__MACDDateError",
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "show": null,
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "DateTest"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/Move Date Error"
+}

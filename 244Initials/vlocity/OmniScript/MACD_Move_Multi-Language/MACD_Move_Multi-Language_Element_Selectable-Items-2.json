@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Selectable Items 2",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Review",
+        "OmniProcessId": {
+            "Name": "MACD Move",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/Review",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Review",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "MovedAssetReview.html",
+        "accessibleInFutureSteps": false,
+        "dataJSON": false,
+        "itemsKey": "recSet",
+        "label": null,
+        "maxCompareSize": 4,
+        "modalConfigurationSetting": {
+            "modalController": "ModalProductCtrl",
+            "modalHTMLTemplateId": "vlcProductConfig.html",
+            "modalSize": "lg"
+        },
+        "modalController": "ModalInstanceCtrl",
+        "modalHTMLTemplateId": "vlcModalContent.html",
+        "modalSize": "",
+        "remoteOptions": {
+            "jsonPath": "SelectAssets:SelectAsset",
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "selectMode": "Single",
+        "show": null
+    },
+    "Type": "Selectable Items",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/Selectable Items 2"
+}

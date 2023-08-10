@@ -1,0 +1,33 @@
+{
+    "%vlocity_namespace%__Author__c": "salesforce",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "[{\n\t\"Name\": \"Test Name\",\n\t\"%vlocity_namespace%__BillingAccountId__r\": {\n\t\t\"Name\": \"Test Account Name\"\n\t},\n\"%vlocity_namespace%__ServiceAccountId__r\": {\n\t\t\"Name\": \"Test Service Name\"\n\t},\n\t\"%vlocity_namespace%__OneTimeTotal__c\": \"100\",\n\t\"%vlocity_namespace%__RecurringTotal__c\": \"200\",\n\t\"%vlocity_namespace%__ProvisioningStatus__c\": \"Active\"\n}\n]",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "ESM_SelfService_AssetViewerLineItem.json",
+    "%vlocity_namespace%__Description__c": "Self Service Post Sales Flexcard which shows Asset Line Items in a non grouped/non view by view.",
+    "%vlocity_namespace%__GlobalKey__c": "ESM_SelfService_AssetViewerLineItem/salesforce/13/1660035594695",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleData__c": "[{\"Name\":\"Test Name\",\"%vlocity_namespace%__BillingAccountId__r\":{\"Name\":\"Test Account Name\"},\"%vlocity_namespace%__ServiceAccountId__r\":{\"Name\":\"Test Service Name\"},\"%vlocity_namespace%__OneTimeTotal__c\":\"100\",\"%vlocity_namespace%__RecurringTotal__c\":\"200\",\"%vlocity_namespace%__ProvisioningStatus__c\":\"Active\"}]",
+    "%vlocity_namespace%__Styles__c": "{\"customStyles\":\".cf-vlocity-state:nth-child(odd) .b2b-selfservice-lineitem {\\n    background: #f3f2f2 !important;\\n}\\n\\n.b2b-selfservice-attributes > c-cf-e-s-m_-self-service_-asset-viewer-item-attribute > .slds-wrap {\\n    flex-wrap: nowrap;\\n}\\n\\n.b2b-selfservice-attributes > c-cf-e-s-m_-self-service_-asset-viewer-item-attribute > .slds-wrap {\\n    width: fit-content;\\n}\\n\\n.b2b-selfservice-attribute-tooltip {\\n    display: none;\\n    position: absolute; \\n    top: 5rem;\\n}\\n\\n.b2b-selfservice-attribute-wrapper:hover + .b2b-selfservice-attribute-tooltip {\\n    display: block;\\n}\"}",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 13,
+    "Name": "ESM_SelfService_AssetViewerLineItem",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/ESM_SelfService_AssetViewerLineItem"
+}

@@ -1,0 +1,48 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "MoveInDate",
+    "OmniProcessId": {
+        "Name": "MACD Move",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectInOutDate",
+        "OmniProcessId": {
+            "Name": "MACD Move",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MACD/Move/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/SelectInOutDate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectInOutDate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 5,
+        "dateFormat": "MM-dd-yyyy",
+        "dateType": "string",
+        "disOnTplt": false,
+        "help": false,
+        "hide": false,
+        "inputWidth": 12,
+        "label": "%vlocity_namespace%__MACDMoveInDate",
+        "modelDateFormat": "yyyy-MM-dd",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Date",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MACD/Move/Multi-Language/MoveInDate"
+}

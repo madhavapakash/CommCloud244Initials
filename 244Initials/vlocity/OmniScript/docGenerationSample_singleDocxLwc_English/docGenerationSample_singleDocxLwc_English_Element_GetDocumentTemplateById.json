@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetDocumentTemplateById",
+    "OmniProcessId": {
+        "Name": "Single Doc - DOCX (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/docGenerationSample/singleDocxLwc/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "bundle": "DocGenSampleExtractDocumentTemplateByIdLWC",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "templateId",
+                "inputParam": "templateId"
+            }
+        ],
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "ignoreCache": false,
+        "inProgressMessage": "In Progress",
+        "label": "GetDocumentTemplateById",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "inTest"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/docGenerationSample/singleDocxLwc/English/GetDocumentTemplateById"
+}

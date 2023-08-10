@@ -1,0 +1,72 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Navigate to Account",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": "New",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "Navigate to Account",
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "cpq-redirect-account",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:hasError"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "createAccountDiscounts:messages|1:severity"
+                    },
+                    {
+                        "group": {
+                            "operator": "OR",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "false",
+                                    "field": "canSubmitOrder:isOrderProductPresent"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "INFO",
+                                    "field": "checkout:messages|1:severity"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "source": "%AccountId%",
+        "ssm": false,
+        "type": "Redirect",
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/English/Navigate to Account"
+}

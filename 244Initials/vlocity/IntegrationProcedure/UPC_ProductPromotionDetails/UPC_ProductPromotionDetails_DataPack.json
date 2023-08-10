@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "UPC_ProductPromotionDetails_SampleInput.json",
+    "Description": "This IP pulls the promotions related to a single product",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Extract Product Promotion Details",
+    "OmniProcessElement": [
+        "UPC_ProductPromotionDetails_Element_ProductPromotionExtractor.json",
+        "UPC_ProductPromotionDetails_Element_ProductPromotion.json"
+    ],
+    "OmniProcessKey": "UPC_ProductPromotionDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "UPC_ProductPromotionDetails_PropertySetConfig.json",
+    "SubType": "ProductPromotionDetails",
+    "Type": "UPC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/UPC/ProductPromotionDetails/Procedure",
+    "WebComponentKey": "ad949eb3-a7b9-26a6-b97c-12ff165c889b"
+}

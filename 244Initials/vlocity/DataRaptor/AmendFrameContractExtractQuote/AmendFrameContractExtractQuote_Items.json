@@ -1,0 +1,250 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "FrameContractExtract-QuoteCustom2975",
+        "InputFieldName": "%vlocity_namespace%__IsFrameContract__c",
+        "InputObjectName": "Contract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Id",
+        "GlobalKey": "FrameContractExtract-QuoteCustom5055",
+        "InputFieldName": "Id",
+        "InputObjectName": "Contract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Activated'",
+        "GlobalKey": "FrameContractExtract-QuoteCustom9782",
+        "InputFieldName": "Status",
+        "InputObjectName": "Contract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Contract:%vlocity_namespace%__QuoteId__c",
+        "GlobalKey": "AmendFrameContractExtractQuoteCustom8350",
+        "InputFieldName": "Id",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contract:Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom226",
+        "InputFieldName": "Contract:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom9700",
+        "InputFieldName": "Contract:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:FrameContractId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom6477",
+        "InputFieldName": "Contract:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom438",
+        "InputFieldName": "Contract:%vlocity_namespace%__QuoteId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:Quote:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom688",
+        "InputFieldName": "Contract:Quote:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:Quote:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "AmendFrameContractExtractQuoteCustom9199",
+        "InputFieldName": "Contract:Quote:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:Quote:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom2033",
+        "InputFieldName": "Contract:Quote:OpportunityId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:Quote:OptyId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FrameContractExtract-QuoteCustom7613",
+        "InputFieldName": "Contract:%vlocity_namespace%__IsFrameContract__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "AmendFrameContractExtractQuote",
+        "OmniDataTransformationId": {
+            "Name": "AmendFrameContractExtractQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/AmendFrameContractExtractQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contract:isFrameContract__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

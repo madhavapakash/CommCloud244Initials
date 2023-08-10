@@ -1,0 +1,60 @@
+[
+    {
+        "GlobalKey": "UpdateOpptyDiscountDateCustom9137",
+        "InputFieldName": "EffectiveEndDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateOpptyDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOpptyDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOpptyDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveEndDate__c",
+        "OutputObjectName": "%vlocity_namespace%__OpportunityDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "UpdateOpptyDiscountDateCustom3979",
+        "InputFieldName": "Oppty:DeactivatedDiscounts:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "UpdateOpptyDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOpptyDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOpptyDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OpportunityDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateOpptyDiscountDateCustom7620",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateOpptyDiscountDate",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOpptyDiscountDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOpptyDiscountDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OpportunityDiscount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

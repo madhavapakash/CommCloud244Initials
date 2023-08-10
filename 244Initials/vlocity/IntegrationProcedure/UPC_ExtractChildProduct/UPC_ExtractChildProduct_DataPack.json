@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "UPC_ExtractChildProduct_SampleInput.json",
+    "Description": "This IP extracts immediate child products associated with the product Id passed",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Extract Child Products",
+    "OmniProcessElement": [
+        "UPC_ExtractChildProduct_Element_ChildProductExtractor.json",
+        "UPC_ExtractChildProduct_Element_ChildProducts.json"
+    ],
+    "OmniProcessKey": "UPC_ExtractChildProduct",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "UPC_ExtractChildProduct_PropertySetConfig.json",
+    "SubType": "ExtractChildProduct",
+    "Type": "UPC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/UPC/ExtractChildProduct/Procedure",
+    "WebComponentKey": "9db83720-5643-a263-4af2-d6889987dfa1"
+}

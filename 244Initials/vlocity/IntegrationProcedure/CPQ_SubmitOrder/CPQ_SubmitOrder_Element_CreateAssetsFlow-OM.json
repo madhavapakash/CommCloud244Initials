@@ -1,0 +1,46 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateAssetsFlow-OM",
+    "OmniProcessId": {
+        "Name": "Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/SubmitOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Type__c": {
+            "label": "Set Values",
+            "type": "action"
+        },
+        "actionMessage": "",
+        "chainOnStep": false,
+        "chainableCpuLimit": 2000,
+        "chainableQueriesLimit": 50,
+        "columnsPropertyMap": [
+        ],
+        "disOnTplt": false,
+        "elementValueMap": {
+            "createAssetsFlow": "OM"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "includeAllActionsInResponse": false,
+        "label": "SetValues3",
+        "relationshipFieldsMap": [
+        ],
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "rollbackOnError": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "trackingCustomData": {
+        }
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/SubmitOrder/Procedure/CreateAssetsFlow-OM"
+}

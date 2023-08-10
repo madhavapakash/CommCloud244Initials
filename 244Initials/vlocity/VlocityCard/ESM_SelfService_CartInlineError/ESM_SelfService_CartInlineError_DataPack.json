@@ -1,0 +1,31 @@
+{
+    "%vlocity_namespace%__Author__c": "salesforce",
+    "%vlocity_namespace%__CardType__c": "flex",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[\n    {\n        \"actions\": {\n            \"DETAILS\": {\n                \"client\": {\n                    \"params\": {}\n                },\n                \"remote\": {\n                    \"params\": {\n                        \"cartId\": \"8015g000000c2TlAAI\",\n                        \"id\": \"8025g000000kbd7AAA\",\n                        \"methodName\": \"getCartsItemsById\"\n                    }\n                },\n                \"rest\": {\n                    \"link\": \"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c2TlAAI/items/8025g000000kbd7AAA?cartId=8015g000000c2TlAAI&id=8025g000000kbd7AAA\",\n                    \"method\": \"GET\",\n                    \"params\": {}\n                }\n            }\n        },\n        \"message\": \"Required attribute missing for Broadband.\",\n        \"severity\": \"ERROR\",\n        \"code\": \"204\",\n        \"bundleId\": \"8025g000000kbd7AAA\",\n        \"messageId\": \"8025g000000kbd7AAA|01t5g000000eCQ6AAM\"\n    },\n{\n        \"actions\": {\n            \"DETAILS\": {\n                \"client\": {\n                    \"params\": {}\n                },\n                \"remote\": {\n                    \"params\": {\n                        \"cartId\": \"8015g000000c2TlAAI\",\n                        \"id\": \"8025g000000kbd7AAA\",\n                        \"methodName\": \"getCartsItemsById\"\n                    }\n                },\n                \"rest\": {\n                    \"link\": \"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c2TlAAI/items/8025g000000kbd7AAA?cartId=8015g000000c2TlAAI&id=8025g000000kbd7AAA\",\n                    \"method\": \"GET\",\n                    \"params\": {}\n                }\n            }\n        },\n        \"message\": \"Warning Required attribute missing for Broadband.\",\n        \"severity\": \"WARN\",\n        \"code\": \"204\",\n        \"bundleId\": \"8025g000000kbd7AAA\",\n        \"messageId\": \"8025g000000kbd7AAA|01t5g000000eCQ6AAM|1\"\n    }\n]",
+            "dsDelay": 0,
+            "resultVar": ""
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "ESM_SelfService_CartInlineError.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "ESM_SelfService_CartInlineError/salesforce/1/1659014450630",
+    "%vlocity_namespace%__IsChildCard__c": true,
+    "%vlocity_namespace%__ParentID__c": "cpqCartInlineError/Vlocity/1/1621839326022",
+    "%vlocity_namespace%__SampleData__c": "[{\"actions\":{\"DETAILS\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"cartId\":\"8015g000000c2TlAAI\",\"id\":\"8025g000000kbd7AAA\",\"methodName\":\"getCartsItemsById\"}},\"rest\":{\"link\":\"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c2TlAAI/items/8025g000000kbd7AAA?cartId=8015g000000c2TlAAI&id=8025g000000kbd7AAA\",\"method\":\"GET\",\"params\":{}}}},\"message\":\"Required attribute missing for Broadband.\",\"severity\":\"ERROR\",\"code\":\"204\",\"bundleId\":\"8025g000000kbd7AAA\",\"messageId\":\"8025g000000kbd7AAA|01t5g000000eCQ6AAM\"},{\"actions\":{\"DETAILS\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"cartId\":\"8015g000000c2TlAAI\",\"id\":\"8025g000000kbd7AAA\",\"methodName\":\"getCartsItemsById\"}},\"rest\":{\"link\":\"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c2TlAAI/items/8025g000000kbd7AAA?cartId=8015g000000c2TlAAI&id=8025g000000kbd7AAA\",\"method\":\"GET\",\"params\":{}}}},\"message\":\"Warning Required attribute missing for Broadband.\",\"severity\":\"WARN\",\"code\":\"204\",\"bundleId\":\"8025g000000kbd7AAA\",\"messageId\":\"8025g000000kbd7AAA|01t5g000000eCQ6AAM|1\"}]",
+    "%vlocity_namespace%__Styles__c": "{\"customStyles\":\".cpq_inline-warning__color {\\n    color: #706E6B;\\n}\\n\\n.cpq_inline-error__color {\\n    color: #FFB75D;\\n}\\n\\n.cpq_inline-default__color {\\n    color: #000000;\\n}\"}",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ESM_SelfService_CartInlineError",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/ESM_SelfService_CartInlineError"
+}

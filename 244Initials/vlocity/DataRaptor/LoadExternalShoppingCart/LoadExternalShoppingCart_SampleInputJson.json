@@ -1,0 +1,86 @@
+{
+    "@type": "ShoppingCart",
+    "cartItem": [
+        {
+            "action": "add",
+            "id": "8307",
+            "note": {
+                "author": "Mr Smith",
+                "date": "2017-03-28T00:00",
+                "text": "Please wrap with double bag"
+            },
+            "product": {
+                "name": "Talk Simple 25",
+                "place": [
+                    {
+                        "href": "https://host:port/placeManagement/place/7396",
+                        "id": "7396",
+                        "name": "Main Store",
+                        "role": "default delivery"
+                    }
+                ]
+            },
+            "productOffering": {
+                "href": "https://host:port/productCatalog/productOffering/14277",
+                "id": "14277",
+                "name": "Talk Simple 25"
+            },
+            "quantity": 1,
+            "status": "Active"
+        }
+    ],
+    "cartTotalPrice": [
+        {
+            "description": "Total Recurring Price.",
+            "name": "Monthly Price",
+            "price": {
+                "dutyFreeAmount": {
+                    "money": {
+                        "unit": "EUR",
+                        "value": 29
+                    }
+                },
+                "taxIncludedAmount": {
+                    "money": {
+                        "unit": "EUR",
+                        "value": 31.9
+                    },
+                    "taxRate": 10
+                }
+            },
+            "priceAlteration": [
+                {
+                    "applicationDuration": 3,
+                    "description": "First 3 month get 50% off",
+                    "name": "3 month for half",
+                    "price": {
+                        "percentage": 50
+                    },
+                    "priceCondition": "new customer",
+                    "priceType": "recurring",
+                    "recurringChargePeriod": "monthly",
+                    "validFor": {
+                        "endDateTime": "2017-10-24T00:00",
+                        "startDateTime": "2017-03-26T00:00"
+                    }
+                }
+            ],
+            "priceType": "recurring",
+            "recurringChargePeriod": "monthly"
+        }
+    ],
+    "contactMedium": [
+        {
+            "characteristic": {
+                "emailAddress": "jacksmith@mail.com"
+            },
+            "type": "email"
+        }
+    ],
+    "href": "https://host:port/shoppingCart/v2/shoppingCart/1203",
+    "id": "1203",
+    "validFor": {
+        "endDateTime": "2017-10-24T00:00",
+        "startDateTime": "2017-03-27T00:00"
+    }
+}
