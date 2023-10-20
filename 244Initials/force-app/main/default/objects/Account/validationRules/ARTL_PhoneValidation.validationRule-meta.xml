@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_PhoneValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Phone)),
+    NOT(REGEX(Phone,&quot;[0-9]{10}&quot;))
+    )</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Only Numeric Values (0-9) are allowed in Phone Number. Please remove any alphabets and/or special characters.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_PANValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName == &apos;Business&apos;,
+    NOT(ISBLANK(ARTL_PAN__c)),
+    NOT(REGEX(ARTL_PAN__c, &quot;[A-Za-z]{5}[0-9]{4}[A-z]{1}&quot;))
+    )</errorConditionFormula>
+    <errorDisplayField>ARTL_PAN__c</errorDisplayField>
+    <errorMessage>The PAN structure is as follows: XXXXX1234X: First five characters are letters, next four numerals, last character letter.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,168 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "userId",
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom8964",
+        "InputFieldName": "AssigneeId",
+        "InputObjectName": "PermissionSetAssignment",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PSA",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom6508",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "PermissionSetAssignment",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PSA",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PSA:Id == null , null , IF(PSA:PermissionSet.Name == \"ARTL_DSG\", true, false))",
+        "FormulaResultPath": "PSA:IsDSGUserFormula",
+        "FormulaSequence": 2,
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom9482",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PSA:Id == null , null , IF(PSA:PermissionSet.Name == \"ARTL_KAM_Sales\", true, false))",
+        "FormulaResultPath": "PSA:IsKAMUserFormula",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom5851",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom1533",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "PSA",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom6920",
+        "InputFieldName": "PSA:IsDSGUserFormula",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PSA:IsDSGUser",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom2489",
+        "InputFieldName": "PSA:IsKAMUserFormula",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PSA:IsKAMUser",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "ARTL_DRE_FetchLoggedInUserPermissionsCustom4202",
+        "InputFieldName": "PSA:PermissionSet.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchLoggedInUserPermissions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PSA:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

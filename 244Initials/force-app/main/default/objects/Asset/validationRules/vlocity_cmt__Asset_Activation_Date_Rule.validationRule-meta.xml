@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__Asset_Activation_Date_Rule</fullName>
+    <active>true</active>
+    <description>Validation Rule for Asset Activation Date. It should not be in the past.</description>
+    <errorConditionFormula>OR (vlocity_cmt__ActivationDate__c&lt;TODAY()) &amp;&amp; (NOT( ISCHANGED( vlocity_cmt__CatalogItemReferenceDateTime__c ) ) || ISCHANGED( vlocity_cmt__ActivationDate__c ) ) &amp;&amp; (NOT( ISCHANGED( vlocity_cmt__ProductHierarchyGroupKeyPath__c )) || ISCHANGED( vlocity_cmt__ActivationDate__c ))</errorConditionFormula>
+    <errorDisplayField>vlocity_cmt__ActivationDate__c</errorDisplayField>
+    <errorMessage>Activation Date cannot be in the past.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "ARTL_CreateAccountRecord_SampleInput.json",
+    "Description": "Called in AccountCreation OS for RecordType as Business  default - Anil",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CreateAccountRecord",
+    "OmniProcessElement": [
+        "ARTL_CreateAccountRecord_Element_DR_GetAccountRecordTypeId.json",
+        "ARTL_CreateAccountRecord_Element_DR_GetUserRecord.json",
+        "ARTL_CreateAccountRecord_Element_DR_CreateAccountRecord.json",
+        "ARTL_CreateAccountRecord_Element_RA_AccountRecordId.json"
+    ],
+    "OmniProcessKey": "ARTL_CreateAccountRecord",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CreateAccountRecord_PropertySetConfig.json",
+    "SubType": "CreateAccountRecord",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CreateAccountRecord/Procedure",
+    "WebComponentKey": "6bb18c4f-f30d-70d9-52a9-6216706074f8"
+}

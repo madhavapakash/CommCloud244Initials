@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__OriginatingChannel__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Channel can be used to drive Eligibility/Compatibility/Recommendations/Pricing/Other implementations, e.g. Certain Product Bundles are only available on the Web or Call Center channel but not via the Retail and Dealer channels OR A product may have a different price when sold via the Web than sold via the Retail channel, etc.</description>
+    <externalId>false</externalId>
+    <label>Originating Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Call Center</fullName>
+                <default>false</default>
+                <label>Call Center</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+                <label>Dealer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__Move</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Move</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/56.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/56.0/apex.js&quot;)}
+var namespace_prefix = &apos;&apos;; 
+var gettingnamespace = sforce.connection.query(&quot;SELECT NamespacePrefix FROM ApexClass where Name = &apos;ApplicationUtilities&apos; LIMIT 1&quot;); 
+var getname = gettingnamespace.getArray(&quot;records&quot;); 
+if(getname.length &gt; 0) 
+{ 
+namespace_prefix = getname[0].NamespacePrefix; 
+}
+var accountid =&quot;{!Account.Id}&quot;;
+var assets = sforce.connection.query(&quot;SELECT Id from Asset where &quot;+ namespace_prefix + &quot;__ServiceAccountId__c =&apos;{!Account.Id}&apos;&quot;);
+var assetCount = assets.getArray(&quot;records&quot;);
+var isServiceAccount = true;
+var accountType = sforce.connection.query(&quot;SELECT Name from RecordType where Id =&apos;{!Account.RecordTypeId}&apos; LIMIT 1&quot;);
+isServiceAccount = (accountType.records.Name == &apos;Service&apos;?true:false);
+if((assetCount === null || assetCount === undefined || assetCount.length === 0)){alert(&apos;This account has no assets to be moved.&apos;);}
+else{
+window.open(&apos;/apex/&apos;+namespace_prefix+&apos;__MoveInAccount?id=&apos;+accountid, &apos;_self&apos;);
+}</url>
+</WebLink>

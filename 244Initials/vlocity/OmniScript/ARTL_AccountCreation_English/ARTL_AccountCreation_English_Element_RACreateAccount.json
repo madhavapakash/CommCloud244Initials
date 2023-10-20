@@ -1,0 +1,137 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RACreateAccount",
+    "OmniProcessId": {
+        "Name": "AccountCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": "RACreateAccount",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "ARTL_FindDuplicate",
+        "remoteMethod": "insertAccount",
+        "remoteOptions": {
+            "": "",
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "true",
+                                    "field": "DuplicateFound"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "Yes",
+                                    "field": "Radio"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "panError"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "tanError"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "true",
+                                    "field": "accountCreationAllowed"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "false",
+                                    "field": "DuplicateFound"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "panError"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "tanError"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "true",
+                                    "field": "accountCreationAllowed"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountCreation/English/RACreateAccount"
+}

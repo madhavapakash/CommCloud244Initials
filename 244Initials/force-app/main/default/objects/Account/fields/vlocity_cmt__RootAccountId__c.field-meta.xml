@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__RootAccountId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The ultimate, or root, parent account of this account. Used to enable display of all service and billing accounts for the given root account. The Vlocity TelcoAccount trigger sets the RootAccountId__c based on the ParentId of this record and any parent records. Changes of the account hierarchy at the top level may not trigger changes to the child accounts. Use the Account Hierarchy Maintenance job from the CMT Maintenance tab to fix the RootAccountId__c on these child records.</description>
+    <externalId>false</externalId>
+    <label>Root Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

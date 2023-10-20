@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction_PAN_ErrorMessage",
+    "OmniProcessId": {
+        "Name": "ARTL_PANandTANvalidation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PANandTANvalidation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "AccountId": "%ARTL_DRE_FetchPanAndTanDetails:AccountId%",
+            "AccountName": "%ARTL_DRE_FetchPanAndTanDetails:AccountName%",
+            "panError": true,
+            "panNumber": "%panNumber%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%panNumber%) && LISTSIZE(%ARTL_DRE_FetchPanAndTanDetails%) > 0 && %ARTL_DRE_FetchPanAndTanDetails:AccountId% != Null",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PANandTANvalidation/Procedure/ResponseAction_PAN_ErrorMessage"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_GSTINValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+    NOT(ISBLANK(ARTL_GST_IN__c)),
+    NOT(REGEX(ARTL_GST_IN__c , &quot;[0-9]{2}[A-Za-z]{5}[0-9]{4}[A-z]{1}[0-9]{1}Z[0-9]{1}&quot;))
+    )</errorConditionFormula>
+    <errorDisplayField>ARTL_GST_IN__c</errorDisplayField>
+    <errorMessage>The GST IN structure is as follows: 22AAAAA0000A0Z0: First two characters are numerals(State Code), next five letters, next four numerals, next one letter, next one numeral, Z is fixed and last character letter.</errorMessage>
+</ValidationRule>

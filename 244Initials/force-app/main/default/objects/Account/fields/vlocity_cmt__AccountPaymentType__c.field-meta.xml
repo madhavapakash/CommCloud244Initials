@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__AccountPaymentType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of billing account such as Prepaid or Postpaid. Prepaid accounts pay up front for services and must top them up when balances are gone. Postpaid accounts are billed for services used at the end of each billing cycle. Part of the billing profile of a customer or billing account.</description>
+    <externalId>false</externalId>
+    <label>Account Payment Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prepaid</fullName>
+                <default>false</default>
+                <label>Prepaid</label>
+            </value>
+            <value>
+                <fullName>Postpaid</fullName>
+                <default>false</default>
+                <label>Postpaid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

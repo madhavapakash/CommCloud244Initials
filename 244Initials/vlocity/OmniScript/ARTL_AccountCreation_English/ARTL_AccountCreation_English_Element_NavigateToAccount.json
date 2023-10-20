@@ -1,0 +1,79 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToAccount",
+    "OmniProcessId": {
+        "Name": "AccountCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "NavigateToAccount",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "list",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": true,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "panError"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "tanError"
+                    },
+                    {
+                        "condition": "=",
+                        "data": null,
+                        "field": "AccountId"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "null",
+                        "field": "AccountId"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "accountCreationAllowed"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "accountCreationAllowed"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%AccountId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Account",
+        "targetParams": "",
+        "targetType": "Object",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountCreation/English/NavigateToAccount"
+}

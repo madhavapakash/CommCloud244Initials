@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__MobilePhoneOpportunity</fullName>
+    <active>true</active>
+    <businessProcess>vlocity_cmt__Vlocity Sales Process</businessProcess>
+    <description>Mobile Phone Opportunity</description>
+    <label>MobilePhoneOpportunity</label>
+    <picklistValues>
+        <picklist>Campaign__c</picklist>
+        <values>
+            <fullName>AB Insights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adroit Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airtel B2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAB Initiative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CART Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denave Denave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Inbound-Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erflog Erflog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB CallBox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB Digital Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golf Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILMS ILMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Events %28IE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nxtra Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOC Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security %E2%80%93 DDoS GTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security - iSOC GTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YourStory</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IsOSP__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Y</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Airtel Thanks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airtel Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Month_projection__c</picklist>
+        <values>
+            <fullName>Commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upside</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Category__c</picklist>
+        <values>
+            <fullName>Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciprocal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate Revision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reciprocal_Opportunity__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__AsyncOperation__c</picklist>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__DefaultCurrencyPaymentMode__c</picklist>
+        <values>
+            <fullName>Currency</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Loyalty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__LockedFor__c</picklist>
+        <values>
+            <fullName>Async Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Edit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__OriginatingChannel__c</picklist>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>vlocity_cmt__ValidationStatus__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not yet run</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__EnforceBillingEmailAdressFilled</fullName>
+    <active>true</active>
+    <description>Billing email address needs to be specified if email is selected for bill delivery method.</description>
+    <errorConditionFormula>ISPICKVAL(vlocity_cmt__BillDeliveryMethod__c, &apos;eMail&apos;) &amp;&amp;   (ISNULL(vlocity_cmt__BillingEmailAddress__c)  ||  ISBLANK(vlocity_cmt__BillingEmailAddress__c) )</errorConditionFormula>
+    <errorDisplayField>vlocity_cmt__BillDeliveryMethod__c</errorDisplayField>
+    <errorMessage>Please fill in your billing email address.</errorMessage>
+</ValidationRule>

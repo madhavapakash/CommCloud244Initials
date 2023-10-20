@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__ReliesOnItemId__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Identifies the Asset Reference Id of an asset that this asset depends on. This field can identify only one of the assets on which this asset relies. When multiple dependencies exist, relies on relationships should be tracked in the Asset Relationship object.</description>
+    <externalId>true</externalId>
+    <label>Relies on Item</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

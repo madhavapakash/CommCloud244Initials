@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_TANValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+    RecordType.DeveloperName == &apos;Business&apos;,
+    NOT(ISBLANK(ARTL_TAN__c)),
+    NOT(REGEX(ARTL_TAN__c, &quot;[A-Za-z]{4}[0-9]{5}[A-z]{1}&quot;))       
+   )</errorConditionFormula>
+    <errorDisplayField>ARTL_TAN__c</errorDisplayField>
+    <errorMessage>The TAN structure is as follows: XXXX12345X: First four characters are letters, next five numerals, last character letter.</errorMessage>
+</ValidationRule>

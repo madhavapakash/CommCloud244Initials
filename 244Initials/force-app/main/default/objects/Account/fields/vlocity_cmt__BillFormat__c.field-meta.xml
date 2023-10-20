@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__BillFormat__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specifies if customer recieves a detailed or summary bill</description>
+    <externalId>false</externalId>
+    <label>Bill Format</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Detail</fullName>
+                <default>false</default>
+                <label>Detail</label>
+            </value>
+            <value>
+                <fullName>Summary</fullName>
+                <default>false</default>
+                <label>Summary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

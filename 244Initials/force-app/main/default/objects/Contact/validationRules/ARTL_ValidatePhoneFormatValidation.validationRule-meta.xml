@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_ValidatePhoneFormatValidation</fullName>
+    <active>true</active>
+    <description>This VR is to validate that only only numeric values(0-9) are only allowed in Mobile/Phone Number</description>
+    <errorConditionFormula>OR(
+ AND(
+      NOT(ISBLANK(Phone)),
+      NOT(ISNUMBER(Phone))
+    ),
+ AND(
+      NOT(ISBLANK(MobilePhone)),
+      NOT(ISNUMBER(MobilePhone))
+    )
+)</errorConditionFormula>
+    <errorMessage>Mobile/Phone Number must include only Numeric values. Please remove any alphabets and/or special characters.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_If_Non_DMU_parent_DMU_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   RecordType.DeveloperName == &apos;Business&apos;,
+   NOT(ISBLANK(TEXT(ARTL_Is_DMU__c))),
+   ISPICKVAL(ARTL_Is_DMU__c,&quot;Non DMU&quot;),
+   ISBLANK(ARTL_Parent_DMU__c)
+   )</errorConditionFormula>
+    <errorDisplayField>ARTL_Parent_DMU__c</errorDisplayField>
+    <errorMessage>Account is Non DMU please select a DMU account for this</errorMessage>
+</ValidationRule>

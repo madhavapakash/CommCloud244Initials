@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_LostReasonOtherRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  ARTL_Closed_Lost_Or_Dropped__c  , &quot;Others&quot;),
+ ISBLANK(Lost_Reason_Other__c) 
+
+)</errorConditionFormula>
+    <errorMessage>Lost Reason other is Required.</errorMessage>
+</ValidationRule>

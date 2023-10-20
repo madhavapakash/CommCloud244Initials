@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__EffectiveOpportunityTotal__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>vlocity_cmt__EffectiveOneTimeTotal__c + ( vlocity_cmt__EffectiveRecurringTotal__c * vlocity_cmt__NumberOfContractedMonths__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Effective Opportunity Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

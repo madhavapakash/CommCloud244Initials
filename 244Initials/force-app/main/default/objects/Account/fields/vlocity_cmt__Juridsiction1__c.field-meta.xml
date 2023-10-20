@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__Juridsiction1__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Grouping of accounts by jurisdiction and other attributes-used to drive accounting processes, business logic, and validation rules (i.e. state, company, region, etc.)</description>
+    <externalId>false</externalId>
+    <label>Account Jurisdiction 1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Company</fullName>
+                <default>false</default>
+                <label>Company</label>
+            </value>
+            <value>
+                <fullName>Region</fullName>
+                <default>false</default>
+                <label>Region</label>
+            </value>
+            <value>
+                <fullName>State</fullName>
+                <default>false</default>
+                <label>State</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

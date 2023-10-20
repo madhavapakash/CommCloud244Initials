@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Closed_Lost_Or_Dropped__c</fullName>
+    <externalId>false</externalId>
+    <label>Closed Lost/Close Dropped</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Better Solution of Competition</fullName>
+                <default>false</default>
+                <label>Better Solution of Competition</label>
+            </value>
+            <value>
+                <fullName>Better Pricing of Competitor</fullName>
+                <default>false</default>
+                <label>Better Pricing of Competitor</label>
+            </value>
+            <value>
+                <fullName>Solution not Feasible</fullName>
+                <default>false</default>
+                <label>Solution not Feasible</label>
+            </value>
+            <value>
+                <fullName>Purchase Postponed</fullName>
+                <default>false</default>
+                <label>Purchase Postponed</label>
+            </value>
+            <value>
+                <fullName>No Requirement</fullName>
+                <default>false</default>
+                <label>No Requirement</label>
+            </value>
+            <value>
+                <fullName>Customer not Responding</fullName>
+                <default>false</default>
+                <label>Customer not Responding</label>
+            </value>
+            <value>
+                <fullName>Budget Issue</fullName>
+                <default>false</default>
+                <label>Budget Issue</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Better Solution of Competition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Better Pricing of Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Solution not Feasible</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Closed Dropped</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Dropped</controllingFieldValue>
+            <valueName>Purchase Postponed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Dropped</controllingFieldValue>
+            <valueName>No Requirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Dropped</controllingFieldValue>
+            <valueName>Customer not Responding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Dropped</controllingFieldValue>
+            <valueName>Budget Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

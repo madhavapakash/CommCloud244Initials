@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Interaction_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Interaction Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Important Contacts</fullName>
+                <default>false</default>
+                <label>Important Contacts</label>
+            </value>
+            <value>
+                <fullName>Decision Makers/ CXOs</fullName>
+                <default>false</default>
+                <label>Decision Makers/ CXOs</label>
+            </value>
+            <value>
+                <fullName>Board Level</fullName>
+                <default>false</default>
+                <label>Board Level</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

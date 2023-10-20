@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__CustomerClass__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Grouping of accounts by attributes and used to drive accounting processes, business logic, and validation rules (i.e. residential, SMB, C&amp;I, etc.)</description>
+    <externalId>false</externalId>
+    <label>Customer Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C&amp;I</fullName>
+                <default>false</default>
+                <label>C&amp;I</label>
+            </value>
+            <value>
+                <fullName>Residential</fullName>
+                <default>false</default>
+                <label>Residential</label>
+            </value>
+            <value>
+                <fullName>SMB</fullName>
+                <default>false</default>
+                <label>SMB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

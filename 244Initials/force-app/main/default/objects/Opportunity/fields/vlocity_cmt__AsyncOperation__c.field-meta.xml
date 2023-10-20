@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__AsyncOperation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This stores the asynchronous operation name for which this opportunity is locked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This stores the asynchronous operation name for which this opportunity is locked.</inlineHelpText>
+    <label>Async Operation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Validate</fullName>
+                <default>false</default>
+                <label>Validate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

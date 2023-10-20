@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Vertical_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Vertical Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ARTL_Customer_Segment__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BFI</fullName>
+                <default>false</default>
+                <label>BFI</label>
+            </value>
+            <value>
+                <fullName>BFSI</fullName>
+                <default>false</default>
+                <label>BFSI</label>
+            </value>
+            <value>
+                <fullName>Cables</fullName>
+                <default>false</default>
+                <label>Cables</label>
+            </value>
+            <value>
+                <fullName>Calling Card Operator</fullName>
+                <default>false</default>
+                <label>Calling Card Operator</label>
+            </value>
+            <value>
+                <fullName>Channels</fullName>
+                <default>false</default>
+                <label>Channels</label>
+            </value>
+            <value>
+                <fullName>Digital Media</fullName>
+                <default>false</default>
+                <label>Digital Media</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Govt/PSU</fullName>
+                <default>false</default>
+                <label>Govt/PSU</label>
+            </value>
+            <value>
+                <fullName>Group</fullName>
+                <default>false</default>
+                <label>Group</label>
+            </value>
+            <value>
+                <fullName>IBS</fullName>
+                <default>false</default>
+                <label>IBS</label>
+            </value>
+            <value>
+                <fullName>ISP</fullName>
+                <default>false</default>
+                <label>ISP</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>IT/ITES</fullName>
+                <default>false</default>
+                <label>IT/ITES</label>
+            </value>
+            <value>
+                <fullName>IT &amp; Telecom</fullName>
+                <default>false</default>
+                <label>IT &amp; Telecom</label>
+            </value>
+            <value>
+                <fullName>ITES</fullName>
+                <default>false</default>
+                <label>ITES</label>
+            </value>
+            <value>
+                <fullName>M&amp;D</fullName>
+                <default>false</default>
+                <label>M&amp;D</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Media &amp; Services</fullName>
+                <default>false</default>
+                <label>Media &amp; Services</label>
+            </value>
+            <value>
+                <fullName>Mobile Operator</fullName>
+                <default>false</default>
+                <label>Mobile Operator</label>
+            </value>
+            <value>
+                <fullName>MVNOs</fullName>
+                <default>false</default>
+                <label>MVNOs</label>
+            </value>
+            <value>
+                <fullName>Next Gen</fullName>
+                <default>false</default>
+                <label>Next Gen</label>
+            </value>
+            <value>
+                <fullName>OSP</fullName>
+                <default>false</default>
+                <label>OSP</label>
+            </value>
+            <value>
+                <fullName>OTT/CDN</fullName>
+                <default>false</default>
+                <label>OTT/CDN</label>
+            </value>
+            <value>
+                <fullName>Satellite Operator</fullName>
+                <default>false</default>
+                <label>Satellite Operator</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>SmartCity</fullName>
+                <default>false</default>
+                <label>SmartCity</label>
+            </value>
+            <value>
+                <fullName>Smart City</fullName>
+                <default>false</default>
+                <label>Smart City</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>Wholesale Carrier</fullName>
+                <default>false</default>
+                <label>Wholesale Carrier</label>
+            </value>
+            <value>
+                <fullName>Wholesalers</fullName>
+                <default>false</default>
+                <label>Wholesalers</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <valueName>BFI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <valueName>Digital Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Govt/PSU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>ISP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>IT/ITES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <valueName>IT &amp; Telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>ITES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>M&amp;D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <valueName>Media &amp; Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AB</controllingFieldValue>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Smart City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHANNEL</controllingFieldValue>
+            <valueName>Channels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHANNEL</controllingFieldValue>
+            <valueName>SmartCity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Cables</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Calling Card Operator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Mobile Operator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>MVNOs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Next Gen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>OSP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>OTT/CDN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Satellite Operator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>Wholesalers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>BFSI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>IBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDL</controllingFieldValue>
+            <valueName>Wholesale Carrier</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_PreventUpdateForPreviousYears</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+       NOT(ISNEW()),
+       YEAR(TODAY()) &gt; VALUE(TEXT( Fiscal_Year__c )),
+       $Profile.Name &lt;&gt; &quot;System Administrator&quot;, 
+       NOT($Permission.ARTL_SalesOps) 
+)</errorConditionFormula>
+    <errorMessage>You can not update the BUC records for previous financial year</errorMessage>
+</ValidationRule>

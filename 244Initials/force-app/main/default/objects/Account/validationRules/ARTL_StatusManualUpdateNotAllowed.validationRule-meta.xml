@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_StatusManualUpdateNotAllowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(
+        OR(
+            $Permission.ARTL_AccountStatusUpdateAllowed, 
+            $Profile.Name == &quot;System Administrator&quot;
+        )
+    ), 
+    ISCHANGED( vlocity_cmt__Status__c ) ,
+    ISPICKVAL(PRIORVALUE(vlocity_cmt__Status__c),&apos;Approved&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>vlocity_cmt__Status__c</errorDisplayField>
+    <errorMessage>You don&apos;t have permissions to update the Account Status. Please contact your Administrator for permissions.</errorMessage>
+</ValidationRule>

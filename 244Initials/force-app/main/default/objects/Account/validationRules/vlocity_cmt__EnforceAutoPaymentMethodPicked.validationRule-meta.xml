@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__EnforceAutoPaymentMethodPicked</fullName>
+    <active>true</active>
+    <description>Auto payment method and auto payment amount need to be filled when auto payment is checked.</description>
+    <errorConditionFormula>( vlocity_cmt__EnableAutopay__c )  &amp;&amp;  (ISNULL( vlocity_cmt__AutoPaymentMethodId__c )  ||    ISPICKVAL( vlocity_cmt__AutoPaymentAmount__c , &apos;&apos;)  )</errorConditionFormula>
+    <errorDisplayField>vlocity_cmt__EnableAutopay__c</errorDisplayField>
+    <errorMessage>Please choose the auto payment method and payment amount to enable the auto payment.</errorMessage>
+</ValidationRule>

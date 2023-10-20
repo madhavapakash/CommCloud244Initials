@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vlocity_cmt__ConfigureWithNamespace</fullName>
+    <availability>online</availability>
+    <description>This is a Custom Button on Oppurtunity page to invoke CPQ in Lightning Experience for Managed Package</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>ConfigureWithNamespace</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/vlocity_cmt__hybridcpq?id={!Opportunity.Id}</url>
+</WebLink>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARTL_Customer_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AB</fullName>
+                <default>false</default>
+                <label>AB</label>
+            </value>
+            <value>
+                <fullName>CHANNEL</fullName>
+                <default>false</default>
+                <label>CHANNEL</label>
+            </value>
+            <value>
+                <fullName>Global</fullName>
+                <default>false</default>
+                <label>Global</label>
+            </value>
+            <value>
+                <fullName>NDL</fullName>
+                <default>false</default>
+                <label>NDL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

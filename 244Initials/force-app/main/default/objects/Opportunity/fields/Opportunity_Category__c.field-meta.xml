@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Opportunity Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+                <label>Acquisition</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>GAM</fullName>
+                <default>false</default>
+                <label>GAM</label>
+            </value>
+            <value>
+                <fullName>Reciprocal</fullName>
+                <default>false</default>
+                <label>Reciprocal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
