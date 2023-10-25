@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Loss_Reason__c</fieldNames>
+        <info>&lt;p>&lt;b style="font-family: Arial; font-size: 10pt;">Document your lost opportunities to increase future wins.&lt;/b>&lt;/p>&lt;p>&lt;br>&lt;/p>&lt;ul>&lt;li>&lt;span style="font-family: Arial; font-size: 10pt;">Identify and log lessons learned&lt;/span>&lt;/li>&lt;li>&lt;span style="font-family: Arial; font-size: 10pt;">Schedule follow-ups if needed&lt;/span>&lt;/li>&lt;/ul></info>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <info>&lt;p>&lt;b style="font-family: Arial; font-size: 10pt;">Great work! You&amp;#39;ve closed a successful deal.&lt;/b>&lt;/p></info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

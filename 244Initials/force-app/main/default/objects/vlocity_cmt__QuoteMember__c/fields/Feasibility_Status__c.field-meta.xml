@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Feasibility_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Feasibility Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Feasible</fullName>
+                <default>false</default>
+                <label>Feasible</label>
+            </value>
+            <value>
+                <fullName>Not Feasible</fullName>
+                <default>false</default>
+                <label>Not Feasible</label>
+            </value>
+            <value>
+                <fullName>Feasibility Expired</fullName>
+                <default>false</default>
+                <label>Feasibility Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

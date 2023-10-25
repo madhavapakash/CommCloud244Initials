@@ -1,0 +1,16 @@
+<template>
+    <lightning-quick-action-panel header="Add Products">
+        <template if:true={showLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+        </template>
+        <template if:true={productList}>
+            <lightning-datatable key-field="Id"
+                                 data={productList} 
+                                 columns={columns} 
+                                 onsave={handleSave}
+                                 draft-values={saveDraftValues} 
+                                 show-row-number-column>
+            </lightning-datatable>
+        </template>  
+    </lightning-quick-action-panel>
+</template>
