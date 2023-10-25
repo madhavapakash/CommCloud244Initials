@@ -37,10 +37,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ARTL_OTPGenerator</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ARTL_OmniActionUtil</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -3175,12 +3171,7 @@
         <field>Order.vlocity_cmt__ValidationStatus__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Product2.ARTL_AnnualRecurringCharge__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
+    <!--fieldPermissions>
         <editable>false</editable>
         <field>Product2.ARTL_CustomerNeedByDate__c</field>
         <readable>true</readable>
@@ -3269,7 +3260,7 @@
         <editable>false</editable>
         <field>Product2.ARTL_ThirdPartyName__c</field>
         <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions-->
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.CanUseQuantitySchedule</field>

@@ -29,10 +29,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>ARTL_OTPGenerator</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>vlocity_cmt__APIAccountsV2</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -14016,11 +14012,11 @@
         <field>OpportunityLineItem.ListPrice</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
+    <!--fieldPermissions>
         <editable>true</editable>
         <field>OpportunityLineItem.PM__c</field>
         <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions-->
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.ProductCode</field>
@@ -15186,17 +15182,7 @@
         <field>Order.vlocity_cmt__ValidationStatus__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Product2.ARTL_AnnualRecurringCharge__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Product2.ARTL_CustomerNeedByDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
+    <!--fieldPermissions>
         <editable>false</editable>
         <field>Product2.ARTL_Demo_Duration__c</field>
         <readable>true</readable>
@@ -15280,7 +15266,7 @@
         <editable>false</editable>
         <field>Product2.ARTL_ThirdPartyName__c</field>
         <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions-->
     <fieldPermissions>
         <editable>false</editable>
         <field>Product2.CanUseQuantitySchedule</field>
@@ -26407,10 +26393,6 @@
         <recordType>vlocity_cmt__VlocitySearchWidgetSetup__c.vlocity_cmt__ObjectBased</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
-    <tabSettings>
-        <tab>Bottom_Up_Construct__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
     <tabSettings>
         <tab>standard-Asset</tab>
         <visibility>Visible</visibility>
