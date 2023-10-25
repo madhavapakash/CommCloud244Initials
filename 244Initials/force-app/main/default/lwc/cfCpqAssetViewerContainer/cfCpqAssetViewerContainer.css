@@ -1,0 +1,37 @@
+.select-an-action .slds-modal__container {
+    text-align: left;
+    width: 50%; 
+}
+.select-an-action .slds-modal__content, .slds-p-around_medium {
+    text-align: left;
+}
+.select-an-action .slds-dropdown__list {
+    text-align: left !important;
+}
+.asset-viewer-search  .vlocity_cmt-modal_modal_slds {
+    width: 50%;
+}
+
+.cpq__asset-viewer_header-right {
+    width: auto;
+    margin-left: auto;
+    margin-right: 0;
+}
+.cpq__asset-viewer_viewby-text, .cpq__asset-viewer_search-button,
+.cpq__asset-viewer_action-button {
+    width: auto;
+}
+.cpq__asset-viewer_search {
+    min-width: 20rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .cpq__asset-viewer_header-right, .cpq__asset-viewer_viewby-text,
+    .cpq__asset-viewer_search-button, .cpq__asset-viewer_action-button {
+        width: fit-content;
+    }
+    .cpq__asset-viewer_search {
+        min-width: fit-content;
+    }
+}
