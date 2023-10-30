@@ -1,0 +1,598 @@
+[
+    {
+        "%vlocity_namespace%__AddDate__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
+        "%vlocity_namespace%__AttributeCategoryId__c": "",
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "DDOS Mitigation Bandwidth",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "200",
+        "%vlocity_namespace%__AttributeId__c": {
+            "%vlocity_namespace%__Code__c": "ATT_DDOS_MITIGATION_BANDWIDTH",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/ATT_DDOS_MITIGATION_BANDWIDTH",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
+        },
+        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_DDOS_MITIGATION_BANDWIDTH",
+        "%vlocity_namespace%__AttributeName__c": "DDOS Mitigation Bandwidth",
+        "%vlocity_namespace%__ConfigurationDetail__c": "",
+        "%vlocity_namespace%__ConfigurationStages__c": "",
+        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
+        "%vlocity_namespace%__Data__c": "",
+        "%vlocity_namespace%__DefaultPicklistEntryId__c": "",
+        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
+        "%vlocity_namespace%__DisplaySequence__c": "200",
+        "%vlocity_namespace%__EndStory__c": "",
+        "%vlocity_namespace%__ExcludedPicklistEntryIds__c": "",
+        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
+        "%vlocity_namespace%__FormatMask__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "44f20aca-5562-e62d-d18c-0cec53676802",
+        "%vlocity_namespace%__HasRule__c": false,
+        "%vlocity_namespace%__HelpText__c": "",
+        "%vlocity_namespace%__IsActiveAssignment__c": true,
+        "%vlocity_namespace%__IsConfigurable__c": true,
+        "%vlocity_namespace%__IsDynamic__c": false,
+        "%vlocity_namespace%__IsEncrypted__c": false,
+        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsNotAssetizable__c": false,
+        "%vlocity_namespace%__IsNotTranslatable__c": false,
+        "%vlocity_namespace%__IsOverride__c": false,
+        "%vlocity_namespace%__IsQueryDriven__c": false,
+        "%vlocity_namespace%__IsReadOnly__c": false,
+        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__LookupFilter__c": "",
+        "%vlocity_namespace%__LookupObjectId__c": "",
+        "%vlocity_namespace%__LookupObjectTypeId__c": "",
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "162cfdd7-0d64-d75f-790b-e63fe50be233",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/162cfdd7-0d64-d75f-790b-e63fe50be233",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+        },
+        "%vlocity_namespace%__ObjectType__c": "%vlocity_namespace%__ObjectClass__c",
+        "%vlocity_namespace%__OverrideContext__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "14bcf4f1-1be2-80d6-0883-54e3a54916bc",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Picklist__c/14bcf4f1-1be2-80d6-0883-54e3a54916bc",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__QueryCode__c": "",
+        "%vlocity_namespace%__QueryLabel__c": "",
+        "%vlocity_namespace%__RemoveDate__c": "",
+        "%vlocity_namespace%__RemovedFlag__c": false,
+        "%vlocity_namespace%__RuleData__c": "",
+        "%vlocity_namespace%__RuleMessage__c": "",
+        "%vlocity_namespace%__StartStory__c": "",
+        "%vlocity_namespace%__StyleClass__c": "",
+        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
+        "%vlocity_namespace%__ValidValuesData__c": [
+            {
+                "displayText": "1 Mbps",
+                "id": "13bcd057-d27c-e167-a12c-a494ba86260e",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 10,
+                "value": "1Mbps"
+            },
+            {
+                "displayText": "2 Mbps",
+                "id": "5adcc222-27b4-9c8d-efaf-2709bb9c4a72",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 15,
+                "value": "2Mbps"
+            },
+            {
+                "displayText": "4 Mbps",
+                "id": "c9627ce7-ddbe-0aba-28c3-ae5e7e3a7e77",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 20,
+                "value": "4Mbps"
+            },
+            {
+                "displayText": "5 Mbps",
+                "id": "f7eefe23-ce91-0c9f-dea5-52e004d139f4",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 25,
+                "value": "5Mbps"
+            },
+            {
+                "displayText": "6 Mbps",
+                "id": "fb8bda9d-53c8-1400-274c-5991403d9097",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 30,
+                "value": "6Mbps"
+            },
+            {
+                "displayText": "8 Mbps",
+                "id": "7fd58679-7c92-4615-c638-29e70942bdda",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 35,
+                "value": "8Mbps"
+            },
+            {
+                "displayText": "10 Mbps",
+                "id": "4e5395fe-e02b-592f-241f-131c61524bee",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 40,
+                "value": "10Mbps"
+            },
+            {
+                "displayText": "12 Mbps",
+                "id": "508037fa-6ebc-532d-48f9-d99daab6f8c9",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 45,
+                "value": "12Mbps"
+            },
+            {
+                "displayText": "15 Mbps",
+                "id": "e243d88b-5e92-02cc-4ab6-a491dc2fa2b6",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 50,
+                "value": "15Mbps"
+            },
+            {
+                "displayText": "20 Mbps",
+                "id": "24f4cbdd-c0cb-ad09-736b-76d7c701a206",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 55,
+                "value": "20Mbps"
+            },
+            {
+                "displayText": "25 Mbps",
+                "id": "4595e05a-9fb9-cc69-3e5f-3df376d6c3a8",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 60,
+                "value": "25Mbps"
+            },
+            {
+                "displayText": "30 Mbps",
+                "id": "22ba4b4c-f844-7c69-090d-7d657b8f3962",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 65,
+                "value": "30Mbps"
+            },
+            {
+                "displayText": "35 Mbps",
+                "id": "3b357fe5-2ddf-51c3-c517-0082f514f66d",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 70,
+                "value": "35Mbps"
+            },
+            {
+                "displayText": "40 Mbps",
+                "id": "70008a02-d2b1-e9c1-9a80-37382a9e0822",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 75,
+                "value": "40Mbps"
+            },
+            {
+                "displayText": "45 Mbps",
+                "id": "c75f38bd-e5a9-ba57-d553-70a7f0ad26f9",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 80,
+                "value": "45Mbps"
+            },
+            {
+                "displayText": "50 Mbps",
+                "id": "08a9760c-b6dd-a5e1-42d1-0dff4613eaca",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 85,
+                "value": "50Mbps"
+            },
+            {
+                "displayText": "60 Mbps",
+                "id": "0a863e4f-7e2c-0d5b-b3f7-7a23f87203d3",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 90,
+                "value": "60Mbps"
+            },
+            {
+                "displayText": "70 Mbps",
+                "id": "636ffde7-3d84-b28b-26c4-76d01b7173a9",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 95,
+                "value": "70Mbps"
+            },
+            {
+                "displayText": "80 Mbps",
+                "id": "2487ae89-edcf-caac-8c06-8086222bafd6",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 100,
+                "value": "80Mbps"
+            },
+            {
+                "displayText": "90 Mbps",
+                "id": "a8f25416-aa19-406d-fa84-f369993ba153",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 105,
+                "value": "90Mbps"
+            },
+            {
+                "displayText": "100 Mbps",
+                "id": "2f0be30d-cfaf-d986-f6cf-9e595e640a7a",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 110,
+                "value": "100Mbps"
+            },
+            {
+                "displayText": "150 Mbps",
+                "id": "fad2877a-a4f7-18d1-545f-8af03f6afb8b",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 115,
+                "value": "150Mbps"
+            },
+            {
+                "displayText": "155 Mbps",
+                "id": "13ee7cf1-0cf3-79fc-4560-618b46e53605",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 120,
+                "value": "155Mbps"
+            },
+            {
+                "displayText": "200 Mbps",
+                "id": "5debb7ad-fab3-1e36-5453-36129d79d214",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 125,
+                "value": "200Mbps"
+            },
+            {
+                "displayText": "250 Mbps",
+                "id": "1ca78545-c71b-123f-8c96-fa3f06454a5a",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 130,
+                "value": "250Mbps"
+            },
+            {
+                "displayText": "300 Mbps",
+                "id": "edba3205-0d99-9b1e-4a75-33845cc4b8e7",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 135,
+                "value": "300Mbps"
+            },
+            {
+                "displayText": "350 Mbps",
+                "id": "e5d6e58e-b4ca-1f67-c5d2-4bf53873f564",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 140,
+                "value": "350Mbps"
+            },
+            {
+                "displayText": "400 Mbps",
+                "id": "50ea77a4-d9eb-c680-718f-fd19ea111fd4",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 145,
+                "value": "400Mbps"
+            },
+            {
+                "displayText": "450 Mbps",
+                "id": "0c443659-6922-b75b-0d9b-552abb760a21",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 150,
+                "value": "450Mbps"
+            },
+            {
+                "displayText": "500 Mbps",
+                "id": "9536c514-a5a1-42fa-0991-95df1c392298",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 155,
+                "value": "500Mbps"
+            },
+            {
+                "displayText": "600 Mbps",
+                "id": "1f5cad10-9962-28a6-10d4-0760124faf15",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 160,
+                "value": "600Mbps"
+            },
+            {
+                "displayText": "700 Mbps",
+                "id": "15f74c83-723e-2c2d-d1b7-25283dfa9a28",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 165,
+                "value": "700Mbps"
+            },
+            {
+                "displayText": "800 Mbps",
+                "id": "6f1219c4-7235-4f7c-3e13-671da246eb39",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 170,
+                "value": "800Mbps"
+            },
+            {
+                "displayText": "900 Mbps",
+                "id": "028b3fba-6ffc-c4e3-68fd-63999c10ae77",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 175,
+                "value": "900Mbps"
+            },
+            {
+                "displayText": "1 Gbps",
+                "id": "2b091a61-c3f6-e341-11fd-9cbec2280434",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 180,
+                "value": "1Gbps"
+            },
+            {
+                "displayText": "2 Gbps",
+                "id": "a3653ee2-fdf0-46af-a7e0-66f25ca32237",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 185,
+                "value": "2Gbps"
+            },
+            {
+                "displayText": "3 Gbps",
+                "id": "38c4a758-9cc9-cebe-fb3c-017fcea4d049",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 190,
+                "value": "3Gbps"
+            },
+            {
+                "displayText": "5 Gbps",
+                "id": "79fa4786-6795-7eb1-4deb-0e9fe74933e1",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 195,
+                "value": "5Gbps"
+            },
+            {
+                "displayText": "10 Gbps",
+                "id": "29b97c57-129b-4072-4f1f-a3c028675764",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 200,
+                "value": "10Gbps"
+            },
+            {
+                "displayText": "15 Gbps",
+                "id": "fc34818e-0da1-e63e-791c-d36fcff0ce16",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 205,
+                "value": "15Gbps"
+            },
+            {
+                "displayText": "20 Gbps",
+                "id": "9ca98541-31e7-ced6-d4ac-296acace54da",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 210,
+                "value": "20Gbps"
+            },
+            {
+                "displayText": "25 Gbps",
+                "id": "f9ba4ca1-9887-a87e-301a-a5e4a91f02b6",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 215,
+                "value": "25Gbps"
+            },
+            {
+                "displayText": "30 Gbps",
+                "id": "6a3083f0-8a96-a8b5-b34d-9ce10fe1f070",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 220,
+                "value": "30Gbps"
+            },
+            {
+                "displayText": "40 Gbps",
+                "id": "54c35430-c066-b9cb-bdeb-f8ba0e2555b9",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 225,
+                "value": "40Gbps"
+            },
+            {
+                "displayText": "45 Gbps",
+                "id": "0918ee41-65f9-9521-207c-65332a0d37e3",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 230,
+                "value": "45Gbps"
+            },
+            {
+                "displayText": "50 Gbps",
+                "id": "ad7a4ebc-de54-77c5-371a-3f8db4b8a194",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 235,
+                "value": "50Gbps"
+            },
+            {
+                "displayText": "60 Gbps",
+                "id": "63c115ac-7057-66b1-7c5e-40d2bbedb7d5",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 240,
+                "value": "60Gbps"
+            },
+            {
+                "displayText": "70 Gbps",
+                "id": "7b665437-e70c-255e-78a0-50aa54f4f266",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 245,
+                "value": "70Gbps"
+            },
+            {
+                "displayText": "70 Gbps",
+                "id": "21bf73cd-9853-f7c3-5ff1-15c8b9715b65",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 250,
+                "value": "70Gbps"
+            },
+            {
+                "displayText": "80 Gbps",
+                "id": "70c7bffd-fbd7-e5f6-5862-77768e017c36",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 255,
+                "value": "80Gbps"
+            },
+            {
+                "displayText": "90 Gbps",
+                "id": "aa167a48-deea-91a1-f897-d148b3a91766",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 260,
+                "value": "90Gbps"
+            },
+            {
+                "displayText": "100 Gbps",
+                "id": "2493cca2-3399-a97d-c3ae-d9465dfa8f4b",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 265,
+                "value": "100Gbps"
+            }
+        ],
+        "%vlocity_namespace%__ValueDataType__c": "Picklist",
+        "%vlocity_namespace%__ValueDecoder__c": "",
+        "%vlocity_namespace%__ValueDescription__c": "",
+        "%vlocity_namespace%__Value__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NEW_ATT_DDOS_MITIGATION_BANDWIDTH",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/44f20aca-5562-e62d-d18c-0cec53676802"
+    },
+    {
+        "%vlocity_namespace%__AddDate__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
+        "%vlocity_namespace%__AttributeCategoryId__c": "",
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "DDoS Type",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "190",
+        "%vlocity_namespace%__AttributeId__c": {
+            "%vlocity_namespace%__Code__c": "ATT_DDOS_TYPE",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/ATT_DDOS_TYPE",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
+        },
+        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_DDOS_TYPE",
+        "%vlocity_namespace%__AttributeName__c": "DDoS Type",
+        "%vlocity_namespace%__ConfigurationDetail__c": "",
+        "%vlocity_namespace%__ConfigurationStages__c": "",
+        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
+        "%vlocity_namespace%__Data__c": "",
+        "%vlocity_namespace%__DefaultPicklistEntryId__c": "",
+        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
+        "%vlocity_namespace%__DisplaySequence__c": "200",
+        "%vlocity_namespace%__EndStory__c": "",
+        "%vlocity_namespace%__ExcludedPicklistEntryIds__c": "",
+        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
+        "%vlocity_namespace%__FormatMask__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "f9cf4aba-1305-7329-fbd8-9f961298cb51",
+        "%vlocity_namespace%__HasRule__c": false,
+        "%vlocity_namespace%__HelpText__c": "",
+        "%vlocity_namespace%__IsActiveAssignment__c": true,
+        "%vlocity_namespace%__IsConfigurable__c": true,
+        "%vlocity_namespace%__IsDynamic__c": false,
+        "%vlocity_namespace%__IsEncrypted__c": false,
+        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsNotAssetizable__c": false,
+        "%vlocity_namespace%__IsNotTranslatable__c": false,
+        "%vlocity_namespace%__IsOverride__c": false,
+        "%vlocity_namespace%__IsQueryDriven__c": false,
+        "%vlocity_namespace%__IsReadOnly__c": false,
+        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__LookupFilter__c": "",
+        "%vlocity_namespace%__LookupObjectId__c": "",
+        "%vlocity_namespace%__LookupObjectTypeId__c": "",
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "162cfdd7-0d64-d75f-790b-e63fe50be233",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/162cfdd7-0d64-d75f-790b-e63fe50be233",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+        },
+        "%vlocity_namespace%__ObjectType__c": "%vlocity_namespace%__ObjectClass__c",
+        "%vlocity_namespace%__OverrideContext__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7a9ebf09-ee46-12c4-b27e-cacc69fdcddc",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Picklist__c/7a9ebf09-ee46-12c4-b27e-cacc69fdcddc",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__QueryCode__c": "",
+        "%vlocity_namespace%__QueryLabel__c": "",
+        "%vlocity_namespace%__RemoveDate__c": "",
+        "%vlocity_namespace%__RemovedFlag__c": false,
+        "%vlocity_namespace%__RuleData__c": "",
+        "%vlocity_namespace%__RuleMessage__c": "",
+        "%vlocity_namespace%__StartStory__c": "",
+        "%vlocity_namespace%__StyleClass__c": "",
+        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
+        "%vlocity_namespace%__ValidValuesData__c": [
+            {
+                "displayText": "Radware",
+                "id": "f45bc53a-a8a9-22bd-224c-2040fb56987b",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 10,
+                "value": "Radware"
+            },
+            {
+                "displayText": "Arbor",
+                "id": "99af8f01-43d4-dafa-30ff-8089edb906df",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 20,
+                "value": "Arbor"
+            },
+            {
+                "displayText": "No",
+                "id": "c4a63178-9531-e04a-e94a-8d442d13d8dd",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 30,
+                "value": "No"
+            }
+        ],
+        "%vlocity_namespace%__ValueDataType__c": "Picklist",
+        "%vlocity_namespace%__ValueDecoder__c": "",
+        "%vlocity_namespace%__ValueDescription__c": "",
+        "%vlocity_namespace%__Value__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "NEW_ATT_DDOS_TYPE",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/f9cf4aba-1305-7329-fbd8-9f961298cb51"
+    }
+]

@@ -1,0 +1,460 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "SD-WAN-Controller_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_CONTROLLER_TYPE": null,
+        "ATT_NUMBER_OF_SITES": null,
+        "ATT_SDWAN_CONTRACT_TERM": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_SD_WIDE_AREA_NETWORK_DETAILS",
+                "Name": "SD Wide Area Network Details",
+                "displaySequence": 800,
+                "id": "a0Z72000000xoqQEAQ",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abG5AAI",
+                            "cloneable": true,
+                            "code": "ATT_NUMBER_OF_SITES",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 5,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Number of Sites",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG4AAI",
+                            "cloneable": true,
+                            "code": "ATT_CONTROLLER_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Controller Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "486e4398-29af-68cc-15fd-de03eb9ef107",
+                                    "label": "Fortinet SD-WAN",
+                                    "name": "486e4398-29af-68cc-15fd-de03eb9ef107",
+                                    "readonly": false,
+                                    "value": "Fortinet SD-WAN"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "c29e383a-1c7c-c75a-0475-e278d2baae84",
+                                    "label": "CISCO SD-WAN",
+                                    "name": "c29e383a-1c7c-c75a-0475-e278d2baae84",
+                                    "readonly": false,
+                                    "value": "CISCO SD-WAN"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "e149d4ef-1f6c-8f00-5d02-f4325c337bac",
+                                    "label": "Airtel SD-WAN",
+                                    "name": "e149d4ef-1f6c-8f00-5d02-f4325c337bac",
+                                    "readonly": false,
+                                    "value": "Airtel SD-WAN"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG6AAI",
+                            "cloneable": true,
+                            "code": "ATT_SDWAN_CONTRACT_TERM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 15,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Contract Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "01664f1d-ea55-8458-b7d6-6184862a632c",
+                                    "label": "9",
+                                    "name": "01664f1d-ea55-8458-b7d6-6184862a632c",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 210,
+                                    "id": "0a2dca1c-8bf1-c66e-fe67-f08952738fc2",
+                                    "label": "120",
+                                    "name": "0a2dca1c-8bf1-c66e-fe67-f08952738fc2",
+                                    "readonly": false,
+                                    "value": "120"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 170,
+                                    "id": "190a210f-f8c5-fd70-d1e3-b9f725a40467",
+                                    "label": "72",
+                                    "name": "190a210f-f8c5-fd70-d1e3-b9f725a40467",
+                                    "readonly": false,
+                                    "value": "72"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "1a70a1fe-8250-d4fe-eed2-5fcd354d6ec2",
+                                    "label": "6",
+                                    "name": "1a70a1fe-8250-d4fe-eed2-5fcd354d6ec2",
+                                    "readonly": false,
+                                    "value": "6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "282acebd-49ab-e9fd-6c17-54021ae3059b",
+                                    "label": "11",
+                                    "name": "282acebd-49ab-e9fd-6c17-54021ae3059b",
+                                    "readonly": false,
+                                    "value": "11"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "3f063b9b-efe6-b0ae-4374-34f90d40be0d",
+                                    "label": "2",
+                                    "name": "3f063b9b-efe6-b0ae-4374-34f90d40be0d",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "50226409-cf37-8561-0290-fc03bb0464e8",
+                                    "label": "1",
+                                    "name": "50226409-cf37-8561-0290-fc03bb0464e8",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "59613982-ba58-f22e-07f1-41eb2371ec78",
+                                    "label": "3",
+                                    "name": "59613982-ba58-f22e-07f1-41eb2371ec78",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 150,
+                                    "id": "5e3d5978-cfc0-01a9-48fa-aa2a701950e5",
+                                    "label": "48",
+                                    "name": "5e3d5978-cfc0-01a9-48fa-aa2a701950e5",
+                                    "readonly": false,
+                                    "value": "48"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 190,
+                                    "id": "5fa341d0-d92f-5052-c239-24bc71d8eed9",
+                                    "label": "96",
+                                    "name": "5fa341d0-d92f-5052-c239-24bc71d8eed9",
+                                    "readonly": false,
+                                    "value": "96"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 180,
+                                    "id": "671d10e2-bec9-f0ff-671a-feb944da3964",
+                                    "label": "84",
+                                    "name": "671d10e2-bec9-f0ff-671a-feb944da3964",
+                                    "readonly": false,
+                                    "value": "84"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 140,
+                                    "id": "6bf7572f-0a41-d6d4-0416-dd440a55a35e",
+                                    "label": "36",
+                                    "name": "6bf7572f-0a41-d6d4-0416-dd440a55a35e",
+                                    "readonly": false,
+                                    "value": "36"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "7b4146ba-4be8-e3c5-347b-8edcf4506d83",
+                                    "label": "8",
+                                    "name": "7b4146ba-4be8-e3c5-347b-8edcf4506d83",
+                                    "readonly": false,
+                                    "value": "8"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "7e0dc174-b6ed-14e0-ba9a-e4bf001ce01d",
+                                    "label": "10",
+                                    "name": "7e0dc174-b6ed-14e0-ba9a-e4bf001ce01d",
+                                    "readonly": false,
+                                    "value": "10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "9370796b-827a-d6bb-3b4e-96ceaa065741",
+                                    "label": "7",
+                                    "name": "9370796b-827a-d6bb-3b4e-96ceaa065741",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "a492b5fd-09a7-d01b-d894-6828f6410ee4",
+                                    "label": "5",
+                                    "name": "a492b5fd-09a7-d01b-d894-6828f6410ee4",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 130,
+                                    "id": "b9366e98-0096-80dd-0fea-cac6657cf107",
+                                    "label": "24",
+                                    "name": "b9366e98-0096-80dd-0fea-cac6657cf107",
+                                    "readonly": false,
+                                    "value": "24"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "bb49cd30-585d-a32e-296e-676e498083c9",
+                                    "label": "4",
+                                    "name": "bb49cd30-585d-a32e-296e-676e498083c9",
+                                    "readonly": false,
+                                    "value": "4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 200,
+                                    "id": "c5aceebd-366a-4a4d-fc1a-db1662acc80f",
+                                    "label": "108",
+                                    "name": "c5aceebd-366a-4a4d-fc1a-db1662acc80f",
+                                    "readonly": false,
+                                    "value": "108"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 120,
+                                    "id": "cf8ff207-bb8e-2026-fddb-64540bca7a05",
+                                    "label": "12",
+                                    "name": "cf8ff207-bb8e-2026-fddb-64540bca7a05",
+                                    "readonly": false,
+                                    "value": "12"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 160,
+                                    "id": "f17b39e4-c4cb-3361-eb6a-55f8247f8b2c",
+                                    "label": "60",
+                                    "name": "f17b39e4-c4cb-3361-eb6a-55f8247f8b2c",
+                                    "readonly": false,
+                                    "value": "60"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DecompositionRelationship__c": "SD-WAN-Controller_DecompositionRelationships.json",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-28",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-27T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "ff6230d7-0035-52c9-9f07-30052ae798f7",
+    "%vlocity_namespace%__GlobalKey__c": "e435e712-660f-d0ed-826e-d0d7ee6862e9",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "SD-WAN-Controller_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "d8f81766-2a84-ca5a-0abf-522a3fb06b4f",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/d8f81766-2a84-ca5a-0abf-522a3fb06b4f",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "SD-WAN Controller Product Object Type",
+    "%vlocity_namespace%__OrchestrationScenario__c": "SD-WAN-Controller_OrchestrationScenarios.json",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "SD-WAN-Controller_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "SD-WAN-Controller_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-27T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Product",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "SD-WAN Controller, comes as a default component of the SD-WAN bundle",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "SD-WAN Controller",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "SD-WAN-Controller_PricebookEntries.json",
+    "ProductCode": "VEPC_SDWAN_CONTROLLER",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "SD-WAN Controller",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "e435e712-660f-d0ed-826e-d0d7ee6862e9",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "e435e712-660f-d0ed-826e-d0d7ee6862e9",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/e435e712-660f-d0ed-826e-d0d7ee6862e9",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "VEPC_SDWAN_CONTROLLER",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/e435e712-660f-d0ed-826e-d0d7ee6862e9"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/e435e712-660f-d0ed-826e-d0d7ee6862e9"
+}

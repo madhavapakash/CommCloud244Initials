@@ -1,0 +1,705 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Enterprise-Iconnectivity-Routers-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ADDITIONAL_ITEM_CODE_1": null,
+        "ATT_ADDITIONAL_ITEM_CODE_2": null,
+        "ATT_ADDITIONAL_ITEM_CODE_3": null,
+        "ATT_ADDITIONAL_ITEM_CODE_4": null,
+        "ATT_ADDITIONAL_ITEM_CODE_5": null,
+        "ATT_ADDITIONAL_ITEM_CODE_6": null,
+        "ATT_ADDITIONAL_ITEM_CODE_7": null,
+        "ATT_ITEM_CODE": null,
+        "ATT_Installation_OTC": null,
+        "ATT_Lease_Rental_ARC": null,
+        "ATT_OPERATING_UNIT": null,
+        "ATT_ROUSTER_HOST_NAME": null,
+        "ATT_ROUTER_MAKE": null,
+        "ATT_ROUTER_MODEL": null,
+        "ATT_ROUTER_OWNERSHIP": null,
+        "ATT_ROUTER_PASSWORD": null,
+        "ATT_ROUTER_SERIAL_NUMBER": null,
+        "ATT_ROUTER_TYPE": null,
+        "ATT_ROUTER_USERNAME": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Enterprise Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000xoooEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEnAAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_OWNERSHIP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 350,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Ownership",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "216c2669-83c0-dbaf-0fe2-4cd7e55d15c8",
+                                    "label": "Airtel",
+                                    "name": "216c2669-83c0-dbaf-0fe2-4cd7e55d15c8",
+                                    "readonly": false,
+                                    "value": "Airtel"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "49442970-2226-f804-4d58-e92cc10a2976",
+                                    "label": "Customer",
+                                    "name": "49442970-2226-f804-4d58-e92cc10a2976",
+                                    "readonly": false,
+                                    "value": "Customer"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEoAAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 360,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "9b9ff81b-69bc-c80e-1d76-b1c1cfdcc146",
+                                    "label": "Standard",
+                                    "name": "9b9ff81b-69bc-c80e-1d76-b1c1cfdcc146",
+                                    "readonly": false,
+                                    "value": "Standard"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "b6cdadda-0c29-3c0a-e13a-381bd4a6b99b",
+                                    "label": "Non-Standard",
+                                    "name": "b6cdadda-0c29-3c0a-e13a-381bd4a6b99b",
+                                    "readonly": false,
+                                    "value": "Non-Standard"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abElAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 370,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEeAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_1",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 380,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 1",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEfAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_2",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 390,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 2",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEgAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_3",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 400,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 3",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEhAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_4",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 410,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 4",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEiAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_5",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 420,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 5",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEjAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_6",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 430,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 6",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEkAAI",
+                            "cloneable": true,
+                            "code": "ATT_ADDITIONAL_ITEM_CODE_7",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 440,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Additional Item Code 7",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 10
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEa4AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUSTER_HOST_NAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 402,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Host Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa5AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_PASSWORD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 403,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Password",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa6AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_SERIAL_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 404,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Serial Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa7AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_USERNAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 405,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Username",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            },
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005sQhOAAU",
+                            "cloneable": true,
+                            "code": "ATT_OPERATING_UNIT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2053,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Operating Unit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhWAAU",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_MAKE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2054,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Make",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhXAAU",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_MODEL",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5025,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Router Model",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            },
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_INTERNET_DETAILS",
+                "Name": "Internet Details",
+                "displaySequence": 6220,
+                "id": "a0Z72000000wnmjEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005sQhgAAE",
+                            "cloneable": true,
+                            "code": "ATT_Installation_OTC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 27,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Installation OTC",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhhAAE",
+                            "cloneable": true,
+                            "code": "ATT_Lease_Rental_ARC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 28,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Lease Rental ARC",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            }
+        ],
+        "totalSize": 4
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-10-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "65ed4a72-862e-cad0-0080-d9aef69d2e62",
+    "%vlocity_namespace%__GlobalKey__c": "7efa4416-1270-d52b-21f0-8a13e6e9e172",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Enterprise-Iconnectivity-Routers-CFS_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ILL Service Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "Enterprise-Iconnectivity-Routers-CFS_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Resource",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Enterprise Iconnectivity Routers CFS",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "VEPC_ROUTERS_CFS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/7efa4416-1270-d52b-21f0-8a13e6e9e172"
+}

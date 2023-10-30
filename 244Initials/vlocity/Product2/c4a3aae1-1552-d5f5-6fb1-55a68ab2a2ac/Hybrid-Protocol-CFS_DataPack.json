@@ -1,0 +1,2063 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Hybrid-Protocol-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_AIRTEL_LOOPBACK_IP": null,
+        "ATT_AS_OVERRIDE": null,
+        "ATT_AS_SET": null,
+        "ATT_BFD": null,
+        "ATT_BGP-REPLACE_AS": false,
+        "ATT_BGP_DAMPENING": false,
+        "ATT_BGP_INPUT_TYPE": null,
+        "ATT_BGP_Log": null,
+        "ATT_BGP_PASSWORD": null,
+        "ATT_BGP_PREFIX_LIMIT": null,
+        "ATT_BGP_ROUTING_TYPE": null,
+        "ATT_BGP_SESSION_PER_LINK": null,
+        "ATT_CUSTOMER_AS_NUMBER": null,
+        "ATT_CUSTOMER_LAN_IP": null,
+        "ATT_CUSTOMER_LOOPBACK_IP": null,
+        "ATT_DEFAULT_ORIGINATE": null,
+        "ATT_EBGP_MULTIHOP": null,
+        "ATT_ENCAPSULATION_TYPE": null,
+        "ATT_FAST_DETECT": null,
+        "ATT_HOLDTIME": null,
+        "ATT_KEEPALIVE": null,
+        "ATT_LOCAL_LOOPBACK_IP": null,
+        "ATT_MINIMUM_INTERVAL": null,
+        "ATT_MULTIPLIER": null,
+        "ATT_PEERING_TYPE": null,
+        "ATT_REMOTE_LOOPBACK_IP": "Default BGP",
+        "ATT_REMOTE_LOOPBACK_IP_SUBNET": null,
+        "ATT_REMOVE_PRIVATE_AS": null,
+        "ATT_RESTART": null,
+        "ATT_ROUTER_TYPE": null,
+        "ATT_ROUTING_PROTOCOL": null,
+        "ATT_ROUTING_TABLE": null,
+        "ATT_ROUTING_TYPE": null,
+        "ATT_SEND_COMMUNITY_EBGP": null,
+        "ATT_SOO": null,
+        "ATT_TIMERS_KEEPALIVE_HOLDTIME": "No",
+        "ATT_URL_FILTERING": false
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_ENTERPRISE_DETAILS",
+                "Name": "Enterprise Details",
+                "displaySequence": 300,
+                "id": "a0Z72000000xoooEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEoAAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTER_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 360,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Router Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "9b9ff81b-69bc-c80e-1d76-b1c1cfdcc146",
+                                    "label": "Standard",
+                                    "name": "9b9ff81b-69bc-c80e-1d76-b1c1cfdcc146",
+                                    "readonly": false,
+                                    "value": "Standard"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "b6cdadda-0c29-3c0a-e13a-381bd4a6b99b",
+                                    "label": "Non-Standard",
+                                    "name": "b6cdadda-0c29-3c0a-e13a-381bd4a6b99b",
+                                    "readonly": false,
+                                    "value": "Non-Standard"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            },
+            {
+                "Code__c": "ATC_INSTALLATION_DETAILS",
+                "Name": "Installation Details",
+                "displaySequence": 500,
+                "id": "a0Z72000000xooqEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abF2AAI",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 471,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "1778ab97-1615-c6f3-6424-3c3e8df5d1f1",
+                                    "label": "Static with Private BGP",
+                                    "name": "1778ab97-1615-c6f3-6424-3c3e8df5d1f1",
+                                    "readonly": false,
+                                    "value": "Static with Private BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "190296d9-20e2-fb4f-c4e3-c528a93d37ef",
+                                    "label": "Private BGP",
+                                    "name": "190296d9-20e2-fb4f-c4e3-c528a93d37ef",
+                                    "readonly": false,
+                                    "value": "Private BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "395fdb99-d6c1-11f7-5c5a-a27cb6e87508",
+                                    "label": "Static with Public BGP",
+                                    "name": "395fdb99-d6c1-11f7-5c5a-a27cb6e87508",
+                                    "readonly": false,
+                                    "value": "Static with Public BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "5183ab75-ba16-f089-2630-4e8b8858be76",
+                                    "label": "None",
+                                    "name": "5183ab75-ba16-f089-2630-4e8b8858be76",
+                                    "readonly": false,
+                                    "value": "None"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "7fb4451d-8dd7-9617-4389-462a16cb481e",
+                                    "label": "Static",
+                                    "name": "7fb4451d-8dd7-9617-4389-462a16cb481e",
+                                    "readonly": false,
+                                    "value": "Static"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "c10487ef-f85e-bf0b-493b-6c2095053976",
+                                    "label": "Public BGP",
+                                    "name": "c10487ef-f85e-bf0b-493b-6c2095053976",
+                                    "readonly": false,
+                                    "value": "Public BGP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEyAAI",
+                            "cloneable": true,
+                            "code": "ATT_BGP_PREFIX_LIMIT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 480,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "BGP Prefix Limit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "2ce58fd2-f26b-0958-0719-4e8cafa629bb",
+                                    "label": "4000",
+                                    "name": "2ce58fd2-f26b-0958-0719-4e8cafa629bb",
+                                    "readonly": false,
+                                    "value": "4000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "2fd407e5-726e-096e-85bd-4c01ae36f7be",
+                                    "label": "1000",
+                                    "name": "2fd407e5-726e-096e-85bd-4c01ae36f7be",
+                                    "readonly": false,
+                                    "value": "1000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "31a431ea-41a4-d956-d126-3afebec7f72c",
+                                    "label": "20000",
+                                    "name": "31a431ea-41a4-d956-d126-3afebec7f72c",
+                                    "readonly": false,
+                                    "value": "20000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "4da9ceca-6f10-21a9-1308-214a52c738dc",
+                                    "label": "Not Applicable",
+                                    "name": "4da9ceca-6f10-21a9-1308-214a52c738dc",
+                                    "readonly": false,
+                                    "value": "Not Applicable"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "63af72ba-93d8-2dad-25bb-217cd8a5d9c0",
+                                    "label": "2000",
+                                    "name": "63af72ba-93d8-2dad-25bb-217cd8a5d9c0",
+                                    "readonly": false,
+                                    "value": "2000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "72c700e5-b454-1bba-fa7a-a441acfb9556",
+                                    "label": "10000",
+                                    "name": "72c700e5-b454-1bba-fa7a-a441acfb9556",
+                                    "readonly": false,
+                                    "value": "10000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "a5d48b44-6750-72a3-90d3-88e56ff68dfd",
+                                    "label": "5000",
+                                    "name": "a5d48b44-6750-72a3-90d3-88e56ff68dfd",
+                                    "readonly": false,
+                                    "value": "5000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "b478c0cc-1e9c-8150-0eaf-03085208c3d9",
+                                    "label": "15000",
+                                    "name": "b478c0cc-1e9c-8150-0eaf-03085208c3d9",
+                                    "readonly": false,
+                                    "value": "15000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "d1a0cd82-cd64-b4d4-d4ed-66b8d8130b80",
+                                    "label": "3000",
+                                    "name": "d1a0cd82-cd64-b4d4-d4ed-66b8d8130b80",
+                                    "readonly": false,
+                                    "value": "3000"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZuAAM",
+                            "cloneable": true,
+                            "code": "ATT_LOCAL_LOOPBACK_IP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 207,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Local Loopback IP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa1AAE",
+                            "cloneable": true,
+                            "code": "ATT_REMOTE_LOOPBACK_IP_SUBNET",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 211,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Remote Loopback IP Subnet",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa0AAE",
+                            "cloneable": true,
+                            "code": "ATT_REMOTE_LOOPBACK_IP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 212,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Remote Loopback IP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "Default BGP",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEaDAAU",
+                            "cloneable": true,
+                            "code": "ATT_SOO",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 217,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "SOO",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEb4AAE",
+                            "cloneable": true,
+                            "code": "ATT_TIMERS_KEEPALIVE_HOLDTIME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 219,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Timers(Keepalive,Holdtime)",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "No",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEb5AAE",
+                            "cloneable": true,
+                            "code": "ATT_URL_FILTERING",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 220,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "URL filtering",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZVAA2",
+                            "cloneable": true,
+                            "code": "ATT_BGP-REPLACE_AS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 221,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "bgp-Replace AS",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa8AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_PROTOCOL",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 406,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Protocol",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "32837452-94e5-fae2-9008-52d3cf680bb6",
+                                    "label": "Static",
+                                    "name": "32837452-94e5-fae2-9008-52d3cf680bb6",
+                                    "readonly": false,
+                                    "value": "Static"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "8def0f43-e41a-ddd9-1abb-0e0172ed55a8",
+                                    "label": "Both",
+                                    "name": "8def0f43-e41a-ddd9-1abb-0e0172ed55a8",
+                                    "readonly": false,
+                                    "value": "Both"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "b5686ffa-773f-d4eb-a2a8-ea323263aa39",
+                                    "label": "None",
+                                    "name": "b5686ffa-773f-d4eb-a2a8-ea323263aa39",
+                                    "readonly": false,
+                                    "value": "None"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "fb38c420-61f7-55db-f87d-d8ed0b668075",
+                                    "label": "Dynamic",
+                                    "name": "fb38c420-61f7-55db-f87d-d8ed0b668075",
+                                    "readonly": false,
+                                    "value": "Dynamic"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZSAA2",
+                            "cloneable": true,
+                            "code": "ATT_AS_OVERRIDE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 407,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "AS Override",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "label": "NA",
+                                    "name": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "label": "No",
+                                    "name": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "label": "Yes",
+                                    "name": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZTAA2",
+                            "cloneable": true,
+                            "code": "ATT_AS_SET",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 408,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "As Set",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZXAA2",
+                            "cloneable": true,
+                            "code": "ATT_BGP_INPUT_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 409,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "BGP Input Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "4141f16f-b822-978c-0ba5-3bc81ed9913f",
+                                    "label": "AS Based",
+                                    "name": "4141f16f-b822-978c-0ba5-3bc81ed9913f",
+                                    "readonly": false,
+                                    "value": "AS Based"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "f59afb9b-2e21-fa31-415b-010e873e7dab",
+                                    "label": "Prefix based",
+                                    "name": "f59afb9b-2e21-fa31-415b-010e873e7dab",
+                                    "readonly": false,
+                                    "value": "Prefix based"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZYAA2",
+                            "cloneable": true,
+                            "code": "ATT_BGP_PASSWORD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 410,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "BGP Password",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZZAA2",
+                            "cloneable": true,
+                            "code": "ATT_BGP_ROUTING_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 411,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "BGP Routing Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZbAAM",
+                            "cloneable": true,
+                            "code": "ATT_CUSTOMER_AS_NUMBER",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 412,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Customer AS Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZcAAM",
+                            "cloneable": true,
+                            "code": "ATT_CUSTOMER_LAN_IP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 413,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Customer LAN IP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZkAAM",
+                            "cloneable": true,
+                            "code": "ATT_ENCAPSULATION_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 414,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Encapsulation Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "2531808d-2f3e-bd51-2c07-d29c041e5d82",
+                                    "label": "NA",
+                                    "name": "2531808d-2f3e-bd51-2c07-d29c041e5d82",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "513b1551-9494-696e-664b-719508bf43b7",
+                                    "label": "Ethernet",
+                                    "name": "513b1551-9494-696e-664b-719508bf43b7",
+                                    "readonly": false,
+                                    "value": "Ethernet"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "8e2fb70f-5086-6549-4ee9-35d34ea432bf",
+                                    "label": "ARP",
+                                    "name": "8e2fb70f-5086-6549-4ee9-35d34ea432bf",
+                                    "readonly": false,
+                                    "value": "ARP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "95ca6956-d4da-6380-14c1-843379040f5d",
+                                    "label": "ATM",
+                                    "name": "95ca6956-d4da-6380-14c1-843379040f5d",
+                                    "readonly": false,
+                                    "value": "ATM"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "a7c58c3d-1edb-42c4-c2a1-6e3f23fa7bee",
+                                    "label": "HDLC",
+                                    "name": "a7c58c3d-1edb-42c4-c2a1-6e3f23fa7bee",
+                                    "readonly": false,
+                                    "value": "HDLC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "c5ae9510-e21b-e7f5-cdad-4a9918eadf25",
+                                    "label": "Frame Relay",
+                                    "name": "c5ae9510-e21b-e7f5-cdad-4a9918eadf25",
+                                    "readonly": false,
+                                    "value": "Frame Relay"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "e595dab6-1e75-62c4-81af-e443c1f8f99e",
+                                    "label": "DOT1 Q",
+                                    "name": "e595dab6-1e75-62c4-81af-e443c1f8f99e",
+                                    "readonly": false,
+                                    "value": "DOT1 Q"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "f4096067-28cf-9ab1-05c6-89b4832cfb19",
+                                    "label": "PPP",
+                                    "name": "f4096067-28cf-9ab1-05c6-89b4832cfb19",
+                                    "readonly": false,
+                                    "value": "PPP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZpAAM",
+                            "cloneable": true,
+                            "code": "ATT_HOLDTIME",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 415,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Holdtime",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZrAAM",
+                            "cloneable": true,
+                            "code": "ATT_KEEPALIVE",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 416,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Keepalive",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZvAAM",
+                            "cloneable": true,
+                            "code": "ATT_MINIMUM_INTERVAL",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 417,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Minimum Interval",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "02750325-3f36-13cf-6307-35c3f8f51c68",
+                                    "label": "400",
+                                    "name": "02750325-3f36-13cf-6307-35c3f8f51c68",
+                                    "readonly": false,
+                                    "value": "400"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "3b4e7c2a-82e0-90bd-89bb-c4afa1b9c16a",
+                                    "label": "200",
+                                    "name": "3b4e7c2a-82e0-90bd-89bb-c4afa1b9c16a",
+                                    "readonly": false,
+                                    "value": "200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "5570a33f-d3ed-eeff-2dac-1b7ef97ca9b6",
+                                    "label": "NA",
+                                    "name": "5570a33f-d3ed-eeff-2dac-1b7ef97ca9b6",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "77fbc79d-230c-4f81-8010-41ae451705ca",
+                                    "label": "100",
+                                    "name": "77fbc79d-230c-4f81-8010-41ae451705ca",
+                                    "readonly": false,
+                                    "value": "100"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "af858bfa-e6ff-8a4d-c5aa-7bc634a6f852",
+                                    "label": "500",
+                                    "name": "af858bfa-e6ff-8a4d-c5aa-7bc634a6f852",
+                                    "readonly": false,
+                                    "value": "500"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "f958e9d7-eb4e-5944-c096-8c319492e553",
+                                    "label": "300",
+                                    "name": "f958e9d7-eb4e-5944-c096-8c319492e553",
+                                    "readonly": false,
+                                    "value": "300"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZxAAM",
+                            "cloneable": true,
+                            "code": "ATT_MULTIPLIER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 418,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Multiplier",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "080d5de9-9a1e-864d-c71f-6bac57315ae7",
+                                    "label": "9",
+                                    "name": "080d5de9-9a1e-864d-c71f-6bac57315ae7",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "0ec3ec34-3a23-148d-5241-3c340d859474",
+                                    "label": "2",
+                                    "name": "0ec3ec34-3a23-148d-5241-3c340d859474",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "3b1943bf-4f3e-1322-b91a-5bb41c9473e7",
+                                    "label": "1",
+                                    "name": "3b1943bf-4f3e-1322-b91a-5bb41c9473e7",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "462f6029-005f-2a47-7878-87debe71e4c5",
+                                    "label": "NA",
+                                    "name": "462f6029-005f-2a47-7878-87debe71e4c5",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "516a0b1c-1e4e-7fb3-6634-14aa916cdcb2",
+                                    "label": "5",
+                                    "name": "516a0b1c-1e4e-7fb3-6634-14aa916cdcb2",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "77613d89-5f69-8460-62ee-db3b3c5590bb",
+                                    "label": "3",
+                                    "name": "77613d89-5f69-8460-62ee-db3b3c5590bb",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "9747b5c3-e75c-2f34-3b20-e1ee7ba70e68",
+                                    "label": "6",
+                                    "name": "9747b5c3-e75c-2f34-3b20-e1ee7ba70e68",
+                                    "readonly": false,
+                                    "value": "6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "c49c2507-5f9a-c28d-d9db-c5cd34680418",
+                                    "label": "7",
+                                    "name": "c49c2507-5f9a-c28d-d9db-c5cd34680418",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "e34fa0a4-c569-2deb-866f-7678c4352f24",
+                                    "label": "8",
+                                    "name": "e34fa0a4-c569-2deb-866f-7678c4352f24",
+                                    "readonly": false,
+                                    "value": "8"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "ed987dc0-ec08-1811-16bf-af042cdcee30",
+                                    "label": "4",
+                                    "name": "ed987dc0-ec08-1811-16bf-af042cdcee30",
+                                    "readonly": false,
+                                    "value": "4"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZzAAM",
+                            "cloneable": true,
+                            "code": "ATT_PEERING_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 419,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Peering Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "55185a98-c196-7d7e-deaf-750d90c7b59e",
+                                    "label": "WAN",
+                                    "name": "55185a98-c196-7d7e-deaf-750d90c7b59e",
+                                    "readonly": false,
+                                    "value": "WAN"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "80bb0ac0-e1a6-2956-c0b3-018ef29837cd",
+                                    "label": "Loopback",
+                                    "name": "80bb0ac0-e1a6-2956-c0b3-018ef29837cd",
+                                    "readonly": false,
+                                    "value": "Loopback"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "ecd71667-c7ca-0d61-2958-0c021b515a0a",
+                                    "label": "Not Applicable",
+                                    "name": "ecd71667-c7ca-0d61-2958-0c021b515a0a",
+                                    "readonly": false,
+                                    "value": "Not Applicable"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa3AAE",
+                            "cloneable": true,
+                            "code": "ATT_RESTART",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 420,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Restart",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "0d2c2c09-80dd-b1e5-80e8-e0e9b740ff44",
+                                    "label": "25",
+                                    "name": "0d2c2c09-80dd-b1e5-80e8-e0e9b740ff44",
+                                    "readonly": false,
+                                    "value": "25"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "1190277e-3419-6279-405d-5fea7d22a7a6",
+                                    "label": "15",
+                                    "name": "1190277e-3419-6279-405d-5fea7d22a7a6",
+                                    "readonly": false,
+                                    "value": "15"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "49f1488b-8021-f707-88aa-e78409722f30",
+                                    "label": "20",
+                                    "name": "49f1488b-8021-f707-88aa-e78409722f30",
+                                    "readonly": false,
+                                    "value": "20"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "9e84b68f-b809-f693-66b4-eadef6b66dcc",
+                                    "label": "30",
+                                    "name": "9e84b68f-b809-f693-66b4-eadef6b66dcc",
+                                    "readonly": false,
+                                    "value": "30"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "c4978672-6b34-94c1-9010-3a8fa16af892",
+                                    "label": "NA",
+                                    "name": "c4978672-6b34-94c1-9010-3a8fa16af892",
+                                    "readonly": false,
+                                    "value": "NA"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa9AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_TABLE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 421,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Table",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "49c848cb-6acb-b15b-4fad-caf276ad727d",
+                                    "label": "Bharti+Customer BGP",
+                                    "name": "49c848cb-6acb-b15b-4fad-caf276ad727d",
+                                    "readonly": false,
+                                    "value": "Bharti+Customer BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "699837ea-a0f3-4d86-aab2-69986ffd294b",
+                                    "label": "Default BGP",
+                                    "name": "699837ea-a0f3-4d86-aab2-69986ffd294b",
+                                    "readonly": false,
+                                    "value": "Default BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "78a6f1ab-55ed-b195-5f68-da89f3294155",
+                                    "label": "BGP",
+                                    "name": "78a6f1ab-55ed-b195-5f68-da89f3294155",
+                                    "readonly": false,
+                                    "value": "BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "edf68752-3fd8-e8ad-5357-aa44a047fb23",
+                                    "label": "Partial BGP",
+                                    "name": "edf68752-3fd8-e8ad-5357-aa44a047fb23",
+                                    "readonly": false,
+                                    "value": "Partial BGP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "effac9ae-ec36-20de-9137-656444bbc7b4",
+                                    "label": "Full BGP",
+                                    "name": "effac9ae-ec36-20de-9137-656444bbc7b4",
+                                    "readonly": false,
+                                    "value": "Full BGP"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZjAAM",
+                            "cloneable": true,
+                            "code": "ATT_EBGP_MULTIHOP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 422,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "eBGP Multihop",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "080d5de9-9a1e-864d-c71f-6bac57315ae7",
+                                    "label": "9",
+                                    "name": "080d5de9-9a1e-864d-c71f-6bac57315ae7",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "0ec3ec34-3a23-148d-5241-3c340d859474",
+                                    "label": "2",
+                                    "name": "0ec3ec34-3a23-148d-5241-3c340d859474",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "3b1943bf-4f3e-1322-b91a-5bb41c9473e7",
+                                    "label": "1",
+                                    "name": "3b1943bf-4f3e-1322-b91a-5bb41c9473e7",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "462f6029-005f-2a47-7878-87debe71e4c5",
+                                    "label": "NA",
+                                    "name": "462f6029-005f-2a47-7878-87debe71e4c5",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "516a0b1c-1e4e-7fb3-6634-14aa916cdcb2",
+                                    "label": "5",
+                                    "name": "516a0b1c-1e4e-7fb3-6634-14aa916cdcb2",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "77613d89-5f69-8460-62ee-db3b3c5590bb",
+                                    "label": "3",
+                                    "name": "77613d89-5f69-8460-62ee-db3b3c5590bb",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "9747b5c3-e75c-2f34-3b20-e1ee7ba70e68",
+                                    "label": "6",
+                                    "name": "9747b5c3-e75c-2f34-3b20-e1ee7ba70e68",
+                                    "readonly": false,
+                                    "value": "6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "c49c2507-5f9a-c28d-d9db-c5cd34680418",
+                                    "label": "7",
+                                    "name": "c49c2507-5f9a-c28d-d9db-c5cd34680418",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "e34fa0a4-c569-2deb-866f-7678c4352f24",
+                                    "label": "8",
+                                    "name": "e34fa0a4-c569-2deb-866f-7678c4352f24",
+                                    "readonly": false,
+                                    "value": "8"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "ed987dc0-ec08-1811-16bf-af042cdcee30",
+                                    "label": "4",
+                                    "name": "ed987dc0-ec08-1811-16bf-af042cdcee30",
+                                    "readonly": false,
+                                    "value": "4"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZUAA2",
+                            "cloneable": true,
+                            "code": "ATT_BFD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 423,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "BFD",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "label": "NA",
+                                    "name": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "label": "No",
+                                    "name": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "label": "Yes",
+                                    "name": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZWAA2",
+                            "cloneable": true,
+                            "code": "ATT_BGP_DAMPENING",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 424,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "BGP Dampening",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZhAAM",
+                            "cloneable": true,
+                            "code": "ATT_DEFAULT_ORIGINATE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 425,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Default Originate",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "label": "NA",
+                                    "name": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "label": "No",
+                                    "name": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "label": "Yes",
+                                    "name": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZlAAM",
+                            "cloneable": true,
+                            "code": "ATT_FAST_DETECT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 427,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Fast Detect",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "label": "NA",
+                                    "name": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "label": "No",
+                                    "name": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "label": "Yes",
+                                    "name": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEa2AAE",
+                            "cloneable": true,
+                            "code": "ATT_REMOVE_PRIVATE_AS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 428,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Remove Private AS",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "label": "NA",
+                                    "name": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "label": "No",
+                                    "name": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "label": "Yes",
+                                    "name": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEaBAAU",
+                            "cloneable": true,
+                            "code": "ATT_SEND_COMMUNITY_EBGP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 429,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Send Community eBGP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "label": "NA",
+                                    "name": "12bc700a-5938-b809-75e3-7e2c0d56b9ef",
+                                    "readonly": false,
+                                    "value": "NA"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "label": "No",
+                                    "name": "214a7bf7-e892-8748-e9d1-49454ade1ba3",
+                                    "readonly": false,
+                                    "value": "No"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "label": "Yes",
+                                    "name": "59480576-3c40-d951-b2e4-943f9f35d721",
+                                    "readonly": false,
+                                    "value": "Yes"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZRAA2",
+                            "cloneable": true,
+                            "code": "ATT_AIRTEL_LOOPBACK_IP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 430,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Airtel Loopback IP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZeAAM",
+                            "cloneable": true,
+                            "code": "ATT_CUSTOMER_LOOPBACK_IP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 431,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Customer Loopback IP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZaAAM",
+                            "cloneable": true,
+                            "code": "ATT_BGP_SESSION_PER_LINK",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 432,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "BGP Session Per Link",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "1b46d517-3e91-da66-b0a9-08f4d4baa9d3",
+                                    "label": "2",
+                                    "name": "1b46d517-3e91-da66-b0a9-08f4d4baa9d3",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "323ba37a-1532-ca00-6240-bc5d7cf8a360",
+                                    "label": "3",
+                                    "name": "323ba37a-1532-ca00-6240-bc5d7cf8a360",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "424d3a27-4024-c0ab-7a75-f5becfd4ea05",
+                                    "label": "8",
+                                    "name": "424d3a27-4024-c0ab-7a75-f5becfd4ea05",
+                                    "readonly": false,
+                                    "value": "8"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "50f06cdb-9768-2cbb-2db4-055212ab80f3",
+                                    "label": "9",
+                                    "name": "50f06cdb-9768-2cbb-2db4-055212ab80f3",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "634b30a9-e95b-2532-3652-88923c81cabb",
+                                    "label": "7",
+                                    "name": "634b30a9-e95b-2532-3652-88923c81cabb",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "66e0067d-a771-4a01-3b28-1f3e39df924d",
+                                    "label": "5",
+                                    "name": "66e0067d-a771-4a01-3b28-1f3e39df924d",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "6c413f30-2e0e-736c-a925-fa2248a477c5",
+                                    "label": "10",
+                                    "name": "6c413f30-2e0e-736c-a925-fa2248a477c5",
+                                    "readonly": false,
+                                    "value": "10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "6df49d95-28cc-ec4c-dced-946e3acb1f80",
+                                    "label": "1",
+                                    "name": "6df49d95-28cc-ec4c-dced-946e3acb1f80",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "a43ea1fe-bf89-05b5-2f0d-19a2bf5ebbd4",
+                                    "label": "4",
+                                    "name": "a43ea1fe-bf89-05b5-2f0d-19a2bf5ebbd4",
+                                    "readonly": false,
+                                    "value": "4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "bb311b83-29fd-3d1f-9ffb-2b10eaba5238",
+                                    "label": "6",
+                                    "name": "bb311b83-29fd-3d1f-9ffb-2b10eaba5238",
+                                    "readonly": false,
+                                    "value": "6"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 33
+                }
+            },
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_INTERNET_DETAILS",
+                "Name": "Internet Details",
+                "displaySequence": 6220,
+                "id": "a0Z72000000wnmjEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005sQhbAAE",
+                            "cloneable": true,
+                            "code": "ATT_BGP_Log",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 38,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "BGP Log",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ],
+        "totalSize": 4
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "40208b27-40a2-a49d-f21a-2511e7ed0ea4",
+    "%vlocity_namespace%__GlobalKey__c": "c4a3aae1-1552-d5f5-6fb1-55a68ab2a2ac",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Hybrid-Protocol-CFS_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/25bfdebc-852c-ff56-f794-6ec4b6a67745",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ILL Service Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "Hybrid-Protocol-CFS_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Resource",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": false,
+    "IsArchived": false,
+    "Name": "Hybrid Protocol CFS",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "VEPC_Hybrid_Protocol_CFS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/c4a3aae1-1552-d5f5-6fb1-55a68ab2a2ac"
+}

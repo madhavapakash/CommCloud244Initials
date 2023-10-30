@@ -1,0 +1,476 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "NIPS-Service_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ITEM_DESCRIPTION": null,
+        "ATT_NIPS_ITEM_CODE": null,
+        "ATT_TYPE_OF_SERVICE": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_NETWORK_SERVICES_DETAILS",
+                "Name": "Network Services Details",
+                "displaySequence": 700,
+                "id": "a0Z72000000xoqPEAQ",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abG3AAI",
+                            "cloneable": true,
+                            "code": "ATT_TYPE_OF_SERVICE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Type of Service",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 150,
+                                    "id": "0b0361e0-fd8e-6eea-10e4-402b9e5fed1f",
+                                    "label": "PS_Network Audit",
+                                    "name": "0b0361e0-fd8e-6eea-10e4-402b9e5fed1f",
+                                    "readonly": false,
+                                    "value": "PS_Network Audit"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 210,
+                                    "id": "10405cdd-ed49-6a14-4b28-d557ac297bd8",
+                                    "label": "EN_Licenses",
+                                    "name": "10405cdd-ed49-6a14-4b28-d557ac297bd8",
+                                    "readonly": false,
+                                    "value": "EN_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 180,
+                                    "id": "13104ef8-ab0b-d0bf-3998-1d1ee53d9440",
+                                    "label": "Others",
+                                    "name": "13104ef8-ab0b-d0bf-3998-1d1ee53d9440",
+                                    "readonly": false,
+                                    "value": "Others"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "13cb73a5-e4e9-0395-32e8-571fe8766b21",
+                                    "label": "PS_Others",
+                                    "name": "13cb73a5-e4e9-0395-32e8-571fe8766b21",
+                                    "readonly": false,
+                                    "value": "PS_Others"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "1a882929-409b-0010-de7e-6554a1aeec06",
+                                    "label": "UC_Licenses",
+                                    "name": "1a882929-409b-0010-de7e-6554a1aeec06",
+                                    "readonly": false,
+                                    "value": "UC_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "1de081fe-6654-4434-9b1e-e4aac81a0784",
+                                    "label": "PS_Network Audit",
+                                    "name": "1de081fe-6654-4434-9b1e-e4aac81a0784",
+                                    "readonly": false,
+                                    "value": "PS_Network Audit"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 130,
+                                    "id": "1e30a4fc-9342-9d9b-984e-e50810e0d41b",
+                                    "label": "PS_FMS",
+                                    "name": "1e30a4fc-9342-9d9b-984e-e50810e0d41b",
+                                    "readonly": false,
+                                    "value": "PS_FMS"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "24989fe5-9dec-2bfa-47f0-34f84a00edb3",
+                                    "label": "PS_Warranty",
+                                    "name": "24989fe5-9dec-2bfa-47f0-34f84a00edb3",
+                                    "readonly": false,
+                                    "value": "PS_Warranty"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "32b3ce42-5d69-576f-14fb-8a95c1e77578",
+                                    "label": "PS_Managed Services",
+                                    "name": "32b3ce42-5d69-576f-14fb-8a95c1e77578",
+                                    "readonly": false,
+                                    "value": "PS_Managed Services"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "3c23b0a3-737b-6a4b-a060-8ec50c1c566c",
+                                    "label": "PS_FMS",
+                                    "name": "3c23b0a3-737b-6a4b-a060-8ec50c1c566c",
+                                    "readonly": false,
+                                    "value": "PS_FMS"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "52f8b823-0083-9f2a-7c5c-39740a3bcbd0",
+                                    "label": "EN_Licenses",
+                                    "name": "52f8b823-0083-9f2a-7c5c-39740a3bcbd0",
+                                    "readonly": false,
+                                    "value": "EN_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "57fef0df-9978-7b77-1538-d333a6d46b8d",
+                                    "label": "PS_I&C",
+                                    "name": "57fef0df-9978-7b77-1538-d333a6d46b8d",
+                                    "readonly": false,
+                                    "value": "PS_I&C"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 200,
+                                    "id": "6167c260-75ae-d4cd-ba6e-64a004052a5d",
+                                    "label": "PS_Others",
+                                    "name": "6167c260-75ae-d4cd-ba6e-64a004052a5d",
+                                    "readonly": false,
+                                    "value": "PS_Others"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "74d45321-f716-23bb-f73b-80533450bef9",
+                                    "label": "DC_Licenses",
+                                    "name": "74d45321-f716-23bb-f73b-80533450bef9",
+                                    "readonly": false,
+                                    "value": "DC_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 170,
+                                    "id": "8079f867-2080-c9e7-c241-caadbc24026f",
+                                    "label": "PS_Warranty",
+                                    "name": "8079f867-2080-c9e7-c241-caadbc24026f",
+                                    "readonly": false,
+                                    "value": "PS_Warranty"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 220,
+                                    "id": "8aa47bff-0502-ac6c-2721-c6fd640420b5",
+                                    "label": "UC_Licenses",
+                                    "name": "8aa47bff-0502-ac6c-2721-c6fd640420b5",
+                                    "readonly": false,
+                                    "value": "UC_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 140,
+                                    "id": "8c4ffee6-3817-e249-69c5-a8c50b9de45e",
+                                    "label": "DC_Licenses",
+                                    "name": "8c4ffee6-3817-e249-69c5-a8c50b9de45e",
+                                    "readonly": false,
+                                    "value": "DC_Licenses"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 120,
+                                    "id": "a687ea95-45d4-29f5-a02d-a9866666afcb",
+                                    "label": "PS_Managed Services",
+                                    "name": "a687ea95-45d4-29f5-a02d-a9866666afcb",
+                                    "readonly": false,
+                                    "value": "PS_Managed Services"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "c5edc0cb-ef81-33a8-124c-eaf6b99d703c",
+                                    "label": "PS_AMC",
+                                    "name": "c5edc0cb-ef81-33a8-124c-eaf6b99d703c",
+                                    "readonly": false,
+                                    "value": "PS_AMC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "d057de32-d351-9a1a-4945-aebfd19d71bb",
+                                    "label": "Others",
+                                    "name": "d057de32-d351-9a1a-4945-aebfd19d71bb",
+                                    "readonly": false,
+                                    "value": "Others"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 160,
+                                    "id": "d296f9a4-16e4-e7b0-ac77-76c996cb14ec",
+                                    "label": "PS_I&C",
+                                    "name": "d296f9a4-16e4-e7b0-ac77-76c996cb14ec",
+                                    "readonly": false,
+                                    "value": "PS_I&C"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 190,
+                                    "id": "f54de8ce-95c0-6391-153b-7dd7f72bdf54",
+                                    "label": "PS_AMC",
+                                    "name": "f54de8ce-95c0-6391-153b-7dd7f72bdf54",
+                                    "readonly": false,
+                                    "value": "PS_AMC"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFzAAI",
+                            "cloneable": true,
+                            "code": "ATT_NIPS_ITEM_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFxAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": [
+        {
+            "actions": {
+            },
+            "childCategories": [
+                {
+                    "actions": {
+                    },
+                    "childCategories": [
+                    ],
+                    "displaySequence": -1,
+                    "fields": {
+                    },
+                    "id": "a177200000hwR7QAAU",
+                    "messages": [
+                    ],
+                    "name": "NIPS",
+                    "nameResult": {
+                    },
+                    "uiStates": {
+                    }
+                }
+            ],
+            "displaySequence": -1,
+            "fields": {
+            },
+            "id": "a177200000hw7oGAAQ",
+            "messages": [
+            ],
+            "name": "Enterprise Sales Catalog",
+            "nameResult": {
+            },
+            "uiStates": {
+            }
+        }
+    ],
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-27",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-27T08:28:58.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "eefaa4a1-a1e6-9aee-c095-a867a04a3cf2",
+    "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "5831f5b5-4093-99be-7e80-c18a33fe7ba4",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/5831f5b5-4093-99be-7e80-c18a33fe7ba4",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "NIPS Service  Product Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "NIPS-Service_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "NIPS-Service_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-27T08:28:55.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Product",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "NIPS Service",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "NIPS-Service_PricebookEntries.json",
+    "ProductCode": "VEPC_NIPS_SERVICE",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "NIPS Service",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "VEPC_NIPS_SERVICE",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/c7c02115-d5d7-1da1-aaa4-b05197d7ac05"
+}
