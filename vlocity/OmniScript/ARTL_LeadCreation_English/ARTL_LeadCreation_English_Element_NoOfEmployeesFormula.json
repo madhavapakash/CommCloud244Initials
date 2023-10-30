@@ -1,0 +1,76 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NoOfEmployeesFormula",
+    "OmniProcessId": {
+        "Name": "LeadCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/LeadCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "LeadCreation",
+        "OmniProcessId": {
+            "Name": "LeadCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/LeadCreation/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/LeadCreation/English/LeadCreation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "LeadCreation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 6,
+        "dataType": null,
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "%NumOfEmployees%",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "No. of Employees",
+        "mask": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "null",
+                        "field": "ContextId"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "ContextId"
+                    },
+                    {
+                        "condition": "=",
+                        "data": null,
+                        "field": "Radio"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "null",
+                        "field": "NoOfEmployeesFormula2"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "null",
+                        "field": "Radio"
+                    }
+                ]
+            }
+        },
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/LeadCreation/English/NoOfEmployeesFormula"
+}

@@ -1,0 +1,78 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetExistingAssetIdsFromOrder",
+    "OmniProcessId": {
+        "Name": "Bulk Change Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkChange/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "bundle": "GetExistingAssetsFromOrderItem",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "AssetIds",
+                "inputParam": "AssetIds"
+            },
+            {
+                "element": "cartId",
+                "inputParam": "OrderId"
+            }
+        ],
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "ignoreCache": true,
+        "inProgressMessage": null,
+        "label": null,
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Order",
+                        "field": "cartType"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "DataRaptor Turbo Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkChange/Multi-Language/GetExistingAssetIdsFromOrder"
+}

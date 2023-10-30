@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateCartResponse",
+    "OmniProcessId": {
+        "Name": "CreateMasterOrderAndGetMemberTypeIds",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateMasterOrderAndGetMemberTypeIds/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "additionalData:accountId": "=%QuoteToMasterOrderRequest:accountId%",
+            "additionalData:cartId": "=%additionalData:cartId%",
+            "additionalData:masterOrderId": "=%CreateMasterOrderRemoteAction:records:Id%",
+            "additionalData:memberType": "=additionalData:memberType",
+            "additionalData:memberTypeMDT": "=%GetMemberIdsFromLineItems:memberTypeMDT%",
+            "additionalData:userID": "=%additionalData:userID%",
+            "itemsToProcessList": "=LIST(%GetMemberIdsFromLineItems:result%)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateMasterOrderAndGetMemberTypeIds/Procedure/CreateCartResponse"
+}

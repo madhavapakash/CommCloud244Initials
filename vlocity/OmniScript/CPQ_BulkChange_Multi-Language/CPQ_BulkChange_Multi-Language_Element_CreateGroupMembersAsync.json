@@ -1,0 +1,93 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateGroupMembersAsync",
+    "OmniProcessId": {
+        "Name": "Bulk Change Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkChange/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ]
+        },
+        "errorMessage:default": null,
+        "extraPayload": {
+            "cartType": "%cartType%",
+            "contextId": "%cartId%",
+            "memberType": "%memberType%",
+            "productBundles": "%productBundles%"
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "inProgressMessage": null,
+        "integrationProcedureKey": "CPQ_AddToGroupAsync",
+        "invokeMode": "noBlock",
+        "label": null,
+        "message": {
+        },
+        "postMessage": null,
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "AssetViewer",
+                        "field": "source"
+                    },
+                    {
+                        "condition": ">",
+                        "data": "0",
+                        "field": "newGroupsCount"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkChange/Multi-Language/CreateGroupMembersAsync"
+}

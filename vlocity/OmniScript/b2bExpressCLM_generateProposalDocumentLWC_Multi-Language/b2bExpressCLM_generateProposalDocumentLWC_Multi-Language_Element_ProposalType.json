@@ -1,0 +1,76 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProposalType",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EnterObject",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/EnterObject",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EnterObject",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "enableCaption": false,
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "horizontalMode": true,
+        "imageCountInRow": 2,
+        "label": "%vlocity_namespace%__CMEXSelectProposal",
+        "optionHeight": 500,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "optionWidth": 5000,
+        "options": [
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "Summary",
+                "value": "%vlocity_namespace%__CMEXSummary"
+            },
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "Detailed",
+                "value": "%vlocity_namespace%__CMEXDetailed"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/ProposalType"
+}

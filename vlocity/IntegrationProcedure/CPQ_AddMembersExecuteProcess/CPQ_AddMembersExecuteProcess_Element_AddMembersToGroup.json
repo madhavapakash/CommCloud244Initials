@@ -1,0 +1,67 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AddMembersToGroup",
+    "OmniProcessId": {
+        "Name": "CPQ_AddMembersExecuteProcess",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AddMembersExecuteProcess/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "addMembersLoop",
+        "OmniProcessId": {
+            "Name": "CPQ_AddMembersExecuteProcess",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AddMembersExecuteProcess/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AddMembersExecuteProcess/Procedure/addMembersLoop",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "addMembersLoop",
+    "ParentElementType": "Loop Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartType": "%additionalData:cartType%",
+            "contextId": "%additionalData:cartId%",
+            "groupId": "%ConsolidateProductData:productBundles:groupId%",
+            "groupJSON": {
+                "membersWithAssets": "%GroupAssetsByMembers:groupedAssets%"
+            },
+            "memberType": "%ConsolidateProductData:productBundles:memberType%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction3",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "addToGroup",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AddMembersExecuteProcess/Procedure/AddMembersToGroup"
+}

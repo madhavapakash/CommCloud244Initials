@@ -1,0 +1,139 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomViewFieldsMapper",
+    "OmniProcessId": {
+        "Name": "CustomViewSetupForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CustomViewSetupForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "All": {
+                "%vlocity_namespace%__BillingAccountId__r.Name": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": true,
+                    "label": "Billing Account Name",
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__ConnectDate__c": {
+                    "format": "MM/DD/YYYY",
+                    "isEditable": true,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Connect Date",
+                    "outputFormat": "YYYY-MM-DD",
+                    "type": "Date"
+                },
+                "%vlocity_namespace%__ServiceIdentifier__c": {
+                    "isEditable": true,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Service Identifier",
+                    "type": "Text"
+                }
+            },
+            "Installation": {
+                "%vlocity_namespace%__ConnectDate__c": {
+                    "format": "MM/DD/YYYY",
+                    "isEditable": true,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Connect Date",
+                    "outputFormat": "YYYY-MM-DD",
+                    "type": "Date"
+                }
+            },
+            "Number Assignment": {
+                "%vlocity_namespace%__ServiceIdentifier__c": {
+                    "isEditable": true,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Service Identifier",
+                    "type": "Text"
+                }
+            },
+            "Payment": {
+                "%vlocity_namespace%__BillingAccountId__r.BillingAddress": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Billing Address",
+                    "sortBy": "%vlocity_namespace%__BillingAccountId__r.BillingStreet,%vlocity_namespace%__BillingAccountId__r.BillingCity,%vlocity_namespace%__BillingAccountId__r.BillingState,%vlocity_namespace%__BillingAccountId__r.BillingCountry,%vlocity_namespace%__BillingAccountId__r.BillingPostalCode",
+                    "type": "Address"
+                },
+                "%vlocity_namespace%__BillingAccountId__r.Name": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": true,
+                    "label": "Billing Account Name",
+                    "type": "Text"
+                }
+            },
+            "Product Relationship": {
+                "%vlocity_namespace%__AttributeSelectedValues__c": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Product Attributes",
+                    "type": "Attributes"
+                },
+                "%vlocity_namespace%__OrderItemRelationships__r": {
+                    "fields": [
+                        "Id",
+                        "Name",
+                        "%vlocity_namespace%__RelatedAssetReferenceId__c",
+                        "%vlocity_namespace%__RelatedOrderItemId__c",
+                        "%vlocity_namespace%__RelatedOrderItemId__r.Product2.Name",
+                        "%vlocity_namespace%__RelatedOrderItemId__r.Product2.Id",
+                        "%vlocity_namespace%__RelatedOrderItemId__r.Quantity",
+                        "%vlocity_namespace%__RelationshipType__c",
+                        "%vlocity_namespace%__OrderItemId__c",
+                        "%vlocity_namespace%__ProductRelationshipIdentifier__c"
+                    ],
+                    "filterBy": "%vlocity_namespace%__RelationshipType__c = 'ReliesOn'",
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Related Product",
+                    "type": "ChildRelation"
+                }
+            },
+            "Status": {
+                "%vlocity_namespace%__IsValidated__c": {
+                    "align": "center",
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Validated",
+                    "type": "Status"
+                },
+                "%vlocity_namespace%__ValidationDate__c": {
+                    "format": "MM/DD/YYYY",
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Validation Date",
+                    "type": "Date"
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CustomViewSetupForOrder/Procedure/CustomViewFieldsMapper"
+}

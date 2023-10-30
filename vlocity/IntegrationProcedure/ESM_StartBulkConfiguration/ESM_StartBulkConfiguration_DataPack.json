@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_StartBulkConfiguration_SampleInput.json",
+    "Description": "This IP to start the async process for bulk configuration for ESM QLIs",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_StartBulkConfiguration",
+    "OmniProcessElement": [
+        "ESM_StartBulkConfiguration_Element_SetUserId.json",
+        "ESM_StartBulkConfiguration_Element_StartAsyncJobForBulkConfiguration.json",
+        "ESM_StartBulkConfiguration_Element_sendNotificationStartedForQuote.json",
+        "ESM_StartBulkConfiguration_Element_sendNotificationStartedForOrder.json",
+        "ESM_StartBulkConfiguration_Element_DeleteGroupCart.json",
+        "ESM_StartBulkConfiguration_Element_Response.json"
+    ],
+    "OmniProcessKey": "ESM_StartBulkConfiguration",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_StartBulkConfiguration_PropertySetConfig.json",
+    "SubType": "StartBulkConfiguration",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/StartBulkConfiguration/Procedure",
+    "WebComponentKey": "4b9545ee-283c-cbfa-1ed0-ba5e72bf80ee"
+}

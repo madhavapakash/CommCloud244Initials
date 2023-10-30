@@ -1,0 +1,46 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CartIdEmptyResponse",
+    "OmniProcessId": {
+        "Name": "CPQGetPromotions",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetPromotions/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response:result:records": {
+                "messages": [
+                    {
+                        "code": "100",
+                        "message": "Empty cart ID.",
+                        "severity": "ERROR"
+                    }
+                ],
+                "totalSize": 0
+            }
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetPromotionsInput:cartId% == \"\"",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetPromotions/Procedure/CartIdEmptyResponse"
+}

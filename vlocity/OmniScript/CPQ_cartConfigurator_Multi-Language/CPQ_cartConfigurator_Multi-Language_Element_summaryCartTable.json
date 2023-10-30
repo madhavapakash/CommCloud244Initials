@@ -1,0 +1,58 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "summaryCartTable",
+    "OmniProcessId": {
+        "Name": "CPQConfigurator",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/cartConfigurator/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Summary",
+        "OmniProcessId": {
+            "Name": "CPQConfigurator",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/cartConfigurator/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/cartConfigurator/Multi-Language/Summary",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Summary",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "records",
+                "source": "%RootLevel2cartItems%"
+            },
+            {
+                "name": "parent-data",
+                "source": "true"
+            },
+            {
+                "name": "parent-attribute",
+                "source": "%summaryParentDetails%"
+            },
+            {
+                "name": "record-id",
+                "source": "%ContextId%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": null,
+        "lwcName": "cfCpqCartConfiguratorContainer",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/cartConfigurator/Multi-Language/summaryCartTable"
+}

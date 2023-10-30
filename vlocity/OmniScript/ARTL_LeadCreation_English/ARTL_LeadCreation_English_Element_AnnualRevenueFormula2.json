@@ -1,0 +1,85 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AnnualRevenueFormula2",
+    "OmniProcessId": {
+        "Name": "LeadCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/LeadCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "LeadCreation",
+        "OmniProcessId": {
+            "Name": "LeadCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/LeadCreation/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/LeadCreation/English/LeadCreation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "LeadCreation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 6,
+        "dataType": null,
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "IF(%AccountAnnualRevenue% !=null , %AccountAnnualRevenue% , (IF(%TARelatedAccount-Block:AccountAnnualRevenue% != null , %TARelatedAccount-Block:AccountAnnualRevenue%,null)))",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "Annual Revenue",
+        "mask": null,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "TARelatedAccount-Block:AccountAnnualRevenue"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "null",
+                                    "field": "TARelatedAccount-Block:AccountAnnualRevenue"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AccountAnnualRevenue"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "null",
+                                    "field": "AccountAnnualRevenue"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/LeadCreation/English/AnnualRevenueFormula2"
+}

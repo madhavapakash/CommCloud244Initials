@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OpportunityName",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EnterObject",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/EnterObject",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EnterObject",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 5,
+        "dataType": null,
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "%OpportunityName%",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "%vlocity_namespace%__CMEXOpprName",
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/OpportunityName"
+}

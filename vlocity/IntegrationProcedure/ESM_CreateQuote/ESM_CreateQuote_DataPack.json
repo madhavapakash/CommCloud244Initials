@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_CreateQuote_SampleInput.json",
+    "Description": "This Integration Procedure is used to create Quote from Asset.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESMCreateQuote",
+    "OmniProcessElement": [
+        "ESM_CreateQuote_Element_CreateOpportunityRecord.json",
+        "ESM_CreateQuote_Element_CreateQuoteRequestData.json",
+        "ESM_CreateQuote_Element_CreateQuoteRecord.json",
+        "ESM_CreateQuote_Element_GetRootAssetIds.json",
+        "ESM_CreateQuote_Element_UpsertAttachmentWithAssets.json",
+        "ESM_CreateQuote_Element_CreateQuoteResponse.json"
+    ],
+    "OmniProcessKey": "ESM_CreateQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CreateQuote_PropertySetConfig.json",
+    "SubType": "CreateQuote",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateQuote/Procedure",
+    "WebComponentKey": "06afc92b-d521-ec72-ca57-3fdb2aa4547d"
+}

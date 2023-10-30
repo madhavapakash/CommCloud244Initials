@@ -1,0 +1,38 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction1",
+    "OmniProcessId": {
+        "Name": "InboundHansenIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Message": "=\"Task of \" + %TransformXMLtoJSON:PropertySet:SiebelMessage:ListOfB2B_spcPMW_spcCreate_spcTask_spcIO:B2B_spcAction_spcPM_spcWorkbench_spcThin_spcBC:_Task_spcName% +\" Type has been successfully created: \" + %TransformXMLtoJSON:PropertySet:SiebelMessage:ListOfB2B_spcPMW_spcCreate_spcTask_spcIO:B2B_spcAction_spcPM_spcWorkbench_spcThin_spcBC:_OMTaskId%",
+            "Success": "=IF(ISNOTBLANK(%LoadTask:Task_1:Id%) && %LoadTask:Task_1:Id% != null, true,false)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/InboundHansenIntegration/Procedure/ResponseAction1"
+}

@@ -1,0 +1,49 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "sendNotificationExecuteCompletedWithFailure",
+    "OmniProcessId": {
+        "Name": "BulkSubmitSubOrdersExecuteProcess",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/BulkSubmitSubOrdersExecuteProcess/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "body": "%itemsToProcessSubsetList|1% Order submission was unsuccessful",
+            "customNotificationTypeName": "ESMNotifications",
+            "targetID": "%itemsToProcessSubsetList|1%",
+            "title": "Submit Sub Orders",
+            "userID": "%additionalData:userID%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "%createAccountDiscounts:messages|1:severity% != \"INFO\" || %canSubmitOrder:canSubmitOrder% == false || %canSubmitOrder:isOrderProductPresent% == false || %canSubmitOrder:hasError% == true || (%SetCreateAssetsValue:createAssetsFlow%='CPQ' && %checkout:messages|1:severity% != \"INFO\") || (%SetCreateAssetsValue:createAssetsFlow%='OM' && %DecomposeAndSubmit:errorStatus% == \"ERROR\")",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "b2bExpress_SendAppNotificationBulkSubOrder",
+        "label": "IntegrationProcedureAction2",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/BulkSubmitSubOrdersExecuteProcess/Procedure/sendNotificationExecuteCompletedWithFailure"
+}

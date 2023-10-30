@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "clm_asyncUpdateContracts_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CLM - Async Update Contracts",
+    "OmniProcessElement": [
+        "clm_asyncUpdateContracts_Element_UpdateParentContract.json",
+        "clm_asyncUpdateContracts_Element_UpdateParentContractLineItems.json",
+        "clm_asyncUpdateContracts_Element_UpdateSubContractsThenLines.json"
+    ],
+    "OmniProcessKey": "clm_asyncUpdateContracts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "clm_asyncUpdateContracts_PropertySetConfig.json",
+    "SubType": "asyncUpdateContracts",
+    "Type": "clm",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/clm/asyncUpdateContracts/Procedure",
+    "WebComponentKey": "192eb964-aa10-2ffe-534b-417fc770f64d"
+}

@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CPQMassDiscountStartResponse",
+    "OmniProcessId": {
+        "Name": "CPQ_MassDiscountStartProcess",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MassDiscountStartProcess/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Failed": "=IF(ISBLANK(%res:allRoots:RootId%) || EXIST(%postCartsDiscountResponse:messages:severity%, 'ERROR'),true,false)",
+            "itemsToProcessList": "=IF(ISBLANK(%res:allRoots:RootId%),LIST(),LIST(%res:allRoots:RootId%))",
+            "statusCode": "=IF(ISBLANK(%res:allRoots:RootId%) || EXIST(%postCartsDiscountResponse:messages:severity%, 'ERROR'),500,200)",
+            "statusMessage": "=IF(ISBLANK(%res:allRoots:RootId%), 'No Root Item Ids found.', IF(EXIST(%postCartsDiscountResponse:messages:severity%, 'ERROR'), %postCartsDiscountResponse:messages:message% ,'COMPLETED'))"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MassDiscountStartProcess/Procedure/CPQMassDiscountStartResponse"
+}

@@ -1,0 +1,59 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToBulkCOPNewOrder",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": null,
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "changePlan",
+                        "field": "selectActionType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "createOrder",
+                        "field": "selectType"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWC": "c:cPQBulkReplaceMultiLanguage",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__cartId=%cartId%&c__cartType=Order&c__accountId=%ContextId%&c__tabLabel=COP: Create Order",
+        "targetType": "Vlocity OmniScript",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/NavigateToBulkCOPNewOrder"
+}

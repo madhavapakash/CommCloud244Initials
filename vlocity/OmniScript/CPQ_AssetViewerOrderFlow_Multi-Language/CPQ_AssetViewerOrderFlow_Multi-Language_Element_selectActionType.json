@@ -1,0 +1,85 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "selectActionType",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateSelectOrder",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Order Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/CreateSelectOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateSelectOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": "changeAssets",
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "horizontalMode": "displayWide",
+        "imageCountInRow": 3,
+        "label": "SelectActionType",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "changeAssets",
+                "value": "ChangeAssets"
+            },
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "moveAssets",
+                "value": "MoveAssets"
+            },
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "changePlan",
+                "value": "CPQChangePlan"
+            }
+        ],
+        "options|0:value": "ChangeAssets",
+        "options|1:value": "MoveAssets",
+        "options|2:value": "CPQChangePlan",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/selectActionType"
+}

@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cpqMultiSiteUtilOrder",
+    "OmniProcessId": {
+        "Name": "MultiSite Quote Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateMasterOrder",
+        "OmniProcessId": {
+            "Name": "MultiSite Quote Order Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/CreateMasterOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateMasterOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "get-group-members-type-list-i-p-name",
+                "source": "MultiSite_GetMemberTypeList"
+            },
+            {
+                "name": "fetch-member-type-list",
+                "source": "true"
+            },
+            {
+                "name": "channel-name",
+                "source": "%channelName%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "%vlocity_namespace%__cpqMultiSiteUtil",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/cpqMultiSiteUtilOrder"
+}

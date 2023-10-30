@@ -1,0 +1,38 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "1. If there are applied discounts to a cart\n2. Valid and Non-Empty Id.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetAllApplicableDiscountsResponse",
+    "OmniProcessId": {
+        "Name": "CPQGetAppliedDiscounts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetAppliedDiscounts/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response": "%GetAllApplicableDiscountsRemoteAction%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetAllApplicableDiscountsRemoteAction:totalSize% != 0",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetAppliedDiscounts/Procedure/GetAllApplicableDiscountsResponse"
+}

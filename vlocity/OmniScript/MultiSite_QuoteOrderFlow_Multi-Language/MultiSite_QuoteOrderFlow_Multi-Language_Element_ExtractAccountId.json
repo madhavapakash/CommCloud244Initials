@@ -1,0 +1,63 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ExtractAccountId",
+    "OmniProcessId": {
+        "Name": "MultiSite Quote Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "bundle": "MultiSiteExtractAccountId",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "OpportunityId",
+                "inputParam": "OpportunityId"
+            }
+        ],
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "ignoreCache": false,
+        "inProgressMessage": null,
+        "label": null,
+        "message": {
+        },
+        "postMessage": null,
+        "pubsub": false,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 0,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "",
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/ExtractAccountId"
+}

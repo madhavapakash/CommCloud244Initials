@@ -1,0 +1,64 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomMemberHeaderActions",
+    "OmniProcessId": {
+        "Name": "CustomViewSetupForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CustomViewSetupForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Location": {
+                "%vlocity_namespace%__PremisesId__r.Name": {
+                    "label": "Add Premises",
+                    "leadingIcon": "utility:add",
+                    "lookupObject": "%vlocity_namespace%__Premises__c"
+                },
+                "%vlocity_namespace%__ServiceAccountId__r.Name": {
+                    "label": "Add Service Account",
+                    "leadingIcon": "utility:add",
+                    "lookupObject": "Account"
+                },
+                "%vlocity_namespace%__ServicePointId__r.Name": {
+                    "label": "Add Service Point",
+                    "leadingIcon": "utility:add",
+                    "lookupObject": "%vlocity_namespace%__ServicePoint__c"
+                },
+                "%vlocity_namespace%__StreetAddress__c": {
+                    "customAction": true,
+                    "customActionIcon": "utility:add",
+                    "customActionLabel": "Add new location",
+                    "label": "Add Locations",
+                    "leadingIcon": "utility:add",
+                    "lookupObject": "GoogleMaps",
+                    "placesLookup": true,
+                    "singleSelect": true
+                }
+            },
+            "Subscriber": {
+                "%vlocity_namespace%__Title__c": {
+                    "label": "Add Subscribers",
+                    "leadingIcon": "utility:add",
+                    "memberadd": true
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues5",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CustomViewSetupForOrder/Procedure/CustomMemberHeaderActions"
+}

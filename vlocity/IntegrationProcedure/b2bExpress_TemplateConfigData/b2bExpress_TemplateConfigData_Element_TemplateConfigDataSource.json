@@ -1,0 +1,60 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TemplateConfigDataSource",
+    "OmniProcessId": {
+        "Name": "B2BExpress_TemplateConfigData",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/TemplateConfigData/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "TemplateConfigDataSource": [
+                {
+                    "AggregationLevel": "Group",
+                    "TemplateCategory": "Proposal",
+                    "TemplateSubtype": "Detailed",
+                    "TemplateType": "Microsoft Word .DOCX Template",
+                    "VlocityDocumentTemplate": "B2BExpressProposalGroupDetailed"
+                },
+                {
+                    "AggregationLevel": "Member",
+                    "TemplateCategory": "Proposal",
+                    "TemplateSubtype": "Summary",
+                    "TemplateType": "Microsoft Word .DOCX Template",
+                    "VlocityDocumentTemplate": "B2BExpressProposalMemberSummary"
+                },
+                {
+                    "AggregationLevel": "Group",
+                    "TemplateCategory": "Proposal",
+                    "TemplateSubtype": "Summary",
+                    "TemplateType": "Microsoft Word .DOCX Template",
+                    "VlocityDocumentTemplate": "B2BExpressProposalGroupSummary"
+                },
+                {
+                    "AggregationLevel": "Member",
+                    "TemplateCategory": "Proposal",
+                    "TemplateSubtype": "Detailed",
+                    "TemplateType": "Microsoft Word .DOCX Template",
+                    "VlocityDocumentTemplate": "B2BExpressProposalMemberDetailed"
+                }
+            ]
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "RES",
+        "responseJSONPath": "TemplateConfigDataSource",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/TemplateConfigData/Procedure/TemplateConfigDataSource"
+}

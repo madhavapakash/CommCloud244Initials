@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_BulkDeleteOrderLineItemsExecuteProcess_SampleInput.json",
+    "Description": "IP to trigger disconnectOrderLineItems method for Deleting OLIs. Expected parameters: 1) Order Id: String 2) Root Ids of OLIs selected for deletion: List of Object with attribute \"Id\"(example: [{Id:\"rootId1\"},{Id:\"rootId2\"},{Id:\"rootId3\"}])",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_BulkDeleteOrderLineItemsExecuteProcess",
+    "OmniProcessElement": [
+        "ESM_BulkDeleteOrderLineItemsExecuteProcess_Element_SetValues1.json",
+        "ESM_BulkDeleteOrderLineItemsExecuteProcess_Element_SetValues2.json",
+        "ESM_BulkDeleteOrderLineItemsExecuteProcess_Element_TransformArrayOfStringsToArrayOfObjects.json",
+        "ESM_BulkDeleteOrderLineItemsExecuteProcess_Element_RemoteAction1.json",
+        "ESM_BulkDeleteOrderLineItemsExecuteProcess_Element_SendNotificationFailedToDelete.json",
+        "ESM_BulkDeleteOrderLineItemsExecuteProcess_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_BulkDeleteOrderLineItemsExecuteProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_BulkDeleteOrderLineItemsExecuteProcess_PropertySetConfig.json",
+    "SubType": "BulkDeleteOrderLineItemsExecuteProcess",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/BulkDeleteOrderLineItemsExecuteProcess/Procedure",
+    "WebComponentKey": "3c822032-03b0-992f-e9e0-25d847b5d450"
+}

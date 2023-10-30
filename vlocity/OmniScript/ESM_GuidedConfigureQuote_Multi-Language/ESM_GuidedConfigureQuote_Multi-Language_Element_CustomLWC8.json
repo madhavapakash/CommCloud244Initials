@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomLWC8",
+    "OmniProcessId": {
+        "Name": "ESMGuidedJourney",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/GuidedConfigureQuote/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SubscriberStep",
+        "OmniProcessId": {
+            "Name": "ESMGuidedJourney",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/GuidedConfigureQuote/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/GuidedConfigureQuote/Multi-Language/SubscriberStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SubscriberStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "parent-attribute",
+                "source": "%SubscriberFlow%"
+            }
+        ],
+        "hide": false,
+        "label": "%vlocity_namespace%__CMEXSelectProducts",
+        "lwcName": "cfESMGuidedStepDecription",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/GuidedConfigureQuote/Multi-Language/CustomLWC8"
+}

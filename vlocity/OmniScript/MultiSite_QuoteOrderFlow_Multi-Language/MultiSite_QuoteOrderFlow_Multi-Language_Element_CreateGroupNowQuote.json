@@ -1,0 +1,74 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateGroupNowQuote",
+    "OmniProcessId": {
+        "Name": "MultiSite Quote Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateMasterQuote",
+        "OmniProcessId": {
+            "Name": "MultiSite Quote Order Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/CreateMasterQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateMasterQuote",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": "yes",
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "horizontalMode": true,
+        "imageCountInRow": 3,
+        "label": "CPQCreateGroupNow",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "name": "yes",
+                "value": "CPQYes"
+            },
+            {
+                "name": "no",
+                "value": "CPQNo"
+            }
+        ],
+        "options|0:value": "CPQYes",
+        "options|1:value": "CPQNo",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": null
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/CreateGroupNowQuote"
+}

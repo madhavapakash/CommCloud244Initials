@@ -1,0 +1,61 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cpqLocationsMultisiteGridTable",
+    "OmniProcessId": {
+        "Name": "CPQMultisiteConfigurator",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MultisiteConfigurator/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GroupLocation",
+        "OmniProcessId": {
+            "Name": "CPQMultisiteConfigurator",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MultisiteConfigurator/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MultisiteConfigurator/Multi-Language/GroupLocation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GroupLocation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "parent-data",
+                "source": "true"
+            },
+            {
+                "name": "record-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "records",
+                "source": "%locationParentRecords%"
+            },
+            {
+                "name": "parent-attribute",
+                "source": "%locationParentRecords%"
+            },
+            {
+                "name": "source",
+                "source": "OmniScript"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "cfCpqMultisiteGridTable",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MultisiteConfigurator/Multi-Language/cpqLocationsMultisiteGridTable"
+}

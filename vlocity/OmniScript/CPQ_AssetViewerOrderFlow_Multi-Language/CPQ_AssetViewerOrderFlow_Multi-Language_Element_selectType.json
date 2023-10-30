@@ -1,0 +1,79 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "selectType",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateSelectOrder",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Order Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/CreateSelectOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateSelectOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": "createOrder",
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "horizontalMode": "displayWide",
+        "imageCountInRow": 3,
+        "label": "SelectYourType",
+        "lwcComponentOverride": "",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "createOrder",
+                "value": "CreateNewOrder"
+            },
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "selectOrder",
+                "value": "AddtoExistingOrder"
+            }
+        ],
+        "options|0:value": "CreateNewOrder",
+        "options|1:value": "AddtoExistingOrder",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/selectType"
+}

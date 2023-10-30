@@ -1,0 +1,176 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartAsyncJobForOrder",
+    "OmniProcessId": {
+        "Name": "ESM_SelfServiceStartBulkChange",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/SelfServiceStartBulkChange/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "accountId": "%accountId%",
+                "cartConfiguration": "%cartConfiguration%",
+                "cartId": "%cartId%",
+                "cartType": "%cartType%",
+                "groupCartId": "%groupCartId%",
+                "userID": "%SetUserId:userID%"
+            },
+            "asyncProcessName": "%SetUserId:asyncProcessName%",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_SelfServiceCreateAssetizedOrderItem",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_SelfServiceCreateLineItemsFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_SelfServiceGetAssetsFromGroupCart",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Create Line Items"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_SelfServiceExecuteAddLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_SelfServiceBulkAddFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_SelfServiceGetLineItemIdsUsingAssetIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Add"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_SelfServiceExecuteDisconnectLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_SelfServiceBulkDisconnectFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_SelfServiceGetLineItemIdsUsingAssetIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Disconnect"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_SelfServiceExecuteUpdateLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_SelfServiceBulkUpdateFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_SelfServiceGetLineItemIdsUsingAssetIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Update"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 5,
+                            "name": "ESM_SelfServiceValidateLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_SelfServiceGetLineItemIdsUsingAssetIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Validate"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 5,
+                            "name": "ESM_SelfServicePriceLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_SelfServicePriceLineItemsFinishProcess",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Price"
+                }
+            ],
+            "referenceId": "%cartId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%cartType% == 'Order'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/SelfServiceStartBulkChange/Procedure/StartAsyncJobForOrder"
+}

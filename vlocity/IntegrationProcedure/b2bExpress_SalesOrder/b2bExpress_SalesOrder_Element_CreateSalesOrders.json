@@ -1,0 +1,51 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateSalesOrders",
+    "OmniProcessId": {
+        "Name": "SalesOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/SalesOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%Quote:AccountId%",
+            "BillingAccountId": "%Quote:%vlocity_namespace%__DefaultBillingAccountId__c%",
+            "MasterOrderId": "%SetMasterOrder:Id%",
+            "QuoteId": "%Quote:Id%",
+            "QuoteLineItems": "%GetIndependentQuoteLineItems%",
+            "ServiceAccountId": "%Quote:%vlocity_namespace%__DefaultServiceAccountId__c%",
+            "SubOrderRecordTypeId": "%RecordTypes:SubOrderRecordTypeId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "ISNOTBLANK(%GetIndependentQuoteLineItems%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "b2bExpress_CreateSubOrder",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/SalesOrder/Procedure/CreateSalesOrders"
+}

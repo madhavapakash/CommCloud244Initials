@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_InboundHansenIntegration_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "InboundHansenIntegration",
+    "OmniProcessElement": [
+        "ARTL_InboundHansenIntegration_Element_TransformXMLtoJSON.json",
+        "ARTL_InboundHansenIntegration_Element_GetOrderDetails.json",
+        "ARTL_InboundHansenIntegration_Element_GetPayLoad.json",
+        "ARTL_InboundHansenIntegration_Element_SetValues1.json",
+        "ARTL_InboundHansenIntegration_Element_LoadTask.json",
+        "ARTL_InboundHansenIntegration_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_InboundHansenIntegration",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_InboundHansenIntegration_PropertySetConfig.json",
+    "SubType": "InboundHansenIntegration",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/InboundHansenIntegration/Procedure",
+    "WebComponentKey": "be078f71-bafb-4871-602f-5d14e5746f28"
+}

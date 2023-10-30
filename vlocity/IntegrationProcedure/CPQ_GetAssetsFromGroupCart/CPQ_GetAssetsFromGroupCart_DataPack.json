@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetAssetsFromGroupCart_SampleInput.json",
+    "Description": "This VIP is used to fetch Asset Ids from Group Cart.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_GetAssetsFromGroupCart",
+    "OmniProcessElement": [
+        "CPQ_GetAssetsFromGroupCart_Element_ExtractAssetIdsFromQuoteMember.json",
+        "CPQ_GetAssetsFromGroupCart_Element_ExtractAssetIdsFromOrderMember.json",
+        "CPQ_GetAssetsFromGroupCart_Element_CreateSelectedAssetIdsList.json",
+        "CPQ_GetAssetsFromGroupCart_Element_AllSelectedAssetIds.json",
+        "CPQ_GetAssetsFromGroupCart_Element_UniqueAssetIdList.json",
+        "CPQ_GetAssetsFromGroupCart_Element_SetOrderId.json",
+        "CPQ_GetAssetsFromGroupCart_Element_SetQuoteId.json",
+        "CPQ_GetAssetsFromGroupCart_Element_ExtractAccountIdFromCart.json",
+        "CPQ_GetAssetsFromGroupCart_Element_AssetsFromGroupCartResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_GetAssetsFromGroupCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetAssetsFromGroupCart_PropertySetConfig.json",
+    "SubType": "GetAssetsFromGroupCart",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetAssetsFromGroupCart/Procedure",
+    "WebComponentKey": "641cbd8d-780f-bd02-6152-9eaf515bd989"
+}

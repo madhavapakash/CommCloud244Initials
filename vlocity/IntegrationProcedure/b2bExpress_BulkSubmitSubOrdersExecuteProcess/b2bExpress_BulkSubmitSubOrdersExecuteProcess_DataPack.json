@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_BulkSubmitSubOrdersExecuteProcess_SampleInput.json",
+    "Description": "This IP is used in Execute process step in submit suborder Async job.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "BulkSubmitSubOrdersExecuteProcess",
+    "OmniProcessElement": [
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_CreateAccountDiscounts.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_CanSubmitOrder.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_CreateAssetsFlow-CPQ.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_CreateAssetsFlow-OM.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_SetCreateAssetsValue.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_SubmitOrder.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_DecomposeAndSubmit.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_sendNotificationExecuteCompletedWithFailure.json",
+        "b2bExpress_BulkSubmitSubOrdersExecuteProcess_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "b2bExpress_BulkSubmitSubOrdersExecuteProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_BulkSubmitSubOrdersExecuteProcess_PropertySetConfig.json",
+    "SubType": "BulkSubmitSubOrdersExecuteProcess",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/BulkSubmitSubOrdersExecuteProcess/Procedure",
+    "WebComponentKey": "7f956824-1868-580e-b94f-536aa4ed3fdd"
+}

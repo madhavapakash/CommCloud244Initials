@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateCMTInteractionTopic",
+    "OmniProcessId": {
+        "Name": "CreateCustomerInteractionContactCMT",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CustomerInteractionContactCMT/Creation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateContactInteractionTopic",
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "extraPayload": {
+        },
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CustomerInteractionContactCMT/Creation/Procedure/CreateCMTInteractionTopic"
+}

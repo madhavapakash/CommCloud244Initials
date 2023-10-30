@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction1",
+    "OmniProcessId": {
+        "Name": "BulkDeleteQuoteLineItemsFinishProcess",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/BulkDeleteQuoteLineItemsFinishProcess/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "isFail": "%itemsProcessed%",
+            "itemsProcessed1": "=%itemsProcessed:failed% == \"[]\"",
+            "itemsProcessed2": "%itemsProcessed:failed%",
+            "itemsProcessed3": "=ISBLANK(%itemsProcessed:failed%)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/BulkDeleteQuoteLineItemsFinishProcess/Procedure/ResponseAction1"
+}

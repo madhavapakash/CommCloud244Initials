@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_UpdateQuoteLineItems_SampleInput.json",
+    "Description": "The IP is used to update Quote Line Item and it's related child items. The name of the view passed as parameter will decide which DR should be executed to update a field with given value.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateQuoteLineItems",
+    "OmniProcessElement": [
+        "ESM_UpdateQuoteLineItems_Element_UpdateQLIsByField.json",
+        "ESM_UpdateQuoteLineItems_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_UpdateQuoteLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_UpdateQuoteLineItems_PropertySetConfig.json",
+    "SubType": "UpdateQuoteLineItems",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/UpdateQuoteLineItems/Procedure",
+    "WebComponentKey": "ba1df3c6-25a1-5c4d-82ce-84d27a15d51e"
+}

@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "Set LastRepriceQuantity, if reprice is executed.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SettingRepriceQuantity",
+    "OmniProcessId": {
+        "Name": "CopyGroupCartToEnterpriseOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "LastRepriceQuantity": 1
+        },
+        "executionConditionalFormula": "NOT(ISBLANK(MemberIds))",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure/SettingRepriceQuantity"
+}

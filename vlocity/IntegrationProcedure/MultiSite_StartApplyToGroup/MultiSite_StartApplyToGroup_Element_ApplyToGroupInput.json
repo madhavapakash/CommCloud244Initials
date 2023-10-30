@@ -1,0 +1,36 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ApplyToGroupInput",
+    "OmniProcessId": {
+        "Name": "MultiSite Apply to Group",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/StartApplyToGroup/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "ApplyToGroupIPName": "MultiSite_ApplyToGroup",
+            "cartType": "%cartType%",
+            "contextId": "%contextId%",
+            "groupCartId": "%groupCartId%",
+            "groupId": "%groupId%",
+            "parentId": "%parentId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/StartApplyToGroup/Procedure/ApplyToGroupInput"
+}

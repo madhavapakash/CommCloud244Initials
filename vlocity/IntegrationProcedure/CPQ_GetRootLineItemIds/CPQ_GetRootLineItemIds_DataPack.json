@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetRootLineItemIds_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Root Line Item Ids",
+    "OmniProcessElement": [
+        "CPQ_GetRootLineItemIds_Element_SetValues1.json",
+        "CPQ_GetRootLineItemIds_Element_ExtractQuoteRootItems.json",
+        "CPQ_GetRootLineItemIds_Element_ExtractOrderRootItems.json",
+        "CPQ_GetRootLineItemIds_Element_TransformToArray.json"
+    ],
+    "OmniProcessKey": "CPQ_GetRootLineItemIds",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetRootLineItemIds_PropertySetConfig.json",
+    "SubType": "GetRootLineItemIds",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetRootLineItemIds/Procedure",
+    "WebComponentKey": "70d13581-1caf-518b-ae3b-1d77b00a50d6"
+}

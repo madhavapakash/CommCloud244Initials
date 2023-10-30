@@ -1,0 +1,75 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues1",
+    "OmniProcessId": {
+        "Name": "GetInvoiceList",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/GetInvoiceList/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "response": {
+                "getCustomerInvoiceSummaryResMsg": {
+                    "dataArea": {
+                        "getCustomerInvoiceSummaryResponse": {
+                            "invoiceDetails": [
+                                {
+                                    "customerPayment": {
+                                        "partyPayment": {
+                                            "amount": 10000,
+                                            "billInvoiceRow": 1,
+                                            "dueDate": "2022-08-08T00:00:00",
+                                            "identification": {
+                                                "id": 132802552,
+                                                "name": "PaymentId"
+                                            },
+                                            "status": "OPEN"
+                                        }
+                                    }
+                                },
+                                {
+                                    "customerPayment": {
+                                        "partyPayment": {
+                                            "amount": 802021,
+                                            "billInvoiceRow": 1,
+                                            "dueDate": "2021-06-08T00:00:00",
+                                            "identification": {
+                                                "id": 144503943,
+                                                "name": "PaymentId"
+                                            },
+                                            "status": "OPEN"
+                                        }
+                                    }
+                                }
+                            ],
+                            "status": {
+                                "statusCode": "GetCustomerInvoiceSummary-0000-S",
+                                "statusDescription": "Request Processed Successfully"
+                            }
+                        }
+                    },
+                    "ebmHeader": {
+                        "consumerTransactionId": "Test12345"
+                    }
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/GetInvoiceList/Procedure/SetValues1"
+}

@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateAsyncJobIdToQuoteGroup",
+    "OmniProcessId": {
+        "Name": "CPQ_StartBulkReplace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/StartBulkReplace/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%cartGroupId%",
+            "asyncProcessId": "%StartAsyncJobForQuote:asyncProcessId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CPQUpdateJobIdInQuoteGroup",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%StartAsyncJobForQuote:code% == 202 AND %cartType% == 'Quote'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/StartBulkReplace/Procedure/UpdateAsyncJobIdToQuoteGroup"
+}

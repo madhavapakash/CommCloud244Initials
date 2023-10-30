@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "MultiSite_GetUngroupedRecords_SampleInput.json",
+    "Description": "This IP is intended to get list of service points that are valid for that opportunity",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Multisite Ungrouped Records",
+    "OmniProcessElement": [
+        "MultiSite_GetUngroupedRecords_Element_GetUngroupedRecordsInput.json",
+        "MultiSite_GetUngroupedRecords_Element_EmptyConditionCheckBlock.json",
+        "MultiSite_GetUngroupedRecords_Element_EmptyResponseAction.json",
+        "MultiSite_GetUngroupedRecords_Element_ApexRemoteCall.json",
+        "MultiSite_GetUngroupedRecords_Element_UngroupedMembersResponse.json"
+    ],
+    "OmniProcessKey": "MultiSite_GetUngroupedRecords",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_GetUngroupedRecords_PropertySetConfig.json",
+    "SubType": "GetUngroupedRecords",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/GetUngroupedRecords/Procedure",
+    "WebComponentKey": "0084c2fe-0b54-4c10-b3b1-9c46ee6d438d"
+}

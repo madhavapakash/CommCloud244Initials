@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_updateQuantityAndReprice_SampleInput.json",
+    "Description": "The VIP is used to update quantity and reprise cart.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateQuantityAndRepriceCart",
+    "OmniProcessElement": [
+        "b2bExpress_updateQuantityAndReprice_Element_getAllRootItems.json",
+        "b2bExpress_updateQuantityAndReprice_Element_UpdateQuantityAllRootItemQuantity.json",
+        "b2bExpress_updateQuantityAndReprice_Element_RepriceCart.json",
+        "b2bExpress_updateQuantityAndReprice_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "b2bExpress_updateQuantityAndReprice",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_updateQuantityAndReprice_PropertySetConfig.json",
+    "SubType": "updateQuantityAndReprice",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/updateQuantityAndReprice/Procedure",
+    "WebComponentKey": "ef0c853c-ee8c-46f5-f780-23e00e1fa048"
+}

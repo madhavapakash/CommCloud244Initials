@@ -1,0 +1,66 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartApplyToGroupJob",
+    "OmniProcessId": {
+        "Name": "Start ApplyToGroup",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/StartApplyToGroup/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "ApplyToGroupIPName": "%SetValues:ApplyToGroupIPName%",
+            "BatchSize": "%SetValues:BatchSize%",
+            "HasFailedGroupMembers": "%HasFailedGroupMembers%",
+            "applyToGroupFailed": "%applyToGroupFailed%",
+            "cartType": "%cartType%",
+            "contextId": "%contextId%",
+            "groupCartId": "%groupCartId%",
+            "groupId": "%groupId%",
+            "groupIds": "%groupIds%",
+            "hasPostProcess": "false",
+            "notifications": {
+                "appNotification": {
+                    "ApplyToGroupNotificationEnabled": true,
+                    "customNotificationTypeName": "CMEbatchJob"
+                }
+            },
+            "parentId": "%parentId%",
+            "processDeltaMembers": "true",
+            "retrycount": "%retrycount%",
+            "startJobVIPName": "%startJobVIPName%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "applyToGroup",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/StartApplyToGroup/Procedure/StartApplyToGroupJob"
+}

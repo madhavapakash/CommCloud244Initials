@@ -1,0 +1,48 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateOrderGroup",
+    "OmniProcessId": {
+        "Name": "ESMCreateOrderGroupAssignMembers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateOrderGroupAssignMembers/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ExpectedMemberCount": "%ExpectedMemberCount%",
+            "GroupName": "%GroupName%",
+            "MemberType": "%MemberType%",
+            "OrderGroupId": "%GroupId%",
+            "SalesOrderId": "%SalesEntityId%"
+        },
+        "additionalOutput": {
+            "ExpectedMemberCount": "%CreateOrderGroup:%vlocity_namespace%__OrderGroup__c_1:%vlocity_namespace%__ExpectedMemberCount__c%",
+            "GroupId": "%CreateOrderGroup:%vlocity_namespace%__OrderGroup__c_1:Id%"
+        },
+        "bundle": "ESMCreateOrderGroup",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": true,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateOrderGroupAssignMembers/Procedure/CreateOrderGroup"
+}

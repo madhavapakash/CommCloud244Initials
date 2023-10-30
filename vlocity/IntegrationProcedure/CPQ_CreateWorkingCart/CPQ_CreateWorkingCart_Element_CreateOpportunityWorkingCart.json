@@ -1,0 +1,76 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateOpportunityWorkingCart",
+    "OmniProcessId": {
+        "Name": "CPQCreateWorkingCart",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateWorkingCart/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%type% == 'Opportunity'",
+        "extraPayload": {
+            "fields": "Id,Pricebook2Id",
+            "inputFields": [
+                {
+                    "Status": "Draft"
+                },
+                {
+                    "AccountId": "%getOpportunityDetail:AccountId%"
+                },
+                {
+                    "Name": "Working Cart"
+                },
+                {
+                    "%vlocity_namespace%__OriginatingChannel__c": "Retail"
+                },
+                {
+                    "pricelistName": "%getOpportunityDetail:PriceListName%"
+                },
+                {
+                    "%vlocity_namespace%__OpportunityId__c": "%contextId%"
+                },
+                {
+                    "CloseDate": "%getOpportunityDetail:closeDate%"
+                },
+                {
+                    "StageName": "Prospecting"
+                }
+            ],
+            "objectType": "Opportunity"
+        },
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "createCart",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateWorkingCart/Procedure/CreateOpportunityWorkingCart"
+}

@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_CreateQuote_SampleInput.json",
+    "Description": "This Integration Procedure is used to create Order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQCreateQuote",
+    "OmniProcessElement": [
+        "CPQ_CreateQuote_Element_CreateOpportunityRecord.json",
+        "CPQ_CreateQuote_Element_CreateQuoteRequestData.json",
+        "CPQ_CreateQuote_Element_CreateQuoteRecord.json",
+        "CPQ_CreateQuote_Element_GetRootAssetIds.json",
+        "CPQ_CreateQuote_Element_UpsertAttachmentWithAssets.json",
+        "CPQ_CreateQuote_Element_CreateQuoteResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_CreateQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_CreateQuote_PropertySetConfig.json",
+    "SubType": "CreateQuote",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/CreateQuote/Procedure",
+    "WebComponentKey": "f69e2b1c-69e5-4bea-ce0b-85f7b7e7e212"
+}

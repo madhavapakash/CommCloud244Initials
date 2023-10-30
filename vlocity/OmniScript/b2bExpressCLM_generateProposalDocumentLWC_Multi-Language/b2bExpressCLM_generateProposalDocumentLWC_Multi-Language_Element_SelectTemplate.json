@@ -1,0 +1,61 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SelectTemplate",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PickTemplate",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/PickTemplate",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PickTemplate",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "template-list",
+                "source": "%DocumentTemplate%"
+            },
+            {
+                "name": "clear-state-on-change",
+                "source": "[\"DocumentGenerationWordLWC\"]"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": "%vlocity_namespace%__CMEXSelectTemplate",
+        "lwcName": "%vlocity_namespace%__clmSelectableItems",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": ">",
+                        "data": "1",
+                        "field": "AvailableTemplates"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/SelectTemplate"
+}

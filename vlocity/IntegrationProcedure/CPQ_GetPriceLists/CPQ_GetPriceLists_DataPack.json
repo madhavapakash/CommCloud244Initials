@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetPriceLists_SampleInput.json",
+    "Description": "Fetches Price Lists for a cart.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetPriceLists",
+    "OmniProcessElement": [
+        "CPQ_GetPriceLists_Element_GetPriceListsRA.json",
+        "CPQ_GetPriceLists_Element_DataRaptorTransformActionGetPriceListsResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_GetPriceLists",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetPriceLists_PropertySetConfig.json",
+    "SubType": "GetPriceLists",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetPriceLists/Procedure",
+    "WebComponentKey": "d545fce6-ea13-fa12-835e-8afd99ced06c"
+}

@@ -1,0 +1,111 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "IP_CreateAccountRecord",
+    "OmniProcessId": {
+        "Name": "AccountCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "AccountName": "%AccountName%",
+            "AccountNumber": "%AccountNumber%",
+            "BillingCity": "%TApincode-Block:city%",
+            "BillingCountry": "%TApincode-Block:country%",
+            "BillingState": "%TApincode-Block:state%",
+            "BillingStreetAddress": "%TApincode-Block:street%",
+            "BillingZipCode": "%TApincode-Block:pincode%",
+            "BusinessCircleRegion": "%BusinessCircleRegion%",
+            "CareOf": "%CareOf%",
+            "Category": "%Category%",
+            "CountryCode": "%CountryCode%",
+            "CustomerSegment": "%CustomerSegment%",
+            "IdentificationType": "%IdentificationType%",
+            "IsPanNumberVerified": "%IsPanNumberVerified%",
+            "PAN": "%PAN%",
+            "Phone": "%Phone%",
+            "PinCodeId": "%TApincode-Block:pincodeId%",
+            "RecordType": "%RecordType%",
+            "ServiceSegment": "%ServiceSegment%",
+            "TAN": "%TAN%",
+            "VerticalSegment": "%VerticalSegment%",
+            "Website": "%Website%"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "integrationProcedureKey": "ARTL_CreateAccountRecord",
+        "label": "IP_CreateAccountRecord",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "panError"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "tanError"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountCreation/English/IP_CreateAccountRecord"
+}

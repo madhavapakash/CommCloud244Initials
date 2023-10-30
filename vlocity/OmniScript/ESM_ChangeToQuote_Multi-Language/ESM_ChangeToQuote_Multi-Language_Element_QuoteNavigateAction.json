@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "QuoteNavigateAction",
+    "OmniProcessId": {
+        "Name": "Change to Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/ChangeToQuote/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": null,
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": true,
+        "show": null,
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetType": "Web Page",
+        "targetUrl": "/lightning/n/%vlocity_namespace%__EnterpriseSalesApp?c__accountId=%AccountId%&c__cartId=%QuoteId%&c__cartName=%QuoteName%&c__objType=Quote&c__tabName=Product",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/ChangeToQuote/Multi-Language/QuoteNavigateAction"
+}

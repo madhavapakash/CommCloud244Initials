@@ -1,0 +1,47 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FlexcardLevel01",
+    "OmniProcessId": {
+        "Name": "CPQConfigurator",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/cartConfigurator/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "RootLevel0",
+        "OmniProcessId": {
+            "Name": "CPQConfigurator",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/cartConfigurator/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/cartConfigurator/Multi-Language/RootLevel0",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "RootLevel0",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "parent-data",
+                "source": "true"
+            },
+            {
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "cfCpqCartConfiguratorContainer",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/cartConfigurator/Multi-Language/FlexcardLevel01"
+}

@@ -1,0 +1,49 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "This call do complete migration of working cart items to sales Opportunity line items, including renumbering and member tagging (bulkified version for MemberUpdateLoopBlock).",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CloneMemWCQLs",
+    "OmniProcessId": {
+        "Name": "CopyWorkingCartToOppt",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CopyWorkingCartToOppt/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "SalesOpptId": "%SalesOpptId%",
+            "WorkingCartId": "%WorkingCartId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "NOT(ISBLANK(MemberIds))",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction13",
+        "remoteClass": "%vlocity_namespace%.B2BCmexAppHandler",
+        "remoteMethod": "cloneMembersFromOpptWCToSC",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CopyWorkingCartToOppt/Procedure/CloneMemWCQLs"
+}

@@ -1,0 +1,50 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "InvokeAddToMemberBatchApex",
+    "OmniProcessId": {
+        "Name": "AddToMemberBatchCall",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/AddQMQGToWC/CopyToEQBatch/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "BatchSize": "%BatchSize%",
+            "ContextMapping": "%ContextMapping:ContextMapping%",
+            "MemberIds": "=IF(ISBLANK(%MemberIds%), LIST(), %MemberIds%)",
+            "QuoteGroupIds": "=IF(ISBLANK(%QuoteGroupIds%), LIST(), %QuoteGroupIds%)"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.B2BCmexAppHandler",
+        "remoteMethod": "cloneMembersFromWCToSCBatchCall",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/AddQMQGToWC/CopyToEQBatch/Procedure/InvokeAddToMemberBatchApex"
+}

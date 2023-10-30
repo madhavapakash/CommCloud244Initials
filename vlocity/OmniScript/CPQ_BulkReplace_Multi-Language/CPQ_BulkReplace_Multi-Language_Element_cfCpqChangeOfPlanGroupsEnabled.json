@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cfCpqChangeOfPlanGroupsEnabled",
+    "OmniProcessId": {
+        "Name": "CPQBulkReplace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Groups",
+        "OmniProcessId": {
+            "Name": "CPQBulkReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/Groups",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Groups",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "parent-data",
+                "source": "true"
+            },
+            {
+                "name": "record-id",
+                "source": "%cartId%"
+            },
+            {
+                "name": "records",
+                "source": "%groupsEnabledDataSource%"
+            },
+            {
+                "name": "parent-attribute",
+                "source": "%COPGroupsEnabledParentDetails%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "cfCpqChangeOfPlanGroups",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/cfCpqChangeOfPlanGroupsEnabled"
+}

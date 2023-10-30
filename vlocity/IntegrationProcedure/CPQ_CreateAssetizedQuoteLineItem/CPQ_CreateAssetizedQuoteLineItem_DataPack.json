@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_CreateAssetizedQuoteLineItem_SampleInput.json",
+    "Description": "This Integration Procedure is used to invoke ChangetoQuote Service to add a list of line items from assets to quote.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_CreateAssetizedQuoteLineItem",
+    "OmniProcessElement": [
+        "CPQ_CreateAssetizedQuoteLineItem_Element_AssetToQuoteRequestPayload.json",
+        "CPQ_CreateAssetizedQuoteLineItem_Element_AssetToQuoteAction.json",
+        "CPQ_CreateAssetizedQuoteLineItem_Element_AssetToQuoteResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_CreateAssetizedQuoteLineItem",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_CreateAssetizedQuoteLineItem_PropertySetConfig.json",
+    "SubType": "CreateAssetizedQuoteLineItem",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/CreateAssetizedQuoteLineItem/Procedure",
+    "WebComponentKey": "da27cfe1-56f3-dd3e-197e-296f31cd5c95"
+}

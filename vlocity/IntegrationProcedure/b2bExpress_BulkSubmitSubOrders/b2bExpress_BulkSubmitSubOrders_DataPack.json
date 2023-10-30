@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_BulkSubmitSubOrders_SampleInput.json",
+    "Description": "The IP is used to submit multiple sub-orders of a Master/Parent order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "BulkSubmitSubOrders",
+    "OmniProcessElement": [
+        "b2bExpress_BulkSubmitSubOrders_Element_SetValuesSubOrder.json",
+        "b2bExpress_BulkSubmitSubOrders_Element_startAsyncJob.json",
+        "b2bExpress_BulkSubmitSubOrders_Element_sendNotificationStarted.json",
+        "b2bExpress_BulkSubmitSubOrders_Element_sendNotificationFailedToStart.json",
+        "b2bExpress_BulkSubmitSubOrders_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "b2bExpress_BulkSubmitSubOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_BulkSubmitSubOrders_PropertySetConfig.json",
+    "SubType": "BulkSubmitSubOrders",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/BulkSubmitSubOrders/Procedure",
+    "WebComponentKey": "5604c54d-7eb1-2f29-d4e5-429d2829184f"
+}

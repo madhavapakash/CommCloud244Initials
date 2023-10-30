@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction2",
+    "OmniProcessId": {
+        "Name": "CopyGroupCartToEnterpriseOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "LastChunkActivities",
+        "OmniProcessId": {
+            "Name": "CopyGroupCartToEnterpriseOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure/LastChunkActivities",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "LastChunkActivities",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "SalesOrderId": "%SalesOrderId%",
+            "WorkingCartId": "%CreateWorkingCart:WorkingCartId%",
+            "cloningCompleted": "yes"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "NOT(ISBLANK(CloneWcQLI2SC:SOLIsProdIds))",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure/ResponseAction2"
+}

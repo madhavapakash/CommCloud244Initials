@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "AddOMOGToWC_CopyToEO_SampleInput.json",
+    "Description": "B2B Express- GT3a: Add members and Order Group to the Working cart and copy to Enterprise Order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AddOMOGToWCOIsCopyToEO",
+    "OmniProcessElement": [
+        "AddOMOGToWC_CopyToEO_Element_CloneOIsFromWCToEO.json",
+        "AddOMOGToWC_CopyToEO_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "AddOMOGToWC_CopyToEO",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "AddOMOGToWC_CopyToEO_PropertySetConfig.json",
+    "SubType": "CopyToEO",
+    "Type": "AddOMOGToWC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/AddOMOGToWC/CopyToEO/Procedure",
+    "WebComponentKey": "9db2a59a-a186-5c3f-b600-c063dd98fd23"
+}

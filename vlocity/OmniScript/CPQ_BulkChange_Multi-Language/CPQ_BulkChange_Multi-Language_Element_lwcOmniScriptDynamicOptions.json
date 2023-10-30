@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "lwcOmniScriptDynamicOptions",
+    "OmniProcessId": {
+        "Name": "Bulk Change Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkChange/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Bundle",
+        "OmniProcessId": {
+            "Name": "Bulk Change Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkChange/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkChange/Multi-Language/Bundle",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Bundle",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "products",
+                "source": "%productBundles%"
+            },
+            {
+                "name": "headline-label",
+                "source": "CPQBundleMessage"
+            },
+            {
+                "name": "selected-group-cart-id",
+                "source": "%selectedGroupCartId%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "%vlocity_namespace%__lwcOmniScriptDynamicOptions",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkChange/Multi-Language/lwcOmniScriptDynamicOptions"
+}

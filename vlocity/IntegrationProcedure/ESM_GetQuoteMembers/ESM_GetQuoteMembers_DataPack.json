@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_GetQuoteMembers_SampleInput.json",
+    "Description": "Used to query Quote Members for a given cart Id. The IP also accepts offset, searchByFields, searchText, sortByField and sortDirection as parameters.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetQuoteMembers",
+    "OmniProcessElement": [
+        "ESM_GetQuoteMembers_Element_getQuoteMembers.json",
+        "ESM_GetQuoteMembers_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_GetQuoteMembers",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_GetQuoteMembers_PropertySetConfig.json",
+    "SubType": "GetQuoteMembers",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/GetQuoteMembers/Procedure",
+    "WebComponentKey": "114b2ac1-c836-7479-a247-f71dfdac9fdc"
+}

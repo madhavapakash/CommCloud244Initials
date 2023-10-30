@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_StartBulkSplitOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_StartBulkSplitOrder",
+    "OmniProcessElement": [
+        "CPQ_StartBulkSplitOrder_Element_SetUserId.json",
+        "CPQ_StartBulkSplitOrder_Element_Send-started-notification.json",
+        "CPQ_StartBulkSplitOrder_Element_StartAsyncJobForSplitOrder.json",
+        "CPQ_StartBulkSplitOrder_Element_Send-Job-Submitted-Notification.json",
+        "CPQ_StartBulkSplitOrder_Element_SplitOrderResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_StartBulkSplitOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_StartBulkSplitOrder_PropertySetConfig.json",
+    "SubType": "StartBulkSplitOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/StartBulkSplitOrder/Procedure",
+    "WebComponentKey": "c6ad18c0-a432-b7d1-1633-bc76453e2196"
+}

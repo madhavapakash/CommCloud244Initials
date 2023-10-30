@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "Conditionally update quantity to 1 of all rootItem, if any members are received.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "updateQuantityToOne",
+    "OmniProcessId": {
+        "Name": "CopyWorkingCartToEnterpriseQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyWorkingCartToEnterpriseQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AllRootItems": "=getAllWCRootItems",
+            "Quantity": 1
+        },
+        "additionalOutput": {
+        },
+        "bundle": "updateQLIsQuantity",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "NOT(ISBLANK(MemberIds))",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyWorkingCartToEnterpriseQuote/Procedure/updateQuantityToOne"
+}

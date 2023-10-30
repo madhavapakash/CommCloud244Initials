@@ -1,0 +1,66 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProductsIP",
+    "OmniProcessId": {
+        "Name": "CPQ_Products_Promotions_IP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ProductPromotionContainer/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ProductsBlock",
+        "OmniProcessId": {
+            "Name": "CPQ_Products_Promotions_IP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ProductPromotionContainer/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ProductPromotionContainer/Procedure/ProductsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ProductsBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "attributes": "%GetProductsPromotionsInput:attributes%",
+            "cartId": "%GetProductsPromotionsInput:cartId%",
+            "catalogId": "%GetProductsPromotionsInput:catalogId%",
+            "fields": "%GetProductsPromotionsInput:fields%",
+            "offsetSize": "%GetProductsPromotionsInput:offsetSize%",
+            "pagesize": "%GetProductsPromotionsInput:pagesize%",
+            "qualifiedFilter": "%GetProductsPromotionsInput:qualifiedFilter%",
+            "query": "%GetProductsPromotionsInput:query%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "CPQ_GetProducts",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ProductPromotionContainer/Procedure/ProductsIP"
+}

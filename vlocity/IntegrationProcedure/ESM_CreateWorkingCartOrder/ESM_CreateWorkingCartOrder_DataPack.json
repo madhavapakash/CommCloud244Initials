@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_CreateWorkingCartOrder_SampleInput.json",
+    "Description": "B2B Express(GT1) - Create Working Cart Cart (record Type) Order based on Enterprise Order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateWorkingCartOrder",
+    "OmniProcessElement": [
+        "ESM_CreateWorkingCartOrder_Element_SVForOrderWorkingCart.json",
+        "ESM_CreateWorkingCartOrder_Element_getEnterpriseOrderDetails.json",
+        "ESM_CreateWorkingCartOrder_Element_RecordTypeCB.json",
+        "ESM_CreateWorkingCartOrder_Element_SVRecordType.json",
+        "ESM_CreateWorkingCartOrder_Element_GetOrderRecordTypeId.json",
+        "ESM_CreateWorkingCartOrder_Element_CreateWorkingCart.json",
+        "ESM_CreateWorkingCartOrder_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_CreateWorkingCartOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CreateWorkingCartOrder_PropertySetConfig.json",
+    "SubType": "CreateWorkingCartOrder",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateWorkingCartOrder/Procedure",
+    "WebComponentKey": "7965a12e-d7fc-4875-28c5-74b13febd1e3"
+}

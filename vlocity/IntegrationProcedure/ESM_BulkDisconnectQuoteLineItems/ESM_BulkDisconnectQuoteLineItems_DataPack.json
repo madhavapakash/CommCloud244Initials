@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "IP to trigger Async Engine Job for Bulk Disconnecting QLIs. Expected parameters: 1) Quote Id: String 2) Root Ids of QLIs selected for disconnecting: List of Object with attribute \"Id\"(example: [{Id:\"rootId1\"},{Id:\"rootId2\"},{Id:\"rootId3\"}])",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_BulkDisconnectQuoteLineItems",
+    "OmniProcessElement": [
+        "ESM_BulkDisconnectQuoteLineItems_Element_SetValuesBulkDisconnectQuoteLineItems.json",
+        "ESM_BulkDisconnectQuoteLineItems_Element_startAsyncJob.json",
+        "ESM_BulkDisconnectQuoteLineItems_Element_SendNotificationStarted.json",
+        "ESM_BulkDisconnectQuoteLineItems_Element_SendNotificationFailedToStart.json",
+        "ESM_BulkDisconnectQuoteLineItems_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_BulkDisconnectQuoteLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_BulkDisconnectQuoteLineItems_PropertySetConfig.json",
+    "SubType": "BulkDisconnectQuoteLineItems",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/BulkDisconnectQuoteLineItems/Procedure",
+    "WebComponentKey": "13f2c1c7-44fb-5bc2-77ec-4d74913e68aa"
+}

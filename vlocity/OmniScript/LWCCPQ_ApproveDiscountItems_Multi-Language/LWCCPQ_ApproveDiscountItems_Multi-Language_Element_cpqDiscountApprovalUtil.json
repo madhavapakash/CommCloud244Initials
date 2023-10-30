@@ -1,0 +1,41 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cpqDiscountApprovalUtil",
+    "OmniProcessId": {
+        "Name": "ApproveDiscountItems",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/LWCCPQ/ApproveDiscountItems/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "DiscountApprovalStep",
+        "OmniProcessId": {
+            "Name": "ApproveDiscountItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/LWCCPQ/ApproveDiscountItems/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/LWCCPQ/ApproveDiscountItems/Multi-Language/DiscountApprovalStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "DiscountApprovalStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": true,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "%vlocity_namespace%__cpqDiscountApprovalUtil",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/LWCCPQ/ApproveDiscountItems/Multi-Language/cpqDiscountApprovalUtil"
+}

@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "create_WorkingCart_SampleInput.json",
+    "Description": "B2B Express(GT1) - Create Working Cart Cart (record Type) Quote based on Sales Quote.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateWorkingCartQuote",
+    "OmniProcessElement": [
+        "create_WorkingCart_Element_getSalesQuoteDetails.json",
+        "create_WorkingCart_Element_RecordTypeCB.json",
+        "create_WorkingCart_Element_SVRecordType.json",
+        "create_WorkingCart_Element_GetRecordTypeId.json",
+        "create_WorkingCart_Element_CreateWorkingCart.json",
+        "create_WorkingCart_Element_CopyDiscounts.json",
+        "create_WorkingCart_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "create_WorkingCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "create_WorkingCart_PropertySetConfig.json",
+    "SubType": "WorkingCart",
+    "Type": "create",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/create/WorkingCart/Procedure",
+    "WebComponentKey": "5b7e9ef0-e153-29a7-9669-7926a787d1ce"
+}

@@ -1,0 +1,56 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cpqCartConfiguratorUtilLevel1",
+    "OmniProcessId": {
+        "Name": "CPQConfigurator",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/cartConfigurator/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "RootLevel1",
+        "OmniProcessId": {
+            "Name": "CPQConfigurator",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/cartConfigurator/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/cartConfigurator/Multi-Language/RootLevel1",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "RootLevel1",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "level",
+                "records": [
+                    {
+                        "name": "apple"
+                    },
+                    {
+                        "name": "banana"
+                    },
+                    {
+                        "name": "Citrus"
+                    }
+                ],
+                "source": "1"
+            }
+        ],
+        "hide": false,
+        "label": null,
+        "lwcName": "%vlocity_namespace%__cpqCartConfiguratorUtil",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/cartConfigurator/Multi-Language/cpqCartConfiguratorUtilLevel1"
+}

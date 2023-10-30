@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_StartBulkQuoteToOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_StartBulkQuoteToOrder",
+    "OmniProcessElement": [
+        "CPQ_StartBulkQuoteToOrder_Element_SetUserId.json",
+        "CPQ_StartBulkQuoteToOrder_Element_StartAsyncJobForQuoteToOrder.json",
+        "CPQ_StartBulkQuoteToOrder_Element_sendNotificationStarted.json",
+        "CPQ_StartBulkQuoteToOrder_Element_sendNotificationFailedToStart.json",
+        "CPQ_StartBulkQuoteToOrder_Element_QuoteToOrderResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_StartBulkQuoteToOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_StartBulkQuoteToOrder_PropertySetConfig.json",
+    "SubType": "StartBulkQuoteToOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/StartBulkQuoteToOrder/Procedure",
+    "WebComponentKey": "d7ea7086-9eae-7ab5-2346-d5d475ad551c"
+}

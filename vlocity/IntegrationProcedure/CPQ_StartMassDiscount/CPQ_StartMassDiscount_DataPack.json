@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_StartMassDiscount_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_StartMassDiscount",
+    "OmniProcessElement": [
+        "CPQ_StartMassDiscount_Element_SetValuesMassDiscount.json",
+        "CPQ_StartMassDiscount_Element_startAsyncJob.json",
+        "CPQ_StartMassDiscount_Element_sendNotificationStarted.json",
+        "CPQ_StartMassDiscount_Element_sendNotificationFailedToStart.json",
+        "CPQ_StartMassDiscount_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "CPQ_StartMassDiscount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_StartMassDiscount_PropertySetConfig.json",
+    "SubType": "StartMassDiscount",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/StartMassDiscount/Procedure",
+    "WebComponentKey": "8ce14630-fe27-b0b9-bd6b-3ae6c640e84e"
+}

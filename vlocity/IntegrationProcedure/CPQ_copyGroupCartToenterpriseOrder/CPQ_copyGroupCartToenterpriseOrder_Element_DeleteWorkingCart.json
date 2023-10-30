@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DeleteWorkingCart",
+    "OmniProcessId": {
+        "Name": "CopyGroupCartToEnterpriseOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "LastChunkActivities",
+        "OmniProcessId": {
+            "Name": "CopyGroupCartToEnterpriseOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure/LastChunkActivities",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "LastChunkActivities",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalOutput": {
+        },
+        "allOrNone": false,
+        "chainOnStep": false,
+        "deleteSObject": [
+            {
+                "AllOrNone": false,
+                "Id": "%WorkingCartId%",
+                "Type": "Order"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "NOT(ISBLANK(CloneWcQLI2SC:SOLIsProdIds))",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DeleteAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Delete Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure/DeleteWorkingCart"
+}

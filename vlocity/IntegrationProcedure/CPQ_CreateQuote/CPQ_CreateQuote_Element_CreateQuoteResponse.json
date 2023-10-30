@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateQuoteResponse",
+    "OmniProcessId": {
+        "Name": "CPQCreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "AssetIds": "=LIST(%CreateSelectQuote:AssetIds%)",
+            "OpportunityId": "=IF(CreateSelectQuote:selectQuoteType == \"createOpportunity\", %CreateOpportunityRecord:Opportunity_1:Id% , CreateSelectQuote:selectOpportunity)",
+            "QuoteId": "=IF(CreateSelectQuote:selectType == \"createQuote\", %CreateQuoteRecord:records:Id% , CreateSelectQuote:selectQuoteName)",
+            "createQuoteMessages": "%CreateQuoteRecord:messages%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateQuote/Procedure/CreateQuoteResponse"
+}

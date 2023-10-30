@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_DelinkRelatedItemFromCartForOrder_SampleInput.json",
+    "Description": "This will delink a related order item(product) from another item of the same order, (From OrderItemRelationship Sobject)",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DelinkRelatedItemForEnterpriseOrderFromCart",
+    "OmniProcessElement": [
+        "ESM_DelinkRelatedItemFromCartForOrder_Element_DeletelinkItem.json",
+        "ESM_DelinkRelatedItemFromCartForOrder_Element_Response.json"
+    ],
+    "OmniProcessKey": "ESM_DelinkRelatedItemFromCartForOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_DelinkRelatedItemFromCartForOrder_PropertySetConfig.json",
+    "SubType": "DelinkRelatedItemFromCartForOrder",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/DelinkRelatedItemFromCartForOrder/Procedure",
+    "WebComponentKey": "25ccc302-edab-6e7d-9f40-0cbf55255844"
+}

@@ -1,0 +1,64 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "FDOFailedDisconnectedAssetsMessaging",
+    "OmniProcessId": {
+        "Name": "Change to Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ChangeToOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ErrorStep",
+        "OmniProcessId": {
+            "Name": "Change to Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ChangeToOrder/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ChangeToOrder/Multi-Language/ErrorStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ErrorStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hideLabel": true,
+        "label": null,
+        "messages": [
+            {
+                "active": true,
+                "text": "CPQFDOFailedDisconnectedAssets",
+                "type": "Warning",
+                "value": true
+            },
+            {
+                "active": true,
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "messages|0:text": "CPQFDOFailedDisconnectedAssets",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "disconnectedAssets"
+                    }
+                ]
+            }
+        },
+        "validateExpression": null
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ChangeToOrder/Multi-Language/FDOFailedDisconnectedAssetsMessaging"
+}

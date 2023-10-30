@@ -1,0 +1,1386 @@
+{
+    "cartId": "8015Y0000014z7YQAQ",
+    "lineItems": [
+        {
+            "itemId": "8025Y000001FlUcQAK",
+            "parentRecord": {
+                "records": [
+                    {
+                        "%vlocity_namespace%__Action__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "PICKLIST",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__Action__c",
+                            "hidden": false,
+                            "label": "Action",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "Add"
+                        },
+                        "%vlocity_namespace%__AssetReferenceId__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__AssetReferenceId__c",
+                            "hidden": true,
+                            "label": "Asset Reference Id",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "88b6bb3e-5608-71b0-a967-bbb7db396a82"
+                        },
+                        "%vlocity_namespace%__BillingAccountId__c": {
+                            "actions": {
+                                "availablesites": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "lookupField": "%vlocity_namespace%__billingaccountid__c",
+                                            "methodName": "getAvailableSites"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/sites?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&lookupField=%vlocity_namespace%__billingaccountid__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__BillingAccountId__c",
+                            "hidden": false,
+                            "label": "Billing Account",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "0015Y00002hAAYmQAO"
+                        },
+                        "%vlocity_namespace%__BillingAccountId__r": {
+                            "Id": "0015Y00002hAAYmQAO",
+                            "Name": "Test Account Clone Item In Cart",
+                            "attributes": {
+                                "type": "Account",
+                                "url": "/services/data/v51.0/sobjects/Account/0015Y00002hAAYmQAO"
+                            }
+                        },
+                        "%vlocity_namespace%__CatalogItemReferenceDateTime__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "DATETIME",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__CatalogItemReferenceDateTime__c",
+                            "hidden": false,
+                            "label": "Reference Time",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__CpqCardinalityMessage__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "TEXTAREA",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__CpqCardinalityMessage__c",
+                            "hidden": false,
+                            "label": "Cpq Cardinality Message",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__CpqMessageData__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "TEXTAREA",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__CpqMessageData__c",
+                            "hidden": true,
+                            "label": "Cpq Message Data",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__CpqPricingMessage__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "TEXTAREA",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__CpqPricingMessage__c",
+                            "hidden": false,
+                            "label": "Cpq Pricing Message",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__CurrencyPaymentMode__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "PICKLIST",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__CurrencyPaymentMode__c",
+                            "hidden": true,
+                            "label": "Currency Payment Mode",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "Currency"
+                        },
+                        "%vlocity_namespace%__EffectiveOneTimeLoyaltyTotal__c": {
+                            "value": 0
+                        },
+                        "%vlocity_namespace%__EffectiveOneTimeTotal__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__EffectiveOneTimeTotal__c",
+                            "hidden": false,
+                            "label": "Effective One Time Total",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 110
+                        },
+                        "%vlocity_namespace%__EffectiveQuantity__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "DOUBLE",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__EffectiveQuantity__c",
+                            "hidden": false,
+                            "label": "Effective Quantity",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 1
+                        },
+                        "%vlocity_namespace%__EffectiveRecurringTotal__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__EffectiveRecurringTotal__c",
+                            "hidden": false,
+                            "label": "Effective Recurring Total",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 100
+                        },
+                        "%vlocity_namespace%__FirstVersionOrderItemId__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__FirstVersionOrderItemId__c",
+                            "hidden": true,
+                            "label": "First Order Product Version",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__FulfilmentStatus__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "PICKLIST",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__FulfilmentStatus__c",
+                            "hidden": false,
+                            "label": "Fulfilment Status",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__InCartQuantityMap__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "TEXTAREA",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__InCartQuantityMap__c",
+                            "hidden": true,
+                            "label": "InCartQuantityMap",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": {
+                                "01t5Y00000D9xUxQAJ": 1
+                            }
+                        },
+                        "%vlocity_namespace%__IsChangesAllowed__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "BOOLEAN",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__IsChangesAllowed__c",
+                            "hidden": false,
+                            "label": "Changes Allowed",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": true
+                        },
+                        "%vlocity_namespace%__ItemName__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__ItemName__c",
+                            "hidden": false,
+                            "label": "Item Name",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__LineNumber__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__LineNumber__c",
+                            "hidden": true,
+                            "label": "LineNumber",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "0007"
+                        },
+                        "%vlocity_namespace%__OneTimeCalculatedPrice__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "OT_STD_PRC_CALC",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeCalculatedPrice__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeCalculatedPrice__c&PricingVariableCode=OT_STD_PRC_CALC",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "applyadjustment": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__OneTimeCalculatedPrice__c",
+                                                    "PricingVariableCode": "OT_STD_PRC_CALC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "applyAdjustment"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing",
+                                        "method": "POST",
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__OneTimeCalculatedPrice__c",
+                                                    "PricingVariableCode": "OT_STD_PRC_CALC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0"
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeCalculatedPrice__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeCalculatedPrice__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__OneTimeCalculatedPrice__c",
+                            "hidden": true,
+                            "label": "One Time Calculated Price",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 100
+                        },
+                        "%vlocity_namespace%__OneTimeCharge__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "OT_STD_PRC",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeCharge__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeCharge__c&PricingVariableCode=OT_STD_PRC",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "applyadjustment": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__OneTimeCharge__c",
+                                                    "PricingVariableCode": "OT_STD_PRC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "applyAdjustment"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing",
+                                        "method": "POST",
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__OneTimeCharge__c",
+                                                    "PricingVariableCode": "OT_STD_PRC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0"
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeCharge__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeCharge__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": {
+                            },
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__OneTimeCharge__c",
+                            "hidden": true,
+                            "label": "One Time Charge",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 100
+                        },
+                        "%vlocity_namespace%__OneTimeLoyaltyPrice__c": {
+                            "value": 0
+                        },
+                        "%vlocity_namespace%__OneTimeLoyaltyTotal__c": {
+                            "value": 0
+                        },
+                        "%vlocity_namespace%__OneTimeManualDiscount__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "OT_STD_PRC_DISC_PCT_MAN",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeManualDiscount__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeManualDiscount__c&PricingVariableCode=OT_STD_PRC_DISC_PCT_MAN",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "applyadjustment": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__OneTimeManualDiscount__c",
+                                                    "PricingVariableCode": "OT_STD_PRC_DISC_PCT_MAN"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "applyAdjustment"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing",
+                                        "method": "POST",
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__OneTimeManualDiscount__c",
+                                                    "PricingVariableCode": "OT_STD_PRC_DISC_PCT_MAN"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0"
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeManualDiscount__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeManualDiscount__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "PERCENT",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__OneTimeManualDiscount__c",
+                            "hidden": false,
+                            "label": "One Time Manual Discount",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 0
+                        },
+                        "%vlocity_namespace%__OneTimeTotal__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "OT_STD_PRC_TOTAL",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeTotal__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeTotal__c&PricingVariableCode=OT_STD_PRC_TOTAL",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__OneTimeTotal__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__OneTimeTotal__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__OneTimeTotal__c",
+                            "hidden": false,
+                            "label": "One Time Total",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 110
+                        },
+                        "%vlocity_namespace%__OrderGroupId__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__OrderGroupId__c",
+                            "hidden": true,
+                            "label": "Order Group",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__ParentItemId__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__ParentItemId__c",
+                            "hidden": true,
+                            "label": "ParentItemId",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__Product2Id__c": {
+                            "actions": {
+                                "availablesites": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "lookupField": "%vlocity_namespace%__product2id__c",
+                                            "methodName": "getAvailableSites"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/sites?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&lookupField=%vlocity_namespace%__product2id__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__Product2Id__c",
+                            "hidden": false,
+                            "label": "Product",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "01t5Y00000D9xUTQAZ"
+                        },
+                        "%vlocity_namespace%__ProductHierarchyPath__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__ProductHierarchyPath__c",
+                            "hidden": true,
+                            "label": "Product Hierarchy Path",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "01t5Y00000D9xUTQAZ"
+                        },
+                        "%vlocity_namespace%__ProvisioningStatus__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__ProvisioningStatus__c",
+                            "hidden": true,
+                            "label": "Provisioning Status",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "New"
+                        },
+                        "%vlocity_namespace%__RecurringCalculatedPrice__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "REC_MNTH_STD_PRC_CALC",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__RecurringCalculatedPrice__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__RecurringCalculatedPrice__c&PricingVariableCode=REC_MNTH_STD_PRC_CALC",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "applyadjustment": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__RecurringCalculatedPrice__c",
+                                                    "PricingVariableCode": "REC_MNTH_STD_PRC_CALC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "applyAdjustment"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing",
+                                        "method": "POST",
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__RecurringCalculatedPrice__c",
+                                                    "PricingVariableCode": "REC_MNTH_STD_PRC_CALC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0"
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__RecurringCalculatedPrice__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__RecurringCalculatedPrice__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__RecurringCalculatedPrice__c",
+                            "hidden": true,
+                            "label": "Recurring Calculated Price",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 50
+                        },
+                        "%vlocity_namespace%__RecurringCharge__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "REC_MNTH_STD_PRC",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__RecurringCharge__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__RecurringCharge__c&PricingVariableCode=REC_MNTH_STD_PRC",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "applyadjustment": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__RecurringCharge__c",
+                                                    "PricingVariableCode": "REC_MNTH_STD_PRC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "applyAdjustment"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing",
+                                        "method": "POST",
+                                        "params": {
+                                            "adjustments": [
+                                                {
+                                                    "AdjustmentCode": "",
+                                                    "AdjustmentMethod": "Percent",
+                                                    "AdjustmentValue": 0,
+                                                    "DetailType": "ADJUSTMENT",
+                                                    "Field": "%vlocity_namespace%__RecurringCharge__c",
+                                                    "PricingVariableCode": "REC_MNTH_STD_PRC"
+                                                }
+                                            ],
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0"
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__RecurringCharge__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__RecurringCharge__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "timelists": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "listkeys": "TimePlans,TimePolicies",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=TimePlans,TimePolicies",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__RecurringCharge__c",
+                            "hidden": true,
+                            "label": "Recurring Charge",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 50
+                        },
+                        "%vlocity_namespace%__RecurringDiscountPrice__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__RecurringDiscountPrice__c",
+                            "hidden": true,
+                            "label": "Recurring Discount Price",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__RecurringManualDiscount__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "PERCENT",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__RecurringManualDiscount__c",
+                            "hidden": false,
+                            "label": "Recurring Manual Discount",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 0
+                        },
+                        "%vlocity_namespace%__RecurringPrice__c": 150,
+                        "%vlocity_namespace%__RecurringTotal__c": {
+                            "actions": {
+                                "adjustmentcodes": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "PricingVariableCode": "REC_MNTH_STD_PRC_TOTAL",
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__RecurringTotal__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "listkeys": "AdjustmentCodes",
+                                            "methodName": "getListsOfValues"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=AdjustmentCodes&cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__RecurringTotal__c&PricingVariableCode=REC_MNTH_STD_PRC_TOTAL",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                },
+                                "pricedetail": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "fields": "%vlocity_namespace%__RecurringTotal__c",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "methodName": "getPriceDetail"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/items/8025Y000001FlUXQA0/pricing?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&fields=%vlocity_namespace%__RecurringTotal__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__RecurringTotal__c",
+                            "hidden": false,
+                            "label": "Recurring Total",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 100
+                        },
+                        "%vlocity_namespace%__RootItemId__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "STRING",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__RootItemId__c",
+                            "hidden": true,
+                            "label": "RootItemId",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "8025Y000001FlUXQA0"
+                        },
+                        "%vlocity_namespace%__ServiceAccountId__c": {
+                            "actions": {
+                                "availablesites": {
+                                    "client": {
+                                        "params": {
+                                        },
+                                        "records": [
+                                        ]
+                                    },
+                                    "remote": {
+                                        "params": {
+                                            "cartId": "8015Y0000014z7YQAQ",
+                                            "id": "8025Y000001FlUXQA0",
+                                            "lookupField": "%vlocity_namespace%__serviceaccountid__c",
+                                            "methodName": "getAvailableSites"
+                                        }
+                                    },
+                                    "rest": {
+                                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015Y0000014z7YQAQ/sites?cartId=8015Y0000014z7YQAQ&id=8025Y000001FlUXQA0&lookupField=%vlocity_namespace%__serviceaccountid__c",
+                                        "method": "GET",
+                                        "params": {
+                                        }
+                                    }
+                                }
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__ServiceAccountId__c",
+                            "hidden": false,
+                            "label": "Service Account",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "0015Y00002hAAYmQAO"
+                        },
+                        "%vlocity_namespace%__ServiceAccountId__r": {
+                            "Id": "0015Y00002hAAYmQAO",
+                            "Name": "Test Account Clone Item In Cart",
+                            "attributes": {
+                                "type": "Account",
+                                "url": "/services/data/v51.0/sobjects/Account/0015Y00002hAAYmQAO"
+                            }
+                        },
+                        "%vlocity_namespace%__SubAction__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "PICKLIST",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__SubAction__c",
+                            "hidden": false,
+                            "label": "Sub Action",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__SupersededOrderItemId__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": false,
+                            "fieldName": "%vlocity_namespace%__SupersededOrderItemId__c",
+                            "hidden": true,
+                            "label": "Superseded Order Product",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "%vlocity_namespace%__SupplementalAction__c": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "PICKLIST",
+                            "editable": true,
+                            "fieldName": "%vlocity_namespace%__SupplementalAction__c",
+                            "hidden": false,
+                            "label": "Supplemental Action",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": null
+                        },
+                        "CurrencyCode": "USD",
+                        "Id": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "ID",
+                            "editable": false,
+                            "fieldName": "Id",
+                            "hidden": false,
+                            "label": "Order Product ID",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "8025Y000001FlUXQA0"
+                        },
+                        "IsActive": true,
+                        "ListPrice": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "ListPrice",
+                            "hidden": true,
+                            "label": "List Price",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 0
+                        },
+                        "Name": "Business Internet",
+                        "OrderId": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": false,
+                            "fieldName": "OrderId",
+                            "hidden": false,
+                            "label": "Order ID",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "8015Y0000014z7YQAQ"
+                        },
+                        "Pricebook2Id": "01s5Y000002xVYWQA2",
+                        "PricebookEntry": {
+                            "Id": "01u5Y00001IGHeyQAH",
+                            "Pricebook2Id": "01s5Y000002xVYWQA2",
+                            "Product2": {
+                                "%vlocity_namespace%__GlobalGroupKey__c": "22225b51-d5ef-fd33-48cf-791d65621748",
+                                "%vlocity_namespace%__IsConfigurable__c": false,
+                                "%vlocity_namespace%__Type__c": "None",
+                                "Id": "01t5Y00000D9xUTQAZ",
+                                "Name": "Business Internet",
+                                "ProductCode": "BusinessInternet",
+                                "attributes": {
+                                    "type": "Product2",
+                                    "url": "/services/data/v51.0/sobjects/Product2/01t5Y00000D9xUTQAZ"
+                                }
+                            },
+                            "Product2Id": "01t5Y00000D9xUTQAZ",
+                            "attributes": {
+                                "type": "PricebookEntry",
+                                "url": "/services/data/v51.0/sobjects/PricebookEntry/01u5Y00001IGHeyQAH"
+                            }
+                        },
+                        "PricebookEntryId": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "REFERENCE",
+                            "editable": false,
+                            "fieldName": "PricebookEntryId",
+                            "hidden": false,
+                            "label": "Price Book Entry ID",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": "01u5Y00001IGHeyQAH"
+                        },
+                        "Product2": {
+                            "%vlocity_namespace%__GlobalGroupKey__c": "22225b51-d5ef-fd33-48cf-791d65621748",
+                            "%vlocity_namespace%__IsConfigurable__c": false,
+                            "%vlocity_namespace%__JSONAttribute__c": null,
+                            "%vlocity_namespace%__SellingStartDate__c": "2021-02-28T18:30:00.000+0000",
+                            "%vlocity_namespace%__SpecificationType__c": "Product",
+                            "%vlocity_namespace%__SubType__c": "None",
+                            "%vlocity_namespace%__Type__c": "None",
+                            "%vlocity_namespace%__VersionLabel__c": "BusinessInternet",
+                            "Description": "Business Internet Lorem Ipsum\nBusiness Internet Lorem Ipsum\nBusiness Internet Lorem Ipsum\nBusiness Internet Lorem Ipsum",
+                            "Id": "01t5Y00000D9xUTQAZ",
+                            "Name": "Business Internet",
+                            "attributes": {
+                                "type": "Product2",
+                                "url": "/services/data/v51.0/sobjects/Product2/01t5Y00000D9xUTQAZ"
+                            }
+                        },
+                        "Product2Id": "01t5Y00000D9xUTQAZ",
+                        "ProductCode": "BusinessInternet",
+                        "Quantity": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "DOUBLE",
+                            "editable": true,
+                            "fieldName": "Quantity",
+                            "hidden": false,
+                            "label": "Quantity",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 1
+                        },
+                        "SellingPeriod": "Present",
+                        "UnitPrice": {
+                            "actions": {
+                            },
+                            "alternateValues": null,
+                            "dataType": "CURRENCY",
+                            "editable": false,
+                            "fieldName": "UnitPrice",
+                            "hidden": true,
+                            "label": "Unit Price",
+                            "messages": [
+                            ],
+                            "originalValue": null,
+                            "previousValue": null,
+                            "value": 0
+                        },
+                        "action": "Add",
+                        "defaultQuantity": 1,
+                        "displaySequence": -1,
+                        "groupMaxQuantity": 99999,
+                        "groupMinQuantity": 0,
+                        "hasChildren": true,
+                        "isVirtualItem": false,
+                        "itemType": "lineItem",
+                        "maxQuantity": 99999,
+                        "minQuantity": 0,
+                        "name": "Business Internet",
+                        "productCategories": {
+                            "totalSize": 0
+                        },
+                        "productChildItemDefinition": {
+                            "%vlocity_namespace%__ChildLineNumber__c": "1",
+                            "%vlocity_namespace%__CollapseHierarchy__c": false,
+                            "%vlocity_namespace%__IsOverride__c": false,
+                            "%vlocity_namespace%__IsRootProductChildItem__c": true,
+                            "%vlocity_namespace%__IsVirtualItem__c": false,
+                            "%vlocity_namespace%__MaxQuantity__c": 99999,
+                            "%vlocity_namespace%__MaximumChildItemQuantity__c": 99999,
+                            "%vlocity_namespace%__MinQuantity__c": 0,
+                            "%vlocity_namespace%__MinimumChildItemQuantity__c": 0,
+                            "%vlocity_namespace%__ParentProductId__c": "01t5Y00000D9xUTQAZ",
+                            "%vlocity_namespace%__ParentProductId__r": {
+                                "%vlocity_namespace%__GlobalGroupKey__c": "22225b51-d5ef-fd33-48cf-791d65621748",
+                                "%vlocity_namespace%__SellingStartDate__c": "2021-02-28T18:30:00.000+0000",
+                                "Id": "01t5Y00000D9xUTQAZ",
+                                "Name": "Business Internet",
+                                "attributes": {
+                                    "type": "Product2",
+                                    "url": "/services/data/v51.0/sobjects/Product2/01t5Y00000D9xUTQAZ"
+                                }
+                            },
+                            "%vlocity_namespace%__Quantity__c": 1,
+                            "%vlocity_namespace%__SeqNumber__c": 1,
+                            "Name": "Root PCI",
+                            "attributes": {
+                                "type": "%vlocity_namespace%__ProductChildItem__c"
+                            }
+                        },
+                        "productHierarchyPath": "01t5Y00000D9xUTQAZ",
+                        "productId": "01t5Y00000D9xUTQAZ",
+                        "sequenceNumber": 1
+                    }
+                ]
+            }
+        }
+    ]
+}

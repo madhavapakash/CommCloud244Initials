@@ -1,0 +1,80 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "startAddMembersAsyncJobForOrder",
+    "OmniProcessId": {
+        "Name": "CPQ_StartBulkCreateGroups",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/StartBulkCreateGroups/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "accountId": "%createCartData:ContextId%",
+                "cartId": "%SetCartId:orderId%",
+                "cartType": "%createCartData:cartType%",
+                "selectType": "%createCartData:selectType%",
+                "timestamp": "%SetUserId:timestamp%",
+                "userID": "%SetUserId:userID%"
+            },
+            "asyncProcessName": "%SetUserId:addMembersAsyncProcessNameForOrder%",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 10,
+                            "name": "CPQ_AddMembersExecuteProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "CPQ_AddMembersFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_AddMembersStartProcess",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Add members to group"
+                }
+            ],
+            "itemsToProcessList": "%SetCartId:assetIds%",
+            "referenceId": "%SetCartId:orderId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "createCartData:cartType == 'Order' && SetCartId:orderId != null && createCartData:createGroupsAsync != 'async' && %CreateGroups:errorCode% == 'INVOKE-200'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/StartBulkCreateGroups/Procedure/startAddMembersAsyncJobForOrder"
+}

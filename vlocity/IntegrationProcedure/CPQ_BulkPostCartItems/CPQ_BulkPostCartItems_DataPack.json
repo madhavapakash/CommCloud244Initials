@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_BulkPostCartItems_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "BulkPostCartItems",
+    "OmniProcessElement": [
+        "CPQ_BulkPostCartItems_Element_ForEachGroupCart.json",
+        "CPQ_BulkPostCartItems_Element_PostCartItem.json",
+        "CPQ_BulkPostCartItems_Element_Output.json"
+    ],
+    "OmniProcessKey": "CPQ_BulkPostCartItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_BulkPostCartItems_PropertySetConfig.json",
+    "SubType": "BulkPostCartItems",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/BulkPostCartItems/Procedure",
+    "WebComponentKey": "e4091b58-2f76-ab22-9b62-069428accf8a"
+}

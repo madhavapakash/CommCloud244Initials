@@ -1,0 +1,49 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "replaceOffersFlexcard",
+    "OmniProcessId": {
+        "Name": "CPQBulkReplace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TargetOffers",
+        "OmniProcessId": {
+            "Name": "CPQBulkReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/TargetOffers",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TargetOffers",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": true,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "parent-attribute",
+                "source": "%targetOffersParentDetails%"
+            },
+            {
+                "name": "record-id",
+                "source": "%groupCartId%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "cfCpqOfferSelection",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/replaceOffersFlexcard"
+}

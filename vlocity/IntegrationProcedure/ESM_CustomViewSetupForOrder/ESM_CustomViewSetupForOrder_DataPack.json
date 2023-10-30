@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_CustomViewSetupForOrder_SampleInput.json",
+    "Description": "The IP is used to store below mapping for custom views 1. Default read-only fields for summary tab. 2. View vs Fields Mapping 3. View vs Omniscript Mapping. 4. Lookup mapping for Location/Subscriber. 5. Column and topics config for Location/Subscriber",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CustomViewSetupForOrder",
+    "OmniProcessElement": [
+        "ESM_CustomViewSetupForOrder_Element_ReadOnlyFields.json",
+        "ESM_CustomViewSetupForOrder_Element_CustomViewFieldsMapper.json",
+        "ESM_CustomViewSetupForOrder_Element_getOsStandardRuntimeSetting.json",
+        "ESM_CustomViewSetupForOrder_Element_CustomViewOMMapper.json",
+        "ESM_CustomViewSetupForOrder_Element_CustomViewOMMapperOSRuntime.json",
+        "ESM_CustomViewSetupForOrder_Element_CustomMemberHeaderActions.json",
+        "ESM_CustomViewSetupForOrder_Element_CustomQMFieldMapper.json",
+        "ESM_CustomViewSetupForOrder_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_CustomViewSetupForOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CustomViewSetupForOrder_PropertySetConfig.json",
+    "SubType": "CustomViewSetupForOrder",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CustomViewSetupForOrder/Procedure",
+    "WebComponentKey": "aeffe448-a70e-bcff-abaa-9ea6415d8131"
+}

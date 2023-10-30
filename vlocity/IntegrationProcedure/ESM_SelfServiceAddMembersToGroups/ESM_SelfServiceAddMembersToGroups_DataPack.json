@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_SelfServiceAddMembersToGroups_SampleInput.json",
+    "Description": "This IP adds order members according to the groups.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_SelfServiceAddMembersToGroups",
+    "OmniProcessElement": [
+        "ESM_SelfServiceAddMembersToGroups_Element_ForEachProductBundle.json",
+        "ESM_SelfServiceAddMembersToGroups_Element_GetMemberIdsFromAssetIds.json",
+        "ESM_SelfServiceAddMembersToGroups_Element_GroupAssetsByMembers.json",
+        "ESM_SelfServiceAddMembersToGroups_Element_RunAsyncJob.json",
+        "ESM_SelfServiceAddMembersToGroups_Element_VIPOutput.json"
+    ],
+    "OmniProcessKey": "ESM_SelfServiceAddMembersToGroups",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_SelfServiceAddMembersToGroups_PropertySetConfig.json",
+    "SubType": "SelfServiceAddMembersToGroups",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/SelfServiceAddMembersToGroups/Procedure",
+    "WebComponentKey": "9ec80e31-dba0-25d5-ddae-b4edcd68adbe"
+}

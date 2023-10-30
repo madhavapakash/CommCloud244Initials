@@ -1,0 +1,63 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DR_CreateAccountRecord",
+    "OmniProcessId": {
+        "Name": "ARTL_CreateAccountRecord",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CreateAccountRecord/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountName": "%AccountName%",
+            "BillingCity": "%BillingCity%",
+            "BillingCountry": "%BillingCountry%",
+            "BillingState": "%BillingState%",
+            "BillingStreetAddress": "%BillingStreetAddress%",
+            "BillingZipCode": "%BillingZipCode%",
+            "BusinessCircleRegion": "%BusinessCircleRegion%",
+            "CareOf": "%CareOf%",
+            "Category": "%Category%",
+            "CountryCode": "%CountryCode%",
+            "CustomerSegment": "%CustomerSegment%",
+            "IdentificationType": "%IdentificationType%",
+            "IsPanNumberVerified": "%IsPanNumberVerified%",
+            "PAN": "%PAN%",
+            "Phone": "%Phone%",
+            "PinCodeId": "%PinCodeId%",
+            "RecordTypeId": "%DR_GetAccountRecordTypeId:RecordTypeId%",
+            "ServiceSegment": "%ServiceSegment%",
+            "TAN": "%TAN%",
+            "TLUserId": "%DR_GetUserRecord:TLUserId%",
+            "VerticalSegment": "%VerticalSegment%",
+            "Website": "%Website%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DR_CreateAccountRecord",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CreateAccountRecord/Procedure/DR_CreateAccountRecord"
+}

@@ -1,0 +1,60 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmptyInputResponse",
+    "OmniProcessId": {
+        "Name": "DeleteMembers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/DeleteMembers/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EmptyConditionalCheckBlock",
+        "OmniProcessId": {
+            "Name": "DeleteMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/DeleteMembers/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/DeleteMembers/Procedure/EmptyConditionalCheckBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EmptyConditionalCheckBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response": {
+                "messages": [
+                    {
+                        "code": "100",
+                        "message": "Empty parentId, contextId, groupId or groupJSON",
+                        "severity": "ERROR"
+                    }
+                ],
+                "totalSize": 0
+            }
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%DeleteMembersInput:parentId% == \"\" || %DeleteMembersInput:contextId% == \"\" || %DeleteMembersInput:memberType% == \"\" || %DeleteMembersInput:memberIds% == \"\"",
+        "label": "ResponseAction3",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/DeleteMembers/Procedure/EmptyInputResponse"
+}

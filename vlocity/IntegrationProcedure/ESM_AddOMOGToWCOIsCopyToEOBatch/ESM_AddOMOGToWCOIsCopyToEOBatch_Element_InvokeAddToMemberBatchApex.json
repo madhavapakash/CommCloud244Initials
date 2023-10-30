@@ -1,0 +1,50 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "InvokeAddToMemberBatchApex",
+    "OmniProcessId": {
+        "Name": "AddToOrderMemberBatchCall",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AddOMOGToWCOIsCopyToEOBatch/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "BatchSize": "%BatchSize%",
+            "ContextMapping": "%ContextMapping:ContextMapping%",
+            "GroupIds": "=IF(ISBLANK(%QuoteGroupIds%), LIST(), %QuoteGroupIds%)",
+            "MemberIds": "=IF(ISBLANK(%MemberIds%), LIST(), %MemberIds%)"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "cloneMembersFromWCToEOCartBatchCall",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AddOMOGToWCOIsCopyToEOBatch/Procedure/InvokeAddToMemberBatchApex"
+}

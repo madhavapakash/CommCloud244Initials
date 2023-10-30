@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_getMasterOrder_SampleInput.json",
+    "Description": "This IP is used to get the master order for the given cart id.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetMasterOrder",
+    "OmniProcessElement": [
+        "ESM_getMasterOrder_Element_GetMasterOrderForQuote.json",
+        "ESM_getMasterOrder_Element_GetMasterOrderForEnterpriseOrder.json",
+        "ESM_getMasterOrder_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_getMasterOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_getMasterOrder_PropertySetConfig.json",
+    "SubType": "getMasterOrder",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/getMasterOrder/Procedure",
+    "WebComponentKey": "2bb9770a-83e2-429d-6c8d-2d050a5e3b7e"
+}

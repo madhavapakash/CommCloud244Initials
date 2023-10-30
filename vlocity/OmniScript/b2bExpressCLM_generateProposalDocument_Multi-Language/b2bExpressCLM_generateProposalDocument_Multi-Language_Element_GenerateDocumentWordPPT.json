@@ -1,0 +1,62 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GenerateDocumentWordPPT",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GenerateDocument",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/GenerateDocument",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GenerateDocument",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "b2b-express-object-document-creation-docx-template",
+        "accessibleInFutureSteps": false,
+        "disOnTplt": false,
+        "documentType": "word",
+        "label": "%vlocity_namespace%__CMEXProposal",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "ValidateMessage"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Input Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/GenerateDocumentWordPPT"
+}

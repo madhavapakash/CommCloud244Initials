@@ -1,0 +1,66 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToBulkAsset",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 2,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "NavigateToBulkAsset",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "bulk",
+                        "field": "isBulk"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "changeAssets",
+                        "field": "selectActionType"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "OrderId"
+                    }
+                ]
+            }
+        },
+        "ssm": true,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWC": "c:cPQBulkChangeMultiLanguage",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__ContextId=%ContextId%&c__cartId=%OrderId%&c__cartType=Order&c__source=AssetViewer&c__tabLabel=Bulk Change",
+        "targetName": "",
+        "targetType": "Vlocity OmniScript",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/NavigateToBulkAsset"
+}

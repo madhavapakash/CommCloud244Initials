@@ -1,0 +1,64 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DR_FetchCurrentPMOpportunity",
+    "OmniProcessId": {
+        "Name": "OSChangePM",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PM/Workbench/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "bundle": "DR_FetchCurrentPMOpportunity",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "ContextId",
+                "inputParam": "ContextId"
+            }
+        ],
+        "enableActionMessage": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "ignoreCache": true,
+        "inProgressMessage": "In Progress",
+        "label": "DR_FetchCurrentPMOpportunity",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Opportunity",
+                        "field": "Context"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "DataRaptor Turbo Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PM/Workbench/English/DR_FetchCurrentPMOpportunity"
+}

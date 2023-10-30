@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_ExtractMemberCount_SampleInput.json",
+    "Description": "IP used to get member count for Quote, Order based on input entity type.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_ExtractMemberCount",
+    "OmniProcessElement": [
+        "ESM_ExtractMemberCount_Element_ExtractQuoteMemberCountDR.json",
+        "ESM_ExtractMemberCount_Element_ExtractOrderMemberCountDR.json",
+        "ESM_ExtractMemberCount_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_ExtractMemberCount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_ExtractMemberCount_PropertySetConfig.json",
+    "SubType": "ExtractMemberCount",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/ExtractMemberCount/Procedure",
+    "WebComponentKey": "a28118a1-91c1-e1b9-86da-02c0d9a316c4"
+}

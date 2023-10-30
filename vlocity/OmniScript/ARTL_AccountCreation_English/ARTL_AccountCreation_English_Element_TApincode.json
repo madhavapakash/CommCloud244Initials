@@ -1,0 +1,70 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TApincode",
+    "OmniProcessId": {
+        "Name": "AccountCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AccountDetails",
+        "OmniProcessId": {
+            "Name": "AccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/AccountCreation/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountCreation/English/AccountDetails",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AccountDetails",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "callFrequency": 300,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "dataJsonPath": "",
+        "dataProcessorFunction": "",
+        "debounceValue": 0,
+        "disableDataFilter": false,
+        "editMode": true,
+        "enableGoogleMapsAutocomplete": false,
+        "enableLookup": false,
+        "googleAddressCountry": "all",
+        "googleMapsAPIKey": "",
+        "googleTransformation": {
+            "administrative_area_level_1": "",
+            "administrative_area_level_2": "",
+            "country": "",
+            "locality": "",
+            "postal_code": "",
+            "street": ""
+        },
+        "help": true,
+        "helpText": "Enter the pin code",
+        "helpTextPos": "",
+        "hideEditButton": true,
+        "hideMap": true,
+        "inputWidth": 12,
+        "label": "Pin code",
+        "maxLength": 255,
+        "minLength": 0,
+        "newItemLabel": "",
+        "readOnly": false,
+        "required": true,
+        "show": null,
+        "showInputWidth": false,
+        "typeAheadKey": "pincode",
+        "useDataJson": false
+    },
+    "Type": "Type Ahead Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/AccountCreation/English/TApincode"
+}

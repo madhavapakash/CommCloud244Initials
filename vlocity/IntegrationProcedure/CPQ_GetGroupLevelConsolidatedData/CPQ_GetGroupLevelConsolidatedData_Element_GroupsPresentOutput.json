@@ -1,0 +1,52 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GroupsPresentOutput",
+    "OmniProcessId": {
+        "Name": "Get Group Level Consolidated Data",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GetGroupsResponsePresent",
+        "OmniProcessId": {
+            "Name": "Get Group Level Consolidated Data",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure/GetGroupsResponsePresent",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GetGroupsResponsePresent",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "totalAssets": "=SUM(%GetAssetsInfoForGroups:productsWithAssets:Quantity%)",
+            "totalSize": "=LISTSIZE(%GetAssetsInfoForGroups:productsWithAssets%)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "productBundles",
+        "sendJSONPath": "ConvertProductBundleToList:productBundles",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure/GroupsPresentOutput"
+}

@@ -1,0 +1,79 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "NavigateAction1",
+    "OmniProcessId": {
+        "Name": "ARTL SendAndValidateOTP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/SendAndValidateOTP/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EnterOTP",
+        "OmniProcessId": {
+            "Name": "ARTL SendAndValidateOTP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/SendAndValidateOTP/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/SendAndValidateOTP/English/EnterOTP",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EnterOTP",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 5,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "Oops, Your OTP has Expired. Do you want to regenerate the OTP?",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "OTPValid"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "OTPGenerated"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "ExpiredOTP"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWC": "c:aRTLSendAndValidateOTPEnglish",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__ContextId=%ContextId%&c__flowName=%flowName%&c__reenterOTP=false",
+        "targetType": "Vlocity OmniScript",
+        "validationRequired": "Submit",
+        "variant": "link",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/SendAndValidateOTP/English/NavigateAction1"
+}

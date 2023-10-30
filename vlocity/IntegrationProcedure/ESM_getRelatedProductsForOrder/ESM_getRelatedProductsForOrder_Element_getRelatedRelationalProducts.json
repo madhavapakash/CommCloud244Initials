@@ -1,0 +1,85 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "getRelatedRelationalProducts",
+    "OmniProcessId": {
+        "Name": "getRuleRelatedProductsForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/getRelatedProductsForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "assetOutputFields": {
+                "%vlocity_namespace%__AssetReferenceId__c": "%vlocity_namespace%__AssetReferenceId__c",
+                "%vlocity_namespace%__LineNumber__c": "%vlocity_namespace%__LineNumber__c",
+                "%vlocity_namespace%__ServiceIdentifier__c": "%vlocity_namespace%__ServiceIdentifier__c",
+                "Id": "Id",
+                "Product2.Name": "%vlocity_namespace%__Product2Id__r.Name",
+                "Product2Id": "%vlocity_namespace%__Product2Id__c",
+                "Quantity": "Quantity"
+            },
+            "openOrderCondition": "Order.Status IN ('Draft')",
+            "openQuoteCondition": "Quote.Status IN ('Draft')",
+            "orderOfResultForAll": "Current Order,Asset,Open Order,Open Quote",
+            "orderOutputFields": [
+                "%vlocity_namespace%__LineNumber__c",
+                "Id",
+                "%vlocity_namespace%__Product2Id__c",
+                "%vlocity_namespace%__Product2Id__r.Name",
+                "Quantity",
+                "Order.OrderNumber",
+                "%vlocity_namespace%__OrderMemberId__r.%vlocity_namespace%__State__c",
+                "%vlocity_namespace%__AssetReferenceId__c",
+                "%vlocity_namespace%__OrderMemberId__r.Name",
+                "%vlocity_namespace%__OrderMemberId__r.%vlocity_namespace%__MemberType__c"
+            ],
+            "quoteOutputFields": [
+                "%vlocity_namespace%__LineNumber__c",
+                "Id",
+                "%vlocity_namespace%__Product2Id__c",
+                "%vlocity_namespace%__Product2Id__r.Name",
+                "Quantity",
+                "Quote.QuoteNumber",
+                "%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__State__c",
+                "%vlocity_namespace%__AssetReferenceId__c",
+                "%vlocity_namespace%__QuoteMemberId__r.Name",
+                "%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__MemberType__c"
+            ],
+            "searchableFieldsForAsset": "Product2.Name",
+            "searchableFieldsForOrderLineItem": "%vlocity_namespace%__Product2Id__r.Name",
+            "searchableFieldsForQuoteLineItem": "%vlocity_namespace%__Product2Id__r.Name"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "getRelatedRelationalProductsForOrder",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/getRelatedProductsForOrder/Procedure/getRelatedRelationalProducts"
+}

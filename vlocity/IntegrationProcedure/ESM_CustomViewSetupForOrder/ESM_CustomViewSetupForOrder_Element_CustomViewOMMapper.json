@@ -1,0 +1,34 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomViewOMMapper",
+    "OmniProcessId": {
+        "Name": "CustomViewSetupForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CustomViewSetupForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "All": "eSMQuoteEnrichForAllEnglish",
+            "Installation": "eSMQuoteEnrichForInstallationEnglish",
+            "Number Assignment": "eSMQuoteEnrichForNumberAssignmentEnglish",
+            "Payment": "eSMQuoteEnrichForPaymentEnglish"
+        },
+        "executionConditionalFormula": "getOsStandardRuntimeSetting:isOsRuntimeEnabled != 'true'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CustomViewSetupForOrder/Procedure/CustomViewOMMapper"
+}

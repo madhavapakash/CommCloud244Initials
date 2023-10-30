@@ -1,0 +1,145 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ReadOnlyFields",
+    "OmniProcessId": {
+        "Name": "CustomViewSetupForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CustomViewSetupForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Fields": {
+                "%vlocity_namespace%__Action__c": {
+                    "align": "left",
+                    "isEditable": false,
+                    "isVisible": true,
+                    "label": "Action",
+                    "type": "ProductAction"
+                },
+                "%vlocity_namespace%__AssetReferenceId__c": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OneTimeTotal__c": {
+                    "align": "right",
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "One Time Total",
+                    "type": "Currency"
+                },
+                "%vlocity_namespace%__OrderGroupId__r.%vlocity_namespace%__MemberType__c": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OrderGroupId__r.Name": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OrderMemberId__r.%vlocity_namespace%__City__c": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OrderMemberId__r.%vlocity_namespace%__MemberType__c": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OrderMemberId__r.%vlocity_namespace%__State__c": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OrderMemberId__r.%vlocity_namespace%__StreetAddress__c": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__OrderMemberId__r.Name": {
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__ParentItemId__c": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "%vlocity_namespace%__RecurringTotal__c": {
+                    "align": "right",
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Recurring Total",
+                    "type": "Currency"
+                },
+                "%vlocity_namespace%__RootItemId__c": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "Id": {
+                    "align": "left",
+                    "isEditable": false,
+                    "isVisible": false,
+                    "label": "Action",
+                    "type": "Text"
+                },
+                "Product2.Name": {
+                    "collapsable": true,
+                    "isEditable": false,
+                    "isSearchable": true,
+                    "isVisible": true,
+                    "label": "Product Name",
+                    "showAttrs": true,
+                    "type": "Products"
+                },
+                "Product2Id": {
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": false,
+                    "type": "Text"
+                },
+                "Quantity": {
+                    "align": "center",
+                    "isEditable": false,
+                    "isSearchable": false,
+                    "isVisible": true,
+                    "label": "Quantity",
+                    "type": "Number"
+                }
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues4",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CustomViewSetupForOrder/Procedure/ReadOnlyFields"
+}

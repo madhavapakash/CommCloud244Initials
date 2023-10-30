@@ -1,0 +1,55 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmptyInputResponse",
+    "OmniProcessId": {
+        "Name": "MultiSiteCreateNewGroup",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/CreateNewGroup/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EmptyConditionalCheckBlock",
+        "OmniProcessId": {
+            "Name": "MultiSiteCreateNewGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/CreateNewGroup/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/CreateNewGroup/Procedure/EmptyConditionalCheckBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EmptyConditionalCheckBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response": {
+                "error": "Bad Request",
+                "errorCode": "INVOKE-400",
+                "message": "Empty OpportunityId, Master QuoteId/OrderId, GroupName or MemberType (ServicePoint, Premises etc)"
+            }
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CreateNewGroupInput:parentId% == \"\" || %CreateNewGroupInput:contextId% == \"\" || %CreateNewGroupInput:groupName% == \"\" || %CreateNewGroupInput:memberType% == \"\"",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/CreateNewGroup/Procedure/EmptyInputResponse"
+}

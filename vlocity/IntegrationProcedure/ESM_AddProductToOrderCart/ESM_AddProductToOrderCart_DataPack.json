@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_AddProductToOrderCart_SampleInput.json",
+    "Description": "This integration procedure is used to add products to the order cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AddProductToOrderCart",
+    "OmniProcessElement": [
+        "ESM_AddProductToOrderCart_Element_postCartItemCall.json",
+        "ESM_AddProductToOrderCart_Element_TransformAPIResponse.json",
+        "ESM_AddProductToOrderCart_Element_Response_StandardAPIsEnabled.json",
+        "ESM_AddProductToOrderCart_Element_Response_StandardAPIsDisabled.json"
+    ],
+    "OmniProcessKey": "ESM_AddProductToOrderCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_AddProductToOrderCart_PropertySetConfig.json",
+    "SubType": "AddProductToOrderCart",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/AddProductToOrderCart/Procedure",
+    "WebComponentKey": "680b899f-6183-4f14-89d3-b71e8be6e72f"
+}

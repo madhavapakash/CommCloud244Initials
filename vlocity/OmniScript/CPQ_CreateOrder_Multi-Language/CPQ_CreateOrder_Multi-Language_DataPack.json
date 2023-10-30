@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "This OS calls CPQSubmit to create Order and Navigates to the Order Cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "Name": "CPQ Create Order",
+    "OmniProcessElement": [
+        "CPQ_CreateOrder_Multi-Language_Element_CreateAccountDiscounts.json",
+        "CPQ_CreateOrder_Multi-Language_Element_CreateOrder.json",
+        "CPQ_CreateOrder_Multi-Language_Element_OrderCreationResults.json",
+        "CPQ_CreateOrder_Multi-Language_Element_TextBlockCreateAccountDiscountsFailure.json",
+        "CPQ_CreateOrder_Multi-Language_Element_TextBlockCreateAccountDiscountsSuccess.json",
+        "CPQ_CreateOrder_Multi-Language_Element_TextBlockOrderCreationFailure.json",
+        "CPQ_CreateOrder_Multi-Language_Element_TextBlockOrderCreationSuccess.json",
+        "CPQ_CreateOrder_Multi-Language_Element_NavigateActionToQuote.json",
+        "CPQ_CreateOrder_Multi-Language_Element_NavigateActionToOrder.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "CPQ_CreateOrder_Multi-Language_PropertySetConfig.json",
+    "SubType": "CreateOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/CreateOrder/Multi-Language",
+    "WebComponentKey": "0150b958-688c-7c54-aa1a-c282b48a6933"
+}

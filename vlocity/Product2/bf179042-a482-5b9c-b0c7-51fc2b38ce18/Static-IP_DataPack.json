@@ -1,0 +1,244 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Static-IP_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "VEPC_ATTR_NUMBER_OF_STATIC_IP_ADDRESSES": "2"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_OTHER_DETAILS",
+                "Name": "Other Details",
+                "displaySequence": 6210,
+                "id": "a0Z0T0000023iSuUAI",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a0T000001bLmuQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_NUMBER_OF_STATIC_IP_ADDRESSES",
+                            "dataType": "text",
+                            "description": "Select the number of Static IPs you will be using",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Number of Static IP Addresses",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "32bde95b-59bb-c622-38fb-b1be790efca1",
+                                    "label": "5",
+                                    "name": "32bde95b-59bb-c622-38fb-b1be790efca1",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "568dc84d-bef2-8266-f0bb-825902cde9ad",
+                                    "label": "61",
+                                    "name": "568dc84d-bef2-8266-f0bb-825902cde9ad",
+                                    "readonly": false,
+                                    "value": "61"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "98eabb8c-d814-0fd3-446d-be98afcd8e15",
+                                    "label": "125",
+                                    "name": "98eabb8c-d814-0fd3-446d-be98afcd8e15",
+                                    "readonly": false,
+                                    "value": "125"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "ac62306f-2a00-b574-e859-8ac87d05761e",
+                                    "label": "13",
+                                    "name": "ac62306f-2a00-b574-e859-8ac87d05761e",
+                                    "readonly": false,
+                                    "value": "13"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "c8121cee-37e1-f982-78f4-3d71d77bc969",
+                                    "label": "1",
+                                    "name": "c8121cee-37e1-f982-78f4-3d71d77bc969",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "e26038e6-cbf1-0ddf-ca88-c47a1aa4caa2",
+                                    "label": "29",
+                                    "name": "e26038e6-cbf1-0ddf-ca88-c47a1aa4caa2",
+                                    "readonly": false,
+                                    "value": "29"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "fa3431c4-ffdb-c42a-02b6-35d8f9f5a799",
+                                    "label": "2",
+                                    "name": "fa3431c4-ffdb-c42a-02b6-35d8f9f5a799",
+                                    "readonly": false,
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DecompositionRelationship__c": "Static-IP_DecompositionRelationships.json",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2022-05-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2022-05-01T04:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "3eed23b0-2fce-bdb1-4776-f7b84b250f37",
+    "%vlocity_namespace%__GlobalKey__c": "bf179042-a482-5b9c-b0c7-51fc2b38ce18",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "A static IP address is vital if you run a server, a website or FTP hosting. Because it’s unique and does not change, a static IP address will allow you to: \n• Connect to your computer from anywhere in the world\n• Run your own email server (and associate it with your domain name)\n• Point domain names to your servers and equipment\n• Set up your own secure Virtual Private Network\n• Run your own website and FTP server\n• Run CCTV off your network",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Static-IP_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "6ff80bf253234e7f4b6e4540f3f2e8e0",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/6ff80bf253234e7f4b6e4540f3f2e8e0",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ESM Business Internet Static IP Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "Static-IP_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Static-IP_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2022-05-01T04:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Business Internet",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "A static IP address is vital if you run a server, a website or FTP hosting. Because it’s unique and does not change, a static IP address will allow you to: \n• Connect to your computer from anywhere in the world\n• Run your own email server (and associate it with your domain name)\n• Point domain names to your servers and equipment\n• Set up your own secure Virtual Private Network\n• Run your own website and FTP server\n• Run CCTV off your network",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Static IP",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Static-IP_PricebookEntries.json",
+    "ProductCode": "VEPC_OFFERING_STATIC_IP",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Static IP",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "bf179042-a482-5b9c-b0c7-51fc2b38ce18",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "bf179042-a482-5b9c-b0c7-51fc2b38ce18",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/bf179042-a482-5b9c-b0c7-51fc2b38ce18",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "VEPC_OFFERING_STATIC_IP",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/bf179042-a482-5b9c-b0c7-51fc2b38ce18"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/bf179042-a482-5b9c-b0c7-51fc2b38ce18"
+}

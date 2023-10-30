@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "IP to trigger Async Engine Job for Bulk Deleting OLIs. Expected parameters: 1) Order Id: String 2) Root Ids of OLIs selected for deletion: List of Object with attribute \"Id\"(example: [{Id:\"rootId1\"},{Id:\"rootId2\"},{Id:\"rootId3\"}])",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_BulkDeleteOrderLineItems",
+    "OmniProcessElement": [
+        "ESM_BulkDeleteOrderLineItems_Element_SetValuesBulkDeleteOrderLineItems.json",
+        "ESM_BulkDeleteOrderLineItems_Element_startAsyncJob.json",
+        "ESM_BulkDeleteOrderLineItems_Element_SendNotificationStarted.json",
+        "ESM_BulkDeleteOrderLineItems_Element_SendNotificationFailedToStart.json",
+        "ESM_BulkDeleteOrderLineItems_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_BulkDeleteOrderLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_BulkDeleteOrderLineItems_PropertySetConfig.json",
+    "SubType": "BulkDeleteOrderLineItems",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/BulkDeleteOrderLineItems/Procedure",
+    "WebComponentKey": "f1704853-936c-b323-3992-791d6ef5adb0"
+}

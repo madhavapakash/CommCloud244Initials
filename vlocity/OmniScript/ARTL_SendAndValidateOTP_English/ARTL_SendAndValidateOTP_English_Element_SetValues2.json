@@ -1,0 +1,55 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "SetValues2",
+    "OmniProcessId": {
+        "Name": "ARTL SendAndValidateOTP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/SendAndValidateOTP/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "OTPGenerated": false,
+            "OTPIsValidated": false
+        },
+        "label": "SetValues2",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "field": "reenterOTP"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "null",
+                        "field": "reenterOTP"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "reenterOTP"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/SendAndValidateOTP/English/SetValues2"
+}

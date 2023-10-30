@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_deleteSubOrders_SampleInput.json",
+    "Description": "IP to trigger Async Engine Job for Bulk Deleting  sub orders.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "deleteSubOrders",
+    "OmniProcessElement": [
+        "b2bExpress_deleteSubOrders_Element_SetValuesBulkDeleteSubOrders.json",
+        "b2bExpress_deleteSubOrders_Element_startAsyncJob.json",
+        "b2bExpress_deleteSubOrders_Element_SendNotificationStarted.json",
+        "b2bExpress_deleteSubOrders_Element_SendNotificationFailedToStart.json",
+        "b2bExpress_deleteSubOrders_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "b2bExpress_deleteSubOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_deleteSubOrders_PropertySetConfig.json",
+    "SubType": "deleteSubOrders",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/deleteSubOrders/Procedure",
+    "WebComponentKey": "839024da-1d62-ecfb-3a02-e746a16c62d1"
+}

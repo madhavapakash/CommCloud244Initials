@@ -1,0 +1,117 @@
+{
+    "newQuoteName": "TestCloneWithAll_AS_clone11",
+    "objectDetailsInSortedOrder": [
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "Name"
+            ],
+            "filterFieldName": "Id",
+            "filterOnObject": "Quote",
+            "objectName": "Quote"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteId__c",
+            "filterOnObject": "Quote",
+            "objectName": "%vlocity_namespace%__QuoteGroup__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteId__c",
+                "%vlocity_namespace%__QuoteGroupId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteId__c",
+            "filterOnObject": "Quote",
+            "objectName": "%vlocity_namespace%__QuoteMember__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "QuoteId",
+                "%vlocity_namespace%__QuoteGroupId__c",
+                "%vlocity_namespace%__QuoteMemberId__c"
+            ],
+            "filterFieldName": "QuoteId",
+            "filterOnObject": "Quote",
+            "objectName": "QuoteLineItem"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteId__c",
+                "%vlocity_namespace%__QuoteLineItemId__c",
+                "%vlocity_namespace%__RelatedQuoteLineItemId__c",
+                "%vlocity_namespace%__RelatedAssetReferenceId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteId__c",
+            "filterOnObject": "Quote",
+            "objectName": "%vlocity_namespace%__QuoteLineItemRelationship__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteId__c",
+            "filterOnObject": "Quote",
+            "objectName": "%vlocity_namespace%__QuoteDiscount__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteDiscountId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteDiscountId__c",
+            "filterOnObject": "%vlocity_namespace%__QuoteDiscount__c",
+            "objectName": "%vlocity_namespace%__QuoteDiscountPricing__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteDiscountId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteDiscountId__c",
+            "filterOnObject": "%vlocity_namespace%__QuoteDiscount__c",
+            "objectName": "%vlocity_namespace%__QuoteDiscountItem__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteId__c",
+                "%vlocity_namespace%__QuoteDiscountId__c",
+                "%vlocity_namespace%__QuoteLineItemId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteId__c",
+            "filterOnObject": "Quote",
+            "objectName": "%vlocity_namespace%__QuoteAppliedPromotion__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteId__c",
+                "%vlocity_namespace%__QuoteItemId__c",
+                "%vlocity_namespace%__QuoteAppliedPromotionId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteId__c",
+            "filterOnObject": "Quote",
+            "objectName": "%vlocity_namespace%__QuotePricingAdjustment__c"
+        },
+        {
+            "className": "B2BCmexCloneImpl",
+            "dependentFields": [
+                "%vlocity_namespace%__QuoteAppliedPromotionId__c",
+                "%vlocity_namespace%__QuoteLineItemId__c"
+            ],
+            "filterFieldName": "%vlocity_namespace%__QuoteAppliedPromotionId__c",
+            "filterOnObject": "%vlocity_namespace%__QuoteAppliedPromotion__c",
+            "objectName": "%vlocity_namespace%__QuoteAppliedPromotionItem__c"
+        }
+    ],
+    "oldQuoteName": "TestCloneWithAll_AS",
+    "quoteId": "0Q0RO0000002E5f0AE"
+}

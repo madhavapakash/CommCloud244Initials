@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ForEachMember",
+    "OmniProcessId": {
+        "Name": "checkAddressValidation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/checkAddressValidation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock1",
+        "loopList": "GetQuoteMemberAddresses:QuoteMembers",
+        "loopOutput": {
+            "QuoteMemberId": "%GetQuoteMemberAddresses:QuoteMembers:Id%",
+            "ValidationDate": "=FUNCTION('B2BCmexAppHandler','convertToDate',FORMATDATETIME(%TMFAPICall:validationDate%))",
+            "ValidationResult": "%TMFAPICall:validationResult%"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/checkAddressValidation/Procedure/ForEachMember"
+}

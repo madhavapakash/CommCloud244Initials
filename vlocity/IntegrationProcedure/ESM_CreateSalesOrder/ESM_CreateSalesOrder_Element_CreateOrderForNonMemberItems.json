@@ -1,0 +1,52 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateOrderForNonMemberItems",
+    "OmniProcessId": {
+        "Name": "ESMSalesOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateSalesOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "AccountId": "%Source:AccountId%",
+            "LineItemIds": "%GetIndependentLineItems:LineItems:Ids%",
+            "MasterOrderId": "%SetMasterOrder:Id%",
+            "ObjectType": "%Source:ObjectType%",
+            "SORecordTypeId": "%RecordTypes:SubOrderRecordTypeId%",
+            "SourceObjectId": "%Source:Id%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%GetIndependentLineItems:LineItems%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction3",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "createSubOrderEventForNonMemberItems",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateSalesOrder/Procedure/CreateOrderForNonMemberItems"
+}

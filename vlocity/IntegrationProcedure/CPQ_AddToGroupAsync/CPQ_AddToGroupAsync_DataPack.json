@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_AddToGroupAsync_SampleInput.json",
+    "Description": "IP to trigger Async Engine Job for creating Group members. Expected parameters: 1) memberType: String 2) productBundles: List of Product data objects (should contain String groupId and List Assets)",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AddToGroupAsync",
+    "OmniProcessElement": [
+        "CPQ_AddToGroupAsync_Element_ForEachProductBundle.json",
+        "CPQ_AddToGroupAsync_Element_GetMemberIdsFromAssetIds.json",
+        "CPQ_AddToGroupAsync_Element_GroupAssetsByMembers.json",
+        "CPQ_AddToGroupAsync_Element_RunAsyncJob.json",
+        "CPQ_AddToGroupAsync_Element_VIPOutput.json"
+    ],
+    "OmniProcessKey": "CPQ_AddToGroupAsync",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_AddToGroupAsync_PropertySetConfig.json",
+    "SubType": "AddToGroupAsync",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/AddToGroupAsync/Procedure",
+    "WebComponentKey": "a60a03f3-5140-647f-86c7-445549e09da2"
+}

@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_BulkCancelSubOrders_SampleInput.json",
+    "Description": "The IP is used to cancel sub-orders of a master order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "BulkCancelSubOrders",
+    "OmniProcessElement": [
+        "b2bExpress_BulkCancelSubOrders_Element_SetValuesSubOrders.json",
+        "b2bExpress_BulkCancelSubOrders_Element_startAsyncJob.json",
+        "b2bExpress_BulkCancelSubOrders_Element_sendNotificationStarted.json",
+        "b2bExpress_BulkCancelSubOrders_Element_sendNotificationFailedToStart.json",
+        "b2bExpress_BulkCancelSubOrders_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "b2bExpress_BulkCancelSubOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_BulkCancelSubOrders_PropertySetConfig.json",
+    "SubType": "BulkCancelSubOrders",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/BulkCancelSubOrders/Procedure",
+    "WebComponentKey": "f2eb1581-7b40-b48b-ae2f-3cb6a29d5115"
+}

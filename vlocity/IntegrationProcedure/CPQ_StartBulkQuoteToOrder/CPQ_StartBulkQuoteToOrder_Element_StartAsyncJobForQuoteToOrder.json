@@ -1,0 +1,79 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartAsyncJobForQuoteToOrder",
+    "OmniProcessId": {
+        "Name": "CPQ_StartBulkQuoteToOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/StartBulkQuoteToOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "cartConfiguration": "%cartConfiguration%",
+                "cartId": "%cartId%",
+                "memberType": "ServiceAccount",
+                "userID": "%SetUserId:userID%"
+            },
+            "asyncProcessName": "CPQ Bulk Quote to Order for %cartId%",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 3,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "CPQ_ExecuteQuoteToOrder",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_FinishBulkQuoteToOrder",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_CreateMasterOrderAndGetMemberTypeIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "executeNextStepIfAnyJobFails": true,
+                    "stepName": "QuoteToOrder"
+                }
+            ],
+            "referenceId": "%cartId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/StartBulkQuoteToOrder/Procedure/StartAsyncJobForQuoteToOrder"
+}

@@ -1,0 +1,85 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProposalGrouping",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GenerationOptions",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/GenerationOptions",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GenerationOptions",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "b2b-express-radio-button-as-link",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 2,
+        "label": "%vlocity_namespace%__CMEXAggrLevel",
+        "optionHeight": 50,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 50,
+        "options": [
+            {
+                "name": "Member",
+                "value": "%vlocity_namespace%__CMEXAggrByMembers"
+            },
+            {
+                "name": "Group",
+                "value": "%vlocity_namespace%__CMEXAggrByGroups"
+            }
+        ],
+        "options|0:value": "%vlocity_namespace%__CMEXAggrByMembers",
+        "options|1:value": "%vlocity_namespace%__CMEXAggrByGroups",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "ProposalType"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/ProposalGrouping"
+}

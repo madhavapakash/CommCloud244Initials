@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OpptGroupLoopBlock",
+    "OmniProcessId": {
+        "Name": "CopyWorkingCartToOppt",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CopyWorkingCartToOppt/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "NOT(ISBLANK(OpptGroupIds))",
+        "label": "LoopBlock1",
+        "loopList": "OpptGroupIds",
+        "loopOutput": {
+            "addOpptGToWCopptLIs": "%addOpptGToWCOpptLIs%"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CopyWorkingCartToOppt/Procedure/OpptGroupLoopBlock"
+}

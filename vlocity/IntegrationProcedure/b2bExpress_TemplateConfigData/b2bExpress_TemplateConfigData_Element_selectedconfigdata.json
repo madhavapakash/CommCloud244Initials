@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "selectedconfigdata",
+    "OmniProcessId": {
+        "Name": "B2BExpress_TemplateConfigData",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/TemplateConfigData/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TemplateConfigDataSourceVAR",
+        "OmniProcessId": {
+            "Name": "B2BExpress_TemplateConfigData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/TemplateConfigData/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/TemplateConfigData/Procedure/TemplateConfigDataSourceVAR",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TemplateConfigDataSourceVAR",
+    "ParentElementType": "Loop Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "templateName": "%RES:VlocityDocumentTemplate%"
+        },
+        "executionConditionalFormula": "=( (%RES:TemplateSubtype% == %TemplateSubtype%) && (%RES:TemplateCategory% == %TemplateCategory%) && (%RES:AggregationLevel% == %AggregationLevel%) && (%RES:TemplateType% == %TemplateType%))",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "templateName",
+        "responseJSONPath": "templateName",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/TemplateConfigData/Procedure/selectedconfigdata"
+}

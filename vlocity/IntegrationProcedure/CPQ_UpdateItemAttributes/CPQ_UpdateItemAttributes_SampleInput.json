@@ -1,0 +1,127 @@
+{
+    "cartId": "8014W000001zIdPQAU",
+    "itemId": "8024W000000mtwBQAQ",
+    "items": {
+        "records": [
+            {
+                "Id": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "ID",
+                    "editable": false,
+                    "fieldName": "Id",
+                    "hidden": false,
+                    "label": "Order Product ID",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "8024W000000mtwBQAQ"
+                },
+                "PricebookEntry": {
+                    "Id": "01u4W000008CHOiQAO",
+                    "Pricebook2Id": "01s4W0000034IJsQAM",
+                    "Product2": {
+                        "%vlocity_namespace%__GlobalGroupKey__c": "cb3cc32c-ba4b-e01d-fe1f-f0c6851931ad",
+                        "%vlocity_namespace%__IsConfigurable__c": true,
+                        "%vlocity_namespace%__JSONAttribute__c": "{\"7f002269-1fee-af62-4442-fd5b0c7ba32b\":[{\"$$AttributeDefinitionStart$$\":null,\"objectid__c\":\"01t4W00000AR1xOQAT\",\"attributeid__c\":\"a094W00002HTwYTQA1\",\"attributecategoryid__c\":\"a084W00001hFQBDQA4\",\"categorycode__c\":\"7f002269-1fee-af62-4442-fd5b0c7ba32b\",\"categoryname__c\":\"Test Attribute Category\",\"attributeuniquecode__c\":\"ATTR\",\"attributeconfigurable__c\":true,\"attributedisplaysequence__c\":\"10\",\"attributefilterable__c\":true,\"attributecloneable__c\":true,\"isactive__c\":true,\"attributedisplayname__c\":\"Test Attribute\",\"displaysequence__c\":\"null\",\"categorydisplaysequence__c\":10,\"customconfiguitemplate__c\":null,\"formatmask__c\":null,\"hasrule__c\":true,\"isconfigurable__c\":true,\"ishidden__c\":false,\"valueinnumber__c\":null,\"objecttype__c\":\"Product2\",\"querycode__c\":null,\"isreadonly__c\":false,\"isnottranslatable__c\":false,\"isquerydriven__c\":false,\"querylabel__c\":null,\"id\":\"a1z4W000002V86YQAS\",\"isrequired__c\":false,\"rulemessage__c\":null,\"uidisplaytype__c\":\"Text\",\"value__c\":\"test\",\"valuedatatype__c\":\"Text\",\"valuedescription__c\":null,\"attributegrouptype__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"uiDisplayType\":\"Text\",\"default\":\"test\"},\"$$AttributeDefinitionEnd$$\":null}]}",
+                        "%vlocity_namespace%__Type__c": "None",
+                        "Id": "01t4W00000AR1xOQAT",
+                        "Name": "Prod1",
+                        "ProductCode": "Prod1",
+                        "RecordTypeId": "0124W0000019uF3QAI",
+                        "attributes": {
+                            "type": "Product2",
+                            "url": "/services/data/v51.0/sobjects/Product2/01t4W00000AR1xOQAT"
+                        }
+                    },
+                    "Product2Id": "01t4W00000AR1xOQAT",
+                    "attributes": {
+                        "type": "PricebookEntry",
+                        "url": "/services/data/v51.0/sobjects/PricebookEntry/01u4W000008CHOiQAO"
+                    }
+                },
+                "PricebookEntryId": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "REFERENCE",
+                    "editable": false,
+                    "fieldName": "PricebookEntryId",
+                    "hidden": false,
+                    "label": "Price Book Entry ID",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "01u4W000008CHOiQAO"
+                },
+                "Product2": {
+                    "%vlocity_namespace%__GlobalGroupKey__c": "cb3cc32c-ba4b-e01d-fe1f-f0c6851931ad",
+                    "%vlocity_namespace%__IsConfigurable__c": true,
+                    "%vlocity_namespace%__JSONAttribute__c": null,
+                    "%vlocity_namespace%__SubType__c": "None",
+                    "%vlocity_namespace%__Type__c": "None",
+                    "Id": "01t4W00000AR1xOQAT",
+                    "Name": "Prod1",
+                    "RecordTypeId": "0124W0000019uF3QAI",
+                    "attributes": {
+                        "type": "Product2",
+                        "url": "/services/data/v51.0/sobjects/Product2/01t4W00000AR1xOQAT"
+                    }
+                },
+                "attributeCategories": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "Code__c": "7f002269-1fee-af62-4442-fd5b0c7ba32b",
+                            "Name": "Test Attribute Category",
+                            "displaySequence": 10,
+                            "id": "a084W00001hFQBDQA4",
+                            "messages": [
+                            ],
+                            "productAttributes": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "attributeId": "a094W00002HTwYTQA1",
+                                        "cloneable": true,
+                                        "code": "ATTR",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 10,
+                                        "filterable": true,
+                                        "hasRules": true,
+                                        "hidden": false,
+                                        "inputType": "text",
+                                        "isNotTranslatable": false,
+                                        "label": "Test Attribute",
+                                        "messages": [
+                                        ],
+                                        "multiselect": false,
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "try",
+                                        "values": [
+                                            {
+                                                "defaultValue": "test",
+                                                "disabled": false,
+                                                "readonly": false,
+                                                "value": "try"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 1
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ]
+    }
+}

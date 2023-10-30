@@ -1,0 +1,61 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cpqBulkChangeConfiguratorUtil",
+    "OmniProcessId": {
+        "Name": "CPQBulkReplace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Configure",
+        "OmniProcessId": {
+            "Name": "CPQBulkReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/Configure",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Configure",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "record-id",
+                "source": "%groupCartId%"
+            },
+            {
+                "name": "flow-type",
+                "source": "bulkReplace"
+            },
+            {
+                "name": "selected-product",
+                "source": "%selectedProduct%"
+            },
+            {
+                "name": "main-cart-id",
+                "source": "%cartId%"
+            },
+            {
+                "name": "add-members-job-complete",
+                "source": "%addMembersComplete%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "%vlocity_namespace%__cpqBulkChangeConfiguratorUtil",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/cpqBulkChangeConfiguratorUtil"
+}

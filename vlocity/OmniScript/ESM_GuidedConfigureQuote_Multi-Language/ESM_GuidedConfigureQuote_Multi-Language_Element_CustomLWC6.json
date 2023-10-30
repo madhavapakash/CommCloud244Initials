@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomLWC6",
+    "OmniProcessId": {
+        "Name": "ESMGuidedJourney",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/GuidedConfigureQuote/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Select Products",
+        "OmniProcessId": {
+            "Name": "ESMGuidedJourney",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/GuidedConfigureQuote/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/GuidedConfigureQuote/Multi-Language/Select Products",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Select Products",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "quote-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "quote-member-info",
+                "source": "%QuoteMemberInfo%"
+            },
+            {
+                "name": "config-data",
+                "source": "%configResponse:GuidedConfigurationResult%"
+            },
+            {
+                "name": "member-type",
+                "source": "%CreateQuoteStep:Block2:Block1:quoteJourneyType%"
+            }
+        ],
+        "hide": false,
+        "label": "%vlocity_namespace%__CMEXESMGuidedJourney",
+        "lwcName": "%vlocity_namespace%__b2bGuidedOfferSelection",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/GuidedConfigureQuote/Multi-Language/CustomLWC6"
+}

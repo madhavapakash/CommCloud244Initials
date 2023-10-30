@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "This IP fetches the place details from google maps API for a particular place_id. Inputs are place_id, sessionToken and api key.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "getGooglePlaceDetails",
+    "OmniProcessElement": [
+        "ESM_getGooglePlaceDetails_Element_PlacesLoopBlock.json",
+        "ESM_getGooglePlaceDetails_Element_GooglePlacesHttpAction.json",
+        "ESM_getGooglePlaceDetails_Element_GoogleMapsPlacesTransform.json",
+        "ESM_getGooglePlaceDetails_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_getGooglePlaceDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_getGooglePlaceDetails_PropertySetConfig.json",
+    "SubType": "getGooglePlaceDetails",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/getGooglePlaceDetails/Procedure",
+    "WebComponentKey": "b70100e0-0529-a68e-5eb8-5071cd98b58d"
+}

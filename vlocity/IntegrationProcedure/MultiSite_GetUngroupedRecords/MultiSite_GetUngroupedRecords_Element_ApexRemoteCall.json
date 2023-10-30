@@ -1,0 +1,68 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ApexRemoteCall",
+    "OmniProcessId": {
+        "Name": "Multisite Ungrouped Records",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/GetUngroupedRecords/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EmptyConditionCheckBlock",
+        "OmniProcessId": {
+            "Name": "Multisite Ungrouped Records",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/GetUngroupedRecords/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/GetUngroupedRecords/Procedure/EmptyConditionCheckBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EmptyConditionCheckBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartType": "%GetUngroupedRecordsInput:cartType%",
+            "contextId": "%GetUngroupedRecordsInput:contextId%",
+            "filters": "%GetUngroupedRecordsInput:filters%",
+            "memberType": "%GetUngroupedRecordsInput:memberType%",
+            "offset": "%GetUngroupedRecordsInput:offset%",
+            "pageSize": "%GetUngroupedRecordsInput:pageSize%",
+            "parentId": "%GetUngroupedRecordsInput:parentId%",
+            "sortBy": "%GetUngroupedRecordsInput:sortBy%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "getUngroupedRecords",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/GetUngroupedRecords/Procedure/ApexRemoteCall"
+}

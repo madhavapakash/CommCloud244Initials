@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "DocumentServiceGateway_DocGeneration_SampleInput.json",
+    "Description": "Document generation for DOCX and PPTX template type that has a DataRaptor implementation attached to it.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "generateDocument",
+    "OmniProcessElement": [
+        "DocumentServiceGateway_DocGeneration_Element_setupServiceCallInputParams.json",
+        "DocumentServiceGateway_DocGeneration_Element_generateDocumentService.json",
+        "DocumentServiceGateway_DocGeneration_Element_ipResponse.json"
+    ],
+    "OmniProcessKey": "DocumentServiceGateway_DocGeneration",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "DocumentServiceGateway_DocGeneration_PropertySetConfig.json",
+    "SubType": "DocGeneration",
+    "Type": "DocumentServiceGateway",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/DocumentServiceGateway/DocGeneration/Procedure",
+    "WebComponentKey": "1587201a-53b2-8511-0ef4-c71e64eb0800"
+}

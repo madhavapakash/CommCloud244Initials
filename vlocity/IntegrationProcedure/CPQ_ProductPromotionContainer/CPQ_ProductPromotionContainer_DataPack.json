@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_ProductPromotionContainer_SampleInput.json",
+    "Description": "This is a common IP to orchestrate the response from promotion & product IP",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_Products_Promotions_IP",
+    "OmniProcessElement": [
+        "CPQ_ProductPromotionContainer_Element_GetProductsPromotionsInput.json",
+        "CPQ_ProductPromotionContainer_Element_PromotionsBlock.json",
+        "CPQ_ProductPromotionContainer_Element_PromotionsIP.json",
+        "CPQ_ProductPromotionContainer_Element_PromotionsResponse.json",
+        "CPQ_ProductPromotionContainer_Element_ProductsBlock.json",
+        "CPQ_ProductPromotionContainer_Element_ProductsIP.json",
+        "CPQ_ProductPromotionContainer_Element_ProductsResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_ProductPromotionContainer",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_ProductPromotionContainer_PropertySetConfig.json",
+    "SubType": "ProductPromotionContainer",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/ProductPromotionContainer/Procedure",
+    "WebComponentKey": "33c78185-e53d-526d-d0e7-0aead45f48c3"
+}

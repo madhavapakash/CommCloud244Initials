@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CloneModifyTo_SalesQLIs_SampleInput.json",
+    "Description": "B2B Express - Latest Clone Modified Group Cart QLIs to Sales QLIs and delete Group cart (Added Discount Pricing).",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CloneModifyGroupCartToSalesQLIs",
+    "OmniProcessElement": [
+        "CloneModifyTo_SalesQLIs_Element_GetSalesQLIsId.json",
+        "CloneModifyTo_SalesQLIs_Element_RenumberSourceQLIs.json",
+        "CloneModifyTo_SalesQLIs_Element_CloneGCQLIs.json",
+        "CloneModifyTo_SalesQLIs_Element_DeleteSalesQRootItem.json",
+        "CloneModifyTo_SalesQLIs_Element_MergeWCDisToSQDis.json",
+        "CloneModifyTo_SalesQLIs_Element_UpdateQuoteProductRollup.json",
+        "CloneModifyTo_SalesQLIs_Element_DeleteGroupCart.json",
+        "CloneModifyTo_SalesQLIs_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "CloneModifyTo_SalesQLIs",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CloneModifyTo_SalesQLIs_PropertySetConfig.json",
+    "SubType": "SalesQLIs",
+    "Type": "CloneModifyTo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CloneModifyTo/SalesQLIs/Procedure",
+    "WebComponentKey": "b4a49870-b60c-04ea-968c-e269646af3f5"
+}

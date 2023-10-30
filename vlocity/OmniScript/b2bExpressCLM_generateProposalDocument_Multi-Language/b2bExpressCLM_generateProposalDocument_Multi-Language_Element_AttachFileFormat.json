@@ -1,0 +1,95 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AttachFileFormat",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GenerationOptions",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/GenerationOptions",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GenerationOptions",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "b2b-express-radio-button-as-link",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 2,
+        "label": "%vlocity_namespace%__CMEXSelectFileFormatQuote",
+        "optionHeight": 50,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 50,
+        "options": [
+            {
+                "name": "docx,pdf",
+                "value": "%vlocity_namespace%__CMEXWordAndPDF"
+            },
+            {
+                "name": "docx",
+                "value": "%vlocity_namespace%__CMEXMicrosoftWord"
+            },
+            {
+                "name": "pdf",
+                "value": "%vlocity_namespace%__CMEXPDF"
+            },
+            {
+                "name": "none",
+                "value": "%vlocity_namespace%__CMEXNone"
+            }
+        ],
+        "options|0:value": "%vlocity_namespace%__CMEXWordAndPDF",
+        "options|1:value": "%vlocity_namespace%__CMEXMicrosoftWord",
+        "options|2:value": "%vlocity_namespace%__CMEXPDF",
+        "options|3:value": "%vlocity_namespace%__CMEXNone",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "DownloadFileFormat"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/AttachFileFormat"
+}

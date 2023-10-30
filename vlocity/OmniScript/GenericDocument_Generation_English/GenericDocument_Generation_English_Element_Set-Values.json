@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Set Values",
+    "OmniProcessId": {
+        "Name": "Generic Document Generation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/GenericDocument/Generation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "attachFileFormat": "docx",
+            "contextId": "=%EnterObject:ObjectId%",
+            "displayTitle": "",
+            "documentType": "all",
+            "generateMultipleDocument": "=%multiDocumentGenerationValue%",
+            "inTest": "=IF(OR(%inTest% == null, %inTest%==''), false, %inTest%)",
+            "pdfViewer": "=IF(%multiDocumentGenerationValue% == true, 'none', 'VlocityClientSideViewer')",
+            "qId": "=%EnterObject:ObjectId%",
+            "templateId": "=IF(%templateId% == null, %PickTemplate|1:DocumentTemplate|1:Id%, %templateId%)",
+            "templateType": "=%TemplateType%"
+        },
+        "label": null,
+        "message": {
+        },
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "None",
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/GenericDocument/Generation/English/Set Values"
+}

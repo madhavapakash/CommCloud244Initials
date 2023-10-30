@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CartSummaryResponseAction1",
+    "OmniProcessId": {
+        "Name": "CPQGetCartSummaryIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetCartSummary/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "hasErrorMessage": "=EXIST(%messages:severity%, \"ERROR\")",
+            "isMessagesAvailable": true,
+            "messageCount": "=LISTSIZE(FILTER(LIST(%messages%), 'code != \"220\" && code!=\"221\"'))",
+            "panelMessages": "=LIST(FILTER(LIST(%messages%), 'code != \"220\" && code!=\"221\"'))"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(FILTER(LIST(%messages%), 'code != \"220\" && code!=\"221\"'))",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetCartSummary/Procedure/CartSummaryResponseAction1"
+}

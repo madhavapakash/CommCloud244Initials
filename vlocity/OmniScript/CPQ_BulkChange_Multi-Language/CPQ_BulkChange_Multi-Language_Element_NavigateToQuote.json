@@ -1,0 +1,71 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToQuote",
+    "OmniProcessId": {
+        "Name": "Bulk Change Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkChange/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "",
+        "loginAction": "login",
+        "message": {
+            "DuplicateAssetsErrorMessage": "Following duplicate assets were found while processing asset ids"
+        },
+        "objectAction": "home",
+        "pubsub": true,
+        "recordAction": "view",
+        "replace": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "Configure:cpqBulkChangeConfiguratorUtil:cartItems"
+                    },
+                    {
+                        "condition": ">",
+                        "data": "0",
+                        "field": "totalSize"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Quote",
+                        "field": "cartType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "addMembersComplete"
+                    }
+                ]
+            }
+        },
+        "ssm": true,
+        "targetFilter": "Recent",
+        "targetId": "%cartId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Quote",
+        "targetParams": "duplicateAssetsErrorMessage=%duplicateAssetsErrorMessage%",
+        "targetType": "Record",
+        "targetUrl": "",
+        "validationRequired": "none",
+        "variant": "brand",
+        "wpm": true
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkChange/Multi-Language/NavigateToQuote"
+}

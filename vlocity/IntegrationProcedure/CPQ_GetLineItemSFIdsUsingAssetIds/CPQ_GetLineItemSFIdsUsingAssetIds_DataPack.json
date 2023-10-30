@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetLineItemSFIdsUsingAssetIds_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_GetLineItemSFIdsUsingAssetIds",
+    "OmniProcessElement": [
+        "CPQ_GetLineItemSFIdsUsingAssetIds_Element_TransformIdsToObjects.json",
+        "CPQ_GetLineItemSFIdsUsingAssetIds_Element_GetOrderLineItemSFIdsUsingAssetIds.json",
+        "CPQ_GetLineItemSFIdsUsingAssetIds_Element_GetQuoteLineItemSFIdsUsingAssetIds.json",
+        "CPQ_GetLineItemSFIdsUsingAssetIds_Element_TransformToArrayForOrder.json",
+        "CPQ_GetLineItemSFIdsUsingAssetIds_Element_TransformToArrayForQuote.json"
+    ],
+    "OmniProcessKey": "CPQ_GetLineItemSFIdsUsingAssetIds",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetLineItemSFIdsUsingAssetIds_PropertySetConfig.json",
+    "SubType": "GetLineItemSFIdsUsingAssetIds",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetLineItemSFIdsUsingAssetIds/Procedure",
+    "WebComponentKey": "c17a6181-eea9-5d1c-6ca9-94172fd48ce2"
+}

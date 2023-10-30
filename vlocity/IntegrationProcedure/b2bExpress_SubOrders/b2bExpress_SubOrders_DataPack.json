@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_SubOrders_SampleInput.json",
+    "Description": "This VIP is used to create sub orders for members and groups. Change the field mappings from Quote Member to Service Account in QuoteMemberToServiceAccount component.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SubOrders",
+    "OmniProcessElement": [
+        "b2bExpress_SubOrders_Element_FieldMappings.json",
+        "b2bExpress_SubOrders_Element_QuoteMemberToServiceAccount.json",
+        "b2bExpress_SubOrders_Element_SearchOrCreateServiceAccount.json",
+        "b2bExpress_SubOrders_Element_CreateSubOrder.json",
+        "b2bExpress_SubOrders_Element_UpdateQuantity.json",
+        "b2bExpress_SubOrders_Element_SubOrderCreated.json"
+    ],
+    "OmniProcessKey": "b2bExpress_SubOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_SubOrders_PropertySetConfig.json",
+    "SubType": "SubOrders",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/SubOrders/Procedure",
+    "WebComponentKey": "eef73f6a-e653-9038-c665-f4bd6fc1034b"
+}

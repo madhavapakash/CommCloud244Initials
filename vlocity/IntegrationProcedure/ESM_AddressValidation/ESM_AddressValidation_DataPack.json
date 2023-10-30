@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_AddressValidation_SampleInput.json",
+    "Description": "The IP is created to check Address validation for selected Quote/Order Members.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESMAddressValidation",
+    "OmniProcessElement": [
+        "ESM_AddressValidation_Element_GetOrderMemberAddresses.json",
+        "ESM_AddressValidation_Element_ForEachMember.json",
+        "ESM_AddressValidation_Element_PayLoadForAddressValidation.json",
+        "ESM_AddressValidation_Element_TMFAPICall.json",
+        "ESM_AddressValidation_Element_UpdateOrderMember.json",
+        "ESM_AddressValidation_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_AddressValidation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_AddressValidation_PropertySetConfig.json",
+    "SubType": "AddressValidation",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/AddressValidation/Procedure",
+    "WebComponentKey": "679a1c1f-0273-514a-acb4-019e75b03db8"
+}

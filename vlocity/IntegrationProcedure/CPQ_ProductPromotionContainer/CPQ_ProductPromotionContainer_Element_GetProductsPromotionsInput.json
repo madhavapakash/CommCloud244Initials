@@ -1,0 +1,39 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetProductsPromotionsInput",
+    "OmniProcessId": {
+        "Name": "CPQ_Products_Promotions_IP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/ProductPromotionContainer/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "attributes": "%attributes%",
+            "cartId": "%cartId%",
+            "catalogId": "%catalogId%",
+            "fields": "%fields%",
+            "offerType": "%offerType%",
+            "offsetSize": "%offsetSize%",
+            "pagesize": "%pagesize%",
+            "qualifiedFilter": "%qualifiedFilter%",
+            "query": "%query%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/ProductPromotionContainer/Procedure/GetProductsPromotionsInput"
+}

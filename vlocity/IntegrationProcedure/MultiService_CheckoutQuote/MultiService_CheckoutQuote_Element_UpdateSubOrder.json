@@ -1,0 +1,46 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateSubOrder",
+    "OmniProcessId": {
+        "Name": "CheckoutQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/CheckoutQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%CreateOrder:records|1:id%",
+            "MasterOrderId": "%masterOrderId%",
+            "OpportunityId": "%opportunityId%",
+            "OrderGroupId": "%orderGroupId%",
+            "RecordTypeId": "%recordTypeId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "MultiService - Update Sub Order",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CreateOrder:records|1%!=null",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/CheckoutQuote/Procedure/UpdateSubOrder"
+}

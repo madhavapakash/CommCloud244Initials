@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_UpdateQtyPrice_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateQtyPrice",
+    "OmniProcessElement": [
+        "b2bExpress_UpdateQtyPrice_Element_getOrderItem.json",
+        "b2bExpress_UpdateQtyPrice_Element_GetGroupSize.json",
+        "b2bExpress_UpdateQtyPrice_Element_updateQuantity.json",
+        "b2bExpress_UpdateQtyPrice_Element_Reprice.json",
+        "b2bExpress_UpdateQtyPrice_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "b2bExpress_UpdateQtyPrice",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_UpdateQtyPrice_PropertySetConfig.json",
+    "SubType": "UpdateQtyPrice",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/UpdateQtyPrice/Procedure",
+    "WebComponentKey": "71d8e057-aebf-0f0e-94ad-4c3cc795c1f3"
+}

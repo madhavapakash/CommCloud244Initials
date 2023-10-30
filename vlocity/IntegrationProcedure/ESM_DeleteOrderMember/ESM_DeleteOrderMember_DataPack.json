@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_DeleteOrderMember_SampleInput.json",
+    "Description": "IP used to delete order member",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESMDeleteOrderMember",
+    "OmniProcessElement": [
+        "ESM_DeleteOrderMember_Element_RemoveMemberFromGroup.json",
+        "ESM_DeleteOrderMember_Element_DeleteMembers.json",
+        "ESM_DeleteOrderMember_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_DeleteOrderMember",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_DeleteOrderMember_PropertySetConfig.json",
+    "SubType": "DeleteOrderMember",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/DeleteOrderMember/Procedure",
+    "WebComponentKey": "7a268954-f541-a676-c6c6-c366270b1a70"
+}

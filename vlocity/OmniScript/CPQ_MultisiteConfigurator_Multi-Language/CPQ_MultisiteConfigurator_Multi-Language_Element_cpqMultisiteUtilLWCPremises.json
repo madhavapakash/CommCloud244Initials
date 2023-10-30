@@ -1,0 +1,101 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "cpqMultisiteUtilLWCPremises",
+    "OmniProcessId": {
+        "Name": "CPQMultisiteConfigurator",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MultisiteConfigurator/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GroupPremises",
+        "OmniProcessId": {
+            "Name": "CPQMultisiteConfigurator",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MultisiteConfigurator/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MultisiteConfigurator/Multi-Language/GroupPremises",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GroupPremises",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "transform-site-columns-method-name",
+                "source": "transformSiteColumnsUsingBasicAlgo"
+            },
+            {
+                "name": "channel-name",
+                "source": "%premisesChannelName%"
+            },
+            {
+                "name": "custom-event-name",
+                "source": "multisite"
+            },
+            {
+                "name": "transform-site-data-method-name",
+                "source": "transformSiteDataUsingBasicAlgo"
+            },
+            {
+                "name": "site-key-field",
+                "source": "Id.value"
+            },
+            {
+                "name": "parent-id",
+                "source": "%parentId%"
+            },
+            {
+                "name": "context-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "page-size",
+                "source": "10"
+            },
+            {
+                "name": "cart-type",
+                "source": "%cartType%"
+            },
+            {
+                "name": "get-groups-i-p-name",
+                "source": "MultiSite_GetGroups"
+            },
+            {
+                "name": "get-group-members-i-p-name",
+                "source": "MultiSite_GetGroupMembers"
+            },
+            {
+                "name": "member-type",
+                "source": "Premises"
+            },
+            {
+                "name": "get-ungrouped-records-i-p-name",
+                "source": "MultiSite_GetUngroupedRecords"
+            },
+            {
+                "name": "get-group-members-type-list-i-p-name",
+                "source": "MultiSite_GetMemberTypeList"
+            },
+            {
+                "name": "source",
+                "source": "OmniScript"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "lwcName": "%vlocity_namespace%__cpqMultiSiteUtil",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MultisiteConfigurator/Multi-Language/cpqMultisiteUtilLWCPremises"
+}

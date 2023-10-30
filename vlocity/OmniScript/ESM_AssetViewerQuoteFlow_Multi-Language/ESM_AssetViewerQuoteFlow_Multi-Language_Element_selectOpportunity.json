@@ -1,0 +1,107 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "selectOpportunity",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Quote Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateSelectQuote",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Quote Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language/CreateSelectQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateSelectQuote",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "clearValue": true,
+        "conditionType": "Hide if False",
+        "controlWidth": 8,
+        "dataSource": {
+            "mapItems": {
+                "inputParameters": [
+                    {
+                        "element": "ContextId",
+                        "inputParam": "%accId%"
+                    }
+                ],
+                "phase1MapItems": [
+                    {
+                        "DomainObjectFieldAPIName__c": "Opportunities",
+                        "FilterOperator__c": "=",
+                        "FilterValue__c": "%accId%",
+                        "InterfaceFieldAPIName__c": "AccountId",
+                        "InterfaceObjectLookupOrder__c": 1,
+                        "InterfaceObjectName__c": "Opportunity"
+                    }
+                ],
+                "phase2MapItems": [
+                    {
+                        "DomainObjectAPIName__c": "JSON",
+                        "DomainObjectCreationOrder__c": 1,
+                        "DomainObjectFieldAPIName__c": "name",
+                        "InterfaceFieldAPIName__c": "Opportunities:Id"
+                    },
+                    {
+                        "DomainObjectAPIName__c": "JSON",
+                        "DomainObjectCreationOrder__c": 1,
+                        "DomainObjectFieldAPIName__c": "value",
+                        "InterfaceFieldAPIName__c": "Opportunities:Name"
+                    }
+                ]
+            },
+            "type": "SObject"
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "errorMessage": {
+            "custom": [
+            ]
+        },
+        "help": false,
+        "helpText": null,
+        "hide": false,
+        "inputWidth": 12,
+        "label": "SelectOpportunity",
+        "placeholder": "",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "createQuote",
+                        "field": "selectType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "selectOpportunity",
+                        "field": "selectQuoteType"
+                    }
+                ]
+            }
+        },
+        "showInputWidth": false
+    },
+    "Type": "Lookup",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language/selectOpportunity"
+}

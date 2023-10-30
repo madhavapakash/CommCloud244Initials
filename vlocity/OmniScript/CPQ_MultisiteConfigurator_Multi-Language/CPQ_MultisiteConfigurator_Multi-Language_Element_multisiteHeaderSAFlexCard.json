@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "multisiteHeaderSAFlexCard",
+    "OmniProcessId": {
+        "Name": "CPQMultisiteConfigurator",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MultisiteConfigurator/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GroupServiceAccount",
+        "OmniProcessId": {
+            "Name": "CPQMultisiteConfigurator",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/MultisiteConfigurator/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MultisiteConfigurator/Multi-Language/GroupServiceAccount",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GroupServiceAccount",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "parent-data",
+                "source": "true"
+            },
+            {
+                "name": "record-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "records",
+                "source": "%serviceAccountParentRecords%"
+            },
+            {
+                "name": "parent-attribute",
+                "source": "%serviceAccountParentRecords%"
+            }
+        ],
+        "hide": false,
+        "label": null,
+        "lwcName": "cfCpqMultiSiteHeader",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/MultisiteConfigurator/Multi-Language/multisiteHeaderSAFlexCard"
+}

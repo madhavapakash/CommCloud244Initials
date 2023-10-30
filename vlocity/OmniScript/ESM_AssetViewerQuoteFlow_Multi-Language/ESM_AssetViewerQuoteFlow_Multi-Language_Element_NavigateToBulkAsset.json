@@ -1,0 +1,66 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToBulkAsset",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Quote Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 2,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "NavigateToBulkAsset",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "bulk",
+                        "field": "isBulk"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "QuoteId"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "changeAssets",
+                        "field": "selectActionType"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWC": "%vlocity_namespace%:cPQBulkChangeMultiLanguage",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__ContextId=%ContextId%&c__cartId=%QuoteId%&c__cartType=Quote&c__OpportunityId=%OpportunityId%&c__source=AssetViewer&c__tabLabel=Bulk Change",
+        "targetName": "",
+        "targetType": "Vlocity OmniScript",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language/NavigateToBulkAsset"
+}

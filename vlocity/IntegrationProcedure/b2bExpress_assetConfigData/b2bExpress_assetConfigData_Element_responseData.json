@@ -1,0 +1,147 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "responseData",
+    "OmniProcessId": {
+        "Name": "getAssetConfigData",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/assetConfigData/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "columnMap": [
+                {
+                    "label": "Id",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "Id",
+                    "visible": false
+                },
+                {
+                    "collapsable": true,
+                    "dataType": "Text",
+                    "label": "Asset Name",
+                    "showAttrs": true,
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "Name"
+                },
+                {
+                    "dataType": "Text",
+                    "label": "Service Account",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__ServiceAccountId__r.Name"
+                },
+                {
+                    "dataType": "Text",
+                    "label": "Billing Account",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__BillingAccountId__r.Name"
+                },
+                {
+                    "dataType": "Text",
+                    "label": "Service Identifier",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__ServiceIdentifier__c"
+                },
+                {
+                    "label": "Related Asset",
+                    "topic": [
+                        "Product Relationship"
+                    ],
+                    "valueMap": "RelatedAsset"
+                },
+                {
+                    "label": "Contract",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__ContractId__r.Id"
+                },
+                {
+                    "align": "right",
+                    "dataType": "Currency",
+                    "label": "Recurring Total",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__RecurringTotal__c"
+                },
+                {
+                    "align": "right",
+                    "dataType": "Currency",
+                    "label": "One Time Total",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__OneTimeTotal__c"
+                },
+                {
+                    "dataType": "Text",
+                    "label": "Status",
+                    "topic": [
+                        "All",
+                        "Product Relationship"
+                    ],
+                    "valueMap": "%vlocity_namespace%__ProvisioningStatus__c"
+                }
+            ],
+            "displayActionOptions": [
+                {
+                    "label": "Add Assets to Quote",
+                    "value": "Quote"
+                },
+                {
+                    "label": "Add Assets to Order",
+                    "value": "Order"
+                }
+            ],
+            "excludeRepititiveColumnDataKeys": [
+                "%vlocity_namespace%__BillingAccountId__r",
+                "%vlocity_namespace%__ServiceAccountId__r",
+                "%vlocity_namespace%__ProvisioningStatus__c"
+            ],
+            "pageLimit": 3,
+            "pageSize": 5,
+            "tableGroupFilterOptions": [
+                "Name",
+                "ServiceAccountId__r",
+                "BillingAccountId__r",
+                "ContractId__r",
+                "ProvisioningStatus__c"
+            ]
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/assetConfigData/Procedure/responseData"
+}

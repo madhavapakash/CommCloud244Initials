@@ -1,0 +1,119 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartValidateAndPriceSerialyJob",
+    "OmniProcessId": {
+        "Name": "MultiSite_StartValidatePrice",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/StartValidatePrice/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "HasFailedGroupMembers": "%HasFailedGroupMembers%",
+            "batchInput": [
+                {
+                    "batchOperationType": "Validate",
+                    "batchSize": 5,
+                    "className": "%vlocity_namespace%.MSInvokeCartValidationBatch",
+                    "classParams": {
+                        "executeVIP": {
+                            "vipName": "MultiService_RunCartValidation",
+                            "vipParams": {
+                                "": ""
+                            }
+                        },
+                        "finishVIP": {
+                            "vipName": "MultiService_FinishCartValidation",
+                            "vipParams": {
+                                "": ""
+                            }
+                        },
+                        "startVIP": {
+                            "vipName": "",
+                            "vipParams": {
+                                "": ""
+                            }
+                        }
+                    }
+                },
+                {
+                    "batchOperationType": "Price",
+                    "batchSize": 10,
+                    "className": "%vlocity_namespace%.MSInvokeCartPricingBatch",
+                    "classParams": {
+                        "executeVIP": {
+                            "vipName": "MultiService_RunCartPricing",
+                            "vipParams": {
+                                "": ""
+                            }
+                        },
+                        "finishVIP": {
+                            "vipName": "MultiService_FinishCartPricing",
+                            "vipParams": {
+                                "": ""
+                            }
+                        },
+                        "postFinishVIP": {
+                            "vipName": "MultiService_ValidateAndUpdateExternalPricingStatus",
+                            "vipParams": {
+                                "": ""
+                            }
+                        },
+                        "startVIP": {
+                            "vipName": "",
+                            "vipParams": {
+                                "": ""
+                            }
+                        }
+                    }
+                }
+            ],
+            "cartType": "%cartType%",
+            "contextId": "%contextId%",
+            "filterSubCarts": "isPriced__c = false OR isValidated__c = false",
+            "groupCartId": "%groupCartId%",
+            "groupId": "%groupId%",
+            "groupIds": "%groupIds%",
+            "notifications": {
+                "appNotification": {
+                    "ValidateAndPriceNotificationEnabled": true,
+                    "customNotificationTypeName": "CMEbatchJob"
+                }
+            },
+            "parentId": "%parentId%",
+            "startJobVIPName": "%startJobVIPName%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "invokeBatchSerially",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/StartValidatePrice/Procedure/StartValidateAndPriceSerialyJob"
+}

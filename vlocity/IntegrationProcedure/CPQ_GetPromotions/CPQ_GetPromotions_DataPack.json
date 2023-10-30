@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetPromotions_SampleInput.json",
+    "Description": "To fetch the promotions applicable to a cart based on pricelist.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQGetPromotions",
+    "OmniProcessElement": [
+        "CPQ_GetPromotions_Element_GetPromotionsInput.json",
+        "CPQ_GetPromotions_Element_CartIdEmptyResponse.json",
+        "CPQ_GetPromotions_Element_CartIdNotEmpty.json",
+        "CPQ_GetPromotions_Element_GetPromotionsRemoteCall.json",
+        "CPQ_GetPromotions_Element_QualifiedFilter.json",
+        "CPQ_GetPromotions_Element_RemoteCallResponseType1.json",
+        "CPQ_GetPromotions_Element_RemoteCallResponseType2.json"
+    ],
+    "OmniProcessKey": "CPQ_GetPromotions",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetPromotions_PropertySetConfig.json",
+    "SubType": "GetPromotions",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetPromotions/Procedure",
+    "WebComponentKey": "30850d0b-c51b-0d7e-6fdb-a017aa6dbf55"
+}

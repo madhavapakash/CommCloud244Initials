@@ -1,0 +1,38 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetUngroupedRecordsInput",
+    "OmniProcessId": {
+        "Name": "Multisite Ungrouped Records",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/GetUngroupedRecords/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "cartType": "%cartType%",
+            "contextId": "%contextId%",
+            "filters": "%filters%",
+            "memberType": "%memberType%",
+            "offset": "%offset%",
+            "pageSize": "%pageSize%",
+            "parentId": "%parentId%",
+            "sortBy": "%sortBy%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/GetUngroupedRecords/Procedure/GetUngroupedRecordsInput"
+}

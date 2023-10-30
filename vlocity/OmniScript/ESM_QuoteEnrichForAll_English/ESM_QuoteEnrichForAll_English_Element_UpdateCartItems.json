@@ -1,0 +1,113 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateCartItems",
+    "OmniProcessId": {
+        "Name": "QuoteEnrichForAll",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/QuoteEnrichForAll/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "cartItemIds": "%CartItemIds%",
+            "fieldValues": {
+                "%vlocity_namespace%__BillingAccountId__c": "%BillingAccount%",
+                "%vlocity_namespace%__ConnectDate__c": "%Installation:ConnectDate%",
+                "%vlocity_namespace%__ServiceIdentifier__c": "%ServiceIdentifier%"
+            },
+            "objectType": "%objectToQuery%"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "label": null,
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "updateCartItemsByField",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "OR",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "BillingAccount"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "Installation:ConnectDate"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "ServiceIdentifier"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "<=",
+                        "data": "10",
+                        "field": "RecordCount"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/QuoteEnrichForAll/English/UpdateCartItems"
+}

@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderGroupLoopBlock",
+    "OmniProcessId": {
+        "Name": "CopyGroupCartToEnterpriseOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "NOT(ISBLANK(OrderGroupIds))",
+        "label": "LoopBlock1",
+        "loopList": "OrderGroupIds",
+        "loopOutput": {
+            "addQGToWCQLIs": "%addQGToWCQLIs%"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/copyGroupCartToenterpriseOrder/Procedure/OrderGroupLoopBlock"
+}

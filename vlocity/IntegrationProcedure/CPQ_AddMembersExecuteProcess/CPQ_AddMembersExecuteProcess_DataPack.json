@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_AddMembersExecuteProcess_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_AddMembersExecuteProcess",
+    "OmniProcessElement": [
+        "CPQ_AddMembersExecuteProcess_Element_GetProductsFromAssets.json",
+        "CPQ_AddMembersExecuteProcess_Element_ConsolidateProductData.json",
+        "CPQ_AddMembersExecuteProcess_Element_addMembersLoop.json",
+        "CPQ_AddMembersExecuteProcess_Element_GetMemberIdsFromAssetIds.json",
+        "CPQ_AddMembersExecuteProcess_Element_GroupAssetsByMembers.json",
+        "CPQ_AddMembersExecuteProcess_Element_AddMembersToGroup.json",
+        "CPQ_AddMembersExecuteProcess_Element_executeAddMembersResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_AddMembersExecuteProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_AddMembersExecuteProcess_PropertySetConfig.json",
+    "SubType": "AddMembersExecuteProcess",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/AddMembersExecuteProcess/Procedure",
+    "WebComponentKey": "4479fa1f-1804-9edc-5811-117b1820b1df"
+}

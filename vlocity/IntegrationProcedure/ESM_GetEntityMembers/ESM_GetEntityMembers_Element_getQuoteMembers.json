@@ -1,0 +1,56 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "getQuoteMembers",
+    "OmniProcessId": {
+        "Name": "ESM_GetEntityMembers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/GetEntityMembers/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "fields": "%vlocity_namespace%__PremisesId__r.Name,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__ServicePointId__r.Name",
+            "filters": "%filters%",
+            "groupByField": "%groupByField%",
+            "include": "%include%",
+            "offset": "%offset%",
+            "pageSize": "%pageSize%",
+            "searchByFields": "%searchByFields%",
+            "searchText": "%searchText%",
+            "sortByField": "%sortByField%",
+            "sortDirection": "%sortDirection%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "objType==\"Quote\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "getQuoteMembers",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/GetEntityMembers/Procedure/getQuoteMembers"
+}

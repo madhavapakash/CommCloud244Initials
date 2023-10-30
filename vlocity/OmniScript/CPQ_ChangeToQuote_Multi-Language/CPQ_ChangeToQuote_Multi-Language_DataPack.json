@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "Omniscript to change an asset to quote",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": true,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "Name": "Change to Quote",
+    "OmniProcessElement": [
+        "CPQ_ChangeToQuote_Multi-Language_Element_GetExistingAssetsFromQuoteLineItem.json",
+        "CPQ_ChangeToQuote_Multi-Language_Element_GetAssetIdsToProcess.json",
+        "CPQ_ChangeToQuote_Multi-Language_Element_SetDuplicateAssetsErrorMessage.json",
+        "CPQ_ChangeToQuote_Multi-Language_Element_ChangeToQuoteRemoteAction.json",
+        "CPQ_ChangeToQuote_Multi-Language_Element_QuoteNavigateAction.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "CPQ_ChangeToQuote_Multi-Language_PropertySetConfig.json",
+    "SubType": "ChangeToQuote",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/ChangeToQuote/Multi-Language",
+    "WebComponentKey": "b4b41de3-00e7-4699-3022-cf486efafe85"
+}

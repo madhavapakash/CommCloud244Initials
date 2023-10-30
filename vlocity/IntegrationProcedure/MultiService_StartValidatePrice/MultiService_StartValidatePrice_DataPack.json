@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "This starts validate and price operation on a group.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "StartValidateAndPriceJob",
+    "OmniProcessElement": [
+        "MultiService_StartValidatePrice_Element_SetValues.json",
+        "MultiService_StartValidatePrice_Element_StartValidateAndPriceJob.json",
+        "MultiService_StartValidatePrice_Element_StartValidateAndPriceSerialyJob.json"
+    ],
+    "OmniProcessKey": "MultiService_StartValidatePrice",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiService_StartValidatePrice_PropertySetConfig.json",
+    "SubType": "StartValidatePrice",
+    "Type": "MultiService",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiService/StartValidatePrice/Procedure",
+    "WebComponentKey": "b24045ce-76cb-8b8d-88ee-bbc70323eac0"
+}

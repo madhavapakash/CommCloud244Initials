@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "This OS splits an enterprise Order into multiple Sub Orders and then submits them in Parallel .",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "SplitAndSubmitOrder",
+    "OmniProcessElement": [
+        "CPQ_SplitAndSubmitOrder_English_Element_CPQ_StartBulkSplitOrder.json",
+        "CPQ_SplitAndSubmitOrder_English_Element_SubmitOrderMessageStep.json",
+        "CPQ_SplitAndSubmitOrder_English_Element_OrderSuccessfullySubmitted.json",
+        "CPQ_SplitAndSubmitOrder_English_Element_LineBreak.json",
+        "CPQ_SplitAndSubmitOrder_English_Element_NavigateToOrder.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "CPQ_SplitAndSubmitOrder_English_PropertySetConfig.json",
+    "SubType": "SplitAndSubmitOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/SplitAndSubmitOrder/English",
+    "WebComponentKey": "68f3f1a8-6c5a-404d-7128-e83a6032bad9"
+}

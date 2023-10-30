@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "MultiSite_DeleteMembers_SampleInput.json",
+    "Description": "Multisite remove from group https://vlocity.atlassian.net/wiki/spaces/COM/pages/844399516/Remote+Actions#addToGroup",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DeleteMembers",
+    "OmniProcessElement": [
+        "MultiSite_DeleteMembers_Element_DeleteMembersInput.json",
+        "MultiSite_DeleteMembers_Element_EmptyConditionalCheckBlock.json",
+        "MultiSite_DeleteMembers_Element_EmptyInputResponse.json",
+        "MultiSite_DeleteMembers_Element_ApexRemoteCall.json",
+        "MultiSite_DeleteMembers_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "MultiSite_DeleteMembers",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_DeleteMembers_PropertySetConfig.json",
+    "SubType": "DeleteMembers",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/DeleteMembers/Procedure",
+    "WebComponentKey": "41665a4a-8ba6-0847-1138-2d3483ce747a"
+}

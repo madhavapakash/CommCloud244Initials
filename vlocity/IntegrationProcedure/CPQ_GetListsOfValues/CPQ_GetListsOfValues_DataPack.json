@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetListsOfValues_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQGetListsOfValuesIP",
+    "OmniProcessElement": [
+        "CPQ_GetListsOfValues_Element_RAGetListsOfValues.json",
+        "CPQ_GetListsOfValues_Element_LoopBlock.json",
+        "CPQ_GetListsOfValues_Element_ConditionalBlockAdjustmentCodes.json",
+        "CPQ_GetListsOfValues_Element_DRTransformAdjustmentCodes.json",
+        "CPQ_GetListsOfValues_Element_ConditionalBlockTimePolicies.json",
+        "CPQ_GetListsOfValues_Element_DRTransformTimePolicies.json",
+        "CPQ_GetListsOfValues_Element_ConditionalBlockTimePlans.json",
+        "CPQ_GetListsOfValues_Element_DRTransformTimePlans.json",
+        "CPQ_GetListsOfValues_Element_SetValues.json",
+        "CPQ_GetListsOfValues_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "CPQ_GetListsOfValues",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetListsOfValues_PropertySetConfig.json",
+    "SubType": "GetListsOfValues",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetListsOfValues/Procedure",
+    "WebComponentKey": "b22bf097-7605-9e76-6539-5fdb6590aade"
+}

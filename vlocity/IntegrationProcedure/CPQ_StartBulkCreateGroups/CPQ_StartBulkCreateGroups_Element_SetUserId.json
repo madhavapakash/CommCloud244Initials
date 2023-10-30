@@ -1,0 +1,36 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetUserId",
+    "OmniProcessId": {
+        "Name": "CPQ_StartBulkCreateGroups",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/StartBulkCreateGroups/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "addMembersAsyncProcessNameForOrder": "Add Members for %createCartData:orderName%",
+            "addMembersAsyncProcessNameForQuote": "Add Members for %createCartData:quoteName%",
+            "createGroupsAsyncProcessNameForOrder": "Create Groups for %createCartData:orderName%",
+            "createGroupsAsyncProcessNameForQuote": "Create Groups for %createCartData:quoteName%",
+            "timestamp": "=NOW()",
+            "userID": "= $Vlocity.UserId"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/StartBulkCreateGroups/Procedure/SetUserId"
+}

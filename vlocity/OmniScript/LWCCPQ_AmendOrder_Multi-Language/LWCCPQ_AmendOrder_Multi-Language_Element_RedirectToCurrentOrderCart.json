@@ -1,0 +1,35 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RedirectToCurrentOrderCart",
+    "OmniProcessId": {
+        "Name": "CPQ Amend Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/LWCCPQ/AmendOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "Outcome": "",
+        "consoleTabLabel": null,
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "redirectPageName": "mobileDone",
+        "redirectTemplateUrl": "vlcMobileConfirmation.html",
+        "show": null,
+        "source": "/lightning/r/Order/%ContextId%/view",
+        "ssm": false,
+        "type": "URL",
+        "validationRequired": null,
+        "wpm": false
+    },
+    "Type": "Done Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/LWCCPQ/AmendOrder/Multi-Language/RedirectToCurrentOrderCart"
+}

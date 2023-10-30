@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "orderStartRequestDateTimeValidate",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateSelectOrder",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Order Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/CreateSelectOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateSelectOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataType": "Boolean",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "OR (\n\t%orderStartRequestDateTime%=NULL,\n\tIF(\n\t\tDATE(\n\t\t\t\tYEAR(%orderStartRequestDateTime%),MONTH(%orderStartRequestDateTime%),DAYOFMONTH(%orderStartRequestDateTime%)\n\t\t\t) < TODAY(), \n\t\tfalse, \n\t\tIF(\n\t\t\tDATE(\n\t\t\t\t\tYEAR(%orderStartRequestDateTime%),MONTH(%orderStartRequestDateTime%),DAYOFMONTH(%orderStartRequestDateTime%)\n\t\t\t\t) = TODAY(),\n\t\t\tIF(\n\t\t\t\tHOUR(%orderStartRequestDateTime%) < HOUR(NOW()), \n\t\t\t\tfalse, \n\t\t\t\tIF(\n\t\t\t\t\tHOUR(%orderStartRequestDateTime%) = HOUR(NOW()), \n\t\t\t\t\tIF(\n\t\t\t\t\t\tMINUTE(%orderStartRequestDateTime%) < MINUTE(NOW()),\n\t\t\t\t\t\tfalse,\n\t\t\t\t\t\ttrue\n\t\t\t\t\t),\n\t\t\t\t\ttrue\n\t\t\t\t)\n\t\t\t),\n\t\t\ttrue\n\t\t)\n\t)\n)",
+        "hide": true,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": null,
+        "mask": null,
+        "show": null,
+        "showInputWidth": true
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/orderStartRequestDateTimeValidate"
+}

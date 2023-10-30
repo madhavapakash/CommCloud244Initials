@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CustomerInteractionContactCMT_Creation_SampleInput.json",
+    "Description": "Create Customer Interaction",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateCustomerInteractionContactCMT",
+    "OmniProcessElement": [
+        "CustomerInteractionContactCMT_Creation_Element_CreateInteraction.json",
+        "CustomerInteractionContactCMT_Creation_Element_TransformNewInteraction.json",
+        "CustomerInteractionContactCMT_Creation_Element_ExtractAccountFromContact.json",
+        "CustomerInteractionContactCMT_Creation_Element_ExtractAssetBasedOnAccount.json",
+        "CustomerInteractionContactCMT_Creation_Element_CreateCMTInteractionTopic.json",
+        "CustomerInteractionContactCMT_Creation_Element_Response-Action.json"
+    ],
+    "OmniProcessKey": "CustomerInteractionContactCMT_Creation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CustomerInteractionContactCMT_Creation_PropertySetConfig.json",
+    "SubType": "Creation",
+    "Type": "CustomerInteractionContactCMT",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CustomerInteractionContactCMT/Creation/Procedure",
+    "WebComponentKey": "bcd1b853-cc5f-48eb-ade9-113329cc4c49"
+}

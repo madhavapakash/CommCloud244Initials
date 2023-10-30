@@ -1,0 +1,92 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartAsyncJobForSplitOrder",
+    "OmniProcessId": {
+        "Name": "CPQ_StartBulkSplitOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/StartBulkSplitOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "cartConfiguration": "%cartConfiguration%",
+                "cartId": "%cartId%",
+                "memberType": "ServiceAccount",
+                "userID": "%SetUserId:userID%"
+            },
+            "asyncProcessName": "CPQ Split and Submit Bulk Enterprise Orders",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "CPQ_ExecuteSplitOrder",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetMemberTypeIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "executeNextStepIfAnyJobFails": true,
+                    "stepName": "SplitEnterPriseOrder"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": false,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "CPQ_SubmitOrderWrapper",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetSubOrderByCartId",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "executeNextStepIfAnyJobFails": true,
+                    "stepName": "SubmitSubOrders"
+                }
+            ],
+            "referenceId": "%cartId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/StartBulkSplitOrder/Procedure/StartAsyncJobForSplitOrder"
+}

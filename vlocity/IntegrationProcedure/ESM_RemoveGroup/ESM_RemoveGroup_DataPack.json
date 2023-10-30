@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_RemoveGroup_SampleInput.json",
+    "Description": "B2B Express: Remove Quote/Order Group from Enterprise Quote/Order as well as from System.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESMRemoveGroup",
+    "OmniProcessElement": [
+        "ESM_RemoveGroup_Element_DeleteOrderGroup.json",
+        "ESM_RemoveGroup_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_RemoveGroup",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_RemoveGroup_PropertySetConfig.json",
+    "SubType": "RemoveGroup",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/RemoveGroup/Procedure",
+    "WebComponentKey": "b92dc5de-ba8b-02a0-d49c-a6e4f38775ed"
+}

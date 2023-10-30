@@ -1,0 +1,102 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateFinishNoTemplates",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "NoTemplates",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/NoTemplates",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "NoTemplates",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 2,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconPositionOptions": [
+            "left",
+            "right"
+        ],
+        "iconVariant": "",
+        "label": "%vlocity_namespace%__CMEXFinish",
+        "message": {
+        },
+        "objectAction": "home",
+        "objectActionOptions": [
+            "home",
+            "list",
+            "new"
+        ],
+        "pubsub": false,
+        "recordAction": "view",
+        "recordActionOptions": [
+            "clone",
+            "edit",
+            "view"
+        ],
+        "replace": true,
+        "replaceOptions": [
+            {
+                "label": "No",
+                "value": false
+            },
+            {
+                "label": "Yes",
+                "value": true
+            }
+        ],
+        "show": null,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetLWCLayoutOptions": [
+            "lightning",
+            "newport"
+        ],
+        "targetType": "Record",
+        "targetTypeOptions": [
+            "Component",
+            "Current Page",
+            "Knowledge Article",
+            "Named Page",
+            "Navigation Item",
+            "Object",
+            "Record",
+            "Record Relationship",
+            "Web Page",
+            "Vlocity OmniScript"
+        ],
+        "validationRequired": null,
+        "variant": "brand",
+        "variantOptions": [
+            "brand",
+            "outline-brand",
+            "neutral",
+            "success",
+            "destructive",
+            "text-destructive",
+            "inverse",
+            "link"
+        ]
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/NavigateFinishNoTemplates"
+}

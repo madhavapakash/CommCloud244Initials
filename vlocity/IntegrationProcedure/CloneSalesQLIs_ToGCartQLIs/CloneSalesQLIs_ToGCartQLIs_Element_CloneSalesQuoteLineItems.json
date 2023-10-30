@@ -1,0 +1,72 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CloneSalesQuoteLineItems",
+    "OmniProcessId": {
+        "Name": "CloneSalesQuoteToGroupCart",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CloneSalesQLIs/ToGCartQLIs/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "RootItemIds": "%RootItemIds%",
+            "SalesQuoteId": "%SalesQuoteId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "extraPayload": {
+            "fields": "Id,Pricebook2Id",
+            "inputFields": [
+                {
+                    "Status": "Draft"
+                },
+                {
+                    "AccountId": "%getMasterDetail:AccountId%"
+                },
+                {
+                    "OpportunityId": "%getMasterDetail:OptyId%"
+                },
+                {
+                    "Name": "New Temp Quote"
+                },
+                {
+                    "%vlocity_namespace%__OriginatingChannel__c": "Retail"
+                },
+                {
+                    "pricelistName": "%getMasterDetail:PriceListName%"
+                }
+            ],
+            "objectType": "Quote"
+        },
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.B2BCmexAppHandler",
+        "remoteMethod": "cloneSalesQToGCart",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CloneSalesQLIs/ToGCartQLIs/Procedure/CloneSalesQuoteLineItems"
+}

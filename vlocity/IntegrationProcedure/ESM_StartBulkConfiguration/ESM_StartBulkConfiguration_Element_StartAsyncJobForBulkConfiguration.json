@@ -1,0 +1,122 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartAsyncJobForBulkConfiguration",
+    "OmniProcessId": {
+        "Name": "ESM_StartBulkConfiguration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/StartBulkConfiguration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "cartConfiguration": "%cartConfiguration%",
+                "cartId": "%cartId%",
+                "cartType": "%cartType%",
+                "userID": "%SetUserId:userID%"
+            },
+            "asyncProcessName": "%SetUserId:asyncProcessName%",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_ExecuteBulkAddLineItems",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Configuration: Add"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_ExecuteBulkDeleteLineItems",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Configuration: Delete"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_ExecuteBulkUpdateLineItems",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Configuration: Update"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_ExecuteBulkValidateLineItems",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Configuration: Validate"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_ExecuteBulkPriceLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "ESM_PriceLineItemsFinishProcess",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Configuration: Price"
+                }
+            ],
+            "itemsToProcessList": "%listOfRootItemIds%",
+            "referenceId": "%cartId%_bulk_configuration"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/StartBulkConfiguration/Procedure/StartAsyncJobForBulkConfiguration"
+}

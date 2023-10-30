@@ -1,0 +1,328 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "AOI-Combo-Offer_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_PLAN_SPEED": null,
+        "ATT_POST_THROTTLE_SPEED": null,
+        "ATT_TYPE_OF_DSL_PLAN": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_DIGITAL_SERVICE_DETAILS",
+                "Name": "Digital Service / Voice Details",
+                "displaySequence": 900,
+                "id": "a0Z72000000zG33EAE",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005kgBHAAY",
+                            "cloneable": true,
+                            "code": "ATT_PLAN_SPEED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Plan Speed",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "28c7b765-1913-076f-c880-09bc4cd570e4",
+                                    "label": "204800",
+                                    "name": "28c7b765-1913-076f-c880-09bc4cd570e4",
+                                    "readonly": false,
+                                    "value": "204800"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "42e8e684-a4fe-46e7-4c3c-4bdb011cbc8e",
+                                    "label": "1048576",
+                                    "name": "42e8e684-a4fe-46e7-4c3c-4bdb011cbc8e",
+                                    "readonly": false,
+                                    "value": "1048576"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "4fc1bd6b-7356-c2d2-f950-a744850e5f78",
+                                    "label": "40960",
+                                    "name": "4fc1bd6b-7356-c2d2-f950-a744850e5f78",
+                                    "readonly": false,
+                                    "value": "40960"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "8cf2975f-d88e-0eeb-b117-c9ec18470fed",
+                                    "label": "307200",
+                                    "name": "8cf2975f-d88e-0eeb-b117-c9ec18470fed",
+                                    "readonly": false,
+                                    "value": "307200"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "d9843db3-e526-bc72-79d7-ef47ea3a3c62",
+                                    "label": "102400",
+                                    "name": "d9843db3-e526-bc72-79d7-ef47ea3a3c62",
+                                    "readonly": false,
+                                    "value": "102400"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBIAAY",
+                            "cloneable": true,
+                            "code": "ATT_POST_THROTTLE_SPEED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Post Throttle Speed",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "23e7bbf7-bfca-295d-90c9-7a148fc852f9",
+                                    "label": "1024",
+                                    "name": "23e7bbf7-bfca-295d-90c9-7a148fc852f9",
+                                    "readonly": false,
+                                    "value": "1024"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "9241795e-d7dc-dfa2-c062-92c50eb69dc5",
+                                    "label": "4096",
+                                    "name": "9241795e-d7dc-dfa2-c062-92c50eb69dc5",
+                                    "readonly": false,
+                                    "value": "4096"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBNAAY",
+                            "cloneable": true,
+                            "code": "ATT_TYPE_OF_DSL_PLAN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Type of DSL Plan",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "a1440d07-2675-666c-698e-d2e6ab3c46ff",
+                                    "label": "Unlimited",
+                                    "name": "a1440d07-2675-666c-698e-d2e6ab3c46ff",
+                                    "readonly": false,
+                                    "value": "Unlimited"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": [
+        {
+            "actions": {
+            },
+            "childCategories": [
+                {
+                    "actions": {
+                    },
+                    "childCategories": [
+                    ],
+                    "displaySequence": -1,
+                    "fields": {
+                    },
+                    "id": "a177200000hwPDdAAM",
+                    "messages": [
+                    ],
+                    "name": "Airtel Digital Services",
+                    "nameResult": {
+                    },
+                    "uiStates": {
+                    }
+                }
+            ],
+            "displaySequence": -1,
+            "fields": {
+            },
+            "id": "a177200000hw7oGAAQ",
+            "messages": [
+            ],
+            "name": "Enterprise Sales Catalog",
+            "nameResult": {
+            },
+            "uiStates": {
+            }
+        }
+    ],
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-10-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "634cfc13-86b1-994d-af7c-09fc4edf5fc3",
+    "%vlocity_namespace%__GlobalKey__c": "8fcdec15-e11b-55f9-2a91-e3fe60d2fd82",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "e9f6520a-cc97-7405-4a86-8b997d353d51",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/e9f6520a-cc97-7405-4a86-8b997d353d51",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "AOI Combo Offer Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "AOI-Combo-Offer_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "AOI-Combo-Offer_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Bundle",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "AOI Combo Offer",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "AOI-Combo-Offer_PricebookEntries.json",
+    "ProductCode": "VEPC_AOI_COMBO_OFFER",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "AOI Combo Offer",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "8fcdec15-e11b-55f9-2a91-e3fe60d2fd82",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "8fcdec15-e11b-55f9-2a91-e3fe60d2fd82",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/8fcdec15-e11b-55f9-2a91-e3fe60d2fd82",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "VEPC_AOI_COMBO_OFFER",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/8fcdec15-e11b-55f9-2a91-e3fe60d2fd82"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/8fcdec15-e11b-55f9-2a91-e3fe60d2fd82"
+}

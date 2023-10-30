@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CloneModifyTo_SalesOIsWQPR_SampleInput.json",
+    "Description": "B2B Express - Clone Modified Working Cart OIs to Sales OIs, delete the Working cart and update Order Product Rollup Object(Do not call in bulk Pricing Flow).",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CloneModifyWCToSalesOIs",
+    "OmniProcessElement": [
+        "CloneModifyTo_SalesOIsWQPR_Element_GetSalesOIsId.json",
+        "CloneModifyTo_SalesOIsWQPR_Element_IsBatchCallFalse.json",
+        "CloneModifyTo_SalesOIsWQPR_Element_AddOMOGToWCOIsCopyToEO.json",
+        "CloneModifyTo_SalesOIsWQPR_Element_IsBatchCallTrue.json",
+        "CloneModifyTo_SalesOIsWQPR_Element_AddOMOGToWCCopyToEOBatch.json",
+        "CloneModifyTo_SalesOIsWQPR_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "CloneModifyTo_SalesOIsWQPR",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CloneModifyTo_SalesOIsWQPR_PropertySetConfig.json",
+    "SubType": "SalesOIsWQPR",
+    "Type": "CloneModifyTo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CloneModifyTo/SalesOIsWQPR/Procedure",
+    "WebComponentKey": "1f25e5d7-e9ce-aee7-eb54-1963579e0e26"
+}

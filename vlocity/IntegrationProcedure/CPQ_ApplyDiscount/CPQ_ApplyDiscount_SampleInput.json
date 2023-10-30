@@ -1,0 +1,179 @@
+{
+    "cartId": "8015g0000015JqsAAE",
+    "createCustomDiscount": "yes",
+    "items": {
+        "records": [
+            {
+                "Active period": {
+                    "label": "Active Period",
+                    "value": 15
+                },
+                "All items in cart": {
+                    "label": "All items in cart",
+                    "value": true
+                },
+                "Allocation": {
+                    "label": "Discount Type",
+                    "selectedDiscountType": {
+                        "name": "Account",
+                        "value": "Account"
+                    },
+                    "types": [
+                        {
+                            "name": "Account",
+                            "value": "Account"
+                        },
+                        {
+                            "name": "Order",
+                            "value": "Order"
+                        },
+                        {
+                            "name": "Contract",
+                            "value": "Contract"
+                        }
+                    ]
+                },
+                "Category": {
+                    "actions": {
+                        "client": {
+                            "params": {
+                                "ContextId": "8015g0000015JqsAAE",
+                                "cartId": "8015g0000015JqsAAE",
+                                "includeAllCatalogs": true,
+                                "methodName": "getCatalogHierarchy"
+                            },
+                            "records": [
+                            ]
+                        },
+                        "remote": {
+                            "params": {
+                                "ContextId": "8015g0000015JqsAAE",
+                                "cartId": "8015g0000015JqsAAE",
+                                "includeAllCatalogs": true,
+                                "methodName": "getCatalogHierarchy"
+                            }
+                        },
+                        "rest": {
+                            "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/catalogs?cartId=8015g0000015JqsAAE&includeAllCatalogs=true&ContextId=8015g0000015JqsAAE",
+                            "method": "GET",
+                            "params": {
+                            }
+                        }
+                    },
+                    "categories": [
+                    ],
+                    "label": "Category",
+                    "value": ""
+                },
+                "Discount": {
+                    "discounts": [
+                        {
+                            "actions": {
+                                "client": {
+                                    "params": {
+                                    },
+                                    "records": [
+                                    ]
+                                },
+                                "remote": {
+                                    "params": {
+                                        "listkeys": "TimePlans,TimePolicies",
+                                        "methodName": "getListsOfValues"
+                                    }
+                                },
+                                "rest": {
+                                    "link": "/services/apexrest/%vlocity_namespace%/v2/listsofvalues?listkeys=TimePlans,TimePolicies",
+                                    "method": "GET",
+                                    "params": {
+                                    }
+                                }
+                            },
+                            "chargeType": "Recurring",
+                            "label": "",
+                            "selectedAdjustmentMethod": {
+                                "value": "%"
+                            },
+                            "selectedTimePlan": null,
+                            "selectedTimePolicy": null,
+                            "types": [
+                                {
+                                    "detailType": "Discount",
+                                    "method": "Percent",
+                                    "value": "%"
+                                },
+                                {
+                                    "detailType": "Discount",
+                                    "method": "Absolute",
+                                    "value": "$"
+                                }
+                            ],
+                            "value": null
+                        },
+                        {
+                            "chargeType": "One-time",
+                            "label": "",
+                            "selectedAdjustmentMethod": {
+                                "value": "$"
+                            },
+                            "types": [
+                                {
+                                    "detailType": "Discount",
+                                    "method": "Percent",
+                                    "value": "%"
+                                },
+                                {
+                                    "detailType": "Discount",
+                                    "method": "Absolute",
+                                    "value": "$"
+                                }
+                            ],
+                            "value": 45
+                        }
+                    ],
+                    "label": "Discount",
+                    "value": ""
+                },
+                "Discount Name": {
+                    "label": "Discount Name",
+                    "value": "Remote"
+                },
+                "Duration unit": {
+                    "label": "Duration unit",
+                    "value": "Month"
+                },
+                "End date": {
+                    "label": "End Date",
+                    "value": null
+                },
+                "Product": {
+                    "actions": {
+                        "client": {
+                            "params": {
+                                "cartId": "8015g0000015JqsAAE",
+                                "methodName": "getCartsProducts"
+                            },
+                            "records": [
+                            ]
+                        },
+                        "remote": {
+                            "params": {
+                                "cartId": "8015g0000015JqsAAE",
+                                "methodName": "getCartsProducts"
+                            }
+                        },
+                        "rest": {
+                            "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g0000015JqsAAE/products?cartId=8015g0000015JqsAAE",
+                            "method": "GET",
+                            "params": {
+                            }
+                        }
+                    },
+                    "label": "Product",
+                    "products": [
+                    ],
+                    "value": ""
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "TextBlock12",
+    "OmniProcessId": {
+        "Name": "ARTL SendAndValidateOTP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/SendAndValidateOTP/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EnterOTP",
+        "OmniProcessId": {
+            "Name": "ARTL SendAndValidateOTP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/SendAndValidateOTP/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/SendAndValidateOTP/English/EnterOTP",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EnterOTP",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 6,
+        "dataJSON": false,
+        "label": "TextBlock4",
+        "sanitize": false,
+        "text": "<h4 style=\"text-align: center; padding-left: 40px;\"><span style=\"color: #e03e2d;\"><strong><em>You will receive OTP on the below number</em></strong></span></h4>\n<h4 style=\"text-align: center; padding-left: 40px;\"><span style=\"color: #e03e2d;\"><strong><em>+(%CountryCode%) %ContactPhone%</em></strong></span></h4>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/SendAndValidateOTP/English/TextBlock12"
+}

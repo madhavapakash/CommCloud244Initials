@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetCartItemsAction",
+    "OmniProcessId": {
+        "Name": "CPQGetCartItems",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetCartItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartId": "%cartId%",
+            "fields": "%vlocity_namespace%__BillingAccountId__c,%vlocity_namespace%__ServiceAccountId__c,Quantity,%vlocity_namespace%__RecurringTotal__c,%vlocity_namespace%__OneTimeTotal__c,%vlocity_namespace%__OneTimeManualDiscount__c,%vlocity_namespace%__RecurringManualDiscount__c,%vlocity_namespace%__ProvisioningStatus__c,%vlocity_namespace%__RecurringCharge__c,%vlocity_namespace%__OneTimeCharge__c,ListPrice,%vlocity_namespace%__ParentItemId__c,%vlocity_namespace%__BillingAccountId__r.Name,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__PremisesId__r.Name,%vlocity_namespace%__InCartQuantityMap__c,%vlocity_namespace%__EffectiveQuantity__c",
+            "lastRecordId": "%lastRecordId%",
+            "pagesize": "=IF(ISNOTBLANK(%pagesize%),'%pagesize%','10')",
+            "price": "%price%",
+            "priceDetailsFields": "%vlocity_namespace%__OneTimeCharge__c,%vlocity_namespace%__OneTimeManualDiscount__c,%vlocity_namespace%__OneTimeCalculatedPrice__c,%vlocity_namespace%__OneTimeTotal__c,%vlocity_namespace%__RecurringCharge__c,%vlocity_namespace%__RecurringCalculatedPrice__c,%vlocity_namespace%__RecurringTotal__c,%vlocity_namespace%__OneTimeLoyaltyPrice__c,%vlocity_namespace%__UsageUnitPrice__c,%vlocity_namespace%__UsagePriceTotal__c",
+            "validate": "%validate%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.CpqAppHandler",
+        "remoteMethod": "getCartsItems",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetCartItems/Procedure/GetCartItemsAction"
+}

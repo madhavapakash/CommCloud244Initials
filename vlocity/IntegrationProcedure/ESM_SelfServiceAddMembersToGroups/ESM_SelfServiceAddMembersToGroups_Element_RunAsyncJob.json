@@ -1,0 +1,83 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RunAsyncJob",
+    "OmniProcessId": {
+        "Name": "ESM_SelfServiceAddMembersToGroups",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/SelfServiceAddMembersToGroups/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ForEachProductBundle",
+        "OmniProcessId": {
+            "Name": "ESM_SelfServiceAddMembersToGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/SelfServiceAddMembersToGroups/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/SelfServiceAddMembersToGroups/Procedure/ForEachProductBundle",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ForEachProductBundle",
+    "ParentElementType": "Loop Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "cartType": "%cartType%",
+                "contextId": "%contextId%",
+                "groupId": "%productBundles:groupId%",
+                "memberType": "%memberType%",
+                "parentId": "%parentId%"
+            },
+            "asyncProcessName": "=CONCAT(\"Add Members for \", %productBundles:groupId%)",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 3,
+                            "itemsToProcessPerAsyncJob": 50,
+                            "name": "ESM_SelfServiceCreateMembersForGroup",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "group-id-%productBundles:groupId%-execute-VIP"
+                }
+            ],
+            "itemsToProcessList": "%GroupAssetsByMembers:groupedAssets%",
+            "referenceId": "%contextId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "productBundles:groupId != $Vlocity.NULL",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "RunAsyncJobOP",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/SelfServiceAddMembersToGroups/Procedure/RunAsyncJob"
+}

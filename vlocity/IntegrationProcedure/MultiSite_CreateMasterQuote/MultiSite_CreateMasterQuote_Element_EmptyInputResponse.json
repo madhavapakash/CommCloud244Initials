@@ -1,0 +1,55 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmptyInputResponse",
+    "OmniProcessId": {
+        "Name": "MultiSiteCreateMasterQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/CreateMasterQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EmptyConditionalCheckBlock",
+        "OmniProcessId": {
+            "Name": "MultiSiteCreateMasterQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/CreateMasterQuote/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/CreateMasterQuote/Procedure/EmptyConditionalCheckBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EmptyConditionalCheckBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response": {
+                "error": "Bad Request",
+                "errorCode": "INVOKE-400",
+                "message": "Empty OpportunityId, AccountId, MasterQuote Name or recordType "
+            }
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CreateMasterQuoteInput:Name% == \"\"  || %CreateMasterQuoteInput:recordType% == \"\" \n|| %CreateMasterQuoteInput:OpportunityId% == \"\" || %CreateMasterQuoteInput:AccountId% == \"\" ",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/CreateMasterQuote/Procedure/EmptyInputResponse"
+}

@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DeleteSalesQRootItem",
+    "OmniProcessId": {
+        "Name": "CloneModifyGroupCartToSalesQLIs",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CloneModifyTo/SalesQLIs/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalOutput": {
+        },
+        "allOrNone": false,
+        "chainOnStep": false,
+        "deleteSObject": [
+            {
+                "AllOrNone": false,
+                "Id": "%GetSalesQLIsId:RootItemIds%",
+                "Type": "QuoteLineItem"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DeleteAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Delete Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CloneModifyTo/SalesQLIs/Procedure/DeleteSalesQRootItem"
+}

@@ -1,0 +1,46 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "addmembersStartProcessResponse",
+    "OmniProcessId": {
+        "Name": "CPQ_AddMembersStartProcess",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AddMembersStartProcess/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "additionalData:accountId": "%additionalData:accountId%",
+            "additionalData:cartId": "%additionalData:cartId%",
+            "additionalData:cartType": "%additionalData:cartType%",
+            "additionalData:groups": "=LIST(%CustomizeGroupDetails:result%)",
+            "additionalData:timestamp": "%additionalData:timestamp%",
+            "additionalData:userID": "%additionalData:userID%",
+            "failed": false,
+            "itemsToProcessList": "%itemsToProcessList%",
+            "statusCode": 200,
+            "statusMessage": "Completed"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AddMembersStartProcess/Procedure/addmembersStartProcessResponse"
+}

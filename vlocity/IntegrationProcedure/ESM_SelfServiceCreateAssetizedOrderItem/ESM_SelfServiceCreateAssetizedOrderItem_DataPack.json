@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_SelfServiceCreateAssetizedOrderItem_SampleInput.json",
+    "Description": "This Integration Procedure is used to invoke AsseToOrder CPQ Service to create a cart with a list of line items from assets.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_SelfServiceCreateAssetizedOrderItem",
+    "OmniProcessElement": [
+        "ESM_SelfServiceCreateAssetizedOrderItem_Element_AssetToOrderRequestPayload.json",
+        "ESM_SelfServiceCreateAssetizedOrderItem_Element_AssetToOrderAction.json",
+        "ESM_SelfServiceCreateAssetizedOrderItem_Element_CanCreateFailureMessage.json",
+        "ESM_SelfServiceCreateAssetizedOrderItem_Element_AssetToOrderResponse.json"
+    ],
+    "OmniProcessKey": "ESM_SelfServiceCreateAssetizedOrderItem",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_SelfServiceCreateAssetizedOrderItem_PropertySetConfig.json",
+    "SubType": "SelfServiceCreateAssetizedOrderItem",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/SelfServiceCreateAssetizedOrderItem/Procedure",
+    "WebComponentKey": "166a9918-85b3-f6bf-13b0-04869e04b784"
+}

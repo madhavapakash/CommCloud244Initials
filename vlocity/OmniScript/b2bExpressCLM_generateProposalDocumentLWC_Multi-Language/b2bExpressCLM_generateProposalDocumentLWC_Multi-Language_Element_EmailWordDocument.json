@@ -1,0 +1,94 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmailWordDocument",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GenerateDocument",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/GenerateDocument",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GenerateDocument",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "OrgWideEmailAddress": "",
+        "attachmentList": "",
+        "contentVersionList": "%docGenContentVersionId%",
+        "controlWidth": 6,
+        "disOnTplt": false,
+        "docList": "",
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "Please find attached your quote proposal from Vlocity.",
+            "emailSubject": "Your quote %EnterObject:QuoteName% from Vlocity",
+            "setHtmlBody": true,
+            "toAddressList": [
+                "%EnterObject:ContactEmail%"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "%ContactId%",
+            "emailTemplateName": "Send_Proposal_Template",
+            "saveAsActivity": true,
+            "whatId": "%ContextId%"
+        },
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": ""
+        },
+        "failureAbortLabel": "",
+        "failureAbortMessage": "",
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "fileAttachments": "",
+        "inProgressMessage": null,
+        "label": "%vlocity_namespace%__CMEXEmailPowerpoint",
+        "message": {
+        },
+        "postMessage": null,
+        "pubsub": false,
+        "redirectNextLabel": "",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "staticDocList": [
+            "AppIcon"
+        ],
+        "useTemplate": true,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/EmailWordDocument"
+}

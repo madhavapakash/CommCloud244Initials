@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetGroupLevelConsolidatedData_SampleInput.json",
+    "Description": "IP to get group data by calling getGroups Remote method.  Expected Input: 1) cartId: (Order/Quote Id), 2) cartType: (Quote or Order)",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Group Level Consolidated Data",
+    "OmniProcessElement": [
+        "CPQ_GetGroupLevelConsolidatedData_Element_CallGetGroups.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_GetGroupsResponsePresent.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_ConsolidateRawProductData.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_GetAssetsInfoForGroups.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_GetAssetsFromGroupCart.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_ConvertProductBundleToList.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_GroupsPresentOutput.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_GetGroupsResponseNotPresent.json",
+        "CPQ_GetGroupLevelConsolidatedData_Element_EmptyGroupOutput.json"
+    ],
+    "OmniProcessKey": "CPQ_GetGroupLevelConsolidatedData",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetGroupLevelConsolidatedData_PropertySetConfig.json",
+    "SubType": "GetGroupLevelConsolidatedData",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure",
+    "WebComponentKey": "da1db6a9-c197-fc06-f551-74779d4786b1"
+}

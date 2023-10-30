@@ -1,0 +1,498 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Business-Internet-Installation_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "VEPC_ATTR_APPOINTMENT_DATE_TIME": null,
+        "VEPC_ATTR_CONDUIT_CHARGES": "Customer Responsibility",
+        "VEPC_ATTR_CONTACT_EMAIL_ADDRESS": null,
+        "VEPC_ATTR_CONTACT_FIRST_NAME": null,
+        "VEPC_ATTR_CONTACT_LAST_NAME": null,
+        "VEPC_ATTR_CONTACT_PHONE_NUMBER": null,
+        "VEPC_ATTR_CROSS_CONNECT_CHARGES": "Customer Responsibility",
+        "VEPC_ATTR_IN_BUILDING_CHARGES": "Customer Responsibility",
+        "VEPC_ATTR_RAISER_CHARGES": "Customer Responsibility",
+        "VEPC_ATTR_REMARKS": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_INSTALLATION_DETAILS",
+                "Name": "Installation Details",
+                "displaySequence": 6200,
+                "id": "a0Z0T0000023iSrUAI",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a0T000001bLmhQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_APPOINTMENT_DATE_TIME",
+                            "dataType": "date",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "date",
+                            "isNotTranslatable": false,
+                            "label": "Appointment Date/Time",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLmkQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_IN_BUILDING_CHARGES",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "In Building Charges",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "label": "Customer Responsibility",
+                                    "name": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "readonly": false,
+                                    "value": "Customer Responsibility"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "label": "Provider Responsibility",
+                                    "name": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "readonly": false,
+                                    "value": "Provider Responsibility"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLmiQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CONDUIT_CHARGES",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Conduit Charges",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "label": "Customer Responsibility",
+                                    "name": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "readonly": false,
+                                    "value": "Customer Responsibility"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "label": "Provider Responsibility",
+                                    "name": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "readonly": false,
+                                    "value": "Provider Responsibility"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLmjQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CROSS_CONNECT_CHARGES",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Cross-Connect Charges",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "label": "Customer Responsibility",
+                                    "name": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "readonly": false,
+                                    "value": "Customer Responsibility"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "label": "Provider Responsibility",
+                                    "name": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "readonly": false,
+                                    "value": "Provider Responsibility"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLmlQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_RAISER_CHARGES",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 50,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Raiser Charges",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "label": "Customer Responsibility",
+                                    "name": "78e3c6f2-4740-642f-cbce-72a3aa1ac700",
+                                    "readonly": false,
+                                    "value": "Customer Responsibility"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "label": "Provider Responsibility",
+                                    "name": "ad70350a-b670-6603-01c7-e1c16bab5ef6",
+                                    "readonly": false,
+                                    "value": "Provider Responsibility"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLmmQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_REMARKS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 60,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Remarks",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 6
+                }
+            },
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_CONTACT_DETAILS",
+                "Name": "Contact Details",
+                "displaySequence": 6980,
+                "id": "a0Z0T0000023iSwUAI",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a0T000001bLn3QAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CONTACT_FIRST_NAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Contact First Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLn4QAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CONTACT_LAST_NAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Contact Last Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLn5QAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CONTACT_PHONE_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Contact Phone Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLn1QAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CONTACT_EMAIL_ADDRESS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Contact E-Mail Address",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2022-05-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2022-05-01T04:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "d7912b46-1745-33e3-f951-5a76795f2ff6",
+    "%vlocity_namespace%__GlobalKey__c": "16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Business-Internet-Installation_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "7a6ad754ef8cbad3e0f2f060f0337364",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/7a6ad754ef8cbad3e0f2f060f0337364",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "ESM Business Internet Installation Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "Business-Internet-Installation_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Business-Internet-Installation_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2022-05-01T04:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "Professional Installation of your Enterprise Business Internet Solution",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Business Internet Installation",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Business-Internet-Installation_PricebookEntries.json",
+    "ProductCode": "ESM_OFFERING_BUSINESS_INTERNET_INSTALLATION",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Business Internet Installation",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "ESM_OFFERING_BUSINESS_INTERNET_INSTALLATION",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3"
+}

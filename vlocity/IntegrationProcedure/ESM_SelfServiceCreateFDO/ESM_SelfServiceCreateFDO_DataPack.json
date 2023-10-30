@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_SelfServiceCreateFDO_SampleInput.json",
+    "Description": "This IP is used for One time Change flow in ESM SelfService",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_SelfServiceCreateFDO",
+    "OmniProcessElement": [
+        "ESM_SelfServiceCreateFDO_Element_TransformAssetRefListString.json",
+        "ESM_SelfServiceCreateFDO_Element_GetChildAssetsFromRootAssets.json",
+        "ESM_SelfServiceCreateFDO_Element_GetAllAssetIdsList.json",
+        "ESM_SelfServiceCreateFDO_Element_CreatePrimaryOrder.json",
+        "ESM_SelfServiceCreateFDO_Element_CanCreateFDO.json",
+        "ESM_SelfServiceCreateFDO_Element_CreateFDO.json",
+        "ESM_SelfServiceCreateFDO_Element_Response.json"
+    ],
+    "OmniProcessKey": "ESM_SelfServiceCreateFDO",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_SelfServiceCreateFDO_PropertySetConfig.json",
+    "SubType": "SelfServiceCreateFDO",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/SelfServiceCreateFDO/Procedure",
+    "WebComponentKey": "248f6845-48ea-a1b9-f4f9-cbad231298d5"
+}

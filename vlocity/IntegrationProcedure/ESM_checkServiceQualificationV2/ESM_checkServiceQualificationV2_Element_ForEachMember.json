@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ForEachMember",
+    "OmniProcessId": {
+        "Name": "CheckServiceQualificationV2",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/checkServiceQualificationV2/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%GetMemberAddresses%)",
+        "label": "LoopBlock1",
+        "loopList": "GetMemberAddresses:Members:Members",
+        "loopOutput": {
+            "MemberId": "=%GetMemberAddresses:Members:Members:Id%",
+            "Response": "=%TMFApiCall%"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/checkServiceQualificationV2/Procedure/ForEachMember"
+}

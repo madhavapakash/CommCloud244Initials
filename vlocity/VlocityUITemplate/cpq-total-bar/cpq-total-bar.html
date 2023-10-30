@@ -1,0 +1,4 @@
+<div class="cpq-total-bar slds-col slds-no-flex">
+     <div class="cpq-permission-error-msg" ng-if="payload.error">{{payload.error}}</div>
+     <vloc-card ng-repeat="card in cards" ctrl="{{ctrl}}" ng-model="card" data="card" records="records" index="{{$index}}" ng-if="isLoaded"></vloc-card>
+</div>

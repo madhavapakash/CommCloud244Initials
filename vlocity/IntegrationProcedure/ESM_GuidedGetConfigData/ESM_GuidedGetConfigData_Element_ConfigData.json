@@ -1,0 +1,228 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConfigData",
+    "OmniProcessId": {
+        "Name": "ESMGuidedGetConfigData",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/GuidedGetConfigData/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "CategoriesList": {
+                "APIConfig": {
+                    "connectedCallback": {
+                        "getCatalogs": {
+                            "params": {
+                                "hierarchy": -1,
+                                "includeProducts": true,
+                                "methodName": "getCatalogHierarchy"
+                            },
+                            "remoteClass": "CpqAppHandler",
+                            "type": "ApexRemote"
+                        }
+                    }
+                },
+                "fields": [
+                ]
+            },
+            "DefaultJourneyType": "Location",
+            "EligibilityContext": {
+                "%vlocity_namespace%__City__c": "City",
+                "%vlocity_namespace%__Country__c": "Country"
+            },
+            "ItemsList": {
+                "APIConfig": {
+                    "connectedCallback": {
+                        "createWorkingCart": {
+                            "inputMap": {
+                                "DefaultFieldValues": {
+                                    "Name": "Test Working Cart",
+                                    "Status": "Draft"
+                                },
+                                "FieldsToCopy": [
+                                    "Id",
+                                    "AccountId",
+                                    "OpportunityId",
+                                    "%vlocity_namespace%__OriginatingChannel__c",
+                                    "%vlocity_namespace%__PriceListId__c",
+                                    "%vlocity_namespace%__PriceListId__r.Name"
+                                ],
+                                "SalesQuoteId": ""
+                            },
+                            "ipMethod": "create_WorkingCart",
+                            "optionsMap": {
+                            },
+                            "type": "IntegrationProcedure"
+                        },
+                        "getCartProducts": {
+                            "params": {
+                                "hierarchy": 0,
+                                "includeAttachment": false,
+                                "includeAttributes": true,
+                                "includeIneligible": true,
+                                "methodName": "getCartsProducts",
+                                "pagesize": 20
+                            },
+                            "remoteClass": "CpqAppHandler",
+                            "type": "ApexRemote"
+                        }
+                    }
+                },
+                "fields": [
+                ]
+            },
+            "OfferConfig": {
+                "APIConfig": {
+                    "connectedCallback": {
+                        "getCartItems": {
+                            "params": {
+                                "cartId": "this.params.id",
+                                "fields": "%vlocity_namespace%__AssetReferenceId__c, %vlocity_namespace%__BillingAccountId__c,%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__ObjectTypeId__c,%vlocity_namespace%__ServiceAccountId__c,Quantity,%vlocity_namespace%__RecurringTotal__c,%vlocity_namespace%__OneTimeTotal__c,%vlocity_namespace%__OneTimeManualDiscount__c,%vlocity_namespace%__RecurringManualDiscount__c,%vlocity_namespace%__ProvisioningStatus__c,%vlocity_namespace%__RecurringCharge__c,%vlocity_namespace%__OneTimeCharge__c,ListPrice,%vlocity_namespace%__ParentItemId__c,%vlocity_namespace%__BillingAccountId__r.Name,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__PremisesId__r.Name,%vlocity_namespace%__InCartQuantityMap__c,%vlocity_namespace%__EffectiveQuantity__c",
+                                "methodName": "getCartsItems",
+                                "pagesize": "10",
+                                "price": false,
+                                "priceDetailsFields": "%vlocity_namespace%__OneTimeCharge__c,%vlocity_namespace%__OneTimeManualDiscount__c,%vlocity_namespace%__OneTimeCalculatedPrice__c,%vlocity_namespace%__OneTimeTotal__c,%vlocity_namespace%__RecurringCharge__c,%vlocity_namespace%__RecurringCalculatedPrice__c,%vlocity_namespace%__RecurringTotal__c",
+                                "validate": false
+                            },
+                            "remoteClass": "CpqAppHandler",
+                            "type": "ApexRemote"
+                        }
+                    },
+                    "deleteItem": {
+                        "params": {
+                            "fields": "%vlocity_namespace%__BillingAccountId__c,%vlocity_namespace%__ServiceAccountId__c,Quantity,%vlocity_namespace%__RecurringTotal__c,%vlocity_namespace%__OneTimeTotal__c,%vlocity_namespace%__OneTimeManualDiscount__c,%vlocity_namespace%__RecurringManualDiscount__c,%vlocity_namespace%__ProvisioningStatus__c,%vlocity_namespace%__RecurringCharge__c,%vlocity_namespace%__OneTimeCharge__c,ListPrice,%vlocity_namespace%__ParentItemId__c,%vlocity_namespace%__BillingAccountId__r.Name,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__PremisesId__r.Name,%vlocity_namespace%__InCartQuantityMap__c,%vlocity_namespace%__EffectiveQuantity__c",
+                            "filters": null,
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "lastRecordId": null,
+                            "methodName": "deleteCartsItems",
+                            "pagesize": 10,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        },
+                        "remoteClass": "CpqAppHandler",
+                        "type": "ApexRemote"
+                    },
+                    "modifyattributes": {
+                        "params": {
+                            "cartId": null,
+                            "filters": null,
+                            "id": null,
+                            "itemId": null,
+                            "items": [
+                                {
+                                    "itemId": null
+                                }
+                            ],
+                            "methodName": "putItemAttributes"
+                        },
+                        "remoteClass": "CpqAppHandler",
+                        "type": "ApexRemote"
+                    },
+                    "postCartsItems": {
+                        "params": {
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "lastRecordId": null,
+                            "methodName": "postCartsItems",
+                            "pagesize": 10,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        },
+                        "remoteClass": "CpqAppHandler",
+                        "type": "ApexRemote"
+                    },
+                    "updateItems": {
+                        "params": {
+                            "fields": "%vlocity_namespace%__BillingAccountId__c,%vlocity_namespace%__ServiceAccountId__c,Quantity,%vlocity_namespace%__RecurringTotal__c,%vlocity_namespace%__OneTimeTotal__c,%vlocity_namespace%__OneTimeManualDiscount__c,%vlocity_namespace%__RecurringManualDiscount__c,%vlocity_namespace%__ProvisioningStatus__c,%vlocity_namespace%__RecurringCharge__c,%vlocity_namespace%__OneTimeCharge__c,ListPrice,%vlocity_namespace%__ParentItemId__c,%vlocity_namespace%__BillingAccountId__r.Name,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__PremisesId__r.Name,%vlocity_namespace%__InCartQuantityMap__c,%vlocity_namespace%__EffectiveQuantity__c",
+                            "filters": null,
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "lastRecordId": null,
+                            "methodName": "putCartsItems",
+                            "pagesize": 10,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        },
+                        "remoteClass": "CpqAppHandler",
+                        "type": "ApexRemote"
+                    }
+                },
+                "fields": [
+                    {
+                        "dataType": "Currency",
+                        "label": "One Time",
+                        "valueMap": "%vlocity_namespace%__OneTimeCharge__c"
+                    },
+                    {
+                        "dataType": "Currency",
+                        "label": "Recurring",
+                        "valueMap": "%vlocity_namespace%__RecurringCharge__c"
+                    },
+                    {
+                        "dataType": "Currency",
+                        "label": "One Time Total",
+                        "valueMap": "%vlocity_namespace%__OneTimeTotal__c"
+                    },
+                    {
+                        "dataType": "Currency",
+                        "label": "Recurring Total",
+                        "valueMap": "%vlocity_namespace%__RecurringTotal__c"
+                    }
+                ]
+            },
+            "ProductItem": {
+                "APIConfig": {
+                    "postCartsItems": {
+                        "params": {
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "lastRecordId": null,
+                            "methodName": "postCartsItems",
+                            "pagesize": 10,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        },
+                        "remoteClass": "CpqAppHandler",
+                        "type": "ApexRemote"
+                    }
+                },
+                "fields": [
+                ]
+            },
+            "ProductSortingConfig": {
+                "SortingOptions": [
+                    {
+                        "fieldData": "%vlocity_namespace%__RecurringPrice__c_ASC",
+                        "label": "CMEXProductSortAscending"
+                    },
+                    {
+                        "fieldData": "%vlocity_namespace%__RecurringPrice__c_DESC",
+                        "label": "CMEXProductSortDescending"
+                    }
+                ]
+            }
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/GuidedGetConfigData/Procedure/ConfigData"
+}

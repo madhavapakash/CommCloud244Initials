@@ -1,0 +1,59 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "getSalesCartDetails",
+    "OmniProcessId": {
+        "Name": "ESMCreateTempGroupCartForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateTempGroupCartForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "Fields": [
+                "Id",
+                "AccountId",
+                "%vlocity_namespace%__PriceListId__c",
+                "%vlocity_namespace%__OriginatingChannel__c",
+                "%vlocity_namespace%__PriceListId__r.Name"
+            ],
+            "ObjectId": "%SourceId%",
+            "ObjectName": "%ObjectType%"
+        },
+        "additionalOutput": {
+            "ObjectDetails": {
+                "effectivedate": "%SVForOrderWorkingCart:Today%",
+                "status": "%SVForOrderWorkingCart:Status%"
+            }
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction3",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "getObjectDetails",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateTempGroupCartForOrder/Procedure/getSalesCartDetails"
+}

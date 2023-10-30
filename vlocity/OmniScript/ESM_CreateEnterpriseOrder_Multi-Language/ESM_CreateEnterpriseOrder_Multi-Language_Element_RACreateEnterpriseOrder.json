@@ -1,0 +1,97 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RACreateEnterpriseOrder",
+    "OmniProcessId": {
+        "Name": "ESMCreateEnterpriseOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateEnterpriseOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "errorMessage:default": "",
+        "extraPayload": {
+            "fields": "Id,OrderNumber,Name",
+            "inputFields": [
+                {
+                    "Name": "%CreateEnterpriseOrderStep:Block2:Block1:OrderName%"
+                },
+                {
+                    "RecordTypeId": "%RecordTypeId%"
+                },
+                {
+                    "pricelistName": "%CreateEnterpriseOrderStep:Block2:Block1:PriceListLookup%"
+                },
+                {
+                    "Status": "Draft"
+                },
+                {
+                    "AccountId": "%ContextId%"
+                },
+                {
+                    "effectivedate": "%effectivedate%"
+                }
+            ],
+            "methodName": "createCart",
+            "objectType": "Order",
+            "subaction": "createOrder"
+        },
+        "failureAbortLabel": "",
+        "failureAbortMessage": "",
+        "failureGoBackLabel": "",
+        "failureNextLabel": "",
+        "inProgressMessage": "",
+        "label": "",
+        "message": {
+            "AccountId": "%ContextId%",
+            "orderDetails": "%orderDetails:records%"
+        },
+        "postMessage": "",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "createCart",
+        "remoteOptions": {
+            "postTransformBundle": "",
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "orderDetails",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "validationRequired": "Submit",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateEnterpriseOrder/Multi-Language/RACreateEnterpriseOrder"
+}

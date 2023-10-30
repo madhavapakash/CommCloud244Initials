@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FieldsToQuery",
+    "OmniProcessId": {
+        "Name": "getAssetsFromAccount",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/getAssetsFromAccount/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "APINames": "%vlocity_namespace%__attributeselectedvalues__c,%vlocity_namespace%__attributemetadatachanges__c,product2.%vlocity_namespace%__attributemetadata__c,product2.%vlocity_namespace%__attributedefaultvalues__c,Status,%vlocity_namespace%__JSONAttribute__c,%vlocity_namespace%__ServiceIdentifier__c,%vlocity_namespace%__ContractId__r.ContractNumber"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/getAssetsFromAccount/Procedure/FieldsToQuery"
+}

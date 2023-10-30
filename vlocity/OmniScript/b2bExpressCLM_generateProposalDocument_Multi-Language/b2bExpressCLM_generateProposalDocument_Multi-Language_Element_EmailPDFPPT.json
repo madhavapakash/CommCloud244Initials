@@ -1,0 +1,121 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmailPDFPPT",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GenerateDocument",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/GenerateDocument",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GenerateDocument",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "OrgWideEmailAddress": "",
+        "attachmentList": "",
+        "contentVersionList": "%pdfGenContentVersionId%",
+        "controlWidth": 5,
+        "disOnTplt": false,
+        "docList": "",
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "Please find attached your quote proposal from Vlocity.",
+            "emailSubject": "Your quote %EnterObject:QuoteName% from Vlocity",
+            "setHtmlBody": false,
+            "toAddressList": [
+                "%EnterObject:ContactEmail%"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "",
+            "emailTemplateName": "",
+            "saveAsActivity": false,
+            "whatId": ""
+        },
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "fileAttachments": "",
+        "inProgressMessage": null,
+        "label": "%vlocity_namespace%__CMEXEmailPdf",
+        "message": {
+        },
+        "postMessage": null,
+        "pubsub": false,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "OR",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "false",
+                                    "field": "inTest"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "inTest"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isPDFAttachDone"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "staticDocList": [
+        ],
+        "useTemplate": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/EmailPDFPPT"
+}

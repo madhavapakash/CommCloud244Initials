@@ -1,0 +1,110 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateAction3",
+    "OmniProcessId": {
+        "Name": "B2BBrandNewQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/CreateQuote/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconPositionOptions": [
+            "left",
+            "right"
+        ],
+        "iconVariant": "",
+        "label": "%vlocity_namespace%__CMEXNavigationAction",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "objectActionOptions": [
+            "home",
+            "list",
+            "new"
+        ],
+        "pubsub": false,
+        "recordAction": "view",
+        "recordActionOptions": [
+            "clone",
+            "edit",
+            "view"
+        ],
+        "replace": false,
+        "replaceOptions": [
+            {
+                "label": "No",
+                "value": false
+            },
+            {
+                "label": "Yes",
+                "value": true
+            }
+        ],
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "guidedQuoteConfig",
+                        "field": "Block1:Block2:quoteConfigType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isOsRuntimeEnabled"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetLWCLayoutOptions": [
+            "lightning",
+            "newport"
+        ],
+        "targetName": "b2bSampleApp",
+        "targetParams": "c__cartId=%quoteDetails:records|1.Id%",
+        "targetType": "Web Page",
+        "targetTypeOptions": [
+            "Component",
+            "Current Page",
+            "Knowledge Article",
+            "Named Page",
+            "Navigation Item",
+            "Object",
+            "Record",
+            "Record Relationship",
+            "Web Page",
+            "Vlocity OmniScript"
+        ],
+        "targetUrl": "/apex/%vlocity_namespace%__B2BCmexConfigureEnterpriseQuote?Id=%quoteDetails:records|1:Id%&c__ContextId=%quoteDetails:records|1:Id%&c__ContainerName=eSMGuidedConfigureQuoteMultiLanguage&c__OsRuntimeEnabled=true&c__ComponentType=omniscript&c__Type=ESM&c__SubType=GuidedConfigureQuote&c__Language=Multi-Language",
+        "validationRequired": null,
+        "variant": "brand",
+        "variantOptions": [
+            "brand",
+            "outline-brand",
+            "neutral",
+            "success",
+            "destructive",
+            "text-destructive",
+            "inverse",
+            "link"
+        ],
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/CreateQuote/Multi-Language/NavigateAction3"
+}

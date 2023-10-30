@@ -1,0 +1,150 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomQMFieldMapper",
+    "OmniProcessId": {
+        "Name": "CustomViewSetupForOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CustomViewSetupForOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Location": [
+                {
+                    "label": "Service Account",
+                    "lookupConfig": {
+                        "label": "Add Service Account",
+                        "leadingIcon": "utility:add",
+                        "lookupObject": "Account"
+                    },
+                    "name": "%vlocity_namespace%__ServiceAccountId__r.Name",
+                    "topic": [
+                        "All"
+                    ],
+                    "type": "lookup"
+                },
+                {
+                    "label": "Premises",
+                    "lookupConfig": {
+                        "label": "Add Premises",
+                        "leadingIcon": "utility:add",
+                        "lookupObject": "%vlocity_namespace%__Premises__c"
+                    },
+                    "name": "%vlocity_namespace%__PremisesId__r.Name",
+                    "topic": [
+                        "All"
+                    ],
+                    "type": "lookup"
+                },
+                {
+                    "label": "Service Point",
+                    "lookupConfig": {
+                        "label": "Add Service Point",
+                        "leadingIcon": "utility:add",
+                        "lookupObject": "%vlocity_namespace%__ServicePoint__c"
+                    },
+                    "name": "%vlocity_namespace%__ServicePointId__r.Name",
+                    "topic": [
+                        "All"
+                    ],
+                    "type": "lookup"
+                },
+                {
+                    "label": "Street Address",
+                    "name": "%vlocity_namespace%__StreetAddress__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "Street Supplement 1",
+                    "name": "%vlocity_namespace%__Address1__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "City",
+                    "name": "%vlocity_namespace%__City__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "State",
+                    "name": "%vlocity_namespace%__State__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "Country",
+                    "name": "%vlocity_namespace%__Country__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "Postal Code",
+                    "name": "%vlocity_namespace%__PostalCode__c",
+                    "topic": [
+                        "Serviceability",
+                        "Address Validation"
+                    ]
+                },
+                {
+                    "label": "Broadband Connection Type",
+                    "name": "%vlocity_namespace%__BroadbandConnectionType__c",
+                    "topic": [
+                        "Serviceability"
+                    ]
+                },
+                {
+                    "label": "Max Download Speed",
+                    "name": "%vlocity_namespace%__MaxDownloadSpeed__c",
+                    "topic": [
+                        "Serviceability"
+                    ]
+                },
+                {
+                    "label": "Max Upload Speed",
+                    "name": "%vlocity_namespace%__MaxUploadSpeed__c",
+                    "topic": [
+                        "Serviceability"
+                    ]
+                },
+                {
+                    "editable": false,
+                    "label": "Address Validation Result",
+                    "name": "%vlocity_namespace%__AddressValidationResult__c",
+                    "topic": [
+                        "Address Validation"
+                    ]
+                }
+            ],
+            "Subscriber": [
+            ]
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues5",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CustomViewSetupForOrder/Procedure/CustomQMFieldMapper"
+}

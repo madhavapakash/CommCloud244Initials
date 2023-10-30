@@ -1,0 +1,103 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartBulkCreateGroups",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Quote Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "errorMessage:default": "",
+        "extraPayload": {
+            "assetIds": "%AssetIds%",
+            "bulkRequestType": "bulkReplace",
+            "createCartData": {
+                "ContextId": "%ContextId%",
+                "cartType": "Quote",
+                "createQuotePriceList": "%createQuotePriceList%",
+                "filterString": "%filterString%",
+                "isBulk": "bulk",
+                "opportunityCloseDate": "%opportunityCloseDate%",
+                "opportunityName": "%opportunityName%",
+                "opportunityStage": "%opportunityStage%",
+                "query": "%query%",
+                "quoteName": "%quoteName%",
+                "searchBy": "%searchBy%",
+                "selectAllResults": "%selectAllResults%",
+                "selectCartId": "%selectQuoteName%",
+                "selectOpportunity": "%selectOpportunity%",
+                "selectQuoteType": "%selectQuoteType%",
+                "selectType": "%selectType%"
+            }
+        },
+        "failureAbortLabel": "",
+        "failureAbortMessage": "",
+        "failureGoBackLabel": "",
+        "failureNextLabel": "",
+        "inProgressMessage": "",
+        "integrationProcedureKey": "CPQ_StartBulkCreateGroups",
+        "label": null,
+        "message": {
+        },
+        "postMessage": "",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "changePlan",
+                        "field": "selectActionType"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language/StartBulkCreateGroups"
+}

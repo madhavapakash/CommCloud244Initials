@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "Remove_QuoteGroup_SampleInput.json",
+    "Description": "B2B Express: Remove Quote Group from Enterprise Quote as well as from System.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "RemoveQuoteGroup",
+    "OmniProcessElement": [
+        "Remove_QuoteGroup_Element_DeleteQuoteGroup.json",
+        "Remove_QuoteGroup_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "Remove_QuoteGroup",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Remove_QuoteGroup_PropertySetConfig.json",
+    "SubType": "QuoteGroup",
+    "Type": "Remove",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Remove/QuoteGroup/Procedure",
+    "WebComponentKey": "1d9a2c5d-7f6b-30f3-68b5-26db6f495256"
+}

@@ -1,0 +1,44 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "Optional settings that can be changed to customize document generation",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetVal_SetGenerationOptions",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "attachFileFormat": "=%GenerationOptions:AttachFileFormat%",
+            "contextId": "=%GenerationOptions:ObjectId%",
+            "docGenerationMechanism": "=\"VlocityClientSide\"",
+            "documentType": "=%GenerationOptions:DownloadFileFormat%",
+            "pdfGenerationSource": "=\"VlocityClientSide\"",
+            "pdfViewer": "=\"None\"",
+            "templateId": "=IF(%AvailableTemplates%=1,%DocumentTemplates|1:Id%,%PickTemplate:DocumentTemplate|1:Id%)",
+            "templateType": "=%TemplateType%",
+            "useTemplateDRExtract": "=\"Yes\""
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocument/Multi-Language/SetVal_SetGenerationOptions"
+}

@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "IP to trigger Async Engine Job for Bulk Deleting QLIs. Expected parameters: 1) Quote Id: String 2) Root Ids of QLIs selected for deletion: List of Object with attribute \"Id\"(example: [{Id:\"rootId1\"},{Id:\"rootId2\"},{Id:\"rootId3\"}])",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_BulkDeleteQuoteLineItems",
+    "OmniProcessElement": [
+        "ESM_BulkDeleteQuoteLineItems_Element_SetValuesBulkDeleteQuoteLineItems.json",
+        "ESM_BulkDeleteQuoteLineItems_Element_startAsyncJob.json",
+        "ESM_BulkDeleteQuoteLineItems_Element_SendNotificationStarted.json",
+        "ESM_BulkDeleteQuoteLineItems_Element_SendNotificationFailedToStart.json",
+        "ESM_BulkDeleteQuoteLineItems_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_BulkDeleteQuoteLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_BulkDeleteQuoteLineItems_PropertySetConfig.json",
+    "SubType": "BulkDeleteQuoteLineItems",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/BulkDeleteQuoteLineItems/Procedure",
+    "WebComponentKey": "6f695996-7045-1bb7-3905-755c40a1e029"
+}

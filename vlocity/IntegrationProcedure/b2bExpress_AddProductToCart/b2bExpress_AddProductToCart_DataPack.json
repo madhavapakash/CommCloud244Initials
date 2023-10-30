@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_AddProductToCart_SampleInput.json",
+    "Description": "This integration procedure is used to add product to cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "b2bExpress_AddProductToCart",
+    "OmniProcessElement": [
+        "b2bExpress_AddProductToCart_Element_postCartItemCall.json",
+        "b2bExpress_AddProductToCart_Element_TransformAPIResponse.json",
+        "b2bExpress_AddProductToCart_Element_Response_StandardAPIsEnabled.json",
+        "b2bExpress_AddProductToCart_Element_Response_StandardAPIsDisabled.json"
+    ],
+    "OmniProcessKey": "b2bExpress_AddProductToCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_AddProductToCart_PropertySetConfig.json",
+    "SubType": "AddProductToCart",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/AddProductToCart/Procedure",
+    "WebComponentKey": "a4dc66cd-5ea0-24cb-7550-f56134d76415"
+}

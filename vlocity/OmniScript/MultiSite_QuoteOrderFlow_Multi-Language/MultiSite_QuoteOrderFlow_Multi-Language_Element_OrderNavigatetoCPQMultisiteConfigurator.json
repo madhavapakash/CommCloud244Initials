@@ -1,0 +1,59 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderNavigatetoCPQMultisiteConfigurator",
+    "OmniProcessId": {
+        "Name": "MultiSite Quote Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": null,
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Order",
+                        "field": "type"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "yes",
+                        "field": "CreateGroupNowOrder"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWC": "c:CPQMultisiteConfiguratorMultiLanguage",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__cartType=Order&c__parentId=%OpportunityId%&c__ContextId=%MasterQuoteOrderId%&c__recordType=%OrderRecordType%&c__selectedTypes=%multiSiteObjectsList%&c__tabLabel=Create Multi-Site Order",
+        "targetType": "Vlocity OmniScript",
+        "validationRequired": "none",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/OrderNavigatetoCPQMultisiteConfigurator"
+}

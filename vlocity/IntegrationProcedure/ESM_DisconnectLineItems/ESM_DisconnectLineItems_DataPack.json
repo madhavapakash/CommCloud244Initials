@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_DisconnectLineItems_SampleInput.json",
+    "Description": "The IP is used to delete line items from Enterprise Quote.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DisconnectLineItems",
+    "OmniProcessElement": [
+        "ESM_DisconnectLineItems_Element_DeleteCartItems.json",
+        "ESM_DisconnectLineItems_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_DisconnectLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_DisconnectLineItems_PropertySetConfig.json",
+    "SubType": "DisconnectLineItems",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/DisconnectLineItems/Procedure",
+    "WebComponentKey": "f755dd35-42ff-70ef-83c4-cd2c9d37041c"
+}

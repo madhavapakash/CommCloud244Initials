@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_SubmitSubOrders_SampleInput.json",
+    "Description": "B2B Express - This VIP will be invoked from the Master Order to submit all the Sub-Orders.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SubmitSubOrders",
+    "OmniProcessElement": [
+        "b2bExpress_SubmitSubOrders_Element_GetSubOrderIds.json",
+        "b2bExpress_SubmitSubOrders_Element_SubmitSubOrders.json"
+    ],
+    "OmniProcessKey": "b2bExpress_SubmitSubOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_SubmitSubOrders_PropertySetConfig.json",
+    "SubType": "SubmitSubOrders",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/SubmitSubOrders/Procedure",
+    "WebComponentKey": "eca45417-f042-7791-0bed-919b787d1268"
+}

@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CloneTo_SalesQLIs_SampleInput.json",
+    "Description": "B2B Express - Clone Working Cart QLIs to Sales QLIs.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CloneWorkingCartToSalesQLIs",
+    "OmniProcessElement": [
+        "CloneTo_SalesQLIs_Element_RenumberSourceQLIs.json",
+        "CloneTo_SalesQLIs_Element_CloneGCQLIs.json",
+        "CloneTo_SalesQLIs_Element_DeleteGroupCart.json",
+        "CloneTo_SalesQLIs_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "CloneTo_SalesQLIs",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CloneTo_SalesQLIs_PropertySetConfig.json",
+    "SubType": "SalesQLIs",
+    "Type": "CloneTo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CloneTo/SalesQLIs/Procedure",
+    "WebComponentKey": "90807dd9-4e26-3fdc-beab-2e75f946368b"
+}

@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartValidateAndPriceJob",
+    "OmniProcessId": {
+        "Name": "StartValidateAndPriceJob",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiService/StartValidatePrice/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "BatchSize": "%SetValues:BatchSize%",
+            "GroupRollupIPName": "%SetValues:GroupRollupIPName%",
+            "ValidateAndPriceIPName": "%SetValues:ValidateAndPriceIPName%",
+            "ValidateAndUpdateExternalPricingStatusIPName": "%SetValues:ValidateAndUpdateExternalPricingStatusIPName%",
+            "cartType": "%cartType%",
+            "contextId": "%contextId%",
+            "groupCartId": "%groupCartId%",
+            "groupId": "%groupId%",
+            "groupIds": "%groupIds%",
+            "parentId": "%parentId%",
+            "startJobVIPName": "%startJobVIPName%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "priceAndValidate",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiService/StartValidatePrice/Procedure/StartValidateAndPriceJob"
+}

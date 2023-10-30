@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RecordTypeQuote",
+    "OmniProcessId": {
+        "Name": "CPQCreateWorkingCart",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateWorkingCart/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+            "RecordTypeId": "%GetQuoteRecordTypeId:RecordTypeId%"
+        },
+        "cacheKeys": {
+            "RecordType": "%SVRecordTypeQuote:QuoteRecordType%"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "%type% == 'Quote'",
+        "ignoreCacheConditionalFormula": "",
+        "label": "CacheBlock1",
+        "refreshCacheConditionalFormula": "",
+        "show": null,
+        "ttlMinutes": 15
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateWorkingCart/Procedure/RecordTypeQuote"
+}

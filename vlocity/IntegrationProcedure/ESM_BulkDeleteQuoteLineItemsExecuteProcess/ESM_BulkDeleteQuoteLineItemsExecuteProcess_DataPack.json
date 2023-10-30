@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_BulkDeleteQuoteLineItemsExecuteProcess_SampleInput.json",
+    "Description": "IP to trigger disconnectLineItems method for Deleting QLIs. Expected parameters: 1) Quote Id: String 2) Root Ids of QLIs selected for deletion: List of Object with attribute \"Id\"(example: [{Id:\"rootId1\"},{Id:\"rootId2\"},{Id:\"rootId3\"}])",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_BulkDeleteQuoteLineItemsExecuteProcess",
+    "OmniProcessElement": [
+        "ESM_BulkDeleteQuoteLineItemsExecuteProcess_Element_SetValues1.json",
+        "ESM_BulkDeleteQuoteLineItemsExecuteProcess_Element_SetValues2.json",
+        "ESM_BulkDeleteQuoteLineItemsExecuteProcess_Element_TransformArrayOfStringsToArrayOfObjects.json",
+        "ESM_BulkDeleteQuoteLineItemsExecuteProcess_Element_RemoteAction1.json",
+        "ESM_BulkDeleteQuoteLineItemsExecuteProcess_Element_SendNotificationFailedToDelete.json",
+        "ESM_BulkDeleteQuoteLineItemsExecuteProcess_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_BulkDeleteQuoteLineItemsExecuteProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_BulkDeleteQuoteLineItemsExecuteProcess_PropertySetConfig.json",
+    "SubType": "BulkDeleteQuoteLineItemsExecuteProcess",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/BulkDeleteQuoteLineItemsExecuteProcess/Procedure",
+    "WebComponentKey": "88ef2d64-3a73-6652-1914-c6eb6fc70d24"
+}

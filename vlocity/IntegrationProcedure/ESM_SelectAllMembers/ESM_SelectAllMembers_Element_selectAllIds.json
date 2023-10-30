@@ -1,0 +1,51 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "selectAllIds",
+    "OmniProcessId": {
+        "Name": "SelectAllMembers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/SelectAllMembers/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "fields": "%vlocity_namespace%__Address1__c,%vlocity_namespace%__StreetAddress__c,%vlocity_namespace%__State__c,%vlocity_namespace%__City__c,%vlocity_namespace%__PremisesId__r.Name,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__ServicePointId__r.Name,%vlocity_namespace%__Country__c,%vlocity_namespace%__PostalCode__c,%vlocity_namespace%__BroadbandConnectionType__c,%vlocity_namespace%__MaxDownloadSpeed__c,%vlocity_namespace%__MaxUploadSpeed__c,%vlocity_namespace%__AddressValidationDate__c,%vlocity_namespace%__AddressValidationResult__c,%vlocity_namespace%__FirstName__c,%vlocity_namespace%__LastName__c,%vlocity_namespace%__Title__c,%vlocity_namespace%__MSISDN__c,%vlocity_namespace%__Email__c",
+            "filters": "%filters%",
+            "objectName": "%vlocity_namespace%__QuoteMember__c",
+            "searchByField": "%searchByField%",
+            "searchText": "%searchText%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "selectAllIds",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/SelectAllMembers/Procedure/selectAllIds"
+}

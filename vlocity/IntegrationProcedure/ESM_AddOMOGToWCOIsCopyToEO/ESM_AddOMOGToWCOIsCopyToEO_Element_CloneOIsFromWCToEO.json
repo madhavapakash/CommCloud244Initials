@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "This call do complete migration of working cart items to sales quote line items, including renumbering and member tagging (bulkified version for MemberUpdateLoopBlock).",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CloneOIsFromWCToEO",
+    "OmniProcessId": {
+        "Name": "AddOMOGToWCOIsCopyToEO",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AddOMOGToWCOIsCopyToEO/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "ContextMapping": "%ContextMapping:ContextMapping%",
+            "GroupIds": "=IF(ISBLANK(%GroupIds%), LIST(), %GroupIds%)",
+            "MemberIds": "=IF(ISBLANK(%MemberIds%), LIST(), %MemberIds%)",
+            "SalesOrderId": "%SalesOrderId%",
+            "WorkingCartId": "%WorkingCartId%",
+            "cloneSourceIdMap": "%cloneSourceIdMap%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction13",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "cloneOIFromWCToEC",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AddOMOGToWCOIsCopyToEO/Procedure/CloneOIsFromWCToEO"
+}

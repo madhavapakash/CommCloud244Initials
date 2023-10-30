@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "UPC_ExtractMigrationPlanDetails_SampleInput.json",
+    "Description": "This IP extracts Migration plan based on method type(Specific Offers and Any-to-Any)",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Migration Plan Extractor",
+    "OmniProcessElement": [
+        "UPC_ExtractMigrationPlanDetails_Element_MigrationPlanExtractor.json",
+        "UPC_ExtractMigrationPlanDetails_Element_MigrationPlansTransformer.json",
+        "UPC_ExtractMigrationPlanDetails_Element_MigrationPlans.json",
+        "UPC_ExtractMigrationPlanDetails_Element_NoMigrationPlans.json"
+    ],
+    "OmniProcessKey": "UPC_ExtractMigrationPlanDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "UPC_ExtractMigrationPlanDetails_PropertySetConfig.json",
+    "SubType": "ExtractMigrationPlanDetails",
+    "Type": "UPC",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/UPC/ExtractMigrationPlanDetails/Procedure",
+    "WebComponentKey": "2137a89c-f5f4-d701-30c6-b2ebe1a3be78"
+}

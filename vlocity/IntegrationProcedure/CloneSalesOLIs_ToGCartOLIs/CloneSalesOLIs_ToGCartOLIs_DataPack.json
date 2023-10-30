@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CloneSalesOLIs_ToGCartOLIs_SampleInput.json",
+    "Description": "B2B Express - Clone Sales Order - OLIs to Group Cart - OLIs",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CloneSalesOrderToGroupCart",
+    "OmniProcessElement": [
+        "CloneSalesOLIs_ToGCartOLIs_Element_CloneSalesOrderLineItems.json",
+        "CloneSalesOLIs_ToGCartOLIs_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "CloneSalesOLIs_ToGCartOLIs",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CloneSalesOLIs_ToGCartOLIs_PropertySetConfig.json",
+    "SubType": "ToGCartOLIs",
+    "Type": "CloneSalesOLIs",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CloneSalesOLIs/ToGCartOLIs/Procedure",
+    "WebComponentKey": "941bae53-940f-e24d-0463-6c44053a260f"
+}

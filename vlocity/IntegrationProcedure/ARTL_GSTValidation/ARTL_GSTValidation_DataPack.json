@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_GSTValidation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GSTValidation",
+    "OmniProcessElement": [
+        "ARTL_GSTValidation_Element_SV3.json",
+        "ARTL_GSTValidation_Element_DRFetchGSTPayloadDetails.json",
+        "ARTL_GSTValidation_Element_RADebugLogger.json",
+        "ARTL_GSTValidation_Element_HTTPGSTValidationUpdate.json",
+        "ARTL_GSTValidation_Element_HTTPGSTValidationCreate.json",
+        "ARTL_GSTValidation_Element_RAResponseLogger.json",
+        "ARTL_GSTValidation_Element_SV2.json",
+        "ARTL_GSTValidation_Element_DRLGSTDetailsOnAccount.json",
+        "ARTL_GSTValidation_Element_ResponseAction4.json"
+    ],
+    "OmniProcessKey": "ARTL_GSTValidation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_GSTValidation_PropertySetConfig.json",
+    "SubType": "GSTValidation",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/GSTValidation/Procedure",
+    "WebComponentKey": "63a5dec2-ce7b-9182-e9d2-b0bde4c92b07"
+}

@@ -1,0 +1,40 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AssetToOrderResponse",
+    "OmniProcessId": {
+        "Name": "CPQ_CreateAssetizedOrderItem",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/CreateAssetizedOrderItem/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "Failed": "=IF(ISBLANK(%AssetToOrderAction:records:cartId%),true,false)",
+            "response": "%AssetToOrderAction%",
+            "statusCode": "=IF(ISBLANK(%AssetToOrderAction:records:cartId%),500,200)",
+            "statusMessage": "=IF(ISBLANK(%AssetToOrderAction:records:cartId%),IF(ISBLANK(%CanCreateFailureMessage:messages:message%),'FAILED',%CanCreateFailureMessage:messages:message%),'COMPLETED')"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/CreateAssetizedOrderItem/Procedure/AssetToOrderResponse"
+}

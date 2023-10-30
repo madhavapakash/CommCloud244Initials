@@ -1,0 +1,68 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetObjectGroupDRInput",
+    "OmniProcessId": {
+        "Name": "CPQBulkReplace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/BulkReplace/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "UpdateObjectGroupDRInput": {
+                "asyncOperation": "Bulk Replace",
+                "groupId": "%groupId%",
+                "selectedAssetsCommmonConfiguration": {
+                    "productId": "%productId%",
+                    "targetOfferId": "%targetOfferId%"
+                }
+            }
+        },
+        "label": null,
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "groupCartId"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "selectedProduct"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "targetOffersDisqualified"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "addMembersComplete"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/BulkReplace/Multi-Language/SetObjectGroupDRInput"
+}

@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_ApplyDiscount_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQApplyDiscount",
+    "OmniProcessElement": [
+        "CPQ_ApplyDiscount_Element_createCustomDiscount.json",
+        "CPQ_ApplyDiscount_Element_postDiscounts.json",
+        "CPQ_ApplyDiscount_Element_response.json",
+        "CPQ_ApplyDiscount_Element_ApplyDiscount.json",
+        "CPQ_ApplyDiscount_Element_FinalResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_ApplyDiscount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_ApplyDiscount_PropertySetConfig.json",
+    "SubType": "ApplyDiscount",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/ApplyDiscount/Procedure",
+    "WebComponentKey": "fc192dc4-ff0f-76bb-c916-d2289737c7a3"
+}

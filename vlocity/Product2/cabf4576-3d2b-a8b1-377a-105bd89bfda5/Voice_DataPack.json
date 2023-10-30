@@ -1,0 +1,851 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Voice_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_COVERAGE_AREA": null,
+        "ATT_DISCOUNT_PERCENTAGE": null,
+        "ATT_DISCOUNT_TYPE": null,
+        "ATT_DISCOUNT_VALUE": null,
+        "ATT_DURATION": null,
+        "ATT_DURATION_UOM": null,
+        "ATT_MARKET_PRICE": null,
+        "ATT_NO_OF_LICENCES": null,
+        "ATT_SECURITY_DEPOSIT": null,
+        "ATT_TOTAL_BENEFITS": null,
+        "ATT_VALIDITY": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_DIGITAL_SERVICE_DETAILS",
+                "Name": "Digital Service / Voice Details",
+                "displaySequence": 900,
+                "id": "a0Z72000000zG33EAE",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005kgBMAAY",
+                            "cloneable": true,
+                            "code": "ATT_TOTAL_BENEFITS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Total Benefits",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 180,
+                                    "id": "04947c65-df68-d2d9-adf4-1ccdbbccf61a",
+                                    "label": "450 GB",
+                                    "name": "04947c65-df68-d2d9-adf4-1ccdbbccf61a",
+                                    "readonly": false,
+                                    "value": "450 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 120,
+                                    "id": "0a00930c-aead-8da5-9fbf-3c70d8c120d0",
+                                    "label": "50 GB",
+                                    "name": "0a00930c-aead-8da5-9fbf-3c70d8c120d0",
+                                    "readonly": false,
+                                    "value": "50 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 230,
+                                    "id": "144c19a6-bb88-68f3-3fb3-320bec7a398b",
+                                    "label": "25 GB",
+                                    "name": "144c19a6-bb88-68f3-3fb3-320bec7a398b",
+                                    "readonly": false,
+                                    "value": "25 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "19156bfd-4ff5-6fee-6687-847485337528",
+                                    "label": "300 GB",
+                                    "name": "19156bfd-4ff5-6fee-6687-847485337528",
+                                    "readonly": false,
+                                    "value": "300 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 190,
+                                    "id": "235395ec-5b3f-bb4a-99ad-9028fedd82d0",
+                                    "label": "20 GB",
+                                    "name": "235395ec-5b3f-bb4a-99ad-9028fedd82d0",
+                                    "readonly": false,
+                                    "value": "20 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 140,
+                                    "id": "25f8e666-be6b-104b-9b68-aca3751afa93",
+                                    "label": "70 GB",
+                                    "name": "25f8e666-be6b-104b-9b68-aca3751afa93",
+                                    "readonly": false,
+                                    "value": "70 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 130,
+                                    "id": "2a06735d-b131-ac24-b72d-b0b6b0e2400e",
+                                    "label": "100 GB",
+                                    "name": "2a06735d-b131-ac24-b72d-b0b6b0e2400e",
+                                    "readonly": false,
+                                    "value": "100 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 210,
+                                    "id": "3072d773-d701-f255-3534-0d0da9f2253c",
+                                    "label": "1048576 Kbps",
+                                    "name": "3072d773-d701-f255-3534-0d0da9f2253c",
+                                    "readonly": false,
+                                    "value": "1048576 Kbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 150,
+                                    "id": "3ae7540d-4099-0156-3d17-6f6f3c316674",
+                                    "label": "2 GB",
+                                    "name": "3ae7540d-4099-0156-3d17-6f6f3c316674",
+                                    "readonly": false,
+                                    "value": "2 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 240,
+                                    "id": "4c7ca742-d259-80fd-9a35-6626f21261ee",
+                                    "label": "6500 GB",
+                                    "name": "4c7ca742-d259-80fd-9a35-6626f21261ee",
+                                    "readonly": false,
+                                    "value": "6500 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "4de1ac59-a921-6821-6ceb-1287a9bae29e",
+                                    "label": "307200 Kbps",
+                                    "name": "4de1ac59-a921-6821-6ceb-1287a9bae29e",
+                                    "readonly": false,
+                                    "value": "307200 Kbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 220,
+                                    "id": "533443a4-cb60-91f1-b47e-8088abb264b0",
+                                    "label": "65 GB",
+                                    "name": "533443a4-cb60-91f1-b47e-8088abb264b0",
+                                    "readonly": false,
+                                    "value": "65 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "5a5c1c3a-bd6a-1e4b-8141-dae0aef62261",
+                                    "label": "80 GB",
+                                    "name": "5a5c1c3a-bd6a-1e4b-8141-dae0aef62261",
+                                    "readonly": false,
+                                    "value": "80 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "5df9bc93-3ff9-9811-41a5-4162a289b452",
+                                    "label": "1000 GB",
+                                    "name": "5df9bc93-3ff9-9811-41a5-4162a289b452",
+                                    "readonly": false,
+                                    "value": "1000 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "708d2b8c-f7b2-6971-0004-4e24ab756aa7",
+                                    "label": "512000 Kbps",
+                                    "name": "708d2b8c-f7b2-6971-0004-4e24ab756aa7",
+                                    "readonly": false,
+                                    "value": "512000 Kbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "8c4d8983-8183-cdd8-2c16-fe1f37415279",
+                                    "label": "60 GB",
+                                    "name": "8c4d8983-8183-cdd8-2c16-fe1f37415279",
+                                    "readonly": false,
+                                    "value": "60 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "9aa45656-0481-3d5d-b007-19b800ca5b37",
+                                    "label": "1 GB",
+                                    "name": "9aa45656-0481-3d5d-b007-19b800ca5b37",
+                                    "readonly": false,
+                                    "value": "1 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "a72153a9-5d50-75a1-7de7-0c2e26f057f0",
+                                    "label": "204800 Kbps",
+                                    "name": "a72153a9-5d50-75a1-7de7-0c2e26f057f0",
+                                    "readonly": false,
+                                    "value": "204800 Kbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 200,
+                                    "id": "aebf56e8-fe03-98d0-9704-78331efed4c5",
+                                    "label": "200 GB",
+                                    "name": "aebf56e8-fe03-98d0-9704-78331efed4c5",
+                                    "readonly": false,
+                                    "value": "200 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "b2e884a1-1e69-ef62-0fff-eaf730a78027",
+                                    "label": "40960 Kbps",
+                                    "name": "b2e884a1-1e69-ef62-0fff-eaf730a78027",
+                                    "readonly": false,
+                                    "value": "40960 Kbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 160,
+                                    "id": "b47698c3-8c28-322c-9f38-10545478475e",
+                                    "label": "30 GB",
+                                    "name": "b47698c3-8c28-322c-9f38-10545478475e",
+                                    "readonly": false,
+                                    "value": "30 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "b64c75e2-84bc-8389-41f1-7fe7c6ae30f4",
+                                    "label": "10 GB",
+                                    "name": "b64c75e2-84bc-8389-41f1-7fe7c6ae30f4",
+                                    "readonly": false,
+                                    "value": "10 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 170,
+                                    "id": "cb544183-7da9-227b-e979-c91b343a26de",
+                                    "label": "800 GB",
+                                    "name": "cb544183-7da9-227b-e979-c91b343a26de",
+                                    "readonly": false,
+                                    "value": "800 GB"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "d806d80a-9801-fa86-a9c7-d1c94a3afb4c",
+                                    "label": "500 GB",
+                                    "name": "d806d80a-9801-fa86-a9c7-d1c94a3afb4c",
+                                    "readonly": false,
+                                    "value": "500 GB"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBGAAY",
+                            "cloneable": true,
+                            "code": "ATT_NO_OF_LICENCES",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "No of Licences",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgB6AAI",
+                            "cloneable": true,
+                            "code": "ATT_DISCOUNT_PERCENTAGE",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Discount Percentage",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgB7AAI",
+                            "cloneable": true,
+                            "code": "ATT_DISCOUNT_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Discount Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgB8AAI",
+                            "cloneable": true,
+                            "code": "ATT_DISCOUNT_VALUE",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 50,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Discount Value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgB9AAI",
+                            "cloneable": true,
+                            "code": "ATT_DURATION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 60,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Duration",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "1791f913-d26d-ff32-9e2b-5c04b096a86f",
+                                    "label": "5",
+                                    "name": "1791f913-d26d-ff32-9e2b-5c04b096a86f",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "18794715-d71e-0fab-94e9-fbde19ecdd0a",
+                                    "label": "7",
+                                    "name": "18794715-d71e-0fab-94e9-fbde19ecdd0a",
+                                    "readonly": false,
+                                    "value": "7"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "368071ae-cdf2-435a-a3b4-bd1f144c5b0a",
+                                    "label": "2",
+                                    "name": "368071ae-cdf2-435a-a3b4-bd1f144c5b0a",
+                                    "readonly": false,
+                                    "value": "2"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "3dac6c70-991f-4615-d273-929fb0b4dc08",
+                                    "label": "3",
+                                    "name": "3dac6c70-991f-4615-d273-929fb0b4dc08",
+                                    "readonly": false,
+                                    "value": "3"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "4da54c3b-5f6d-1d89-52c8-bfa3b0070918",
+                                    "label": "1",
+                                    "name": "4da54c3b-5f6d-1d89-52c8-bfa3b0070918",
+                                    "readonly": false,
+                                    "value": "1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "576f5413-a89b-20c7-5f6a-078e8e0928e6",
+                                    "label": "10",
+                                    "name": "576f5413-a89b-20c7-5f6a-078e8e0928e6",
+                                    "readonly": false,
+                                    "value": "10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "68b8b7d7-9bd8-47c3-e732-54acd5045ce5",
+                                    "label": "9",
+                                    "name": "68b8b7d7-9bd8-47c3-e732-54acd5045ce5",
+                                    "readonly": false,
+                                    "value": "9"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "c361634f-ebc8-c46f-e367-2f4cfaae2072",
+                                    "label": "6",
+                                    "name": "c361634f-ebc8-c46f-e367-2f4cfaae2072",
+                                    "readonly": false,
+                                    "value": "6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "cebe3781-f3e8-ca95-535f-430c88f1b59e",
+                                    "label": "4",
+                                    "name": "cebe3781-f3e8-ca95-535f-430c88f1b59e",
+                                    "readonly": false,
+                                    "value": "4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 110,
+                                    "id": "ee8143e0-e4f5-3a1e-1eef-45a1ee790ed7",
+                                    "label": "12",
+                                    "name": "ee8143e0-e4f5-3a1e-1eef-45a1ee790ed7",
+                                    "readonly": false,
+                                    "value": "12"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "f010c38e-b41b-8af3-fc6d-dc2b18957f45",
+                                    "label": "8",
+                                    "name": "f010c38e-b41b-8af3-fc6d-dc2b18957f45",
+                                    "readonly": false,
+                                    "value": "8"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBAAAY",
+                            "cloneable": true,
+                            "code": "ATT_DURATION_UOM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 70,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Duration UOM",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "43388c73-5749-f15f-ba56-926b1a75892f",
+                                    "label": "Months",
+                                    "name": "43388c73-5749-f15f-ba56-926b1a75892f",
+                                    "readonly": false,
+                                    "value": "Months"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBPAAY",
+                            "cloneable": true,
+                            "code": "ATT_VALIDITY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 80,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Validity",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "251749ff-3d60-5d82-0e32-891b7a54859c",
+                                    "label": "90 Days",
+                                    "name": "251749ff-3d60-5d82-0e32-891b7a54859c",
+                                    "readonly": false,
+                                    "value": "90 Days"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "b1f3f556-868e-1e21-102f-4e46ae3814ee",
+                                    "label": "1 Day",
+                                    "name": "b1f3f556-868e-1e21-102f-4e46ae3814ee",
+                                    "readonly": false,
+                                    "value": "1 Day"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "f49c6aa0-e9f3-1136-2911-447602691911",
+                                    "label": "30 Days",
+                                    "name": "f49c6aa0-e9f3-1136-2911-447602691911",
+                                    "readonly": false,
+                                    "value": "30 Days"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "fa094371-254c-e0f6-330a-9e1c6daf9923",
+                                    "label": "3 Days",
+                                    "name": "fa094371-254c-e0f6-330a-9e1c6daf9923",
+                                    "readonly": false,
+                                    "value": "3 Days"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgB5AAI",
+                            "cloneable": true,
+                            "code": "ATT_COVERAGE_AREA",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 90,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Coverage Area",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "8730bd39-d83c-8d20-8b89-a0f8d124340d",
+                                    "label": "3500",
+                                    "name": "8730bd39-d83c-8d20-8b89-a0f8d124340d",
+                                    "readonly": false,
+                                    "value": "3500"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "edd2f4b5-3a6d-be8e-a8af-d91e48c059bd",
+                                    "label": "1500",
+                                    "name": "edd2f4b5-3a6d-be8e-a8af-d91e48c059bd",
+                                    "readonly": false,
+                                    "value": "1500"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "fc37fe2e-d6e7-8884-f54c-0baa4d096aff",
+                                    "label": "2000",
+                                    "name": "fc37fe2e-d6e7-8884-f54c-0baa4d096aff",
+                                    "readonly": false,
+                                    "value": "2000"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBCAAY",
+                            "cloneable": true,
+                            "code": "ATT_MARKET_PRICE",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 100,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Market Price",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kgBJAAY",
+                            "cloneable": true,
+                            "code": "ATT_SECURITY_DEPOSIT",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 120,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Security Deposit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 11
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-10-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "b15dbbc5-5b4d-caa3-64fa-79318c145c6a",
+    "%vlocity_namespace%__GlobalKey__c": "cabf4576-3d2b-a8b1-377a-105bd89bfda5",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "56e3704e-ade5-a08f-d1d4-69c160022e3d",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/56e3704e-ade5-a08f-d1d4-69c160022e3d",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "Voice Product Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "Voice_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Voice_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Product",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_SubProductName__c": "Enterprise ILL",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Voice",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Voice_PricebookEntries.json",
+    "ProductCode": "VEPC_VOICE",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": "",
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Voice",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "cabf4576-3d2b-a8b1-377a-105bd89bfda5",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "cabf4576-3d2b-a8b1-377a-105bd89bfda5",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/cabf4576-3d2b-a8b1-377a-105bd89bfda5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "VEPC_VOICE",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/cabf4576-3d2b-a8b1-377a-105bd89bfda5"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/cabf4576-3d2b-a8b1-377a-105bd89bfda5"
+}

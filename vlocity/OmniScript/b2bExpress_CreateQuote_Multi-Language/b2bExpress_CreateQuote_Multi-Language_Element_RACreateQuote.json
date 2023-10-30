@@ -1,0 +1,104 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RACreateQuote",
+    "OmniProcessId": {
+        "Name": "B2BBrandNewQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/CreateQuote/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ]
+        },
+        "extraPayload": {
+            "fields": "Id,Name",
+            "inputFields": [
+                {
+                    "opportunityid": "%OpportunityRecordId%"
+                },
+                {
+                    "Name": "%Step1:Block1:Block2:quoteName%"
+                },
+                {
+                    "RecordTypeId": "%RecordTypeId%"
+                },
+                {
+                    "pricelistName": "%Step1:Block1:Block2:PriceListLookup%"
+                },
+                {
+                    "Status": "Draft"
+                },
+                {
+                    "%vlocity_namespace%__DefaultBillingAccountId__c": "%ContextId%"
+                },
+                {
+                    "%vlocity_namespace%__DefaultServiceAccountId__c": "%ContextId%"
+                },
+                {
+                    "%vlocity_namespace%__FrameContractId__c": "%Step1:Block1:Block2:CustomerRatecard%"
+                },
+                {
+                    "ExpirationDate": "%Step1:Block1:Block2:QuoteExpirationDate%"
+                }
+            ],
+            "methodName": "createCart",
+            "objectType": "Quote",
+            "subaction": "createQuote"
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": null,
+        "failureNextLabel": null,
+        "inProgressMessage": null,
+        "label": "%vlocity_namespace%__CMEXCreateQuote",
+        "message": {
+            "accountId": "%ContextId%",
+            "quoteDetails": "%quoteDetails:records%"
+        },
+        "postMessage": null,
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": true,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "createCart",
+        "remoteOptions": {
+            "postTransformBundle": null,
+            "preTransformBundle": ""
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "quoteDetails",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "toastComplete": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/CreateQuote/Multi-Language/RACreateQuote"
+}

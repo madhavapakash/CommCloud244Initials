@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "EmbeddedOmniScriptKey": "CPQ|ChangeToOrder|Multi-Language",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ChangetoOrder",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "Multi-Language",
+        "Sub Type": "ChangeToOrder",
+        "Type": "CPQ",
+        "disOnTplt": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "individual",
+                        "field": "isBulk"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "changeAssets",
+                        "field": "selectActionType"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "OrderId"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/ChangetoOrder"
+}

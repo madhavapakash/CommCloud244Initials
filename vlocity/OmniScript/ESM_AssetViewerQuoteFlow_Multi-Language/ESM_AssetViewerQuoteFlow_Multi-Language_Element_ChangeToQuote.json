@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "EmbeddedOmniScriptKey": "ESM|ChangeToQuote|Multi-Language",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ChangeToQuote",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Quote Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "Multi-Language",
+        "Sub Type": "ChangeToQuote",
+        "Type": "ESM",
+        "disOnTplt": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "individual",
+                        "field": "isBulk"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "QuoteId"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "changeAssets",
+                        "field": "selectActionType"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language/ChangeToQuote"
+}

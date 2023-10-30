@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "This VIP executes after running all price line items as part of finish process.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Price Line Items Finish Process",
+    "OmniProcessElement": [
+        "CPQ_PriceLineItemsFinishProcess_Element_SendAppNotificationIfPriceExecuteProcessFailed.json",
+        "CPQ_PriceLineItemsFinishProcess_Element_CPQRollupCart.json",
+        "CPQ_PriceLineItemsFinishProcess_Element_SendAppNotificationForFailed.json",
+        "CPQ_PriceLineItemsFinishProcess_Element_SendAppNotificationForSuccess.json"
+    ],
+    "OmniProcessKey": "CPQ_PriceLineItemsFinishProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_PriceLineItemsFinishProcess_PropertySetConfig.json",
+    "SubType": "PriceLineItemsFinishProcess",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/PriceLineItemsFinishProcess/Procedure",
+    "WebComponentKey": "1dd17d16-b199-6d1d-d552-1e40b873fab2"
+}

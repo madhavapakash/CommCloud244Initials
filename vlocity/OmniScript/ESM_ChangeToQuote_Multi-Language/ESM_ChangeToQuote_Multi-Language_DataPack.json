@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "Omniscript to change an asset to quote for landing on ESM cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": true,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "Name": "Change to Quote",
+    "OmniProcessElement": [
+        "ESM_ChangeToQuote_Multi-Language_Element_GetExistingAssetsFromQuoteLineItem.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_GetAssetIdsToProcess.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_SetDuplicateAssetsErrorMessage.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_ChangeToQuoteRemoteAction.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_GetCartDetailsFromQuoteId.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_SetCartDetails.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_CreateLocation.json",
+        "ESM_ChangeToQuote_Multi-Language_Element_QuoteNavigateAction.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "ESM_ChangeToQuote_Multi-Language_PropertySetConfig.json",
+    "SubType": "ChangeToQuote",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/ChangeToQuote/Multi-Language",
+    "WebComponentKey": "d7fa06c5-c9f9-5671-bf48-84073e67273a"
+}

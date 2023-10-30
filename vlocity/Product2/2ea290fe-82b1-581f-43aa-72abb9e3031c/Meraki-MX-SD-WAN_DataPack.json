@@ -1,0 +1,397 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Meraki-MX-SD-WAN_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "VEPC_ATTR_CONTRACT_TERM": "Month-to-Month",
+        "VEPC_ATTR_SDWAN_BANDWIDTH": "50 Mbps",
+        "VEPC_ATTR_SDWAN_NETWORK_TOPOLOGY": "Independent Branch Locations"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "fdff31be-a5f3-3afc-e5a7-f4ad6a5551ef",
+                "Name": "SD WAN Details",
+                "displaySequence": 80,
+                "id": "a0Z0T0000023iT8UAI",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a0T000001bLndQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_SDWAN_BANDWIDTH",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "SD WAN Bandwidth",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "96631ff3-4b8b-b35b-6f5a-d87e5ff9aa25",
+                                    "label": "200 Mbps",
+                                    "name": "96631ff3-4b8b-b35b-6f5a-d87e5ff9aa25",
+                                    "readonly": false,
+                                    "value": "200 Mbps"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "cbc6ce9f-2a94-f708-6687-1e2ecad33c7f",
+                                    "label": "100 Mbps",
+                                    "name": "cbc6ce9f-2a94-f708-6687-1e2ecad33c7f",
+                                    "readonly": false,
+                                    "value": "100 Mbps"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "da516a2c-c686-eb1d-2ccc-85ec5d1dcfcd",
+                                    "label": "50 Mbps",
+                                    "name": "da516a2c-c686-eb1d-2ccc-85ec5d1dcfcd",
+                                    "readonly": false,
+                                    "value": "50 Mbps"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a0T000001bLneQAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_SDWAN_NETWORK_TOPOLOGY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "SD WAN Network Topology",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "22db40fd-8594-fc6b-dedf-0f8f3549ed90",
+                                    "label": "Fully Meshed",
+                                    "name": "22db40fd-8594-fc6b-dedf-0f8f3549ed90",
+                                    "readonly": false,
+                                    "value": "Fully Meshed"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "b91630d9-012e-bdfe-fb2a-1067ebb6a513",
+                                    "label": "Independent Branch Locations",
+                                    "name": "b91630d9-012e-bdfe-fb2a-1067ebb6a513",
+                                    "readonly": false,
+                                    "value": "Independent Branch Locations"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "e4c7ac9b-0550-2361-a55c-4d5f9a84ea75",
+                                    "label": "Hub and Spoke",
+                                    "name": "e4c7ac9b-0550-2361-a55c-4d5f9a84ea75",
+                                    "readonly": false,
+                                    "value": "Hub and Spoke"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            },
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_CONTRACT_DETAILS",
+                "Name": "Contract Details",
+                "displaySequence": 7020,
+                "id": "a0Z0T0000023iSxUAI",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a0T000001bLn6QAE",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_CONTRACT_TERM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Contract Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "1564dc1c-770f-5432-5fcd-ddfe3b06043d",
+                                    "label": "10 Years",
+                                    "name": "1564dc1c-770f-5432-5fcd-ddfe3b06043d",
+                                    "readonly": false,
+                                    "value": "10 Years"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "52533583-58b5-be33-72df-8260d3808b1a",
+                                    "label": "4 Years",
+                                    "name": "52533583-58b5-be33-72df-8260d3808b1a",
+                                    "readonly": false,
+                                    "value": "4 Years"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "9e9aa1a5-439c-a4b1-3c92-8bd9a2970ea9",
+                                    "label": "2 Years",
+                                    "name": "9e9aa1a5-439c-a4b1-3c92-8bd9a2970ea9",
+                                    "readonly": false,
+                                    "value": "2 Years"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "a7ac19a5-bb6b-ccbf-a08d-720481465288",
+                                    "label": "Month-to-Month",
+                                    "name": "a7ac19a5-bb6b-ccbf-a08d-720481465288",
+                                    "readonly": false,
+                                    "value": "Month-to-Month"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "b8e6084a-667c-f11d-a49c-5195154a861d",
+                                    "label": "1 Year",
+                                    "name": "b8e6084a-667c-f11d-a49c-5195154a861d",
+                                    "readonly": false,
+                                    "value": "1 Year"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "dbfd7589-9af1-9953-4162-f03fb41e3fa1",
+                                    "label": "3 Years",
+                                    "name": "dbfd7589-9af1-9953-4162-f03fb41e3fa1",
+                                    "readonly": false,
+                                    "value": "3 Years"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "fb98440e-b163-2948-4dd4-0d52cbfca709",
+                                    "label": "5 Years",
+                                    "name": "fb98440e-b163-2948-4dd4-0d52cbfca709",
+                                    "readonly": false,
+                                    "value": "5 Years"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": [
+        {
+            "actions": {
+            },
+            "childCategories": [
+                {
+                    "actions": {
+                    },
+                    "childCategories": [
+                    ],
+                    "displaySequence": -1,
+                    "fields": {
+                    },
+                    "id": "a5MHr000000pc9WMAQ",
+                    "messages": [
+                    ],
+                    "name": "SD WAN",
+                    "nameResult": {
+                    },
+                    "uiStates": {
+                    }
+                }
+            ],
+            "displaySequence": -1,
+            "fields": {
+            },
+            "id": "a5MHr000000pc9VMAQ",
+            "messages": [
+            ],
+            "name": "Enterprise Sales Catalog",
+            "nameResult": {
+            },
+            "uiStates": {
+            }
+        }
+    ],
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2021-07-31",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2021-07-31T04:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "062fd8f3-96b9-618a-a75f-7b41988d4a86",
+    "%vlocity_namespace%__GlobalKey__c": "2ea290fe-82b1-581f-43aa-72abb9e3031c",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "1dacc81fa8b0e9553cd20aa2dc0daf0c",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/1dacc81fa8b0e9553cd20aa2dc0daf0c",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "SD WAN Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "Meraki-MX-SD-WAN_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Meraki-MX-SD-WAN_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2021-07-31T04:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Service",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "Meraki MX SD-WAN",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Networking",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Meraki MX SD-WAN",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Meraki-MX-SD-WAN_PricebookEntries.json",
+    "ProductCode": "VEPC_OFFERING_MERAKI_SD_WAN",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "CurrencyIsoCode": "INR",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Meraki MX SD-WAN",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "2ea290fe-82b1-581f-43aa-72abb9e3031c",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "2ea290fe-82b1-581f-43aa-72abb9e3031c",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/2ea290fe-82b1-581f-43aa-72abb9e3031c",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "VEPC_OFFERING_MERAKI_SD_WAN",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/2ea290fe-82b1-581f-43aa-72abb9e3031c"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/2ea290fe-82b1-581f-43aa-72abb9e3031c"
+}

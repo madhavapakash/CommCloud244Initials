@@ -1,0 +1,67 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetAssetsFromGroupCart",
+    "OmniProcessId": {
+        "Name": "Get Group Level Consolidated Data",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GetAssetsInfoForGroups",
+        "OmniProcessId": {
+            "Name": "Get Group Level Consolidated Data",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure/GetAssetsInfoForGroups",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GetAssetsInfoForGroups",
+    "ParentElementType": "Loop Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "additionalData:cartId": "%cartId%",
+            "additionalData:cartType": "%cartType%",
+            "additionalData:groupCartId": "%ConsolidateRawProductData:productBundles:groupCartId%"
+        },
+        "additionalOutput": {
+            "Name": "%ConsolidateRawProductData:productBundles:Name%",
+            "Quantity": "=LISTSIZE(%GetAssetsFromGroupCart:itemsToProcessList%)",
+            "assetIds": "%GetAssetsFromGroupCart:itemsToProcessList%",
+            "groupCartId": "%ConsolidateRawProductData:productBundles:groupCartId%",
+            "groupId": "%ConsolidateRawProductData:productBundles:groupId%",
+            "selectedAssetsCommonConfiguration": "%ConsolidateRawProductData:productBundles:SelectedAssetsCommonConfiguration__c%"
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "CPQ_GetAssetsFromGroupCart",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": true,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetGroupLevelConsolidatedData/Procedure/GetAssetsFromGroupCart"
+}

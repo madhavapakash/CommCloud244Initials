@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_StartBulkReplace_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_StartBulkReplace",
+    "OmniProcessElement": [
+        "CPQ_StartBulkReplace_Element_SetUserId.json",
+        "CPQ_StartBulkReplace_Element_StartAsyncJobForQuote.json",
+        "CPQ_StartBulkReplace_Element_StartAsyncJobForOrder.json",
+        "CPQ_StartBulkReplace_Element_sendNotificationStarted.json",
+        "CPQ_StartBulkReplace_Element_sendNotificationFailedToStart.json",
+        "CPQ_StartBulkReplace_Element_UpdateAsyncJobIdToOrderGroup.json",
+        "CPQ_StartBulkReplace_Element_UpdateAsyncJobIdToQuoteGroup.json",
+        "CPQ_StartBulkReplace_Element_QuoteResponse.json",
+        "CPQ_StartBulkReplace_Element_OrderResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_StartBulkReplace",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_StartBulkReplace_PropertySetConfig.json",
+    "SubType": "StartBulkReplace",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/StartBulkReplace/Procedure",
+    "WebComponentKey": "99cdfe03-c50d-f63f-981d-b1be534c3453"
+}

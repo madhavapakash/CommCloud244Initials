@@ -1,0 +1,92 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AsyncJob3",
+    "OmniProcessId": {
+        "Name": "ESMBulkDeleteOrderMembers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/BulkDeleteOrderMembers/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "handleAsyncJob3",
+        "OmniProcessId": {
+            "Name": "ESMBulkDeleteOrderMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/BulkDeleteOrderMembers/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/BulkDeleteOrderMembers/Procedure/handleAsyncJob3",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "handleAsyncJob3",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "MemberIdsToDeleteInFinish": "%PrepareInputforDeletingMembers:MemberIdsToDeleteInFinish%",
+                "OlisToDelete": "%PrepareInputforDeletingMembers:OlisToDelete%",
+                "SalesOrderId": "%SalesOrderId%",
+                "SalesOrderName": "%SalesOrderName%",
+                "UserId": "%SetUserId:UserId%"
+            },
+            "asyncProcessName": "=CONCAT(\"Bulk Delete Members Async Process for \", %SalesOrderId%)",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 1,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "ESM_BulkDeleteOrderLineItemsExecuteProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_BulkOrderMemberDeleteAsyncJobFinish",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "name": "ESM_resetItemsToProcessListOrder",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Delete order line item %SalesOrderId%"
+                }
+            ],
+            "itemsToProcessList": "%PrepareInputforDeletingMembers:OlisToDelete%",
+            "referenceId": "%SalesOrderId%_bulk_delete_members"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/BulkDeleteOrderMembers/Procedure/AsyncJob3"
+}

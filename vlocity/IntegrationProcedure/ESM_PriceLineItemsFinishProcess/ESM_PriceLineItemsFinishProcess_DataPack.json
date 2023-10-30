@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_PriceLineItemsFinishProcess_SampleInput.json",
+    "Description": "This VIP executes after running all price line items as part of finish process.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PriceLineItemsFInish",
+    "OmniProcessElement": [
+        "ESM_PriceLineItemsFinishProcess_Element_FinishJobForPricing.json",
+        "ESM_PriceLineItemsFinishProcess_Element_SendAppNotificationForFailedForQuote.json",
+        "ESM_PriceLineItemsFinishProcess_Element_SendAppNotificationForFailedForOrder.json",
+        "ESM_PriceLineItemsFinishProcess_Element_SendAppNotificationForSuccessForQuote.json",
+        "ESM_PriceLineItemsFinishProcess_Element_SendAppNotificationForSuccessForOrder.json"
+    ],
+    "OmniProcessKey": "ESM_PriceLineItemsFinishProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_PriceLineItemsFinishProcess_PropertySetConfig.json",
+    "SubType": "PriceLineItemsFinishProcess",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/PriceLineItemsFinishProcess/Procedure",
+    "WebComponentKey": "efa70366-e98f-ea04-fb4f-948ef7e1b6e5"
+}

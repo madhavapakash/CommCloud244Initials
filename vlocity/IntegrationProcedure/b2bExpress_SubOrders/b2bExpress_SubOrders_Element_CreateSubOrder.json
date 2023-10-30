@@ -1,0 +1,55 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateSubOrder",
+    "OmniProcessId": {
+        "Name": "SubOrders",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpress/SubOrders/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "AccountId": "%AccountId%",
+            "MasterOrderId": "%MasterOrderId%",
+            "QuoteGroupId": "=IF(ISNOTBLANK(%QuoteMember:QuoteGroupId%),%QuoteMember:QuoteGroupId%,%QuoteGroup:QuoteGroupId%)",
+            "QuoteId": "%QuoteId%",
+            "QuoteLineItems": "=IF(ISNOTBLANK(%QuoteMember:QuoteLineItems%),LIST(%QuoteMember:QuoteLineItems%),LIST(%QuoteGroup:QuoteLineItems%))",
+            "QuoteMemberId": "%QuoteMember:Id%",
+            "RecordTypeId": "%SORecordTypeId%",
+            "ServiceAccountId": "=IF(ISNOTBLANK(%QuoteMember:ServiceAccountId%),%QuoteMember:ServiceAccountId%,%SearchOrCreateServiceAccount:recordId%)"
+        },
+        "additionalOutput": {
+            "RecordId": "%CreateSubOrder:OrderId%"
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "B2BCmexAppHandler",
+        "remoteMethod": "createOrder",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": true,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpress/SubOrders/Procedure/CreateSubOrder"
+}

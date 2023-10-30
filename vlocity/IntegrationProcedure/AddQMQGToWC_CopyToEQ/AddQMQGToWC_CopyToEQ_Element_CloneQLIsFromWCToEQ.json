@@ -1,0 +1,53 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "This call do complete migration of working cart items to sales quote line items, including renumbering and member tagging (bulkified version for MemberUpdateLoopBlock).",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CloneQLIsFromWCToEQ",
+    "OmniProcessId": {
+        "Name": "AddQMQGToWCQLIsCopyToEQ",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/AddQMQGToWC/CopyToEQ/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "ContextMapping": "%ContextMapping:ContextMapping%",
+            "MemberIds": "=IF(ISBLANK(%MemberIds%), LIST(), %MemberIds%)",
+            "QuoteGroupIds": "=IF(ISBLANK(%QuoteGroupIds%), LIST(), %QuoteGroupIds%)",
+            "SalesQuoteId": "%SalesQuoteId%",
+            "WorkingCartId": "%WorkingCartId%",
+            "cloneSourceIdMap": "%cloneSourceIdMap%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction13",
+        "remoteClass": "%vlocity_namespace%.B2BCmexAppHandler",
+        "remoteMethod": "cloneQliFromWCToEC",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/AddQMQGToWC/CopyToEQ/Procedure/CloneQLIsFromWCToEQ"
+}

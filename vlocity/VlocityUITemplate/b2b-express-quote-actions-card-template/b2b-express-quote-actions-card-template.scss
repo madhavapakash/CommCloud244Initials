@@ -1,0 +1,75 @@
+//@import "variables";
+
+.vlocity {
+    .vloc-action-grid {
+        background-color: white;
+        padding:0px;
+        
+        &:after {
+            clear: both;
+            content:'';
+            display: block;
+        }
+        .vloc-action-grid-cell {
+            padding-left: 0px;
+            margin: auto;
+            min-width: 50px;
+            float: left;
+            margin-right: 5px;
+            overflow:hidden;
+            border-radius:3px;
+            
+        }
+        
+        a {
+            background-color: white !important;
+            display: block;
+            height: 35px;
+            max-width: 300px;
+            text-align: center;
+            cursor: pointer;
+            color: #004487 !important;
+            overflow: hidden;
+            border: 1px solid #e8eef5 !important;
+            text-decoration: none;
+            padding: 0px 10px;
+            line-height: 33px;
+            
+          
+            p {
+              color: #004487 !important;
+            }
+          
+            i {
+                font-size: 20px;
+                float: left;
+                position: relative;
+                right: 5px;
+                color: #004487 !important;
+            }
+          
+            p {
+                color: white;
+                text-transform: capitalize;
+                display:table;
+              
+            }
+            
+            &:hover, &:active, &:focus {
+                background: light-blue;
+                text-decoration: none;
+                i,p {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+          
+        }
+    }
+}
+
+.via-slds .slds-size--1-of-1, .via-slds .slds-size_1-of-1 {
+    -ms-flex: 0% !important;
+    flex: 0% !important;
+    box-sizing: border-box;
+}

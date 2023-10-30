@@ -1,0 +1,45 @@
+{
+    "CurrencyIsoCode": "INR",
+    "EmbeddedOmniScriptKey": "CPQ|SingleMove|Multi-Language",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SingleMove",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "Multi-Language",
+        "Sub Type": "SingleMove",
+        "Type": "CPQ",
+        "disOnTplt": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "moveAssets",
+                        "field": "selectActionType"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "OrderId"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "isMultipleAssetsSelected"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerOrderFlow/Multi-Language/SingleMove"
+}

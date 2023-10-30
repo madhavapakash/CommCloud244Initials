@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "This OS calls CPQSubmit to create Quote and Navigates to the Quote Cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "Name": "CPQ Create Quote",
+    "OmniProcessElement": [
+        "CPQ_CreateQuote_Multi-Language_Element_CreateAccountDiscounts.json",
+        "CPQ_CreateQuote_Multi-Language_Element_CreateQuote.json",
+        "CPQ_CreateQuote_Multi-Language_Element_QuoteCreationResults.json",
+        "CPQ_CreateQuote_Multi-Language_Element_TextBlockCreateAccountDiscountsFailure.json",
+        "CPQ_CreateQuote_Multi-Language_Element_TextBlockCreateAccountDiscountsSuccess.json",
+        "CPQ_CreateQuote_Multi-Language_Element_TextBlockQuoteCreationFailure.json",
+        "CPQ_CreateQuote_Multi-Language_Element_TextBlockQuoteCreationSuccess.json",
+        "CPQ_CreateQuote_Multi-Language_Element_NavigateActionToOpportunity.json",
+        "CPQ_CreateQuote_Multi-Language_Element_NavigateActionToQuote.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "CPQ_CreateQuote_Multi-Language_PropertySetConfig.json",
+    "SubType": "CreateQuote",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/CreateQuote/Multi-Language",
+    "WebComponentKey": "410be438-7e54-41c1-1d71-b84ef617f356"
+}

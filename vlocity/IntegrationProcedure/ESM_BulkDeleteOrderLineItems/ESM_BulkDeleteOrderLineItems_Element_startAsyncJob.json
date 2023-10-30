@@ -1,0 +1,71 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "startAsyncJob",
+    "OmniProcessId": {
+        "Name": "ESM_BulkDeleteOrderLineItems",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/BulkDeleteOrderLineItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "SalesOrderId": "%orderId%",
+                "userId": "%setValues:userID%"
+            },
+            "asyncProcessName": "%setValues:asyncProcessName%",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 10,
+                            "name": "ESM_BulkDeleteOrderLineItemsExecuteProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "ESM_BulkDeleteOrderLineItemsFinishProcess",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk delete Order line items"
+                }
+            ],
+            "itemsToProcessList": "%RootItemIds%",
+            "referenceId": "%orderId%_bulk_delete_QLIs"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/BulkDeleteOrderLineItems/Procedure/startAsyncJob"
+}

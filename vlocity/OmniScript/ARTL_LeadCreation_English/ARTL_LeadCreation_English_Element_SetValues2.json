@@ -1,0 +1,39 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues2",
+    "OmniProcessId": {
+        "Name": "LeadCreation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/LeadCreation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "AccountId": "=IF(%Account1% != null, %AccountId% , IF(%Radio% == \"Existing Business\" && %TARelatedAccount-Block:AccountId% != null , %TARelatedAccount-Block:AccountId%, null))",
+            "AnnualRevenue": "=IF(%LeadCreation:AnnualRevenueFormula2% != null , %LeadCreation:AnnualRevenueFormula2%, %LeadCreation:AnnualRevenue1%)",
+            "ContactId": "=IF(%Contact% !=NULL,%Contact%,%Contact1%)",
+            "NoOfEmployees": "=IF(%LeadCreation:NoOfEmployeesFormula2% != null , %LeadCreation:NoOfEmployeesFormula2%,  %LeadCreation:NoOfEmployees1%)",
+            "Segment": "=IF(%LeadCreation:SegmentFormula2% !=null , %LeadCreation:SegmentFormula2%,  %LeadCreation:Segment1%)",
+            "company": "=IF(%AccountName% != null , %AccountName% , IF(%TARelatedAccount-Block:AccName% != null , %TARelatedAccount-Block:AccName%, %NewAccountName% ))"
+        },
+        "label": "SetValues2",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/LeadCreation/English/SetValues2"
+}

@@ -1,0 +1,80 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ApexRemoteCall",
+    "OmniProcessId": {
+        "Name": "MultiSite Apply to Group",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/StartApplyToGroup/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EmptyConditionalCheck",
+        "OmniProcessId": {
+            "Name": "MultiSite Apply to Group",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/StartApplyToGroup/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/StartApplyToGroup/Procedure/EmptyConditionalCheck",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EmptyConditionalCheck",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "ApplyToGroupIPName": "%ApplyToGroupInput:ApplyToGroupIPName%",
+            "BatchSize": "25",
+            "HasFailedGroupMembers": "%HasFailedGroupMembers%",
+            "applyToGroupFailed": "%applyToGroupFailed%",
+            "cartType": "%ApplyToGroupInput:cartType%",
+            "contextId": "%ApplyToGroupInput:contextId%",
+            "groupCartId": "%ApplyToGroupInput:groupCartId%",
+            "groupId": "%ApplyToGroupInput:groupId%",
+            "groupIds": "%groupIds%",
+            "hasPostProcess": "false",
+            "notifications": {
+                "appNotification": {
+                    "ApplyToGroupNotificationEnabled": true,
+                    "customNotificationTypeName": "CMEbatchJob"
+                }
+            },
+            "parentId": "%ApplyToGroupInput:parentId%",
+            "processDeltaMembers": "true",
+            "retrycount": "%retrycount%",
+            "startJobVIPName": "%startJobVIPName%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "MultiServiceAppHandler",
+        "remoteMethod": "applyToGroup",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "response",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/StartApplyToGroup/Procedure/ApexRemoteCall"
+}

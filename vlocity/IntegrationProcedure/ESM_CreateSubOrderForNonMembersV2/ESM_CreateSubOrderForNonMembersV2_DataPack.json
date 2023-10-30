@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "The IP is used to create a sub-order for line items without any members or groups using ESM CreateOrder API.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateSubOrderForNonMembersV2",
+    "OmniProcessElement": [
+        "ESM_CreateSubOrderForNonMembersV2_Element_CreateSubOrder.json",
+        "ESM_CreateSubOrderForNonMembersV2_Element_RunValidation.json",
+        "ESM_CreateSubOrderForNonMembersV2_Element_SubOrderCreated.json"
+    ],
+    "OmniProcessKey": "ESM_CreateSubOrderForNonMembersV2",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CreateSubOrderForNonMembersV2_PropertySetConfig.json",
+    "SubType": "CreateSubOrderForNonMembersV2",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateSubOrderForNonMembersV2/Procedure",
+    "WebComponentKey": "ba496804-63d4-150c-b7bd-d35818e1c175"
+}

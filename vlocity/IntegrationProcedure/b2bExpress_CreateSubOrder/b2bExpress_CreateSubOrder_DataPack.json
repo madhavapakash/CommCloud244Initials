@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_CreateSubOrder_SampleInput.json",
+    "Description": "B2B Express - This VIP is called to create Master Order and Sub Order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateSubOrder",
+    "OmniProcessElement": [
+        "b2bExpress_CreateSubOrder_Element_LoopQuoteLineItems.json",
+        "b2bExpress_CreateSubOrder_Element_SetQuoteLineItemId.json",
+        "b2bExpress_CreateSubOrder_Element_TrimLastUnderscore.json",
+        "b2bExpress_CreateSubOrder_Element_CreateSubOrder.json",
+        "b2bExpress_CreateSubOrder_Element_UpdateSubOrder.json",
+        "b2bExpress_CreateSubOrder_Element_SubOrderDetails.json"
+    ],
+    "OmniProcessKey": "b2bExpress_CreateSubOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_CreateSubOrder_PropertySetConfig.json",
+    "SubType": "CreateSubOrder",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/CreateSubOrder/Procedure",
+    "WebComponentKey": "94f0e9ac-0fa1-750b-c842-323dee38a5e2"
+}

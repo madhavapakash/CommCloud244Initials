@@ -1,0 +1,32 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_ProductRelationActions_SampleInput.json",
+    "Description": "This IP is used to handle Multiple Product relation actions like linking & unlink products, Move Assets to quote, or Remove assets from the quote.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESMProductRelationActions",
+    "OmniProcessElement": [
+        "ESM_ProductRelationActions_Element_SetValues.json",
+        "ESM_ProductRelationActions_Element_ESM_LinkProducts_quote.json",
+        "ESM_ProductRelationActions_Element_RemoveQLI.json",
+        "ESM_ProductRelationActions_Element_ConditionalBlock1.json",
+        "ESM_ProductRelationActions_Element_getAllChildAssetIds.json",
+        "ESM_ProductRelationActions_Element_AddAssetsToQuote.json",
+        "ESM_ProductRelationActions_Element_CreateLocation.json",
+        "ESM_ProductRelationActions_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_ProductRelationActions",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_ProductRelationActions_PropertySetConfig.json",
+    "SubType": "ProductRelationActions",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/ProductRelationActions/Procedure",
+    "WebComponentKey": "c75845bd-bff3-9531-341d-a0ee0c78841b"
+}

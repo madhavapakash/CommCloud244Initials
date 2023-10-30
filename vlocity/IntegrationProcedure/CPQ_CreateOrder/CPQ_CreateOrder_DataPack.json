@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_CreateOrder_SampleInput.json",
+    "Description": "This Integration Procedure is used to create Order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQCreateOrder",
+    "OmniProcessElement": [
+        "CPQ_CreateOrder_Element_CreateOrderRequestData.json",
+        "CPQ_CreateOrder_Element_CreateOrderRecord.json",
+        "CPQ_CreateOrder_Element_GetRootAssetIds.json",
+        "CPQ_CreateOrder_Element_UpsertAttachmentWithAssets.json",
+        "CPQ_CreateOrder_Element_CreateOrderResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_CreateOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_CreateOrder_PropertySetConfig.json",
+    "SubType": "CreateOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/CreateOrder/Procedure",
+    "WebComponentKey": "b9318e42-f746-a42d-f56d-8e6f7a8c19ff"
+}

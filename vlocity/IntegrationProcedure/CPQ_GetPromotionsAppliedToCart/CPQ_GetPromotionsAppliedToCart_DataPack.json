@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_GetPromotionsAppliedToCart_SampleInput.json",
+    "Description": "To fetch the promotions applied to the cart.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQGetPromotionsAppliedToCart",
+    "OmniProcessElement": [
+        "CPQ_GetPromotionsAppliedToCart_Element_GetPromotionsAppliedToCartInput.json",
+        "CPQ_GetPromotionsAppliedToCart_Element_CartIdEmptyResponse.json",
+        "CPQ_GetPromotionsAppliedToCart_Element_CartIdParamNotEmpty.json",
+        "CPQ_GetPromotionsAppliedToCart_Element_GetPromotionsAppliedToCartRemoteAction.json",
+        "CPQ_GetPromotionsAppliedToCart_Element_GetPromotionsAppliedToCartResponse.json",
+        "CPQ_GetPromotionsAppliedToCart_Element_GetPromotionsAppliedToInvalidCartIdResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_GetPromotionsAppliedToCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetPromotionsAppliedToCart_PropertySetConfig.json",
+    "SubType": "GetPromotionsAppliedToCart",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetPromotionsAppliedToCart/Procedure",
+    "WebComponentKey": "b28c7eeb-d9a2-9fae-043d-083f7e7d5d8a"
+}

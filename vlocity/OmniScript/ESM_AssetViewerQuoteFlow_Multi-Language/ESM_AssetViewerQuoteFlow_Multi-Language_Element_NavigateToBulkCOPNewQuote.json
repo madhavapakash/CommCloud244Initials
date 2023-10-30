@@ -1,0 +1,60 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToBulkCOPNewQuote",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Quote Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": null,
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "changePlan",
+                        "field": "selectActionType"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "createQuote",
+                        "field": "selectType"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWC": "%vlocity_namespace%:cPQBulkReplaceMultiLanguage",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__cartId=%cartId%&c__cartType=Quote&c__accountId=%ContextId%&c__tabLabel=COP: Create Quote",
+        "targetType": "Vlocity OmniScript",
+        "targetUrl": "/lightning/app/%vlocity_namespace%__Industries_CPQ/r/%cartId%/view",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/AssetViewerQuoteFlow/Multi-Language/NavigateToBulkCOPNewQuote"
+}

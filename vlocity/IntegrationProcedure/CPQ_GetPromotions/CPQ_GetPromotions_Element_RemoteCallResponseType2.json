@@ -1,0 +1,38 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "1. If there are no promotions available for a given combination of cart and Price List.\n2. Invalid CartId.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RemoteCallResponseType2",
+    "OmniProcessId": {
+        "Name": "CPQGetPromotions",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetPromotions/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response:result:records": "%GetPromotionsRemoteCall:response:result%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetPromotionsRemoteCall:response:result:totalSize% == 0",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetPromotions/Procedure/RemoteCallResponseType2"
+}

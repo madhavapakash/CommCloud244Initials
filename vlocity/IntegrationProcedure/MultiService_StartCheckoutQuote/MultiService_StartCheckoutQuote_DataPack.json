@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "{}",
+    "Description": "Creates/updates Order-Group records, Master and Group Orders",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "StartCheckoutQuote",
+    "OmniProcessElement": [
+        "MultiService_StartCheckoutQuote_Element_CreateParents.json",
+        "MultiService_StartCheckoutQuote_Element_IfNotRetryBatch.json",
+        "MultiService_StartCheckoutQuote_Element_GetDraftSubOrders.json",
+        "MultiService_StartCheckoutQuote_Element_DeleteDraftSubOrders.json",
+        "MultiService_StartCheckoutQuote_Element_SetResposne.json"
+    ],
+    "OmniProcessKey": "MultiService_StartCheckoutQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiService_StartCheckoutQuote_PropertySetConfig.json",
+    "SubType": "StartCheckoutQuote",
+    "Type": "MultiService",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiService/StartCheckoutQuote/Procedure",
+    "WebComponentKey": "5f18b28e-6a55-0d38-2f2a-5739dd53cd06"
+}

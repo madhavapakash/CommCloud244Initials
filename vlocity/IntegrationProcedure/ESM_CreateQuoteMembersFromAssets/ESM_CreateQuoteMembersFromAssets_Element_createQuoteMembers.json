@@ -1,0 +1,57 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "createQuoteMembers",
+    "OmniProcessId": {
+        "Name": "CreateQuoteMembersFromAssets",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateQuoteMembersFromAssets/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "AccountToQuoteMemberFieldMap": {
+                "%vlocity_namespace%__BillingEmailAddress__c": "%vlocity_namespace%__Email__c",
+                "Id": "%vlocity_namespace%__ServiceAccountId__c",
+                "Name": "Name",
+                "RecordTypeId": "%vlocity_namespace%__MemberType__c",
+                "ShippingCity": "%vlocity_namespace%__City__c",
+                "ShippingCountry": "%vlocity_namespace%__Country__c",
+                "ShippingPostalCode": "%vlocity_namespace%__PostalCode__c",
+                "ShippingState": "%vlocity_namespace%__State__c",
+                "ShippingStreet": "%vlocity_namespace%__StreetAddress__c"
+            }
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.B2BCmexAppHandler",
+        "remoteMethod": "createQuoteMembersFromAssets",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateQuoteMembersFromAssets/Procedure/createQuoteMembers"
+}

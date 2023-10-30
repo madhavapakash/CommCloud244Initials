@@ -1,0 +1,41 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetVal_SetGenerationOptions",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "attachFileFormat": "=\"docx\"",
+            "contextId": "=%EnterObject:ObjectId%",
+            "docGenerationMechanism": "=\"VlocityClientSide\"",
+            "downloadFileFormat": "=\"docx\"",
+            "selectedTemplate": "=IF(%AvailableTemplates%=1,%DocumentTemplates|1%,IF(%templateId% == null, %PickTemplate|1:SelectTemplate|1%, %selectedTemplate%))",
+            "templateType": "=%TemplateType%",
+            "useTemplateDRExtract": "=\"Yes\""
+        },
+        "label": "%vlocity_namespace%__CMEXSetValSetGenerationOptions",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/SetVal_SetGenerationOptions"
+}

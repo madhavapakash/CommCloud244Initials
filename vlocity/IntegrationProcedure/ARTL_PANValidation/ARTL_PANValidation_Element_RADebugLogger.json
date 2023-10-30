@@ -1,0 +1,52 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RADebugLogger",
+    "OmniProcessId": {
+        "Name": "PANValidation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/PANValidation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "logData:request:apiKey": "=%apiKey%",
+            "logData:request:endpoint": "=%endpoint%",
+            "logData:request:namedCredentials": "=%namedCredentials%",
+            "logData:request:panNumber": "=IF(%SV3:eventType% == \"Update\" , %DRFetchPANPayload:pan% , IF(%SV3:eventType% == \"Create\" , %pan% ,null))",
+            "name": "=\"PANValidation\"",
+            "type": "=\"Integration Procedure\""
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "ARTL_OmniActionUtil",
+        "remoteMethod": "logDebug",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/PANValidation/Procedure/RADebugLogger"
+}

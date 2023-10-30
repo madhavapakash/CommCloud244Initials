@@ -1,0 +1,184 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "StartAsyncJobForQuote",
+    "OmniProcessId": {
+        "Name": "CPQ_StartBulkReplace",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/StartBulkReplace/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "additionalData": {
+                "accountId": "%accountId%",
+                "assetIds": "%assetIds%",
+                "cartConfiguration": "%cartConfiguration%",
+                "cartGroupId": "%cartGroupId%",
+                "cartId": "%cartId%",
+                "cartType": "%cartType%",
+                "groupCartId": "%groupCartId%",
+                "targetOfferId": "%targetOfferId%",
+                "userID": "%SetUserId:userID%",
+                "userIntent": "%userIntent%"
+            },
+            "asyncProcessName": "%SetUserId:asyncProcessName%",
+            "asyncProcessSteps": [
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 2,
+                            "name": "CPQ_CreateAssetizedQuoteLineItem",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "CPQ_CreateLineItemsFinishProcessForReplaceOffer",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetAssetsFromGroupCart",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Create Line Items"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 5,
+                            "name": "CPQ_ExecuteReplaceOffer",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "CPQ_BulkReplaceFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetLineItemSFIdsUsingAssetIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Bulk Replace"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 1,
+                            "name": "CPQ_ApplyConfigurations",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "CPQ_BulkApplyConfigFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetReplacedLineItemIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Apply Configurations"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 10,
+                            "name": "CPQ_UpdateCartGroupIds",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "CPQ_BulkUpdateCartGroupIdsFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetLineItemSFIdsUsingAssetIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Update Quote Group Ids"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 10,
+                            "name": "CPQ_ValidateLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "name": "CPQ_ValidateLineItemsFinishProcess",
+                            "type": "Integration Procedure"
+                        },
+                        "startProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_GetRootLineItemIds",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Validate"
+                },
+                {
+                    "asyncJobDetails": {
+                        "executeProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "executeAsyncJobsInSequence": true,
+                            "itemsToProcessPerAsyncJob": 10,
+                            "name": "CPQ_PriceLineItems",
+                            "type": "Integration Procedure"
+                        },
+                        "finishProcess": {
+                            "asyncJobNumberOfRetriesOnFail": 0,
+                            "name": "CPQ_PriceLineItemsFinishProcess",
+                            "type": "Integration Procedure"
+                        }
+                    },
+                    "stepName": "Price"
+                }
+            ],
+            "referenceId": "%cartId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%cartType% == 'Quote'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "VOIAsyncProcess",
+        "remoteMethod": "startAsyncJob",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/StartBulkReplace/Procedure/StartAsyncJobForQuote"
+}

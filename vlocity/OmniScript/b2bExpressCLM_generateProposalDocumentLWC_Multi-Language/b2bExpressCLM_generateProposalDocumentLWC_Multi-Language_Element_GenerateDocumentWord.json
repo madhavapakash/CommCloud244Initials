@@ -1,0 +1,59 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "context-id -- SObjectId like QuoteId, OpportunityId,OrderId & ContractId\nselected-template -- selected Template JSON node from previous step. \ndebug -- optional for debugging\ndocument-title  -- Overrides the Default Document Name/Title of your document",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GenerateDocumentWord",
+    "OmniProcessId": {
+        "Name": "generateProposalDocument (LWC)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GenerateDocument",
+        "OmniProcessId": {
+            "Name": "generateProposalDocument (LWC)",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/GenerateDocument",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GenerateDocument",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "context-id",
+                "source": "%objectId%"
+            },
+            {
+                "name": "selected-template",
+                "source": "%selectedTemplate%"
+            },
+            {
+                "name": "debug",
+                "source": "false"
+            },
+            {
+                "name": "document-title",
+                "source": "Proposal Document"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": "%vlocity_namespace%__CMEXGenerateDocWord",
+        "lwcName": "%vlocity_namespace%__clmOsDocxGenerateWordDocument",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/b2bExpressCLM/generateProposalDocumentLWC/Multi-Language/GenerateDocumentWord"
+}

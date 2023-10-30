@@ -1,0 +1,92 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateMasterOrder",
+    "OmniProcessId": {
+        "Name": "ESMSalesOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateSalesOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IfNoMasterOrder",
+        "OmniProcessId": {
+            "Name": "ESMSalesOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/CreateSalesOrder/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateSalesOrder/Procedure/IfNoMasterOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IfNoMasterOrder",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "fields": "Id",
+            "inputFields": [
+                {
+                    "effectivedate": "%SVForMasterOrder:Today%"
+                },
+                {
+                    "status": "%SVForMasterOrder:Status%"
+                },
+                {
+                    "RecordTypeId": "%RecordTypes:MasterOrderRecordTypeId%"
+                },
+                {
+                    "%vlocity_namespace%__QuoteId__c": "%SVForMasterOrder:QuoteId%"
+                },
+                {
+                    "%vlocity_namespace%__DefaultServiceAccountId__c": "%Source:%vlocity_namespace%__DefaultServiceAccountId__c%"
+                },
+                {
+                    "%vlocity_namespace%__DefaultBillingAccountId__c": "%Source:%vlocity_namespace%__DefaultBillingAccountId__c%"
+                },
+                {
+                    "AccountId": "%Source:AccountId%"
+                },
+                {
+                    "%vlocity_namespace%__EnterpriseOrderId__c": "%SVForMasterOrder:EnterpriseOrderId%"
+                }
+            ],
+            "methodName": "createCart",
+            "objectType": "Order",
+            "subaction": "createOrder"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "extraPayload": {
+        },
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "createCart",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/CreateSalesOrder/Procedure/CreateMasterOrder"
+}

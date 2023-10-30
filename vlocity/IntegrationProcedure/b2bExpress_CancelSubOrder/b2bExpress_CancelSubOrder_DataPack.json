@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_CancelSubOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CancelSubOrder",
+    "OmniProcessElement": [
+        "b2bExpress_CancelSubOrder_Element_Prevalidate.json",
+        "b2bExpress_CancelSubOrder_Element_CreateSupplementalOrder.json",
+        "b2bExpress_CancelSubOrder_Element_checkout.json",
+        "b2bExpress_CancelSubOrder_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "b2bExpress_CancelSubOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_CancelSubOrder_PropertySetConfig.json",
+    "SubType": "CancelSubOrder",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/CancelSubOrder/Procedure",
+    "WebComponentKey": "b0441edb-42af-9078-089b-f0b23b562dba"
+}

@@ -1,0 +1,26 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_GetAssets_SampleInput.json",
+    "Description": "This Integration procedure gives the asset list information with pagination details and the total number of assets based on the query. It also supports search, filter, sort, and group by features.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetAssets",
+    "OmniProcessElement": [
+        "ESM_GetAssets_Element_getAssets.json",
+        "ESM_GetAssets_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_GetAssets",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_GetAssets_PropertySetConfig.json",
+    "SubType": "GetAssets",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/GetAssets/Procedure",
+    "WebComponentKey": "66db99b1-dc00-f2a3-0c63-bce7d66b951b"
+}

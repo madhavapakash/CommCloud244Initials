@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "MultiSite_CreateMasterOrder_SampleInput.json",
+    "Description": "This IP is used to created a new Master Order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "MultiSiteCreateMasterOrder",
+    "OmniProcessElement": [
+        "MultiSite_CreateMasterOrder_Element_CreateMasterOrderInput.json",
+        "MultiSite_CreateMasterOrder_Element_EmptyConditionalCheckBlock.json",
+        "MultiSite_CreateMasterOrder_Element_EmptyInputResponse.json",
+        "MultiSite_CreateMasterOrder_Element_ApexRemoteCall.json",
+        "MultiSite_CreateMasterOrder_Element_RemoteCallResponse.json"
+    ],
+    "OmniProcessKey": "MultiSite_CreateMasterOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_CreateMasterOrder_PropertySetConfig.json",
+    "SubType": "CreateMasterOrder",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/CreateMasterOrder/Procedure",
+    "WebComponentKey": "71d74950-f10c-c4b5-29d1-1588e574d42e"
+}

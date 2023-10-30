@@ -1,0 +1,34 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "MemberFieldMapping",
+    "OmniProcessId": {
+        "Name": "CheckServiceQualificationV2",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ESM/checkServiceQualificationV2/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BroadcastConnectiontype": "%vlocity_namespace%__BroadbandConnectionType__c",
+            "BroadcastQuality": "%vlocity_namespace%__BroadbandConnectionType__c",
+            "downstreamSpeed": "%vlocity_namespace%__MaxDownloadSpeed__c",
+            "upstreamSpeed": "%vlocity_namespace%__MaxUploadSpeed__c"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ESM/checkServiceQualificationV2/Procedure/MemberFieldMapping"
+}

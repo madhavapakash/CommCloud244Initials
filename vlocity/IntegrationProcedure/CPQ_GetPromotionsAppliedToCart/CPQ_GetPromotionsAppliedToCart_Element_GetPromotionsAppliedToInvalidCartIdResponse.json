@@ -1,0 +1,38 @@
+{
+    "CurrencyIsoCode": "INR",
+    "Description": "1. If there are no promotions applied to a cart\n2. Invalid CartId.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetPromotionsAppliedToInvalidCartIdResponse",
+    "OmniProcessId": {
+        "Name": "CPQGetPromotionsAppliedToCart",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetPromotionsAppliedToCart/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "response:records": "%GetPromotionsAppliedToCartRemoteAction%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetPromotionsAppliedToCartRemoteAction:totalSize% == 0",
+        "label": "ResponseAction3",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetPromotionsAppliedToCart/Procedure/GetPromotionsAppliedToInvalidCartIdResponse"
+}

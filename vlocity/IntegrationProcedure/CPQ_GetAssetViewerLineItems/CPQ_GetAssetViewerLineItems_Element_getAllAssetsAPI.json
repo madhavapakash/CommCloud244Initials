@@ -1,0 +1,54 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "getAllAssetsAPI",
+    "OmniProcessId": {
+        "Name": "Get Asset Viewer Line Items",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetAssetViewerLineItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "currentPage": "%currentPage%",
+            "fields": "%vlocity_namespace%__OrderProductId__c,Description,%vlocity_namespace%__OneTimeTotal__c,Status,%vlocity_namespace%__EffectiveOneTimeTotal__c,%vlocity_namespace%__ServiceAccountId__r.Name,%vlocity_namespace%__RecurringCharge__c,Product2.%vlocity_namespace%__VersionLabel__c",
+            "filters": "AccountId:%accountId%%filterString%",
+            "offsetSize": "%offset%",
+            "pagesize": "%pagesize%",
+            "promotionCondition": "=CONCAT('(AppliedPromotionId__r.CancellationDate__c  = null OR AppliedPromotionId__r.CancellationDate__c > ',%SetAPIValues:DateTimeNow%,')')",
+            "query": "%query%",
+            "searchBy": "%searchBy%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "getAllAssets",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetAssetViewerLineItems/Procedure/getAllAssetsAPI"
+}

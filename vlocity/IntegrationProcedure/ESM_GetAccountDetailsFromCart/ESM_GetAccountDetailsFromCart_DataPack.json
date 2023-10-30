@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_GetAccountDetailsFromCart_SampleInput.json",
+    "Description": "This IP is used to get the account details from cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetAccountDetailsFromCart",
+    "OmniProcessElement": [
+        "ESM_GetAccountDetailsFromCart_Element_GetAccountDetailsFromQuoteCart.json",
+        "ESM_GetAccountDetailsFromCart_Element_GetAccountDetailsFromOrderCart.json",
+        "ESM_GetAccountDetailsFromCart_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ESM_GetAccountDetailsFromCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_GetAccountDetailsFromCart_PropertySetConfig.json",
+    "SubType": "GetAccountDetailsFromCart",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/GetAccountDetailsFromCart/Procedure",
+    "WebComponentKey": "7019365a-ef6f-f410-1ba2-556f43114b03"
+}

@@ -1,0 +1,29 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "CPQ_CreateGroupsExecuteProcess_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_CreateGroupsExecuteProcess",
+    "OmniProcessElement": [
+        "CPQ_CreateGroupsExecuteProcess_Element_SetValues.json",
+        "CPQ_CreateGroupsExecuteProcess_Element_CpqGetProductsFromAssets.json",
+        "CPQ_CreateGroupsExecuteProcess_Element_GetGroupsToBeCreated.json",
+        "CPQ_CreateGroupsExecuteProcess_Element_CreateGroups.json",
+        "CPQ_CreateGroupsExecuteProcess_Element_FailureResponseAction.json",
+        "CPQ_CreateGroupsExecuteProcess_Element_successResponseAction.json"
+    ],
+    "OmniProcessKey": "CPQ_CreateGroupsExecuteProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_CreateGroupsExecuteProcess_PropertySetConfig.json",
+    "SubType": "CreateGroupsExecuteProcess",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/CreateGroupsExecuteProcess/Procedure",
+    "WebComponentKey": "6ea44649-3335-6485-f065-5e70eda6f036"
+}

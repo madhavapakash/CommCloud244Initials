@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_CreateSubOrders_SampleInput.json",
+    "Description": "This VIP is used to create sub orders for members and groups. Change the field mappings from Member to Service Account in MemberToServiceAccount component.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateSubOrders",
+    "OmniProcessElement": [
+        "ESM_CreateSubOrders_Element_FieldMappings.json",
+        "ESM_CreateSubOrders_Element_MemberToServiceAccount.json",
+        "ESM_CreateSubOrders_Element_SearchOrCreateServiceAccount.json",
+        "ESM_CreateSubOrders_Element_CreateSubOrder.json",
+        "ESM_CreateSubOrders_Element_UpdateQuantity.json",
+        "ESM_CreateSubOrders_Element_SubOrderCreated.json"
+    ],
+    "OmniProcessKey": "ESM_CreateSubOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CreateSubOrders_PropertySetConfig.json",
+    "SubType": "CreateSubOrders",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateSubOrders/Procedure",
+    "WebComponentKey": "7d54c9c7-1d67-d7e0-bc5d-527389cd1db2"
+}

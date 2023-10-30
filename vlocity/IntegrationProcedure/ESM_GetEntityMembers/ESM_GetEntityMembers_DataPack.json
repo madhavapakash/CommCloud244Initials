@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_GetEntityMembers_SampleInput.json",
+    "Description": "Used to query members records for a given quote or order cart Id. The IP also accepts offset, searchByFields, searchText, sortByField and sortDirection as parameters.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESM_GetEntityMembers",
+    "OmniProcessElement": [
+        "ESM_GetEntityMembers_Element_getQuoteMembers.json",
+        "ESM_GetEntityMembers_Element_getOrderMembers.json",
+        "ESM_GetEntityMembers_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_GetEntityMembers",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_GetEntityMembers_PropertySetConfig.json",
+    "SubType": "GetEntityMembers",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/GetEntityMembers/Procedure",
+    "WebComponentKey": "50e87a9d-327a-9bb0-72a3-c38bda070f4f"
+}

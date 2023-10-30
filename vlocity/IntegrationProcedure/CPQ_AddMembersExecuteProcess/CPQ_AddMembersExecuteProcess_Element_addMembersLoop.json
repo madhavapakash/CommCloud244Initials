@@ -1,0 +1,28 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "addMembersLoop",
+    "OmniProcessId": {
+        "Name": "CPQ_AddMembersExecuteProcess",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AddMembersExecuteProcess/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock1",
+        "loopList": "ConsolidateProductData:productBundles",
+        "loopOutput": {
+            "AddMembersToGroupOP": "%AddMembersToGroup%",
+            "GetMemberIdsFromAssetIdsOP": "%GetMemberIdsFromAssetIds%",
+            "GroupAssetsByMembersOP": "%GroupAssetsByMembers%"
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AddMembersExecuteProcess/Procedure/addMembersLoop"
+}

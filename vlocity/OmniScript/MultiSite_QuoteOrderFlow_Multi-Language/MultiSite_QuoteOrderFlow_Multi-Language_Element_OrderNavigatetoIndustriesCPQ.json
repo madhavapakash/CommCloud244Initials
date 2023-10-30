@@ -1,0 +1,61 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderNavigatetoIndustriesCPQ",
+    "OmniProcessId": {
+        "Name": "MultiSite Quote Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": null,
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Order",
+                        "field": "type"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "no",
+                        "field": "CreateGroupNowOrder"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%MasterQuoteOrderId%",
+        "targetLWC": "c:CPQMultisiteConfiguratorMultiLanguage",
+        "targetLWCLayout": "lightning",
+        "targetLWCParams": "c__parentId=%OpportunityId%&c__recordType=%OrderRecordType%&selectedTypes=%MultiSiteObjectsOrder:multiSiteObjects:multiSiteObjectsList%",
+        "targetName": "Order",
+        "targetType": "Record",
+        "targetUrl": "/lightning/app/c__Industries_CPQ/r/%MasterQuoteOrderId%/view",
+        "validationRequired": "none",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/QuoteOrderFlow/Multi-Language/OrderNavigatetoIndustriesCPQ"
+}

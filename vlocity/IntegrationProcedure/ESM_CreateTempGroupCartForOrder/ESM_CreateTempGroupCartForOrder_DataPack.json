@@ -1,0 +1,33 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ESM_CreateTempGroupCartForOrder_SampleInput.json",
+    "Description": "The VIP is to create Group Cart and add product to on Group Cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ESMCreateTempGroupCartForOrder",
+    "OmniProcessElement": [
+        "ESM_CreateTempGroupCartForOrder_Element_SVForOrderWorkingCart.json",
+        "ESM_CreateTempGroupCartForOrder_Element_getSalesCartDetails.json",
+        "ESM_CreateTempGroupCartForOrder_Element_RecordTypeCB.json",
+        "ESM_CreateTempGroupCartForOrder_Element_SVRecordType.json",
+        "ESM_CreateTempGroupCartForOrder_Element_GetRecordTypeId.json",
+        "ESM_CreateTempGroupCartForOrder_Element_CreateTempGroupCart.json",
+        "ESM_CreateTempGroupCartForOrder_Element_GetPriceBookIDFromProduct.json",
+        "ESM_CreateTempGroupCartForOrder_Element_PostCartItem.json",
+        "ESM_CreateTempGroupCartForOrder_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ESM_CreateTempGroupCartForOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ESM_CreateTempGroupCartForOrder_PropertySetConfig.json",
+    "SubType": "CreateTempGroupCartForOrder",
+    "Type": "ESM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ESM/CreateTempGroupCartForOrder/Procedure",
+    "WebComponentKey": "b3efa277-d155-3132-029e-00a1562bc3c0"
+}

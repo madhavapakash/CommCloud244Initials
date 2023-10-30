@@ -1,0 +1,39 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateMasterOrderInput",
+    "OmniProcessId": {
+        "Name": "MultiSiteCreateMasterOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/MultiSite/CreateMasterOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AccountId": "%AccountId%",
+            "EffectiveDate": "%EffectiveDate%",
+            "Name": "%Name%",
+            "OpportunityId": "%OpportunityId%",
+            "PriceListName": "%PriceListName%",
+            "Pricebook2Id": "%Pricebook2Id%",
+            "Status": "Draft",
+            "objectType": "Order",
+            "recordType": "%recordType%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/MultiSite/CreateMasterOrder/Procedure/CreateMasterOrderInput"
+}

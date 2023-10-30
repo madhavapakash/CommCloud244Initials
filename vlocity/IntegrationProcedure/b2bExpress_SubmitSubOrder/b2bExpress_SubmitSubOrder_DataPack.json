@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "b2bExpress_SubmitSubOrder_SampleInput.json",
+    "Description": "The IP is used to submit order. You can enable either CPQ or OM flow by enabling/disabling CreateAssetFlow-CPQ or CreateAssetFlow-OM.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SubmitSubOrder",
+    "OmniProcessElement": [
+        "b2bExpress_SubmitSubOrder_Element_CreateAssetsFlow-CPQ.json",
+        "b2bExpress_SubmitSubOrder_Element_CreateAssetsFlow-OM.json",
+        "b2bExpress_SubmitSubOrder_Element_SetCreateAssetsValue.json",
+        "b2bExpress_SubmitSubOrder_Element_canSubmitOrder.json",
+        "b2bExpress_SubmitSubOrder_Element_CheckoutWithCPQ.json",
+        "b2bExpress_SubmitSubOrder_Element_DecomposeAndSubmit.json",
+        "b2bExpress_SubmitSubOrder_Element_Set-Response.json"
+    ],
+    "OmniProcessKey": "b2bExpress_SubmitSubOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "b2bExpress_SubmitSubOrder_PropertySetConfig.json",
+    "SubType": "SubmitSubOrder",
+    "Type": "b2bExpress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/b2bExpress/SubmitSubOrder/Procedure",
+    "WebComponentKey": "1149934d-6bdf-2d42-af93-52fd115f1c30"
+}
