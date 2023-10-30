@@ -1,0 +1,64 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(PreviousMemberCount = null, CartItems:Quantity * MemberCount, (CartItems:Quantity / PreviousMemberCount) * MemberCount)",
+        "FormulaResultPath": "CartItems:FinalQuantity",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMUpdateOrderLineItemsQuantityCustoma00Dn000006c4cLIAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMUpdateOrderLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMUpdateOrderLineItemsQuantityCustoma00Dn000006c4cLIAQItem2",
+        "InputFieldName": "CartItems:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "ESMUpdateOrderLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMUpdateOrderLineItemsQuantityCustoma00Dn000006c4cLIAQItem1",
+        "InputFieldName": "CartItems:FinalQuantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMUpdateOrderLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quantity",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

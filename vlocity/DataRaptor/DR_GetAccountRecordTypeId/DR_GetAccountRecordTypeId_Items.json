@@ -1,0 +1,92 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "RecordType",
+        "GlobalKey": "DR_GetAccountRecordTypeIdCustom199",
+        "InputFieldName": "DeveloperName",
+        "InputObjectName": "RecordType",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetAccountRecordTypeId",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetAccountRecordTypeId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetAccountRecordTypeId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Account'",
+        "GlobalKey": "DR_GetAccountRecordTypeIdCustom5845",
+        "InputFieldName": "SobjectType",
+        "InputObjectName": "RecordType",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetAccountRecordTypeId",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetAccountRecordTypeId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetAccountRecordTypeId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_GetAccountRecordTypeIdCustom6279",
+        "InputFieldName": "RecordType:DeveloperName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetAccountRecordTypeId",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetAccountRecordTypeId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetAccountRecordTypeId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_GetAccountRecordTypeIdCustom4738",
+        "InputFieldName": "RecordType:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetAccountRecordTypeId",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetAccountRecordTypeId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetAccountRecordTypeId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

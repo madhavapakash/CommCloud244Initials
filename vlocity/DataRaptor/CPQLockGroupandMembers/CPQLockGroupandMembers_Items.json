@@ -1,0 +1,164 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "$Vlocity.UserId",
+        "GlobalKey": "CPQ - Lock Group and Members08840981634353673",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__LockedBy__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Order Submitted",
+        "GlobalKey": "CPQ - Lock Group and Members7367608051680545",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__LockedFor__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ - Lock Group and Members5462598958578779",
+        "InputFieldName": "members:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CPQ - Lock Group and Members24871397555136898",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "$Vlocity.UserId",
+        "GlobalKey": "CPQ - Lock Group and Members004306049145886615",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__LockedBy__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Order Submitted",
+        "GlobalKey": "CPQ - Lock Group and Members9732145894444448",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__LockedFor__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ - Lock Group and Members37207563570428825",
+        "InputFieldName": "groups:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CPQ - Lock Group and Members28486949189166966",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CPQLockGroupandMembers",
+        "OmniDataTransformationId": {
+            "Name": "CPQLockGroupandMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQLockGroupandMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

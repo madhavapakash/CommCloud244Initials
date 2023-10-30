@@ -1,0 +1,43 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "POC_DRL_CreateAccountCustom5044",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "POC_DRL_CreateAccount",
+        "OmniDataTransformationId": {
+            "Name": "POC_DRL_CreateAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/POC_DRL_CreateAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "POC_DRL_CreateAccountCustom239",
+        "InputFieldName": "Step1:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "POC_DRL_CreateAccount",
+        "OmniDataTransformationId": {
+            "Name": "POC_DRL_CreateAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/POC_DRL_CreateAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

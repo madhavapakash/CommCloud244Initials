@@ -1,0 +1,113 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "assetId",
+        "GlobalKey": "GetAccountFromAssetCustom6964",
+        "InputFieldName": "Id",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountFromAsset",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountFromAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountFromAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "asset:AccountId",
+        "GlobalKey": "GetAccountFromAssetCustom9087",
+        "InputFieldName": "Id",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountFromAsset",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountFromAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountFromAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetAccountFromAssetCustom9830",
+        "InputFieldName": "account:BillingAddress",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountFromAsset",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountFromAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountFromAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetAccount:BillingAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetAccountFromAssetCustom9608",
+        "InputFieldName": "account:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountFromAsset",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountFromAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountFromAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetAccount:Id",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetAccountFromAssetCustom6633",
+        "InputFieldName": "account:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountFromAsset",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountFromAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountFromAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetAccount:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

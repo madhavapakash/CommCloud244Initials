@@ -1,0 +1,67 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteId",
+        "GlobalKey": "GetQuoteGroupIdsCustom9748",
+        "InputFieldName": "%vlocity_namespace%__QuoteId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteGroup__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteGroupIds",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetQuoteGroupIdsCustom8291",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "Ids",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetQuoteGroupIdsCustom3998",
+        "InputFieldName": "QuoteGroupIds:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Ids:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

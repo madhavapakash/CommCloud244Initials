@@ -1,0 +1,37 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction2",
+    "OmniProcessId": {
+        "Name": "BulkUploadGeneric",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/BulkUploadGeneric/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "success": "=%DataRaptorPostAction1:error%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction2",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "errorRecords",
+        "sendJSONPath": "SetValues3:errorRecords",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/BulkUploadGeneric/Procedure/ResponseAction2"
+}

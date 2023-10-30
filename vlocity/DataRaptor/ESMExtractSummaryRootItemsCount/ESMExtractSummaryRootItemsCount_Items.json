@@ -1,0 +1,44 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "COUNTQUERY ( \"SELECT COUNT() FROM QuoteLineItem WHERE QuoteId = '{0}' and %vlocity_namespace%__ParentItemId__c = NULL\" , quoteId )",
+        "FormulaResultPath": "count",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMExtractSummaryRootItemsCount8078097132774467",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractSummaryRootItemsCount",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractSummaryRootItemsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractSummaryRootItemsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMExtractSummaryRootItemsCount7102399317085522",
+        "InputFieldName": "count",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractSummaryRootItemsCount",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractSummaryRootItemsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractSummaryRootItemsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "count",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

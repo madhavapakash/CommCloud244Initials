@@ -1,0 +1,45 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "SPLIT(Members:%vlocity_namespace%__SelectedAssetIds__c,',')",
+        "FormulaResultPath": "Members:%vlocity_namespace%__SelectedAssetIds",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ_CreateSelectedAssetIdsListCustom4499",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQ_CreateSelectedAssetIdsList",
+        "OmniDataTransformationId": {
+            "Name": "CPQ_CreateSelectedAssetIdsList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQ_CreateSelectedAssetIdsList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ_CreateSelectedAssetIdsListCustom3690",
+        "InputFieldName": "Members:%vlocity_namespace%__SelectedAssetIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQ_CreateSelectedAssetIdsList",
+        "OmniDataTransformationId": {
+            "Name": "CPQ_CreateSelectedAssetIdsList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQ_CreateSelectedAssetIdsList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<String>",
+        "OutputFieldName": "Members:SelectedAssetIds",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

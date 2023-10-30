@@ -1,0 +1,119 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "opportunityId",
+        "GlobalKey": "MultiService - Load Enterprise Quotes4877419426270244",
+        "InputFieldName": "OpportunityId",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Enterprise Quotes",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Enterprise Quotes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Enterprise Quotes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "recordTypeNames:name",
+        "GlobalKey": "MultiService - Load Enterprise Quotes10124780944049827",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Enterprise Quotes",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Enterprise Quotes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Enterprise Quotes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "sobjectName",
+        "GlobalKey": "MultiService - Load Enterprise Quotes7314033350172235",
+        "InputFieldName": "RecrordType.SobjectType",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Enterprise Quotes",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Enterprise Quotes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Enterprise Quotes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Enterprise Quotes9934061004784247",
+        "InputFieldName": "Quote:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Enterprise Quotes",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Enterprise Quotes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Enterprise Quotes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Enterprise Quotes449863578353898",
+        "InputFieldName": "Quote:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Enterprise Quotes",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Enterprise Quotes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Enterprise Quotes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

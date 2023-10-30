@@ -1,0 +1,88 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "null",
+        "GlobalKey": "UpdateMemberOrGroupQLICustoma1V3g000000elQOEAYItem1",
+        "InputFieldName": "GroupId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateMemberOrGroupQLI",
+        "OmniDataTransformationId": {
+            "Name": "UpdateMemberOrGroupQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateMemberOrGroupQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__QuoteGroupId__c",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "null",
+        "GlobalKey": "UpdateMemberOrGroupQLICustoma1V3g000000elQOEAYItem2",
+        "InputFieldName": "MemberId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateMemberOrGroupQLI",
+        "OmniDataTransformationId": {
+            "Name": "UpdateMemberOrGroupQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateMemberOrGroupQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__c",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "UpdateMemberOrGroupQLICustoma1V3g000000elQOEAYItem3",
+        "InputFieldName": "AllRootItems:QLI:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "UpdateMemberOrGroupQLI",
+        "OmniDataTransformationId": {
+            "Name": "UpdateMemberOrGroupQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateMemberOrGroupQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateMemberOrGroupQLICustoma1V3g000000elQOEAYItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateMemberOrGroupQLI",
+        "OmniDataTransformationId": {
+            "Name": "UpdateMemberOrGroupQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateMemberOrGroupQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

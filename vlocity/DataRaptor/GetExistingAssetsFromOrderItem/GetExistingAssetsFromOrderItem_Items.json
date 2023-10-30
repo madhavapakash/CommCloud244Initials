@@ -1,0 +1,96 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "IN",
+        "FilterValue": "AssetIds",
+        "GlobalKey": "GetExistingAssetsFromOrderItemCustom8494",
+        "InputFieldName": "%vlocity_namespace%__AssetId__c",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetExistingAssetsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetExistingAssetsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetExistingAssetsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "existingAssetIds",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderId",
+        "GlobalKey": "GetExistingAssetsFromOrderItemCustom3575",
+        "InputFieldName": "OrderId",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetExistingAssetsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetExistingAssetsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetExistingAssetsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "existingAssetIds",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetExistingAssetsFromOrderItemCustom7071",
+        "InputFieldName": "%vlocity_namespace%__AssetId__c",
+        "InputObjectName": "OrderItem",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetExistingAssetsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetExistingAssetsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetExistingAssetsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "existingAssetIds",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetExistingAssetsFromOrderItemCustom4214",
+        "InputFieldName": "%vlocity_namespace%__AssetId__r.Name",
+        "InputObjectName": "OrderItem",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetExistingAssetsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetExistingAssetsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetExistingAssetsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "existingAssetIds",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

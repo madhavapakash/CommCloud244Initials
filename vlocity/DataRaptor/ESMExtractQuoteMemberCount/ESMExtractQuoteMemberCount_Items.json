@@ -1,0 +1,86 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "COUNTQUERY ( \"SELECT COUNT() FROM \t%vlocity_namespace%__QuoteMember__c WHERE \t%vlocity_namespace%__QuoteId__c = '{0}' and %vlocity_namespace%__MemberType__c ='Location'\", quoteId )",
+        "FormulaResultPath": "locationCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMExtractQuoteMemberCountCustom7861",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractQuoteMemberCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractQuoteMemberCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "COUNTQUERY ( \"SELECT COUNT() FROM \t%vlocity_namespace%__QuoteMember__c WHERE \t%vlocity_namespace%__QuoteId__c = '{0}' and %vlocity_namespace%__MemberType__c ='Subscriber'\", quoteId )",
+        "FormulaResultPath": "subscriberCount",
+        "FormulaSequence": 2,
+        "GlobalKey": "ESMExtractQuoteMemberCountCustom4824",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractQuoteMemberCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractQuoteMemberCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMExtractQuoteMemberCountCustom5055",
+        "InputFieldName": "locationCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractQuoteMemberCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractQuoteMemberCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "locationCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMExtractQuoteMemberCountCustom8854",
+        "InputFieldName": "subscriberCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractQuoteMemberCount",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractQuoteMemberCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractQuoteMemberCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "subscriberCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

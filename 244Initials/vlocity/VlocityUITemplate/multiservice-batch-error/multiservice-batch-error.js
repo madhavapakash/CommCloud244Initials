@@ -1,1 +1,0 @@
-vlocity.cardframework.registerModule.controller('BatchErrorController', ['$scope',function($scope) {}]);

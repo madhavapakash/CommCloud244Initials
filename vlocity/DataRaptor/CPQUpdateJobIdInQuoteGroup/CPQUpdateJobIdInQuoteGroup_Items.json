@@ -1,0 +1,65 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-UpdateJobIdInQuoteGroupCustoma005g000031CV3SAAWItem1",
+        "InputFieldName": "asyncProcessId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQUpdateJobIdInQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "CPQUpdateJobIdInQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQUpdateJobIdInQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__AsyncJobId__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-UpdateJobIdInQuoteGroupCustoma005g000031CV3SAAWItem2",
+        "InputFieldName": "Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQUpdateJobIdInQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "CPQUpdateJobIdInQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQUpdateJobIdInQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CPQ-UpdateJobIdInQuoteGroupCustoma005g000031CV3SAAWItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CPQUpdateJobIdInQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "CPQUpdateJobIdInQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQUpdateJobIdInQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,142 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "SOMOrder",
+        "GlobalKey": "ARTL_DR_getOrderCustom1607",
+        "InputFieldName": "ARTL_SOMOrderId__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_getOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_getOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_getOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Order:%vlocity_namespace%__QuoteId__c",
+        "GlobalKey": "ARTL_DR_getOrderCustom4605",
+        "InputFieldName": "Id",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_getOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_getOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_getOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "\"$Vlocity.NULL\"",
+        "GlobalKey": "ARTL_DR_getOrderCustom8948",
+        "InputFieldName": "%vlocity_namespace%__ParentItemId__c",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_getOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_getOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_getOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Order:Id",
+        "GlobalKey": "ARTL_DR_getOrderCustom7476",
+        "InputFieldName": "OrderId",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_getOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_getOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_getOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_getOrderCustom871",
+        "InputFieldName": "Quote:PM__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_getOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_getOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_getOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PM",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_getOrderCustom8541",
+        "InputFieldName": "OrderItem:ARTL_QuoteLineItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_getOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_getOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_getOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

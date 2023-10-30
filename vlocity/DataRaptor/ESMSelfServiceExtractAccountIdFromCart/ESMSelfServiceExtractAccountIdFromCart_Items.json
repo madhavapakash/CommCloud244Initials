@@ -1,0 +1,47 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "orderId",
+        "GlobalKey": "ESMSelfServiceExtractAccountIdFromCartCustoma1h8Z000003fWFOQA2Item0",
+        "InputFieldName": "Id",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceExtractAccountIdFromCart",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceExtractAccountIdFromCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceExtractAccountIdFromCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceExtractAccountIdFromCartCustoma1h8Z000003fWFOQA2Item2",
+        "InputFieldName": "Order:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceExtractAccountIdFromCart",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceExtractAccountIdFromCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceExtractAccountIdFromCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "accountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

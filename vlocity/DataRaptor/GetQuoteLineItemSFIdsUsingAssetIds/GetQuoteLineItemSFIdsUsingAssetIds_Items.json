@@ -1,0 +1,98 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "assetIds:Id",
+        "GlobalKey": "GetQuoteLineItemSFIdsUsingAssetIdsCustoma005f000003VS4VAAWItem0",
+        "InputFieldName": "%vlocity_namespace%__AssetId__c",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "item",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "cartId",
+        "GlobalKey": "GetQuoteLineItemSFIdsUsingAssetIdsCustoma005f000003VS4VAAWItem1",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "item",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "assetIds:Id",
+        "GlobalKey": "GetQuoteLineItemSFIdsUsingAssetIdsCustoma005f000003VS4VAAWItem2",
+        "InputFieldName": "%vlocity_namespace%__AssetReferenceId__c",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "item",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetQuoteLineItemSFIdsUsingAssetIdsCustoma005f000003VS4VAAWItem3",
+        "InputFieldName": "item:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteLineItemSFIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "allRoots:RootId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

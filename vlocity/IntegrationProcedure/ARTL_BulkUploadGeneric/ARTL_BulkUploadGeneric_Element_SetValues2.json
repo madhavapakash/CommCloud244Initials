@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetValues2",
+    "OmniProcessId": {
+        "Name": "BulkUploadGeneric",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/BulkUploadGeneric/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "dataUpdate": "=LISTMERGE('Account Name',LIST(%data%),LIST(%DataRaptorExtractAction1%))"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/BulkUploadGeneric/Procedure/SetValues2"
+}

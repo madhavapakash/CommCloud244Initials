@@ -1,0 +1,91 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteId",
+        "GlobalKey": "B2BGetRootLineItemsForQuoteCustom131",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BGetRootLineItemsForQuote",
+        "OmniDataTransformationId": {
+            "Name": "B2BGetRootLineItemsForQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BGetRootLineItemsForQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "B2BGetRootLineItemsForQuoteCustom1748",
+        "InputFieldName": "%vlocity_namespace%__QuoteGroupId__c",
+        "InputObjectName": "QuoteLineItem",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BGetRootLineItemsForQuote",
+        "OmniDataTransformationId": {
+            "Name": "B2BGetRootLineItemsForQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BGetRootLineItemsForQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "B2BGetRootLineItemsForQuoteCustom7112",
+        "InputFieldName": "%vlocity_namespace%__QuoteMemberId__c",
+        "InputObjectName": "QuoteLineItem",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BGetRootLineItemsForQuote",
+        "OmniDataTransformationId": {
+            "Name": "B2BGetRootLineItemsForQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BGetRootLineItemsForQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "B2BGetRootLineItemsForQuoteCustom7605",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BGetRootLineItemsForQuote",
+        "OmniDataTransformationId": {
+            "Name": "B2BGetRootLineItemsForQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BGetRootLineItemsForQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

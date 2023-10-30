@@ -1,0 +1,107 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "ARTL_DRE_FetchContactDetailsCustom1123",
+        "InputFieldName": "Id",
+        "InputObjectName": "Contact",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchContactDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchContactDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contact",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchContactDetailsCustom6162",
+        "InputFieldName": "Contact:MobilePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchContactDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchContactDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContactMobilePhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchContactDetailsCustom2124",
+        "InputFieldName": "Contact:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchContactDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchContactDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContactName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchContactDetailsCustom2609",
+        "InputFieldName": "Contact:Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchContactDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchContactDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContactPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchContactDetailsCustom3173",
+        "InputFieldName": "Contact:Country_Code__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchContactDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchContactDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CountryCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

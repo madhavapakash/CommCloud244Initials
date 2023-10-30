@@ -1,0 +1,170 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "quoteId",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom6236",
+        "InputFieldName": "Id",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "effectiveDate",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom467",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom7998",
+        "InputFieldName": "Quote:%vlocity_namespace%__PriceListId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__PriceListId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom7662",
+        "InputFieldName": "quoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__quoteid__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom8096",
+        "InputFieldName": "Quote:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "accountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom7491",
+        "InputFieldName": "effectiveDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "effectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "MasterOrder",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom5927",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "recordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Draft",
+        "GlobalKey": "CPQ-QuoteToMasterOrderRequestCustom7766",
+        "InputFieldName": "`",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQQuoteToMasterOrderRequest",
+        "OmniDataTransformationId": {
+            "Name": "CPQQuoteToMasterOrderRequest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQQuoteToMasterOrderRequest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

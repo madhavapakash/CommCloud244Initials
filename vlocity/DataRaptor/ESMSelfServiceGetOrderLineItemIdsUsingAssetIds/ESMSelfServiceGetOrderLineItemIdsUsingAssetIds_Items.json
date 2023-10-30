@@ -1,0 +1,98 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "assetIds:Id",
+        "GlobalKey": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIdsCustoma1h8Z000003fWO3QAMItem0",
+        "InputFieldName": "%vlocity_namespace%__AssetId__c",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "item",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "cartId",
+        "GlobalKey": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIdsCustoma1h8Z000003fWO3QAMItem1",
+        "InputFieldName": "OrderId",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "item",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "assetIds:Id",
+        "GlobalKey": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIdsCustoma1h8Z000003fWO3QAMItem2",
+        "InputFieldName": "%vlocity_namespace%__AssetReferenceId__c",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "item",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIdsCustoma1h8Z000003fWO3QAMItem3",
+        "InputFieldName": "item:%vlocity_namespace%__RootItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetOrderLineItemIdsUsingAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "allRoots:RootId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

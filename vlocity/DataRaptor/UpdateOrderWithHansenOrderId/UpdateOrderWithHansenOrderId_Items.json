@@ -1,0 +1,63 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "UpdateOrderWithHansenOrderIdCustom1983",
+        "InputFieldName": "hansenOrderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateOrderWithHansenOrderId",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderWithHansenOrderId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderWithHansenOrderId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_SOMOrderId__c",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "UpdateOrderWithHansenOrderIdCustom1872",
+        "InputFieldName": "orderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "UpdateOrderWithHansenOrderId",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderWithHansenOrderId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderWithHansenOrderId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateOrderWithHansenOrderIdCustom7785",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateOrderWithHansenOrderId",
+        "OmniDataTransformationId": {
+            "Name": "UpdateOrderWithHansenOrderId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateOrderWithHansenOrderId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

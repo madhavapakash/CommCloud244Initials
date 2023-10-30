@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DataRaptorPostAction1",
+    "OmniProcessId": {
+        "Name": "BulkUploadGeneric",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/BulkUploadGeneric/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+            "": ""
+        },
+        "bundle": "Create BUC",
+        "chainOnStep": true,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "DataRaptorExtractAction1",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/BulkUploadGeneric/Procedure/DataRaptorPostAction1"
+}

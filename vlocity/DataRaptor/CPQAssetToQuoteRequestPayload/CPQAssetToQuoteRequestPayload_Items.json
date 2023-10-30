@@ -1,0 +1,294 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "'ASSETTOQUOTE'",
+        "FormulaResultPath": "subaction",
+        "FormulaSequence": 2,
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom5349",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "'changeToQuote'",
+        "FormulaResultPath": "methodName",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom988",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "'true'",
+        "FormulaResultPath": "isAssetsFromMultiAccount",
+        "FormulaSequence": 4,
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom281",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "CONCAT(additionalData:accountId,\":Asset:\",JOIN(itemsToProcessSubsetList,'+'))",
+        "FormulaResultPath": "ContextId",
+        "FormulaSequence": 5,
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom5566",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FORMATDATETIME(NOW(),\"YYYY-MM-dd HH:mm:ss\")",
+        "FormulaResultPath": "requestDateTime",
+        "FormulaSequence": 3,
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom6246",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom8600",
+        "InputFieldName": "ContextId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContextId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom6445",
+        "InputFieldName": "isAssetsFromMultiAccount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isAssetsFromMultiAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom1260",
+        "InputFieldName": "methodName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "methodName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom9222",
+        "InputFieldName": "additionalData:opportunityId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "opportunityId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "false",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom7862",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "price",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom4023",
+        "InputFieldName": "additionalData:quoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quoteId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom3260",
+        "InputFieldName": "requestDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "requestDateTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom3770",
+        "InputFieldName": "subaction",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "subaction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "false",
+        "GlobalKey": "CPQ-AssetToQuoteRequestPayloadCustom3662",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToQuoteRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToQuoteRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToQuoteRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "validate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

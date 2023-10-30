@@ -1,0 +1,388 @@
+{
+    "response": {
+        "actions": {
+            "nexttranslation": {
+                "client": {
+                    "params": {
+                    }
+                },
+                "remote": {
+                    "params": {
+                        "currentPage": 2,
+                        "filters": "AccountId%3A0015g000005FnCIAA0",
+                        "methodName": "cpq/assets",
+                        "offsetSize": 3,
+                        "pagesize": 1
+                    }
+                },
+                "rest": {
+                    "link": null,
+                    "method": null,
+                    "params": {
+                    }
+                }
+            }
+        },
+        "records": [
+            {
+                "%vlocity_namespace%__AssetReferenceId__c": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "STRING",
+                    "editable": false,
+                    "fieldName": "%vlocity_namespace%__AssetReferenceId__c",
+                    "hidden": true,
+                    "label": "Asset Reference Id",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "20f55687-4866-29ee-d1d2-039c8d58f41a"
+                },
+                "%vlocity_namespace%__LineNumber__c": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "STRING",
+                    "editable": false,
+                    "fieldName": "%vlocity_namespace%__LineNumber__c",
+                    "hidden": true,
+                    "label": "Line Number",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "0001"
+                },
+                "%vlocity_namespace%__OneTimeCharge__c": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "CURRENCY",
+                    "editable": false,
+                    "fieldName": "%vlocity_namespace%__OneTimeCharge__c",
+                    "hidden": true,
+                    "label": "One Time Charge",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": 100
+                },
+                "%vlocity_namespace%__OneTimeTotal__c": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "CURRENCY",
+                    "editable": false,
+                    "fieldName": "%vlocity_namespace%__OneTimeTotal__c",
+                    "hidden": true,
+                    "label": "One Time Total",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": 300
+                },
+                "%vlocity_namespace%__RootItemId__c": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "STRING",
+                    "editable": false,
+                    "fieldName": "%vlocity_namespace%__RootItemId__c",
+                    "hidden": true,
+                    "label": "RootItemId",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "20f55687-4866-29ee-d1d2-039c8d58f41a"
+                },
+                "%vlocity_namespace%__SequenceNumber__c": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "DOUBLE",
+                    "editable": false,
+                    "fieldName": "%vlocity_namespace%__SequenceNumber__c",
+                    "hidden": true,
+                    "label": "Sequence Number",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": 1
+                },
+                "AccountId": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "REFERENCE",
+                    "editable": false,
+                    "fieldName": "AccountId",
+                    "hidden": false,
+                    "label": "Account ID",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "0015g000005FnCIAA0"
+                },
+                "CreatedById": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "REFERENCE",
+                    "editable": false,
+                    "fieldName": "CreatedById",
+                    "hidden": false,
+                    "label": "Created By ID",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "0055g0000048hxfAAA"
+                },
+                "CreatedDate": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "DATETIME",
+                    "editable": false,
+                    "fieldName": "CreatedDate",
+                    "hidden": true,
+                    "label": "Created Date",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "2021-04-12T06:31:04.000Z"
+                },
+                "Id": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "ID",
+                    "editable": false,
+                    "fieldName": "Id",
+                    "hidden": true,
+                    "label": "Asset ID",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": "02i5g000000993OAAQ"
+                },
+                "Name": "test root",
+                "Quantity": {
+                    "actions": {
+                    },
+                    "alternateValues": null,
+                    "dataType": "DOUBLE",
+                    "editable": false,
+                    "fieldName": "Quantity",
+                    "hidden": true,
+                    "label": "Quantity",
+                    "messages": [
+                    ],
+                    "originalValue": null,
+                    "previousValue": null,
+                    "value": 1
+                },
+                "childAssets": {
+                    "records": [
+                        {
+                            "%vlocity_namespace%__AssetReferenceId__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "STRING",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__AssetReferenceId__c",
+                                "hidden": true,
+                                "label": "Asset Reference Id",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "98ebe022-cc1f-5aa1-effc-245ba600d464"
+                            },
+                            "%vlocity_namespace%__LineNumber__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "STRING",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__LineNumber__c",
+                                "hidden": true,
+                                "label": "Line Number",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "0001.0001"
+                            },
+                            "%vlocity_namespace%__OneTimeCharge__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "CURRENCY",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__OneTimeCharge__c",
+                                "hidden": true,
+                                "label": "One Time Charge",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": 100
+                            },
+                            "%vlocity_namespace%__OneTimeTotal__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "CURRENCY",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__OneTimeTotal__c",
+                                "hidden": true,
+                                "label": "One Time Total",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": 200
+                            },
+                            "%vlocity_namespace%__ParentItemId__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "STRING",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__ParentItemId__c",
+                                "hidden": true,
+                                "label": "ParentItemId",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "20f55687-4866-29ee-d1d2-039c8d58f41a"
+                            },
+                            "%vlocity_namespace%__RootItemId__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "STRING",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__RootItemId__c",
+                                "hidden": true,
+                                "label": "RootItemId",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "20f55687-4866-29ee-d1d2-039c8d58f41a"
+                            },
+                            "%vlocity_namespace%__SequenceNumber__c": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "DOUBLE",
+                                "editable": false,
+                                "fieldName": "%vlocity_namespace%__SequenceNumber__c",
+                                "hidden": true,
+                                "label": "Sequence Number",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": 1
+                            },
+                            "AccountId": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "REFERENCE",
+                                "editable": false,
+                                "fieldName": "AccountId",
+                                "hidden": false,
+                                "label": "Account ID",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "0015g000005FnCIAA0"
+                            },
+                            "CreatedById": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "REFERENCE",
+                                "editable": false,
+                                "fieldName": "CreatedById",
+                                "hidden": false,
+                                "label": "Created By ID",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "0055g0000048hxfAAA"
+                            },
+                            "CreatedDate": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "DATETIME",
+                                "editable": false,
+                                "fieldName": "CreatedDate",
+                                "hidden": true,
+                                "label": "Created Date",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "2021-04-12T06:31:04.000Z"
+                            },
+                            "Id": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "ID",
+                                "editable": false,
+                                "fieldName": "Id",
+                                "hidden": true,
+                                "label": "Asset ID",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": "02i5g000000993PAAQ"
+                            },
+                            "Name": "test c 1",
+                            "Quantity": {
+                                "actions": {
+                                },
+                                "alternateValues": null,
+                                "dataType": "DOUBLE",
+                                "editable": false,
+                                "fieldName": "Quantity",
+                                "hidden": true,
+                                "label": "Quantity",
+                                "messages": [
+                                ],
+                                "originalValue": null,
+                                "previousValue": null,
+                                "value": 1
+                            },
+                            "displaySequence": -1
+                        }
+                    ],
+                    "totalSize": 0
+                },
+                "displaySequence": -1
+            }
+        ],
+        "totalSize": 1
+    }
+}

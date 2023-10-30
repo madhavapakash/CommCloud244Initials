@@ -1,0 +1,85 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(PreviousMemberCount = null, CartItems:Quantity * MemberCount, (CartItems:Quantity / PreviousMemberCount) * MemberCount)",
+        "FormulaResultPath": "CartItems:FinalQuantity",
+        "FormulaSequence": 1,
+        "GlobalKey": "UpdateLineItemsQuantityCustom2644",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "UpdateLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "UpdateLineItemsQuantityCustoma00RO0000011ROwYAMItem0",
+        "InputFieldName": "CartItems:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "UpdateLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "UpdateLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "UpdateLineItemsQuantityCustoma00RO0000011ROwYAMItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "UpdateLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "UpdateLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "UpdateLineItemsQuantityCustoma00RO0000011ROwYAMItem2",
+        "InputFieldName": "CartItems:FinalQuantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "UpdateLineItemsQuantity",
+        "OmniDataTransformationId": {
+            "Name": "UpdateLineItemsQuantity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/UpdateLineItemsQuantity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quantity",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,227 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaSequence": 1,
+        "GlobalKey": "CreateFeasibilityLineItemsCustom0jI7200000006bhEAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom2408",
+        "InputFieldName": "address:addressString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Address1__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom4821",
+        "InputFieldName": "feasibilityId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Feasibility_ID__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom5355",
+        "InputFieldName": "feasibilityStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Feasibility_Status__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom2447",
+        "InputFieldName": "QuoteMemberId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom5646",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom5002",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Feasibility_Line_Item__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom5734",
+        "InputFieldName": "lineItem:maxBandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Max_Bandwidth__c",
+        "OutputObjectName": "Feasibility_Line_Item__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom6955",
+        "InputFieldName": "lineItem:media",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Media__c",
+        "OutputObjectName": "Feasibility_Line_Item__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom1113",
+        "InputFieldName": "lineItem:lineitemName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "Feasibility_Line_Item__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CreateFeasibilityLineItemsCustom5724",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CreateFeasibilityLineItems",
+        "OmniDataTransformationId": {
+            "Name": "CreateFeasibilityLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateFeasibilityLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Quote_Member__c",
+        "OutputObjectName": "Feasibility_Line_Item__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

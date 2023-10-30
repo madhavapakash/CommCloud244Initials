@@ -1,0 +1,85 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "Quantity / GroupSize",
+        "FormulaResultPath": "FinalQuantity",
+        "FormulaSequence": 1,
+        "GlobalKey": "DivideQuantityForLineItemCustoma005Y00002MGUNzQAPItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DivideQuantityForLineItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForLineItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForLineItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DivideQuantityForLineItemCustoma005Y00002MGUNzQAPItem1",
+        "InputFieldName": "CartItemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "DivideQuantityForLineItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForLineItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForLineItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "DivideQuantityForLineItemCustoma005Y00002MGUNzQAPItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DivideQuantityForLineItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForLineItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForLineItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DivideQuantityForLineItemCustoma005Y00002MGUNzQAPItem3",
+        "InputFieldName": "FinalQuantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DivideQuantityForLineItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForLineItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForLineItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quantity",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

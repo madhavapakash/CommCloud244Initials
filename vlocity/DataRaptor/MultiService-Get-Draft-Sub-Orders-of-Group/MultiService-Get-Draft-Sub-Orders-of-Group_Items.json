@@ -1,0 +1,98 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "orderGroupId",
+        "GlobalKey": "MultiService - Get Draft Sub-Orders of Group07376336975440023",
+        "InputFieldName": "%vlocity_namespace%__OrderGroupId__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Get Draft Sub-Orders of Group",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Get Draft Sub-Orders of Group",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Get Draft Sub-Orders of Group",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "orders",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Ready To Submit'",
+        "GlobalKey": "MultiService - Get Draft Sub-Orders of Group9906886634510166",
+        "InputFieldName": "%vlocity_namespace%__OrderStatus__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Get Draft Sub-Orders of Group",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Get Draft Sub-Orders of Group",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Get Draft Sub-Orders of Group",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "orders",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'SubOrder'",
+        "GlobalKey": "MultiService - Get Draft Sub-Orders of Group20137868679393334",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Get Draft Sub-Orders of Group",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Get Draft Sub-Orders of Group",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Get Draft Sub-Orders of Group",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "orders",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Get Draft Sub-Orders of Group24553906209538146",
+        "InputFieldName": "orders",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Get Draft Sub-Orders of Group",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Get Draft Sub-Orders of Group",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Get Draft Sub-Orders of Group",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "records",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

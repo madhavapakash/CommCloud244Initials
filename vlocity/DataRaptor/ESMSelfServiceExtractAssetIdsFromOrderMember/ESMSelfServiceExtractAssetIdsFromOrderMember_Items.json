@@ -1,0 +1,49 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "groupCartId",
+        "GlobalKey": "ESMSelfServiceExtractAssetIdsFromOrderMember006093658570286875",
+        "InputFieldName": "%vlocity_namespace%__OrderGroupId__r.%vlocity_namespace%__GroupCartId__c",
+        "InputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceExtractAssetIdsFromOrderMember",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceExtractAssetIdsFromOrderMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceExtractAssetIdsFromOrderMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Members",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceExtractAssetIdsFromOrderMember9735685563621794",
+        "InputFieldName": "%vlocity_namespace%__SelectedAssetIds__c",
+        "InputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceExtractAssetIdsFromOrderMember",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceExtractAssetIdsFromOrderMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceExtractAssetIdsFromOrderMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Members",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

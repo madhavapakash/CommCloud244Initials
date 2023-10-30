@@ -1,0 +1,46 @@
+{
+    "AuthorName": "BhartiAirtelLimited",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 3,
+                    "name": "recordId",
+                    "val": "0Q0720000002RXBCA2"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "ARTL Quote Feasibility Details",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "QuoteId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "ARTLQuoteFeasibilityDetails",
+    "Namespace": "",
+    "OmniUiCardKey": "ARTLQuoteFeasibilityDetails/BhartiAirtelLimited/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "ARTLQuoteFeasibilityDetails.json",
+    "SampleDataSourceResponse": "[{\"iconName\":\"standard:opportunity\",\"Name\":\"wirelessNetworkElement\",\"StreetAddress\":\"Mariner Square Loop\",\"MaxBandWidth\":\"10 Mbps\",\"status\":\"Feasible\"},{\"iconName\":\"standard:opportunity\",\"Name\":\"wirelineNetworkElement\",\"StreetAddress\":\"Mariner Square Loop\",\"MaxBandWidth\":\"1000\",\"status\":\"Feasible\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ARTLQuoteFeasibilityDetails"
+}

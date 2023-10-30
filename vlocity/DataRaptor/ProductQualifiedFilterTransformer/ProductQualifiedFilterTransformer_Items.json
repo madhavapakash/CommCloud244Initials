@@ -1,0 +1,86 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FILTER(LIST(response:result:records), 'category == \"' + qualifiedFilter + '\"')",
+        "FormulaResultPath": "filteredRecords",
+        "FormulaSequence": 1,
+        "GlobalKey": "ProductQualifiedFilterTransformerCustom3338",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ProductQualifiedFilterTransformer",
+        "OmniDataTransformationId": {
+            "Name": "ProductQualifiedFilterTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ProductQualifiedFilterTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ProductQualifiedFilterTransformerCustom8968",
+        "InputFieldName": "response:result:actions",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ProductQualifiedFilterTransformer",
+        "OmniDataTransformationId": {
+            "Name": "ProductQualifiedFilterTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ProductQualifiedFilterTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "response:result:actions",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "[]",
+        "GlobalKey": "ProductQualifiedFilterTransformerCustom3659",
+        "InputFieldName": "filteredRecords",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ProductQualifiedFilterTransformer",
+        "OmniDataTransformationId": {
+            "Name": "ProductQualifiedFilterTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ProductQualifiedFilterTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "response:result:records",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ProductQualifiedFilterTransformerCustom6148",
+        "InputFieldName": "response:result:totalSize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ProductQualifiedFilterTransformer",
+        "OmniDataTransformationId": {
+            "Name": "ProductQualifiedFilterTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ProductQualifiedFilterTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "response:result:totalSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

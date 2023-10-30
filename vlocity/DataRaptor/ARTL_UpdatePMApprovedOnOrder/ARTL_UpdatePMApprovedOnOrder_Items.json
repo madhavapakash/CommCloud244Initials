@@ -1,0 +1,63 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_UpdatePMApprovedOnOrderCustom7497",
+        "InputFieldName": "PMApproved",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_UpdatePMApprovedOnOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_UpdatePMApprovedOnOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_UpdatePMApprovedOnOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_PMApproved__c",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_UpdatePMApprovedOnOrderCustom1807",
+        "InputFieldName": "OrderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "ARTL_UpdatePMApprovedOnOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_UpdatePMApprovedOnOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_UpdatePMApprovedOnOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_UpdatePMApprovedOnOrderCustom5866",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_UpdatePMApprovedOnOrder",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_UpdatePMApprovedOnOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_UpdatePMApprovedOnOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Order",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

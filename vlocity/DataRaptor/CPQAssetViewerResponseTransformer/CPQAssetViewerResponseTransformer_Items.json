@@ -1,0 +1,122 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-AssetViewer-Response-Transformer5988701052030794",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetViewerResponseTransformer",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetViewerResponseTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetViewerResponseTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetViewer-Response-Transformer520166476935636",
+        "InputFieldName": "response:actions:nexttranslation:remote:params:offsetSize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetViewerResponseTransformer",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetViewerResponseTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetViewerResponseTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "nextOffsetSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetViewer-Response-Transformer6323290723725066",
+        "InputFieldName": "response:actions:nexttranslation:remote:params:currentPage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetViewerResponseTransformer",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetViewerResponseTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetViewerResponseTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "nextPage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetViewer-Response-Transformer6661334700445094",
+        "InputFieldName": "response:actions:nexttranslation:remote:params:pagesize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetViewerResponseTransformer",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetViewerResponseTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetViewerResponseTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "nextPageSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetViewer-Response-Transformer5614761213799577",
+        "InputFieldName": "response:records",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetViewerResponseTransformer",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetViewerResponseTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetViewerResponseTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "records",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetViewer-Response-TransformerCustom5102",
+        "InputFieldName": "response:totalSize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetViewerResponseTransformer",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetViewerResponseTransformer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetViewerResponseTransformer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "totalSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

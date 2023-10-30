@@ -1,0 +1,47 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteMemberId",
+        "GlobalKey": "getQuoteBYQuoteMemberCustom3868",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "getQuoteBYQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "getQuoteBYQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/getQuoteBYQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Qm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "getQuoteBYQuoteMemberCustom7628",
+        "InputFieldName": "Qm:%vlocity_namespace%__QuoteId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "getQuoteBYQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "getQuoteBYQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/getQuoteBYQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

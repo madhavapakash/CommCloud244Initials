@@ -1,0 +1,231 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "CONCAT(\"Group of \", memberType)",
+        "FormulaResultPath": "GroupDescription",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(timestamp != null, CONCAT(products:Name,\" \",timestamp), products:Name)",
+        "FormulaResultPath": "products:Name",
+        "FormulaSequence": 2,
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem2",
+        "InputFieldName": "products:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "groupsToCreate:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem3",
+        "InputFieldName": "products:ProductId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "groupsToCreate:groupDescription",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem4",
+        "InputFieldName": "products:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "groupsToCreate:groupName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "true",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "groupsToCreate:isGroupAssociatedWithCart",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem6",
+        "InputFieldName": "memberType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "groupsToCreate:memberType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem7",
+        "InputFieldName": "products:ProductId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "groupsToCreate:productId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem8",
+        "InputFieldName": "bulkRequestType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "groupsToCreate:selectedAssetsCommonConfiguration:bulkRequestType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem9",
+        "InputFieldName": "products:ProductFamily",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "groupsToCreate:selectedAssetsCommonConfiguration:productFamily",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetGroupsToCreateListCustoma1h8Z000003fFMvQAMItem10",
+        "InputFieldName": "products:ProductId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetGroupsToCreateList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetGroupsToCreateList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetGroupsToCreateList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "groupsToCreate:selectedAssetsCommonConfiguration:productId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

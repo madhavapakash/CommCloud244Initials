@@ -1,0 +1,423 @@
+{
+    "messages": [
+    ],
+    "records": [
+        {
+            "%vlocity_namespace%__RecurringPrice__c": {
+                "label": "Recurring Price",
+                "value": "GenWatt Diesel 1000kW"
+            },
+            "CurrencyCode": "USD",
+            "Id": {
+                "label": "Price Book Entry ID",
+                "value": "01u4W00000BK748QAD"
+            },
+            "IsActive": {
+                "label": "Active",
+                "value": true
+            },
+            "Name": {
+                "label": "Product Name",
+                "value": "GenWatt Diesel 1000kW"
+            },
+            "Pricebook2Id": {
+                "label": "Price Book ID",
+                "value": "01s4W000006NdscQAC"
+            },
+            "Product2": {
+                "%vlocity_namespace%__IsConfigurable__c": false,
+                "%vlocity_namespace%__SellingEndDate__c": "2025-01-20T18:30:00.000+0000",
+                "%vlocity_namespace%__SellingStartDate__c": "2021-01-04T18:30:00.000+0000",
+                "%vlocity_namespace%__SubType__c": "Postpaid",
+                "%vlocity_namespace%__Type__c": "Service",
+                "Description": "",
+                "Id": "01t4W00000CUEM9QAP",
+                "Name": "GenWatt Diesel 1000kW",
+                "attributes": {
+                    "type": "Product2",
+                    "url": "/services/data/v50.0/sobjects/Product2/01t4W00000CUEM9QAP"
+                }
+            },
+            "Product2Id": {
+                "label": "Product ID",
+                "value": "01t4W00000CUEM9QAP"
+            },
+            "ProductCode": {
+                "label": "Product Code",
+                "value": "GC1060"
+            },
+            "SellingPeriod": "Future",
+            "UnitPrice": {
+                "label": "List Price",
+                "value": "100000.00"
+            },
+            "actions": {
+                "addtocart": {
+                    "client": {
+                        "params": {
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "items": [
+                                {
+                                    "itemId": "01u4W00000BK748QAD"
+                                }
+                            ],
+                            "lastRecordId": null,
+                            "methodName": "postCartsItems",
+                            "pagesize": 20,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                },
+                "getproductbyid": {
+                    "client": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "id": "01u4W00000BK748QAD",
+                            "methodName": "getCartsProductsById"
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "id": "01u4W00000BK748QAD",
+                            "methodName": "getCartsProductsById"
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                }
+            },
+            "attributeValues": {
+            },
+            "category": "Qualified",
+            "defaultQuantity": 1,
+            "displaySequence": -1,
+            "hasChildren": false,
+            "isVirtualItem": false,
+            "itemType": "childProduct",
+            "messages": [
+            ],
+            "name": "GenWatt Diesel 1000kW",
+            "productCategories": {
+                "messages": [
+                ],
+                "totalSize": 0
+            },
+            "productHierarchyPath": "01t4W00000CUEM9QAP",
+            "productId": "01t4W00000CUEM9QAP"
+        },
+        {
+            "%vlocity_namespace%__RecurringPrice__c": {
+                "label": "Recurring Price",
+                "value": "Iphone12"
+            },
+            "CurrencyCode": "USD",
+            "Id": {
+                "label": "Price Book Entry ID",
+                "value": "01u4W00000BK75sQAD"
+            },
+            "IsActive": {
+                "label": "Active",
+                "value": true
+            },
+            "Name": {
+                "label": "Product Name",
+                "value": "Iphone12"
+            },
+            "Pricebook2Id": {
+                "label": "Price Book ID",
+                "value": "01s4W000006NdscQAC"
+            },
+            "Product2": {
+                "%vlocity_namespace%__EndOfLifeDate__c": "2025-01-20T18:30:00.000+0000",
+                "%vlocity_namespace%__GlobalGroupKey__c": "fd31aafa-d5b9-ccf4-b789-19b293efe9d4",
+                "%vlocity_namespace%__IsConfigurable__c": false,
+                "%vlocity_namespace%__ProductSpecId__c": "01t4W00000ClJqkQAF",
+                "%vlocity_namespace%__ProductSpecId__r": {
+                    "%vlocity_namespace%__SpecificationType__c": "Product",
+                    "Id": "01t4W00000ClJqkQAF",
+                    "Name": "iphone11",
+                    "ProductCode": "I1102",
+                    "RecordTypeId": "0124W000000lTyFQAU",
+                    "attributes": {
+                        "type": "Product2",
+                        "url": "/services/data/v50.0/sobjects/Product2/01t4W00000ClJqkQAF"
+                    }
+                },
+                "%vlocity_namespace%__SellingEndDate__c": "2025-01-20T18:30:00.000+0000",
+                "%vlocity_namespace%__SellingStartDate__c": "2020-12-31T18:30:00.000+0000",
+                "%vlocity_namespace%__SpecificationType__c": "Resource",
+                "%vlocity_namespace%__SubType__c": "Prepaid",
+                "%vlocity_namespace%__Type__c": "Service",
+                "%vlocity_namespace%__VersionLabel__c": "iphone 11",
+                "Description": "Iphone 12",
+                "Id": "01t4W00000CksCWQAZ",
+                "Name": "Iphone12",
+                "RecordTypeId": "0124W000000lTyFQAU",
+                "attributes": {
+                    "type": "Product2",
+                    "url": "/services/data/v50.0/sobjects/Product2/01t4W00000CksCWQAZ"
+                }
+            },
+            "Product2Id": {
+                "label": "Product ID",
+                "value": "01t4W00000CksCWQAZ"
+            },
+            "ProductCode": {
+                "label": "Product Code",
+                "value": "I001"
+            },
+            "SellingPeriod": "Future",
+            "UnitPrice": {
+                "label": "List Price",
+                "value": "0.00"
+            },
+            "actions": {
+                "addtocart": {
+                    "client": {
+                        "params": {
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "items": [
+                                {
+                                    "itemId": "01u4W00000BK75sQAD"
+                                }
+                            ],
+                            "lastRecordId": null,
+                            "methodName": "postCartsItems",
+                            "pagesize": 20,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                },
+                "getproductbyid": {
+                    "client": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "id": "01u4W00000BK75sQAD",
+                            "methodName": "getCartsProductsById"
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "id": "01u4W00000BK75sQAD",
+                            "methodName": "getCartsProductsById"
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                }
+            },
+            "attributeValues": {
+            },
+            "category": "Qualified",
+            "defaultQuantity": 1,
+            "displaySequence": -1,
+            "hasChildren": false,
+            "isVirtualItem": false,
+            "itemType": "childProduct",
+            "messages": [
+            ],
+            "name": "Iphone12",
+            "productCategories": {
+                "messages": [
+                ],
+                "totalSize": 0
+            },
+            "productHierarchyPath": "01t4W00000CksCWQAZ",
+            "productId": "01t4W00000CksCWQAZ"
+        },
+        {
+            "%vlocity_namespace%__RecurringPrice__c": {
+                "label": "Recurring Price",
+                "value": 0
+            },
+            "Id": {
+                "label": "Price Book Entry ID",
+                "value": "01u4W00000BKHDjQAP"
+            },
+            "IsActive": {
+                "label": "Active",
+                "value": true
+            },
+            "Name": {
+                "label": "Product Name",
+                "value": "iphone11"
+            },
+            "Pricebook2Id": {
+                "label": "Price Book ID",
+                "value": "01s4W000006NdscQAC"
+            },
+            "Product2": {
+                "%vlocity_namespace%__GlobalGroupKey__c": "60717cd7-780f-c5cc-9c43-a2962e416c66",
+                "%vlocity_namespace%__IsConfigurable__c": false,
+                "%vlocity_namespace%__SpecificationType__c": "Product",
+                "%vlocity_namespace%__SubType__c": "None",
+                "%vlocity_namespace%__Type__c": "None",
+                "Id": "01t4W00000ClJqkQAF",
+                "Name": "iphone11",
+                "RecordTypeId": "0124W000000lTyFQAU",
+                "attributes": {
+                    "type": "Product2",
+                    "url": "/services/data/v50.0/sobjects/Product2/01t4W00000ClJqkQAF"
+                }
+            },
+            "Product2Id": {
+                "label": "Product ID",
+                "value": "01t4W00000ClJqkQAF"
+            },
+            "ProductCode": {
+                "label": "Product Code",
+                "value": "I1102"
+            },
+            "SellingPeriod": "Present",
+            "UnitPrice": {
+                "label": "List Price",
+                "value": "0.00"
+            },
+            "actions": {
+                "addtocart": {
+                    "client": {
+                        "params": {
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "hierarchy": -1,
+                            "includeAttachment": false,
+                            "items": [
+                                {
+                                    "itemId": "01u4W00000BKHDjQAP"
+                                }
+                            ],
+                            "lastRecordId": null,
+                            "methodName": "postCartsItems",
+                            "pagesize": 20,
+                            "price": true,
+                            "query": null,
+                            "validate": true
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                },
+                "getproductbyid": {
+                    "client": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "id": "01u4W00000BKHDjQAP",
+                            "methodName": "getCartsProductsById"
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "id": "01u4W00000BKHDjQAP",
+                            "methodName": "getCartsProductsById"
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                }
+            },
+            "attributeValues": {
+            },
+            "category": "Qualified",
+            "defaultQuantity": 1,
+            "displaySequence": -1,
+            "groupMaxQuantity": 99999,
+            "groupMinQuantity": 0,
+            "hasChildren": false,
+            "isVirtualItem": false,
+            "itemType": "childProduct",
+            "maxQuantity": 99999,
+            "messages": [
+            ],
+            "minQuantity": 0,
+            "name": "iphone11",
+            "productCategories": {
+                "messages": [
+                ],
+                "totalSize": 0
+            },
+            "productChildItemDefinition": {
+                "%vlocity_namespace%__ChildLineNumber__c": "1",
+                "%vlocity_namespace%__CollapseHierarchy__c": false,
+                "%vlocity_namespace%__IsOverride__c": false,
+                "%vlocity_namespace%__IsRootProductChildItem__c": true,
+                "%vlocity_namespace%__IsVirtualItem__c": false,
+                "%vlocity_namespace%__MaxQuantity__c": 99999,
+                "%vlocity_namespace%__MaximumChildItemQuantity__c": 99999,
+                "%vlocity_namespace%__MinQuantity__c": 0,
+                "%vlocity_namespace%__MinimumChildItemQuantity__c": 0,
+                "%vlocity_namespace%__ParentProductId__c": "01t4W00000ClJqkQAF",
+                "%vlocity_namespace%__ParentProductId__r": {
+                    "%vlocity_namespace%__GlobalGroupKey__c": "60717cd7-780f-c5cc-9c43-a2962e416c66",
+                    "Id": "01t4W00000ClJqkQAF",
+                    "Name": "iphone11",
+                    "RecordTypeId": "0124W000000lTyFQAU",
+                    "attributes": {
+                        "type": "Product2",
+                        "url": "/services/data/v50.0/sobjects/Product2/01t4W00000ClJqkQAF"
+                    }
+                },
+                "%vlocity_namespace%__Quantity__c": 1,
+                "%vlocity_namespace%__SeqNumber__c": 1,
+                "Name": "Root PCI",
+                "attributes": {
+                    "type": "%vlocity_namespace%__ProductChildItem__c"
+                }
+            },
+            "productChildItemId": "a3K4W000000d48BUAQ",
+            "productHierarchyPath": "01t4W00000ClJqkQAF",
+            "productId": "01t4W00000ClJqkQAF",
+            "sequenceNumber": 1
+        }
+    ],
+    "totalSize": 3
+}

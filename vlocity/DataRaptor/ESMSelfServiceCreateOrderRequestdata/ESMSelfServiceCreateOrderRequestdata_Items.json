@@ -1,0 +1,206 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(isBulk == 'bulk', 'BulkRequest', '')",
+        "FormulaResultPath": "asyncOperation",
+        "FormulaSequence": 2,
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(isBulk == 'bulk', 'EnterpriseOrder', 'StandardOrder')",
+        "FormulaResultPath": "orderRecordType",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem2",
+        "InputFieldName": "asyncOperation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AsyncOperation__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustom4010",
+        "InputFieldName": "priceList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__pricelistid__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustom9720",
+        "InputFieldName": "orderStartRequestDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__requestedstartdate__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem5",
+        "InputFieldName": "AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem8",
+        "InputFieldName": "orderName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem4",
+        "InputFieldName": "effectivedate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "effectivedate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem9",
+        "InputFieldName": "orderRecordType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "recordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateOrderRequestdataCustoma1h8b000006yYY5AAMItem10",
+        "InputFieldName": "status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateOrderRequestdata",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateOrderRequestdata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateOrderRequestdata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

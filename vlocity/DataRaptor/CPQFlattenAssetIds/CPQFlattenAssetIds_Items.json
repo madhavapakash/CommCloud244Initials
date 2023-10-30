@@ -1,0 +1,45 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "Assets:Id",
+        "FormulaResultPath": "FormulaList",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-Flatten-Asset-Ids4326729120382713",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFlattenAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "CPQFlattenAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFlattenAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-Flatten-Asset-Ids5575406127137865",
+        "InputFieldName": "FormulaList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFlattenAssetIds",
+        "OmniDataTransformationId": {
+            "Name": "CPQFlattenAssetIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFlattenAssetIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<String>",
+        "OutputFieldName": "assetIds",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

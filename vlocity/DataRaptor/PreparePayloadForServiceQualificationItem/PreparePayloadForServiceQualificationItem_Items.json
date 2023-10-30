@@ -1,0 +1,162 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom2464",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "serviceQualificationItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom939",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "serviceQualificationItem:service:place",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom8736",
+        "InputFieldName": "QuoteMember:%vlocity_namespace%__City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "serviceQualificationItem:service:place:geographicAddress:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom6105",
+        "InputFieldName": "QuoteMember:%vlocity_namespace%__Country__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "serviceQualificationItem:service:place:geographicAddress:country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom9395",
+        "InputFieldName": "QuoteMember:%vlocity_namespace%__PostalCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "serviceQualificationItem:service:place:geographicAddress:postcode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom2181",
+        "InputFieldName": "QuoteMember:%vlocity_namespace%__State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "serviceQualificationItem:service:place:geographicAddress:state",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom7625",
+        "InputFieldName": "QuoteMember:%vlocity_namespace%__StreetAddress__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "serviceQualificationItem:service:place:geographicAddress:streetName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "PreparePayloadForServiceQualificationItemCustom9242",
+        "InputFieldName": "ServiceSpecification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PreparePayloadForServiceQualificationItem",
+        "OmniDataTransformationId": {
+            "Name": "PreparePayloadForServiceQualificationItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PreparePayloadForServiceQualificationItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "serviceQualificationItem:service:serviceSpecification:name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

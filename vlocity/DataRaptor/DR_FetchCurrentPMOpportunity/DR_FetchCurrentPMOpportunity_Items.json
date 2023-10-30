@@ -1,0 +1,49 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "ID",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "DR_FetchCurrentPMOpportunity1540838482951823",
+        "InputFieldName": "Id",
+        "InputObjectName": "Opportunity",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_FetchCurrentPMOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "DR_FetchCurrentPMOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_FetchCurrentPMOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DR_FetchCurrentPMOpportunity9262207269492331",
+        "InputFieldName": "PM__r.Name",
+        "InputObjectName": "Opportunity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_FetchCurrentPMOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "DR_FetchCurrentPMOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_FetchCurrentPMOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Opportunity",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

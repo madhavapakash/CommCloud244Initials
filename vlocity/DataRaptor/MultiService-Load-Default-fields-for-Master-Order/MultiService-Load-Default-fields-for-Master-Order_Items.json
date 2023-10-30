@@ -1,0 +1,152 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "opportunityId",
+        "GlobalKey": "MultiService - Load Default fields for Master Order046364113378930094",
+        "InputFieldName": "Id",
+        "InputObjectName": "Opportunity",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "oppty",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaSequence": 1,
+        "GlobalKey": "MultiService - Load Default fields for Master Order6582606009440235",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Master Order8254102651235244",
+        "InputFieldName": "oppty:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:%vlocity_namespace%__DefaultBillingAccountId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Master Order15826007430401878",
+        "InputFieldName": "oppty:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:%vlocity_namespace%__DefaultServiceAccountId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Master Order5449474380811525",
+        "InputFieldName": "oppty:%vlocity_namespace%__NumberOfContractedMonths__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "result:%vlocity_namespace%__NumberOfContractedMonths__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Master Order8630929714703319",
+        "InputFieldName": "oppty:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Draft",
+        "GlobalKey": "MultiService - Load Default fields for Master Order30375110293914886",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Master Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Master Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Master Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

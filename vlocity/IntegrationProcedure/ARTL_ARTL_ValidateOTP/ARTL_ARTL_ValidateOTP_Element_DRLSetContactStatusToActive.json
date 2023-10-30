@@ -1,0 +1,42 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRLSetContactStatusToActive",
+    "OmniProcessId": {
+        "Name": "ARTL_ValidateOTP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/ARTL_ValidateOTP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ContextId": "=%ContextId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "ARTL_DRL_SetContactStatus",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%SVFilterValidOTP:FilteredValidTillList% != NULL && %SVFilterValidOTP:FilteredExpiredOTPList% == NULL",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/ARTL_ValidateOTP/Procedure/DRLSetContactStatusToActive"
+}

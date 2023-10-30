@@ -1,0 +1,150 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "B2BQuantityBasedDiscounts",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/B2BQuantityBasedDiscounts",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "B2BQuantityBasedDiscountsProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/B2BQuantityBasedDiscountsProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "B2BQuantityBasedDiscountsProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/B2BQuantityBasedDiscountsProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__GlobalKey__c": "f9960cf1-eb31-746c-4d67-49ff24bb4cb2",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "6caea6",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Quantity"
+            },
+            {
+                "columnKey": "b685f",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Code"
+            },
+            {
+                "columnKey": "f4a4e9",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Name"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "4172d0",
+                "dataType": "Percent",
+                "label": null,
+                "listValues": null,
+                "name": "MRC Discount (%)"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"MRC Discount (%)\":\"B2BQuantityBasedDiscounts__MRCDiscount(%)\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "B2BQuantityBasedDiscounts__MRCDiscount(%)",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "B2BQuantityBasedDiscounts__MRCDiscount(%)",
+                "dataType": "Percent",
+                "text": "MRC Discount (%) ( B2BQuantityBasedDiscounts )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "B2BQuantityBasedDiscountsProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/B2BQuantityBasedDiscountsProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "B2BQuantityBasedDiscountsProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/B2BQuantityBasedDiscountsProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__GlobalKey__c": "c189132b-7fbd-ccef-d10c-e4823282513a",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "REC_MNTH_STD_PRC_ADJ_PCT",
+            "dataType": "Percent",
+            "name": "REC_MNTH_STD_PRC_ADJ_PCT"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"REC_MNTH_STD_PRC_ADJ_PCT\":\"REC_MNTH_STD_PRC_ADJ_PCT\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "B2BQuantityBasedDiscounts__MRCDiscount(%)",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "B2BQuantityBasedDiscounts__MRCDiscount(%)",
+                "dataType": "Percent",
+                "text": "MRC Discount (%) ( B2BQuantityBasedDiscounts )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "B2BQuantityBasedDiscountsProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/B2BQuantityBasedDiscountsProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "B2BQuantityBasedDiscountsProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/B2BQuantityBasedDiscountsProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__GlobalKey__c": "ab9b5338-e3f0-41f8-53df-65e674756480",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "OT_STD_PRC_ADJ_PCT",
+            "dataType": "Percent",
+            "name": "OT_STD_PRC_ADJ_PCT"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"OT_STD_PRC_ADJ_PCT\":\"OT_STD_PRC_ADJ_PCT\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

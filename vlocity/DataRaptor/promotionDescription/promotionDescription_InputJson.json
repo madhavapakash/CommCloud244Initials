@@ -1,0 +1,68 @@
+{
+    "messages": [
+    ],
+    "records": [
+        {
+            "%vlocity_namespace%__AppliesToAllItems__c": false,
+            "%vlocity_namespace%__Code__c": "I001",
+            "%vlocity_namespace%__Description__c": "Promotion for iphone",
+            "%vlocity_namespace%__DurationUnitOfMeasure__c": "Month",
+            "Id": "a3S4W000000cTkvUAE",
+            "Name": "iphone Promotion",
+            "RecordTypeId": "0124W000000lXKRQA2",
+            "actions": {
+                "addtocart": {
+                    "client": {
+                        "params": {
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "items": [
+                                {
+                                    "itemId": "a3S4W000000cTkvUAE"
+                                }
+                            ],
+                            "methodName": "postCartsPromoItems",
+                            "promotionId": "a3S4W000000cTkvUAE"
+                        }
+                    },
+                    "rest": {
+                        "link": null,
+                        "method": null,
+                        "params": {
+                        }
+                    }
+                },
+                "validatecart": {
+                    "client": {
+                        "params": {
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "8014W000000hfF3QAI",
+                            "methodName": "runCartValidation"
+                        }
+                    },
+                    "rest": {
+                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8014W000000hfF3QAI/validate",
+                        "method": "POST",
+                        "params": {
+                        }
+                    }
+                }
+            },
+            "category": "Qualified",
+            "code": "I001",
+            "description": "Promotion for iphone",
+            "displaySequence": 0,
+            "id": "a3S4W000000cTkvUAE",
+            "messages": [
+            ],
+            "name": "iphone Promotion"
+        }
+    ],
+    "totalSize": 1
+}

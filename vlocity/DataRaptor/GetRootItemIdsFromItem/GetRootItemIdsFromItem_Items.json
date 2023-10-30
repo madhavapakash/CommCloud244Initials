@@ -1,0 +1,114 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'UseAssetReferenceIdForParentAndRoot'",
+        "GlobalKey": "GetRootItemIdsFromItemCustom8549",
+        "InputFieldName": "Name",
+        "InputObjectName": "%vlocity_namespace%__CpqConfigurationSetup__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CPQConfigurationSetup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CartItemId",
+        "GlobalKey": "GetRootItemIdsFromItemCustom5346",
+        "InputFieldName": "Id",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteLineItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(CPQConfigurationSetup:%vlocity_namespace%__SetupValue__c, QuoteLineItem:%vlocity_namespace%__RootItemId__c, QuoteLineItem:Id)",
+        "FormulaResultPath": "FinalRootItemId",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetRootItemIdsFromItemCustom4530",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetRootItemIdsFromItemCustom5177",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "RootItemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetRootItemIdsFromItemCustom8865",
+        "InputFieldName": "FinalRootItemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RootItemId:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,189 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "'assetToOrder'",
+        "FormulaResultPath": "methodName",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom2241",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FORMATDATETIME(NOW(),\"YYYY-MM-dd HH:mm:ss\")",
+        "FormulaResultPath": "requestedDateTime",
+        "FormulaSequence": 2,
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom3058",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "JOIN(itemsToProcessSubsetList,',')",
+        "FormulaResultPath": "assetIds",
+        "FormulaSequence": 3,
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom7913",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom3317",
+        "InputFieldName": "additionalData:accountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "accountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom8042",
+        "InputFieldName": "assetIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom757",
+        "InputFieldName": "methodName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "methodName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom8728",
+        "InputFieldName": "additionalData:orderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "orderId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "false",
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom4271",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "price",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-AssetToOrderRequestPayloadCustom5684",
+        "InputFieldName": "requestedDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQAssetToOrderRequestPayload",
+        "OmniDataTransformationId": {
+            "Name": "CPQAssetToOrderRequestPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQAssetToOrderRequestPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "requestDateTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

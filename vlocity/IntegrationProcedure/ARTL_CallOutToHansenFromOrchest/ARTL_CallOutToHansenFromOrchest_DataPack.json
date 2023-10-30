@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CallOutToHansenFromOrchest_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_CallOutToHansenFromOrchest",
+    "OmniProcessElement": [
+        "ARTL_CallOutToHansenFromOrchest_Element_GetPayLoadFrmGenerateOSSJ.json",
+        "ARTL_CallOutToHansenFromOrchest_Element_CallOutToHansen.json",
+        "ARTL_CallOutToHansenFromOrchest_Element_parseXMLOrderId.json",
+        "ARTL_CallOutToHansenFromOrchest_Element_updateHansenOrder.json",
+        "ARTL_CallOutToHansenFromOrchest_Element_SetStatus.json",
+        "ARTL_CallOutToHansenFromOrchest_Element_updateOrchesItemOrderId.json",
+        "ARTL_CallOutToHansenFromOrchest_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CallOutToHansenFromOrchest",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CallOutToHansenFromOrchest_PropertySetConfig.json",
+    "SubType": "CallOutToHansenFromOrchest",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CallOutToHansenFromOrchest/Procedure",
+    "WebComponentKey": "2dddf086-f665-220a-6a6d-85602698e041"
+}

@@ -1,0 +1,64 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "OTP Verified",
+        "GlobalKey": "ARTL_DRL_SetContactStatusCustom1563",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_SetContactStatus",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_SetContactStatus",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_SetContactStatus",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Status__c",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_SetContactStatusCustom7900",
+        "InputFieldName": "ContextId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "ARTL_DRL_SetContactStatus",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_SetContactStatus",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_SetContactStatus",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contact",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_DRL_SetContactStatusCustom59",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_DRL_SetContactStatus",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_SetContactStatus",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_SetContactStatus",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

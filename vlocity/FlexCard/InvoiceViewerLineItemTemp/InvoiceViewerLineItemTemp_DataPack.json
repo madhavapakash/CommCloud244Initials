@@ -1,0 +1,61 @@
+{
+    "AuthorName": "ARTL",
+    "ClonedFromOmniUiCardKey": "InvoiceViewerLineItem/ARTL/2.0",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "{}",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        },
+        "state0element0block_element3block_element0_0": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "invoice_Id",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "ApexRemote",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "invoiceId": "{invoice_Id}",
+                    "processName": "Invoice_Pdf"
+                },
+                "jsonMap": "{\"invoice_Id\":\"{invoice_Id}\"}",
+                "remoteClass": "ARTL_CalloutEventHandler",
+                "remoteMethod": "initiateCallout",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "InvoiceViewerLineItemTemp",
+    "Namespace": "",
+    "OmniUiCardKey": "InvoiceViewerLineItemTemp/ARTL/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "InvoiceViewerLineItemTemp.json",
+    "SampleDataSourceResponse": "{}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/InvoiceViewerLineItemTemp"
+}

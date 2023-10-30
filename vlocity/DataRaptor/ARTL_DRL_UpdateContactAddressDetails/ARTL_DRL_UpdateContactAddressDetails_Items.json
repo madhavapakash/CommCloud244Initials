@@ -1,0 +1,183 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "NCR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Business_Circle_Region__c",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem8",
+        "InputFieldName": "AddressDetails:TApincode-Block:pincodeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_Mailing_Pincode__c",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem3",
+        "InputFieldName": "ContextId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem4",
+        "InputFieldName": "AddressDetails:TApincode-Block:city",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MailingCity",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem5",
+        "InputFieldName": "AddressDetails:TApincode-Block:country",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MailingCountry",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem1",
+        "InputFieldName": "AddressDetails:TApincode-Block:TApincode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MailingPostalCode",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem7",
+        "InputFieldName": "AddressDetails:TApincode-Block:state",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MailingState",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRL_UpdateContactAddressDetailsCustom0jI7200000005NtEAIItem6",
+        "InputFieldName": "AddressDetails:TApincode-Block:street",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRL_UpdateContactAddressDetails",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRL_UpdateContactAddressDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MailingStreet",
+        "OutputObjectName": "Contact",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

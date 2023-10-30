@@ -1,0 +1,144 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "CONCAT(APIResponse:streetName,\" \",APIResponse:city,\" \",APIResponse:stateOrProvince,\" \",APIResponse:country,\" \",APIResponse:postcode)",
+        "FormulaResultPath": "APIResponse:Name",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem1",
+        "InputFieldName": "APIResponse:city",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__City__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem2",
+        "InputFieldName": "APIResponse:country",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Country__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem3",
+        "InputFieldName": "APIResponse:postcode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__PostalCode__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem4",
+        "InputFieldName": "APIResponse:stateOrProvince",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__State__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem5",
+        "InputFieldName": "APIResponse:streetName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__StreetAddress__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMTransformAddressValidationResponseCustoma00Dn000006c6yIIAQItem6",
+        "InputFieldName": "APIResponse:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMTransformAddressValidationResponse",
+        "OmniDataTransformationId": {
+            "Name": "ESMTransformAddressValidationResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMTransformAddressValidationResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

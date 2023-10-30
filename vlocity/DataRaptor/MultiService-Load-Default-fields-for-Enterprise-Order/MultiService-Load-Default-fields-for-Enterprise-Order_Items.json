@@ -1,0 +1,131 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "opportunityId",
+        "GlobalKey": "MultiService - Load Default fields for Enterprise OrderCustom5804",
+        "InputFieldName": "Id",
+        "InputObjectName": "Opportunity",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Enterprise Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Enterprise Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Enterprise Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "oppty",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Enterprise OrderCustom9347",
+        "InputFieldName": "oppty:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Enterprise Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Enterprise Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Enterprise Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:%vlocity_namespace%__DefaultBillingAccountId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Enterprise OrderCustom7237",
+        "InputFieldName": "oppty:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Enterprise Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Enterprise Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Enterprise Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:%vlocity_namespace%__DefaultServiceAccountId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Enterprise OrderCustom1307",
+        "InputFieldName": "oppty:%vlocity_namespace%__NumberOfContractedMonths__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Enterprise Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Enterprise Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Enterprise Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "result:%vlocity_namespace%__NumberOfContractedMonths__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MultiService - Load Default fields for Enterprise OrderCustom2663",
+        "InputFieldName": "oppty:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Enterprise Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Enterprise Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Enterprise Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "result:AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "Draft",
+        "GlobalKey": "MultiService - Load Default fields for Enterprise OrderCustom8846",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MultiService - Load Default fields for Enterprise Order",
+        "OmniDataTransformationId": {
+            "Name": "MultiService - Load Default fields for Enterprise Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MultiService - Load Default fields for Enterprise Order",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

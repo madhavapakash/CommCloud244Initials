@@ -1,0 +1,223 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "productId",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom4906",
+        "InputFieldName": "%vlocity_namespace%__Product2Id__c",
+        "InputObjectName": "%vlocity_namespace%__CatalogProductRelationship__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "catalogRelationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "groupKey",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom9372",
+        "InputFieldName": "%vlocity_namespace%__ProductGroupKey__c",
+        "InputObjectName": "%vlocity_namespace%__CatalogProductRelationship__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "catalogRelationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom3801",
+        "InputFieldName": "%vlocity_namespace%__IsActive__c",
+        "InputObjectName": "%vlocity_namespace%__Catalog__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "catalogRelationship:catalog",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "catalogRelationship:%vlocity_namespace%__CatalogId__c",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom9013",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__Catalog__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "catalogRelationship:catalog",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom2416",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "catalogProductRelationships",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "[{\"nm\":\"Name\"},{\"prNm\":\"Product Relationship Name\"},{\"cd\":\"Code\"}]",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom2400",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Object",
+        "OutputFieldName": "catalogProductRelationships:fieldsMetadata",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "$Vlocity.NULL",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom7387",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "catalogProductRelationships:response",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom3412",
+        "InputFieldName": "catalogRelationship:catalog:%vlocity_namespace%__CatalogCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "catalogProductRelationships:response:cd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom7346",
+        "InputFieldName": "catalogRelationship:catalog:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "catalogProductRelationships:response:nm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractCatalogProductRelationshipsCustom5321",
+        "InputFieldName": "catalogRelationship:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractCatalogProductRelationships",
+        "OmniDataTransformationId": {
+            "Name": "ExtractCatalogProductRelationships",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractCatalogProductRelationships",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "catalogProductRelationships:response:prNm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

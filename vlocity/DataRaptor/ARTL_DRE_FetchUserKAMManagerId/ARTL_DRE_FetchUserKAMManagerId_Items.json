@@ -1,0 +1,47 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "\"$Vlocity.UserId\"",
+        "GlobalKey": "ARTL_DRE_FetchUserKAMManagerIdCustom1626",
+        "InputFieldName": "Id",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchUserKAMManagerId",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchUserKAMManagerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchUserKAMManagerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "KamUser",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchUserKAMManagerIdCustom8336",
+        "InputFieldName": "KamUser:ManagerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchUserKAMManagerId",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchUserKAMManagerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchUserKAMManagerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TLUserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

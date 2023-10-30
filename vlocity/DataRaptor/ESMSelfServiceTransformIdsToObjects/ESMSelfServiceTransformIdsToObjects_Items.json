@@ -1,0 +1,44 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FUNCTION('ListToObjectsFunctionImplementation','listToObjects',LIST(assetIds), \"Id\")",
+        "FormulaResultPath": "listToObjectsResult",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceTransformIdsToObjectsCustoma1h8Z000003fWNyQAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceTransformIdsToObjects",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceTransformIdsToObjects",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceTransformIdsToObjects",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceTransformIdsToObjectsCustoma1h8Z000003fWNyQAMItem1",
+        "InputFieldName": "listToObjectsResult",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceTransformIdsToObjects",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceTransformIdsToObjects",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceTransformIdsToObjects",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetIds",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

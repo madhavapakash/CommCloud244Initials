@@ -1,0 +1,170 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((NOT(data:canCreateFDO) && NOT(data:disconnectedAssets) && messages:errorMessage == ''),'Can not create the Order as there is already an Order with Request Date greater than Order Request Date',messages:errorMessage )",
+        "FormulaResultPath": "messages:errorMessage",
+        "FormulaSequence": 3,
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom648",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((NOT(data:canCreateFDO) && data:disconnectedAssets && messages:errorMessage == ''),'Assets cannot be modified because a request has already been made to disconnect it.', messages:errorMessage )",
+        "FormulaResultPath": "messages:errorMessage",
+        "FormulaSequence": 2,
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom245",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((NOT(data:canCreateFDO) && data:noRequestDateTime),'Cannot add asset to order as there is no request Start date in the order', '' )",
+        "FormulaResultPath": "messages:errorMessage",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom2600",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((messages:errorMessage != ''),messages:errorMessage,messages:message)",
+        "FormulaResultPath": "messages:message",
+        "FormulaSequence": 4,
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom257",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom644",
+        "InputFieldName": "data",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "data",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom914",
+        "InputFieldName": "messages",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "messages",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom9760",
+        "InputFieldName": "consolidatedMsg",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "messages:message",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-CanCreateFailureMessageCustom1354",
+        "InputFieldName": "totalSize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "CPQCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "totalSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

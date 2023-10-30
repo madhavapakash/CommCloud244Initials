@@ -1,0 +1,85 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "SERIALIZE(%JSONPL%)",
+        "FormulaResultPath": "JSONPLFormula",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DR_GetPayLoadCustom2712",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_GetPayLoad",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_GetPayLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_GetPayLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_GetPayLoadCustom4740",
+        "InputFieldName": "JSONPLFormula",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_GetPayLoad",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_GetPayLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_GetPayLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_RequestPayload__c",
+        "OutputObjectName": "Execution_Log__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DR_GetPayLoadCustom2705",
+        "InputFieldName": "JSONPayLoad",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DR_GetPayLoad",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_GetPayLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_GetPayLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ARTL_RequestPayload__c",
+        "OutputObjectName": "Execution_Log__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ARTL_DR_GetPayLoadCustom9780",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ARTL_DR_GetPayLoad",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DR_GetPayLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DR_GetPayLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Execution_Log__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

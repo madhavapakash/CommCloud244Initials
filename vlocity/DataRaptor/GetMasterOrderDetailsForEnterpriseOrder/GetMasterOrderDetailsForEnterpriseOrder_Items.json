@@ -1,0 +1,93 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderId",
+        "GlobalKey": "GetMasterOrderDetailsForEnterpriseOrderCustoma00Dn000006ZzIYIA0Item0",
+        "InputFieldName": "%vlocity_namespace%__EnterpriseOrderId__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+        "OmniDataTransformationId": {
+            "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "\"Master Order\"",
+        "GlobalKey": "GetMasterOrderDetailsForEnterpriseOrderCustoma00Dn000006ZzIYIA0Item1",
+        "InputFieldName": "RecordType.Name",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+        "OmniDataTransformationId": {
+            "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetMasterOrderDetailsForEnterpriseOrderCustoma00Dn000006ZzIYIA0Item2",
+        "InputFieldName": "Order:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+        "OmniDataTransformationId": {
+            "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetMasterOrderDetailsForEnterpriseOrderCustom3241",
+        "InputFieldName": "Order:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+        "OmniDataTransformationId": {
+            "Name": "GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetMasterOrderDetailsForEnterpriseOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

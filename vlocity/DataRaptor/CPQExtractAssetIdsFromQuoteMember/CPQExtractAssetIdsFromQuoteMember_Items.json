@@ -1,0 +1,49 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "groupCartId",
+        "GlobalKey": "CPQExtractAssetIdsFromQuoteMember2751925473300614",
+        "InputFieldName": "%vlocity_namespace%__QuoteGroupId__r.%vlocity_namespace%__GroupCartId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQExtractAssetIdsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "CPQExtractAssetIdsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQExtractAssetIdsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Members",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQExtractAssetIdsFromQuoteMember432310386657091",
+        "InputFieldName": "%vlocity_namespace%__SelectedAssetIds__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQExtractAssetIdsFromQuoteMember",
+        "OmniDataTransformationId": {
+            "Name": "CPQExtractAssetIdsFromQuoteMember",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQExtractAssetIdsFromQuoteMember",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Members",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

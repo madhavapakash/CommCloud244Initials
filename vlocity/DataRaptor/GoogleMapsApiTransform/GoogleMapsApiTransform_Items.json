@@ -1,0 +1,188 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(ISNOTBLANK(MapsResponse:description),\"custom:custom68\",\"\")",
+        "FormulaResultPath": "MapsResponse:leftIcon",
+        "FormulaSequence": 3,
+        "GlobalKey": "GoogleMapsApiTransformCustom4969",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(ISNOTBLANK(MapsResponse:description),\"nds-b2b-locations-options\",\"\")",
+        "FormulaResultPath": "MapsResponse:extraClasses",
+        "FormulaSequence": 1,
+        "GlobalKey": "GoogleMapsApiTransformCustom6236",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(ISNOTBLANK(MapsResponse:description),true,\"\")",
+        "FormulaResultPath": "MapsResponse:isMapsLocation",
+        "FormulaSequence": 2,
+        "GlobalKey": "GoogleMapsApiTransformCustom1423",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GoogleMapsApiTransformCustom6552",
+        "InputFieldName": "MapsResponse:place_id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GoogleMapsApiTransformCustom5207",
+        "InputFieldName": "MapsResponse:description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GoogleMapsApiTransformCustom3155",
+        "InputFieldName": "MapsResponse:extraClasses",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "extraClasses",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GoogleMapsApiTransformCustom41",
+        "InputFieldName": "MapsResponse:isMapsLocation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isMapsLocation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GoogleMapsApiTransformCustom9401",
+        "InputFieldName": "MapsResponse:leftIcon",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "leftIcon",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GoogleMapsApiTransformCustom4509",
+        "InputFieldName": "MapsResponse:place_id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GoogleMapsApiTransform",
+        "OmniDataTransformationId": {
+            "Name": "GoogleMapsApiTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GoogleMapsApiTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "place_id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "'$Vlocity.NULL'",
+        "GlobalKey": "RemoveQMsQuoteGroupCustom307",
+        "InputFieldName": "QG",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RemoveQMsQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "RemoveQMsQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RemoveQMsQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteGroupId__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "RemoveQMsQuoteGroupCustom1860",
+        "InputFieldName": "SalesQuoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RemoveQMsQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "RemoveQMsQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RemoveQMsQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteId__c",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "RemoveQMsQuoteGroupCustom8528",
+        "InputFieldName": "MemberIds:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RemoveQMsQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "RemoveQMsQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RemoveQMsQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "RemoveQMsQuoteGroupCustom4408",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RemoveQMsQuoteGroup",
+        "OmniDataTransformationId": {
+            "Name": "RemoveQMsQuoteGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RemoveQMsQuoteGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__QuoteMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

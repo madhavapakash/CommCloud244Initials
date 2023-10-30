@@ -1,0 +1,111 @@
+{
+    "debugLog": [
+    ],
+    "elapsedTimeActual": 14602,
+    "elapsedTimeCPU": 5586,
+    "executionSequence": [
+        "postCartItemCall"
+    ],
+    "fullDataJson": {
+        "QuoteId": "0Q0B0000000oc12KAA",
+        "itemId": "01uB00000041dNYIAY",
+        "options": {
+            "chainable": false,
+            "ignoreCache": true,
+            "queueableChainable": false,
+            "resetCache": false,
+            "useQueueableApexRemoting": false
+        },
+        "postCartItemCall": {
+            "actions": {
+                "itempricesupdated": {
+                    "client": {
+                        "params": {
+                        }
+                    },
+                    "remote": {
+                        "params": {
+                            "cartId": "0Q0B0000000oc12KAA",
+                            "methodName": "getCartLineItemPrices",
+                            "price": false
+                        }
+                    },
+                    "rest": {
+                        "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/0Q0B0000000oc12KAA/price?price=false",
+                        "method": "GET",
+                        "params": {
+                        }
+                    }
+                }
+            },
+            "messages": [
+                {
+                    "code": "150",
+                    "message": "Successfully added.",
+                    "severity": "INFO"
+                }
+            ],
+            "totalSize": 0
+        },
+        "postCartItemCallStatus": true,
+        "response": {
+        }
+    },
+    "originalInput": {
+        "QuoteId": "0Q0B0000000oc12KAA",
+        "itemId": "01uB00000041dNYIAY"
+    },
+    "postCartItemCall": {
+        "actions": {
+            "itempricesupdated": {
+                "client": {
+                    "params": {
+                    }
+                },
+                "remote": {
+                    "params": {
+                        "cartId": "0Q0B0000000oc12KAA",
+                        "methodName": "getCartLineItemPrices",
+                        "price": false
+                    }
+                },
+                "rest": {
+                    "link": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/0Q0B0000000oc12KAA/price?price=false",
+                    "method": "GET",
+                    "params": {
+                    }
+                }
+            }
+        },
+        "messages": [
+            {
+                "code": "150",
+                "message": "Successfully added.",
+                "severity": "INFO"
+            }
+        ],
+        "totalSize": 0
+    },
+    "postCartItemCallDebug": {
+        "ElapsedTime": 14536,
+        "ElapsedTimeCPU": 5331,
+        "Input": {
+            "cartId": "0Q0B0000000oc12KAA",
+            "items": [
+                {
+                    "itemId": "01uB00000041dNYIAY"
+                }
+            ],
+            "noResponseNeeded": true,
+            "price": true,
+            "validate": true
+        },
+        "Options": {
+            "isExpressionSet": false
+        },
+        "Status": true,
+        "Type": "Remote Action"
+    },
+    "response": {
+    }
+}

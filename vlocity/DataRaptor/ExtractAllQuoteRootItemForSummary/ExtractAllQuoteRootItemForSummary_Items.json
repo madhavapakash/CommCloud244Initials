@@ -1,0 +1,457 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'$Vlocity.NULL'",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem2",
+        "InputFieldName": "%vlocity_namespace%__ParentItemId__c",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteId",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem1",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "ORDER BY",
+        "FilterValue": "%vlocity_namespace%__LineNumber__c",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem0",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom6349",
+        "InputFieldName": "QLI:%vlocity_namespace%__OneTimeTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__OneTimeTotal__c:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom1396",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteGroupId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteGroupId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom7869",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteGroupId__r.%vlocity_namespace%__MemberType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteGroupId__r:%vlocity_namespace%__MemberType__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom7171",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteGroupId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteGroupId__r:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom2106",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteGroupId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteGroupId__r:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom3483",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom3161",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__r:%vlocity_namespace%__City__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom4916",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__MemberType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__r:%vlocity_namespace%__MemberType__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom1417",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__r:%vlocity_namespace%__State__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom3211",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__r.%vlocity_namespace%__StreetAddress__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__r:%vlocity_namespace%__StreetAddress__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom9672",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__r.Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__r:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom9990",
+        "InputFieldName": "QLI:%vlocity_namespace%__QuoteMemberId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteMemberId__r:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem6",
+        "InputFieldName": "QLI:%vlocity_namespace%__RecurringTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__RecurringTotal__c:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem3",
+        "InputFieldName": "QLI:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "Id:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem5",
+        "InputFieldName": "QLI:%vlocity_namespace%__LineNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LineNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustoma1V4x0000040GWqEAMItem4",
+        "InputFieldName": "QLI:Product2.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom7621",
+        "InputFieldName": "QLI:Quantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quantity:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom5761",
+        "InputFieldName": "QLI:Product2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "productHierarchyPath",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ExtractAllQuoteRootItemForSummaryCustom7074",
+        "InputFieldName": "QLI:Product2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ExtractAllQuoteRootItemForSummary",
+        "OmniDataTransformationId": {
+            "Name": "ExtractAllQuoteRootItemForSummary",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ExtractAllQuoteRootItemForSummary",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "productId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

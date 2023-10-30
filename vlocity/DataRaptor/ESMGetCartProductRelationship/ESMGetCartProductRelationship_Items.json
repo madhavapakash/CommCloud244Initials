@@ -1,0 +1,443 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "cartId",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom9613",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QLI:Product2Id",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom6035",
+        "InputFieldName": "%vlocity_namespace%__Product2Id__c",
+        "InputObjectName": "%vlocity_namespace%__ProductRelationship__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProductRelationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "ReliesOn",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom6985",
+        "InputFieldName": "%vlocity_namespace%__RelationshipType__c",
+        "InputObjectName": "%vlocity_namespace%__ProductRelationship__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProductRelationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "cartId",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom142",
+        "InputFieldName": "%vlocity_namespace%__QuoteId__c",
+        "InputObjectName": "%vlocity_namespace%__QuoteLineItemRelationship__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteProductRelationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom8424",
+        "InputFieldName": "ProductRelationship:%vlocity_namespace%__GlobalKey__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:%vlocity_namespace%__GlobalKey__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom6427",
+        "InputFieldName": "ProductRelationship:%vlocity_namespace%__MaxQuantity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:%vlocity_namespace%__MaxQuantity__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom9979",
+        "InputFieldName": "ProductRelationship:%vlocity_namespace%__MinQuantity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:%vlocity_namespace%__MinQuantity__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom3923",
+        "InputFieldName": "ProductRelationship:%vlocity_namespace%__Product2Id__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:%vlocity_namespace%__Product2Id__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom2926",
+        "InputFieldName": "ProductRelationship:%vlocity_namespace%__RelatedProductId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:%vlocity_namespace%__RelatedProductId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom3343",
+        "InputFieldName": "ProductRelationship:%vlocity_namespace%__RelationshipType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:%vlocity_namespace%__RelationshipType__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom2876",
+        "InputFieldName": "ProductRelationship:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:Id",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom2999",
+        "InputFieldName": "ProductRelationship:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductRelationship:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom2135",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__ProductRelationshipIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__ProductRelationshipIdentifier__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom800",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__ProductRelationshipIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__ProductRelationshipIdentifier__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom8476",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__QuoteLineItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__QuoteLineItemId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom1270",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelatedAssetReferenceId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelatedAssetReferenceId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom5003",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelatedQuoteLineItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelatedQuoteLineItemId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom2677",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelatedQuoteLineItemId__r.Product2.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelatedQuoteLineItemId__r.Product2.Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom8529",
+        "InputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelationshipType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:%vlocity_namespace%__RelationshipType__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom9796",
+        "InputFieldName": "QuoteProductRelationship:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetCartProductRelationshipCustom6973",
+        "InputFieldName": "QuoteProductRelationship:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetCartProductRelationship",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetCartProductRelationship",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetCartProductRelationship",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteProductRelationship:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderGroupId",
+        "GlobalKey": "ESMGetOrderGroupSizeCustom22",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetOrderGroupSize",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetOrderGroupSize",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetOrderGroupSize",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderGroup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(OrderGroup:%vlocity_namespace%__ExpectedMemberCount__c = 0 || ISBLANK(OrderGroup:%vlocity_namespace%__ExpectedMemberCount__c), OrderGroup:%vlocity_namespace%__MemberCount__c, OrderGroup:%vlocity_namespace%__ExpectedMemberCount__c)",
+        "FormulaResultPath": "count",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMGetOrderGroupSizeCustom1144",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetOrderGroupSize",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetOrderGroupSize",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetOrderGroupSize",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMGetOrderGroupSizeCustoma00Dn000006c4MmIAIItem2",
+        "InputFieldName": "count",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMGetOrderGroupSize",
+        "OmniDataTransformationId": {
+            "Name": "ESMGetOrderGroupSize",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMGetOrderGroupSize",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "count",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CustomizeGroupDetailsForReplaceCustoma005g000031DjgvAACItem0",
+        "InputFieldName": "records:groupName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CustomizeGroupDetailsForReplace",
+        "OmniDataTransformationId": {
+            "Name": "CustomizeGroupDetailsForReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CustomizeGroupDetailsForReplace",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CustomizeGroupDetailsForReplaceCustoma005g000031DjgvAACItem1",
+        "InputFieldName": "records:%vlocity_namespace%__GroupCartId__c:value",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CustomizeGroupDetailsForReplace",
+        "OmniDataTransformationId": {
+            "Name": "CustomizeGroupDetailsForReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CustomizeGroupDetailsForReplace",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:groupCartId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CustomizeGroupDetailsForReplaceCustoma005g000031DjgvAACItem2",
+        "InputFieldName": "records:groupId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CustomizeGroupDetailsForReplace",
+        "OmniDataTransformationId": {
+            "Name": "CustomizeGroupDetailsForReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CustomizeGroupDetailsForReplace",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:groupId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CustomizeGroupDetailsForReplaceCustom3801",
+        "InputFieldName": "records:%vlocity_namespace%__MemberType__c:value",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CustomizeGroupDetailsForReplace",
+        "OmniDataTransformationId": {
+            "Name": "CustomizeGroupDetailsForReplace",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CustomizeGroupDetailsForReplace",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result:memberType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

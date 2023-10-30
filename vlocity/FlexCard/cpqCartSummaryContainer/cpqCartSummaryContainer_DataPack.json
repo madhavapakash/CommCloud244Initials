@@ -1,0 +1,61 @@
+{
+    "AuthorName": "Vlocity",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 0,
+                    "name": "Parent.cartdata",
+                    "val": "[{\"Id\" : {\"value\": \"123\"} }]"
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": " [{ \"data\":[{\"Id\" : {\"value\": \"123\"} }],\"numberOfProducts\":0,\"isMultisiteFlow\":false,\"namesOfProducts\":\"\",\"mergedRecords\":{},\"total\":0}]",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        },
+        "state0element2block_element1block_element0block_element1_0": {
+            "contextVariables": [
+                {
+                    "id": 0,
+                    "name": "Session.cartId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "ApexRest",
+            "value": {
+                "body": "{\n  \"methodName\":\"checkout\",\n  \"cartId\": \"{Session.cartId}\",\n  \"ContextId\": \"{Session.cartId}\"\n}",
+                "dsDelay": "",
+                "endpoint": "/services/apexrest/%vlocity_namespace%/v2/cpq/carts/{Session.cartId}/items/checkout",
+                "methodType": "POST"
+            }
+        }
+    },
+    "Description": "CPQ cart summary view container",
+    "IsTrackingEnabled": false,
+    "Name": "cpqCartSummaryContainer",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqCartSummaryContainer/Vlocity/13.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqCartSummaryContainer.json",
+    "SampleDataSourceResponse": "[{\"data\":[{\"Id\":{\"value\":\"123\"}}],\"numberOfProducts\":0,\"isMultisiteFlow\":false,\"namesOfProducts\":\"\",\"mergedRecords\":{},\"total\":0}]",
+    "StylingConfiguration": "{\"customStyles\":\".cpq-cart-summary-container {\\n    background-color: #FAFAF9;\\n}\\n.cpq__multi-delete_btn{\\n    flex: 1 1 auto;\\n}\\n.cpq-expand-summary-button {\\n    color: #0070D2;\\n    margin-left: 0.5rem;\\n    width: 75px;\\n}\\n.cpq-catalog-preview-title {\\n    flex: 1 1 auto;\\n    text-align: left;\\n    margin-top: 10px;\\n}\\n\\n.cpq-expand-close-button {\\n    color: #0070D2;\\n    margin-left: 0.5rem;\\n    text-align: center;\\n    margin-top: 0.5rem;\\n    width: 75px;\\n    padding-top: 8px;\\n}\\n.cpq-cart-summary-buttons-container {\\n    text-align: left;\\n    padding: 5px 10px 5px 10px;\\n}\\n.cart-summary-flextable-container {\\n    flex : 1 1 auto;\\n    background-color: #FAFAF9;\\n    min-height: calc(100vh - 100px);\\n}\\n.cpq-cart-summary-total {\\n    padding-top: 4px;\\n    width: max-content;\\n    margin-right: 1rem;\\n}\\n.cpq-summary_add-more-products-button {\\n    width: max-content;\\n}\\n@media only screen and (max-width: 480px) {\\n    .cpq-cart-catalog-container {\\n      width: 100%;\\n    }\\n    .cpq-cart-summary-container {\\n        width: 100%;\\n    }\\n    .cpq-cart-summary-total {\\n        width: 40%;\\n    }\\n}\\n\\n.cpq__cart-summary-total-bar-block {\\n    position: sticky;\\n    bottom: 0;\\n    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);\\n}\\n\\n.cpq-product-view_container .flexcards-container_small {\\n    display: block;\\n}\\n.cpq-cart-catalog-container .custom-btn {\\n    padding-top: 0;\\n}\\n.cpq-cart-catalog-container .cpq-product-search {\\n  background-color: #FAFAF9; \\n}\\n\\n@media only screen and (min-width: 768px) {\\n    .cpq-cart-catalog-container {\\n        border-right: 1px solid #DDDBDA;\\n    }\\n}\\n\\n.cpq__multi-add_buttons_container{\\n    margin-right:auto;\\n    width: fit-content;\\n}\\n\\n.cpq__multi-add_buttons{\\n    width: fit-content;\\n}\\n.cpq__catalog-preview-pricelist {\\n    padding: 10px 10px 0px 10px;\\n}\\n.cpq__catalog-preview-search {\\n    padding: 0px 10px 0px 10px;\\n}\"}",
+    "UniqueName": "",
+    "VersionNumber": 13,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqCartSummaryContainer"
+}

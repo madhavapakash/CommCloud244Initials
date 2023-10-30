@@ -1,0 +1,114 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'UseAssetReferenceIdForParentAndRoot'",
+        "GlobalKey": "GetRootItemIdsFromOrderItemCustoma00Dn000006c9kYIAQItem0",
+        "InputFieldName": "Name",
+        "InputObjectName": "%vlocity_namespace%__CpqConfigurationSetup__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CPQConfigurationSetup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CartItemId",
+        "GlobalKey": "GetRootItemIdsFromOrderItemCustoma00Dn000006c9kYIAQItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderLineItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(CPQConfigurationSetup:%vlocity_namespace%__SetupValue__c, OrderLineItem:%vlocity_namespace%__RootItemId__c, OrderLineItem:Id)",
+        "FormulaResultPath": "FinalRootItemId",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetRootItemIdsFromOrderItemCustoma00Dn000006c9kYIAQItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetRootItemIdsFromOrderItemCustoma00Dn000006c9kYIAQItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "RootItemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetRootItemIdsFromOrderItemCustoma00Dn000006c9kYIAQItem4",
+        "InputFieldName": "FinalRootItemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetRootItemIdsFromOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "GetRootItemIdsFromOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetRootItemIdsFromOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RootItemId:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,31 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetStatus",
+    "OmniProcessId": {
+        "Name": "ARTL_CallOutToHansenFromOrchest",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CallOutToHansenFromOrchest/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "Status": "=IF(%CallOutToHansen:success% == true , 'Completed' , 'Failed')"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CallOutToHansenFromOrchest/Procedure/SetStatus"
+}

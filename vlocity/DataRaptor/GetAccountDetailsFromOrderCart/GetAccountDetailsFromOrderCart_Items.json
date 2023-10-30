@@ -1,0 +1,91 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "ID",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderId",
+        "GlobalKey": "GetAccountDetailsFromOrderCartCustom8550",
+        "InputFieldName": "Id",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountDetailsFromOrderCart",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountDetailsFromOrderCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountDetailsFromOrderCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetAccountDetailsFromOrderCartCustom8038",
+        "InputFieldName": "%vlocity_namespace%__DefaultBillingAccountId__c",
+        "InputObjectName": "Order",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountDetailsFromOrderCart",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountDetailsFromOrderCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountDetailsFromOrderCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetAccountDetailsFromOrderCartCustom5574",
+        "InputFieldName": "%vlocity_namespace%__DefaultServiceAccountId__c",
+        "InputObjectName": "Order",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountDetailsFromOrderCart",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountDetailsFromOrderCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountDetailsFromOrderCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetAccountDetailsFromOrderCartCustom3313",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "Order",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetAccountDetailsFromOrderCart",
+        "OmniDataTransformationId": {
+            "Name": "GetAccountDetailsFromOrderCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetAccountDetailsFromOrderCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Order",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

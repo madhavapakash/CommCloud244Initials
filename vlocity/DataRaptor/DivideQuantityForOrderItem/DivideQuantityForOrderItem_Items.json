@@ -1,0 +1,64 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "Quantity / GroupSize",
+        "FormulaResultPath": "FinalQuantity",
+        "FormulaSequence": 1,
+        "GlobalKey": "DivideQuantityForOrderItemCustoma00Dn000006c9srIAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DivideQuantityForOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DivideQuantityForOrderItemCustoma00Dn000006c9srIAAItem1",
+        "InputFieldName": "CartItemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "DivideQuantityForOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DivideQuantityForOrderItemCustoma00Dn000006c9srIAAItem2",
+        "InputFieldName": "FinalQuantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DivideQuantityForOrderItem",
+        "OmniDataTransformationId": {
+            "Name": "DivideQuantityForOrderItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DivideQuantityForOrderItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quantity",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

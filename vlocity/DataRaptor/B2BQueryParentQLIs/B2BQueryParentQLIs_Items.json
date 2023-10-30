@@ -1,0 +1,76 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "STRING",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'$Vlocity:NULL'",
+        "GlobalKey": "B2BQueryParentQLIs6297455963056373",
+        "InputFieldName": "%vlocity_namespace%__ParentItemId__c",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BQueryParentQLIs",
+        "OmniDataTransformationId": {
+            "Name": "B2BQueryParentQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BQueryParentQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "ID",
+        "FilterGroup": 0,
+        "FilterOperator": "IN",
+        "FilterValue": "NewSQLIsId",
+        "GlobalKey": "B2BQueryParentQLIs4876444970616285",
+        "InputFieldName": "Id",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BQueryParentQLIs",
+        "OmniDataTransformationId": {
+            "Name": "B2BQueryParentQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BQueryParentQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "STRING",
+        "GlobalKey": "B2BQueryParentQLIs1858834575621351",
+        "InputFieldName": "%vlocity_namespace%__RootItemId__c",
+        "InputObjectName": "QuoteLineItem",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "B2BQueryParentQLIs",
+        "OmniDataTransformationId": {
+            "Name": "B2BQueryParentQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/B2BQueryParentQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLI",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,110 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FILTER(LIST(result), 'groupInfo:groupName == groupName')",
+        "FormulaResultPath": "newGroups",
+        "FormulaSequence": 3,
+        "GlobalKey": "CPQ-Filter-Existing-GroupsCustom9732",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "CPQFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FILTER(LIST(result), 'message LIKE \"group already exists\"')",
+        "FormulaResultPath": "existingGroups",
+        "FormulaSequence": 1,
+        "GlobalKey": "CPQ-Filter-Existing-Groups060117967604129685",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "CPQFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "existingGroups:groupName",
+        "FormulaResultPath": "groupList",
+        "FormulaSequence": 2,
+        "GlobalKey": "CPQ-Filter-Existing-Groups12823266381755127",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "CPQFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-Filter-Existing-Groups24929335880774284",
+        "InputFieldName": "groupList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "CPQFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<String>",
+        "OutputFieldName": "existingGroups",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-Filter-Existing-GroupsCustom5130",
+        "InputFieldName": "newGroups",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "CPQFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "newGroups",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "ProductEligibilityMatrix",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/ProductEligibilityMatrix",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "ProductEligibilityProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/ProductEligibilityProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "ProductEligibilityProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/ProductEligibilityProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__GlobalKey__c": "ae2ca271-56d6-1d14-56fb-863d5d39c91f",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "63405e",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ProductCode"
+            },
+            {
+                "columnKey": "4acc9a",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Expression"
+            },
+            {
+                "columnKey": "2095dd",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Result"
+            },
+            {
+                "columnKey": "faf6f5",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ErrorMessage"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "4acc9a",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Expression"
+            },
+            {
+                "columnKey": "2095dd",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Result"
+            },
+            {
+                "columnKey": "faf6f5",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ErrorMessage"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Expression\":\"ProductEligibilityMatrix__Expression\",\"Result\":\"ProductEligibilityMatrix__Result\", \"ErrorMessage\": \"ProductEligibilityMatrix__ErrorMessage\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

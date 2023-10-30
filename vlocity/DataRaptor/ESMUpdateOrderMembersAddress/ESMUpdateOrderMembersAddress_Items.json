@@ -1,0 +1,83 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMUpdateOrderMembersAddressCustom419",
+        "InputFieldName": "Member:ValidationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMUpdateOrderMembersAddress",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderMembersAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderMembersAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AddressValidationDate__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMUpdateOrderMembersAddressCustom4989",
+        "InputFieldName": "Member:ValidationResult",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMUpdateOrderMembersAddress",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderMembersAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderMembersAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AddressValidationResult__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMUpdateOrderMembersAddressCustom7467",
+        "InputFieldName": "Member:MemberId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMUpdateOrderMembersAddress",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderMembersAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderMembersAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "ESMUpdateOrderMembersAddressCustom5044",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "ESMUpdateOrderMembersAddress",
+        "OmniDataTransformationId": {
+            "Name": "ESMUpdateOrderMembersAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMUpdateOrderMembersAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderMember__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

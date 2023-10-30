@@ -1,0 +1,136 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "GetPayLoadFromPrevOrchestCustom0jI7200000007ZNEAYItem0",
+        "InputFieldName": "%vlocity_namespace%__OrchestrationItemId__c",
+        "InputObjectName": "%vlocity_namespace%__OrchestrationDependency__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPayLoadFromPrevOrchest",
+        "OmniDataTransformationId": {
+            "Name": "GetPayLoadFromPrevOrchest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPayLoadFromPrevOrchest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrchesDepList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "LIMIT",
+        "FilterValue": "1",
+        "GlobalKey": "GetPayLoadFromPrevOrchestCustom9817",
+        "InputObjectName": "%vlocity_namespace%__OrchestrationDependency__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPayLoadFromPrevOrchest",
+        "OmniDataTransformationId": {
+            "Name": "GetPayLoadFromPrevOrchest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPayLoadFromPrevOrchest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrchesDepList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "GetPayLoadFromPrevOrchestCustom1020",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__OrchestrationItem__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPayLoadFromPrevOrchest",
+        "OmniDataTransformationId": {
+            "Name": "GetPayLoadFromPrevOrchest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPayLoadFromPrevOrchest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderDet",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetPayLoadFromPrevOrchestCustom0jI7200000007ZNEAYItem1",
+        "InputFieldName": "OrchesDepList:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPayLoadFromPrevOrchest",
+        "OmniDataTransformationId": {
+            "Name": "GetPayLoadFromPrevOrchest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPayLoadFromPrevOrchest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrchesDependId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetPayLoadFromPrevOrchestCustom93",
+        "InputFieldName": "OrderDet:%vlocity_namespace%__OrderItemId__r.OrderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPayLoadFromPrevOrchest",
+        "OmniDataTransformationId": {
+            "Name": "GetPayLoadFromPrevOrchest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPayLoadFromPrevOrchest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetPayLoadFromPrevOrchestCustom3127",
+        "InputFieldName": "OrchesDepList:%vlocity_namespace%__DependsOnItemId__r.%vlocity_namespace%__Request__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPayLoadFromPrevOrchest",
+        "OmniDataTransformationId": {
+            "Name": "GetPayLoadFromPrevOrchest",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPayLoadFromPrevOrchest",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "requestToHansenCallout",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

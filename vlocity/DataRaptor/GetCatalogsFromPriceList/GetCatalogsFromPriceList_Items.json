@@ -1,0 +1,93 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "priceListId",
+        "GlobalKey": "GetCatalogsFromPriceListCustoma005Y00002GADZtQAPItem1",
+        "InputFieldName": "%vlocity_namespace%__DefaultPriceListId__c",
+        "InputObjectName": "%vlocity_namespace%__Catalog__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetCatalogsFromPriceList",
+        "OmniDataTransformationId": {
+            "Name": "GetCatalogsFromPriceList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetCatalogsFromPriceList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "catalog",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "GetCatalogsFromPriceListCustoma005Y00002GADZtQAPItem0",
+        "InputFieldName": "%vlocity_namespace%__IsCatalogRoot__c",
+        "InputObjectName": "%vlocity_namespace%__Catalog__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetCatalogsFromPriceList",
+        "OmniDataTransformationId": {
+            "Name": "GetCatalogsFromPriceList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetCatalogsFromPriceList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "catalog",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetCatalogsFromPriceListCustoma005Y00002GADZtQAPItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetCatalogsFromPriceList",
+        "OmniDataTransformationId": {
+            "Name": "GetCatalogsFromPriceList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetCatalogsFromPriceList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "catalogArray",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetCatalogsFromPriceListCustoma005Y00002GADZtQAPItem2",
+        "InputFieldName": "catalog:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetCatalogsFromPriceList",
+        "OmniDataTransformationId": {
+            "Name": "GetCatalogsFromPriceList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetCatalogsFromPriceList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "catalogArray:catalogId",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

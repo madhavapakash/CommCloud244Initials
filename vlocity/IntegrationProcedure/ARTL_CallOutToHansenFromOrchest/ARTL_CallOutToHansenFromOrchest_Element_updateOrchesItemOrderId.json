@@ -1,0 +1,43 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "updateOrchesItemOrderId",
+    "OmniProcessId": {
+        "Name": "ARTL_CallOutToHansenFromOrchest",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/CallOutToHansenFromOrchest/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ContextId": "%ContextId%",
+            "Status": "%SetStatus:Status%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "UpdateOrchesWithOrderId",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%parseXMLOrderId:orderId%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/CallOutToHansenFromOrchest/Procedure/updateOrchesItemOrderId"
+}

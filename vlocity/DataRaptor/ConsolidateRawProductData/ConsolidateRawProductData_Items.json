@@ -1,0 +1,124 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "LISTSIZE(GroupDetailsRaw)",
+        "FormulaResultPath": "totalSize",
+        "FormulaSequence": 1,
+        "GlobalKey": "ConsolidateRawProductDataCustom8984",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateRawProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateRawProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateRawProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateRawProductDataCustom3932",
+        "InputFieldName": "GroupDetailsRaw:Name:value",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateRawProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateRawProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateRawProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "productBundles:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateRawProductDataCustom9497",
+        "InputFieldName": "GroupDetailsRaw:%vlocity_namespace%__SelectedAssetsCommonConfiguration__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateRawProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateRawProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateRawProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "productBundles:SelectedAssetsCommonConfiguration__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateRawProductDataCustom6202",
+        "InputFieldName": "GroupDetailsRaw:groupCartId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateRawProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateRawProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateRawProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "productBundles:groupCartId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateRawProductDataCustom4323",
+        "InputFieldName": "GroupDetailsRaw:groupId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateRawProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateRawProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateRawProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "productBundles:groupId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateRawProductDataCustom1134",
+        "InputFieldName": "totalSize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateRawProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateRawProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateRawProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "totalSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

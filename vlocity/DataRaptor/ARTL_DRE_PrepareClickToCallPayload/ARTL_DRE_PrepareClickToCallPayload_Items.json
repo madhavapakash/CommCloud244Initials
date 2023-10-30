@@ -1,0 +1,415 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "userId",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload8110330424419354",
+        "InputFieldName": "Id",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Caller",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload4253061942369689",
+        "InputFieldName": "Id",
+        "InputObjectName": "Lead",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Participant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "0",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload22327680437543695",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:maxTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "SEQUENTIAL",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload596883740778936",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:mergingStrategy",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload09743622517415007",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:participants",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "1",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload14380861106334497",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:participants:maxRetries",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "0",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload7852776401936901",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:participants:maxTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "6366958462",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload7169009970561082",
+        "InputFieldName": "Participant:Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:participants:participantAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload8876899550241453",
+        "InputFieldName": "Participant:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:addParticipant_1:participants:participantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "8147168345",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload7615839496414767",
+        "InputFieldName": "Caller:ARTL_Virtual_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:callerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "0",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload23397679347593026",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:maxTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "SEQUENTIAL",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload30021465079225407",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:mergingStrategy",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload7197684164368021",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:participants",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "2",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload12301770005625356",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:participants:maxRetries",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "0",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload40556058519399807",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:participants:maxTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "8447290306",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload9450550971556062",
+        "InputFieldName": "Caller:Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:participants:participantAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload31654121430644744",
+        "InputFieldName": "Caller:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowConfiguration:initiateCall_1:participants:participantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "9IjZFs2kj6gxm4M9XlJ2zNEwAFpseJZGmC2wS5ey38+lEoN+9PK2739ZQ19Ono6VEC3M9jEnnw41DPFdSCatZg==",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload324143746580265",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callFlowId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "OUTBOUND",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload3452083870981888",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "CCP_SUPPORT",
+        "GlobalKey": "ARTL_DRE_PrepareClickToCallPayload8506654814950849",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_PrepareClickToCallPayload",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_PrepareClickToCallPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "customerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

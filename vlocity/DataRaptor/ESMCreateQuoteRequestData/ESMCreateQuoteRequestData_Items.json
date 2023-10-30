@@ -1,0 +1,126 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "''",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem2",
+        "InputFieldName": "asyncOperation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AsyncOperation__c",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"asyncOperation\":\"''\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem3",
+        "InputFieldName": "createQuotePriceList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__pricelistid__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem4",
+        "InputFieldName": "ContextId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem5",
+        "InputFieldName": "opportunityId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OpportunityId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem6",
+        "InputFieldName": "quoteName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "DefaultValue": "EnterpriseQuote",
+        "GlobalKey": "ESMCreateQuoteRequestDataCustoma00Dn000008fkIiIAIItem7",
+        "InputFieldName": "quoteRecordType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMCreateQuoteRequestData",
+        "OmniDataTransformationId": {
+            "Name": "ESMCreateQuoteRequestData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMCreateQuoteRequestData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "recordType",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"qutoeRecordType\":\"EnterpriseQuote\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

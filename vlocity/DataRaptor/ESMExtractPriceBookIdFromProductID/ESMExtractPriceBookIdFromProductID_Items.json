@@ -1,0 +1,48 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Product2Id",
+        "GlobalKey": "ESMExtractPriceBookIdFromProductID3770649762370548",
+        "InputFieldName": "Product2Id",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractPriceBookIdFromProductID",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractPriceBookIdFromProductID",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractPriceBookIdFromProductID",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PricebookEntry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMExtractPriceBookIdFromProductIDCustom4695",
+        "InputFieldName": "PricebookEntry:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMExtractPriceBookIdFromProductID",
+        "OmniDataTransformationId": {
+            "Name": "ESMExtractPriceBookIdFromProductID",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMExtractPriceBookIdFromProductID",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "itemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-UpdateAsyncJobIdInOrderGroupCustom530",
+        "InputFieldName": "asyncProcessId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQUpdateAsyncJobIdInOrderGroup",
+        "OmniDataTransformationId": {
+            "Name": "CPQUpdateAsyncJobIdInOrderGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQUpdateAsyncJobIdInOrderGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__AsyncJobId__c",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "CPQ-UpdateAsyncJobIdInOrderGroupCustom9342",
+        "InputFieldName": "Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CPQUpdateAsyncJobIdInOrderGroup",
+        "OmniDataTransformationId": {
+            "Name": "CPQUpdateAsyncJobIdInOrderGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQUpdateAsyncJobIdInOrderGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "CPQ-UpdateAsyncJobIdInOrderGroupCustom1703",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CPQUpdateAsyncJobIdInOrderGroup",
+        "OmniDataTransformationId": {
+            "Name": "CPQUpdateAsyncJobIdInOrderGroup",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CPQUpdateAsyncJobIdInOrderGroup",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

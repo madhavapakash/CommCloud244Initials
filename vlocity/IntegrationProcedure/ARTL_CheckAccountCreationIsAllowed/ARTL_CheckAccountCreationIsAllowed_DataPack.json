@@ -1,0 +1,27 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_CheckAccountCreationIsAllowed_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CheckAccountCreationIsAllowed",
+    "OmniProcessElement": [
+        "ARTL_CheckAccountCreationIsAllowed_Element_SetValues1.json",
+        "ARTL_CheckAccountCreationIsAllowed_Element_DRFetchAllowedUserForAccountCreation.json",
+        "ARTL_CheckAccountCreationIsAllowed_Element_SetValues2.json",
+        "ARTL_CheckAccountCreationIsAllowed_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "ARTL_CheckAccountCreationIsAllowed",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_CheckAccountCreationIsAllowed_PropertySetConfig.json",
+    "SubType": "CheckAccountCreationIsAllowed",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/CheckAccountCreationIsAllowed/Procedure",
+    "WebComponentKey": "a78925ae-fe5c-d4b7-f54d-e165e036fbdc"
+}

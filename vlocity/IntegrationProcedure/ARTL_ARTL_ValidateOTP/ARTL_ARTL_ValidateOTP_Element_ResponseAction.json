@@ -1,0 +1,39 @@
+{
+    "CurrencyIsoCode": "INR",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction",
+    "OmniProcessId": {
+        "Name": "ARTL_ValidateOTP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/ARTL/ARTL_ValidateOTP/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "ExpiredOTP": "=IF(%SVFilterValidOTP:FilteredValidTillList% == NULL && %SVFilterValidOTP:FilteredExpiredOTPList% != NULL, true, false)",
+            "OTPIsValidated": true,
+            "OTPValid": "=IF(%SVFilterValidOTP:FilteredValidTillList% != NULL && %SVFilterValidOTP:FilteredExpiredOTPList% == NULL, true, false)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "VlocityNoRootNode",
+        "sendJSONPath": "null",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/ARTL/ARTL_ValidateOTP/Procedure/ResponseAction"
+}

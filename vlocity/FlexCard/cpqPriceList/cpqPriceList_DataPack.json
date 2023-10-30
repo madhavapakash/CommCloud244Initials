@@ -1,0 +1,48 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "Parent.pricelistId",
+                "val": "a3D5g000000oW2bEAE"
+            },
+            {
+                "id": 10,
+                "name": "Parent.cartId",
+                "val": "8015g000000c6ZfAAI"
+            }
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "cartId": "{Parent.cartId}"
+            },
+            "ipMethod": "CPQ_GetPriceLists",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "Description": "Card with Price List Dropdown",
+    "IsTrackingEnabled": false,
+    "Name": "cpqPriceList",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqPriceList/Salesforce/1/1641193080943",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqPriceList.json",
+    "SampleDataSourceResponse": "{\"totalSize\":4,\"records\":[{\"actions\":{\"setpricelist\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"inputFields\":{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000oW2bEAE\"},\"cartId\":\"8015g000000c6ZfAAI\",\"methodName\":\"updateCarts\"}},\"rest\":{\"params\":{\"cartId\":\"8015g000000c6ZfAAI\",\"inputFields\":[{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000oW2bEAE\"}]},\"method\":\"PUT\",\"link\":\"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c6ZfAAI\"}}},\"Name\":\"CPQ\",\"Id\":\"a3D5g000000oW2bEAE\",\"displaySequence\":-1,\"value\":\"a3D5g000000oW2bEAE\",\"label\":\"CPQ\"},{\"actions\":{\"setpricelist\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"inputFields\":{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000oWFIEA2\"},\"cartId\":\"8015g000000c6ZfAAI\",\"methodName\":\"updateCarts\"}},\"rest\":{\"params\":{\"cartId\":\"8015g000000c6ZfAAI\",\"inputFields\":[{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000oWFIEA2\"}]},\"method\":\"PUT\",\"link\":\"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c6ZfAAI\"}}},\"Name\":\"B2C\",\"Id\":\"a3D5g000000oWFIEA2\",\"displaySequence\":-1,\"value\":\"a3D5g000000oWFIEA2\",\"label\":\"B2C\"},{\"actions\":{\"setpricelist\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"inputFields\":{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000ojWVEAY\"},\"cartId\":\"8015g000000c6ZfAAI\",\"methodName\":\"updateCarts\"}},\"rest\":{\"params\":{\"cartId\":\"8015g000000c6ZfAAI\",\"inputFields\":[{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000ojWVEAY\"}]},\"method\":\"PUT\",\"link\":\"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c6ZfAAI\"}}},\"Name\":\"COMMS_CPQ_PriceList_0\",\"Id\":\"a3D5g000000ojWVEAY\",\"displaySequence\":-1,\"value\":\"a3D5g000000ojWVEAY\",\"label\":\"COMMS_CPQ_PriceList_0\"},{\"actions\":{\"setpricelist\":{\"client\":{\"params\":{}},\"remote\":{\"params\":{\"inputFields\":{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000okevEAA\"},\"cartId\":\"8015g000000c6ZfAAI\",\"methodName\":\"updateCarts\"}},\"rest\":{\"params\":{\"cartId\":\"8015g000000c6ZfAAI\",\"inputFields\":[{\"%vlocity_namespace%__PriceListId__c\":\"a3D5g000000okevEAA\"}]},\"method\":\"PUT\",\"link\":\"/services/apexrest/%vlocity_namespace%/v2/cpq/carts/8015g000000c6ZfAAI\"}}},\"Name\":\"PromoPriceList01\",\"Id\":\"a3D5g000000okevEAA\",\"displaySequence\":-1,\"value\":\"a3D5g000000okevEAA\",\"label\":\"PromoPriceList01\"}]}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqPriceList"
+}

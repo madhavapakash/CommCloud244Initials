@@ -1,0 +1,114 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CartItemId",
+        "GlobalKey": "GetOrderGroupSizeFromCartItemCustoma00Dn000006c9smIAAItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "OrderItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetOrderGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetOrderGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetOrderGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderItem:%vlocity_namespace%__OrderGroupId__c",
+        "GlobalKey": "GetOrderGroupSizeFromCartItemCustoma00Dn000006c9smIAAItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__OrderGroup__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetOrderGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetOrderGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetOrderGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderGroup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(OrderGroup:%vlocity_namespace%__ExpectedMemberCount__c = 0 || ISBLANK(OrderGroup:%vlocity_namespace%__ExpectedMemberCount__c), OrderGroup:%vlocity_namespace%__MemberCount__c, OrderGroup:%vlocity_namespace%__ExpectedMemberCount__c)",
+        "FormulaResultPath": "memberCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetOrderGroupSizeFromCartItemCustoma00Dn000006c9smIAAItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetOrderGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetOrderGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetOrderGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetOrderGroupSizeFromCartItemCustoma00Dn000006c9smIAAItem3",
+        "InputFieldName": "memberCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetOrderGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetOrderGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetOrderGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "GroupSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetOrderGroupSizeFromCartItemCustoma00Dn000006c9smIAAItem4",
+        "InputFieldName": "OrderItem:%vlocity_namespace%__OrderGroupId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetOrderGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetOrderGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetOrderGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderGroupId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

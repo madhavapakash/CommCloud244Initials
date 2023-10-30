@@ -1,0 +1,114 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CartItemId",
+        "GlobalKey": "GetQuoteGroupSizeFromCartItem30105618019337443",
+        "InputFieldName": "Id",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteLineItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteLineItem:%vlocity_namespace%__QuoteGroupId__c",
+        "GlobalKey": "GetQuoteGroupSizeFromCartItem035560797517653064",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__QuoteGroup__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteGroup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(QuoteGroup:%vlocity_namespace%__ExpectedMemberCount__c = 0 || ISBLANK(QuoteGroup:%vlocity_namespace%__ExpectedMemberCount__c), QuoteGroup:%vlocity_namespace%__MemberCount__c, QuoteGroup:%vlocity_namespace%__ExpectedMemberCount__c)",
+        "FormulaResultPath": "memberCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetQuoteGroupSizeFromCartItemCustom178",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetQuoteGroupSizeFromCartItem5721073178585281",
+        "InputFieldName": "memberCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "GroupSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetQuoteGroupSizeFromCartItem6149893819371359",
+        "InputFieldName": "QuoteLineItem:%vlocity_namespace%__QuoteGroupId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteGroupSizeFromCartItem",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteGroupSizeFromCartItem",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteGroupSizeFromCartItem",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteGroupId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

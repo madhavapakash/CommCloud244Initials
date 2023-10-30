@@ -1,0 +1,49 @@
+{
+    "AuthorName": "Vlocity",
+    "ClonedFromOmniUiCardKey": "cpqProductFilter/Vlocity/4/1616678713943",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 0,
+                "name": "Parent.showFilters",
+                "val": "true"
+            },
+            {
+                "id": 0,
+                "name": "Parent.cartId",
+                "val": "8015g000000oZ6ZAAU"
+            },
+            {
+                "id": 1,
+                "name": "Parent.qualified",
+                "val": "Qualified"
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "{\"productAttributes\":\"init\"}",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "cpqProductFilterChild",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqProductFilterChild/Vlocity/4/1617604188319",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqProductFilterChild.json",
+    "SampleDataSourceResponse": "{\"productAttributes\":\"init\"}",
+    "StylingConfiguration": "{\"customStyles\":\".filter-container{\\n    .slds-card{\\n        border-style: none;\\n    }\\n}\\n\\n.custom-btn{\\n    width:fit-content;\\n    margin-left: -1px;\\n    border-radius: 0px;\\n}\\n\\n.btn-block{\\n    margin-left:auto;\\n    width:fit-content;\\n}\\n\\n.filters-mobile-title{\\n    font-size: 22px;\\n    line-height: 25px;\\n    color: #3E3E3C;\\n}\\n\\n.cpq_filter-closed-body{\\n    max-height: 100px;\\n}\\n\\n.vdf-container::-webkit-scrollbar {\\n    display: none;\\n}\\n\\n.category-cart{\\n    ul{\\n        overflow-x: auto;\\n        display: flex;\\n        height: 50px;\\n    }\\n    ul::-webkit-scrollbar {\\n        display: none;\\n    }\\n    li{\\n    display: inline; \\n    }\\n    span{\\n        display: inline;    \\n    }\\n    .tree-selector__item-span_active{\\n        box-shadow: inset 0 -0.25rem 0 var(--lwc-brandPrimary, rgb(21, 137, 238));\\n    }\\n}\\n\\n.vdf-container-cart{\\n    max-height: 130px;\\n}\\n\\n.filter-footer-cart-btn{\\n    width:fit-content;\\n    border-radius: 0px;\\n    margin: auto;\\n}\\n\\n.filter-footer-cart-btn .slds-button {\\n    border-radius: 0px;\\n}\\n\\n@media (max-width: 1024px) {\\n    .category-mobile{\\n\\n        ul{\\n            overflow-x: auto;\\n            display: flex;\\n            height: 50px;\\n        }\\n\\n        ul::-webkit-scrollbar {\\n            display: none;\\n        }\\n\\n        li{\\n        display: inline; \\n        }\\n\\n        span{\\n            display: inline;    \\n        }\\n\\n        .tree-selector__item-span_active{\\n            box-shadow: inset 0 -0.25rem 0 var(--lwc-brandPrimary, rgb(21, 137, 238));\\n        }\\n\\n    }\\n\\n    .cpq_filter-body{\\n        position: fixed;\\n        display:block;\\n        top: 44px;\\n        right: 0px;\\n        bottom: 44px;\\n        left: 0px;\\n        z-index: 9001;\\n    }\\n\\n    .cpq_filter-title_mobile{\\n        position: fixed;\\n        display:block;\\n        top: 0px;\\n        right: 0px;\\n        left: 0px;\\n        z-index: 9002;\\n        margin-bottom: 0px;\\n        height: 44px;\\n    }\\n\\n    .cpq_filter-footer_mobile{\\n        position: fixed;\\n        display:block;\\n        right: 0px;\\n        left: 0px;\\n        bottom: 0px;\\n        z-index: 9002;\\n        height: 44px;\\n    }\\n\\n    .filter-footer-btn{\\n        width:fit-content;\\n        border-radius: 0px;\\n        margin: auto;\\n    }\\n\\n    .filter-footer-btn .slds-button {\\n        border-radius: 0px;\\n    }\\n}\\n\\n@media (min-width: 1024px) {\\n    .category-mobile{\\n        display: initial;\\n    }\\n\\n    .cpq_filter-title_mobile{\\n        display: none;\\n    }\\n\\n    .cpq_filter-body{\\n        max-height: 330px;\\n    }\\n\\n    .cpq_filter-footer_mobile{\\n        display: initial;\\n    }\\n\\n    .filter-footer-btn{\\n        width:fit-content;\\n        margin-left: -1px;\\n        border-radius: 0px;\\n    }\\n\\n    .filter-footer-btn .slds-button {\\n        border-radius: 0px;\\n        margin-left: -1px;\\n    }\\n\\n    .filter-footer-left-btn{\\n        margin-left:auto;\\n        width:fit-content;\\n    }\\n}\\n\"}",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqProductFilterChild"
+}

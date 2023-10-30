@@ -1,0 +1,110 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FILTER(LIST(groups), 'groupInfo:groupName == groupName')",
+        "FormulaResultPath": "newGroups",
+        "FormulaSequence": 3,
+        "GlobalKey": "ESMSelfServiceFilterExistingGroupsCustoma1h8Z000003fFRKQA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FILTER(LIST(groups), 'message LIKE \"group already exists\"')",
+        "FormulaResultPath": "existingGroups",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceFilterExistingGroupsCustoma1h8Z000003fFRKQA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "existingGroups:groupName",
+        "FormulaResultPath": "groupList",
+        "FormulaSequence": 2,
+        "GlobalKey": "ESMSelfServiceFilterExistingGroupsCustoma1h8Z000003fFRKQA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceFilterExistingGroupsCustoma1h8Z000003fFRKQA2Item3",
+        "InputFieldName": "groupList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<String>",
+        "OutputFieldName": "existingGroups",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceFilterExistingGroupsCustoma1h8Z000003fFRKQA2Item4",
+        "InputFieldName": "newGroups",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceFilterExistingGroups",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceFilterExistingGroups",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceFilterExistingGroups",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "newGroups",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

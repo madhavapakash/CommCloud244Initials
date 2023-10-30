@@ -1,0 +1,49 @@
+{
+    "AuthorName": "Vlocity",
+    "ClonedFromOmniUiCardKey": "cpqCatalogBrowsingMenuCombined_DiffState/Vlocity/9/1617273335546",
+    "CurrencyIsoCode": "INR",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 6,
+                "name": "Parent.view",
+                "val": "browse"
+            },
+            {
+                "id": 7,
+                "name": "Parent.priceListId",
+                "val": ""
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": 0,
+            "inputMap": {
+                "hierarchy": "10",
+                "priceListId": "{Parent.priceListId}"
+            },
+            "ipMethod": "CPQ_GetCatalogs",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "Description": "Catalog browsing component for cpq rewrite.",
+    "IsTrackingEnabled": false,
+    "Name": "cpqCatalogSelectionMenu",
+    "Namespace": "",
+    "OmniUiCardKey": "cpqCatalogSelectionMenu/Vlocity/5/1641988773905",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "cpqCatalogSelectionMenu.json",
+    "SampleDataSourceResponse": "{\"response\":[{\"isDefault\":true,\"label\":\"All Products\",\"Id\":\"-1\"},{\"isDefault\":false,\"label\":\"Promotions\",\"Id\":\"-2\"}]}",
+    "StylingConfiguration": "{\"customStyles\":\".cpq__catalog-item{\\n    .item-font{\\n        font-size: 2px;\\n    }\\n}\\n\\n.cpq__catalog-block_border{\\n    border: 1px solid rgba(221, 219, 218, 1);\\n    padding: 0;\\n}\\n\\n.cpq__catalog-header_cart-phase_padding{\\n    padding-left: 8px;\\n    padding-right: 8px;\\n    padding-top: 8px;\\n    padding-bottom: 0px;\\n}\\n\\n.cpq__catalog-block_reverse-grid{\\n\\n    .slds-grid{\\n        -webkit-box-orient: horizontal;\\n        -webkit-box-direction: reverse;\\n        -ms-flex-direction: row-reverse;\\n        flex-direction: row-reverse;\\n    }\\n\\n}\\n\\n.cpq__catalog-block_no-padding{\\n    padding: 0px;\\n}\\n\\n.cpq__catalog-hidden{\\n    display: none;\\n}\\n\\n.cpq__catalog-heading_cart{\\n    padding-left: 10px;\\n    padding-bottom: 4px;\\n    max-width: 185px;\\n    margin-top: auto;\\n    margin-bottom: auto;\\n}\\n\\n.cpq__catalog-header_mobile{\\n    background-color: #FAFAF9;\\n    border-bottom: 0.5px solid #C9C7C5;\\n    padding: 0px;\\n}\\n\\n.cpq__catalog-heading_mobile{\\n    padding-left: 10px;\\n    padding-bottom: 4px;\\n}\\n\\n.cpq__catalog-navigation-header{\\n    .navigation-header-font{\\n        font-size: 20px;\\n    }\\n}\\n\\n.cpq__catalog-back-label{\\n    .back-label-style{\\n        font-size: 20px;\\n    }\\n}\\n\\n.cpq__category-button_selection{\\n    .slds-button{\\n        height: 41px;\\n        width: 154px;\\n        border: 1px solid rgb(0, 112, 210);\\n        font-weight: 700;\\n    }\\n}\\n\\n.cpq__catalog-button_done{\\n\\n    .slds-button{\\n        height: 44px;\\n        width: 78px;\\n        font-size: 16px;\\n        border-radius: 4px;\\n        background: #0070D2;\\n    }\\n\\n}\\n\\n.cpq_catalog-button_done-position{\\n    margin-left: auto;\\n    width: fit-content;\\n    width: -moz-fit-content; /* Support Mozilla Firefox Browser */\\n    padding-right: 0px;\\n    padding-top: 4px;\\n    padding-bottom: 4px;\\n}\\n\\n.cpq_catalog-button_done-position_mobile{\\n    margin-left: auto;\\n    width: fit-content;\\n    width: -moz-fit-content; /* Support Mozilla Firefox Browser */\\n    padding-right: 16px;\\n    padding-top: 4px;\\n}\\n\\n\\n\\n@media (max-width: 600px) {\\n  \\n  .cpq__catalog-view_mobile {\\n    display: initial;\\n  }\\n\\n  .cpq__catalog-view_mobile-hidden {\\n    display: none;\\n  }\\n\\n  .cpq_catalog-layover_mobile{\\n    padding: 0px;\\n    position: fixed;\\n    display:block;\\n    top: 0px;\\n    right: 0px;\\n    bottom: 0px;\\n    left: 0px;\\n    z-index: 9001;\\n    margin-bottom: 0px;\\n  }\\n\\n  .cpq__catalog-item_mobile{\\n    height:100%;\\n  }\\n  \\n  .cpq__catalog-view_desktop {\\n  \\tdisplay: none;\\n  }\\n\\n  .cpq__catalog-item-wrapper_mobile{\\n    padding: 0px;\\n    height: calc(100vh - 90px);\\n    overflow-y: auto;\\n   }\\n\\n\\n}\\n\\n@media (min-width: 600px) {\\n  \\n  .cpq__catalog-view_mobile {\\n    display: none;\\n  }\\n\\n  .cpq__catalog-view_mobile-hidden {\\n    display: intial;\\n  }\\n  \\n  .cpq__catalog-view_desktop {\\n  \\tdisplay: initial;\\n  }\\n\\n}\\n\"}",
+    "UniqueName": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/cpqCatalogSelectionMenu"
+}

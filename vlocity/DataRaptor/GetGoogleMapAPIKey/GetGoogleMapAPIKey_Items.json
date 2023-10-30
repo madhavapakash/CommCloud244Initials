@@ -1,0 +1,75 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "BOOLEAN",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "\"True\"",
+        "GlobalKey": "GetGoogleMapAPIKeyCustom8992",
+        "InputFieldName": "%vlocity_namespace%__isActive__c",
+        "InputObjectName": "%vlocity_namespace%__VPLExpress__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetGoogleMapAPIKey",
+        "OmniDataTransformationId": {
+            "Name": "GetGoogleMapAPIKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetGoogleMapAPIKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "APIKey",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterDataType": "STRING",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "DeveloperName",
+        "GlobalKey": "GetGoogleMapAPIKeyCustom4726",
+        "InputFieldName": "DeveloperName",
+        "InputObjectName": "%vlocity_namespace%__VPLExpress__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetGoogleMapAPIKey",
+        "OmniDataTransformationId": {
+            "Name": "GetGoogleMapAPIKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetGoogleMapAPIKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "APIKey",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "GetGoogleMapAPIKeyCustom3263",
+        "InputFieldName": "%vlocity_namespace%__Value__c",
+        "InputObjectName": "%vlocity_namespace%__VPLExpress__mdt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetGoogleMapAPIKey",
+        "OmniDataTransformationId": {
+            "Name": "GetGoogleMapAPIKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetGoogleMapAPIKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "APIKey",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

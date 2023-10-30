@@ -1,0 +1,473 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "AttributePricingMatrix",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/AttributePricingMatrix",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "340546",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Name"
+            },
+            {
+                "columnKey": "7167fe",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Code"
+            },
+            {
+                "columnKey": "8ba729",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Characteristic Name"
+            },
+            {
+                "columnKey": "c371f3",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Characteristic Value"
+            },
+            {
+                "columnKey": "aea7c7",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Business Unit"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "a17342",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ARC"
+            },
+            {
+                "columnKey": "44c2b6",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ARC Floor Rate"
+            },
+            {
+                "columnKey": "4ed0d3",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "NRC"
+            },
+            {
+                "columnKey": "d7ff2c",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "NRC Floor Rate"
+            },
+            {
+                "columnKey": "7a251d",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "MRC"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ARC\":\"AttributePricingMatrix__ARC\",\"ARC Floor Rate\":\"AttributePricingMatrix__ARCFloorRate\",\"NRC\":\"AttributePricingMatrix__NRC\",\"NRC Floor Rate\":\"AttributePricingMatrix__NRCFloorRate\",\"MRC\":\"AttributePricingMatrix__MRC\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "AttributePricingMatrix",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/AttributePricingMatrix",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "215087",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Name"
+            },
+            {
+                "columnKey": "e02b01",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Code"
+            },
+            {
+                "columnKey": "725b0c",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Characteristic Name"
+            },
+            {
+                "columnKey": "fea7b1",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Characteristic Value"
+            },
+            {
+                "columnKey": "d0942b",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Business Unit"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "30ac3e",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ARC"
+            },
+            {
+                "columnKey": "ec24e1",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "NRC"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ARC\":\"AttributePricingMatrix__ARC\",\"NRC\":\"AttributePricingMatrix__NRC\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "AttributePricingMatrix",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/AttributePricingMatrix",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "bb4264",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Name"
+            },
+            {
+                "columnKey": "dff3cf",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Source Product Code"
+            },
+            {
+                "columnKey": "d051b0",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Characteristic Name"
+            },
+            {
+                "columnKey": "d6d370",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Characteristic Value"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "dca2fe",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "NRC"
+            },
+            {
+                "columnKey": "4eeacc",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "MRC"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NRC\":\"AttributePricingMatrix__NRC\",\"MRC\":\"AttributePricingMatrix__MRC\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AttributePricingMatrix__MRC",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AttributePricingMatrix__MRC",
+                "dataType": "Text",
+                "text": "MRC ( AttributePricingMatrix )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "REC_MNTH_STD_PRC",
+            "dataType": "Currency",
+            "name": "REC_MNTH_STD_PRC"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"REC_MNTH_STD_PRC\":\"REC_MNTH_STD_PRC\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AttributePricingMatrix__NRC",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AttributePricingMatrix__NRC",
+                "dataType": "Text",
+                "text": "NRC ( AttributePricingMatrix )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "OT_STD_PRC",
+            "dataType": "Currency",
+            "name": "OT_STD_PRC"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"OT_STD_PRC\":\"OT_STD_PRC\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AttributePricingMatrix__ARC",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AttributePricingMatrix__ARC",
+                "dataType": "Text",
+                "text": "ARC ( AttributePricingMatrix )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "REC_YRLY_STD_PRC",
+            "dataType": "Currency",
+            "name": "REC_YRLY_STD_PRC"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"REC_YRLY_STD_PRC\":\"REC_YRLY_STD_PRC\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AttributePricingMatrix__ARCFloorRate",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AttributePricingMatrix__ARCFloorRate",
+                "dataType": "Text",
+                "text": "ARC Floor Rate ( AttributePricingMatrix )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ARC_Floor_Rate",
+            "dataType": "Text",
+            "name": "ARC_Floor_Rate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ARC_Floor_Rate\":\"ARC_Floor_Rate\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AttributePricingMatrix__NRCFloorRate",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AttributePricingMatrix__NRCFloorRate",
+                "dataType": "Text",
+                "text": "NRC Floor Rate ( AttributePricingMatrix )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "AttributePricingProcedure",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "AttributePricingProcedure",
+            "%vlocity_namespace%__VersionNumber__c": 4,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/4/%vlocity_namespace%__CalculationProcedure__c/AttributePricingProcedure",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NRC_Floor_Rate",
+            "dataType": "Text",
+            "name": "NRC_Floor_Rate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NRC_Floor_Rate\":\"NRC_Floor_Rate\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "CurrencyIsoCode": "INR",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

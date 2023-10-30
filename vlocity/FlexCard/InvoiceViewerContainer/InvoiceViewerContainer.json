@@ -1,0 +1,375 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "{}",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "isFlex": true,
+    "isRepeatable": false,
+    "listenToWidthResize": false,
+    "lwc": {
+        "DeveloperName": "cfInvoiceViewerLineItemTemp",
+        "Id": "0Rb720000009Ao9CAE",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfInvoiceViewerLineItemTemp",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+                "InvoiceViewerLineItemTemp"
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "class": "slds-col ",
+                                            "element": "outputField",
+                                            "elementLabel": "Invoice Id-Text-0",
+                                            "key": "element_element_element_block_1_0_block_0_0_outputField_0_0",
+                                            "name": "Text",
+                                            "parentElementKey": "element_element_block_1_0_block_0_0",
+                                            "property": {
+                                                "card": "{card}",
+                                                "mergeField": "%3Ch2%20class=%22slds-text-align_center%22%3EInvoice%20Id%3C/h2%3E",
+                                                "record": "{record}"
+                                            },
+                                            "size": {
+                                                "default": "12",
+                                                "isResponsive": false
+                                            },
+                                            "stateIndex": 0,
+                                            "styleObject": {
+                                                "sizeClass": "slds-size_12-of-12"
+                                            },
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Invoice Id",
+                                    "key": "element_element_block_0_0_block_0_0",
+                                    "name": "Block",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "3",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "3",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_3-of-12 "
+                                    },
+                                    "type": "block",
+                                    "userUpdatedElementLabel": true
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "class": "slds-col ",
+                                            "element": "outputField",
+                                            "elementLabel": "Date-Text-0",
+                                            "key": "element_element_element_block_0_0_block_1_0_outputField_1_0",
+                                            "name": "Text",
+                                            "parentElementKey": "element_element_block_0_0_block_1_0",
+                                            "property": {
+                                                "card": "{card}",
+                                                "mergeField": "%3Ch2%20class=%22slds-text-align_center%22%3EDate%3C/h2%3E",
+                                                "record": "{record}"
+                                            },
+                                            "size": {
+                                                "default": "12",
+                                                "isResponsive": false
+                                            },
+                                            "stateIndex": 0,
+                                            "styleObject": {
+                                                "sizeClass": "slds-size_12-of-12"
+                                            },
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Date",
+                                    "key": "element_element_block_0_0_block_1_0",
+                                    "name": "Block",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "3",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "3",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_3-of-12 "
+                                    },
+                                    "type": "block",
+                                    "userUpdatedElementLabel": true
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "class": "slds-col ",
+                                            "element": "outputField",
+                                            "elementLabel": "Amount-Text-0",
+                                            "key": "element_element_element_block_1_0_block_2_0_outputField_0_0",
+                                            "name": "Text",
+                                            "parentElementKey": "element_element_block_1_0_block_2_0",
+                                            "property": {
+                                                "card": "{card}",
+                                                "mergeField": "%3Ch2%20class=%22slds-text-align_center%22%3EAmount%3C/h2%3E",
+                                                "record": "{record}"
+                                            },
+                                            "size": {
+                                                "default": "12",
+                                                "isResponsive": false
+                                            },
+                                            "stateIndex": 0,
+                                            "styleObject": {
+                                                "sizeClass": "slds-size_12-of-12"
+                                            },
+                                            "type": "text"
+                                        }
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Amount",
+                                    "key": "element_element_block_0_0_block_2_0",
+                                    "name": "Block",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "3",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "3",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_3-of-12 "
+                                    },
+                                    "type": "block",
+                                    "userUpdatedElementLabel": true
+                                },
+                                {
+                                    "children": [
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Block-1-Block-3-clone-0",
+                                    "key": "element_element_block_0_0_block_3_0",
+                                    "name": "Block",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "3",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "3",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_3-of-12 "
+                                    },
+                                    "type": "block",
+                                    "userUpdatedElementLabel": true
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "childCardPreview",
+                                    "elementLabel": "Block-1-FlexCard-4",
+                                    "key": "element_element_block_0_0_childCardPreview_4_0",
+                                    "name": "FlexCard",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "cardName": "InvoiceViewerLineItemTemp",
+                                        "cardNode": "{records}",
+                                        "isChildCardTrackingEnabled": false,
+                                        "parentAttribute": {
+                                            "": ""
+                                        },
+                                        "recordId": "{recordId}",
+                                        "selectedState": "Active"
+                                    },
+                                    "size": {
+                                        "default": "12",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "sizeClass": "slds-size_12-of-12"
+                                    },
+                                    "type": "element"
+                                }
+                            ],
+                            "class": "slds-col ",
+                            "element": "block",
+                            "elementLabel": "Block-1",
+                            "name": "Block",
+                            "property": {
+                                "card": "{card}",
+                                "collapsedByDefault": false,
+                                "collapsible": false,
+                                "label": "Block",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "class": "slds-p-around_x-small",
+                                "padding": [
+                                    {
+                                        "size": "x-small",
+                                        "type": "around"
+                                    }
+                                ],
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "block"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small",
+                "container": {
+                    "class": "slds-card"
+                },
+                "margin": [
+                    {
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                    {
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "InvoiceViewerContainer",
+    "uniqueKey": "",
+    "xmlJson": [
+    ],
+    "xmlObject": {
+        "ApiVersion": 56,
+        "Id": "0Rb7200000095RtCAI",
+        "IsExplicitImport": false,
+        "IsExposed": true,
+        "MasterLabel": "ARTL_InvoiceViewerContainer",
+        "TargetConfigs": "<targetConfig targets=\"lightning__AppPage\">\n      <property name=\"debug\" type=\"Boolean\"></property>\n      <property name=\"recordId\" type=\"String\"></property>\n    </targetConfig>\n    <targetConfig targets=\"lightning__RecordPage\">\n      <property name=\"debug\" type=\"Boolean\"></property>\n    </targetConfig>"
+    }
+}

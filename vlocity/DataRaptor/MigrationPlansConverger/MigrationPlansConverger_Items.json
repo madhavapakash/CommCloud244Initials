@@ -1,0 +1,65 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "LISTMERGE($Vlocity.NULL,LIST(soMigrationPlans:response),LIST(ataMigrationPlans:response))",
+        "FormulaResultPath": "offerMigrationPlans",
+        "FormulaSequence": 1,
+        "GlobalKey": "MigrationPlansConvergerCustom7780",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MigrationPlansConverger",
+        "OmniDataTransformationId": {
+            "Name": "MigrationPlansConverger",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MigrationPlansConverger",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MigrationPlansConvergerCustom5147",
+        "InputFieldName": "ataMigrationPlans:fieldsMetadata",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MigrationPlansConverger",
+        "OmniDataTransformationId": {
+            "Name": "MigrationPlansConverger",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MigrationPlansConverger",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerMigrationPlans:fieldsMetadata",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "MigrationPlansConvergerCustom1118",
+        "InputFieldName": "offerMigrationPlans",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "MigrationPlansConverger",
+        "OmniDataTransformationId": {
+            "Name": "MigrationPlansConverger",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/MigrationPlansConverger",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "offerMigrationPlans:response",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

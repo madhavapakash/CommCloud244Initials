@@ -1,0 +1,274 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(cartTotalPrice:priceType == \"oneTime\", cartTotalPrice:price:dutyFreeAmount:money:value, 0)",
+        "FormulaResultPath": "OneTimeTotal",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRLoadExternalShoppingCartCustom4143",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(cartTotalPrice:priceType == \"recurring\", cartTotalPrice:price:dutyFreeAmount:money:value, 0)",
+        "FormulaResultPath": "RecurringTotal",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRLoadExternalShoppingCartCustom8635",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom3669",
+        "InputFieldName": "href",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__CartUrl__c",
+        "OutputObjectName": "%vlocity_namespace%__Cart__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom5713",
+        "InputFieldName": "contactMedium:characteristic:emailAddress",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LookupByFieldName": "Email",
+        "LookupObjectName": "Lead",
+        "LookupReturnedFieldName": "Id",
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__LeadId__c",
+        "OutputObjectName": "%vlocity_namespace%__Cart__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom5029",
+        "InputFieldName": "OneTimeTotal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__OneTimeTotal__c",
+        "OutputObjectName": "%vlocity_namespace%__Cart__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom2770",
+        "InputFieldName": "RecurringTotal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__RecurringTotal__c",
+        "OutputObjectName": "%vlocity_namespace%__Cart__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom8812",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__Cart__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom8833",
+        "InputFieldName": "id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "%vlocity_namespace%__Cart__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom8246",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__CartId__c",
+        "OutputObjectName": "%vlocity_namespace%__CartItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom8951",
+        "InputFieldName": "cartItem:productOffering:id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__ProductCode__c",
+        "OutputObjectName": "%vlocity_namespace%__CartItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom3350",
+        "InputFieldName": "cartItem:quantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "%vlocity_namespace%__Quantity__c",
+        "OutputObjectName": "%vlocity_namespace%__CartItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterOperator": "=",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom6061",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__CartItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "DRLoadExternalShoppingCartCustom203",
+        "InputFieldName": "cartItem:productOffering:name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadExternalShoppingCart",
+        "OmniDataTransformationId": {
+            "Name": "LoadExternalShoppingCart",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadExternalShoppingCart",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "%vlocity_namespace%__CartItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

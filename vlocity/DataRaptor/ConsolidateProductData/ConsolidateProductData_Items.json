@@ -1,0 +1,132 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FILTER(LIST(ProductBundles), 'groupId != $Vlocity.NULL && groupCartId != $Vlocity.NULL && ISNOTBLANK(assetIds)')",
+        "FormulaResultPath": "filteredBundles",
+        "FormulaSequence": 3,
+        "GlobalKey": "ConsolidateProductDataCustom1158",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(timestamp != null, CONCAT(products:Name,\" \",timestamp), products:Name)",
+        "FormulaResultPath": "products:Name",
+        "FormulaSequence": 1,
+        "GlobalKey": "ConsolidateProductDataCustom5373",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "LISTMERGE(\"Name\", LIST(CustomizedGroupDetails:result), LIST(products), LIST(groupsToCreate))",
+        "FormulaResultPath": "ProductBundles",
+        "FormulaSequence": 2,
+        "GlobalKey": "ConsolidateProductDataCustom5870",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "SUM(filteredBundles:Quantity)",
+        "FormulaResultPath": "totalAssets",
+        "FormulaSequence": 4,
+        "GlobalKey": "ConsolidateProductDataCustom6857",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateProductDataCustom2893",
+        "InputFieldName": "filteredBundles",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "productBundles",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ConsolidateProductDataCustom9755",
+        "InputFieldName": "totalAssets",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ConsolidateProductData",
+        "OmniDataTransformationId": {
+            "Name": "ConsolidateProductData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ConsolidateProductData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "totalAssets",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,6 @@
+#Before using this job be sure to create vlo-app/tmp
+#run: vlocity -sfdx.username upp-test -job vlo-app/all.yaml packExport
+projectPath: ./vlocity
+activate: true
+compileOnBuild: true
+autoRetryErrors: true

@@ -1,0 +1,45 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "SPLIT(Members:%vlocity_namespace%__SelectedAssetIds__c,',')",
+        "FormulaResultPath": "Members:%vlocity_namespace%__SelectedAssetIds",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceCreateSelectedAssetIdsListCustoma1h8Z000003fWFEQA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateSelectedAssetIdsList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateSelectedAssetIdsList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateSelectedAssetIdsList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCreateSelectedAssetIdsListCustoma1h8Z000003fWFEQA2Item1",
+        "InputFieldName": "Members:%vlocity_namespace%__SelectedAssetIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCreateSelectedAssetIdsList",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCreateSelectedAssetIdsList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCreateSelectedAssetIdsList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<String>",
+        "OutputFieldName": "Members:SelectedAssetIds",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

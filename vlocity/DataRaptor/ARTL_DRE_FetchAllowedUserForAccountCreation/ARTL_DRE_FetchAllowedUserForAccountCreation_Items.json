@@ -1,0 +1,157 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "userId",
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom7300",
+        "InputFieldName": "AssigneeId",
+        "InputObjectName": "PermissionSetAssignment",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PSA",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom948",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "PermissionSetAssignment",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PSA",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "AccountCreationAllowedPSList INCLUDES PSA:PermissionSet.Name",
+        "FormulaResultPath": "PSA:isAllowedUser",
+        "FormulaSequence": 3,
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom5464",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF(PSA:Id == null , null , IF(PSA:PermissionSet.Name == \"ARTL_KAM_Sales\", true, false))",
+        "FormulaSequence": 2,
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom270",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "\"ARTL_KAM_Sales\";\"ARTL_Secondary_KAM\";\"ART_Sales_Operation\";\"ARTL_CBH\";\"ARTL_AM\"",
+        "FormulaResultPath": "AccountCreationAllowedPSList",
+        "FormulaSequence": 1,
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom4395",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom487",
+        "InputFieldName": "PSA:PermissionSet.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PSA:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ARTL_DRE_FetchAllowedUserForAccountCreationCustom3996",
+        "InputFieldName": "PSA:isAllowedUser",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+        "OmniDataTransformationId": {
+            "Name": "ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ARTL_DRE_FetchAllowedUserForAccountCreation",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PSA:isAllowedUser",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

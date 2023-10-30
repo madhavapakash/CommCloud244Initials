@@ -1,0 +1,170 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((NOT(data:canCreateFDO) && NOT(data:disconnectedAssets) && messages:errorMessage == ''),'Can not create the Order as there is already an Order with Request Date greater than Order Request Date',messages:errorMessage )",
+        "FormulaResultPath": "messages:errorMessage",
+        "FormulaSequence": 3,
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((NOT(data:canCreateFDO) && data:disconnectedAssets && messages:errorMessage == ''),'Assets cannot be modified because a request has already been made to disconnect it.', messages:errorMessage )",
+        "FormulaResultPath": "messages:errorMessage",
+        "FormulaSequence": 2,
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((NOT(data:canCreateFDO) && data:noRequestDateTime),'Cannot add asset to order as there is no request Start date in the order', '' )",
+        "FormulaResultPath": "messages:errorMessage",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "IF((messages:errorMessage != ''),messages:errorMessage,messages:message)",
+        "FormulaResultPath": "messages:message",
+        "FormulaSequence": 4,
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem4",
+        "InputFieldName": "data",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "data",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem5",
+        "InputFieldName": "messages",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "messages",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem6",
+        "InputFieldName": "consolidatedMsg",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "messages:message",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceCanCreateFailureMessageCustoma1h8Z000003fWNtQAMItem7",
+        "InputFieldName": "totalSize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceCanCreateFailureMessage",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceCanCreateFailureMessage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceCanCreateFailureMessage",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "totalSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

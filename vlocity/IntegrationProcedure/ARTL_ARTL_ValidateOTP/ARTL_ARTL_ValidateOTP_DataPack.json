@@ -1,0 +1,30 @@
+{
+    "CurrencyIsoCode": "INR",
+    "CustomJavaScript": "ARTL_ARTL_ValidateOTP_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ARTL_ValidateOTP",
+    "OmniProcessElement": [
+        "ARTL_ARTL_ValidateOTP_Element_SetValues1.json",
+        "ARTL_ARTL_ValidateOTP_Element_SetValues2.json",
+        "ARTL_ARTL_ValidateOTP_Element_DataRaptorExtractAction2.json",
+        "ARTL_ARTL_ValidateOTP_Element_DRFetchOTPUtilityRecordForValidation.json",
+        "ARTL_ARTL_ValidateOTP_Element_SVFilterValidOTP.json",
+        "ARTL_ARTL_ValidateOTP_Element_DRLSetContactStatusToActive.json",
+        "ARTL_ARTL_ValidateOTP_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "ARTL_ARTL_ValidateOTP",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "ARTL_ARTL_ValidateOTP_PropertySetConfig.json",
+    "SubType": "ARTL_ValidateOTP",
+    "Type": "ARTL",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/ARTL/ARTL_ValidateOTP/Procedure",
+    "WebComponentKey": "661a78ba-3075-f4a0-df15-1735bafdf103"
+}

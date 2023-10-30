@@ -1,0 +1,44 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FUNCTION('ESMSelfServiceCustomFunctions','getChildrenIdsList',Assets)",
+        "FormulaResultPath": "assetIdList",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMSelfServiceGetChildrenAssetsIdsFromInput2320240625073564",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetChildrenAssetsIdsFromInput",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetChildrenAssetsIdsFromInput",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetChildrenAssetsIdsFromInput",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetChildrenAssetsIdsFromInput9662414557568437",
+        "InputFieldName": "assetIdList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetChildrenAssetsIdsFromInput",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetChildrenAssetsIdsFromInput",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetChildrenAssetsIdsFromInput",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetIdList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

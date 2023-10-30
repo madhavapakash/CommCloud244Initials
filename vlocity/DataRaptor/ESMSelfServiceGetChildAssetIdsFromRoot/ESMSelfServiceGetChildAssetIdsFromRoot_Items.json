@@ -1,0 +1,48 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "%rootId%",
+        "GlobalKey": "ESMSelfServiceGetChildAssetIdsFromRootCustom9686",
+        "InputFieldName": "%vlocity_namespace%__AssetReferenceId__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetChildAssetIdsFromRoot",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetChildAssetIdsFromRoot",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetChildAssetIdsFromRoot",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMSelfServiceGetChildAssetIdsFromRootCustom6181",
+        "InputFieldName": "%vlocity_namespace%__AssetReferenceId__c",
+        "InputObjectName": "Asset",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMSelfServiceGetChildAssetIdsFromRoot",
+        "OmniDataTransformationId": {
+            "Name": "ESMSelfServiceGetChildAssetIdsFromRoot",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMSelfServiceGetChildAssetIdsFromRoot",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "asset:id",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

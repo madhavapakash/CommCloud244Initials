@@ -1,0 +1,44 @@
+[
+    {
+        "CurrencyIsoCode": "INR",
+        "FormulaExpression": "FUNCTION('ListToObjectsFunctionImplementation','listToObjects',LIST(itemsToProcessSubsetList), \"Id\")",
+        "FormulaResultPath": "listToObjectsResult",
+        "FormulaSequence": 1,
+        "GlobalKey": "ESMBulkQliRootItemsCodeTransform5635748175563984",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMBulkQliRootItemsCodeTransform",
+        "OmniDataTransformationId": {
+            "Name": "ESMBulkQliRootItemsCodeTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMBulkQliRootItemsCodeTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "CurrencyIsoCode": "INR",
+        "GlobalKey": "ESMBulkQliRootItemsCodeTransform7964683056514816",
+        "InputFieldName": "listToObjectsResult",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "ESMBulkQliRootItemsCodeTransform",
+        "OmniDataTransformationId": {
+            "Name": "ESMBulkQliRootItemsCodeTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/ESMBulkQliRootItemsCodeTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "itemsToProcessSubsetList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
