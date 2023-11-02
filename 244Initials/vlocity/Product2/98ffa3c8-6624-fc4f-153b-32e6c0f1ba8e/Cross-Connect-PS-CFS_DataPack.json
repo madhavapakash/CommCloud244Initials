@@ -1,9 +1,408 @@
 {
     "%vlocity_namespace%__ApprovedBy__c": "",
     "%vlocity_namespace%__ApprovedOn__c": "",
-    "%vlocity_namespace%__AttributeDefaultValues__c": "",
-    "%vlocity_namespace%__AttributeMetadata__c": "",
-    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Cross-Connect-PS-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_CROSS_CONNECT_ARC": null,
+        "ATT_CROSS_CONNECT_BANDWIDTH": null,
+        "ATT_CROSS_CONNECT_LOCATION_B": null,
+        "ATT_CROSS_CONNECT_MODE-CUSTOMER": null,
+        "ATT_CROSS_CONNECT_OFFERING": null,
+        "ATT_CROSS_CONNECT_OTC": null,
+        "ATT_CROSS_CONNECT_PROVIDER_NAME": null,
+        "ATT_CROSS_CONNECT_TYPE": null,
+        "ATT_FEASIBILITY_ID_CROSS_CONNECT": null,
+        "ATT_THIRD_PARTY_-CONTRACT_TERM": null,
+        "ATT_TYPE_OF_CONNECTOR_CUSTOMER": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_HARDWARE_DETAILS",
+                "Name": "Hardware Details",
+                "displaySequence": 100,
+                "id": "a0Z72000000xoopEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEsAAI",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_MODE-CUSTOMER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 250,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect Mode-Customer",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "5443fa53-c198-f1bb-bbae-9285ebd324e2",
+                                    "label": "Multi Mode",
+                                    "name": "5443fa53-c198-f1bb-bbae-9285ebd324e2",
+                                    "readonly": false,
+                                    "value": "Multi Mode"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "e574410d-822c-0d7d-772c-fa445311ca91",
+                                    "label": "Single Mode",
+                                    "name": "e574410d-822c-0d7d-772c-fa445311ca91",
+                                    "readonly": false,
+                                    "value": "Single Mode"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEtAAI",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_OFFERING",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 260,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect Offering",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "6dcff5c4-de55-66e1-109e-2c83fbd25a6b",
+                                    "label": "Cross Connect",
+                                    "name": "6dcff5c4-de55-66e1-109e-2c83fbd25a6b",
+                                    "readonly": false,
+                                    "value": "Cross Connect"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "7c085a75-1c11-81d6-5ced-50cef8379a87",
+                                    "label": "Cross Connect + Bandwidth",
+                                    "name": "7c085a75-1c11-81d6-5ced-50cef8379a87",
+                                    "readonly": false,
+                                    "value": "Cross Connect + Bandwidth"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEvAAI",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 270,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "70669aa1-1e4c-40de-e5c8-ae2410187096",
+                                    "label": "Optical",
+                                    "name": "70669aa1-1e4c-40de-e5c8-ae2410187096",
+                                    "readonly": false,
+                                    "value": "Optical"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "d42e594c-9516-4bcd-06cc-3d6dd169c03f",
+                                    "label": "Electrical",
+                                    "name": "d42e594c-9516-4bcd-06cc-3d6dd169c03f",
+                                    "readonly": false,
+                                    "value": "Electrical"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEpAAI",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_BANDWIDTH",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 280,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect Bandwidth",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": null
+                        },
+                        {
+                            "attributeId": "a0a72000005abErAAI",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_LOCATION_B",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 300,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect Location B",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEuAAI",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_PROVIDER_NAME",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 310,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect Provider Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEwAAI",
+                            "cloneable": true,
+                            "code": "ATT_THIRD_PARTY_-CONTRACT_TERM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 320,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Third Party -Contract Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": null
+                        },
+                        {
+                            "attributeId": "a0a72000005abExAAI",
+                            "cloneable": true,
+                            "code": "ATT_TYPE_OF_CONNECTOR_CUSTOMER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 330,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Type of Connector-Customer",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "004284b4-9d19-44b2-a963-641f4ca92328",
+                                    "label": "SC",
+                                    "name": "004284b4-9d19-44b2-a963-641f4ca92328",
+                                    "readonly": false,
+                                    "value": "SC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "2ddc2cb4-aec6-4829-94c1-4aa11c2f8ef2",
+                                    "label": "LC",
+                                    "name": "2ddc2cb4-aec6-4829-94c1-4aa11c2f8ef2",
+                                    "readonly": false,
+                                    "value": "LC"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "3ea597aa-70d7-33a3-6805-e5b96a0b5399",
+                                    "label": "FC",
+                                    "name": "3ea597aa-70d7-33a3-6805-e5b96a0b5399",
+                                    "readonly": false,
+                                    "value": "FC"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 8
+                }
+            },
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005sQhDAAU",
+                            "cloneable": true,
+                            "code": "ATT_FEASIBILITY_ID_CROSS_CONNECT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2040,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Feasibility id-Cross Connect",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhAAAU",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_OTC",
+                            "dataType": "currency",
+                            "disabled": false,
+                            "displaySequence": 2041,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect OTC",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh9AAE",
+                            "cloneable": true,
+                            "code": "ATT_CROSS_CONNECT_ARC",
+                            "dataType": "currency",
+                            "disabled": false,
+                            "displaySequence": 2042,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Cross Connect ARC",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",
     "%vlocity_namespace%__CategoryData__c": "",
     "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
@@ -17,7 +416,7 @@
     "%vlocity_namespace%__GlobalKey__c": "98ffa3c8-6624-fc4f-153b-32e6c0f1ba8e",
     "%vlocity_namespace%__HeaderData__c": "",
     "%vlocity_namespace%__HelpText__c": "",
-    "%vlocity_namespace%__IsConfigurable__c": false,
+    "%vlocity_namespace%__IsConfigurable__c": true,
     "%vlocity_namespace%__IsCustomerSubscription__c": false,
     "%vlocity_namespace%__IsLocationDependent__c": false,
     "%vlocity_namespace%__IsNotAssetizable__c": false,
@@ -29,6 +428,7 @@
     "%vlocity_namespace%__MainFeatureQuantity__c": "",
     "%vlocity_namespace%__MainFeatureTermInDays__c": "",
     "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Cross-Connect-PS-CFS_ObjectFieldAttributes.json",
     "%vlocity_namespace%__ObjectTypeId__c": {
         "%vlocity_namespace%__GlobalKey__c": "25bfdebc-852c-ff56-f794-6ec4b6a67745",
         "VlocityDataPackType": "VlocityLookupMatchingKeyObject",

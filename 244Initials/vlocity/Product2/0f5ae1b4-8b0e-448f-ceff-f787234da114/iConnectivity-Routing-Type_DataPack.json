@@ -3,6 +3,7 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "iConnectivity-Routing-Type_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ROUTING_PROTOCOL": null,
         "ATT_ROUTING_TYPE": null
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
@@ -105,9 +106,86 @@
                     ],
                     "totalSize": 1
                 }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEa8AAE",
+                            "cloneable": true,
+                            "code": "ATT_ROUTING_PROTOCOL",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 406,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Routing Protocol",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "32837452-94e5-fae2-9008-52d3cf680bb6",
+                                    "label": "Static",
+                                    "name": "32837452-94e5-fae2-9008-52d3cf680bb6",
+                                    "readonly": false,
+                                    "value": "Static"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "8def0f43-e41a-ddd9-1abb-0e0172ed55a8",
+                                    "label": "Both",
+                                    "name": "8def0f43-e41a-ddd9-1abb-0e0172ed55a8",
+                                    "readonly": false,
+                                    "value": "Both"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "b5686ffa-773f-d4eb-a2a8-ea323263aa39",
+                                    "label": "None",
+                                    "name": "b5686ffa-773f-d4eb-a2a8-ea323263aa39",
+                                    "readonly": false,
+                                    "value": "None"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "fb38c420-61f7-55db-f87d-d8ed0b668075",
+                                    "label": "Dynamic",
+                                    "name": "fb38c420-61f7-55db-f87d-d8ed0b668075",
+                                    "readonly": false,
+                                    "value": "Dynamic"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
             }
         ],
-        "totalSize": 1
+        "totalSize": 2
     },
     "%vlocity_namespace%__AttributeRules__c": "{}",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",

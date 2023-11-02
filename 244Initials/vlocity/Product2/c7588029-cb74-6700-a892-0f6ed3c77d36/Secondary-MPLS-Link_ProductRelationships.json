@@ -1,5 +1,43 @@
 [
     {
+        "%vlocity_namespace%__ActionParameters__c": "",
+        "%vlocity_namespace%__AddMode__c": "asSibling",
+        "%vlocity_namespace%__AttributeModificationContext__c": "",
+        "%vlocity_namespace%__Context__c": "Cart",
+        "%vlocity_namespace%__DefaultQuantity__c": 1,
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__Family__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "0b3668cf-0b7b-cd47-866f-daaf1832a4a0",
+        "%vlocity_namespace%__IsConditional__c": true,
+        "%vlocity_namespace%__MaxQuantity__c": 10,
+        "%vlocity_namespace%__MinQuantity__c": 1,
+        "%vlocity_namespace%__ObjectTypeId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7588029-cb74-6700-a892-0f6ed3c77d36",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c7588029-cb74-6700-a892-0f6ed3c77d36",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "2126a285-7f5c-7cba-539f-8c0569e943a8",
+        "%vlocity_namespace%__RelatedObjectTypeId__c": "",
+        "%vlocity_namespace%__RelatedProductFilterId__c": "",
+        "%vlocity_namespace%__RelatedProductGroupKey__c": "877e5d89-509b-4b09-9f6b-ce854cbb532c",
+        "%vlocity_namespace%__RelatedProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelationshipType__c": "Requires",
+        "%vlocity_namespace%__ReverseMaxQuantity__c": "",
+        "%vlocity_namespace%__ReverseMinQuantity__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "EMPLS Secondary Link Requires Primary Link Error",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/0b3668cf-0b7b-cd47-866f-daaf1832a4a0"
+    },
+    {
         "%vlocity_namespace%__ActionParameters__c": "{\"ATT_ROUTING_TYPE\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":false}],\"index\":0}}",
         "%vlocity_namespace%__AddMode__c": "",
         "%vlocity_namespace%__AttributeModificationContext__c": "Bundle",
@@ -36,6 +74,44 @@
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
         "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/30483864-db97-8849-c079-b1494dbcf2ea"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "",
+        "%vlocity_namespace%__AddMode__c": "asChild",
+        "%vlocity_namespace%__AttributeModificationContext__c": "",
+        "%vlocity_namespace%__Context__c": "Cart",
+        "%vlocity_namespace%__DefaultQuantity__c": 1,
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__Family__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "43bcad55-b3a4-df4a-1932-68a1fb7fd520",
+        "%vlocity_namespace%__IsConditional__c": true,
+        "%vlocity_namespace%__MaxQuantity__c": 1,
+        "%vlocity_namespace%__MinQuantity__c": 0,
+        "%vlocity_namespace%__ObjectTypeId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c7588029-cb74-6700-a892-0f6ed3c77d36",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c7588029-cb74-6700-a892-0f6ed3c77d36",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "2126a285-7f5c-7cba-539f-8c0569e943a8",
+        "%vlocity_namespace%__RelatedObjectTypeId__c": "",
+        "%vlocity_namespace%__RelatedProductFilterId__c": "",
+        "%vlocity_namespace%__RelatedProductGroupKey__c": "ab8948cc-0189-7a87-10d3-711461e062ba",
+        "%vlocity_namespace%__RelatedProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "0511e97f-bf3d-c233-6712-66027fa5984e",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/0511e97f-bf3d-c233-6712-66027fa5984e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelationshipType__c": "ReliesOn",
+        "%vlocity_namespace%__ReverseMaxQuantity__c": "",
+        "%vlocity_namespace%__ReverseMinQuantity__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Third Party Relies On Secondary MPLS Link",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/43bcad55-b3a4-df4a-1932-68a1fb7fd520"
     },
     {
         "%vlocity_namespace%__ActionParameters__c": "{\"ATT_IPV6_REQUIRED\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":false}],\"index\":0},\"ATT_WAN_IPV4_CE_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Not Applicable\"},{\"action\":\"DISABLE\",\"value\":true}],\"index\":1},\"ATT_WAN_IPV4_PE_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Not Applicable\"},{\"action\":\"DISABLE\",\"value\":true}],\"index\":2},\"ATT_WAN_IPV6_CE_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":false}],\"index\":3},\"ATT_WAN_IPV6_PE_SUBNET_MASK\":{\"actionsList\":[{\"action\":\"DISABLE\",\"value\":false}],\"index\":4}}",

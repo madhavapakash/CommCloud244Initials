@@ -1,9 +1,127 @@
 {
     "%vlocity_namespace%__ApprovedBy__c": "",
     "%vlocity_namespace%__ApprovedOn__c": "",
-    "%vlocity_namespace%__AttributeDefaultValues__c": "",
-    "%vlocity_namespace%__AttributeMetadata__c": "",
-    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "EMPLS-Service-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_IP_REQUIRED": null,
+        "ATT_MTU_SIZE": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_CHANNEL_DETAILS",
+                "Name": "Channel Details",
+                "displaySequence": 600,
+                "id": "a0Z72000000xoonEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEPAAY",
+                            "cloneable": true,
+                            "code": "ATT_IP_REQUIRED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 90,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "IP Required",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "04fa9600-2d1b-10ba-62dc-60eb80f6372b",
+                                    "label": "Dual Stack",
+                                    "name": "04fa9600-2d1b-10ba-62dc-60eb80f6372b",
+                                    "readonly": false,
+                                    "value": "Dual Stack"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "77148b6d-74f6-b642-54ab-818ae833b9fd",
+                                    "label": "IPv4",
+                                    "name": "77148b6d-74f6-b642-54ab-818ae833b9fd",
+                                    "readonly": false,
+                                    "value": "IPv4"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "f7efee6d-dc4e-4aa0-264a-ccd3a791f99f",
+                                    "label": "IPv6",
+                                    "name": "f7efee6d-dc4e-4aa0-264a-ccd3a791f99f",
+                                    "readonly": false,
+                                    "value": "IPv6"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZwAAM",
+                            "cloneable": true,
+                            "code": "ATT_MTU_SIZE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 51,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "MTU Size",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",
     "%vlocity_namespace%__CategoryData__c": "",
     "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
@@ -17,7 +135,7 @@
     "%vlocity_namespace%__GlobalKey__c": "90a3c1a6-039a-e4b5-0505-dc685b50ee98",
     "%vlocity_namespace%__HeaderData__c": "",
     "%vlocity_namespace%__HelpText__c": "",
-    "%vlocity_namespace%__IsConfigurable__c": false,
+    "%vlocity_namespace%__IsConfigurable__c": true,
     "%vlocity_namespace%__IsCustomerSubscription__c": false,
     "%vlocity_namespace%__IsLocationDependent__c": false,
     "%vlocity_namespace%__IsNotAssetizable__c": false,
@@ -29,6 +147,7 @@
     "%vlocity_namespace%__MainFeatureQuantity__c": "",
     "%vlocity_namespace%__MainFeatureTermInDays__c": "",
     "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "EMPLS-Service-CFS_ObjectFieldAttributes.json",
     "%vlocity_namespace%__ObjectTypeId__c": {
         "%vlocity_namespace%__GlobalKey__c": "5784a3bc-826d-87fa-5417-603c472c33d3",
         "VlocityDataPackType": "VlocityLookupMatchingKeyObject",

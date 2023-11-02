@@ -139,7 +139,7 @@
             "VlocityRecordSObjectType": "Product2"
         },
         "%vlocity_namespace%__GlobalKey__c": "",
-        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"CPE\",\"source_attr_code\":\"ATT_CPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"CPE\",\"destination_attr_code\":\"ATT_CPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Contract Term\",\"source_attr_code\":\"ATT_CONTRACT_TERM\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Contract Term\",\"destination_attr_code\":\"ATT_CONTRACT_TERM\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Service Type\",\"source_attr_code\":\"ATT_SERVICE_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Service Type\",\"destination_attr_code\":\"ATT_SERVICE_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Last Mile\",\"source_attr_code\":\"ATT_LAST_MILE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Last Mile\",\"destination_attr_code\":\"ATT_LAST_MILE\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Type\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Order Type\",\"destination_attr_code\":\"ATT_ORDER_TYPE_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"Product2.Name\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Product Name\",\"destination_attr_code\":\"ATT_PRODUCT_NAME_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"Product2.ARTL_SubProductName__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Sub Product Name\",\"destination_attr_code\":\"ATT_SUB_PRODUCT_NAME_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"NBA ID\",\"destination_attr_code\":\"ATT_NBA_ID_CFS\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Sub Order Type\",\"destination_attr_code\":\"ATT_SUB_ORDER_TYPE_CFS\",\"source_field_name\":\"Order.Type\",\"source_type\":\"Field\"}]",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"CPE\",\"source_attr_code\":\"ATT_CPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"CPE\",\"destination_attr_code\":\"ATT_CPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Contract Term\",\"source_attr_code\":\"ATT_CONTRACT_TERM\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Contract Term\",\"destination_attr_code\":\"ATT_CONTRACT_TERM\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Service Type\",\"source_attr_code\":\"ATT_SERVICE_TYPE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Service Type\",\"destination_attr_code\":\"ATT_SERVICE_TYPE\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Last Mile\",\"source_attr_code\":\"ATT_LAST_MILE\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Last Mile\",\"destination_attr_code\":\"ATT_LAST_MILE\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Type\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Order Type\",\"destination_attr_code\":\"ATT_ORDER_TYPE_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"Product2.Name\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Product Name\",\"destination_attr_code\":\"ATT_PRODUCT_NAME_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"Product2.ARTL_SubProductName__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Sub Product Name\",\"destination_attr_code\":\"ATT_SUB_PRODUCT_NAME_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"%vlocity_namespace%__BillingAccountId__r.Id\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"NBA ID\",\"destination_attr_code\":\"ATT_NBA_ID_CFS\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Type\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"Sub Order Type\",\"destination_attr_code\":\"ATT_SUB_ORDER_TYPE_CFS\"}]",
         "%vlocity_namespace%__Priority__c": "",
         "%vlocity_namespace%__RequireReservation__c": false,
         "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
@@ -158,6 +158,38 @@
         "VlocityDataPackType": "SObject",
         "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
         "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Primary To EMPLS Decomp/Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80"
+    },
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "90a3c1a6-039a-e4b5-0505-dc685b50ee98",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/90a3c1a6-039a-e4b5-0505-dc685b50ee98",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "3c458142-b9dc-e738-73ca-d6efcba78344",
+        "%vlocity_namespace%__MappingsData__c": "",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "fbabdd3e-29a5-d057-fcc3-708f833a6e80",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "CurrencyIsoCode": "INR",
+        "Name": "Primary Link To EMPLS Service Decomp",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Primary Link To EMPLS Service Decomp/Product2/fbabdd3e-29a5-d057-fcc3-708f833a6e80"
     },
     {
         "%vlocity_namespace%__ConditionData__c": "",

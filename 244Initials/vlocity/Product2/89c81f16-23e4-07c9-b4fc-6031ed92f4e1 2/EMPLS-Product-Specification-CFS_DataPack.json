@@ -3,14 +3,27 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "EMPLS-Product-Specification-CFS_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_BILLING_ADDRESS_ID": null,
+        "ATT_BILLING_PACKAGE_ID": null,
+        "ATT_CAF_NUMBER": null,
         "ATT_CONTRACT_TERM": null,
         "ATT_CPE": null,
+        "ATT_CUSTOMER_NEED_BY_DATE": null,
+        "ATT_ECRM_PRODUCT_ID": null,
         "ATT_HANDOVER_TYPE": null,
+        "ATT_INSTALLATION_LOCATION_ID": null,
+        "ATT_INVOICE_SHIPMENT_ID": null,
+        "ATT_IS_DEMO": false,
         "ATT_LAST_MILE": null,
+        "ATT_MTU_SIZE": null,
         "ATT_NBA_ID_CFS": null,
         "ATT_ORDER_TYPE_CFS": null,
+        "ATT_OTC_CHANGE_ORDER": false,
+        "ATT_POP": null,
+        "ATT_PO_ID": null,
         "ATT_PRODUCT_NAME_CFS": null,
         "ATT_RATIO": "1:1",
+        "ATT_RELOGED_ORDER": null,
         "ATT_SERVICE_TYPE": null,
         "ATT_SUB_ORDER_TYPE_CFS": null,
         "ATT_SUB_PRODUCT_NAME_CFS": null
@@ -79,6 +92,48 @@
                                     "name": "5b9cdf0e-6bc7-f171-fd92-3ea649ec00a6",
                                     "readonly": false,
                                     "value": "Partially Managed"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abEWAAY",
+                            "cloneable": true,
+                            "code": "ATT_POP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 31,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "POP",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "1fc2b6f7-80b7-2491-5eff-488ea6f332e7",
+                                    "label": "Dual POP",
+                                    "name": "1fc2b6f7-80b7-2491-5eff-488ea6f332e7",
+                                    "readonly": false,
+                                    "value": "Dual POP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "50e668da-b319-7e7c-f31d-93e3bf1b935d",
+                                    "label": "Single POP",
+                                    "name": "50e668da-b319-7e7c-f31d-93e3bf1b935d",
+                                    "readonly": false,
+                                    "value": "Single POP"
                                 }
                             ]
                         },
@@ -399,7 +454,100 @@
                             ]
                         }
                     ],
-                    "totalSize": 4
+                    "totalSize": 5
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZfAAM",
+                            "cloneable": true,
+                            "code": "ATT_CUSTOMER_NEED_BY_DATE",
+                            "dataType": "date",
+                            "disabled": false,
+                            "displaySequence": 23,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "date",
+                            "isNotTranslatable": false,
+                            "label": "Customer need by Date",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZwAAM",
+                            "cloneable": true,
+                            "code": "ATT_MTU_SIZE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 51,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "MTU Size",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZqAAM",
+                            "cloneable": true,
+                            "code": "ATT_INSTALLATION_LOCATION_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 247,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Installation location ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
                 }
             },
             {
@@ -542,9 +690,218 @@
                                     "readonly": false
                                 }
                             ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhVAAU",
+                            "cloneable": true,
+                            "code": "ATT_RELOGED_ORDER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2006,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Reloged Order",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh8AAE",
+                            "cloneable": true,
+                            "code": "ATT_CAF_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2007,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "CAF Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhEAAU",
+                            "cloneable": true,
+                            "code": "ATT_INVOICE_SHIPMENT_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2008,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Invoice Shipment ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh1AAE",
+                            "cloneable": true,
+                            "code": "ATT_BILLING_ADDRESS_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2009,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Address ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhSAAU",
+                            "cloneable": true,
+                            "code": "ATT_PO_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2009,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "PO ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhCAAU",
+                            "cloneable": true,
+                            "code": "ATT_ECRM_PRODUCT_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2010,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "eCRM Product ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh4AAE",
+                            "cloneable": true,
+                            "code": "ATT_BILLING_PACKAGE_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2011,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Package ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhIAAU",
+                            "cloneable": true,
+                            "code": "ATT_IS_DEMO",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3001,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "isDemo",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
                         }
                     ],
-                    "totalSize": 5
+                    "totalSize": 13
                 }
             },
             {
@@ -621,6 +978,33 @@
                             ]
                         },
                         {
+                            "attributeId": "a0a72000005PoZsAAK",
+                            "cloneable": true,
+                            "code": "ATT_OTC_CHANGE_ORDER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "OTC Change Order",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
                             "attributeId": "a0a72000005PoZvAAK",
                             "cloneable": true,
                             "code": "ATT_RATIO",
@@ -648,11 +1032,11 @@
                             ]
                         }
                     ],
-                    "totalSize": 2
+                    "totalSize": 3
                 }
             }
         ],
-        "totalSize": 3
+        "totalSize": 4
     },
     "%vlocity_namespace%__AttributeRules__c": "{}",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",
