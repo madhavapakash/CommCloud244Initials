@@ -1,0 +1,1261 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "NIPS-Composite-PS-CFS_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ANNUAL_REC_CHARGE": null,
+        "ATT_ARC_DESCRIPTION": null,
+        "ATT_BILLING_ADDRESS_ID": null,
+        "ATT_BILLING_PACKAGE_ID": null,
+        "ATT_BILL_COMP_ID_OTC": null,
+        "ATT_Billing_Component_ID": null,
+        "ATT_CHARGE_FREQUENCY": null,
+        "ATT_EXPENSE_CATEGORY": null,
+        "ATT_GST_NUMBER": null,
+        "ATT_HSN_CODE": null,
+        "ATT_INSTALLATION_LOCATION_ID": null,
+        "ATT_INVOICE_SHIPMENT_ID": null,
+        "ATT_ITEM_DESCRIPTION": null,
+        "ATT_LSI": null,
+        "ATT_NBA_ID_CFS": null,
+        "ATT_NIPS_ITEM_CODE": null,
+        "ATT_ORDER_DELIVERY_TYPE": null,
+        "ATT_ORDER_TYPE_CFS": null,
+        "ATT_OTC_CHANGE_ORDER": false,
+        "ATT_PAYMENT_TERM_MILESTONE1": null,
+        "ATT_PAYMENT_TERM_MILESTONE1_VALUE": null,
+        "ATT_PAYMENT_TERM_MILESTONE2": null,
+        "ATT_PAYMENT_TERM_MILESTONE2_VALUE": null,
+        "ATT_PAYMENT_TERM_MILESTONE3": null,
+        "ATT_PAYMENT_TERM_MILESTONE3_VALUE": null,
+        "ATT_PAYMENT_TERM_MILESTONE4": null,
+        "ATT_PAYMENT_TERM_MILESTONE4_VALUE": null,
+        "ATT_PAYMENT_TERM_MILESTONE5": null,
+        "ATT_PAYMENT_TERM_MILESTONE5_VALUE": null,
+        "ATT_PROFORMA_REQUIRED": null,
+        "ATT_QUANTITY": null,
+        "ATT_SAC_CODE": null,
+        "ATT_SALE_TYPE_CFS": null,
+        "ATT_SERVICE_ID": null,
+        "ATT_STANDARD_REASON": null,
+        "ATT_SUB_PRODUCT_NAME_CFS": null,
+        "ATT_TAX_PERC": null,
+        "ATT_TECH_SERVICE_TYPE": "Hardware",
+        "ATT_VENDOR_PR_NUMBER": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_NETWORK_SERVICES_DETAILS",
+                "Name": "Network Services Details",
+                "displaySequence": 700,
+                "id": "a0Z72000000xoqPEAQ",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abFwAAI",
+                            "cloneable": true,
+                            "code": "ATT_HSN_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "HSN Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFxAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFzAAI",
+                            "cloneable": true,
+                            "code": "ATT_NIPS_ITEM_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFtAAI",
+                            "cloneable": true,
+                            "code": "ATT_ARC_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "ARC Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG1AAI",
+                            "cloneable": true,
+                            "code": "ATT_SAC_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "SAC Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG2AAI",
+                            "cloneable": true,
+                            "code": "ATT_TAX_PERC",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 141,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Tax %",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "185d7369-cc0f-3515-a50d-d379b901b033",
+                                    "label": "18",
+                                    "name": "185d7369-cc0f-3515-a50d-d379b901b033",
+                                    "readonly": false,
+                                    "value": "18"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "8c027f59-81cb-9b5f-88b1-6d153917fc15",
+                                    "label": "12",
+                                    "name": "8c027f59-81cb-9b5f-88b1-6d153917fc15",
+                                    "readonly": false,
+                                    "value": "12"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "c42b5eac-760c-0bae-876a-9ec683c8eb3a",
+                                    "label": "28",
+                                    "name": "c42b5eac-760c-0bae-876a-9ec683c8eb3a",
+                                    "readonly": false,
+                                    "value": "28"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "d708faf2-df9a-60e2-ef96-a116261f673a",
+                                    "label": "5",
+                                    "name": "d708faf2-df9a-60e2-ef96-a116261f673a",
+                                    "readonly": false,
+                                    "value": "5"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "ec246973-cdb8-c157-3f47-97b97050aaea",
+                                    "label": "0",
+                                    "name": "ec246973-cdb8-c157-3f47-97b97050aaea",
+                                    "readonly": false,
+                                    "value": "0"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 6
+                }
+            },
+            {
+                "Code__c": "30b11d92-38c1-9ed8-3d7c-9bb6bcc4b278",
+                "Name": "SFDC Attributes",
+                "displaySequence": 777,
+                "id": "a0Z72000000xmLZEAY",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005aEZoAAM",
+                            "cloneable": true,
+                            "code": "ATT_GST_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 231,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "GST Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005aEZqAAM",
+                            "cloneable": true,
+                            "code": "ATT_INSTALLATION_LOCATION_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 247,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Installation location ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            },
+            {
+                "Code__c": "3d4dc7a2-8c7f-cfff-1205-ee247177bee0",
+                "Name": "Technical Attributes",
+                "displaySequence": 1090,
+                "id": "a0Z72000000zL7ZEAU",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005kn1aAAA",
+                            "cloneable": true,
+                            "code": "ATT_SUB_PRODUCT_NAME_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Sub Product Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1WAAQ",
+                            "cloneable": true,
+                            "code": "ATT_ORDER_TYPE_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2000,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Order Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1VAAQ",
+                            "cloneable": true,
+                            "code": "ATT_NBA_ID_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2002,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "NBA ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005kn1YAAQ",
+                            "cloneable": true,
+                            "code": "ATT_SALE_TYPE_CFS",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2004,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Sale Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhEAAU",
+                            "cloneable": true,
+                            "code": "ATT_INVOICE_SHIPMENT_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2008,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Invoice Shipment ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh1AAE",
+                            "cloneable": true,
+                            "code": "ATT_BILLING_ADDRESS_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2009,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Address ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQh4AAE",
+                            "cloneable": true,
+                            "code": "ATT_BILLING_PACKAGE_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2011,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Package ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhMAAU",
+                            "cloneable": true,
+                            "code": "ATT_LSI",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2014,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "LSI",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhYAAU",
+                            "cloneable": true,
+                            "code": "ATT_SERVICE_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2017,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Service ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhZAAU",
+                            "cloneable": true,
+                            "code": "ATT_STANDARD_REASON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2031,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Standard Reason",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tivJAAQ",
+                            "cloneable": true,
+                            "code": "ATT_TECH_SERVICE_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2033,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Service Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": "Hardware",
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8bAAA",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE5_VALUE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2046,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone5 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8KAAQ",
+                            "cloneable": true,
+                            "code": "ATT_BILL_COMP_ID_OTC",
+                            "dataType": "currency",
+                            "disabled": false,
+                            "displaySequence": 2055,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Billing Component ID OTC",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8UAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE2",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5030,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone2 Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8SAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE1",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5031,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone1 Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8YAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE4",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5032,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone4 Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8WAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE3",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5033,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone3 Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8RAAQ",
+                            "cloneable": true,
+                            "code": "ATT_ORDER_DELIVERY_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5034,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Order Delivery Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tivEAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PROFORMA_REQUIRED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5035,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Proforma Required",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8MAAQ",
+                            "cloneable": true,
+                            "code": "ATT_EXPENSE_CATEGORY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5036,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Expense Category",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tivFAAQ",
+                            "cloneable": true,
+                            "code": "ATT_QUANTITY",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 5036,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Quantity",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8LAAQ",
+                            "cloneable": true,
+                            "code": "ATT_CHARGE_FREQUENCY",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5037,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Charge frequency",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8aAAA",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE5",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5038,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone5 Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tivKAAQ",
+                            "cloneable": true,
+                            "code": "ATT_VENDOR_PR_NUMBER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5038,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Vendor PR Number",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8TAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE1_VALUE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5040,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone1 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8VAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE2_VALUE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5041,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone2 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8XAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE3_VALUE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5042,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone3 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8ZAAQ",
+                            "cloneable": true,
+                            "code": "ATT_PAYMENT_TERM_MILESTONE4_VALUE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 5043,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Payment Term Milestone4 value",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005tl8IAAQ",
+                            "cloneable": true,
+                            "code": "ATT_ANNUAL_REC_CHARGE",
+                            "dataType": "currency",
+                            "disabled": false,
+                            "displaySequence": 5048,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Annual Recurring Charge",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 29
+                }
+            },
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_INTERNET_DETAILS",
+                "Name": "Internet Details",
+                "displaySequence": 6220,
+                "id": "a0Z72000000wnmjEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005PoZsAAK",
+                            "cloneable": true,
+                            "code": "ATT_OTC_CHANGE_ORDER",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "OTC Change Order",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005sQhdAAE",
+                            "cloneable": true,
+                            "code": "ATT_Billing_Component_ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 36,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Billing Component ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            }
+        ],
+        "totalSize": 4
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-10-01",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "f32c6645-72ff-fc6b-be75-cb1352bf3eab",
+    "%vlocity_namespace%__GlobalKey__c": "d25a201e-37ef-0f08-776f-c7d7c890b649",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "NIPS-Composite-PS-CFS_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "5bb1c575-6535-b86b-96fc-a621f837111f",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/5bb1c575-6535-b86b-96fc-a621f837111f",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "NIPS Service Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "NIPS-Composite-PS-CFS_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-30T18:30:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "Resource",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "ARTL_NRCRebilling__c": false,
+    "ARTL_SDWAN_SubProductName__c": "SDWAN",
+    "ARTL_TechnicalProduct__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "CurrencyIsoCode": "INR",
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "NIPS Composite PS CFS",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "VEPC_NIPS_COMPOSITE_CFS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/d25a201e-37ef-0f08-776f-c7d7c890b649"
+}

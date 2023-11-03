@@ -3,6 +3,11 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "NIPS-Hardware_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ARC_DESCRIPTION": null,
+        "ATT_HARDWARE_TYPE": null,
+        "ATT_HSN_CODE": null,
+        "ATT_ITEM_DESCRIPTION": null,
+        "ATT_NIPS_CONTRACT_TERM": null,
         "ATT_NIPS_ITEM_CODE": null
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
@@ -21,12 +26,238 @@
                     ],
                     "records": [
                         {
+                            "attributeId": "a0a72000005abFxAAI",
+                            "cloneable": true,
+                            "code": "ATT_ITEM_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Item Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFtAAI",
+                            "cloneable": true,
+                            "code": "ATT_ARC_DESCRIPTION",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "ARC Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFwAAI",
+                            "cloneable": true,
+                            "code": "ATT_HSN_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "HSN Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFvAAI",
+                            "cloneable": true,
+                            "code": "ATT_HARDWARE_TYPE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 12,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Hardware Type",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 100,
+                                    "id": "1536e6ce-804b-ae5d-1285-7cf6c0d25ce8",
+                                    "label": "EN_Structured Cabling",
+                                    "name": "1536e6ce-804b-ae5d-1285-7cf6c0d25ce8",
+                                    "readonly": false,
+                                    "value": "EN_Structured Cabling"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "31aa6bd3-e5e9-18b7-2ff3-e4ac4e47852d",
+                                    "label": "EN_Routing & Switching",
+                                    "name": "31aa6bd3-e5e9-18b7-2ff3-e4ac4e47852d",
+                                    "readonly": false,
+                                    "value": "EN_Routing & Switching"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "405e6d02-d629-4751-9512-cbd1708f0c3d",
+                                    "label": "UC_Digital",
+                                    "name": "405e6d02-d629-4751-9512-cbd1708f0c3d",
+                                    "readonly": false,
+                                    "value": "UC_Digital"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "4303cde0-9e55-fe24-be08-dcf591382726",
+                                    "label": "UC_Contact Center",
+                                    "name": "4303cde0-9e55-fe24-be08-dcf591382726",
+                                    "readonly": false,
+                                    "value": "UC_Contact Center"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "46ee6f38-586b-6d25-f7ac-93d6ce16a9e3",
+                                    "label": "Smart Devices",
+                                    "name": "46ee6f38-586b-6d25-f7ac-93d6ce16a9e3",
+                                    "readonly": false,
+                                    "value": "Smart Devices"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "58afbf59-8bd0-a464-de4e-808a4418381d",
+                                    "label": "UC_Video Conferencing",
+                                    "name": "58afbf59-8bd0-a464-de4e-808a4418381d",
+                                    "readonly": false,
+                                    "value": "UC_Video Conferencing"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "5e625ec4-22d6-3d15-6ac0-777e00ec2dac",
+                                    "label": "EN_SDWAN / SDN",
+                                    "name": "5e625ec4-22d6-3d15-6ac0-777e00ec2dac",
+                                    "readonly": false,
+                                    "value": "EN_SDWAN / SDN"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "8297014b-efe4-e7e2-710d-f6ec68cf5053",
+                                    "label": "EN_Wireless",
+                                    "name": "8297014b-efe4-e7e2-710d-f6ec68cf5053",
+                                    "readonly": false,
+                                    "value": "EN_Wireless"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "ca305221-8e53-79ac-7bfe-46cf7b527a77",
+                                    "label": "EN_Turnkey Project",
+                                    "name": "ca305221-8e53-79ac-7bfe-46cf7b527a77",
+                                    "readonly": false,
+                                    "value": "EN_Turnkey Project"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "e02475a8-8d21-a51e-7580-f7c12b615e97",
+                                    "label": "UC_IP Telephony",
+                                    "name": "e02475a8-8d21-a51e-7580-f7c12b615e97",
+                                    "readonly": false,
+                                    "value": "UC_IP Telephony"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFyAAI",
+                            "cloneable": true,
+                            "code": "ATT_NIPS_CONTRACT_TERM",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 13,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "NIPS Contract Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
                             "attributeId": "a0a72000005abFzAAI",
                             "cloneable": true,
                             "code": "ATT_NIPS_ITEM_CODE",
                             "dataType": "text",
                             "disabled": false,
-                            "displaySequence": 1,
+                            "displaySequence": 14,
                             "filterable": false,
                             "hasRules": false,
                             "hidden": false,
@@ -47,7 +278,7 @@
                             ]
                         }
                     ],
-                    "totalSize": 1
+                    "totalSize": 6
                 }
             }
         ],
@@ -93,6 +324,7 @@
     ],
     "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
     "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DecompositionRelationship__c": "NIPS-Hardware_DecompositionRelationships.json",
     "%vlocity_namespace%__DefaultImageId__c": "",
     "%vlocity_namespace%__EffectiveDate__c": "2023-09-27",
     "%vlocity_namespace%__EndDate__c": "",
@@ -106,7 +338,7 @@
     "%vlocity_namespace%__IsCustomerSubscription__c": false,
     "%vlocity_namespace%__IsLocationDependent__c": false,
     "%vlocity_namespace%__IsNotAssetizable__c": false,
-    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
     "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
     "%vlocity_namespace%__JeopardySafetyInterval__c": "",
     "%vlocity_namespace%__LifecycleStatus__c": "Draft",
@@ -130,7 +362,7 @@
     "%vlocity_namespace%__SellingEndDate__c": "",
     "%vlocity_namespace%__SellingStartDate__c": "2023-09-27T08:28:13.000Z",
     "%vlocity_namespace%__SpecificationSubType__c": "",
-    "%vlocity_namespace%__SpecificationType__c": "Product",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
     "%vlocity_namespace%__StandardPremium__c": "",
     "%vlocity_namespace%__Status__c": "Active",
     "%vlocity_namespace%__SubType__c": "None",

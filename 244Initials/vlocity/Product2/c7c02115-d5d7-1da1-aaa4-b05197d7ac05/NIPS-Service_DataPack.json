@@ -3,8 +3,11 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "NIPS-Service_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_ARC_DESCRIPTION": null,
         "ATT_ITEM_DESCRIPTION": null,
+        "ATT_NIPS_CONTRACT_TERM": null,
         "ATT_NIPS_ITEM_CODE": null,
+        "ATT_SAC_CODE": null,
         "ATT_TYPE_OF_SERVICE": null
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
@@ -265,9 +268,9 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abFzAAI",
+                            "attributeId": "a0a72000005abFtAAI",
                             "cloneable": true,
-                            "code": "ATT_NIPS_ITEM_CODE",
+                            "code": "ATT_ARC_DESCRIPTION",
                             "dataType": "text",
                             "disabled": false,
                             "displaySequence": 10,
@@ -276,7 +279,85 @@
                             "hidden": false,
                             "inputType": "text",
                             "isNotTranslatable": false,
+                            "label": "ARC Description",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFzAAI",
+                            "cloneable": true,
+                            "code": "ATT_NIPS_ITEM_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
                             "label": "Item Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abFyAAI",
+                            "cloneable": true,
+                            "code": "ATT_NIPS_CONTRACT_TERM",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 13,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "NIPS Contract Term",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005abG1AAI",
+                            "cloneable": true,
+                            "code": "ATT_SAC_CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "SAC Code",
                             "messages": [
                             ],
                             "multiselect": false,
@@ -317,7 +398,7 @@
                             ]
                         }
                     ],
-                    "totalSize": 3
+                    "totalSize": 6
                 }
             }
         ],
@@ -363,6 +444,7 @@
     ],
     "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
     "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DecompositionRelationship__c": "NIPS-Service_DecompositionRelationships.json",
     "%vlocity_namespace%__DefaultImageId__c": "",
     "%vlocity_namespace%__EffectiveDate__c": "2023-09-27",
     "%vlocity_namespace%__EndDate__c": "",
@@ -376,7 +458,7 @@
     "%vlocity_namespace%__IsCustomerSubscription__c": false,
     "%vlocity_namespace%__IsLocationDependent__c": false,
     "%vlocity_namespace%__IsNotAssetizable__c": false,
-    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
     "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
     "%vlocity_namespace%__JeopardySafetyInterval__c": "",
     "%vlocity_namespace%__LifecycleStatus__c": "Draft",
@@ -400,7 +482,7 @@
     "%vlocity_namespace%__SellingEndDate__c": "",
     "%vlocity_namespace%__SellingStartDate__c": "2023-09-27T08:28:55.000Z",
     "%vlocity_namespace%__SpecificationSubType__c": "",
-    "%vlocity_namespace%__SpecificationType__c": "Product",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
     "%vlocity_namespace%__StandardPremium__c": "",
     "%vlocity_namespace%__Status__c": "Active",
     "%vlocity_namespace%__SubType__c": "None",
