@@ -10,7 +10,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Access Bandwidth",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "4",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "3",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_ACCESS_BANDWIDTH",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -525,7 +525,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Contract Term",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "2",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "4",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_CONTRACT_TERM",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -776,7 +776,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "CPE",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "15",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "5",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_CPE",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -874,254 +874,8 @@
             "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATC_CHANNEL_DETAILS",
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
-        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Dependent Link Media",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "20",
-        "%vlocity_namespace%__AttributeId__c": {
-            "%vlocity_namespace%__Code__c": "ATT_DEPENDENT_LINK_MEDIA",
-            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/ATT_DEPENDENT_LINK_MEDIA",
-            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
-        },
-        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_DEPENDENT_LINK_MEDIA",
-        "%vlocity_namespace%__AttributeName__c": "Dependent Link Media",
-        "%vlocity_namespace%__ConfigurationDetail__c": "",
-        "%vlocity_namespace%__ConfigurationStages__c": "",
-        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
-        "%vlocity_namespace%__Data__c": "",
-        "%vlocity_namespace%__DefaultPicklistEntryId__c": "",
-        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
-        "%vlocity_namespace%__DisplaySequence__c": "600",
-        "%vlocity_namespace%__EndStory__c": "",
-        "%vlocity_namespace%__ExcludedPicklistEntryIds__c": "",
-        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
-        "%vlocity_namespace%__FormatMask__c": "",
-        "%vlocity_namespace%__GlobalKey__c": "8d880c1a-e74b-4633-82cb-7edd480b0c10",
-        "%vlocity_namespace%__HasRule__c": false,
-        "%vlocity_namespace%__HelpText__c": "",
-        "%vlocity_namespace%__IsActiveAssignment__c": true,
-        "%vlocity_namespace%__IsConfigurable__c": true,
-        "%vlocity_namespace%__IsDynamic__c": false,
-        "%vlocity_namespace%__IsEncrypted__c": false,
-        "%vlocity_namespace%__IsHidden__c": false,
-        "%vlocity_namespace%__IsNotAssetizable__c": false,
-        "%vlocity_namespace%__IsNotTranslatable__c": false,
-        "%vlocity_namespace%__IsOverride__c": false,
-        "%vlocity_namespace%__IsQueryDriven__c": false,
-        "%vlocity_namespace%__IsReadOnly__c": false,
-        "%vlocity_namespace%__IsRequired__c": true,
-        "%vlocity_namespace%__LookupFilter__c": "",
-        "%vlocity_namespace%__LookupObjectId__c": "",
-        "%vlocity_namespace%__LookupObjectTypeId__c": "",
-        "%vlocity_namespace%__ObjectId__c": {
-            "%vlocity_namespace%__GlobalKey__c": "2bb854d6-f8a0-d673-e046-f9bec9d30748",
-            "VlocityDataPackType": "VlocityMatchingKeyObject",
-            "VlocityMatchingRecordSourceKey": "Product2/2bb854d6-f8a0-d673-e046-f9bec9d30748",
-            "VlocityRecordSObjectType": "Product2"
-        },
-        "%vlocity_namespace%__ObjectType__c": "%vlocity_namespace%__ObjectClass__c",
-        "%vlocity_namespace%__OverrideContext__c": "",
-        "%vlocity_namespace%__PicklistId__c": {
-            "%vlocity_namespace%__GlobalKey__c": "a03e923d-c70c-ce23-08d5-f287703fb1bb",
-            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Picklist__c/a03e923d-c70c-ce23-08d5-f287703fb1bb",
-            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
-        },
-        "%vlocity_namespace%__QueryCode__c": "",
-        "%vlocity_namespace%__QueryLabel__c": "",
-        "%vlocity_namespace%__RemoveDate__c": "",
-        "%vlocity_namespace%__RemovedFlag__c": false,
-        "%vlocity_namespace%__RuleData__c": "",
-        "%vlocity_namespace%__RuleMessage__c": "",
-        "%vlocity_namespace%__StartStory__c": "",
-        "%vlocity_namespace%__StyleClass__c": "",
-        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
-        "%vlocity_namespace%__ValidValuesData__c": [
-            {
-                "displayText": "Fiber ON-Net",
-                "id": "0f499479-e568-c287-0d06-45ebfd15a095",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 10,
-                "value": "Fiber ON-Net"
-            },
-            {
-                "displayText": "Copper",
-                "id": "237fa7a3-0320-2d18-d339-36f48b50ab17",
-                "isDefault": true,
-                "isEditable": false,
-                "sequence": 20,
-                "value": "Copper"
-            },
-            {
-                "displayText": "4G",
-                "id": "5ec64094-ee65-0e5d-aa51-4f0a243bc5d8",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 30,
-                "value": "4G"
-            },
-            {
-                "displayText": "FTTH",
-                "id": "51cae511-37b2-efcf-2cbb-c924e3625f60",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 40,
-                "value": "FTTH"
-            },
-            {
-                "displayText": "RF P2P",
-                "id": "d1f3ab19-7148-8b18-48de-3d6fea8816cc",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 50,
-                "value": "RF P2P"
-            },
-            {
-                "displayText": "Fiber Off-Net",
-                "id": "1da19110-6377-b5d8-3898-7a6ccfe1b3d0",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 60,
-                "value": "Fiber Off-Net"
-            },
-            {
-                "displayText": "Third Party",
-                "id": "2131d00d-be47-fc42-09f8-eec5b79bfa2a",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 70,
-                "value": "Third Party"
-            },
-            {
-                "displayText": "RF P2MP",
-                "id": "e1a11124-09d4-5a06-fb6a-f324adab0321",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 80,
-                "value": "RF P2MP"
-            }
-        ],
-        "%vlocity_namespace%__ValueDataType__c": "Picklist",
-        "%vlocity_namespace%__ValueDecoder__c": "",
-        "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "Copper",
-        "CurrencyIsoCode": "INR",
-        "Name": "CLONED_01t72000000zzcrAAA_ATT_DEPENDENT_LINK_MEDIA",
-        "VlocityDataPackType": "SObject",
-        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
-        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/8d880c1a-e74b-4633-82cb-7edd480b0c10"
-    },
-    {
-        "%vlocity_namespace%__AddDate__c": "",
-        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
-        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
-        "%vlocity_namespace%__AttributeCategoryId__c": {
-            "%vlocity_namespace%__Code__c": "ATC_CHANNEL_DETAILS",
-            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATC_CHANNEL_DETAILS",
-            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
-        },
-        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Enterprise Connectivity Type",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "25",
-        "%vlocity_namespace%__AttributeId__c": {
-            "%vlocity_namespace%__Code__c": "ATT_ENTERPRISE_CONNECTIVITY_TYPE",
-            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/ATT_ENTERPRISE_CONNECTIVITY_TYPE",
-            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
-        },
-        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT_ENTERPRISE_CONNECTIVITY_TYPE",
-        "%vlocity_namespace%__AttributeName__c": "Enterprise Connectivity Type",
-        "%vlocity_namespace%__ConfigurationDetail__c": "",
-        "%vlocity_namespace%__ConfigurationStages__c": "",
-        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
-        "%vlocity_namespace%__Data__c": "",
-        "%vlocity_namespace%__DefaultPicklistEntryId__c": "",
-        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
-        "%vlocity_namespace%__DisplaySequence__c": "600",
-        "%vlocity_namespace%__EndStory__c": "",
-        "%vlocity_namespace%__ExcludedPicklistEntryIds__c": "",
-        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
-        "%vlocity_namespace%__FormatMask__c": "",
-        "%vlocity_namespace%__GlobalKey__c": "91ec5abe-deae-66d7-eb1c-fffa3c2cdea9",
-        "%vlocity_namespace%__HasRule__c": false,
-        "%vlocity_namespace%__HelpText__c": "",
-        "%vlocity_namespace%__IsActiveAssignment__c": true,
-        "%vlocity_namespace%__IsConfigurable__c": true,
-        "%vlocity_namespace%__IsDynamic__c": false,
-        "%vlocity_namespace%__IsEncrypted__c": false,
-        "%vlocity_namespace%__IsHidden__c": false,
-        "%vlocity_namespace%__IsNotAssetizable__c": false,
-        "%vlocity_namespace%__IsNotTranslatable__c": false,
-        "%vlocity_namespace%__IsOverride__c": false,
-        "%vlocity_namespace%__IsQueryDriven__c": false,
-        "%vlocity_namespace%__IsReadOnly__c": false,
-        "%vlocity_namespace%__IsRequired__c": true,
-        "%vlocity_namespace%__LookupFilter__c": "",
-        "%vlocity_namespace%__LookupObjectId__c": "",
-        "%vlocity_namespace%__LookupObjectTypeId__c": "",
-        "%vlocity_namespace%__ObjectId__c": {
-            "%vlocity_namespace%__GlobalKey__c": "2bb854d6-f8a0-d673-e046-f9bec9d30748",
-            "VlocityDataPackType": "VlocityMatchingKeyObject",
-            "VlocityMatchingRecordSourceKey": "Product2/2bb854d6-f8a0-d673-e046-f9bec9d30748",
-            "VlocityRecordSObjectType": "Product2"
-        },
-        "%vlocity_namespace%__ObjectType__c": "%vlocity_namespace%__ObjectClass__c",
-        "%vlocity_namespace%__OverrideContext__c": "",
-        "%vlocity_namespace%__PicklistId__c": {
-            "%vlocity_namespace%__GlobalKey__c": "4d26cdd9-6e08-cebe-6516-e22ff7dce711",
-            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Picklist__c/4d26cdd9-6e08-cebe-6516-e22ff7dce711",
-            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
-        },
-        "%vlocity_namespace%__QueryCode__c": "",
-        "%vlocity_namespace%__QueryLabel__c": "",
-        "%vlocity_namespace%__RemoveDate__c": "",
-        "%vlocity_namespace%__RemovedFlag__c": false,
-        "%vlocity_namespace%__RuleData__c": "",
-        "%vlocity_namespace%__RuleMessage__c": "",
-        "%vlocity_namespace%__StartStory__c": "",
-        "%vlocity_namespace%__StyleClass__c": "",
-        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
-        "%vlocity_namespace%__ValidValuesData__c": [
-            {
-                "displayText": "Primary",
-                "id": "b5004d02-046d-f49c-efaa-f4253e6f1c8c",
-                "isDefault": true,
-                "isEditable": false,
-                "sequence": 10,
-                "value": "Primary"
-            },
-            {
-                "displayText": "Secondary",
-                "id": "f9d7dcde-ccfe-9abc-8282-1d7318aede92",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 20,
-                "value": "Secondary"
-            }
-        ],
-        "%vlocity_namespace%__ValueDataType__c": "Picklist",
-        "%vlocity_namespace%__ValueDecoder__c": "",
-        "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "Primary",
-        "CurrencyIsoCode": "INR",
-        "Name": "CLONED_01t72000000zzcrAAA_ATT_ENTERPRISE_CONNECTIVITY_TYPE",
-        "VlocityDataPackType": "SObject",
-        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
-        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/91ec5abe-deae-66d7-eb1c-fffa3c2cdea9"
-    },
-    {
-        "%vlocity_namespace%__AddDate__c": "",
-        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
-        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
-        "%vlocity_namespace%__AttributeCategoryId__c": {
-            "%vlocity_namespace%__Code__c": "ATC_CHANNEL_DETAILS",
-            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATC_CHANNEL_DETAILS",
-            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
-        },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Interface",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "30",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "6",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_INTERFACE",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -1244,7 +998,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "IP Required",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "35",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "7",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_IP_REQUIRED",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -1277,7 +1031,7 @@
         "%vlocity_namespace%__IsOverride__c": false,
         "%vlocity_namespace%__IsQueryDriven__c": false,
         "%vlocity_namespace%__IsReadOnly__c": false,
-        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__IsRequired__c": true,
         "%vlocity_namespace%__LookupFilter__c": "",
         "%vlocity_namespace%__LookupObjectId__c": "",
         "%vlocity_namespace%__LookupObjectTypeId__c": "",
@@ -1306,11 +1060,19 @@
         "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
         "%vlocity_namespace%__ValidValuesData__c": [
             {
+                "displayText": "IPv4",
+                "id": "77148b6d-74f6-b642-54ab-818ae833b9fd",
+                "isDefault": true,
+                "isEditable": false,
+                "sequence": 10,
+                "value": "IPv4"
+            },
+            {
                 "displayText": "IPv6",
                 "id": "f7efee6d-dc4e-4aa0-264a-ccd3a791f99f",
                 "isDefault": false,
                 "isEditable": false,
-                "sequence": 10,
+                "sequence": 20,
                 "value": "IPv6"
             },
             {
@@ -1318,22 +1080,14 @@
                 "id": "04fa9600-2d1b-10ba-62dc-60eb80f6372b",
                 "isDefault": false,
                 "isEditable": false,
-                "sequence": 20,
-                "value": "Dual Stack"
-            },
-            {
-                "displayText": "IPv4",
-                "id": "77148b6d-74f6-b642-54ab-818ae833b9fd",
-                "isDefault": false,
-                "isEditable": false,
                 "sequence": 30,
-                "value": "IPv4"
+                "value": "Dual Stack"
             }
         ],
         "%vlocity_namespace%__ValueDataType__c": "Picklist",
         "%vlocity_namespace%__ValueDecoder__c": "",
         "%vlocity_namespace%__ValueDescription__c": "",
-        "%vlocity_namespace%__Value__c": "",
+        "%vlocity_namespace%__Value__c": "IPv4",
         "CurrencyIsoCode": "INR",
         "Name": "CLONED_01t72000000zzcrAAA_ATT_IP_REQUIRED",
         "VlocityDataPackType": "SObject",
@@ -1351,7 +1105,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Last Mile",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "40",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "8",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_LAST_MILE",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -1450,7 +1204,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Media",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "14",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "1",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_MEDIA",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -1528,14 +1282,6 @@
                 "value": "Copper"
             },
             {
-                "displayText": "4G",
-                "id": "5ec64094-ee65-0e5d-aa51-4f0a243bc5d8",
-                "isDefault": false,
-                "isEditable": false,
-                "sequence": 30,
-                "value": "4G"
-            },
-            {
                 "displayText": "FTTH",
                 "id": "51cae511-37b2-efcf-2cbb-c924e3625f60",
                 "isDefault": false,
@@ -1597,7 +1343,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "POP",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "31",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "9",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_POP",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -1696,7 +1442,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Port Bandwidth",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "55",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "10",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_PORT_BANDWIDTH",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -2059,7 +1805,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Redundancy",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "80",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "11",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_REDUNDANCY",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -2136,7 +1882,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Service Type",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "6",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "2",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_SERVICE_TYPE",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
@@ -2243,7 +1989,7 @@
             "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
         },
         "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Uptime SLA",
-        "%vlocity_namespace%__AttributeDisplaySequence__c": "70",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "13",
         "%vlocity_namespace%__AttributeId__c": {
             "%vlocity_namespace%__Code__c": "ATT_UPTIME_SLA",
             "VlocityDataPackType": "VlocityLookupMatchingKeyObject",

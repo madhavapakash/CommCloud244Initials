@@ -1,0 +1,71 @@
+Org: AIRTELSIT
+Version: 1.17.2
+Node: v18.15.0
+PackageVersion: '900.518'
+Namespace: vlocity_cmt
+Job: VDX
+Action: Deploy
+ProjectPath: ./vlocity
+TotalTime: 24m 19s
+Count:
+  Success: {}
+  Error: {}
+Errors:
+  - 'InterfaceImplementation/RuleSetCombinationBatchJobRecord -- DataPack >> RuleSetCombinationBatchJobRecord -- Error Message -- Duplicate Results found for %vlocity_namespace%__InterfaceImplementation__c WHERE Name=RuleSetCombinationBatchJobRecord - Related Ids: a2f710000001oBmAAI,a2f710000001oD7AAI'
+  - DocumentTemplate/B2BExpressProposalGroupSummary -- DataPack >> B2BExpressProposalGroupSummary -- Error Message -- No match found for %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c - ExternalDocumentInfo2=null AND Title=Proposal Groups Summary.docx AND VersionNumber=1 (System Code)
+  - DocumentTemplate/B2BExpressProposalGroupDetailed -- DataPack >> B2BExpressProposalGroupDetailed -- Error Message -- No match found for %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c - ExternalDocumentInfo2=null AND Title=Proposal Groups Detailed.docx AND VersionNumber=1 (System Code)
+  - 'DocumentTemplate/B2BExpressProposalMemberDetailed -- DataPack >> B2BExpressProposalMemberDetailed -- Error Message -- Custom Class with name ''ARTL_ProposalTemplateClass'', does not exist.'
+  - |
+    SASS Compilation Error VlocityUITemplate/cpq-product-cart-item-child Failed to compile SCSS: vlocity/VlocityUITemplate/cpq-product-cart-item-child/cpq-product-cart-item-child.scss SASS compilation failed, see error message for details: Error: no mixin named productChildLevelLoadMoreStyling
+            on line 58:18 of /stdin
+    >>         @include productChildLevelLoadMoreStyling(); 
+
+       -----------------^
+  - Activation Error >> CalculationProcedure/AttributePricingProcedure --- There is no active version for matrix " AttributePricingMatrix AttributePricingMatrix AttributePricingMatrix" in this effective time range.
+  - 'PricingPlan/Default Pricing Plan -- DataPack >> Default Pricing Plan -- Error Message -- Invalid pricing plan implementation name: ATB2BCmexApplyFrameContractPricing'
+  - 'PriceList/VEPC_PRICELIST_2020_BUSINESS -- DataPack >> 2020 Business -- Error Message -- Currency Code: bad value for restricted picklist field: EUR'
+  - 'ObjectClass/63ba6ae5f8c257f7cdccc385d2a85dca -- DataPack >> Product2 Object -- Error Message -- Incorrect Import Data. Multiple Imported Records will incorrecty create the same Salesforce Record. vlocity_cmt__ObjectFieldAttribute__c: null'
+  - 'PriceList/COM-PL-ENT -- DataPack >> Enterprise -- Error Message -- Currency Code: bad value for restricted picklist field: EUR'
+  - 'Product2/ba15dc61-279c-f742-894c-95c649a5f94c -- DataPack >> Static Protocol -- Error Message -- Incorrect Import Data. Multiple Imported Records will incorrecty create the same Salesforce Record. vlocity_cmt__AttributeAssignment__c: CLONED_01t72000001CjAYAA0_ATT_BGP_PREFIX_LIMIT'
+  - Rule/ae4a1aa4-44f5-dde8-6c8e-e8d6bc9b157d -- DataPack >> EMPLS Rules -- Error Message -- No match found for %vlocity_namespace%__RuleAction__c.%vlocity_namespace%__ProductRelationshipId__c - %vlocity_namespace%__GlobalKey__c=5783536c-eebc-9947-ab4b-ac6bddb2e452 (System Code)
+  - Rule/370d37e9-46bc-9b5b-21e3-45d726b8c587 -- DataPack >> EILL Rules -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__ProductRelationship__c/6edc084d-d1e3-9116-3574-b75ad7eaeb31
+  - Product2/2bb854d6-f8a0-d673-e046-f9bec9d30748 -- DataPack >> Primary Link -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Product2/8f5a7b2f-201b-8ef0-ca7e-31034ebb88b1 -- DataPack >> Secondary Link -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Product2/9a533082-6fd8-aa41-f98c-4dc3491e8598 -- DataPack >> Internet -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Project/Default Project for rakesh rajan -- DataPack >> Default Project for rakesh rajan -- Error Message -- Updating Project Owner is not allowed since it is maintained by the system. Updating Creator is not allowed since it is maintained by the system. Updating Original Created Date is not allowed since it is maintained by the system. Updating Last Modifier is not allowed since it is maintained by the system.
+  - Product2/0603228b-79c7-c71b-68d8-92cbbcec6ed0 -- DataPack >> Business Internet Essential (VPL) -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Product2/08a16785-1841-95a8-4151-7073b024ad2f -- DataPack >> Public Wi-Fi -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/99211581-0ede-a2dc-cc29-c140c17bbc77
+  - Product2/109a23fe-9f2d-e314-107e-0241ee475e82 -- DataPack >> Unlimited Data Add-on -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/21c03251-4bbc-2ae2-6a8d-a7467d45b524
+  - Product2/117c3063-96d3-c434-9f84-95b93b744917 -- DataPack >> Meraki MX67C Device -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/1723f7f1-6e6a-e542-66f3-7939a10c8d35
+  - Product2/15702c8d-0521-8e8f-fdb4-235c2c284b5b -- DataPack >> TestPro -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/55158ec3-473d-864d-891d-192dc7dc8b14
+  - Product2/16bebdf2-81d2-fd9e-cbc0-bd413db7b8e3 -- DataPack >> Business Internet Installation -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/69412269-1397-020d-fb82-3f3d56495428
+  - Product2/1a6154f6-a6f9-bcdf-adc8-c492a52567be -- DataPack >> Meraki MX68CW Device -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/bed0c498-3b38-4ae7-f952-7463207aaede
+  - Product2/2ea290fe-82b1-581f-43aa-72abb9e3031c -- DataPack >> Meraki MX SD-WAN -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Product2/3b386292-3144-e720-df9a-06701137db3d -- DataPack >> Secondary Transport -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/47fd2f2c-61f3-45b6-7629-94552afcc96a
+  - Product2/3f723b13-9fb4-57e7-8f88-da809c348279 -- DataPack >> CPE -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/99211581-0ede-a2dc-cc29-c140c17bbc77
+  - Product2/419222ac-2e88-7ce5-ffe8-49ea37ad7b1e -- DataPack >> iConnectivity Routing Type -- Error Message -- This DataPack has a reference to another object which was not found -- Product2/ba15dc61-279c-f742-894c-95c649a5f94c
+  - Product2/4e299db0-b902-cd0e-c3c6-a87f2d69debf -- DataPack >> Select your Meraki Device -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Product2/5a100568-7c54-5483-690d-eaead9df1837 -- DataPack >> Select your SD Wan Configuration -- Error Message -- Product you are trying to add is missing a Pricebook Entry in pricebook >>Standard Price Book<< Please add product to pricebook and try again.
+  - Product2/8bf5ac6d-dc93-4295-7f2e-35a8dc210457 -- DataPack >> Primary Transport -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/47fd2f2c-61f3-45b6-7629-94552afcc96a
+  - Product2/bb596e7f-e880-ae22-a5c0-bc1077c7eaf3 -- DataPack >> Internet Security Software -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/99211581-0ede-a2dc-cc29-c140c17bbc77
+  - Product2/bf179042-a482-5b9c-b0c7-51fc2b38ce18 -- DataPack >> Static IP -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/99211581-0ede-a2dc-cc29-c140c17bbc77
+  - Product2/e7b536b9-ffef-e3ad-421d-922ccc5e1db3 -- DataPack >> Additional Internet Services -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/99211581-0ede-a2dc-cc29-c140c17bbc77
+  - Product2/ec3eb78b-d703-ceec-374b-9c70b36a6857 -- DataPack >> LTE Backup -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/99211581-0ede-a2dc-cc29-c140c17bbc77
+  - Product2/eff9d87b-7414-a0d7-4365-429b8b5d3d2b -- DataPack >> Configuration Service -- Error Message -- This DataPack has a reference to another object which was not found -- vlocity_cmt__PricingElement__c/56834575-b4fd-cd42-d1da-c4440fa6f243
+  - 'LWC Activation Error >> FlexCard/cpqAsyncJobStatus - Could not deploy. Error msg: No MODULE named markup://c:cfCpqAsyncJobStatusChild found : [markup://c:cfCpqAsyncJobStatus], '
+  - 'LWC Activation Error >> FlexCard/cpqCartAppliedDiscountContainer - Could not deploy. Error msg: No MODULE named markup://c:cfCpqDiscount found : [markup://c:cfCpqCartAppliedDiscountContainer], '
+  - 'LWC Activation Error >> FlexCard/cpqCartAppliedPromotionContainer - Could not deploy. Error msg: No MODULE named markup://c:cfCpqCartAppliedPromotion found : [markup://c:cfCpqCartAppliedPromotionContainer], '
+  - 'LWC Activation Error >> FlexCard/cpqCartErrorPanel - Could not deploy. Error msg: No MODULE named markup://c:cfCpqCartErrorDetails found : [markup://c:cfCpqCartErrorPanel], '
+  - 'LWC Activation Error >> FlexCard/cpqCartFlexTableContainer - Could not deploy. Error msg: No MODULE named markup://c:cfCpqCartEmptyState found : [markup://c:cfCpqCartFlexTableContainer], '
+  - 'LWC Activation Error >> FlexCard/cpqProductFilterChild - Could not deploy. Error msg: No MODULE named markup://c:cfCpqPillsContainer found : [markup://c:cfCpqProductFilterChild], '
+  - 'LWC Activation Error >> FlexCard/cpqProductSearch - Could not deploy. Error msg: No MODULE named markup://c:cfCpqPills found : [markup://c:cfCpqProductSearch], '
+  - 'LWC Activation Error >> FlexCard/cpqProductsPromotionsContainerCart - Could not deploy. Error msg: No MODULE named markup://c:cfCpqPromotions found : [markup://c:cfCpqProductsPromotionsContainerCart], '
+  - 'LWC Activation Error >> FlexCard/cpqCartSummaryContainer - Could not deploy. Error msg: No MODULE named markup://c:cfCpqCartAppliedPromotionContainer found : [markup://c:cfCpqCartSummaryContainer], '
+Status:
+  Success: {}
+  Error: {}
+StatusCount:
+  Remaining: 0
+  Success: 4090
+  Error: 45
+id: !<tag:yaml.org,2002:js/undefined> ''

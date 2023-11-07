@@ -6,7 +6,6 @@
         "ATT_ACCESS_BANDWIDTH": "400 Mbps",
         "ATT_CONTRACT_TERM": "6",
         "ATT_CPE": null,
-        "ATT_DEPENDENT_LINK_MEDIA": "Copper",
         "ATT_LAST_MILE": null,
         "ATT_MEDIA": "Fiber ON-Net",
         "ATT_OFFNET_CAPEX": null,
@@ -1019,108 +1018,6 @@
                             ]
                         },
                         {
-                            "attributeId": "a0a72000005abEMAAY",
-                            "cloneable": true,
-                            "code": "ATT_DEPENDENT_LINK_MEDIA",
-                            "dataType": "text",
-                            "disabled": false,
-                            "displaySequence": 25,
-                            "filterable": false,
-                            "hasRules": false,
-                            "hidden": false,
-                            "inputType": "dropdown",
-                            "isNotTranslatable": false,
-                            "label": "Dependent Link Media",
-                            "messages": [
-                            ],
-                            "multiselect": false,
-                            "readonly": false,
-                            "required": true,
-                            "userValues": null,
-                            "values": [
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 10,
-                                    "id": "0f499479-e568-c287-0d06-45ebfd15a095",
-                                    "label": "Fiber ON-Net",
-                                    "name": "0f499479-e568-c287-0d06-45ebfd15a095",
-                                    "readonly": false,
-                                    "value": "Fiber ON-Net"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 60,
-                                    "id": "1da19110-6377-b5d8-3898-7a6ccfe1b3d0",
-                                    "label": "Fiber Off-Net",
-                                    "name": "1da19110-6377-b5d8-3898-7a6ccfe1b3d0",
-                                    "readonly": false,
-                                    "value": "Fiber Off-Net"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 70,
-                                    "id": "2131d00d-be47-fc42-09f8-eec5b79bfa2a",
-                                    "label": "Third Party",
-                                    "name": "2131d00d-be47-fc42-09f8-eec5b79bfa2a",
-                                    "readonly": false,
-                                    "value": "Third Party"
-                                },
-                                {
-                                    "defaultSelected": true,
-                                    "disabled": false,
-                                    "displaySequence": 20,
-                                    "id": "237fa7a3-0320-2d18-d339-36f48b50ab17",
-                                    "label": "Copper",
-                                    "name": "237fa7a3-0320-2d18-d339-36f48b50ab17",
-                                    "readonly": false,
-                                    "value": "Copper"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 40,
-                                    "id": "51cae511-37b2-efcf-2cbb-c924e3625f60",
-                                    "label": "FTTH",
-                                    "name": "51cae511-37b2-efcf-2cbb-c924e3625f60",
-                                    "readonly": false,
-                                    "value": "FTTH"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 30,
-                                    "id": "5ec64094-ee65-0e5d-aa51-4f0a243bc5d8",
-                                    "label": "4G",
-                                    "name": "5ec64094-ee65-0e5d-aa51-4f0a243bc5d8",
-                                    "readonly": false,
-                                    "value": "4G"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 50,
-                                    "id": "d1f3ab19-7148-8b18-48de-3d6fea8816cc",
-                                    "label": "RF P2P",
-                                    "name": "d1f3ab19-7148-8b18-48de-3d6fea8816cc",
-                                    "readonly": false,
-                                    "value": "RF P2P"
-                                },
-                                {
-                                    "defaultSelected": false,
-                                    "disabled": false,
-                                    "displaySequence": 80,
-                                    "id": "e1a11124-09d4-5a06-fb6a-f324adab0321",
-                                    "label": "RF P2MP",
-                                    "name": "e1a11124-09d4-5a06-fb6a-f324adab0321",
-                                    "readonly": false,
-                                    "value": "RF P2MP"
-                                }
-                            ]
-                        },
-                        {
                             "attributeId": "a0a72000005abEQAAY",
                             "cloneable": true,
                             "code": "ATT_LAST_MILE",
@@ -1561,7 +1458,7 @@
                             ]
                         }
                     ],
-                    "totalSize": 9
+                    "totalSize": 8
                 }
             }
         ],

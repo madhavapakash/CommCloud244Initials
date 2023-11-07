@@ -1,0 +1,44 @@
+Org: AIRTELSIT
+Version: 1.17.2
+Node: v18.15.0
+PackageVersion: '900.515'
+Namespace: vlocity_cmt
+Job: VDX
+Action: Deploy
+ProjectPath: ./vlocity
+TotalTime: 14m 11s
+Count:
+  Success: {}
+  Error: {}
+  Remaining: {}
+  InProgress: {}
+Errors:
+  - Activation Error >> CalculationProcedure/AttributePricingProcedure --- There is no active version for matrix " AttributePricingMatrix AttributePricingMatrix AttributePricingMatrix" in this effective time range.
+  - DocumentTemplate/B2BExpressProposalGroupDetailed -- DataPack >> B2BExpressProposalGroupDetailed -- Error Message -- No match found for %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c - ExternalDocumentInfo2=null AND Title=Proposal Groups Detailed.docx AND VersionNumber=1 (System Code)
+  - DocumentTemplate/B2BExpressProposalGroupSummary -- DataPack >> B2BExpressProposalGroupSummary -- Error Message -- No match found for %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c - ExternalDocumentInfo2=null AND Title=Proposal Groups Summary.docx AND VersionNumber=1 (System Code)
+  - 'DocumentTemplate/B2BExpressProposalMemberDetailed -- DataPack >> B2BExpressProposalMemberDetailed -- Error Message -- Custom Class with name ''ARTL_ProposalTemplateClass'', does not exist.'
+  - 'InterfaceImplementation/RuleSetCombinationBatchJobRecord -- DataPack >> RuleSetCombinationBatchJobRecord -- Error Message -- Duplicate Results found for %vlocity_namespace%__InterfaceImplementation__c WHERE Name=RuleSetCombinationBatchJobRecord - Related Ids: a2f710000001oBmAAI,a2f710000001oD7AAI'
+  - OrchestrationItemDefinition/PM Task Approved_Provisioning -- DataPack >> PM Task Approved -- Error Message -- Invalid Value.One or more event conditions have invalid fields or malformed JSON structure
+  - 'PricingPlan/Default Pricing Plan -- DataPack >> Default Pricing Plan -- Error Message -- Invalid pricing plan implementation name: ATB2BCmexApplyFrameContractPricing'
+  - OrchestrationItemDefinition/Customer SignOff_Provisioning -- DataPack >> Customer SignOff -- Error Message -- Invalid Value.One or more event conditions have invalid fields or malformed JSON structure
+  - 'PriceList/COM-PL-ENT -- DataPack >> Enterprise -- Error Message -- Currency Code: bad value for restricted picklist field: EUR'
+  - 'PriceList/VEPC_PRICELIST_2020_BUSINESS -- DataPack >> 2020 Business -- Error Message -- Currency Code: bad value for restricted picklist field: EUR'
+  - 'ObjectClass/63ba6ae5f8c257f7cdccc385d2a85dca -- DataPack >> Product2 Object -- Error Message -- Incorrect Import Data. Multiple Imported Records will incorrecty create the same Salesforce Record. vlocity_cmt__ObjectFieldAttribute__c: null'
+  - |
+    SASS Compilation Error VlocityUITemplate/cpq-product-cart-item-child Failed to compile SCSS: vlocity/VlocityUITemplate/cpq-product-cart-item-child/cpq-product-cart-item-child.scss SASS compilation failed, see error message for details: Error: no mixin named productChildLevelLoadMoreStyling
+            on line 58:18 of /stdin
+    >>         @include productChildLevelLoadMoreStyling(); 
+
+       -----------------^
+  - 'LWC Activation Error >> OmniScript/genericDocuSign_sendEsignature_English - Error: Navigation failed because browser has disconnected!'
+Status:
+  Success: {}
+  Error: {}
+  Remaining: {}
+  InProgress: {}
+StatusCount:
+  Remaining: 356
+  Success: 3761
+  Error: 13
+  InProgress: 5
+id: !<tag:yaml.org,2002:js/undefined> ''

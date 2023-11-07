@@ -1,0 +1,27 @@
+Org: AIRTELSIT
+Version: 1.17.2
+Node: v18.15.0
+PackageVersion: !<tag:yaml.org,2002:js/undefined> ''
+Namespace: vlocity_cmt
+Job: VDX
+Action: Deploy
+ProjectPath: ./vlocity
+TotalTime: 5m 15s
+Count:
+  Remaining: {}
+  Success: {}
+  Error: {}
+Errors:
+  - Activation Error >> CalculationProcedure/AttributePricingProcedure --- There is no active version for matrix " AttributePricingMatrix AttributePricingMatrix AttributePricingMatrix" in this effective time range.
+  - DocumentTemplate/B2BExpressProposalGroupDetailed -- DataPack >> B2BExpressProposalGroupDetailed -- Error Message -- No match found for %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c - ExternalDocumentInfo2=null AND Title=Proposal Groups Detailed.docx AND VersionNumber=1 (System Code)
+  - DocumentTemplate/B2BExpressProposalGroupSummary -- DataPack >> B2BExpressProposalGroupSummary -- Error Message -- No match found for %vlocity_namespace%__DocumentTemplate__c.%vlocity_namespace%__TemplateContentVersionId__c - ExternalDocumentInfo2=null AND Title=Proposal Groups Summary.docx AND VersionNumber=1 (System Code)
+  - 'DocumentTemplate/B2BExpressProposalMemberDetailed -- DataPack >> B2BExpressProposalMemberDetailed -- Error Message -- Custom Class with name ''ARTL_ProposalTemplateClass'', does not exist.'
+Status:
+  Remaining: {}
+  Success: {}
+  Error: {}
+StatusCount:
+  Remaining: 2358
+  Success: 1773
+  Error: 4
+id: !<tag:yaml.org,2002:js/undefined> ''

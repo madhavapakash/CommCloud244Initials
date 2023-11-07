@@ -3,12 +3,147 @@
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "Business-Internet-Essential-VPL_AttributeAssignments.json",
     "%vlocity_namespace%__AttributeDefaultValues__c": {
-        "VEPC_ATTR_CONTRACT_TERM": "Month-to-Month"
+        "VEPC_ATTR_CONTRACT_TERM": "Month-to-Month",
+        "VEPC_ATTR_DOWNLOAD_SPEED": "50 Mbps",
+        "VEPC_ATTR_MONTHLY_DATA_CAP": "100 GB",
+        "VEPC_ATTR_UPLOAD_SPEED": "25 Mbps"
     },
     "%vlocity_namespace%__AttributeMetadata__c": {
         "messages": [
         ],
         "records": [
+            {
+                "Code__c": "VEPC_ATTRIBUTE_CATEGORY_INTERNET_DETAILS",
+                "Name": "Internet Details",
+                "displaySequence": 6220,
+                "id": "a0Z72000000wnmjEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005PoZyAAK",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_DOWNLOAD_SPEED",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Download Speed",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "2e925b22-ec9d-7ad3-b914-cb45086b538f",
+                                    "label": "25 Mbps",
+                                    "name": "2e925b22-ec9d-7ad3-b914-cb45086b538f",
+                                    "readonly": false,
+                                    "value": "25 Mbps"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "322a9c79-5636-2e0d-4c8b-5fed9f60cf7d",
+                                    "label": "50 Mbps",
+                                    "name": "322a9c79-5636-2e0d-4c8b-5fed9f60cf7d",
+                                    "readonly": false,
+                                    "value": "50 Mbps"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005Poa0AAC",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_UPLOAD_SPEED",
+                            "dataType": "text",
+                            "description": "Select upload speed in Mbps",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Upload Speed",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "2364a331-ccc4-a3c5-34e9-3c70ade4fb96",
+                                    "label": "10 Mbps",
+                                    "name": "2364a331-ccc4-a3c5-34e9-3c70ade4fb96",
+                                    "readonly": false,
+                                    "value": "10 Mbps"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "285c186c-3a30-5939-7b23-58fb43f5b879",
+                                    "label": "25 Mbps",
+                                    "name": "285c186c-3a30-5939-7b23-58fb43f5b879",
+                                    "readonly": false,
+                                    "value": "25 Mbps"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0a72000005PoZzAAK",
+                            "cloneable": true,
+                            "code": "VEPC_ATTR_MONTHLY_DATA_CAP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Monthly Data Cap",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": true,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "5734af5d-e2da-36a8-018f-d70957e72ab5",
+                                    "label": "100 GB",
+                                    "name": "5734af5d-e2da-36a8-018f-d70957e72ab5",
+                                    "readonly": false,
+                                    "value": "100 GB"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                }
+            },
             {
                 "Code__c": "VEPC_ATTRIBUTE_CATEGORY_CONTRACT_DETAILS",
                 "Name": "Contract Details",
@@ -78,7 +213,7 @@
                 }
             }
         ],
-        "totalSize": 1
+        "totalSize": 2
     },
     "%vlocity_namespace%__AttributeRules__c": "{}",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",
@@ -135,7 +270,7 @@
     "%vlocity_namespace%__IsCustomerSubscription__c": false,
     "%vlocity_namespace%__IsLocationDependent__c": false,
     "%vlocity_namespace%__IsNotAssetizable__c": false,
-    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsOrderable__c": false,
     "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
     "%vlocity_namespace%__JeopardySafetyInterval__c": "",
     "%vlocity_namespace%__LifecycleStatus__c": "",
@@ -144,17 +279,10 @@
     "%vlocity_namespace%__MainFeatureTermInDays__c": "",
     "%vlocity_namespace%__Modification__c": "",
     "%vlocity_namespace%__ObjectFieldAttribute__c": "Business-Internet-Essential-VPL_ObjectFieldAttributes.json",
-    "%vlocity_namespace%__ObjectTypeId__c": {
-        "%vlocity_namespace%__GlobalKey__c": "0e08afc1433d6d6631361b7fcf02b9e4",
-        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
-        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/0e08afc1433d6d6631361b7fcf02b9e4",
-        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
-    },
-    "%vlocity_namespace%__ObjectTypeName__c": "ESM Business Internet Object Type",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
     "%vlocity_namespace%__OrchestrationScenario__c": "Business-Internet-Essential-VPL_OrchestrationScenarios.json",
     "%vlocity_namespace%__OverrideDefinition__c": "Business-Internet-Essential-VPL_OverrideDefinitions.json",
     "%vlocity_namespace%__ParentClassId__c": "",
-    "%vlocity_namespace%__PriceListEntry__c": "Business-Internet-Essential-VPL_PriceListEntries.json",
     "%vlocity_namespace%__ProductChildItem__c": "Business-Internet-Essential-VPL_ProductChildItems.json",
     "%vlocity_namespace%__ProductSpecId__c": "",
     "%vlocity_namespace%__ProductTemplateProductId__c": "",
@@ -183,12 +311,11 @@
     "ExternalDataSourceId": "",
     "ExternalId": "",
     "Family": "Internet",
-    "IsActive": true,
+    "IsActive": false,
     "IsArchived": false,
     "Name": "Business Internet Essential (VPL)",
     "NumberOfQuantityInstallments": "",
     "NumberOfRevenueInstallments": "",
-    "PricebookEntry": "Business-Internet-Essential-VPL_PricebookEntries.json",
     "ProductCode": "VEPC_OFFERING_BUSINESS_INTERNET_ESSENTIAL",
     "QuantityInstallmentPeriod": "",
     "QuantityScheduleType": "",
@@ -210,7 +337,7 @@
             "%vlocity_namespace%__RecurringPrice__c": 0,
             "%vlocity_namespace%__RecurringUOM__c": "Monthly",
             "CurrencyIsoCode": "INR",
-            "IsActive": true,
+            "IsActive": false,
             "IsArchived": false,
             "Name": "Business Internet Essential (VPL)",
             "Pricebook2.Name": "Standard Price Book",

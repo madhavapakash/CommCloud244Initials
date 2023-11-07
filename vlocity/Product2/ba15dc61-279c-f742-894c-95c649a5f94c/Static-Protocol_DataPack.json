@@ -2,9 +2,144 @@
     "%vlocity_namespace%__ApprovedBy__c": "",
     "%vlocity_namespace%__ApprovedOn__c": "",
     "%vlocity_namespace%__AttributeAssignment__c": "Static-Protocol_AttributeAssignments.json",
-    "%vlocity_namespace%__AttributeDefaultValues__c": "",
-    "%vlocity_namespace%__AttributeMetadata__c": "",
-    "%vlocity_namespace%__AttributeRules__c": "",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT_BGP_PREFIX_LIMIT": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATC_INSTALLATION_DETAILS",
+                "Name": "Installation Details",
+                "displaySequence": 500,
+                "id": "a0Z72000000xooqEAA",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0a72000005abEyAAI",
+                            "cloneable": true,
+                            "code": "ATT_BGP_PREFIX_LIMIT",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 480,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "BGP Prefix Limit",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "2ce58fd2-f26b-0958-0719-4e8cafa629bb",
+                                    "label": "4000",
+                                    "name": "2ce58fd2-f26b-0958-0719-4e8cafa629bb",
+                                    "readonly": false,
+                                    "value": "4000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "2fd407e5-726e-096e-85bd-4c01ae36f7be",
+                                    "label": "1000",
+                                    "name": "2fd407e5-726e-096e-85bd-4c01ae36f7be",
+                                    "readonly": false,
+                                    "value": "1000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 80,
+                                    "id": "31a431ea-41a4-d956-d126-3afebec7f72c",
+                                    "label": "20000",
+                                    "name": "31a431ea-41a4-d956-d126-3afebec7f72c",
+                                    "readonly": false,
+                                    "value": "20000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 90,
+                                    "id": "4da9ceca-6f10-21a9-1308-214a52c738dc",
+                                    "label": "Not Applicable",
+                                    "name": "4da9ceca-6f10-21a9-1308-214a52c738dc",
+                                    "readonly": false,
+                                    "value": "Not Applicable"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "63af72ba-93d8-2dad-25bb-217cd8a5d9c0",
+                                    "label": "2000",
+                                    "name": "63af72ba-93d8-2dad-25bb-217cd8a5d9c0",
+                                    "readonly": false,
+                                    "value": "2000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 60,
+                                    "id": "72c700e5-b454-1bba-fa7a-a441acfb9556",
+                                    "label": "10000",
+                                    "name": "72c700e5-b454-1bba-fa7a-a441acfb9556",
+                                    "readonly": false,
+                                    "value": "10000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "a5d48b44-6750-72a3-90d3-88e56ff68dfd",
+                                    "label": "5000",
+                                    "name": "a5d48b44-6750-72a3-90d3-88e56ff68dfd",
+                                    "readonly": false,
+                                    "value": "5000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 70,
+                                    "id": "b478c0cc-1e9c-8150-0eaf-03085208c3d9",
+                                    "label": "15000",
+                                    "name": "b478c0cc-1e9c-8150-0eaf-03085208c3d9",
+                                    "readonly": false,
+                                    "value": "15000"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "d1a0cd82-cd64-b4d4-d4ed-66b8d8130b80",
+                                    "label": "3000",
+                                    "name": "d1a0cd82-cd64-b4d4-d4ed-66b8d8130b80",
+                                    "readonly": false,
+                                    "value": "3000"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
     "%vlocity_namespace%__AttributesMarkupConfig__c": "",
     "%vlocity_namespace%__CategoryData__c": "",
     "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
@@ -19,7 +154,7 @@
     "%vlocity_namespace%__GlobalKey__c": "ba15dc61-279c-f742-894c-95c649a5f94c",
     "%vlocity_namespace%__HeaderData__c": "",
     "%vlocity_namespace%__HelpText__c": "",
-    "%vlocity_namespace%__IsConfigurable__c": false,
+    "%vlocity_namespace%__IsConfigurable__c": true,
     "%vlocity_namespace%__IsCustomerSubscription__c": false,
     "%vlocity_namespace%__IsLocationDependent__c": false,
     "%vlocity_namespace%__IsNotAssetizable__c": false,
